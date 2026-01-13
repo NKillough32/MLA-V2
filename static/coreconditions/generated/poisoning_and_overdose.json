@@ -103,25 +103,130 @@
       },
       "drugs": [
         {
-          "name": "Naloxone",
+          "name": "Naloxone (Opioid Overdose)",
           "mechanism": "Opioid receptor antagonist that reverses the effects of opioid overdose.",
-          "dosing": "0.4 to 2 mg IV/IM/SC every 2-3 minutes as needed, up to 10 mg; if no response, reconsider diagnosis.",
-          "sideEffects": "Withdrawal symptoms in opioid-dependent patients, agitation, nausea.",
-          "notes": "Can be administered intranasally; consider in any suspected opioid overdose."
+          "dosing": "0.4 to 2 mg IV/IM/SC every 2-3 minutes as needed, up to 10 mg; intranasal 2-4 mg.",
+          "sideEffects": "Withdrawal symptoms in opioid-dependent patients, agitation, nausea, pulmonary edema (rare).",
+          "notes": "Can be administered intranasally or IM by lay persons; repeat dosing may be needed for long-acting opioids."
         },
         {
-          "name": "N-acetylcysteine",
-          "mechanism": "Glutathione precursor that detoxifies acetaminophen metabolites.",
-          "dosing": "Loading dose of 140 mg/kg followed by 70 mg/kg every 4 hours for 17 doses.",
-          "sideEffects": "Nausea, vomiting, allergic reactions.",
-          "notes": "Most effective within 8 hours of ingestion."
+          "name": "N-acetylcysteine (Paracetamol Overdose)",
+          "mechanism": "Glutathione precursor that detoxifies acetaminophen metabolites (NAPQI).",
+          "dosing": "IV: 150 mg/kg over 1h, then 50 mg/kg over 4h, then 100 mg/kg over 16h. Oral: 140 mg/kg then 70 mg/kg q4h x17 doses.",
+          "sideEffects": "Nausea, vomiting, allergic reactions, anaphylactoid reactions (especially IV).",
+          "notes": "Most effective within 8 hours but beneficial up to 24 hours. Use nomogram to guide treatment."
         },
         {
-          "name": "Activated charcoal",
+          "name": "Flumazenil (Benzodiazepine Overdose)",
+          "mechanism": "Competitive benzodiazepine receptor antagonist at GABA receptors.",
+          "dosing": "0.2 mg IV over 30 seconds, then 0.3 mg after 1 min if needed; further 0.5 mg every min up to 3 mg total.",
+          "sideEffects": "Seizures (especially in mixed overdose or chronic users), withdrawal, agitation.",
+          "notes": "Use with extreme caution - generally NOT recommended in mixed overdoses due to seizure risk. Supportive care often preferred."
+        },
+        {
+          "name": "Activated Charcoal",
           "mechanism": "Adsorbs toxins in the gastrointestinal tract, preventing absorption.",
-          "dosing": "50-100 g in adults, 1 g/kg in children, within 1 hour of ingestion.",
-          "sideEffects": "Aspiration risk, gastrointestinal obstruction.",
-          "notes": "Contraindicated in patients with decreased consciousness or risk of aspiration."
+          "dosing": "50-100 g in adults (or 1 g/kg), ideally within 1 hour of ingestion.",
+          "sideEffects": "Aspiration risk, gastrointestinal obstruction, constipation.",
+          "notes": "Not effective for lithium, iron, alcohols, strong acids/alkalis. Contraindicated in decreased consciousness without airway protection."
+        },
+        {
+          "name": "Atropine (Organophosphate Poisoning)",
+          "mechanism": "Competitive antagonist at muscarinic acetylcholine receptors, reverses cholinergic crisis.",
+          "dosing": "0.6-1.2 mg IV initially, doubling every 5 min until secretions dry (may require 20-50 mg in severe cases).",
+          "sideEffects": "Tachycardia, urinary retention, hyperthermia, confusion, mydriasis.",
+          "notes": "For organophosphate poisoning with SLUDGE syndrome. Use with pralidoxime in severe cases."
+        },
+        {
+          "name": "Pralidoxime (Organophosphate Poisoning)",
+          "mechanism": "Reactivates acetylcholinesterase inactivated by organophosphates.",
+          "dosing": "30 mg/kg IV over 30 minutes, then infusion of 8 mg/kg/hour.",
+          "sideEffects": "Tachycardia, muscle rigidity, hypertension.",
+          "notes": "Use alongside atropine in moderate-to-severe cases. Most effective within 24-48 hours."
+        },
+        {
+          "name": "Glucagon (Beta-blocker/CCB Overdose)",
+          "mechanism": "Increases cardiac contractility and heart rate independent of beta-receptors by increasing cAMP.",
+          "dosing": "5-10 mg IV bolus, then infusion 1-10 mg/hour titrated to response.",
+          "sideEffects": "Nausea, vomiting, hyperglycemia, hypokalaemia.",
+          "notes": "First-line for beta-blocker overdose with bradycardia/hypotension."
+        },
+        {
+          "name": "Calcium Chloride/Gluconate (CCB Overdose)",
+          "mechanism": "Overcomes calcium channel blockade, improves cardiac contractility.",
+          "dosing": "Calcium chloride 10% 10-20 ml IV over 5-10 min (or calcium gluconate 10% 30-60 ml). Repeat as needed.",
+          "sideEffects": "Tissue necrosis if extravasation, arrhythmias, hypercalcaemia.",
+          "notes": "First-line for calcium channel blocker toxicity. Chloride provides 3x more elemental calcium than gluconate."
+        },
+        {
+          "name": "Sodium Bicarbonate (TCA Overdose)",
+          "mechanism": "Alkalinization increases protein binding, overcomes sodium channel blockade, stabilizes myocardium.",
+          "dosing": "50-100 mmol (50-100 ml of 8.4%) IV bolus, repeat to maintain pH 7.45-7.55.",
+          "sideEffects": "Metabolic alkalosis, hypokalaemia, hypernatraemia, volume overload.",
+          "notes": "Indicated for TCA overdose with QRS >100ms or ventricular arrhythmias. Also used in salicylate poisoning."
+        },
+        {
+          "name": "Fomepizole (Toxic Alcohol Poisoning)",
+          "mechanism": "Competitive alcohol dehydrogenase inhibitor, prevents formation of toxic metabolites.",
+          "dosing": "Loading 15 mg/kg IV, then 10 mg/kg q12h. Increase to q4h if on dialysis.",
+          "sideEffects": "Headache, nausea, dizziness. Generally well tolerated.",
+          "notes": "Preferred antidote for ethylene glycol and methanol poisoning."
+        },
+        {
+          "name": "Digoxin-specific Antibody Fragments",
+          "mechanism": "Binds to digoxin molecules, forming inactive complex that is renally excreted.",
+          "dosing": "Acute overdose: 40-80 mg (1-2 vials). Chronic toxicity: typically 40 mg. Each vial binds ~0.5 mg digoxin.",
+          "sideEffects": "Hypokalaemia, allergic reactions (rare), rapid reversal may precipitate heart failure.",
+          "notes": "For life-threatening arrhythmias, severe bradycardia, hyperkalaemia >5.5 mmol/L in acute overdose."
+        },
+        {
+          "name": "Vitamin K (Warfarin Overdose)",
+          "mechanism": "Cofactor for synthesis of clotting factors II, VII, IX, X.",
+          "dosing": "Major bleeding: 5-10 mg IV slow infusion. Elevated INR without bleeding: 1-5 mg oral.",
+          "sideEffects": "Anaphylaxis (IV route), flushing. Give IV slowly.",
+          "notes": "Use with PCC or FFP in major bleeding. Onset: oral 6-24h, IV 6-12h."
+        },
+        {
+          "name": "Deferoxamine (Iron Overdose)",
+          "mechanism": "Iron chelator that binds free iron, forming ferrioxamine which is renally excreted.",
+          "dosing": "15 mg/kg/hour IV infusion (max 80 mg/kg/day).",
+          "sideEffects": "Hypotension (with rapid infusion), ARDS, vin rosé colored urine.",
+          "notes": "For severe iron toxicity with acidosis, shock, or serum iron >90 µmol/L."
+        },
+        {
+          "name": "Methylene Blue (Methaemoglobinaemia)",
+          "mechanism": "Cofactor for enzyme that reduces methaemoglobin to haemoglobin.",
+          "dosing": "1-2 mg/kg IV over 5 minutes (0.1-0.2 ml/kg of 1% solution). Can repeat after 1 hour.",
+          "sideEffects": "Blue urine, haemolysis in G6PD deficiency (contraindicated), serotonin syndrome with SSRIs.",
+          "notes": "For symptomatic methaemoglobinaemia (>20-30%) or levels >50%. Causes: nitrites, dapsone, benzocaine."
+        },
+        {
+          "name": "Lipid Emulsion (Local Anaesthetic Toxicity)",
+          "mechanism": "'Lipid sink' - creates expanded lipid phase to sequester lipophilic drugs.",
+          "dosing": "Intralipid 20%: 1.5 ml/kg bolus over 1 min, then 15 ml/kg/hour infusion. Repeat bolus if needed.",
+          "sideEffects": "Pancreatitis, allergic reactions, interference with lab tests.",
+          "notes": "For cardiac arrest from local anaesthetic toxicity. Also used in refractory lipophilic drug toxicity."
+        },
+        {
+          "name": "Pyridoxine (Isoniazid Overdose)",
+          "mechanism": "Cofactor for GABA synthesis - isoniazid inhibits pyridoxine, causing GABA depletion and seizures.",
+          "dosing": "Gram-for-gram replacement of ingested dose (up to 5 g). If unknown: 70 mg/kg (max 5 g) IV.",
+          "sideEffects": "Generally safe. Peripheral neuropathy with chronic high-dose use only.",
+          "notes": "For isoniazid-induced seizures. Also used prophylactically in large ingestions."
+        },
+        {
+          "name": "Octreotide (Sulfonylurea Hypoglycaemia)",
+          "mechanism": "Somatostatin analogue that suppresses insulin release from pancreatic beta cells.",
+          "dosing": "50-100 mcg SC every 6-12 hours (or IV infusion).",
+          "sideEffects": "Nausea, abdominal pain, hyperglycaemia.",
+          "notes": "For recurrent hypoglycaemia from sulfonylurea overdose. More effective than glucose alone."
+        },
+        {
+          "name": "Thiamine (Ethanol Intoxication/Withdrawal)",
+          "mechanism": "Essential cofactor for glucose metabolism. Prevents Wernicke's encephalopathy.",
+          "dosing": "100-300 mg IV/IM (give BEFORE glucose in suspected alcohol abuse).",
+          "sideEffects": "Rare anaphylaxis with IV use.",
+          "notes": "Always give before or with glucose in chronic alcohol use to prevent Wernicke's encephalopathy."
         }
       ],
       "procedures": [
