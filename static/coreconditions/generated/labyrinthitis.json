@@ -1,0 +1,180 @@
+{
+  "id": "labyrinthitis",
+  "name": "Labyrinthitis",
+  "domains": [
+    "ENT",
+    "Neurology"
+  ],
+  "generatedAt": "2026-01-13T00:00:00.000000",
+  "model": "claude-sonnet-4.5",
+  "rawContent": "# Labyrinthitis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nLabyrinthitis is an inflammatory condition affecting both the vestibular and cochlear portions of the inner ear (labyrinth), resulting in vertigo, hearing loss, and tinnitus. It can be viral or bacterial in origin.\n\n### Epidemiology\nLabyrinthitis most commonly affects adults aged 30-60 years. Viral labyrinthitis is more common than bacterial. It often follows an upper respiratory tract infection or otitis media.\n\n### Essential Pathophysiology\nThe condition involves inflammation of the membranous labyrinth, affecting both vestibular function (causing vertigo) and cochlear function (causing hearing loss and tinnitus). Viral labyrinthitis is typically self-limiting, while bacterial labyrinthitis (often secondary to otitis media or meningitis) can cause permanent damage if untreated.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Sudden onset of severe vertigo\n- Hearing loss (typically unilateral)\n- Tinnitus (ringing in the ear)\n- Nausea and vomiting\n- Imbalance and difficulty walking\n\n### Key Signs\n- Spontaneous horizontal nystagmus\n- Positive head impulse test\n- Sensorineural hearing loss on examination\n- Unsteady gait\n- Fever (in bacterial labyrinthitis)\n\n### Atypical Presentations\n- Gradual onset of symptoms\n- Bilateral involvement (rare)\n- Predominantly auditory symptoms with minimal vertigo\n\n### Red Flags Requiring Immediate Action\n- Severe headache or neck stiffness (may indicate meningitis)\n- Focal neurological deficits (suggesting stroke or central causes)\n- High fever with ear discharge (suggesting bacterial labyrinthitis/mastoiditis)\n- Complete hearing loss\n- Altered consciousness\n- Severe persistent vomiting leading to dehydration\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment including detailed history and neurological examination\n- Otoscopy to assess for middle ear infection\n- Hearing assessment (Rinne and Weber tests)\n- Head impulse test\n- Romberg test and gait assessment\n\n### Second-line Investigations\n- Audiometry (to quantify hearing loss and distinguish sensorineural vs conductive)\n- Blood tests: FBC, CRP, blood cultures (if bacterial cause suspected)\n- Tympanometry (to assess middle ear function)\n\n### Specialist Tests\n- MRI brain with internal acoustic meatus views (to exclude central causes, acoustic neuroma, or complications)\n- Vestibular function tests (caloric testing)\n- Lumbar puncture (if meningitis suspected)\n- CT temporal bones (if mastoiditis or cholesteatoma suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the acute onset of vertigo with hearing loss and/or tinnitus, positive vestibular signs (nystagmus, positive head impulse test), and absence of neurological deficits. The key distinguishing feature from vestibular neuritis is the presence of auditory symptoms.\n\n### Key Differential Diagnoses to Exclude\n- Vestibular neuritis (vertigo without hearing loss)\n- Ménière's disease (episodic vertigo with fluctuating hearing loss)\n- Acoustic neuroma (gradual onset, progressive hearing loss)\n- Posterior circulation stroke (neurological deficits, older age, vascular risk factors)\n- Benign paroxysmal positional vertigo (BPPV) - positional vertigo without hearing loss\n- Otitis media with complications\n- Bacterial meningitis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Vestibular suppressants (e.g., prochlorperazine 5mg TDS, cyclizine 50mg TDS) - for short-term use only (3-5 days)\n- Antiemetics (e.g., ondansetron 4-8mg, metoclopramide 10mg TDS)\n- IV fluids if dehydrated from vomiting\n- Safety measures: bed rest initially, fall prevention advice\n\n#### Second-line Treatments\n- Corticosteroids (e.g., prednisolone 1mg/kg, max 60mg daily for 7 days) - may improve vestibular recovery in viral labyrinthitis\n- Antibiotics if bacterial labyrinthitis suspected (e.g., co-amoxiclav or ceftriaxone)\n- Admission if severe vomiting, dehydration, suspected bacterial cause, or red flag features\n\n#### Emergency Procedures\n- ENT referral for suspected bacterial labyrinthitis or complications\n- Neurology referral if stroke or central cause suspected\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Vestibular rehabilitation therapy (essential for recovery)\n- Gradual mobilization and return to activities\n- Patient education about recovery timeline\n- Hearing aid assessment if persistent hearing loss\n\n#### Second-line Treatments\n- ENT follow-up for persistent hearing loss or tinnitus\n- Psychology/counselling support if significant anxiety or depression develops\n- Tinnitus management strategies\n\n#### Monitoring Requirements\n- Review at 1-2 weeks to assess recovery\n- Repeat audiometry at 6-12 weeks to assess for permanent hearing loss\n- Monitor for development of chronic imbalance\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Prochlorperazine\n- **Mechanism of Action**: Dopamine D2 receptor antagonist with antiemetic and vestibular suppressant properties.\n- **Typical Dosing Range**: 5mg TDS orally, or 12.5mg IM for severe symptoms.\n- **Key Side Effects/Contraindications**: Drowsiness, extrapyramidal side effects, hypotension. Avoid in Parkinson's disease.\n- **When to Use vs. Alternatives**: First-line vestibular suppressant. Use for maximum 3-5 days to avoid delaying vestibular compensation.\n\n#### Cyclizine\n- **Mechanism of Action**: H1 antihistamine with anticholinergic properties, reduces vestibular stimulation.\n- **Typical Dosing Range**: 50mg TDS orally or IM.\n- **Key Side Effects/Contraindications**: Drowsiness, dry mouth, blurred vision. Caution in elderly and those with glaucoma or urinary retention.\n- **When to Use vs. Alternatives**: Alternative to prochlorperazine, particularly useful if nausea prominent.\n\n#### Prednisolone\n- **Mechanism of Action**: Corticosteroid with anti-inflammatory effects, may reduce labyrinthine inflammation and improve recovery.\n- **Typical Dosing Range**: 1mg/kg orally (max 60mg) daily for 7 days, then taper over 1 week.\n- **Key Side Effects/Contraindications**: Hyperglycaemia, mood changes, insomnia, gastric irritation. Screen for contraindications to steroids.\n- **When to Use vs. Alternatives**: Consider in severe viral labyrinthitis within first few days of onset. Evidence is limited but may improve vestibular recovery.\n\n#### Co-amoxiclav\n- **Mechanism of Action**: Beta-lactam antibiotic with beta-lactamase inhibitor, broad-spectrum activity.\n- **Typical Dosing Range**: 625mg TDS orally or 1.2g TDS IV for severe infections.\n- **Key Side Effects/Contraindications**: Diarrhoea, nausea, allergic reactions. Check penicillin allergy.\n- **When to Use vs. Alternatives**: Use for suspected bacterial labyrinthitis secondary to otitis media. Alternative: ceftriaxone 2g IV daily.\n\n#### Ondansetron\n- **Mechanism of Action**: 5-HT3 receptor antagonist, potent antiemetic.\n- **Typical Dosing Range**: 4-8mg IV/PO TDS as needed.\n- **Key Side Effects/Contraindications**: Headache, constipation, prolonged QT interval.\n- **When to Use vs. Alternatives**: Effective for severe nausea and vomiting, particularly if other antiemetics insufficient.\n\n### Procedures\n\n#### Vestibular Rehabilitation Therapy\n- **What it Involves**: Structured physiotherapy program including gaze stabilization exercises, balance training, and habituation exercises to promote central compensation for vestibular loss.\n- **Indications**: All patients with labyrinthitis once acute symptoms settling (typically after 3-5 days). Essential for optimal recovery.\n- **Key Risks/Complications**: May temporarily worsen symptoms initially. Should be supervised by trained vestibular physiotherapist.\n\n#### Audiometry\n- **What it Involves**: Formal hearing assessment using pure tone audiometry to quantify hearing loss and determine type (sensorineural vs conductive).\n- **Indications**: All patients with labyrinthitis to document hearing loss and guide management.\n- **Key Risks/Complications**: No risks. Non-invasive test.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nViral labyrinthitis: Most patients show significant improvement in vertigo within 1-2 weeks, with complete resolution by 6-12 weeks. Hearing may improve partially but some degree of permanent hearing loss is common. Bacterial labyrinthitis has worse prognosis with high risk of permanent hearing loss if treatment delayed.\n\n### Important Complications to Watch For\n- Permanent sensorineural hearing loss (common, especially with bacterial cause)\n- Chronic vestibular dysfunction and imbalance\n- Benign paroxysmal positional vertigo (BPPV) - may develop as sequelae\n- Anxiety and depression secondary to chronic symptoms\n- Falls and injury during acute phase\n- In bacterial labyrinthitis: meningitis, mastoiditis, intracranial abscess\n- Permanent tinnitus\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should: perform initial assessment and differentiate from stroke or central causes; provide acute symptomatic management; arrange appropriate investigations; ensure adequate hydration and safety; educate patients about the condition and expected recovery; arrange appropriate follow-up and referrals.\n\n### When to Escalate to Senior/Specialist\nEscalate immediately if: red flag features present (neurological deficits, severe headache, neck stiffness, altered consciousness); suspected bacterial labyrinthitis or meningitis; complete hearing loss; failure to respond to treatment; diagnostic uncertainty regarding central vs peripheral cause. Routine ENT referral for: persistent hearing loss, severe tinnitus, or need for vestibular rehabilitation.\n\n### Key Safety Considerations\nExclude stroke (use HINTS exam if trained: Head Impulse, Nystagmus, Test of Skew). Ensure fall precautions during acute phase. Avoid prolonged vestibular suppressants (>3-5 days) as they delay compensation. Monitor hydration status. Do not discharge if patient cannot mobilize safely or has persistent vomiting. Ensure follow-up for audiometry. Advise patients not to drive during acute symptoms.\n",
+  "content": {
+    "overview": {
+      "definition": "Labyrinthitis is an inflammatory condition affecting both the vestibular and cochlear portions of the inner ear (labyrinth), resulting in vertigo, hearing loss, and tinnitus. It can be viral or bacterial in origin.",
+      "epidemiology": "Labyrinthitis most commonly affects adults aged 30-60 years. Viral labyrinthitis is more common than bacterial. It often follows an upper respiratory tract infection or otitis media.",
+      "pathophysiology": "The condition involves inflammation of the membranous labyrinth, affecting both vestibular function (causing vertigo) and cochlear function (causing hearing loss and tinnitus). Viral labyrinthitis is typically self-limiting, while bacterial labyrinthitis (often secondary to otitis media or meningitis) can cause permanent damage if untreated."
+    },
+    "recognition": {
+      "symptoms": [
+        "Sudden onset of severe vertigo",
+        "Hearing loss (typically unilateral)",
+        "Tinnitus (ringing in the ear)",
+        "Nausea and vomiting",
+        "Imbalance and difficulty walking"
+      ],
+      "signs": [
+        "Spontaneous horizontal nystagmus",
+        "Positive head impulse test",
+        "Sensorineural hearing loss on examination",
+        "Unsteady gait",
+        "Fever (in bacterial labyrinthitis)"
+      ],
+      "atypicalPresentations": [
+        "Gradual onset of symptoms",
+        "Bilateral involvement (rare)",
+        "Predominantly auditory symptoms with minimal vertigo"
+      ],
+      "redFlags": [
+        "Severe headache or neck stiffness (may indicate meningitis)",
+        "Focal neurological deficits (suggesting stroke or central causes)",
+        "High fever with ear discharge (suggesting bacterial labyrinthitis/mastoiditis)",
+        "Complete hearing loss",
+        "Altered consciousness",
+        "Severe persistent vomiting leading to dehydration"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment including detailed history and neurological examination",
+        "Otoscopy to assess for middle ear infection",
+        "Hearing assessment (Rinne and Weber tests)",
+        "Head impulse test",
+        "Romberg test and gait assessment"
+      ],
+      "secondLine": [
+        "Audiometry (to quantify hearing loss and distinguish sensorineural vs conductive)",
+        "Blood tests: FBC, CRP, blood cultures (if bacterial cause suspected)",
+        "Tympanometry (to assess middle ear function)"
+      ],
+      "specialistTests": [
+        "MRI brain with internal acoustic meatus views (to exclude central causes, acoustic neuroma, or complications)",
+        "Vestibular function tests (caloric testing)",
+        "Lumbar puncture (if meningitis suspected)",
+        "CT temporal bones (if mastoiditis or cholesteatoma suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the acute onset of vertigo with hearing loss and/or tinnitus, positive vestibular signs (nystagmus, positive head impulse test), and absence of neurological deficits. The key distinguishing feature from vestibular neuritis is the presence of auditory symptoms.",
+      "differentials": [
+        "Vestibular neuritis (vertigo without hearing loss)",
+        "Ménière's disease (episodic vertigo with fluctuating hearing loss)",
+        "Acoustic neuroma (gradual onset, progressive hearing loss)",
+        "Posterior circulation stroke (neurological deficits, older age, vascular risk factors)",
+        "Benign paroxysmal positional vertigo (BPPV) - positional vertigo without hearing loss",
+        "Otitis media with complications",
+        "Bacterial meningitis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Vestibular suppressants (e.g., prochlorperazine 5mg TDS, cyclizine 50mg TDS) - for short-term use only (3-5 days)",
+          "Antiemetics (e.g., ondansetron 4-8mg, metoclopramide 10mg TDS)",
+          "IV fluids if dehydrated from vomiting",
+          "Safety measures: bed rest initially, fall prevention advice"
+        ],
+        "secondLine": [
+          "Corticosteroids (e.g., prednisolone 1mg/kg, max 60mg daily for 7 days) - may improve vestibular recovery in viral labyrinthitis",
+          "Antibiotics if bacterial labyrinthitis suspected (e.g., co-amoxiclav or ceftriaxone)",
+          "Admission if severe vomiting, dehydration, suspected bacterial cause, or red flag features"
+        ],
+        "procedures": [
+          "ENT referral for suspected bacterial labyrinthitis or complications",
+          "Neurology referral if stroke or central cause suspected"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Vestibular rehabilitation therapy (essential for recovery)",
+          "Gradual mobilization and return to activities",
+          "Patient education about recovery timeline",
+          "Hearing aid assessment if persistent hearing loss"
+        ],
+        "secondLine": [
+          "ENT follow-up for persistent hearing loss or tinnitus",
+          "Psychology/counselling support if significant anxiety or depression develops",
+          "Tinnitus management strategies"
+        ],
+        "monitoring": [
+          "Review at 1-2 weeks to assess recovery",
+          "Repeat audiometry at 6-12 weeks to assess for permanent hearing loss",
+          "Monitor for development of chronic imbalance"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Prochlorperazine",
+          "mechanism": "Dopamine D2 receptor antagonist with antiemetic and vestibular suppressant properties.",
+          "dosing": "5mg TDS orally, or 12.5mg IM for severe symptoms.",
+          "sideEffects": "Drowsiness, extrapyramidal side effects, hypotension. Avoid in Parkinson's disease.",
+          "notes": "First-line vestibular suppressant. Use for maximum 3-5 days to avoid delaying vestibular compensation."
+        },
+        {
+          "name": "Cyclizine",
+          "mechanism": "H1 antihistamine with anticholinergic properties, reduces vestibular stimulation.",
+          "dosing": "50mg TDS orally or IM.",
+          "sideEffects": "Drowsiness, dry mouth, blurred vision. Caution in elderly and those with glaucoma or urinary retention.",
+          "notes": "Alternative to prochlorperazine, particularly useful if nausea prominent."
+        },
+        {
+          "name": "Prednisolone",
+          "mechanism": "Corticosteroid with anti-inflammatory effects, may reduce labyrinthine inflammation and improve recovery.",
+          "dosing": "1mg/kg orally (max 60mg) daily for 7 days, then taper over 1 week.",
+          "sideEffects": "Hyperglycaemia, mood changes, insomnia, gastric irritation. Screen for contraindications to steroids.",
+          "notes": "Consider in severe viral labyrinthitis within first few days of onset. Evidence is limited but may improve vestibular recovery."
+        },
+        {
+          "name": "Co-amoxiclav",
+          "mechanism": "Beta-lactam antibiotic with beta-lactamase inhibitor, broad-spectrum activity.",
+          "dosing": "625mg TDS orally or 1.2g TDS IV for severe infections.",
+          "sideEffects": "Diarrhoea, nausea, allergic reactions. Check penicillin allergy.",
+          "notes": "Use for suspected bacterial labyrinthitis secondary to otitis media. Alternative: ceftriaxone 2g IV daily."
+        },
+        {
+          "name": "Ondansetron",
+          "mechanism": "5-HT3 receptor antagonist, potent antiemetic.",
+          "dosing": "4-8mg IV/PO TDS as needed.",
+          "sideEffects": "Headache, constipation, prolonged QT interval.",
+          "notes": "Effective for severe nausea and vomiting, particularly if other antiemetics insufficient."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Vestibular Rehabilitation Therapy",
+          "description": "Structured physiotherapy program including gaze stabilization exercises, balance training, and habituation exercises to promote central compensation for vestibular loss.",
+          "indications": "All patients with labyrinthitis once acute symptoms settling (typically after 3-5 days). Essential for optimal recovery.",
+          "risks": "May temporarily worsen symptoms initially. Should be supervised by trained vestibular physiotherapist."
+        },
+        {
+          "name": "Audiometry",
+          "description": "Formal hearing assessment using pure tone audiometry to quantify hearing loss and determine type (sensorineural vs conductive).",
+          "indications": "All patients with labyrinthitis to document hearing loss and guide management.",
+          "risks": "No risks. Non-invasive test."
+        }
+      ]
+    },
+    "prognosis": "Viral labyrinthitis: Most patients show significant improvement in vertigo within 1-2 weeks, with complete resolution by 6-12 weeks. Hearing may improve partially but some degree of permanent hearing loss is common. Bacterial labyrinthitis has worse prognosis with high risk of permanent hearing loss if treatment delayed.",
+    "complications": [
+      "Permanent sensorineural hearing loss (common, especially with bacterial cause)",
+      "Chronic vestibular dysfunction and imbalance",
+      "Benign paroxysmal positional vertigo (BPPV) - may develop as sequelae",
+      "Anxiety and depression secondary to chronic symptoms",
+      "Falls and injury during acute phase",
+      "In bacterial labyrinthitis: meningitis, mastoiditis, intracranial abscess",
+      "Permanent tinnitus"
+    ],
+    "foundationDoctorRole": "Foundation doctors should: perform initial assessment and differentiate from stroke or central causes; provide acute symptomatic management; arrange appropriate investigations; ensure adequate hydration and safety; educate patients about the condition and expected recovery; arrange appropriate follow-up and referrals.",
+    "escalation": "Escalate immediately if: red flag features present (neurological deficits, severe headache, neck stiffness, altered consciousness); suspected bacterial labyrinthitis or meningitis; complete hearing loss; failure to respond to treatment; diagnostic uncertainty regarding central vs peripheral cause. Routine ENT referral for: persistent hearing loss, severe tinnitus, or need for vestibular rehabilitation.",
+    "keySafetyConsiderations": "Exclude stroke (use HINTS exam if trained: Head Impulse, Nystagmus, Test of Skew). Ensure fall precautions during acute phase. Avoid prolonged vestibular suppressants (>3-5 days) as they delay compensation. Monitor hydration status. Do not discharge if patient cannot mobilize safely or has persistent vomiting. Ensure follow-up for audiometry. Advise patients not to drive during acute symptoms."
+  }
+}
