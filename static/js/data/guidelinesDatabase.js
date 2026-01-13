@@ -1254,5 +1254,103 @@ window.guidelinesDatabase = {
         },
         monitoring: 'Record cumulative blood loss, vital signs, urine output ≥30ml/hr, temperature. Repeat labs every 30-60 min while bleeding',
         postEventCare: 'Debrief patient, check for anaemia, consider iron therapy, document and plan for future pregnancies'
+    },
+    'fitness-to-drive': {
+        title: 'Fitness to Drive - Medical Conditions (DVLA 2024)',
+        category: 'medico-legal',
+        evidenceLevel: 'DVLA Medical Standards',
+        lastUpdated: '2024',
+        organisation: 'DVLA',
+        overview: {
+            'Duty to notify': 'Patient MUST inform DVLA of any medical condition that may affect safe driving. Doctor should advise patient but cannot notify on their behalf (except in exceptional circumstances where public safety at risk and patient refuses)',
+            'License types': 'Group 1 (car/motorcycle) vs Group 2 (lorry/bus) - stricter standards for Group 2',
+            'Temporary vs permanent': 'Many conditions require temporary cessation with ability to resume after period off driving'
+        },
+        cardiovascular: {
+            'Acute coronary syndrome (MI/unstable angina)': 'Group 1: Stop 1 week if successful angioplasty, 4 weeks if other treatment. No notification if symptom-free. Group 2: Stop 6 weeks, notify DVLA, require exercise tolerance test',
+            'Stable angina': 'Group 1: Can drive if symptoms controlled and not at wheel. Group 2: Notify DVLA, exercise test required showing adequate capacity',
+            'Heart failure': 'Group 1: Can drive if symptoms controlled, no symptoms at rest/minimal exertion. Notify DVLA if LVEF <40%. Group 2: Stop driving, notify DVLA - generally refused unless mild, well-controlled',
+            'Arrhythmia (SVT, AF, VT)': 'Group 1: Stop if symptoms cause/likely to cause incapacity. Can resume when controlled. Group 2: Notify DVLA. VT permanently bars Group 2 unless ablated',
+            'Pacemaker/ICD insertion': 'Group 1: Stop 1 week after pacemaker, 4 weeks after ICD (6 months if for VT/cardiac arrest). Group 2: Stop 6 weeks pacemaker, ICD permanently bars',
+            'Cardiac surgery (CABG, valve)': 'Group 1: Stop 4 weeks (1 week if TAVI). Group 2: Stop 6 weeks, notify DVLA',
+            'Aortic aneurysm ≥6cm or dissection': 'Group 1: Notify DVLA if thoracic ≥6cm or AAA ≥6.5cm. Group 2: Strict surveillance requirements, notify DVLA',
+            'Syncope (unexplained)': 'Group 1: Stop until cause identified and controlled (6 months if unexplained). Group 2: Stop 12 months after last episode, notify DVLA'
+        },
+        neurological: {
+            'First seizure/single unprovoked': 'Group 1: Stop 6 months (12 months if structural brain lesion/epileptiform EEG). Can resume if seizure-free. Group 2: Stop 5 years off medication, notify DVLA',
+            'Epilepsy (established)': 'Group 1: Stop until seizure-free for 12 months (or 3 years if sleep seizures only). Notify DVLA. Group 2: Stop 10 years off all medication, no seizures',
+            'Changing/stopping AEDs': 'Group 1: Can drive during changes but stop 6 months if seizure occurs. Must be seizure-free 6 months after stopping medication. Group 2: Cannot drive during changes or for 12 months after stopping',
+            'Stroke/TIA': 'Group 1: Stop 1 month. No DVLA notification if single episode, full recovery, no seizures. Group 2: Stop 12 months, notify DVLA, require medical review',
+            'Multiple TIAs': 'Group 1: Stop 3 months if ≥2 in short period. Group 2: Disqualified - notify DVLA',
+            'Subarachnoid/intracerebral haemorrhage': 'Group 1: Stop 6 months, notify DVLA. Group 2: Stop 12 months, require imaging showing satisfactory recovery',
+            'Subdural haematoma': 'Group 1: Stop until clinically recovered. Group 2: Stop 6 months, notify DVLA',
+            'Brain tumour/neurosurgery': 'Group 1: Stop until 1 year seizure-free post-op. Benign meningioma 6 months. Group 2: Usually permanently bars - notify DVLA',
+            'Severe head injury (PTA >24h)': 'Group 1: Stop 6 months, then 12 months seizure-free required. Group 2: Stop 10 years, notify DVLA',
+            'Dementia/cognitive impairment': 'Group 1: Stop if impairs insight, judgment, planning. Notify DVLA - medical assessment required. Group 2: Notify DVLA - usually refused',
+            "Parkinson's disease": 'Group 1: Notify DVLA when diagnosis confirmed. Stop if motor/cognitive symptoms impair driving. Group 2: Notify DVLA - assess individually',
+            'Multiple sclerosis': 'Group 1: Notify DVLA if affects limb function, vision, or cognition. Group 2: Notify DVLA - ongoing review required'
+        },
+        psychiatric: {
+            'Acute psychotic episode/mania/severe depression': 'Group 1: Stop if impairs judgment/insight. Can resume when stable 3-6 months. Notify DVLA if recurrent. Group 2: Notify DVLA, stop 3 months after recovery',
+            'Dementia': 'See neurological section - early dementia may drive with regular review',
+            'Anxiety/PTSD': 'Group 1: Stop if severe and impairing concentration. Group 2: Notify DVLA if impairing',
+            'Substance misuse': 'See substance section',
+            'Suicidal ideation': 'Stop if active plans or high risk. Resume when stable and risk assessed'
+        },
+        endocrine: {
+            'Diabetes - insulin treated': 'Group 1: Notify DVLA. Must have awareness of hypoglycaemia, test before driving and every 2 hours, no severe hypo while awake in last 12 months. Group 2: Strict criteria - 3 monthly review, CGM required, no severe hypo in last 12 months',
+            'Diabetes - tablets (sulfonylurea/glinides)': 'Group 1: No notification unless ≥2 severe hypos while awake in 12 months. Group 2: Notify DVLA, same hypo rules',
+            'Severe hypoglycaemia (unconscious/needing help)': 'Group 1: Stop 3 months if ≥2 episodes in 12 months or impaired awareness. Group 2: Stop 12 months after severe hypo',
+            'Impaired awareness of hypoglycaemia': 'Group 1: Stop until awareness restored for ≥3 months. Group 2: Stop until awareness restored for 12 months',
+            'Hyperglycaemia with impaired consciousness': 'Stop until controlled. Resume when stable'
+        },
+        visual: {
+            'Visual acuity': 'Must read number plate at 20 metres (20.5m old style) with glasses/contacts if needed. Group 2: 6/9 each eye separately, 6/6 binocular',
+            'Visual field defect': 'Group 1: Central field intact in at least one eye. Notify DVLA if any field defect - may require formal testing. Group 2: Any field defect usually bars - notify DVLA',
+            'Diplopia (double vision)': 'Group 1: Stop until controlled (patching/prisms acceptable). Group 2: Stop, notify DVLA - usually bars',
+            'Sudden visual loss/eye surgery': 'Group 1: Stop until vision meets standards. Group 2: Notify DVLA, assessment required',
+            'Monocular vision (one eye only)': 'Group 1: Can drive if meets acuity/field standards in remaining eye, adapted over time. Group 2: Bars if lost vision after licence granted'
+        },
+        respiratory: {
+            'Breathlessness': 'Stop if unable to carry out simple tasks without distress (e.g., walk 10 metres, climb stairs)',
+            'Obstructive sleep apnoea': 'Group 1: Stop if excessive sleepiness. Resume after CPAP compliance established. Group 2: Notify DVLA, document CPAP compliance',
+            'Spontaneous pneumothorax': 'Group 1: Stop 1 week after successful drainage (6 weeks if bilateral/driver of large goods). Group 2: Stop 6 weeks, notify DVLA'
+        },
+        substance: {
+            'Alcohol dependence/misuse': 'Group 1: Stop 6 months after achieving control/abstinence. Notify DVLA if history of dependence. Group 2: Stop 12 months abstinent, notify DVLA, ongoing monitoring',
+            'Drink-driving conviction': 'Revocation by DVLA - require period off driving and medical assessment',
+            'Illicit drug use (cocaine, heroin, cannabis)': 'Group 1: Stop 6 months after cessation if dependence. Random testing may apply. Group 2: Stop 12 months after cessation, ongoing testing required',
+            'Benzodiazepine dependence': 'Group 1: Stop 6 months. Group 2: Stop 12 months, notify DVLA',
+            'Prescribed medications causing impairment': 'Stop if medication causes drowsiness/impaired reaction (strong opioids, benzodiazepines, Z-drugs, gabapentinoids, anticholinergics, sedating antihistamines)'
+        },
+        procedures: {
+            'General anaesthesia/sedation': 'Stop 24-48 hours (follow anaesthetist advice)',
+            'Colonoscopy with sedation': 'Stop 24 hours',
+            'Cataract surgery': 'Stop until vision meets standard (usually day after)',
+            'Major surgery (laparotomy, thoracotomy)': 'Stop 4-6 weeks or until safe to perform emergency stop',
+            'Minor surgery (hernia, joint arthroscopy)': 'Stop 1-2 weeks',
+            'Amputation (lower limb)': 'Group 1: Notify DVLA - vehicle adaptations may be needed. Group 2: Notify DVLA - assess individually'
+        },
+        other: {
+            'Pregnancy': 'No specific rules but advise if hyperemesis, syncope, pre-eclampsia, or late pregnancy affecting ability to safely control vehicle',
+            'Cancer treatment (chemo/radiotherapy)': 'Stop if fatigue/nausea/weakness impairs driving. Resume when fit',
+            'Chronic kidney disease/dialysis': 'Group 1: No restriction unless symptoms impair. Group 2: Notify DVLA if on dialysis or significant symptoms',
+            'Sleep disorders causing sleepiness': 'Stop until controlled. Notify DVLA if excessive daytime sleepiness',
+            'Syncope/blackouts': 'See cardiovascular section',
+            'Dizziness/vertigo': 'Stop until cause identified and controlled (e.g., BPPV after Epley, Ménière\'s if controlled)'
+        },
+        doctorResponsibilities: {
+            'Advise patient': 'Inform patient of legal duty to notify DVLA and stop driving if condition affects safety',
+            'Document advice': 'Record in notes that driving advice given, including date and patient response',
+            'Confidentiality': 'Cannot notify DVLA without consent EXCEPT if patient continues driving against advice and poses significant public risk (inform patient of intention first)',
+            'GMC guidance': 'Follow GMC "Confidentiality: patients\' fitness to drive and reporting concerns" if patient refuses to notify',
+            'Insurance': 'Remind patient that failure to notify DVLA may invalidate insurance'
+        },
+        resources: {
+            'DVLA notification': 'Online: www.gov.uk/contact-the-dvla (form FP1). Phone: 0300 790 6806',
+            'For doctors': 'DVLA "Assessing fitness to drive: guide for medical professionals"',
+            'Patient leaflets': '"What to tell DVLA" - condition-specific leaflets available',
+            'Urgent concerns': 'Can email drivers.med@dvla.gov.uk if immediate public safety concern (inform patient first)'
+        }
     }
 };
