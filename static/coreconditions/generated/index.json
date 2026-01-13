@@ -1,7 +1,7 @@
 {
   "generatedAt": "2025-12-17T23:02:39.679696",
-  "totalConditions": 541,
-  "processedCount": 541,
+  "totalConditions": 542,
+  "processedCount": 542,
   "model": "gpt-4o-mini",
   "conditions": [
     {
@@ -3590,6 +3590,15 @@
         "Paediatrics"
       ],
       "filename": "perthes_disease.json",
+      "processed": true
+    },
+    {
+      "id": "personality_disorders",
+      "name": "Personality Disorders",
+      "domains": [
+        "Psychiatry"
+      ],
+      "filename": "personality_disorders.json",
       "processed": true
     },
     {
