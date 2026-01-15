@@ -1,149 +1,236 @@
 {
   "id": "burns",
   "name": "Burns",
-  "domains": [
-    "Plastics"
-  ],
-  "generatedAt": "2025-12-17T21:36:08.640152",
-  "model": "gpt-4o-mini",
-  "rawContent": "# Burns: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nBurns are injuries to the skin or other tissues caused by heat, chemicals, electricity, radiation, or friction. They are classified by depth and severity, which determines treatment and prognosis.\n\n### Epidemiology\nBurns are a significant cause of morbidity and mortality worldwide, with an estimated 11 million burn injuries occurring annually. They are more prevalent in children and the elderly, with scalds being the most common type in young children.\n\n### Essential Pathophysiology\nBurns cause damage to the skin and underlying tissues, leading to loss of protective barriers, fluid loss, and potential infection. The depth of the burn (first, second, or third degree) determines the extent of tissue damage and the body's response.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Pain\n- Swelling\n- Redness\n- Blistering\n- Peeling skin\n- Itching\n\n### Key Signs\n- Erythema\n- Blisters\n- Eschar formation\n- Swelling\n- Hypo/hyperpigmentation\n\n### Atypical Presentations\n- Delayed onset of symptoms (chemical burns)\n- Inhalation injury (singed nasal hairs, hoarseness)\n- Electrical burns may not show external signs\n\n### Red Flags Requiring Immediate Action\n- Burns covering more than 10% of total body surface area (TBSA)\n- Burns on face, hands, feet, genitalia, or major joints\n- Inhalation injury\n- Electrical burns\n- Chemical burns with unknown substances\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment of burn depth and extent\n- Vital signs monitoring\n- Fluid resuscitation assessment\n\n### Second-line Investigations\n- Laboratory tests (CBC, electrolytes, renal function)\n- Imaging if fractures or foreign bodies are suspected\n\n### Specialist Tests\n- Referral to a burn unit for severe burns\n- Wound cultures if infection is suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical assessment of burn depth (first, second, third degree) and total body surface area (TBSA) affected, using the Rule of Nines or Lund and Browder chart.\n\n### Key Differential Diagnoses to Exclude\n- Friction burns\n- Chemical burns\n- Electrical burns\n- Frostbite\n- Skin infections (cellulitis)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Cool the burn with running water for at least 10-20 minutes\n- Cover the burn with a sterile, non-adhesive dressing\n- Pain management (e.g., paracetamol, ibuprofen)\n- Fluid resuscitation (Parkland formula for >10% TBSA)\n\n#### Second-line Treatments\n- Topical antibiotics (e.g., silver sulfadiazine)\n- Tetanus prophylaxis if indicated\n\n#### Emergency Procedures\n- Debridement of necrotic tissue\n- Skin grafting for deep burns\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Wound care and dressing changes\n- Physical therapy to prevent contractures\n\n#### Second-line Treatments\n- Surgical intervention for scar management (e.g., laser therapy)\n\n#### Monitoring Requirements\n- Regular follow-up for infection signs and healing progress\n- Psychosocial support for burn survivors\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Paracetamol\n- **Mechanism of Action**: Analgesic and antipyretic\n- **Typical Dosing Range**: 500-1000 mg every 4-6 hours, max 4g/day\n- **Key Side Effects/Contraindications**: Liver toxicity in overdose\n- **When to Use vs. Alternatives**: First-line for mild to moderate pain.\n\n#### Ibuprofen\n- **Mechanism of Action**: Non-steroidal anti-inflammatory drug (NSAID)\n- **Typical Dosing Range**: 400-600 mg every 6-8 hours, max 2400 mg/day\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment\n- **When to Use vs. Alternatives**: Useful for pain and inflammation.\n\n#### Silver sulfadiazine\n- **Mechanism of Action**: Topical antimicrobial\n- **Typical Dosing Range**: Apply 1-2 times daily to burn area\n- **Key Side Effects/Contraindications**: Local irritation, allergic reactions\n- **When to Use vs. Alternatives**: Effective for preventing infection in partial-thickness burns.\n\n### Procedures\n\n#### Debridement\n- **What it Involves**: Surgical removal of necrotic tissue to promote healing\n- **Indications**: Deep burns, infected wounds\n- **Key Risks/Complications**: Bleeding, infection, pain\n\n#### Skin grafting\n- **What it Involves**: Transplantation of skin to cover burn areas\n- **Indications**: Full-thickness burns, large surface area burns\n- **Key Risks/Complications**: Graft failure, infection, scarring\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nPrognosis depends on burn depth, TBSA affected, and presence of inhalation injury. Superficial burns heal well, while deep burns may require extensive treatment and can lead to complications.\n\n### Important Complications to Watch For\n- Infection\n- Scarring and contractures\n- Hypovolemia and shock\n- Psychological impact (PTSD, depression)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, manage acute care, and refer to specialists as needed. They should also provide education on burn prevention and care.\n\n### When to Escalate to Senior/Specialist\nRefer to a burn unit for burns covering >10% TBSA, burns on critical areas (face, hands, feet), or any signs of inhalation injury.\n\n### Key Safety Considerations\nEnsure proper hand hygiene when managing burns, monitor for signs of infection, and provide adequate pain relief. Educate patients on wound care and signs of complications.\n",
+  "category": "emergency",
+  "rawContent": "# BURNS\n\n## 1. CORE INFORMATION\n\n### Definition\nBurns are injuries to the skin and underlying tissues caused by heat (thermal), chemicals, electricity, radiation, or friction. They are classified by depth (superficial epidermal, partial thickness, full thickness) and extent (percentage of total body surface area - TBSA). Severity determines management pathway and need for specialist burns unit referral.\n\n### Epidemiology\nBurns are a significant cause of morbidity and mortality worldwide. More prevalent in children (particularly scalds in <5 years) and elderly. Approximately 250,000 burn injuries occur annually in the UK, with ~16,000 requiring hospital treatment and ~1,000 requiring burns unit admission. Male:female ratio approximately 2:1. Peak incidence in children aged 1-5 years and adults aged 20-40 years.\n\n### Essential Pathophysiology\nFollowing a burn, there is local tissue damage with progressive tissue loss in surrounding zones (zone of coagulation, zone of stasis, zone of hyperemia). Release of inflammatory cytokines and vasoactive mediators causes increased capillary permeability. Systemically, cardiovascular effects result from fluid loss and sequestration into third space (burn shock). Marked catabolic response increases metabolic rate. Immunosuppression is common with large burns (>20% TBSA). Bacterial translocation from gut lumen occurs. Loss of skin barrier function leads to evaporative fluid and heat loss, increased infection risk. Sepsis is the most common cause of death following major burns.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Pain (varies with depth - superficial very painful, full thickness painless due to nerve destruction)\n- Blistering (partial thickness burns)\n- Sensation changes (reduced or absent in deep burns)\n- Symptoms specific to mechanism: dyspnoea/hoarseness (inhalation), muscle pain/dark urine (electrical with rhabdomyolysis)\n- Systemic symptoms in large burns: thirst, nausea, confusion (hypovolemia)\n\n### Key Signs\n- **Superficial epidermal (first degree)**: Red, painful, dry, no blisters, blanches with pressure (like sunburn)\n- **Partial thickness superficial dermal (second degree)**: Pale pink, painful, blistered, moist, slow capillary refill, blanches\n- **Partial thickness deep dermal (second degree)**: Typically white but may have patches of non-blanching erythema, reduced sensation, painful to deep pressure only, may not blanch, mottled appearance\n- **Full thickness (third degree)**: White ('waxy'), brown ('leathery'), or black in color, no blisters, no pain, does not blanch, dry, may see thrombosed vessels\n- Inhalation injury signs: singed nasal hairs, soot in mouth/nose, hoarseness, stridor, respiratory distress, facial burns\n- Circumferential burns causing compartment syndrome: tense swelling, reduced pulses, capillary refill >2 seconds, paraesthesia\n\n## 3. INVESTIGATION\n\n### Bedside Tests\n- **Assessment of burn depth**: Clinical examination as above (superficial epidermal, partial thickness superficial/deep, full thickness)\n- **Assessment of burn extent (TBSA)**:\n  - **Wallace's Rule of Nines** (adults): Head+neck=9%, each arm=9%, each anterior leg=9%, each posterior leg=9%, anterior chest=9%, posterior chest=9%, anterior abdomen=9%, posterior abdomen=9%, perineum=1%\n  - **Lund and Browder chart**: Most accurate method, especially in children (accounts for different body proportions at different ages)\n  - **Palmar surface method**: Patient's palm (including fingers) = approximately 1% TBSA. Only accurate for smaller burns (<15% TBSA)\n- ECG if electrical burn (arrhythmias, ST changes)\n- Urine output monitoring (catheterize if >15% TBSA in adults or >10% TBSA in children)\n- Carboxyhaemoglobin if smoke inhalation suspected\n- Blood glucose (stress hyperglycemia)\n\n### Laboratory Tests\n- **For major burns (>15% TBSA adults, >10% TBSA children)**:\n  - FBC (hemoconcentration initially, then anemia)\n  - U&E (acute kidney injury, electrolyte disturbances)\n  - Creatinine and urea (renal function)\n  - Glucose (stress response)\n  - LFTs (hepatic dysfunction in severe burns)\n  - Coagulation screen (DIC in severe burns)\n  - Arterial blood gas (inhalation injury - hypoxia, carbon monoxide poisoning, metabolic acidosis)\n  - Lactate (tissue perfusion)\n  - CK and myoglobin if electrical burn or suspected rhabdomyolysis\n  - Group and save/crossmatch (may require transfusion)\n- Wound swabs if signs of infection (not routinely on admission)\n\n### Imaging and Specialist Tests\n- Chest X-ray if inhalation injury suspected (may be normal initially; look for pulmonary edema, ARDS)\n- CT head/spine/chest if trauma or fall from height associated with burn\n- Bronchoscopy if significant inhalation injury (assess airway edema, soot deposition)\n- Escharotomy if circumferential full thickness burns compromising circulation or ventilation\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is clinical based on:\n1. **Mechanism**: Thermal (flame, scald, contact), chemical, electrical, radiation, friction\n2. **Depth**: Superficial epidermal, partial thickness (superficial or deep dermal), full thickness\n3. **Extent**: Percentage TBSA using Rule of Nines, Lund and Browder chart, or palmar method\n4. **Location**: Special areas (face, hands, feet, perineum, genitalia, major joints, circumferential)\n5. **Associated injuries**: Inhalation injury, other trauma, non-accidental injury (NAI) concerns\n\n### Key Differential Diagnoses to Exclude\n- Toxic epidermal necrolysis (TEN)/Stevens-Johnson syndrome - drug-induced, widespread blistering\n- Staphylococcal scalded skin syndrome - children, superficial desquamation\n- Necrotising fasciitis - rapid progression, systemic toxicity, crepitus\n- Cellulitis/erysipelas - erythema without blistering (unless severe)\n- Fixed drug eruption - bullous lesions at same sites with drug re-exposure\n- Non-accidental injury - inconsistent history, unusual pattern, delayed presentation (especially children)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n**IMMEDIATE FIRST AID (within 20 minutes of injury):**\n- **Airway, Breathing, Circulation** - ABCDE approach\n- **Remove from source**:\n  - Thermal burns: Remove person from heat source, remove clothing and jewelry (unless adherent)\n  - Electrical burns: Switch off power supply first (do not touch patient until safe), remove from source\n  - Chemical burns: Brush off any powder, then irrigate with water (do NOT attempt to neutralize)\n- **Cool the burn**: Irrigate with cool (not iced) water for 10-30 minutes (ideally within 20 minutes of injury)\n  - Reduces burn depth and pain\n  - Do NOT use ice (causes vasoconstriction and further tissue damage)\n  - Be cautious in large burns (hypothermia risk)\n- **Cover the burn**: Use cling film layered over burn (not wrapped circumferentially around limb - compartment syndrome risk), or clean non-adherent dressing\n- **Analgesia**: IV morphine 5-10mg (titrate to pain) for severe burns, oral paracetamol/ibuprofen for minor burns\n\n**AIRWAY MANAGEMENT:**\n- Early intubation if signs of airway compromise (high threshold for intubation):\n  - Deep burns to face or neck\n  - Blisters or edema of oropharynx\n  - Stridor or hoarseness\n  - Respiratory distress\n  - Soot in mouth/nose, singed nasal hairs\n  - Declining consciousness\n- 100% oxygen if inhalation injury or carbon monoxide poisoning\n\n**FLUID RESUSCITATION (if burns >15% TBSA adults, >10% TBSA children):**\n- **Parkland formula**: Total fluid in first 24 hours = TBSA (%) × Weight (kg) × 4 mL\n  - Use Hartmann's solution (crystalloid)\n  - Give half of calculated volume in first 8 hours (from time of burn, not arrival)\n  - Give remaining half over next 16 hours\n  - Titrate to urine output: 0.5-1 mL/kg/hr adults (30-50 mL/hr), 1 mL/kg/hr children\n  - Do NOT use formula rigidly - adjust based on response\n- Insert urinary catheter to monitor output\n- Insert two large-bore IV cannulae (can go through burnt skin if necessary)\n\n#### Second-line Treatments\n- Nasogastric tube if burns >20% TBSA (ileus common)\n- Tetanus prophylaxis if incomplete vaccination or tetanus-prone wound\n- Escharotomy if circumferential full thickness burns causing:\n  - Limb compartment syndrome (reduced pulses, capillary refill >2s, rising compartment pressure)\n  - Impaired ventilation (torso burns restricting chest wall movement)\n- Treat associated injuries (fractures, head injury, etc.)\n\n#### Emergency Procedures\n- **Escharotomy**: Careful division of encasing band of burnt tissue (full thickness) to relieve compartment syndrome (limbs) or improve ventilation (torso). Performed at bedside without anesthesia (full thickness = no sensation). Incisions along medial/lateral aspects of limbs or anterior axillary lines for torso.\n\n### Chronic Management (Long-term Care)\n\n#### First-line Treatments\n**MINOR BURNS (manageable in primary care):**\n- **Superficial epidermal**: Symptomatic relief - analgesia (paracetamol, NSAIDs), emollients, avoid further sun exposure\n- **Superficial dermal (<3% TBSA adults, <2% TBSA children, not special areas)**:\n  - Cleanse wound gently with sterile saline or water\n  - Leave blisters intact (unless very large, tense, or interfering with function - then aspirate, don't de-roof)\n  - Non-adherent dressing (e.g., Mepitel, paraffin gauze)\n  - Avoid topical creams/antibiotics (no evidence of benefit)\n  - Review in 24 hours to assess healing and exclude infection\n  - Re-dress every 2-3 days or if soiled\n  - Should heal within 2 weeks\n\n**CONSERVATIVE MANAGEMENT** (specialist burns unit):\n- Appropriate for superficial burns and mixed burns expected to heal within 2 weeks\n- Wound care with non-adherent dressings, daily or alternate day changes\n- Nutritional support (high calorie, high protein)\n- Physiotherapy to prevent contractures\n- Psychological support\n\n#### Second-line Treatments\n**SURGICAL MANAGEMENT** (specialist burns unit):\n- **Excision and skin grafting**: For deep dermal and full thickness burns not healing within 2-3 weeks\n  - Early excision (3-7 days) improves outcomes\n  - Split-thickness skin grafts (STSG) or full-thickness skin grafts (FTSG)\n  - May require multiple procedures for large burns\n- **Excision and primary closure**: NOT generally practiced (high infection risk)\n- **Scar management**: Laser therapy, pressure garments, silicone sheets, steroid injections for hypertrophic scars\n- **Reconstructive surgery**: For contractures, functional impairment, cosmetic concerns\n\n**IMPORTANT**: No evidence to support antimicrobial prophylaxis or routine topical antibiotics in burn patients. Use antibiotics only for confirmed infection.\n\n### When to Refer\n**REFER TO SECONDARY CARE (burns unit or emergency department):**\n- All deep dermal and full thickness burns\n- Superficial dermal burns >3% TBSA in adults, or >2% TBSA in children\n- Superficial dermal burns involving face, hands, feet, perineum, genitalia, any flexure, or circumferential burns of limbs/torso/neck\n- Any inhalation injury\n- Any electrical or chemical burn injury\n- Burns at extremes of age (<5 years, >60 years with significant burns)\n- Burns with associated trauma\n- Suspicion of non-accidental injury\n- Pre-existing medical conditions complicating management (diabetes, immunosuppression)\n- Inadequate analgesia or social circumstances for community management\n\n### When to Admit\n- All patients meeting referral criteria above\n- Burns requiring IV fluid resuscitation (>15% TBSA adults, >10% TBSA children)\n- Inhalation injury\n- Inability to manage pain\n- Safeguarding concerns\n\n## 6. COMPLICATIONS\n\n### Common Complications\n- **Infection**: Most common complication, leading cause of morbidity. Staphylococcus aureus, Pseudomonas aeruginosa common. Presents with purulent discharge, increased pain, erythema spreading beyond burn margin, fever\n- **Hypertrophic scarring and contractures**: Especially if prolonged healing (>3 weeks), deeper burns, across joints\n- **Pruritus**: Very common during healing\n- **Psychological complications**: PTSD, anxiety, depression, body image issues\n- **Hypothermia**: Loss of skin barrier, especially large burns\n- **Metabolic derangements**: Hyperglycemia (stress response), electrolyte imbalances\n\n### Serious/Life-threatening Complications\n- **Burn shock**: Hypovolemia from fluid loss and third-spacing, leading to acute kidney injury, multi-organ failure\n- **Acute respiratory distress syndrome (ARDS)**: From inhalation injury, systemic inflammatory response\n- **Sepsis and multi-organ failure**: From burn wound infection, bacterial translocation\n- **Compartment syndrome**: From circumferential burns or massive fluid resuscitation\n- **Rhabdomyolysis**: Especially electrical burns, causes acute kidney injury\n- **Carbon monoxide poisoning**: From smoke inhalation, causes tissue hypoxia\n- **Acute kidney injury**: From hypovolemia, rhabdomyolysis, sepsis\n- **Disseminated intravascular coagulation (DIC)**: In severe burns\n- **Curling's ulcer**: Stress ulceration of stomach/duodenum in major burns\n- **Death**: Risk increases with age, burn size, and inhalation injury. Baux score (age + %TBSA) predicts mortality\n\n## 7. KEY PRESCRIBING INFORMATION\n\n### Drugs\n- **Morphine 5-10mg IV (titrate)**: Opioid analgesia for severe burn pain. SE: Respiratory depression, hypotension, nausea, constipation. CI: Respiratory depression, hypotension. Monitor: Respiratory rate, blood pressure, sedation score. Can give 2-5mg increments every 5 minutes until pain controlled. Naloxone available for reversal.\n\n- **Paracetamol 1g QDS PO/IV**: Simple analgesia for mild-moderate pain. SE: Hepatotoxicity in overdose (rare at therapeutic doses). CI: Hepatic impairment (reduce dose). Monitor: Liver function if prolonged use. Max 4g/24 hours.\n\n- **Ibuprofen 400mg TDS PO**: NSAID for pain and inflammation. SE: GI upset, bleeding, renal impairment, bronchospasm (asthmatics). CI: Active GI bleeding, severe renal/hepatic impairment, pregnancy (third trimester). Monitor: Renal function, signs of GI bleeding. Use with caution in hypovolemia.\n\n- **Hartmann's solution (Ringer's lactate)**: Crystalloid for fluid resuscitation. Preferred over 0.9% saline (less risk of hyperchloremic acidosis). Use Parkland formula to calculate rate. Monitor: Urine output, vital signs, fluid balance, electrolytes.\n\n- **Tetanus toxoid 0.5mL IM**: If incomplete vaccination (<5 doses lifetime) or last dose >10 years ago (>5 years for tetanus-prone wounds like burns). SE: Local reaction, rare anaphylaxis. CI: Previous anaphylaxis to vaccine.\n\n**NOT RECOMMENDED**:\n- **Topical antibiotics** (silver sulfadiazine, etc.): No evidence of benefit for prophylaxis. May delay healing. Only use if clinical infection present and on specialist advice.\n- **Systemic antibiotic prophylaxis**: No evidence of benefit. Increases resistance. Only give for confirmed infection.\n\n## 8. PROGNOSIS AND FOLLOW-UP\n\n### Expected Course\n- **Superficial epidermal**: Heal within 5-7 days without scarring\n- **Partial thickness superficial dermal**: Heal within 2-3 weeks with minimal scarring\n- **Partial thickness deep dermal**: Heal within 3-8 weeks, may scar, often require skin grafting\n- **Full thickness**: Will not heal without surgery, require excision and grafting\n- Mortality increases with age, burn size (%TBSA), and inhalation injury\n- **Baux score** (age + %TBSA burn) predicts mortality: >100 = ~50% mortality, >140 = very high mortality\n- Children generally better prognosis than elderly with equivalent burns\n\n### Follow-up Requirements\n- Minor burns managed in community: Review at 24 hours, then every 2-3 days until healed\n- Burns unit follow-up: Initially weekly, then monthly, then as needed\n- Physiotherapy and occupational therapy: Essential to prevent contractures, maintain function\n- Scar management: Pressure garments for 12-18 months post-healing\n- Psychological support: Screen for PTSD, anxiety, depression at follow-up\n- Long-term surveillance for complications (contractures, malignant change in old burn scars - Marjolin's ulcer, rare)\n\n### Red Flags for Deterioration\n- Signs of infection: Increased pain, purulent discharge, spreading erythema, fever, sepsis\n- Respiratory deterioration: May indicate developing ARDS or pneumonia\n- Reduced urine output despite adequate fluids: Acute kidney injury\n- Confusion, agitation: Hypoxia, sepsis, or hypoperfusion\n- Compartment syndrome: Pain out of proportion, tense swelling, reduced pulses, paraesthesia\n- Non-healing wounds: May indicate inadequate blood supply, infection, or need for surgical intervention\n\n## 9. KEY PATIENT INFORMATION\n\n### What the Patient Needs to Know\n- Minor burns usually heal well within 2-3 weeks with appropriate wound care\n- More severe burns may require surgery (skin grafts) and prolonged rehabilitation\n- Scarring is common with deeper burns - can be minimized with appropriate treatment and scar management\n- Infection is a key risk - watch for increased pain, discharge, spreading redness, fever\n- Sun protection essential for healing burns and healed scars (at least 1 year) - use SPF 50+, cover up\n- Moisturize healing burns and scars regularly with unperfumed emollients\n- Physiotherapy exercises crucial to prevent stiffness and contractures - must be done regularly\n- Psychological impact is normal - seek help if experiencing flashbacks, nightmares, anxiety, low mood\n\n### Lifestyle Modifications\n- Avoid sun exposure to healing burns and new scars (12-18 months minimum)\n- Regular moisturization with simple emollients (avoid perfumed products)\n- Gentle massage of healed scars to soften\n- Pressure garments as advised (usually 23 hours/day for 12-18 months)\n- Regular physiotherapy exercises to maintain range of motion\n- High protein, high calorie diet to support healing\n- Adequate hydration\n- Avoid smoking (impairs healing)\n- Return to normal activities gradually as tolerated\n\n### Support Resources\n- Changing Faces - support for people with visible differences: www.changingfaces.org.uk, 0300 012 0275\n- Dan's Fund for Burns (children's burns charity): www.dansfundforburns.org\n- British Burn Association - patient information: www.britishburnassociation.org/patients\n- NHS patient information on burns: www.nhs.uk/conditions/burns-and-scalds\n- Children's Burns Trust: www.cbtrust.org.uk\n- Local burns unit patient support services\n- Occupational therapy for aids and adaptations\n- Clinical psychology/counseling services\n\n## 10. EVIDENCE AND GUIDELINES\n\n### Key Guidelines\n- National Network for Burn Care (NHS England): National Burn Care Referral Guidance (2012, updated 2018)\n- International Society for Burn Injuries (ISBI): Practice Guidelines for Burn Care (2016)\n- Advanced Burn Life Support (ABLS) Course Manual - American Burn Association\n- NICE Clinical Knowledge Summary: Burns and scalds (2020)\n- British Burn Association: Standards and Strategy for Burn Care (2018)\n\n### Summary of Recommendations\n- **Immediate first aid**: Remove from source, cool with water 10-30 minutes (within 20 minutes of injury), cover with cling film\n- **Assess TBSA**: Use Wallace's Rule of Nines (adults) or Lund and Browder chart (children, most accurate)\n- **Assess depth**: Superficial epidermal, partial thickness (superficial/deep dermal), full thickness\n- **Referral criteria**: All deep dermal/full thickness; superficial dermal >3% TBSA (adults) or >2% TBSA (children); burns to special areas (face, hands, feet, perineum, genitalia, flexures, circumferential); any inhalation, electrical, or chemical burn; suspicion of NAI\n- **Fluid resuscitation**: Parkland formula (TBSA% × Weight kg × 4 mL over 24 hours, half in first 8 hours) for burns >15% TBSA (adults) or >10% TBSA (children)\n- **Airway management**: Low threshold for early intubation if inhalation injury or airway compromise\n- **Wound management**: Leave blisters intact, non-adherent dressings, avoid routine topical antibiotics\n- **No antimicrobial prophylaxis**: No evidence of benefit, increases resistance\n- **Conservative vs surgical**: Conservative management for burns expected to heal <2 weeks; excision and skin grafting for deep burns or prolonged healing\n- **Escharotomy**: Indicated for circumferential full thickness burns causing compartment syndrome or respiratory compromise\n- **Rehabilitation**: Early physiotherapy, occupational therapy, pressure garments, psychological support essential",
   "content": {
-    "overview": {
-      "definition": "Burns are injuries to the skin or other tissues caused by heat, chemicals, electricity, radiation, or friction. They are classified by depth and severity, which determines treatment and prognosis.",
-      "epidemiology": "Burns are a significant cause of morbidity and mortality worldwide, with an estimated 11 million burn injuries occurring annually. They are more prevalent in children and the elderly, with scalds being the most common type in young children.",
-      "pathophysiology": "Burns cause damage to the skin and underlying tissues, leading to loss of protective barriers, fluid loss, and potential infection. The depth of the burn (first, second, or third degree) determines the extent of tissue damage and the body's response."
+    "coreInformation": {
+      "definition": "Burns are injuries to the skin and underlying tissues caused by heat (thermal), chemicals, electricity, radiation, or friction. They are classified by depth (superficial epidermal, partial thickness, full thickness) and extent (percentage of total body surface area - TBSA). Severity determines management pathway and need for specialist burns unit referral.",
+      "epidemiology": "Approximately 250,000 burn injuries occur annually in the UK, with ~16,000 requiring hospital treatment and ~1,000 requiring burns unit admission. More prevalent in children (particularly scalds in <5 years) and elderly. Male:female ratio approximately 2:1. Peak incidence in children aged 1-5 years and adults aged 20-40 years.",
+      "pathophysiology": "Following a burn, there is local tissue damage with progressive tissue loss and release of inflammatory cytokines. Systemically, cardiovascular effects result from fluid loss and sequestration into third space (burn shock). Marked catabolic response increases metabolic rate. Immunosuppression is common with large burns. Bacterial translocation from gut lumen occurs. Loss of skin barrier function leads to fluid and heat loss, increased infection risk. Sepsis is most common cause of death following major burns."
     },
     "recognition": {
       "symptoms": [
-        "Pain",
-        "Swelling",
-        "Redness",
-        "Blistering",
-        "Peeling skin",
-        "Itching"
+        "Pain (varies with depth - superficial very painful, full thickness painless)",
+        "Blistering (partial thickness burns)",
+        "Sensation changes (reduced or absent in deep burns)",
+        "Dyspnoea/hoarseness (inhalation injury)",
+        "Muscle pain/dark urine (electrical burns with rhabdomyolysis)",
+        "Thirst, nausea, confusion (hypovolemia in large burns)"
       ],
       "signs": [
-        "Erythema",
-        "Blisters",
-        "Eschar formation",
-        "Swelling",
-        "Hypo/hyperpigmentation"
-      ],
-      "atypicalPresentations": [
-        "Delayed onset of symptoms (chemical burns)",
-        "Inhalation injury (singed nasal hairs, hoarseness)",
-        "Electrical burns may not show external signs"
-      ],
-      "redFlags": [
-        "Burns covering more than 10% of total body surface area (TBSA)",
-        "Burns on face, hands, feet, genitalia, or major joints",
-        "Inhalation injury",
-        "Electrical burns",
-        "Chemical burns with unknown substances"
+        "Superficial epidermal: Red, painful, dry, no blisters, blanches (like sunburn)",
+        "Partial thickness superficial dermal: Pale pink, painful, blistered, moist, slow capillary refill, blanches",
+        "Partial thickness deep dermal: White with patches of non-blanching erythema, reduced sensation, painful to deep pressure, mottled",
+        "Full thickness: White ('waxy'), brown ('leathery'), or black, no blisters, no pain, does not blanch, may see thrombosed vessels",
+        "Inhalation injury: Singed nasal hairs, soot in mouth/nose, hoarseness, stridor, facial burns",
+        "Circumferential burns: Tense swelling, reduced pulses, capillary refill >2s, paraesthesia"
       ]
     },
     "investigation": {
-      "firstLine": [
-        "Clinical assessment of burn depth and extent",
-        "Vital signs monitoring",
-        "Fluid resuscitation assessment"
+      "bedside": [
+        "Assessment of burn depth (superficial epidermal, partial thickness superficial/deep, full thickness)",
+        "Wallace's Rule of Nines (adults): Head+neck=9%, each arm=9%, each anterior/posterior leg=9%, anterior/posterior chest=9%, anterior/posterior abdomen=9%, perineum=1%",
+        "Lund and Browder chart - most accurate, especially children",
+        "Palmar surface method: Palm=1% TBSA (accurate only for burns <15% TBSA)",
+        "ECG if electrical burn",
+        "Urine output monitoring (catheterize if >15% TBSA adults or >10% TBSA children)",
+        "Carboxyhaemoglobin if smoke inhalation",
+        "Blood glucose"
       ],
-      "secondLine": [
-        "Laboratory tests (CBC, electrolytes, renal function)",
-        "Imaging if fractures or foreign bodies are suspected"
+      "laboratory": [
+        "For major burns (>15% TBSA adults, >10% TBSA children): FBC, U&E, creatinine, glucose, LFTs, coagulation screen",
+        "Arterial blood gas (inhalation injury - hypoxia, CO poisoning, acidosis)",
+        "Lactate (tissue perfusion)",
+        "CK and myoglobin if electrical burn or rhabdomyolysis",
+        "Group and save/crossmatch",
+        "Wound swabs only if signs of infection"
       ],
-      "specialistTests": [
-        "Referral to a burn unit for severe burns",
-        "Wound cultures if infection is suspected"
+      "imaging": [
+        "Chest X-ray if inhalation injury (may be normal initially)",
+        "CT if associated trauma",
+        "Bronchoscopy if significant inhalation injury"
       ]
     },
     "diagnosis": {
-      "criteria": "Diagnosis is based on clinical assessment of burn depth (first, second, third degree) and total body surface area (TBSA) affected, using the Rule of Nines or Lund and Browder chart.",
+      "criteria": "Clinical diagnosis based on: 1) Mechanism (thermal, chemical, electrical, radiation, friction); 2) Depth (superficial epidermal, partial thickness superficial/deep dermal, full thickness); 3) Extent (%TBSA using Rule of Nines, Lund and Browder, or palmar method); 4) Location (face, hands, feet, perineum, genitalia, joints, circumferential); 5) Associated injuries (inhalation, trauma, NAI).",
       "differentials": [
-        "Friction burns",
-        "Chemical burns",
-        "Electrical burns",
-        "Frostbite",
-        "Skin infections (cellulitis)"
+        "Toxic epidermal necrolysis/Stevens-Johnson syndrome - drug-induced, widespread blistering",
+        "Staphylococcal scalded skin syndrome - children, superficial desquamation",
+        "Necrotising fasciitis - rapid progression, systemic toxicity, crepitus",
+        "Cellulitis/erysipelas - erythema without blistering",
+        "Fixed drug eruption - bullous lesions at same sites",
+        "Non-accidental injury - inconsistent history, unusual pattern, delayed presentation"
       ]
     },
     "management": {
       "acute": {
         "firstLine": [
-          "Cool the burn with running water for at least 10-20 minutes",
-          "Cover the burn with a sterile, non-adhesive dressing",
-          "Pain management (e.g., paracetamol, ibuprofen)",
-          "Fluid resuscitation (Parkland formula for >10% TBSA)"
+          "IMMEDIATE FIRST AID: ABCDE approach",
+          "Remove from source: Heat - remove person/clothing; Electrical - switch off power first; Chemical - brush off powder then irrigate",
+          "Cool burn with cool (not iced) water for 10-30 minutes within 20 minutes of injury",
+          "Cover with cling film (layered, not wrapped circumferentially) or non-adherent dressing",
+          "Analgesia: IV morphine 5-10mg for severe burns, oral paracetamol/ibuprofen for minor",
+          "AIRWAY: Early intubation if deep facial/neck burns, oropharyngeal edema, stridor, hoarseness, respiratory distress, soot in mouth, declining consciousness",
+          "100% oxygen if inhalation injury or CO poisoning",
+          "FLUID RESUSCITATION (>15% TBSA adults, >10% TBSA children): Parkland formula = TBSA% × Weight(kg) × 4mL over 24hr, half in first 8hr from time of burn",
+          "Use Hartmann's solution, titrate to urine output 0.5-1 mL/kg/hr adults, 1 mL/kg/hr children",
+          "Insert urinary catheter and two large-bore IV cannulae"
         ],
         "secondLine": [
-          "Topical antibiotics (e.g., silver sulfadiazine)",
-          "Tetanus prophylaxis if indicated"
+          "Nasogastric tube if burns >20% TBSA",
+          "Tetanus prophylaxis if incomplete vaccination",
+          "Escharotomy if circumferential full thickness burns causing limb compartment syndrome or impaired ventilation",
+          "Treat associated injuries"
         ],
-        "procedures": [
-          "Debridement of necrotic tissue",
-          "Skin grafting for deep burns"
+        "emergency": [
+          "Escharotomy: Division of encasing full thickness burn to relieve compartment syndrome (limbs) or improve ventilation (torso)",
+          "Performed at bedside without anesthesia (full thickness = no sensation)",
+          "Incisions along medial/lateral aspects of limbs or anterior axillary lines for torso"
         ]
       },
       "chronic": {
         "firstLine": [
-          "Wound care and dressing changes",
-          "Physical therapy to prevent contractures"
+          "MINOR BURNS: Superficial epidermal - symptomatic relief with analgesia and emollients",
+          "Superficial dermal (<3% TBSA adults, <2% TBSA children, not special areas): Cleanse with sterile saline, leave blisters intact, non-adherent dressing, review in 24 hours",
+          "Re-dress every 2-3 days, should heal within 2 weeks",
+          "Avoid topical antibiotics (no evidence of benefit)",
+          "CONSERVATIVE (burns unit): Non-adherent dressings, nutritional support (high calorie/protein), physiotherapy, psychological support",
+          "For superficial and mixed burns expected to heal within 2 weeks"
         ],
         "secondLine": [
-          "Surgical intervention for scar management (e.g., laser therapy)"
-        ],
-        "monitoring": [
-          "Regular follow-up for infection signs and healing progress",
-          "Psychosocial support for burn survivors"
+          "SURGICAL (burns unit): Excision and skin grafting for deep dermal/full thickness burns not healing within 2-3 weeks",
+          "Early excision (3-7 days) improves outcomes",
+          "Split-thickness or full-thickness skin grafts",
+          "Scar management: Pressure garments, laser therapy, silicone sheets, steroid injections",
+          "Reconstructive surgery for contractures",
+          "NO antimicrobial prophylaxis or routine topical antibiotics - no evidence of benefit"
         ]
       },
-      "drugs": [
-        {
-          "name": "Paracetamol",
-          "mechanism": "Analgesic and antipyretic",
-          "dosing": "500-1000 mg every 4-6 hours, max 4g/day",
-          "sideEffects": "Liver toxicity in overdose",
-          "notes": "First-line for mild to moderate pain."
-        },
-        {
-          "name": "Ibuprofen",
-          "mechanism": "Non-steroidal anti-inflammatory drug (NSAID)",
-          "dosing": "400-600 mg every 6-8 hours, max 2400 mg/day",
-          "sideEffects": "Gastrointestinal upset, renal impairment",
-          "notes": "Useful for pain and inflammation."
-        },
-        {
-          "name": "Silver sulfadiazine",
-          "mechanism": "Topical antimicrobial",
-          "dosing": "Apply 1-2 times daily to burn area",
-          "sideEffects": "Local irritation, allergic reactions",
-          "notes": "Effective for preventing infection in partial-thickness burns."
-        }
+      "referral": [
+        "All deep dermal and full thickness burns",
+        "Superficial dermal >3% TBSA (adults) or >2% TBSA (children)",
+        "Burns involving face, hands, feet, perineum, genitalia, flexures, or circumferential",
+        "Any inhalation injury",
+        "Any electrical or chemical burn",
+        "Extremes of age with significant burns",
+        "Associated trauma",
+        "Suspicion of non-accidental injury",
+        "Pre-existing conditions complicating management"
       ],
-      "procedures": [
-        {
-          "name": "Debridement",
-          "description": "Surgical removal of necrotic tissue to promote healing",
-          "indications": "Deep burns, infected wounds",
-          "risks": "Bleeding, infection, pain"
-        },
-        {
-          "name": "Skin grafting",
-          "description": "Transplantation of skin to cover burn areas",
-          "indications": "Full-thickness burns, large surface area burns",
-          "risks": "Graft failure, infection, scarring"
-        }
+      "admission": [
+        "All patients meeting referral criteria",
+        "Burns requiring IV fluid resuscitation (>15% TBSA adults, >10% TBSA children)",
+        "Inhalation injury",
+        "Inability to manage pain",
+        "Safeguarding concerns"
       ]
     },
-    "prognosis": "Prognosis depends on burn depth, TBSA affected, and presence of inhalation injury. Superficial burns heal well, while deep burns may require extensive treatment and can lead to complications.",
-    "complications": [
-      "Infection",
-      "Scarring and contractures",
-      "Hypovolemia and shock",
-      "Psychological impact (PTSD, depression)"
+    "complications": {
+      "common": [
+        "Infection (most common) - Staph aureus, Pseudomonas",
+        "Hypertrophic scarring and contractures (especially if healing >3 weeks)",
+        "Pruritus during healing",
+        "Psychological complications (PTSD, anxiety, depression)",
+        "Hypothermia",
+        "Metabolic derangements (hyperglycemia, electrolyte imbalances)"
+      ],
+      "serious": [
+        "Burn shock - hypovolemia leading to AKI and multi-organ failure",
+        "ARDS from inhalation injury",
+        "Sepsis and multi-organ failure",
+        "Compartment syndrome",
+        "Rhabdomyolysis (electrical burns) causing AKI",
+        "Carbon monoxide poisoning",
+        "Disseminated intravascular coagulation",
+        "Curling's ulcer (stress ulceration)",
+        "Death (Baux score: age + %TBSA predicts mortality)"
+      ]
+    },
+    "prescribing": [
+      {
+        "drug": "Morphine 5-10mg IV (titrate)",
+        "details": "Opioid for severe burn pain. SE: Respiratory depression, hypotension, nausea. CI: Respiratory depression. Monitor: Respiratory rate, BP, sedation. Give 2-5mg increments every 5 minutes. Naloxone for reversal."
+      },
+      {
+        "drug": "Paracetamol 1g QDS PO/IV",
+        "details": "Mild-moderate pain. SE: Hepatotoxicity in overdose. CI: Hepatic impairment (reduce dose). Max 4g/24hr."
+      },
+      {
+        "drug": "Ibuprofen 400mg TDS PO",
+        "details": "NSAID for pain/inflammation. SE: GI upset, bleeding, renal impairment. CI: Active GI bleeding, severe renal/hepatic impairment. Caution in hypovolemia."
+      },
+      {
+        "drug": "Hartmann's solution (Ringer's lactate)",
+        "details": "Crystalloid for resuscitation. Preferred over 0.9% saline. Use Parkland formula. Monitor: Urine output, vital signs, electrolytes."
+      },
+      {
+        "drug": "Tetanus toxoid 0.5mL IM",
+        "details": "If incomplete vaccination or last dose >10 years (>5 years for tetanus-prone wounds). SE: Local reaction, rare anaphylaxis."
+      }
     ],
-    "foundationDoctorRole": "Foundation doctors should perform initial assessments, manage acute care, and refer to specialists as needed. They should also provide education on burn prevention and care.",
-    "escalation": "Refer to a burn unit for burns covering >10% TBSA, burns on critical areas (face, hands, feet), or any signs of inhalation injury.",
-    "keySafetyConsiderations": "Ensure proper hand hygiene when managing burns, monitor for signs of infection, and provide adequate pain relief. Educate patients on wound care and signs of complications."
+    "prognosis": {
+      "course": "Superficial epidermal: Heal 5-7 days without scarring. Partial thickness superficial: 2-3 weeks, minimal scarring. Partial thickness deep: 3-8 weeks, may scar, often need grafting. Full thickness: Won't heal without surgery. Baux score (age + %TBSA) predicts mortality: >100 = ~50% mortality. Children better prognosis than elderly.",
+      "followUp": "Minor burns: Review at 24hr, then every 2-3 days until healed. Burns unit: Weekly initially, then monthly. Physiotherapy/OT essential. Pressure garments 12-18 months. Screen for PTSD. Long-term surveillance for contractures and malignant change (Marjolin's ulcer).",
+      "redFlags": [
+        "Signs of infection: Increased pain, purulent discharge, spreading erythema, fever",
+        "Respiratory deterioration (ARDS, pneumonia)",
+        "Reduced urine output (AKI)",
+        "Confusion/agitation (hypoxia, sepsis)",
+        "Compartment syndrome: Pain out of proportion, tense swelling, reduced pulses",
+        "Non-healing wounds"
+      ]
+    },
+    "patientInfo": {
+      "keyPoints": [
+        "Minor burns usually heal well within 2-3 weeks with appropriate care",
+        "Severe burns may require surgery (skin grafts) and prolonged rehabilitation",
+        "Scarring common with deeper burns - minimize with treatment and scar management",
+        "Watch for infection: Increased pain, discharge, spreading redness, fever",
+        "Sun protection essential for healing burns and scars (1+ year) - SPF 50+, cover up",
+        "Regular moisturization and physiotherapy exercises crucial",
+        "Psychological impact normal - seek help if needed"
+      ],
+      "lifestyle": [
+        "Avoid sun exposure to healing burns and new scars (12-18 months)",
+        "Regular moisturization with simple unperfumed emollients",
+        "Gentle scar massage to soften",
+        "Pressure garments 23 hours/day for 12-18 months if advised",
+        "Regular physiotherapy exercises to maintain range of motion",
+        "High protein, high calorie diet",
+        "Adequate hydration",
+        "Avoid smoking (impairs healing)",
+        "Gradual return to normal activities"
+      ],
+      "resources": [
+        "Changing Faces: www.changingfaces.org.uk, 0300 012 0275",
+        "Dan's Fund for Burns: www.dansfundforburns.org",
+        "British Burn Association: www.britishburnassociation.org/patients",
+        "NHS burns information: www.nhs.uk/conditions/burns-and-scalds",
+        "Children's Burns Trust: www.cbtrust.org.uk",
+        "Local burns unit patient support services"
+      ]
+    },
+    "evidence": {
+      "guidelines": [
+        "National Network for Burn Care: National Burn Care Referral Guidance (2012, updated 2018)",
+        "International Society for Burn Injuries: Practice Guidelines for Burn Care (2016)",
+        "Advanced Burn Life Support (ABLS) Course Manual - American Burn Association",
+        "NICE Clinical Knowledge Summary: Burns and scalds (2020)",
+        "British Burn Association: Standards and Strategy for Burn Care (2018)"
+      ],
+      "recommendations": [
+        "Immediate first aid: Remove from source, cool with water 10-30 min (within 20 min), cover with cling film",
+        "Assess TBSA: Wallace's Rule of Nines (adults) or Lund and Browder (children, most accurate)",
+        "Assess depth: Superficial epidermal, partial thickness (superficial/deep), full thickness",
+        "Refer: All deep dermal/full thickness; superficial dermal >3% TBSA (adults)/>2% TBSA (children); special areas; inhalation/electrical/chemical; NAI",
+        "Fluid resuscitation: Parkland formula (TBSA% × Weight kg × 4mL/24hr, half in first 8hr) for >15% TBSA adults/>10% TBSA children",
+        "Low threshold for early intubation if airway compromise",
+        "Leave blisters intact, non-adherent dressings, avoid routine topical antibiotics",
+        "No antimicrobial prophylaxis - no evidence of benefit",
+        "Conservative for burns healing <2 weeks; excision and grafting for deep burns",
+        "Escharotomy for circumferential full thickness burns causing compartment syndrome/respiratory compromise"
+      ]
+    }
   }
 }
