@@ -1,0 +1,157 @@
+{
+  "id": "dermatology_overview",
+  "name": "Dermatology Overview",
+  "domains": [
+    "Dermatology"
+  ],
+  "generatedAt": "2025-12-17T19:27:52.870112",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Dermatology Overview: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nDermatology covers inflammatory, infectious, neoplastic, autoimmune, and vascular disorders of skin, hair, nails, and mucous membranes. Initial management focuses on pattern recognition, morphology, distribution, and risk stratification for systemic illness or malignancy.\n\n### Epidemiology\nSkin conditions account for a large proportion of primary care and emergency presentations. Eczema, acne, and infections dominate benign disease, while melanoma and non-melanoma skin cancers drive urgent referral pathways.\n\n### Essential Pathophysiology\nMost dermatoses reflect one or more of: barrier dysfunction (eczema), immune dysregulation (psoriasis, autoimmune blistering disease), infection (bacterial, viral, fungal, parasitic), or UV-driven DNA damage (actinic keratosis, SCC, melanoma).\n\n## 2. RECOGNITION\n\n### Classical Presentations (Pattern Recognition)\n- **Eczematous**: pruritic erythema, scale, lichenification, flexural or exposure-related distribution.\n- **Psoriasiform**: well-demarcated plaques, silvery scale, extensor surfaces or scalp; possible nail pitting.\n- **Urticarial**: transient, blanching wheals (<24h), intensely itchy; angioedema may coexist.\n- **Infective**: impetigo with honey-crusts; cellulitis with warmth and tenderness; dermatophyte with annular scale; herpes zoster with dermatomal vesicles.\n- **Blistering**: tense bullae (bullous pemphigoid) vs flaccid bullae/erosions with mucosal involvement (pemphigus vulgaris).\n- **Pigmented lesions**: evolving asymmetry, border irregularity, color variegation, diameter >6 mm, evolving change (ABCDE).\n\n### Key Symptoms\n- Pruritus, pain, burning, or tenderness\n- New or changing lesion\n- Systemic symptoms (fever, malaise, weight loss)\n- Mucosal involvement\n\n### Key Signs\n- Lesion morphology (macules, papules, plaques, vesicles, bullae, pustules)\n- Distribution (flexural, extensor, dermatomal, sun-exposed, acral)\n- Associated findings (nail changes, scalp involvement, lymphadenopathy)\n\n### Red Flags Requiring Immediate Action\n- Suspected melanoma or rapidly changing pigmented lesion\n- Extensive blistering or mucosal involvement (SJS/TEN)\n- Necrotizing infection, rapidly progressive erythema, or severe pain\n- Erythroderma with systemic instability\n- Immunocompromised patient with fever and rash\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Full skin examination with lesion photography\n- Dermoscopy for pigmented lesions or non-melanoma skin cancer\n- Bedside microscopy (KOH) for fungal infection\n- Swab for bacterial culture when purulent or crusted\n\n### Second-line Investigations\n- Skin biopsy for atypical, persistent, or malignant-looking lesions\n- Patch testing for suspected allergic contact dermatitis\n- Blood tests (FBC, CRP, LFTs, U&E) if systemic features or before systemic therapy\n\n### Imaging and Specialist Tests\n- Ultrasound for suspected abscess or deep soft tissue infection\n- MRI/CT for necrotizing infection, deep tissue involvement, or metastatic disease\n- Direct immunofluorescence for autoimmune blistering disease\n\n## 4. DIAGNOSIS\n\n### Diagnostic Approach\nDiagnosis is largely clinical, integrating morphology, distribution, and symptom timing. Use dermoscopy or biopsy when malignancy is possible or morphology is atypical.\n\n### Key Differential Diagnoses to Exclude\n- Eczema vs tinea vs psoriasis\n- Urticaria vs urticarial vasculitis\n- Drug eruption vs viral exanthem\n- Melanoma vs benign naevus\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care: analgesia, antipruritic measures, emollients\n- High-potency topical corticosteroids for severe inflammatory flares (site-appropriate)\n- Empirical antibiotics for cellulitis where indicated\n\n#### Second-line Treatments\n- Systemic corticosteroids or immunosuppressants for severe inflammatory disease\n- IV antibiotics for systemic infection or rapidly progressive cellulitis\n- Urgent referral to dermatology/plastics for suspected malignancy or severe blistering\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular emollients for barrier repair\n- Topical corticosteroids or calcineurin inhibitors for inflammatory disease\n- Sun protection and skin surveillance for cancer prevention\n\n#### Second-line Treatments\n- Phototherapy for psoriasis, eczema, or pruritus\n- Systemic agents (methotrexate, ciclosporin, retinoids) for severe disease\n- Biologics for refractory psoriasis or inflammatory dermatoses\n\n#### Monitoring Requirements\n- Monitor for steroid side effects, infection risk, and treatment response\n- Blood monitoring for systemic agents (FBC, LFTs, renal function)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Topical corticosteroids\n- **Mechanism of Action**: Anti-inflammatory, immunosuppressive\n- **Typical Dosing Range**: Once or twice daily; potency matched to site\n- **Key Side Effects/Contraindications**: Skin atrophy, striae, perioral dermatitis\n- **When to Use vs. Alternatives**: First-line for inflammatory dermatoses\n\n#### Topical calcineurin inhibitors (tacrolimus/pimecrolimus)\n- **Mechanism of Action**: T-cell inhibition\n- **Typical Dosing Range**: Apply twice daily\n- **Key Side Effects/Contraindications**: Burning sensation, local irritation\n- **When to Use vs. Alternatives**: Steroid-sparing, ideal for face/flexures\n\n#### Oral antihistamines\n- **Mechanism of Action**: H1 receptor blockade to reduce itch\n- **Typical Dosing Range**: Standard or up-titrated non-sedating agents\n- **Key Side Effects/Contraindications**: Sedation (older agents)\n- **When to Use vs. Alternatives**: First-line for urticaria\n\n#### Oral antibiotics (e.g., flucloxacillin, doxycycline)\n- **Mechanism of Action**: Antibacterial agents against skin pathogens\n- **Typical Dosing Range**: As per local guidelines and severity\n- **Key Side Effects/Contraindications**: GI upset, photosensitivity (tetracyclines)\n- **When to Use vs. Alternatives**: Cellulitis, impetigo, acne if indicated\n\n### Procedures\n\n#### Skin biopsy\n- **What it Involves**: Punch or excisional biopsy for histology\n- **Indications**: Atypical lesions, suspected malignancy, uncertain diagnosis\n- **Key Risks/Complications**: Bleeding, infection, scarring\n\n#### Cryotherapy\n- **What it Involves**: Liquid nitrogen application\n- **Indications**: Actinic keratosis, viral warts, small benign lesions\n- **Key Risks/Complications**: Hypopigmentation, blistering\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost inflammatory dermatoses are chronic-relapsing but controllable with stepwise therapy. Early recognition of malignancy improves outcomes.\n\n### Important Complications to Watch For\n- Secondary infection of eczematous skin\n- Scarring or pigmentary change\n- Treatment-related toxicity (systemic agents)\n- Missed malignancy or delayed diagnosis\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform comprehensive skin exams, start first-line therapies, provide safety-netting, and recognize when escalation is required.\n\n### When to Escalate to Senior/Specialist\nEscalate for suspected skin cancer, severe blistering or necrosis, systemic illness, or treatment failure.\n\n### Key Safety Considerations\nAvoid overuse of potent topical steroids in thin skin, check drug allergies, and document lesion evolution with photographs.\n",
+  "content": {
+    "overview": {
+      "definition": "Dermatology covers inflammatory, infectious, neoplastic, autoimmune, and vascular disorders of skin, hair, nails, and mucous membranes. Initial management focuses on pattern recognition, morphology, distribution, and risk stratification for systemic illness or malignancy.",
+      "epidemiology": "Skin conditions account for a large proportion of primary care and emergency presentations. Eczema, acne, and infections dominate benign disease, while melanoma and non-melanoma skin cancers drive urgent referral pathways.",
+      "pathophysiology": "Most dermatoses reflect one or more of: barrier dysfunction (eczema), immune dysregulation (psoriasis, autoimmune blistering disease), infection (bacterial, viral, fungal, parasitic), or UV-driven DNA damage (actinic keratosis, SCC, melanoma)."
+    },
+    "recognition": {
+      "symptoms": [
+        "Pruritus, pain, burning, or tenderness",
+        "New or changing lesion",
+        "Systemic symptoms (fever, malaise, weight loss)",
+        "Mucosal involvement"
+      ],
+      "signs": [
+        "Lesion morphology (macules, papules, plaques, vesicles, bullae, pustules)",
+        "Distribution (flexural, extensor, dermatomal, sun-exposed, acral)",
+        "Associated findings (nail changes, scalp involvement, lymphadenopathy)"
+      ],
+      "atypicalPresentations": [
+        "Eczematous mimics including tinea and psoriasis",
+        "Drug eruptions with morbilliform or urticarial patterns",
+        "Pigmented lesions with subtle ABCDE changes"
+      ],
+      "redFlags": [
+        "Suspected melanoma or rapidly changing pigmented lesion",
+        "Extensive blistering or mucosal involvement (SJS/TEN)",
+        "Necrotizing infection, rapidly progressive erythema, or severe pain",
+        "Erythroderma with systemic instability",
+        "Immunocompromised patient with fever and rash"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Full skin examination with lesion photography",
+        "Dermoscopy for pigmented lesions or non-melanoma skin cancer",
+        "Bedside microscopy (KOH) for fungal infection",
+        "Swab for bacterial culture when purulent or crusted"
+      ],
+      "secondLine": [
+        "Skin biopsy for atypical, persistent, or malignant-looking lesions",
+        "Patch testing for suspected allergic contact dermatitis",
+        "Blood tests (FBC, CRP, LFTs, U&E) if systemic features or before systemic therapy"
+      ],
+      "specialistTests": [
+        "Ultrasound for suspected abscess or deep soft tissue infection",
+        "MRI/CT for necrotizing infection, deep tissue involvement, or metastatic disease",
+        "Direct immunofluorescence for autoimmune blistering disease"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is largely clinical, integrating morphology, distribution, and symptom timing. Use dermoscopy or biopsy when malignancy is possible or morphology is atypical.",
+      "differentials": [
+        "Eczema vs tinea vs psoriasis",
+        "Urticaria vs urticarial vasculitis",
+        "Drug eruption vs viral exanthem",
+        "Melanoma vs benign naevus"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care: analgesia, antipruritic measures, emollients",
+          "High-potency topical corticosteroids for severe inflammatory flares (site-appropriate)",
+          "Empirical antibiotics for cellulitis where indicated"
+        ],
+        "secondLine": [
+          "Systemic corticosteroids or immunosuppressants for severe inflammatory disease",
+          "IV antibiotics for systemic infection or rapidly progressive cellulitis",
+          "Urgent referral to dermatology/plastics for suspected malignancy or severe blistering"
+        ],
+        "procedures": [
+          "Urgent skin biopsy for suspected malignancy",
+          "Incision and drainage for abscesses after imaging if required"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular emollients for barrier repair",
+          "Topical corticosteroids or calcineurin inhibitors for inflammatory disease",
+          "Sun protection and skin surveillance for cancer prevention"
+        ],
+        "secondLine": [
+          "Phototherapy for psoriasis, eczema, or pruritus",
+          "Systemic agents (methotrexate, ciclosporin, retinoids) for severe disease",
+          "Biologics for refractory psoriasis or inflammatory dermatoses"
+        ],
+        "monitoring": [
+          "Monitor for steroid side effects, infection risk, and treatment response",
+          "Blood monitoring for systemic agents (FBC, LFTs, renal function)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Topical corticosteroids",
+          "mechanism": "Anti-inflammatory, immunosuppressive",
+          "dosing": "Once or twice daily; potency matched to site",
+          "sideEffects": "Skin atrophy, striae, perioral dermatitis",
+          "notes": "First-line for inflammatory dermatoses"
+        },
+        {
+          "name": "Topical calcineurin inhibitors (tacrolimus/pimecrolimus)",
+          "mechanism": "T-cell inhibition",
+          "dosing": "Apply twice daily",
+          "sideEffects": "Burning sensation, local irritation",
+          "notes": "Steroid-sparing, ideal for face/flexures"
+        },
+        {
+          "name": "Oral antihistamines",
+          "mechanism": "H1 receptor blockade to reduce itch",
+          "dosing": "Standard or up-titrated non-sedating agents",
+          "sideEffects": "Sedation (older agents)",
+          "notes": "First-line for urticaria"
+        },
+        {
+          "name": "Oral antibiotics (e.g., flucloxacillin, doxycycline)",
+          "mechanism": "Antibacterial agents against skin pathogens",
+          "dosing": "As per local guidelines and severity",
+          "sideEffects": "GI upset, photosensitivity (tetracyclines)",
+          "notes": "Cellulitis, impetigo, acne if indicated"
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Skin biopsy",
+          "description": "Punch or excisional biopsy for histology",
+          "indications": "Atypical lesions, suspected malignancy, uncertain diagnosis",
+          "risks": "Bleeding, infection, scarring"
+        },
+        {
+          "name": "Cryotherapy",
+          "description": "Liquid nitrogen application",
+          "indications": "Actinic keratosis, viral warts, small benign lesions",
+          "risks": "Hypopigmentation, blistering"
+        }
+      ]
+    },
+    "prognosis": "Most inflammatory dermatoses are chronic-relapsing but controllable with stepwise therapy. Early recognition of malignancy improves outcomes.",
+    "complications": [
+      "Secondary infection of eczematous skin",
+      "Scarring or pigmentary change",
+      "Treatment-related toxicity (systemic agents)",
+      "Missed malignancy or delayed diagnosis"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform comprehensive skin exams, start first-line therapies, provide safety-netting, and recognize when escalation is required.",
+    "escalation": "Escalate for suspected skin cancer, severe blistering or necrosis, systemic illness, or treatment failure.",
+    "keySafetyConsiderations": "Avoid overuse of potent topical steroids in thin skin, check drug allergies, and document lesion evolution with photographs."
+  }
+}

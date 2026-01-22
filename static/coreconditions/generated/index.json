@@ -1,7 +1,7 @@
 {
   "generatedAt": "2025-12-17T23:02:39.679696",
-  "totalConditions": 542,
-  "processedCount": 542,
+  "totalConditions": 543,
+  "processedCount": 543,
   "model": "gpt-4o-mini",
   "conditions": [
     {
@@ -1279,6 +1279,15 @@
         "Care of the Elderly"
       ],
       "filename": "dementia.json",
+      "processed": true
+    },
+    {
+      "id": "dermatology_overview",
+      "name": "Dermatology Overview",
+      "domains": [
+        "Dermatology"
+      ],
+      "filename": "dermatology_overview.json",
       "processed": true
     },
     {
