@@ -225,14 +225,14 @@ export class GlobalSearchManager {
      * Execute category searches in parallel
      */
     async performSearch(query) {
-        // Order determines group rendering order in the UI. Adjusted to:
-        // PDFs -> Guidelines -> Differential -> Drugs -> Calculators -> ...
+        // Order determines group rendering order in the UI.
+        // Core Conditions -> Drugs -> PDFs -> remaining sections.
         const operations = [
+            this.buildCoreConditionResults(query),
+            this.buildDrugResults(query),
             this.buildPdfResults(query),
             this.buildGuidelineResults(query),
             this.buildDifferentialResults(query),
-            this.buildCoreConditionResults(query),
-            this.buildDrugResults(query),
             this.buildCalculatorResults(query),
             this.buildLabResults(query),
             this.buildProcedureResults(query),
@@ -452,7 +452,8 @@ export class GlobalSearchManager {
         if (!matches.length) return null;
 
         const limit = this.options.limits.coreConditions || this.options.defaultLimit;
-        const mapped = matches.slice(0, limit).map(condition => ({
+        const ranked = this.rankMatches(matches, query, condition => condition.name || '');
+        const mapped = ranked.slice(0, limit).map(condition => ({
             title: condition.name,
             subtitle: (condition.domains || []).join(' • ') || 'Core condition',
             badge: 'Condition',
@@ -504,6 +505,7 @@ export class GlobalSearchManager {
             icon: '🪜',
             limit: this.options.limits.ladders || this.options.defaultLimit,
             searchFn,
+            query,
             mapFn: (ladder) => ({
                 title: ladder.title || ladder.name || ladder.key,
                 subtitle: ladder.description || ladder.summary || '',
@@ -541,7 +543,9 @@ export class GlobalSearchManager {
             label: 'Psychiatry',
             icon: '🧠',
             total: results.length,
-            matches: results.slice(0, limit).map(condition => ({
+            matches: this.rankMatches(results, query, condition => condition.title || '')
+                .slice(0, limit)
+                .map(condition => ({
                 title: condition.title,
                 subtitle: condition.summary || '',
                 badge: (condition.tags || [])[0] || 'Topic',
@@ -560,6 +564,7 @@ export class GlobalSearchManager {
             icon: '💊',
             limit: this.options.limits.drugs,
             searchFn: () => manager.searchDrugs(query),
+            query,
             mapFn: (drug) => ({
                 title: drug.name,
                 subtitle: drug.class,
@@ -578,6 +583,7 @@ export class GlobalSearchManager {
             icon: '🧮',
             limit: this.options.limits.calculators,
             searchFn: () => manager.searchCalculators(query),
+            query,
             mapFn: (calc) => ({
                 title: calc.name,
                 subtitle: calc.category,
@@ -596,6 +602,7 @@ export class GlobalSearchManager {
             icon: '🧪',
             limit: this.options.limits.labs,
             searchFn: () => manager.searchLabs(query),
+            query,
             mapFn: (result) => {
                 if (result.type === 'panel') {
                     return {
@@ -625,6 +632,7 @@ export class GlobalSearchManager {
             icon: '📋',
             limit: this.options.limits.guidelines,
             searchFn: () => manager.searchGuidelines(query),
+            query,
             mapFn: (guideline) => ({
                 title: guideline.title,
                 subtitle: guideline.organisation,
@@ -643,6 +651,7 @@ export class GlobalSearchManager {
             icon: '🧠',
             limit: this.options.limits.mnemonics,
             searchFn: () => this.searchMnemonicsDatabase(database, query),
+            query,
             mapFn: (item) => ({
                 title: item.mnemonic,
                 subtitle: item.title,
@@ -688,7 +697,8 @@ export class GlobalSearchManager {
             label: 'Ophthalmology',
             icon: '👁️',
             total: matches.length,
-            matches: matches.slice(0, limit)
+            matches: this.rankMatches(matches, query, match => match.title || '')
+                .slice(0, limit)
         };
     }
 
@@ -723,7 +733,8 @@ export class GlobalSearchManager {
             label: 'Anatomy',
             icon: '🩻',
             total: matches.length,
-            matches: matches.slice(0, limit)
+            matches: this.rankMatches(matches, query, match => match.title || '')
+                .slice(0, limit)
         };
     }
 
@@ -736,6 +747,7 @@ export class GlobalSearchManager {
             icon: '🔺',
             limit: this.options.limits.triads,
             searchFn: () => manager.searchTriads(query),
+            query,
             mapFn: (triad) => ({
                 title: triad.name,
                 subtitle: triad.condition,
@@ -755,6 +767,7 @@ export class GlobalSearchManager {
             icon: '🩺',
             limit: this.options.limits.differentials,
             searchFn: () => this.searchDifferentials(database, query),
+            query,
             mapFn: (item) => ({
                 title: item.title,
                 subtitle: item.subtitle,
@@ -774,6 +787,7 @@ export class GlobalSearchManager {
             icon: '🏥',
             limit: this.options.limits.procedures || this.options.defaultLimit,
             searchFn: () => manager.searchProcedures(query),
+            query,
             mapFn: (result) => ({
                 title: result.procedure?.name || result.name || 'Unnamed Procedure',
                 subtitle: result.procedure?.indication || result.indication || '',
@@ -813,7 +827,9 @@ export class GlobalSearchManager {
             label: 'Medical Stats & Ethics',
             icon: '📈',
             total: matches.length,
-            matches: matches.slice(0, limit).map(section => ({
+            matches: this.rankMatches(matches, query, section => section.title || '')
+                .slice(0, limit)
+                .map(section => ({
                 title: section.title,
                 subtitle: section.summary || section.badge || '',
                 badge: section.badge || 'Reference',
@@ -853,7 +869,9 @@ export class GlobalSearchManager {
             label: 'Clinical Pearls',
             icon: '💡',
             total: matches.length,
-            matches: matches.slice(0, limit).map(section => ({
+            matches: this.rankMatches(matches, query, section => section.title || '')
+                .slice(0, limit)
+                .map(section => ({
                 title: section.title,
                 subtitle: section.summary || '',
                 badge: section.badge || 'Pearls',
@@ -872,6 +890,7 @@ export class GlobalSearchManager {
             icon: '🩻',
             limit: this.options.limits.examinations,
             searchFn: () => manager.searchExaminations(query),
+            query,
             mapFn: (exam) => ({
                 title: exam.title,
                 subtitle: exam.category,
@@ -891,6 +910,7 @@ export class GlobalSearchManager {
             icon: '📊',
             limit: this.options.limits.interpretations,
             searchFn: () => this.searchInterpretationTools(data, query),
+            query,
             mapFn: (tool) => ({
                 title: tool.name,
                 subtitle: tool.category,
@@ -909,6 +929,7 @@ export class GlobalSearchManager {
             icon: '🚨',
             limit: this.options.limits.emergency,
             searchFn: () => manager.searchProtocols(query),
+            query,
             mapFn: (protocol) => ({
                 title: protocol.name,
                 subtitle: protocol.category,
@@ -928,6 +949,7 @@ export class GlobalSearchManager {
             icon: '📚',
             limit: this.options.limits.pdf,
             searchFn: () => manager.searchPDFs(query),
+            query,
             mapFn: (pdf) => ({
                 title: pdf.title,
                 subtitle: pdf.category,
@@ -982,7 +1004,7 @@ export class GlobalSearchManager {
         };
     }
 
-    async buildGroup({ id, label, icon, searchFn, mapFn, limit }) {
+    async buildGroup({ id, label, icon, searchFn, mapFn, limit, query }) {
         if (typeof searchFn !== 'function' || typeof mapFn !== 'function') {
             return null;
         }
@@ -991,16 +1013,34 @@ export class GlobalSearchManager {
             if (!Array.isArray(rawResults) || rawResults.length === 0) {
                 return null;
             }
-            const maxItems = limit || this.options.defaultLimit;
-            const matches = rawResults.slice(0, maxItems).map(item => {
+            const mappedResults = rawResults.map((item, index) => {
                 const mapped = mapFn(item);
                 if (!mapped) return null;
-                // Preserve key for follow-up actions
+                const score = this.getBestMatchScore(query, mapped.title, mapped.subtitle, mapped.meta);
                 return {
-                    ...mapped,
-                    icon: mapped.icon || icon
+                    mapped,
+                    score,
+                    index
                 };
             }).filter(Boolean);
+
+            if (!mappedResults.length) {
+                return null;
+            }
+
+            mappedResults.sort((a, b) => {
+                if (a.score !== b.score) return a.score - b.score;
+                const titleLengthA = (a.mapped.title || '').length;
+                const titleLengthB = (b.mapped.title || '').length;
+                if (titleLengthA !== titleLengthB) return titleLengthA - titleLengthB;
+                return a.index - b.index;
+            });
+
+            const maxItems = limit || this.options.defaultLimit;
+            const matches = mappedResults.slice(0, maxItems).map(({ mapped }) => ({
+                ...mapped,
+                icon: mapped.icon || icon
+            }));
 
             if (!matches.length) {
                 return null;
@@ -1035,6 +1075,52 @@ export class GlobalSearchManager {
             }
         });
         return results;
+    }
+
+    rankMatches(matches, query, getTitle) {
+        if (!Array.isArray(matches)) return [];
+        const normalizedQuery = this.normalizeQuery(query);
+        return matches
+            .map((item, index) => {
+                const title = getTitle?.(item) || '';
+                const score = this.getBestMatchScore(normalizedQuery, title);
+                return { item, score, index, titleLength: String(title || '').length };
+            })
+            .sort((a, b) => {
+                if (a.score !== b.score) return a.score - b.score;
+                if (a.titleLength !== b.titleLength) return a.titleLength - b.titleLength;
+                return a.index - b.index;
+            })
+            .map(entry => entry.item);
+    }
+
+    getBestMatchScore(query, ...fields) {
+        const normalizedQuery = this.normalizeQuery(query);
+        const scores = fields
+            .filter(value => value !== null && value !== undefined)
+            .map(value => this.getMatchScore(String(value), normalizedQuery));
+        if (!scores.length) return 5;
+        return Math.min(...scores);
+    }
+
+    getMatchScore(text, query) {
+        const normalizedText = String(text || '').toLowerCase();
+        const normalizedQuery = this.normalizeQuery(query);
+        if (!normalizedQuery) return 5;
+        if (normalizedText === normalizedQuery) return 0;
+        if (normalizedText.startsWith(normalizedQuery)) return 1;
+        const wordMatch = new RegExp(`\\b${this.escapeRegExp(normalizedQuery)}`);
+        if (wordMatch.test(normalizedText)) return 2;
+        if (normalizedText.includes(normalizedQuery)) return 3;
+        return 4;
+    }
+
+    normalizeQuery(query) {
+        return String(query || '').trim().toLowerCase();
+    }
+
+    escapeRegExp(value) {
+        return String(value).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     }
 
     searchInterpretationTools(database, query) {
