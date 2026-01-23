@@ -839,5 +839,559 @@ export const psychiatryLibrary = [
             'Support autonomy and agency; avoid coercive rescue which can mirror original trauma dynamics',
             'Coordinate with social services, domestic violence advocates, and legal support as needed'
         ]
+    },
+    {
+        id: 'catatonia',
+        title: 'Catatonia',
+        icon: '🧊',
+        tags: ['Emergency', 'Psychosis', 'Medical', 'High risk'],
+        summary: 'Psychomotor syndrome with stupor, mutism, rigidity, posturing or excitement; life-threatening if untreated.',
+        distinguishing: [
+            '≥3 of: stupor, catalepsy, waxy flexibility, mutism, negativism, posturing, mannerisms, stereotypy, agitation, grimacing, echolalia, echopraxia',
+            'Can occur in schizophrenia, bipolar, depression, medical conditions (encephalitis, stroke, metabolic), or drug-induced (antipsychotics)',
+            'Malignant catatonia: fever, autonomic instability, delirium - medical emergency with high mortality'
+        ],
+        firstLine: [
+            'Stop antipsychotics immediately if drug-induced suspected',
+            'Benzodiazepines: lorazepam 1-2mg IV/IM test dose (improvement in 5-10 minutes diagnostic); continue 2mg TDS-QDS',
+            'Monitor vitals, hydration, nutrition; DVT prophylaxis; treat underlying medical cause'
+        ],
+        secondLine: [
+            'ECT if benzodiazepines fail or malignant catatonia - often curative and life-saving',
+            'NMDA antagonists (amantadine 200-400mg/day, memantine) as adjuncts in specialist care',
+            'Restart antipsychotic cautiously once resolved if needed for psychosis'
+        ],
+        investigations: [
+            'Bush-Francis Catatonia Rating Scale for diagnosis and monitoring',
+            'CBC, CMP, CK (rhabdomyolysis), calcium, TFTs, LFTs, drug screen, blood cultures if febrile',
+            'Neuroimaging (CT/MRI), LP if encephalitis suspected; EEG for non-convulsive status epilepticus'
+        ],
+        crisis: [
+            'Malignant catatonia is psychiatric emergency - ICU transfer if autonomic instability, hyperthermia >38.5C, or rhabdomyolysis',
+            'Aspiration risk with stupor - NBM, NG tube if needed, airway protection',
+            'Immediate ECT if life-threatening; do not delay for consent in best interests'
+        ],
+        monitoring: [
+            'Continuous vitals monitoring in acute phase; daily CK and electrolytes',
+            'Bush-Francis scale daily; track oral intake, bowel movements, skin integrity',
+            'Taper benzodiazepines slowly once resolved to prevent recurrence'
+        ]
+    },
+    {
+        id: 'nms',
+        title: 'Neuroleptic malignant syndrome (NMS)',
+        icon: '🔥',
+        tags: ['Emergency', 'Medical', 'High risk', 'Iatrogenic'],
+        summary: 'Life-threatening reaction to antipsychotics with fever, rigidity, altered mental status, autonomic dysfunction; 10-20% mortality.',
+        distinguishing: [
+            'Tetrad: hyperthermia (>38C), lead-pipe rigidity, altered consciousness, autonomic instability (tachycardia, labile BP, diaphoresis)',
+            'Elevated CK (often >1000), leukocytosis; develops over 24-72 hours',
+            'Differentiate from serotonin syndrome (hyperreflexia, clonus, diarrhea), malignant catatonia, heat stroke, infection'
+        ],
+        firstLine: [
+            'STOP antipsychotic immediately; medical emergency - HDU/ICU admission',
+            'Supportive care: IV fluids, cooling, treat hyperthermia and rhabdomyolysis',
+            'Benzodiazepines for agitation and rigidity: lorazepam 1-2mg IV/IM; consider dantrolene 1-2.5mg/kg IV QDS or bromocriptine 2.5mg TDS PO'
+        ],
+        secondLine: [
+            'ECT if severe or refractory cases, especially with catatonic features',
+            'Dantrolene (muscle relaxant) 1-10mg/kg/day or bromocriptine (dopamine agonist) up to 45mg/day',
+            'Plasmapheresis or dialysis if severe renal failure from rhabdomyolysis'
+        ],
+        investigations: [
+            'CK (usually >1000, can be >10,000), CBC (leukocytosis), CMP (AKI from rhabdomyolysis), LFTs',
+            'Myoglobin, urine output (risk of ATN); blood cultures, LP if infection suspected',
+            'CT/MRI brain to exclude stroke, encephalitis; continuous cardiac monitoring'
+        ],
+        crisis: [
+            'ICU admission for autonomic instability, hyperthermia >40C, severe rigidity, or AKI',
+            'Aggressive IV hydration (6-12L/day) to prevent renal failure; urinary alkalinization if myoglobinuria',
+            'Intubate and ventilate if respiratory compromise; external cooling, avoid antipyretics alone'
+        ],
+        monitoring: [
+            'Continuous vitals, hourly neuro obs, strict fluid balance, daily CK until normalized',
+            'Monitor renal function, electrolytes, temperature; watch for DIC, aspiration pneumonia',
+            'Do not restart antipsychotic for 2 weeks minimum; if essential, use low-potency agent (quetiapine) at lowest dose with close monitoring'
+        ]
+    },
+    {
+        id: 'serotonin-syndrome',
+        title: 'Serotonin syndrome',
+        icon: '⚡',
+        tags: ['Emergency', 'Medical', 'High risk', 'Iatrogenic'],
+        summary: 'Potentially fatal condition from excess serotonergic activity; triad of mental status change, autonomic hyperactivity, neuromuscular abnormalities.',
+        distinguishing: [
+            'Hunter criteria: recent serotonergic agent PLUS (spontaneous clonus OR inducible clonus + agitation/diaphoresis OR ocular clonus + agitation/diaphoresis OR tremor + hyperreflexia OR hypertonia + temp>38C + ocular/inducible clonus)',
+            'Rapid onset (hours) after dose increase or drug combination (e.g., SSRI + tramadol, SSRI + MAOI)',
+            'Differentiate from NMS (slower onset, rigidity not clonus), anticholinergic toxicity, sympathomimetic toxicity'
+        ],
+        firstLine: [
+            'STOP all serotonergic agents immediately',
+            'Supportive care: IV fluids, benzodiazepines (diazepam 5-10mg IV) for agitation and muscle rigidity',
+            'Cooling measures if hyperthermic; monitor vitals closely'
+        ],
+        secondLine: [
+            'Cyproheptadine (5-HT antagonist) 12mg initial, then 2mg Q2H until improvement (max 32mg/day)',
+            'Intubation and paralysis with non-depolarizing agents if severe hyperthermia (>41C) or respiratory failure',
+            'Avoid succinylcholine (depolarizing) as can worsen hyperkalaemia from rhabdomyolysis'
+        ],
+        investigations: [
+            'Clinical diagnosis (no specific test); CK, CMP, ABG, lactate',
+            'Drug levels if applicable (lithium, TCAs); toxicology screen',
+            'CT head if altered consciousness or seizures; continuous cardiac monitoring (QT prolongation risk)'
+        ],
+        crisis: [
+            'Severe cases (temp >40C, seizures, rigidity): ICU admission, intubation, active cooling',
+            'Risk of rhabdomyolysis, DIC, renal failure, ARDS, death if untreated',
+            'Most resolve within 24 hours of stopping agents; MAOIs may take days due to long half-life'
+        ],
+        monitoring: [
+            'Continuous vitals, temperature, neuro obs until resolution',
+            'Monitor CK, renal function, electrolytes; watch for complications',
+            'Restart serotonergic agents only after complete resolution (usually 2 weeks); avoid combinations that precipitated syndrome'
+        ]
+    },
+    {
+        id: 'dementia',
+        title: 'Dementia (Alzheimer\'s, vascular, Lewy body, frontotemporal)',
+        icon: '🧠',
+        tags: ['Neurocognitive', 'Long-term', 'Geriatric'],
+        summary: 'Progressive cognitive decline affecting memory, executive function, language, visuospatial skills; impacts daily function.',
+        distinguishing: [
+            'Alzheimer\'s: insidious onset, prominent memory loss, gradual progression',
+            'Vascular: stepwise decline, focal deficits, vascular risk factors, MRI white matter changes',
+            'Lewy body: fluctuating cognition, visual hallucinations, parkinsonism, REM sleep disorder',
+            'Frontotemporal: early personality/behaviour change, disinhibition, language problems (semantic/non-fluent variants), younger onset (50-60s)'
+        ],
+        firstLine: [
+            'Comprehensive assessment: cognitive testing (MMSE, MoCA, ACE-III), functional assessment (ADLs), collateral history',
+            'Cholinesterase inhibitors for Alzheimer\'s/Lewy body: donepezil 5-10mg, rivastigmine 3-12mg, galantamine 8-24mg',
+            'Memantine (NMDA antagonist) 10-20mg for moderate-severe Alzheimer\'s or if cholinesterase inhibitors not tolerated'
+        ],
+        secondLine: [
+            'Combination donepezil + memantine for moderate-severe Alzheimer\'s',
+            'Antipsychotics ONLY if severe BPSD with risk (short course, lowest dose); prefer quetiapine/aripiprazole over haloperidol; AVOID in Lewy body (severe sensitivity)',
+            'SSRIs for depression/agitation: citalopram 10-20mg (caution QT), sertraline 25-100mg; avoid TCAs (anticholinergic)'
+        ],
+        investigations: [
+            'Bloods: FBC, CMP, TFTs, B12/folate, calcium, glucose, syphilis/HIV (if indicated)',
+            'Neuroimaging: MRI brain (atrophy patterns, vascular changes, exclude subdural, tumour); CT if MRI contraindicated',
+            'Specialist: CSF biomarkers (Aβ42, tau), PET amyloid/FDG, genetic testing if early onset/family history'
+        ],
+        crisis: [
+            'Delirium superimposed on dementia - common, worsens prognosis; treat underlying cause urgently',
+            'Severe BPSD with aggression - multidisciplinary review, consider safeguarding, brief antipsychotic if unavoidable',
+            'Wandering, getting lost - GPS trackers, safe return schemes, consider capacity for independent living'
+        ],
+        monitoring: [
+            'Cognitive and functional assessment every 6-12 months; earlier if rapid decline',
+            'Monitor cholinesterase inhibitor side effects: GI upset, bradycardia, syncope, nightmares',
+            'Driving assessment (DVLA notification in UK); legal planning (LPA, advanced directives) while capacity retained'
+        ]
+    },
+    {
+        id: 'autism',
+        title: 'Autism spectrum disorder (ASD)',
+        icon: '🧩',
+        tags: ['Neurodevelopmental', 'Long-term'],
+        summary: 'Persistent deficits in social communication and interaction with restricted, repetitive patterns of behaviour/interests; lifelong condition.',
+        distinguishing: [
+            'Social communication: difficulty with social-emotional reciprocity, non-verbal communication, developing/maintaining relationships',
+            'Restricted/repetitive: stereotyped movements, insistence on sameness, highly restricted interests, hyper/hypo-reactivity to sensory input',
+            'Symptoms present from early development (though may not manifest until social demands exceed capacities); not better explained by intellectual disability'
+        ],
+        firstLine: [
+            'Psychosocial interventions: social skills training, CBT adapted for autism, parent-mediated interventions (children)',
+            'Environmental modifications: reduce sensory overload, clear communication, routine/structure',
+            'No medication for core autism features; treat comorbidities (ADHD, anxiety, depression) as per guidelines'
+        ],
+        secondLine: [
+            'Melatonin 2-10mg for sleep difficulties (common in ASD)',
+            'SSRIs for anxiety/OCD (start low, go slow; increased sensitivity to side effects): sertraline 25-150mg, fluoxetine 10-40mg',
+            'Antipsychotics (risperidone 0.5-3mg, aripiprazole 5-15mg) for severe aggression/self-injury in specialist care only - risk vs benefit discussion'
+        ],
+        investigations: [
+            'Diagnostic assessment: ADOS-2, ADI-R, developmental/educational/occupational history, collateral from family/school/work',
+            'Screen comorbidities: ADHD (50% comorbidity), anxiety (40%), depression, epilepsy (20-30%), GI issues',
+            'Exclude hearing/vision impairment, genetic testing if dysmorphism/intellectual disability (fragile X, Rett, tuberous sclerosis)'
+        ],
+        crisis: [
+            'Meltdowns vs tantrums: meltdowns are involuntary responses to overwhelm, not attention-seeking; remove from trigger, allow recovery in safe space',
+            'Autistic burnout: chronic exhaustion from masking/social demands; requires rest, reduced demands, support',
+            'Self-injury or aggression: functional assessment (communication, sensory, escape), modify environment, consider safeguarding'
+        ],
+        monitoring: [
+            'Regular review of comorbidities and medication side effects',
+            'Transition planning (education, employment, independent living); coordinate multi-agency support',
+            'Monitor for exploitation/abuse (social vulnerability); mental capacity assessment for specific decisions if needed'
+        ]
+    },
+    {
+        id: 'bdd',
+        title: 'Body dysmorphic disorder (BDD)',
+        icon: '🪞',
+        tags: ['Anxiety', 'Somatic'],
+        summary: 'Preoccupation with perceived defect in appearance (not observable/slight to others) causing significant distress and repetitive behaviours.',
+        distinguishing: [
+            'Excessive concern about specific body part(s); repetitive behaviours (mirror checking, skin picking, reassurance seeking, camouflaging)',
+            'Commonly face, skin, hair, nose; often presents to dermatology/plastic surgery not psychiatry',
+            'Differentiate from eating disorders (BDD not weight/shape focused), OCD (BDD appearance-specific), psychosis (BDD usually has insight)'
+        ],
+        firstLine: [
+            'CBT for BDD: exposure (reduce checking/reassurance), cognitive restructuring, perceptual retraining',
+            'High-dose SSRI: fluoxetine 60-80mg, escitalopram 20-30mg, sertraline 150-200mg (higher than typical depression doses)',
+            'Avoid cosmetic procedures - rarely improve symptoms, often worsen or shift focus to new "defect"'
+        ],
+        secondLine: [
+            'Clomipramine 150-250mg if SSRIs fail (monitor ECG)',
+            'Augment SSRI with atypical antipsychotic if poor insight/delusional conviction: aripiprazole 5-15mg, olanzapine 5-10mg',
+            'Intensive CBT programmes or residential treatment for severe cases'
+        ],
+        investigations: [
+            'Yale-Brown Obsessive Compulsive Scale modified for BDD (BDD-YBOCS)',
+            'Screen for depression (50% comorbidity), social anxiety (common), suicidal ideation (high risk)',
+            'No physical investigations unless genuinely indicated; document discussions with patient about avoiding unnecessary cosmetic consultations'
+        ],
+        crisis: [
+            'Suicide risk high (45% lifetime attempt rate) - safety planning essential',
+            'Social withdrawal, inability to work/study - functional impairment severe in untreated cases',
+            'Repeated cosmetic procedures causing iatrogenic harm - communicate with patient\'s other clinicians to coordinate care'
+        ],
+        monitoring: [
+            'BDD-YBOCS every 4-8 weeks during treatment',
+            'Monitor time spent on appearance concerns, mirror checking, reassurance seeking, camouflaging',
+            'Long-term follow-up; relapse common if treatment stopped prematurely'
+        ]
+    },
+    {
+        id: 'conversion',
+        title: 'Conversion disorder (Functional neurological symptom disorder)',
+        icon: '🔌',
+        tags: ['Somatic', 'Neurology'],
+        summary: 'Neurological symptoms (weakness, non-epileptic seizures, sensory loss, movement disorder) incompatible with known neurological disease.',
+        distinguishing: [
+            'Positive signs inconsistent with neurology: Hoover\'s sign, tremor entrainment, give-way weakness, non-dermatomal sensory loss',
+            'Diagnosis requires positive functional features, not just exclusion of organic disease',
+            'Often (but not always) preceded by psychological stressor; patients not "faking" - symptoms are real and involuntary'
+        ],
+        firstLine: [
+            'Explain diagnosis clearly: "Your nervous system is sending incorrect signals; the hardware is intact but the software has a glitch"',
+            'Physiotherapy/occupational therapy focused on retraining normal movement patterns and increasing activity',
+            'CBT or psychodynamic therapy addressing psychological factors and illness beliefs'
+        ],
+        secondLine: [
+            'Treat comorbid depression/anxiety with SSRIs if present',
+            'Multidisciplinary rehabilitation programmes for severe/chronic cases',
+            'Avoid iatrogenic harm from repeated investigations or invasive procedures'
+        ],
+        investigations: [
+            'Sufficient neurology assessment to identify positive functional signs (do not over-investigate)',
+            'EEG with video for functional seizures (normal ictal EEG, eyes closed, pelvic thrusting, prolonged, recall of event)',
+            'Screen for depression, anxiety, PTSD, childhood trauma (higher prevalence but not always present)'
+        ],
+        crisis: [
+            'Functional seizures in ED: move to safe space, do not restrain, reassure, do not give benzodiazepines/antiepileptics',
+            'Severe functional weakness causing falls/injury: occupational therapy, falls prevention, ensure safety at home',
+            'Avoid admissions if possible - iatrogenic harm, symptom reinforcement; outpatient management preferred'
+        ],
+        monitoring: [
+            'Functional improvement (e.g., mobility, seizure frequency) more important than symptom resolution',
+            'Coordinate neurology and psychiatry follow-up; clear communication with patient about plan',
+            'Address illness beliefs and fear-avoidance; gradual return to normal activities'
+        ]
+    },
+    {
+        id: 'trichotillomania',
+        title: 'Trichotillomania (hair-pulling disorder)',
+        icon: '💇',
+        tags: ['Anxiety', 'Behavioural'],
+        summary: 'Recurrent pulling out of one\'s hair resulting in hair loss, with repeated attempts to stop; causes distress/impairment.',
+        distinguishing: [
+            'Hair pulling from scalp, eyebrows, eyelashes; patchy, irregular hair loss',
+            'Often automatic (unconscious during other activities) or focused (in response to tension/urge)',
+            'Differentiate from alopecia areata (smooth patches, no broken hairs), tinea capitis (scale, inflammation), compulsive habits vs OCD (ego-syntonic vs ego-dystonic)'
+        ],
+        firstLine: [
+            'Habit-reversal training (HRT): awareness training, competing response, motivation',
+            'CBT: stimulus control, urge management, cognitive restructuring',
+            'N-acetylcysteine 1200-2400mg/day (evidence for reducing urges)'
+        ],
+        secondLine: [
+            'SSRIs: clomipramine 100-250mg or fluoxetine 40-80mg if comorbid OCD/anxiety',
+            'Acceptance and commitment therapy (ACT) or dialectical behaviour therapy (DBT)',
+            'Consider referral to dermatology for scalp health and cosmetic options (wigs, camouflage)'
+        ],
+        investigations: [
+            'Clinical diagnosis; no investigations needed unless atypical features',
+            'Skin/scalp exam to differentiate from dermatological causes',
+            'Screen for body-focused repetitive behaviours (skin-picking, nail-biting) and comorbid OCD, anxiety, depression'
+        ],
+        crisis: [
+            'Rarely crisis presentation; significant psychosocial impairment (shame, social avoidance) may require intensive therapy',
+            'Monitor for skin infections from repeated pulling or ingestion of hair (trichobezoar risk if trichophagia present)'
+        ],
+        monitoring: [
+            'Track hair-pulling episodes, urges, and triggers; hair regrowth as marker of improvement',
+            'Review every 4-8 weeks during active treatment; long-term follow-up often needed',
+            'Relapse common - reinforce skills and resume therapy/medication as needed'
+        ]
+    },
+    {
+        id: 'excoriation',
+        title: 'Excoriation disorder (skin-picking disorder)',
+        icon: '🩹',
+        tags: ['Anxiety', 'Behavioural'],
+        summary: 'Recurrent skin-picking resulting in lesions, with repeated attempts to stop; causes distress/impairment.',
+        distinguishing: [
+            'Picking at healthy skin or minor irregularities (scabs, bumps, pimples); face, arms, hands most common',
+            'Automatic (during other tasks) or focused (in response to urge/tension)',
+            'Differentiate from dermatological conditions (dermatitis artefacta has more severe self-injury, psychosis has delusional component), OCD overlap'
+        ],
+        firstLine: [
+            'Habit-reversal training (HRT) and stimulus control: identify triggers, competing response (e.g., clenched fists, fidget toy)',
+            'CBT: urge surfing, cognitive restructuring, skin care routine as incompatible behaviour',
+            'N-acetylcysteine 1200-2400mg/day'
+        ],
+        secondLine: [
+            'SSRIs: fluoxetine 40-80mg or escitalopram 20-30mg (higher doses often needed)',
+            'Augment with N-acetylcysteine or low-dose naltrexone 3-6mg if SSRIs insufficient',
+            'Dermatology involvement for wound care, scar management, infection prevention'
+        ],
+        investigations: [
+            'Clinical diagnosis; skin exam to assess lesions and exclude primary dermatological cause',
+            'Screen for body-focused repetitive behaviours (trichotillomania, nail-biting) and comorbidities (OCD 20-30%, depression, anxiety)',
+            'No routine investigations unless signs of infection'
+        ],
+        crisis: [
+            'Severe tissue damage, infection (cellulitis, sepsis) - dermatology/surgical input',
+            'Significant scarring and cosmetic concerns - psychological impact high, may need camouflage/laser therapy',
+            'Rarely emergency; address shame and provide non-judgmental support'
+        ],
+        monitoring: [
+            'Track picking episodes, lesions, and healing; photography can help monitor progress',
+            'Review every 4-8 weeks; adjust therapy/medications as needed',
+            'Long-term management often required; relapses common during stress'
+        ]
+    },
+    {
+        id: 'hoarding',
+        title: 'Hoarding disorder',
+        icon: '📦',
+        tags: ['Anxiety', 'Safeguarding'],
+        summary: 'Persistent difficulty discarding possessions regardless of value, resulting in clutter that impairs use of living spaces; distress if forced to discard.',
+        distinguishing: [
+            'Accumulation fills living areas, prevents normal use (can\'t cook in kitchen, sleep in bed, access bathroom)',
+            'Emotional attachment to items, distress at discarding, excessive acquisition',
+            'Differentiate from OCD (hoarding is comfort/safety vs unwanted intrusions), dementia (hoarding is lifelong pattern), squalor (lack of self-care vs inability to discard)'
+        ],
+        firstLine: [
+            'Specialised CBT for hoarding: motivational interviewing, decision-making skills, exposure to discarding, relapse prevention',
+            'Home visits or video to assess clutter severity (Clutter Image Rating)',
+            'Address fire risk, pest infestation, structural damage - liaise with environmental health, social services'
+        ],
+        secondLine: [
+            'SSRIs (venlafaxine 150-225mg, paroxetine 40-60mg) if comorbid depression/anxiety; limited evidence for core hoarding',
+            'Group CBT programmes or peer support groups',
+            'Cognitive remediation if executive dysfunction prominent'
+        ],
+        investigations: [
+            'Clutter Image Rating Scale, Saving Inventory-Revised, hoarding impact on Activities of Daily Living',
+            'Home visit or photos/video to assess severity and safety risks',
+            'Screen for ADHD (impulsivity, disorganisation), OCD (30% comorbidity), depression, social isolation'
+        ],
+        crisis: [
+            'Safeguarding: fire hazard, structural collapse risk, unsanitary conditions, vermin/insect infestation',
+            'Self-neglect - inability to access kitchen, bathroom, bed; risk of falls, malnutrition',
+            'Forced clearance worsens symptoms and damages therapeutic relationship - avoid unless imminent danger; work collaboratively with patient'
+        ],
+        monitoring: [
+            'Clutter rating and functional impairment every 3-6 months',
+            'Multi-agency approach: mental health, social services, environmental health, housing',
+            'Long-term condition requiring sustained support; relapse common after clearance without addressing underlying issues'
+        ]
+    },
+    {
+        id: 'sad',
+        title: 'Seasonal affective disorder (SAD)',
+        icon: '☀️',
+        tags: ['Mood', 'Seasonal'],
+        summary: 'Recurrent major depressive episodes in winter months with full remission in spring/summer; atypical features common (hypersomnia, carbohydrate craving, weight gain).',
+        distinguishing: [
+            'Temporal pattern: onset October-November, remission March-April; ≥2 consecutive years',
+            'Atypical depression features: increased sleep, increased appetite, carbohydrate craving, leaden paralysis',
+            'Differentiate from winter exacerbation of chronic depression (year-round symptoms worse in winter vs complete summer remission)'
+        ],
+        firstLine: [
+            'Light therapy: 10,000 lux lightbox for 30 minutes each morning (start September-October before symptom onset)',
+            'CBT for SAD: behavioural activation, cognitive restructuring of seasonal thoughts, sleep scheduling',
+            'Vitamin D supplementation (many with SAD have low levels): 1000-2000 IU daily'
+        ],
+        secondLine: [
+            'SSRIs if light therapy insufficient: sertraline 50-150mg, fluoxetine 20-40mg, bupropion XL 150-300mg',
+            'Combination light therapy + antidepressant for severe cases',
+            'Dawn simulation (gradual bedroom light increase mimicking sunrise) as adjunct'
+        ],
+        investigations: [
+            'Clinical diagnosis based on temporal pattern; symptom diary/mood chart over ≥2 years',
+            'Vitamin D level (25-OH vitamin D); TFTs if hypothyroid symptoms',
+            'PHQ-9 or similar to track severity; differentiate from bipolar (hypomanic episodes in summer suggest bipolar not SAD)'
+        ],
+        crisis: [
+            'Severe depression with suicidality - treat as major depression, do not wait for light therapy',
+            'Hospital admission rarely needed unless high suicide risk or psychotic features',
+            'Plan ahead for next winter - start preventive light therapy and consider prophylactic antidepressant September-October'
+        ],
+        monitoring: [
+            'Symptom tracking through winter; PHQ-9 every 2-4 weeks',
+            'Monitor light therapy adherence (common to stop once feeling better, leading to relapse)',
+            'Taper antidepressant in spring if used; restart prophylactically next autumn'
+        ]
+    },
+    {
+        id: 'pmdd',
+        title: 'Premenstrual dysphoric disorder (PMDD)',
+        icon: '📅',
+        tags: ['Mood', 'Hormonal'],
+        summary: 'Severe mood, behavioural, and physical symptoms in luteal phase (week before menses) with marked impairment; resolves within days of menstruation.',
+        distinguishing: [
+            '≥5 symptoms including ≥1 mood symptom (irritability, depressed mood, anxiety, mood swings) in most cycles for ≥1 year',
+            'Symptoms peak in week before menses, improve within days of onset, minimal in follicular phase (week after menses)',
+            'Differentiate from PMS (milder, no functional impairment), premenstrual exacerbation of depression/anxiety (symptoms present all month, worsen premenstrually)'
+        ],
+        firstLine: [
+            'SSRIs (continuous or luteal-phase only): sertraline 50-150mg, fluoxetine 20-40mg, escitalopram 10-20mg',
+            'Luteal-phase dosing: start SSRI day 14-16 of cycle, stop day 1-2 of menses (lower doses often effective)',
+            'Lifestyle: regular exercise, sleep hygiene, limit caffeine/alcohol, stress management; symptom tracking (Daily Record of Severity of Problems - DRSP)'
+        ],
+        secondLine: [
+            'Combined oral contraceptive (continuous or extended cycle to suppress ovulation): ethinylestradiol/drospirenone',
+            'GnRH agonists (goserelin, leuprolide) to suppress ovulation - specialist use, add-back HRT to prevent bone loss',
+            'CBT focused on PMDD-specific triggers and coping strategies'
+        ],
+        investigations: [
+            'Prospective daily symptom diary for ≥2 menstrual cycles (DRSP) - essential for diagnosis',
+            'No laboratory tests diagnose PMDD; TFTs if irregular cycles or hypothyroid symptoms',
+            'Screen for comorbid depression, anxiety (50% comorbidity), trauma history'
+        ],
+        crisis: [
+            'Suicidal ideation peaks in luteal phase - safety planning, crisis contacts, consider continuous SSRI',
+            'Severe impulsivity/self-harm - close monitoring during high-risk week, involve partner/family in safety plan',
+            'Work/relationship crisis from symptoms - psychoeducation for patient and family, workplace adjustments'
+        ],
+        monitoring: [
+            'Continue DRSP to track treatment response; symptoms should improve by 2-3 cycles',
+            'Review every 3-6 months; long-term management often needed until menopause',
+            'If planning pregnancy: wean SSRI gradually, symptom improvement often occurs during pregnancy but relapse postpartum common'
+        ]
+    },
+    {
+        id: 'specific-phobia',
+        title: 'Specific phobia',
+        icon: '😨',
+        tags: ['Anxiety'],
+        summary: 'Marked, persistent, excessive fear of specific object/situation causing avoidance or intense distress; out of proportion to actual danger.',
+        distinguishing: [
+            'Common phobias: animals (dogs, spiders), natural environment (heights, storms), blood-injection-injury, situational (flying, enclosed spaces)',
+            'Immediate anxiety response on exposure or anticipation; recognition fear is excessive (unless children)',
+            'Differentiate from panic disorder (unexpected attacks), agoraphobia (multiple situations), social anxiety (social scrutiny), PTSD (trauma-related)'
+        ],
+        firstLine: [
+            'Exposure therapy (in vivo or virtual reality): graded, systematic exposure with response prevention',
+            'Single-session treatment for specific phobias (e.g., spiders, heights) - intensive prolonged exposure can be curative',
+            'Psychoeducation about anxiety habituation and safety of exposure'
+        ],
+        secondLine: [
+            'Beta-blockers for situational use (e.g., propranolol 10-40mg 30-60 min before flying, dental procedures)',
+            'Benzodiazepines (short-term only, as-needed): lorazepam 0.5-1mg, diazepam 2-5mg - risk of avoidance reinforcement, dependence',
+            'SSRIs if multiple phobias or comorbid generalised anxiety'
+        ],
+        investigations: [
+            'Clinical diagnosis; no investigations needed',
+            'Screen for other anxiety disorders, depression, substance use (self-medication)',
+            'Blood-injection-injury phobia: assess for vasovagal syncope, teach applied tension technique'
+        ],
+        crisis: [
+            'Rarely crisis; severe avoidance may impair function (e.g., cannot work due to elevator phobia, cannot access healthcare due to needle phobia)',
+            'Medical procedures in phobic patients: advance planning, distraction, topical anaesthetics (needle phobia), gradual desensitisation if time permits'
+        ],
+        monitoring: [
+            'Subjective Units of Distress (SUDS) and avoidance behaviour tracking',
+            'Most improve significantly with brief CBT/exposure therapy (5-10 sessions)',
+            'Long-term follow-up usually not needed once phobia resolved; booster sessions if relapse'
+        ]
+    },
+    {
+        id: 'antisocial-pd',
+        title: 'Antisocial personality disorder',
+        icon: '⚠️',
+        tags: ['Personality', 'Forensic'],
+        summary: 'Pervasive disregard for and violation of rights of others since age 15; deceitfulness, impulsivity, aggression, lack of remorse.',
+        distinguishing: [
+            'DSM-5 criteria: ≥3 of: failure to conform to laws, deceitfulness, impulsivity, irritability/aggression, reckless disregard for safety, irresponsibility, lack of remorse',
+            'Onset by age 15 (conduct disorder features); person now ≥18 years old',
+            'Differentiate from substance use (symptoms predate and independent of substance use), narcissistic PD (grandiosity vs law-breaking), borderline PD (fear of abandonment vs exploitation)'
+        ],
+        firstLine: [
+            'No evidence-based pharmacotherapy for core personality features',
+            'Psychosocial interventions: cognitive skills programmes, anger management, reasoning and rehabilitation',
+            'Addressing comorbidities: ADHD (stimulants), substance use (motivational interviewing, MAT), mood instability (mood stabilisers)'
+        ],
+        secondLine: [
+            'Mood stabilisers (carbamazepine 400-800mg, valproate 500-1500mg) or atypical antipsychotics (quetiapine 200-400mg) for impulsivity/aggression in specialist care',
+            'SSRIs for comorbid depression/anxiety (common)',
+            'Multisystemic therapy or therapeutic communities in forensic settings'
+        ],
+        investigations: [
+            'Detailed developmental history (conduct disorder before age 15), forensic history, collateral from multiple sources',
+            'Screen for ADHD (60% comorbidity), substance use, PTSD, head injury',
+            'Risk assessment tools: HCR-20, PCL-R (psychopathy checklist) in forensic settings'
+        ],
+        crisis: [
+            'Violence risk - safety planning, involve forensic services, consider probation/criminal justice liaison',
+            'Self-harm/suicide (higher than general population) - address impulsivity and comorbid depression',
+            'Detention under Mental Health Act only if comorbid mental illness; personality disorder alone insufficient in most jurisdictions'
+        ],
+        monitoring: [
+            'Long-term engagement difficult (poor treatment adherence, manipulation, early dropout)',
+            'Focus on harm reduction, addressing modifiable risk factors (substance use, accommodation, relationships)',
+            'Coordinate with probation, substance use services, housing; realistic goals and boundaries'
+        ]
+    },
+    {
+        id: 'narcissistic-pd',
+        title: 'Narcissistic personality disorder',
+        icon: '👑',
+        tags: ['Personality'],
+        summary: 'Grandiosity, need for admiration, lack of empathy; sense of entitlement and exploitative relationships.',
+        distinguishing: [
+            'DSM-5 criteria: ≥5 of: grandiose self-importance, preoccupation with fantasies of success/power/beauty, belief in being special, need for excessive admiration, sense of entitlement, exploitative, lacks empathy, envious, arrogant',
+            'Vulnerable narcissism: hypersensitive to criticism, fragile self-esteem, socially withdrawn despite grandiose fantasies',
+            'Differentiate from bipolar mania (episodic vs pervasive), antisocial PD (law-breaking vs entitlement), histrionic PD (attention-seeking vs admiration-seeking)'
+        ],
+        firstLine: [
+            'Psychotherapy: psychodynamic (explore fragile self-esteem, childhood origins) or schema therapy (challenge maladaptive schemas)',
+            'Transference-focused therapy or mentalization-based therapy',
+            'Group therapy often unsuccessful (dominate group, dismissive of others); individual therapy preferred'
+        ],
+        secondLine: [
+            'No specific pharmacotherapy for narcissistic traits',
+            'SSRIs/SNRIs for comorbid depression (common when faced with failure/ageing), anxiety',
+            'Mood stabilisers or antipsychotics if severe affective instability, though limited evidence'
+        ],
+        investigations: [
+            'Clinical assessment; no investigations unless ruling out medical causes of personality change',
+            'Collateral history often reveals significant discrepancies (patient overestimates achievements, underestimates impact on others)',
+            'Screen for comorbid depression (especially following narcissistic injury), substance use, eating disorders'
+        ],
+        crisis: [
+            'Narcissistic injury (failure, criticism, ageing, loss of status) can precipitate severe depression or suicidal crisis',
+            'Rage reactions if confronted or challenged - may be aggressive toward perceived source of injury',
+            'Poor insight and externalization of blame makes crisis intervention difficult; focus on immediate safety and damage limitation'
+        ],
+        monitoring: [
+            'Engagement challenging (rarely present voluntarily; often coerced by partner, employer, legal system)',
+            'Dropout common when not receiving expected admiration/special treatment from therapist',
+            'Realistic goals: modest improvements in empathy, less exploitative behaviour; grandiosity often persists'
+        ]
     }
 ];
