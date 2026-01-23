@@ -46,7 +46,8 @@ export class GlobalSearchManager {
                 medStatsEthics: 6,
                 clinicalPearls: 6,
                 anatomy: 6,
-                ophthalmology: 6
+                ophthalmology: 6,
+                dermatology: 6
             }
         };
     }
@@ -247,6 +248,7 @@ export class GlobalSearchManager {
             this.buildTriadResults(query),
             this.buildMnemonicResults(query),
             this.buildOphthalmologyResults(query),
+            this.buildDermatologyResults(query),
             this.buildAnatomyResults(query),
             this.buildExaminationResults(query),
             this.buildInterpretationResults(query),
@@ -696,6 +698,46 @@ export class GlobalSearchManager {
             id: 'ophthalmology',
             label: 'Ophthalmology',
             icon: '👁️',
+            total: matches.length,
+            matches: this.rankMatches(matches, query, match => match.title || '')
+                .slice(0, limit)
+        };
+    }
+
+    async buildDermatologyResults(query) {
+        const manager = this.managers.dermatologyManager;
+        if (!manager || !manager.initialized) return null;
+
+        const term = query.toLowerCase();
+        const conditions = manager.search(term);
+        
+        if (!conditions || conditions.length === 0) return null;
+
+        const categoryMap = {
+            'inflammatory-eczema': 'Eczema & Dermatitis',
+            'inflammatory-psoriasis': 'Psoriasis',
+            'acne-rosacea': 'Acne & Rosacea',
+            'infection-bacterial': 'Bacterial Infections',
+            'infection-viral': 'Viral Infections',
+            'infection-fungal': 'Fungal Infections',
+            'skin-cancer': 'Skin Cancers',
+            'hair-disorders': 'Hair Disorders',
+            'nail-disorders': 'Nail Disorders',
+            'pigmentation': 'Pigmentation Disorders'
+        };
+
+        const matches = conditions.map(condition => ({
+            title: condition.title,
+            subtitle: categoryMap[condition.category] || condition.category || 'Dermatology',
+            meta: condition.clinicalPresentation?.description || '',
+            action: { type: 'dermatology', conditionId: condition.id }
+        }));
+
+        const limit = this.options.limits.dermatology || this.options.defaultLimit;
+        return {
+            id: 'dermatology',
+            label: 'Dermatology',
+            icon: '🩺',
             total: matches.length,
             matches: this.rankMatches(matches, query, match => match.title || '')
                 .slice(0, limit)
@@ -1494,6 +1536,28 @@ export class GlobalSearchManager {
                             setTimeout(() => matchCard.classList.remove('global-search-highlight'), 2500);
                         }
                     } catch (e) { /* ignore */ }
+                });
+                break;
+            case 'dermatology':
+                navigate('dermatology', () => {
+                    try {
+                        const panel = document.getElementById('dermatology-panel');
+                        if (!panel) return;
+                        this.app?.loadDermatologyContent?.(panel);
+                        
+                        // Wait for panel to load, then open the specific condition
+                        setTimeout(() => {
+                            const manager = this.managers.dermatologyManager;
+                            if (manager && action.conditionId) {
+                                const condition = manager.getCondition(action.conditionId);
+                                if (condition) {
+                                    manager.renderDetailedView(condition);
+                                }
+                            }
+                        }, 100);
+                    } catch (e) {
+                        console.error('Failed to navigate to dermatology:', e);
+                    }
                 });
                 break;
             case 'vaccination':

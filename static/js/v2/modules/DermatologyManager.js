@@ -1,0 +1,990 @@
+/**
+ * Dermatology Manager
+ * Manages dermatological conditions and skin presentations
+ */
+
+import { eventBus } from './EventBus.js';
+import { storage } from './StorageManager.js';
+import { analytics } from './AnalyticsManager.js';
+
+export class DermatologyManager {
+    constructor() {
+        this.initialized = false;
+        this.dermatologyData = null;
+        this.currentCondition = null;
+        this.currentCategory = 'all';
+        this.searchQuery = '';
+        this.favoriteConditions = new Set();
+        this.categories = [
+            { id: 'all', name: 'All Conditions', icon: '🩺' },
+            { id: 'inflammatory-eczema', name: 'Eczema & Dermatitis', icon: '🔴' },
+            { id: 'inflammatory-psoriasis', name: 'Psoriasis', icon: '📐' },
+            { id: 'acne-rosacea', name: 'Acne & Rosacea', icon: '💊' },
+            { id: 'infection-bacterial', name: 'Bacterial Infections', icon: '🦠' },
+            { id: 'infection-viral', name: 'Viral Infections', icon: '🧬' },
+            { id: 'infection-fungal', name: 'Fungal Infections', icon: '🍄' },
+            { id: 'skin-cancer', name: 'Skin Cancers', icon: '⚠️' },
+            { id: 'hair-disorders', name: 'Hair Disorders', icon: '💇' },
+            { id: 'nail-disorders', name: 'Nail Disorders', icon: '💅' },
+            { id: 'pigmentation', name: 'Pigmentation Disorders', icon: '🎨' }
+        ];
+    }
+
+    /**
+     * Initialize the Dermatology Manager
+     */
+    async initialize() {
+        if (this.initialized) {
+            console.warn('DermatologyManager already initialized');
+            return;
+        }
+
+        try {
+            // Load dermatology data
+            await this.loadDermatologyData();
+            
+            // Load user preferences
+            await this.loadFavorites();
+
+            this.initialized = true;
+            console.log('🩺 Dermatology Manager initialized');
+            
+            return {
+                success: true,
+                stats: {
+                    totalConditions: this.dermatologyData ? Object.keys(this.dermatologyData).length : 0,
+                    categories: this.categories.length - 1 // Exclude 'all'
+                }
+            };
+        } catch (error) {
+            console.error('Failed to initialize DermatologyManager:', error);
+            return { success: false, error: error.message };
+        }
+    }
+
+    /**
+     * Load dermatology data from module
+     */
+    async loadDermatologyData() {
+        try {
+            const module = await import('/static/dermatology/dermatology_data.js');
+            this.dermatologyData = module.dermatologyDatabase;
+            console.log('📚 Loaded dermatology data:', Object.keys(this.dermatologyData).length, 'conditions');
+            return this.dermatologyData;
+        } catch (error) {
+            console.error('❌ Failed to load dermatology data:', error);
+            throw error;
+        }
+    }
+
+    /**
+     * Load favorite conditions from storage
+     */
+    async loadFavorites() {
+        try {
+            const favorites = await storage.getItem('dermatology-favorites');
+            if (favorites) {
+                this.favoriteConditions = new Set(JSON.parse(favorites));
+            }
+        } catch (error) {
+            console.error('Failed to load favorites:', error);
+        }
+    }
+
+    /**
+     * Save favorite conditions to storage
+     */
+    async saveFavorites() {
+        try {
+            await storage.setItem('dermatology-favorites', JSON.stringify(Array.from(this.favoriteConditions)));
+        } catch (error) {
+            console.error('Failed to save favorites:', error);
+        }
+    }
+
+    /**
+     * Toggle favorite status of a condition
+     */
+    async toggleFavorite(conditionId) {
+        if (this.favoriteConditions.has(conditionId)) {
+            this.favoriteConditions.delete(conditionId);
+            analytics.trackEvent('dermatology_unfavorited', { conditionId });
+        } else {
+            this.favoriteConditions.add(conditionId);
+            analytics.trackEvent('dermatology_favorited', { conditionId });
+        }
+        
+        await this.saveFavorites();
+        return this.favoriteConditions.has(conditionId);
+    }
+
+    /**
+     * Check if a condition is favorited
+     */
+    isFavorite(conditionId) {
+        return this.favoriteConditions.has(conditionId);
+    }
+
+    /**
+     * Get all conditions or filter by category
+     */
+    getConditions(category = 'all') {
+        if (!this.dermatologyData) return [];
+
+        const conditions = Object.entries(this.dermatologyData).map(([id, data]) => ({
+            id,
+            ...data
+        }));
+
+        if (category === 'all') {
+            return conditions;
+        }
+
+        return conditions.filter(c => c.category === category);
+    }
+
+    /**
+     * Search conditions
+     */
+    search(query) {
+        if (!this.dermatologyData) return [];
+        
+        const normalizedQuery = query.toLowerCase().trim();
+        if (!normalizedQuery) return [];
+
+        return Object.entries(this.dermatologyData)
+            .map(([id, data]) => ({ id, ...data }))
+            .filter(condition => {
+                // Search in title
+                if (condition.title.toLowerCase().includes(normalizedQuery)) return true;
+                
+                // Search in category
+                if (condition.category?.toLowerCase().includes(normalizedQuery)) return true;
+                
+                // Search in clinical presentation
+                if (condition.clinicalPresentation?.description?.toLowerCase().includes(normalizedQuery)) return true;
+                
+                // Search in arrays (triggers, associations, etc.)
+                const searchInArrays = (obj) => {
+                    for (const value of Object.values(obj)) {
+                        if (Array.isArray(value)) {
+                            if (value.some(item => 
+                                typeof item === 'string' && item.toLowerCase().includes(normalizedQuery)
+                            )) return true;
+                        } else if (typeof value === 'object' && value !== null) {
+                            if (searchInArrays(value)) return true;
+                        } else if (typeof value === 'string' && value.toLowerCase().includes(normalizedQuery)) {
+                            return true;
+                        }
+                    }
+                    return false;
+                };
+                
+                return searchInArrays(condition);
+            });
+    }
+
+    /**
+     * Get a specific condition by ID
+     */
+    getCondition(id) {
+        if (!this.dermatologyData) return null;
+        return this.dermatologyData[id] ? { id, ...this.dermatologyData[id] } : null;
+    }
+
+    /**
+     * Get statistics
+     */
+    getStatistics() {
+        if (!this.dermatologyData) {
+            return {
+                totalConditions: 0,
+                categoryCounts: {},
+                favorites: 0
+            };
+        }
+
+        const conditions = Object.values(this.dermatologyData);
+        const categoryCounts = {};
+        
+        conditions.forEach(condition => {
+            const cat = condition.category || 'uncategorized';
+            categoryCounts[cat] = (categoryCounts[cat] || 0) + 1;
+        });
+
+        return {
+            totalConditions: conditions.length,
+            categoryCounts,
+            favorites: this.favoriteConditions.size
+        };
+    }
+
+    /**
+     * Render the dermatology interface
+     */
+    render(container) {
+        if (!container) {
+            console.error('Container element not provided');
+            return;
+        }
+
+        // Ensure styles are injected
+        this.ensureStyles();
+
+        const conditions = this.getConditions(this.currentCategory);
+        const filteredConditions = this.searchQuery 
+            ? this.search(this.searchQuery)
+            : conditions;
+
+        const stats = this.getStatistics();
+
+        container.innerHTML = `
+            <div class="dermatology-container">
+                <!-- Header -->
+                <div class="dermatology-header">
+                    <h3>🩺 Dermatology Reference</h3>
+                    <p>Comprehensive guide to skin conditions, diagnoses, and management</p>
+                </div>
+
+                <!-- Controls -->
+                <div class="dermatology-controls">
+                    <!-- Search -->
+                    <div class="dermatology-search-box">
+                        <span class="dermatology-search-icon">🔍</span>
+                        <input 
+                            type="text" 
+                            placeholder="Search conditions, symptoms, treatments..." 
+                            value="${this.searchQuery}"
+                            id="dermatology-search-input"
+                        />
+                    </div>
+
+                    <!-- Category Filter -->
+                    <div class="dermatology-category-filter">
+                        ${this.categories.map(cat => `
+                            <button 
+                                class="dermatology-category-btn ${this.currentCategory === cat.id ? 'active' : ''}"
+                                data-category="${cat.id}"
+                            >
+                                <span class="cat-icon">${cat.icon}</span>
+                                <span class="cat-name">${cat.name}</span>
+                                ${cat.id !== 'all' ? `<span class="cat-count">${stats.categoryCounts[cat.id] || 0}</span>` : ''}
+                            </button>
+                        `).join('')}
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="dermatology-stats">
+                        <div class="stat-item">
+                            <span class="stat-value">${stats.totalConditions}</span>
+                            <span class="stat-label">Conditions</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">${filteredConditions.length}</span>
+                            <span class="stat-label">Showing</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">${stats.favorites}</span>
+                            <span class="stat-label">Favorites</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conditions Grid -->
+                <div class="dermatology-conditions-grid">
+                    ${filteredConditions.length > 0 ? filteredConditions.map(condition => this.renderConditionCard(condition)).join('') : `
+                        <div class="no-results">
+                            <p>No conditions found matching your search.</p>
+                        </div>
+                    `}
+                </div>
+            </div>
+        `;
+
+        this.attachEventListeners(container);
+    }
+
+    /**
+     * Render a condition card
+     */
+    renderConditionCard(condition) {
+        const isFav = this.isFavorite(condition.id);
+        const categoryInfo = this.categories.find(c => c.id === condition.category);
+        const categoryName = categoryInfo ? categoryInfo.name : condition.category;
+
+        return `
+            <div class="dermatology-condition-card" data-condition-id="${condition.id}">
+                <div class="condition-header">
+                    <div class="condition-title-row">
+                        <h4 class="condition-title">${condition.title}</h4>
+                        <button class="favorite-btn ${isFav ? 'favorited' : ''}" data-condition-id="${condition.id}">
+                            ${isFav ? '⭐' : '☆'}
+                        </button>
+                    </div>
+                    <span class="condition-category">${categoryInfo?.icon || '🩺'} ${categoryName}</span>
+                </div>
+
+                <div class="condition-content">
+                    ${condition.clinicalPresentation?.description ? `
+                        <div class="condition-section">
+                            <strong>Clinical Presentation</strong>
+                            <p>${condition.clinicalPresentation.description}</p>
+                        </div>
+                    ` : ''}
+
+                    ${condition.diagnosis && Array.isArray(condition.diagnosis) && condition.diagnosis.length > 0 ? `
+                        <div class="condition-section">
+                            <strong>Diagnosis</strong>
+                            <ul>
+                                ${condition.diagnosis.slice(0, 3).map(item => `<li>${item}</li>`).join('')}
+                                ${condition.diagnosis.length > 3 ? `<li class="more-indicator">+${condition.diagnosis.length - 3} more...</li>` : ''}
+                            </ul>
+                        </div>
+                    ` : ''}
+
+                    ${condition.management && Array.isArray(condition.management) && condition.management.length > 0 ? `
+                        <div class="condition-section">
+                            <strong>Management</strong>
+                            <ul>
+                                ${condition.management.slice(0, 3).map(item => `<li>${item}</li>`).join('')}
+                                ${condition.management.length > 3 ? `<li class="more-indicator">+${condition.management.length - 3} more...</li>` : ''}
+                            </ul>
+                        </div>
+                    ` : ''}
+                </div>
+
+                <button class="view-details-btn" data-condition-id="${condition.id}">
+                    View Full Details →
+                </button>
+            </div>
+        `;
+    }
+
+    /**
+     * Render detailed condition view
+     */
+    renderDetailedView(condition) {
+        const modal = document.createElement('div');
+        modal.className = 'dermatology-modal-overlay';
+        modal.innerHTML = `
+            <div class="dermatology-modal">
+                <div class="modal-header">
+                    <h2>${condition.title}</h2>
+                    <button class="modal-close-btn">✕</button>
+                </div>
+                <div class="modal-content">
+                    ${this.renderDetailedCondition(condition)}
+                </div>
+            </div>
+        `;
+
+        document.body.appendChild(modal);
+
+        // Close on background click or close button
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal || e.target.classList.contains('modal-close-btn')) {
+                modal.remove();
+            }
+        });
+
+        // Prevent closing when clicking modal content
+        modal.querySelector('.dermatology-modal').addEventListener('click', (e) => {
+            e.stopPropagation();
+        });
+    }
+
+    /**
+     * Render detailed condition information
+     */
+    renderDetailedCondition(condition) {
+        let html = '';
+
+        // Helper function to render any section
+        const renderSection = (title, content) => {
+            if (!content) return '';
+            if (Array.isArray(content)) {
+                return `
+                    <div class="detail-section">
+                        <h4>${title}</h4>
+                        <ul>
+                            ${content.map(item => `<li>${item}</li>`).join('')}
+                        </ul>
+                    </div>
+                `;
+            } else if (typeof content === 'object') {
+                let objHtml = `<div class="detail-section"><h4>${title}</h4>`;
+                for (const [key, value] of Object.entries(content)) {
+                    if (Array.isArray(value)) {
+                        objHtml += `
+                            <div class="subsection">
+                                <strong>${key}</strong>
+                                <ul>
+                                    ${value.map(item => `<li>${item}</li>`).join('')}
+                                </ul>
+                            </div>
+                        `;
+                    } else {
+                        objHtml += `<p><strong>${key}:</strong> ${value}</p>`;
+                    }
+                }
+                objHtml += '</div>';
+                return objHtml;
+            } else {
+                return `
+                    <div class="detail-section">
+                        <h4>${title}</h4>
+                        <p>${content}</p>
+                    </div>
+                `;
+            }
+        };
+
+        // Clinical Presentation
+        if (condition.clinicalPresentation) {
+            html += renderSection('Clinical Presentation', condition.clinicalPresentation);
+        }
+
+        // Pathophysiology
+        if (condition.pathophysiology) {
+            html += renderSection('Pathophysiology', condition.pathophysiology);
+        }
+
+        // Variants/Subtypes
+        if (condition.variants) {
+            html += renderSection('Variants', condition.variants);
+        }
+        if (condition.subtypes) {
+            html += renderSection('Subtypes', condition.subtypes);
+        }
+
+        // Risk Factors
+        if (condition.riskFactors) {
+            html += renderSection('Risk Factors', condition.riskFactors);
+        }
+
+        // Triggers
+        if (condition.triggers) {
+            html += renderSection('Triggers', condition.triggers);
+        }
+
+        // Associations
+        if (condition.associations) {
+            html += renderSection('Associations', condition.associations);
+        }
+
+        // Diagnosis
+        if (condition.diagnosis) {
+            html += renderSection('Diagnosis', condition.diagnosis);
+        }
+
+        // Differential Diagnosis
+        if (condition.differentialDiagnosis) {
+            html += renderSection('Differential Diagnosis', condition.differentialDiagnosis);
+        }
+
+        // Management
+        if (condition.management) {
+            html += renderSection('Management', condition.management);
+        }
+
+        // Complications
+        if (condition.complications) {
+            html += renderSection('Complications', condition.complications);
+        }
+
+        // Red Flags
+        if (condition.redFlags) {
+            html += `
+                <div class="detail-section red-flags">
+                    <h4>⚠️ Red Flags</h4>
+                    <ul>
+                        ${condition.redFlags.map(item => `<li>${item}</li>`).join('')}
+                    </ul>
+                </div>
+            `;
+        }
+
+        // Prognosis
+        if (condition.prognosis) {
+            html += renderSection('Prognosis', condition.prognosis);
+        }
+
+        return html;
+    }
+
+    /**
+     * Attach event listeners
+     */
+    attachEventListeners(container) {
+        // Search input
+        const searchInput = container.querySelector('#dermatology-search-input');
+        if (searchInput) {
+            searchInput.addEventListener('input', (e) => {
+                this.searchQuery = e.target.value;
+                this.render(container);
+            });
+        }
+
+        // Category buttons
+        container.querySelectorAll('.dermatology-category-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const category = btn.dataset.category;
+                this.currentCategory = category;
+                this.searchQuery = ''; // Clear search when changing category
+                this.render(container);
+                analytics.trackEvent('dermatology_category_selected', { category });
+            });
+        });
+
+        // Favorite buttons
+        container.querySelectorAll('.favorite-btn').forEach(btn => {
+            btn.addEventListener('click', async (e) => {
+                e.stopPropagation();
+                const conditionId = btn.dataset.conditionId;
+                await this.toggleFavorite(conditionId);
+                this.render(container);
+            });
+        });
+
+        // View details buttons
+        container.querySelectorAll('.view-details-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const conditionId = btn.dataset.conditionId;
+                const condition = this.getCondition(conditionId);
+                if (condition) {
+                    this.renderDetailedView(condition);
+                    analytics.trackEvent('dermatology_condition_viewed', { conditionId });
+                }
+            });
+        });
+
+        // Condition cards (click to view details)
+        container.querySelectorAll('.dermatology-condition-card').forEach(card => {
+            card.addEventListener('click', (e) => {
+                // Don't trigger if clicking favorite button or view details button
+                if (e.target.closest('.favorite-btn') || e.target.closest('.view-details-btn')) {
+                    return;
+                }
+                const conditionId = card.dataset.conditionId;
+                const condition = this.getCondition(conditionId);
+                if (condition) {
+                    this.renderDetailedView(condition);
+                    analytics.trackEvent('dermatology_condition_viewed', { conditionId });
+                }
+            });
+        });
+    }
+
+    /**
+     * Ensure styles are injected
+     */
+    ensureStyles() {
+        if (document.getElementById('dermatology-styles')) return;
+
+        const style = document.createElement('style');
+        style.id = 'dermatology-styles';
+        style.textContent = `
+            .dermatology-container {
+                padding: 20px;
+                max-width: 1400px;
+                margin: 0 auto;
+            }
+
+            .dermatology-header {
+                margin-bottom: 24px;
+            }
+
+            .dermatology-header h3 {
+                font-size: 1.75rem;
+                margin: 0 0 8px 0;
+                color: var(--v2-text-primary, #0f172a);
+            }
+
+            .dermatology-header p {
+                margin: 0;
+                color: var(--v2-text-secondary, #64748b);
+                font-size: 0.95rem;
+            }
+
+            .dermatology-controls {
+                background: var(--v2-bg-card, #ffffff);
+                border-radius: 12px;
+                padding: 20px;
+                margin-bottom: 24px;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            }
+
+            .dermatology-search-box {
+                position: relative;
+                margin-bottom: 16px;
+            }
+
+            .dermatology-search-box input {
+                width: 100%;
+                padding: 12px 16px 12px 44px;
+                border: 1px solid var(--v2-border-light, #e2e8f0);
+                border-radius: 8px;
+                font-size: 1rem;
+                transition: border-color 0.2s;
+            }
+
+            .dermatology-search-box input:focus {
+                outline: none;
+                border-color: #3b82f6;
+                box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+            }
+
+            .dermatology-search-icon {
+                position: absolute;
+                left: 16px;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 1.2rem;
+                opacity: 0.5;
+            }
+
+            .dermatology-category-filter {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+                margin-bottom: 16px;
+            }
+
+            .dermatology-category-btn {
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                padding: 8px 16px;
+                border: 1px solid var(--v2-border-light, #e2e8f0);
+                border-radius: 20px;
+                background: var(--v2-bg-main, #ffffff);
+                cursor: pointer;
+                transition: all 0.2s;
+                font-size: 0.9rem;
+            }
+
+            .dermatology-category-btn:hover {
+                background: var(--v2-bg-hover, #f1f5f9);
+                border-color: #3b82f6;
+            }
+
+            .dermatology-category-btn.active {
+                background: #3b82f6;
+                color: white;
+                border-color: #3b82f6;
+            }
+
+            .dermatology-category-btn .cat-count {
+                background: rgba(0, 0, 0, 0.1);
+                padding: 2px 8px;
+                border-radius: 10px;
+                font-size: 0.8rem;
+                font-weight: 600;
+            }
+
+            .dermatology-category-btn.active .cat-count {
+                background: rgba(255, 255, 255, 0.3);
+            }
+
+            .dermatology-stats {
+                display: flex;
+                gap: 24px;
+                padding-top: 16px;
+                border-top: 1px solid var(--v2-border-light, #e2e8f0);
+            }
+
+            .dermatology-stats .stat-item {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+            }
+
+            .dermatology-stats .stat-value {
+                font-size: 1.5rem;
+                font-weight: 700;
+                color: #3b82f6;
+            }
+
+            .dermatology-stats .stat-label {
+                font-size: 0.85rem;
+                color: var(--v2-text-secondary, #64748b);
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+            }
+
+            .dermatology-conditions-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+                gap: 20px;
+            }
+
+            .dermatology-condition-card {
+                background: var(--v2-bg-card, #ffffff);
+                border: 1px solid var(--v2-border-light, #e2e8f0);
+                border-radius: 12px;
+                padding: 20px;
+                cursor: pointer;
+                transition: all 0.2s;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            .dermatology-condition-card:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+                border-color: #3b82f6;
+            }
+
+            .condition-header {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .condition-title-row {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                gap: 12px;
+            }
+
+            .condition-title {
+                font-size: 1.15rem;
+                margin: 0;
+                color: var(--v2-text-primary, #0f172a);
+                flex: 1;
+            }
+
+            .favorite-btn {
+                background: none;
+                border: none;
+                font-size: 1.4rem;
+                cursor: pointer;
+                padding: 0;
+                line-height: 1;
+                opacity: 0.5;
+                transition: opacity 0.2s;
+            }
+
+            .favorite-btn:hover,
+            .favorite-btn.favorited {
+                opacity: 1;
+            }
+
+            .condition-category {
+                display: inline-block;
+                background: rgba(59, 130, 246, 0.1);
+                color: #3b82f6;
+                padding: 4px 12px;
+                border-radius: 12px;
+                font-size: 0.85rem;
+                font-weight: 500;
+            }
+
+            .condition-content {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                flex: 1;
+            }
+
+            .condition-section {
+                font-size: 0.9rem;
+            }
+
+            .condition-section strong {
+                display: block;
+                color: #1e40af;
+                margin-bottom: 6px;
+                font-size: 0.88rem;
+            }
+
+            .condition-section p {
+                margin: 0;
+                line-height: 1.6;
+                color: var(--v2-text-secondary, #475569);
+            }
+
+            .condition-section ul {
+                margin: 0;
+                padding-left: 20px;
+                list-style-type: disc;
+            }
+
+            .condition-section li {
+                margin-bottom: 4px;
+                line-height: 1.5;
+                color: var(--v2-text-secondary, #475569);
+            }
+
+            .more-indicator {
+                color: #3b82f6 !important;
+                font-style: italic;
+            }
+
+            .view-details-btn {
+                padding: 10px 16px;
+                background: #3b82f6;
+                color: white;
+                border: none;
+                border-radius: 8px;
+                font-size: 0.9rem;
+                font-weight: 500;
+                cursor: pointer;
+                transition: background 0.2s;
+                text-align: center;
+            }
+
+            .view-details-btn:hover {
+                background: #2563eb;
+            }
+
+            .no-results {
+                grid-column: 1 / -1;
+                text-align: center;
+                padding: 60px 20px;
+                color: var(--v2-text-secondary, #64748b);
+            }
+
+            /* Modal Styles */
+            .dermatology-modal-overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.6);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 10000;
+                padding: 20px;
+            }
+
+            .dermatology-modal {
+                background: var(--v2-bg-card, #ffffff);
+                border-radius: 16px;
+                max-width: 900px;
+                width: 100%;
+                max-height: 90vh;
+                display: flex;
+                flex-direction: column;
+                box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            }
+
+            .modal-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 24px;
+                border-bottom: 1px solid var(--v2-border-light, #e2e8f0);
+            }
+
+            .modal-header h2 {
+                margin: 0;
+                font-size: 1.5rem;
+                color: var(--v2-text-primary, #0f172a);
+            }
+
+            .modal-close-btn {
+                background: none;
+                border: none;
+                font-size: 1.5rem;
+                cursor: pointer;
+                padding: 4px 8px;
+                line-height: 1;
+                color: var(--v2-text-secondary, #64748b);
+                transition: color 0.2s;
+            }
+
+            .modal-close-btn:hover {
+                color: var(--v2-text-primary, #0f172a);
+            }
+
+            .modal-content {
+                padding: 24px;
+                overflow-y: auto;
+            }
+
+            .detail-section {
+                margin-bottom: 24px;
+            }
+
+            .detail-section h4 {
+                color: #1e40af;
+                margin: 0 0 12px 0;
+                font-size: 1.1rem;
+                padding-bottom: 8px;
+                border-bottom: 2px solid rgba(59, 130, 246, 0.2);
+            }
+
+            .detail-section ul {
+                margin: 0;
+                padding-left: 24px;
+            }
+
+            .detail-section li {
+                margin-bottom: 8px;
+                line-height: 1.6;
+            }
+
+            .detail-section.red-flags {
+                background: #fef2f2;
+                padding: 16px;
+                border-radius: 8px;
+                border-left: 4px solid #ef4444;
+            }
+
+            .detail-section.red-flags h4 {
+                color: #dc2626;
+            }
+
+            .subsection {
+                margin-bottom: 16px;
+            }
+
+            .subsection strong {
+                display: block;
+                color: #1e40af;
+                margin-bottom: 8px;
+            }
+
+            /* Dark mode support */
+            [data-theme="dark"] .dermatology-container {
+                color: #e2e8f0;
+            }
+
+            [data-theme="dark"] .dermatology-header h3,
+            [data-theme="dark"] .condition-title,
+            [data-theme="dark"] .modal-header h2 {
+                color: #f1f5f9;
+            }
+
+            [data-theme="dark"] .dermatology-controls,
+            [data-theme="dark"] .dermatology-condition-card,
+            [data-theme="dark"] .dermatology-modal {
+                background: #1e293b;
+                border-color: #334155;
+            }
+
+            [data-theme="dark"] .dermatology-search-box input,
+            [data-theme="dark"] .dermatology-category-btn {
+                background: #0f172a;
+                border-color: #334155;
+                color: #e2e8f0;
+            }
+
+            [data-theme="dark"] .condition-section li,
+            [data-theme="dark"] .detail-section li {
+                color: #cbd5e1;
+            }
+        `;
+
+        document.head.appendChild(style);
+    }
+}
+
+// Create singleton instance
+export const dermatologyManager = new DermatologyManager();
+export default dermatologyManager;

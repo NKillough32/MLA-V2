@@ -32,6 +32,7 @@ import { coreConditionsManager } from './modules/CoreConditionsManager.js';
 import { ophthalmologyManager } from './modules/OphthalmologyManager.js';
 import { laddersManager } from './modules/LaddersManager.js';
 import { hematologyManager } from './modules/HematologyManager.js';
+import { dermatologyManager } from './modules/DermatologyManager.js';
 import { PDFLibraryManager } from './modules/PDFLibraryManager.js';
 import GlobalSearchManager from './modules/GlobalSearchManager.js';
 import { psychiatryLibrary } from '../data/psychiatryLibrary.js';
@@ -63,6 +64,7 @@ class MLAQuizApp {
         this.clinicalPearlsManager = clinicalPearlsManager;
         this.coreConditionsManager = coreConditionsManager;
         this.ophthalmologyManager = ophthalmologyManager;
+        this.dermatologyManager = dermatologyManager;
         this.laddersManager = laddersManager;
         this.differentialDxManager = differentialDxManager;
         this.triadsManager = triadsManager;
@@ -144,6 +146,7 @@ class MLAQuizApp {
             this.clinicalPearlsManager.initialize(),
             this.coreConditionsManager.initialize(),
             this.ophthalmologyManager.initialize(),
+            this.dermatologyManager.initialize(),
             this.laddersManager.initialize(),
             hematologyManager.initialize()
         ];
@@ -152,7 +155,7 @@ class MLAQuizApp {
 
         await this.initializeCalculatorBridge(eventBus, storageManager, analytics);
 
-        const [drugStats, labStats, guidelinesStats, proceduresStats, mnemonicStats, interpretationStats, medStatsStats, ladderStats, ophthalmologyStats] = await Promise.all([
+        const [drugStats, labStats, guidelinesStats, proceduresStats, mnemonicStats, interpretationStats, medStatsStats, ladderStats, ophthalmologyStats, dermatologyStats] = await Promise.all([
             this.drugManager.getStatistics(),
             Promise.resolve(this.labManager.getStatistics() || { totalPanels: 0, totalTests: 0 }),
             this.guidelinesManager.getStatistics(),
@@ -161,7 +164,8 @@ class MLAQuizApp {
             this.interpretationToolsManager.getStatistics(),
             Promise.resolve(this.medStatsEthicsManager.getStatistics()),
             this.laddersManager.getStatistics(),
-            Promise.resolve(this.ophthalmologyManager.getStatistics())
+            Promise.resolve(this.ophthalmologyManager.getStatistics()),
+            Promise.resolve(this.dermatologyManager.getStatistics())
         ]);
 
         const safeLabStats = labStats || { totalPanels: 0, totalTests: 0 };
@@ -868,6 +872,7 @@ class MLAQuizApp {
                 medStatsEthicsManager: this.medStatsEthicsManager,
                 clinicalPearlsManager: this.clinicalPearlsManager,
                 ophthalmologyManager: this.ophthalmologyManager,
+                dermatologyManager: this.dermatologyManager,
                 anatomyManager: this.anatomyManager,
                 psychiatryLibrary
             }
@@ -1128,6 +1133,9 @@ class MLAQuizApp {
                 break;
             case 'hematology':
                 this.loadHematologyContent(panel);
+                break;
+            case 'dermatology':
+                this.loadDermatologyContent(panel);
                 break;
             case 'calculators':
                 this.loadCalculatorsContent(panel);
@@ -2130,6 +2138,29 @@ class MLAQuizApp {
             });
         } else {
             hematologyManager.render(container);
+        }
+    }
+
+    /**
+     * Load Dermatology content
+     */
+    loadDermatologyContent(panel) {
+        const container = panel.querySelector('#dermatology-container');
+        if (!container) {
+            console.error('Dermatology container not found');
+            return;
+        }
+
+        // Initialize dermatology manager if not already done
+        if (!dermatologyManager.initialized) {
+            dermatologyManager.initialize().then(() => {
+                dermatologyManager.render(container);
+            }).catch(err => {
+                console.error('Failed to initialize dermatology manager:', err);
+                container.innerHTML = '<div class="error-message">Failed to load dermatology content</div>';
+            });
+        } else {
+            dermatologyManager.render(container);
         }
     }
 
