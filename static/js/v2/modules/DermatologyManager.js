@@ -331,15 +331,15 @@ export class DermatologyManager {
                 <div class="condition-content">
                     ${condition.clinicalPresentation?.description ? `
                         <div class="condition-section">
-                            <strong>Clinical Presentation</strong>
-                            <p>${condition.clinicalPresentation.description}</p>
+                            <strong class="condition-section-title">Clinical Presentation</strong>
+                            <p class="condition-section-text">${condition.clinicalPresentation.description}</p>
                         </div>
                     ` : ''}
 
                     ${condition.diagnosis && Array.isArray(condition.diagnosis) && condition.diagnosis.length > 0 ? `
                         <div class="condition-section">
-                            <strong>Diagnosis</strong>
-                            <ul>
+                            <strong class="condition-section-title">Diagnosis</strong>
+                            <ul class="condition-section-list">
                                 ${condition.diagnosis.slice(0, 3).map(item => `<li>${formatListItem(item)}</li>`).join('')}
                                 ${condition.diagnosis.length > 3 ? `<li class="more-indicator">+${condition.diagnosis.length - 3} more...</li>` : ''}
                             </ul>
@@ -348,8 +348,8 @@ export class DermatologyManager {
 
                     ${condition.management && Array.isArray(condition.management) && condition.management.length > 0 ? `
                         <div class="condition-section">
-                            <strong>Management</strong>
-                            <ul>
+                            <strong class="condition-section-title">Management</strong>
+                            <ul class="condition-section-list">
                                 ${condition.management.slice(0, 3).map(item => `<li>${formatListItem(item)}</li>`).join('')}
                                 ${condition.management.length > 3 ? `<li class="more-indicator">+${condition.management.length - 3} more...</li>` : ''}
                             </ul>
@@ -455,15 +455,15 @@ export class DermatologyManager {
                         const label = key.charAt(0).toUpperCase() + key.slice(1);
                         objHtml += `
                             <div class="subsection">
-                                <div class="subsection-label">${label}:</div>
-                                <ul>
+                                <div class="subsection-label">${label}</div>
+                                <ul class="subsection-list">
                                     ${value.map(item => `<li>${formatListItem(item)}</li>`).join('')}
                                 </ul>
                             </div>
                         `;
                     } else if (typeof value === 'string') {
                         const label = key.charAt(0).toUpperCase() + key.slice(1);
-                        objHtml += `<div class="subsection"><div class="subsection-label">${label}:</div><p>${value}</p></div>`;
+                        objHtml += `<div class="subsection"><div class="subsection-label">${label}</div><p class="subsection-text">${value}</p></div>`;
                     }
                 }
                 objHtml += '</div>';
@@ -830,31 +830,47 @@ export class DermatologyManager {
 
             .condition-section {
                 font-size: 0.9rem;
+                padding: 12px 12px 10px 14px;
+                border-radius: 10px;
+                background: rgba(59, 130, 246, 0.06);
+                border: 1px solid rgba(59, 130, 246, 0.16);
             }
 
-            .condition-section strong {
+            .condition-section-title {
                 display: block;
                 color: #1e40af;
                 margin-bottom: 6px;
-                font-size: 0.88rem;
+                font-size: 0.78rem;
+                text-transform: uppercase;
+                letter-spacing: 0.08em;
             }
 
-            .condition-section p {
+            .condition-section-text {
                 margin: 0;
                 line-height: 1.6;
-                color: var(--v2-text-secondary, #475569);
+                color: var(--v2-text-primary, #0f172a);
             }
 
-            .condition-section ul {
+            .condition-section-list {
                 margin: 0;
-                padding-left: 20px;
-                list-style-type: disc;
+                padding-left: 0;
+                list-style: none;
             }
 
-            .condition-section li {
-                margin-bottom: 4px;
+            .condition-section-list li {
+                margin-bottom: 6px;
                 line-height: 1.5;
-                color: var(--v2-text-secondary, #475569);
+                color: var(--v2-text-primary, #0f172a);
+                padding-left: 18px;
+                position: relative;
+            }
+
+            .condition-section-list li::before {
+                content: '•';
+                position: absolute;
+                left: 0;
+                color: #3b82f6;
+                font-weight: 700;
             }
 
             .more-indicator {
@@ -1035,19 +1051,37 @@ export class DermatologyManager {
                 color: #1e40af;
                 font-weight: 600;
                 margin-bottom: 8px;
-                font-size: 0.95rem;
+                font-size: 0.8rem;
                 text-transform: capitalize;
+                letter-spacing: 0.06em;
             }
 
-            .subsection p {
+            .subsection-text {
                 margin: 0;
-                padding-left: 12px;
+                padding: 10px 12px;
+                border-radius: 8px;
+                background: rgba(59, 130, 246, 0.08);
                 color: var(--v2-text-primary, #0f172a);
             }
 
-            .subsection ul {
+            .subsection-list {
                 margin: 0;
-                padding-left: 24px;
+                padding-left: 0;
+                list-style: none;
+            }
+
+            .subsection-list li {
+                margin-bottom: 8px;
+                padding-left: 18px;
+                position: relative;
+            }
+
+            .subsection-list li::before {
+                content: '•';
+                position: absolute;
+                left: 0;
+                color: #3b82f6;
+                font-weight: 700;
             }
 
             .subsection strong {
@@ -1082,6 +1116,30 @@ export class DermatologyManager {
             [data-theme="dark"] .condition-section li,
             [data-theme="dark"] .detail-section li {
                 color: #cbd5e1;
+            }
+
+            [data-theme="dark"] .condition-section {
+                background: rgba(59, 130, 246, 0.16);
+                border-color: rgba(59, 130, 246, 0.3);
+            }
+
+            [data-theme="dark"] .condition-section-title {
+                color: #93c5fd;
+            }
+
+            [data-theme="dark"] .condition-section-text,
+            [data-theme="dark"] .condition-section-list li,
+            [data-theme="dark"] .subsection-text,
+            [data-theme="dark"] .subsection-list li {
+                color: #e2e8f0;
+            }
+
+            [data-theme="dark"] .subsection-label {
+                color: #93c5fd;
+            }
+
+            [data-theme="dark"] .subsection-text {
+                background: rgba(59, 130, 246, 0.18);
             }
         `;
 

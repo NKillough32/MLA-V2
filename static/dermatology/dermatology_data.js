@@ -22,7 +22,7 @@ export const dermatologyDatabase = {
                 'Chronic: Lichenification, fissuring, hyperpigmentation/hypopigmentation'
             ],
             symptoms: ['Intense pruritus (worse at night)', 'Dry skin (xerosis)', 'Secondary infection (impetiginization)'],
-            images: ['23.jpg', '24.jpg', '25.jpg']
+            images: ['35.jpg', '36.jpg']
         },
         associations: [
             'Atopic triad: Asthma, allergic rhinitis, food allergies',

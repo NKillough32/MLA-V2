@@ -1803,23 +1803,23 @@ class MLAQuizApp {
                 <h3 class="cc-section-title">📖 Overview</h3>
                 
                 ${condition.overview.definition ? `
-                <div class="cc-subsection">
+                <div class="cc-subsection cc-subsection--overview">
                     <h4 class="cc-subsection-title">Definition</h4>
-                    <p style="padding: 12px 16px; background: var(--v2-bg-card); border-radius: 8px; line-height: 1.8;">${condition.overview.definition}</p>
+                    <p class="cc-subsection-content">${condition.overview.definition}</p>
                 </div>
                 ` : ''}
 
                 ${condition.overview.epidemiology ? `
-                <div class="cc-subsection">
+                <div class="cc-subsection cc-subsection--overview">
                     <h4 class="cc-subsection-title">Epidemiology</h4>
-                    <p style="padding: 12px 16px; background: var(--v2-bg-card); border-radius: 8px; line-height: 1.8;">${condition.overview.epidemiology}</p>
+                    <p class="cc-subsection-content">${condition.overview.epidemiology}</p>
                 </div>
                 ` : ''}
 
                 ${condition.overview.pathophysiology ? `
-                <div class="cc-subsection">
+                <div class="cc-subsection cc-subsection--overview">
                     <h4 class="cc-subsection-title">Pathophysiology</h4>
-                    <p style="padding: 12px 16px; background: var(--v2-bg-card); border-radius: 8px; line-height: 1.8;">${condition.overview.pathophysiology}</p>
+                    <p class="cc-subsection-content">${condition.overview.pathophysiology}</p>
                 </div>
                 ` : ''}
             </div>
