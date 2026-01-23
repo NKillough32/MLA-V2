@@ -1,7 +1,7 @@
 /**
  * Dermatology Database
  * Comprehensive guide to dermatological conditions and skin presentations
- * Based on the British Association of Dermatologists Handbook (3rd Edition, 2020)
+ * Evidence-based content for medical education
  */
 
 export const dermatologyDatabase = {
@@ -71,7 +71,22 @@ export const dermatologyDatabase = {
             'Secondary bacterial infection (S. aureus, S. pyogenes)',
             'Eczema herpeticum (HSV superinfection) - emergency!',
             'Lichenification and scarring',
-            'Psychological impact, sleep disturbance'
+            'Psychological impact, sleep disturbance',
+            'Growth impairment (severe childhood eczema)',
+            'Eye complications: Keratoconus, cataracts (chronic facial eczema)'
+        ],
+        redFlags: [
+            '⚠️ Eczema herpeticum: Punched-out erosions, monomorphic vesicles, fever - start IV aciclovir',
+            '⚠️ Erythroderma: >90% BSA involvement - risk of hypothermia, high-output cardiac failure',
+            'Widespread impetiginization requiring systemic antibiotics',
+            'Failure to thrive in infants'
+        ],
+        prognosis: [
+            '60% of children with atopic eczema improve by adolescence',
+            'Adult-onset eczema tends to be more chronic',
+            'Hand eczema persists in 30% into adulthood',
+            'Persistent disease associated with early onset, severe disease, family history',
+            'Increased lifetime risk of asthma and allergic rhinitis'
         ]
     },
 
@@ -113,7 +128,13 @@ export const dermatologyDatabase = {
             '  • Protective gloves (cotton-lined vinyl)',
             '  • Occupational modifications'
         ],
-        complications: ['Chronic hand eczema', 'Secondary infection', 'Occupational disability']
+        complications: ['Chronic hand eczema', 'Secondary infection', 'Occupational disability', 'Psychological distress'],
+        prognosis: [
+            'Excellent if allergen identified and avoided',
+            'Complete resolution within weeks of allergen cessation',
+            'Occupational contact dermatitis may require career change',
+            'Patch test positivity helps with targeted avoidance'
+        ]
     },
 
     // PSORIASIS
@@ -183,7 +204,27 @@ export const dermatologyDatabase = {
             '    - Apremilast (PDE4 inhibitor)',
             '    - Deucravacitinib (TYK2 inhibitor)'
         ],
-        complications: ['Psoriatic arthritis', 'Erythroderma', 'Psychological impact', 'CVD risk']
+        complications: [
+            'Psoriatic arthritis (10-30% - screen with PEST questionnaire)',
+            'Erythroderma (life-threatening)',
+            'Psychological impact: Depression, anxiety, reduced QOL',
+            'Cardiovascular disease: 50% increased MI risk',
+            'Metabolic syndrome components'
+        ],
+        redFlags: [
+            '⚠️ Erythrodermic psoriasis: >90% BSA, systemic upset - urgent hospital admission',
+            '⚠️ Pustular psoriasis: Fever, malaise, widespread pustules - medical emergency',
+            'Joint pain/stiffness: Screen for psoriatic arthritis',
+            'Extensive guttate post-streptococcal infection'
+        ],
+        prognosis: [
+            'Chronic lifelong condition with remissions and flares',
+            'Unpredictable course',
+            'Guttate psoriasis: 40% develop chronic plaque psoriasis',
+            'Early-onset disease (<20 years) tends to be more severe',
+            'Excellent response to biologics in most patients (PASI 75-90 in 70-80%)',
+            'Improved life expectancy with cardiovascular risk management'
+        ]
     },
 
     // ACNE AND ROSACEA
@@ -233,7 +274,26 @@ export const dermatologyDatabase = {
             '  • Co-cyprindiol (Dianette®)',
             '  • Spironolactone'
         ],
-        complications: ['Scarring (atrophic, hypertrophic)', 'Post-inflammatory hyperpigmentation', 'Psychological impact']
+        complications: [
+            'Scarring (atrophic, ice-pick, rolling, boxcar)',
+            'Hypertrophic scarring and keloids',
+            'Post-inflammatory hyperpigmentation (especially darker skin)',
+            'Psychological impact: Depression, anxiety, low self-esteem',
+            'Acne fulminans (rare severe variant with systemic symptoms)'
+        ],
+        redFlags: [
+            'Acne fulminans: Severe nodular acne + fever, arthralgia, malaise - urgent referral',
+            'Signs of PCOS in females: Hirsutism, irregular periods, obesity',
+            'Rapid onset in adult (especially >25 years) - consider hormonal cause or drug-induced',
+            'Severe nodulocystic acne - early isotretinoin to prevent scarring'
+        ],
+        prognosis: [
+            'Typically resolves by mid-20s but can persist into adulthood (12% women, 3% men >45 years)',
+            'Isotretinoin: 85% clear or nearly clear after one course; 15% require second course',
+            'Scarring permanent but can be improved with laser resurfacing, peels, microneedling',
+            'Early aggressive treatment prevents scarring',
+            'Adult female acne often more resistant to treatment'
+        ]
     },
 
     'rosacea': {
@@ -284,6 +344,24 @@ export const dermatologyDatabase = {
             '  • Lid hygiene, artificial tears',
             '  • Oral doxycycline',
             '  • Ophthalmology referral if severe'
+        ],
+        complications: [
+            'Ocular rosacea complications: Keratitis, corneal ulceration (vision-threatening)',
+            'Rhinophyma: Disfiguring nasal hypertrophy',
+            'Persistent erythema and telangiectasia',
+            'Psychological distress'
+        ],
+        redFlags: [
+            'Ocular symptoms: Photophobia, visual changes - urgent ophthalmology referral',
+            'Unilateral presentation - consider alternative diagnosis (lupus, sarcoidosis)',
+            'Granulomatous rosacea - may need biopsy to exclude other granulomatous conditions'
+        ],
+        prognosis: [
+            'Chronic relapsing condition',
+            'Requires long-term management and trigger avoidance',
+            'Good response to treatment in most cases',
+            'Remissions possible but recurrence common',
+            'Telangiectasia permanent unless treated with laser'
         ]
     },
 
@@ -406,9 +484,21 @@ export const dermatologyDatabase = {
             '  • Separate towels and face cloths'
         ],
         complications: [
-            'Post-streptococcal glomerulonephritis (rare)',
-            'Cellulitis',
-            'Staphylococcal scalded skin syndrome (SSSS) - in children'
+            'Post-streptococcal glomerulonephritis (rare - 1-5% after streptococcal impetigo)',
+            'Cellulitis or lymphangitis',
+            'Staphylococcal scalded skin syndrome (SSSS) - in children <5 years',
+            'Scarring (rare)'
+        ],
+        redFlags: [
+            'Widespread bullous impetigo in neonate - risk of SSSS',
+            'Systemic symptoms: Fever, malaise - consider deeper infection',
+            'Haematuria after streptococcal impetigo - check for post-strep GN'
+        ],
+        prognosis: [
+            'Excellent with treatment - resolves in 7-10 days',
+            'High cure rates with topical or oral antibiotics',
+            'Recurrence common if poor hygiene or nasal S. aureus carriage',
+            'No scarring if treated promptly'
         ]
     },
 
@@ -451,9 +541,25 @@ export const dermatologyDatabase = {
         ],
         complications: [
             'Eczema herpeticum (HSV on eczematous skin) - emergency!',
-            'Erythema multiforme',
-            'Aseptic meningitis',
-            'Neonatal herpes (vertical transmission)'
+            'Erythema multiforme (often HSV-triggered)',
+            'Aseptic meningitis (rare)',
+            'Neonatal herpes (vertical transmission - can be fatal)',
+            'Disseminated HSV in immunocompromised',
+            'HSV keratitis (vision-threatening)'
+        ],
+        redFlags: [
+            '⚠️ Eczema herpeticum: Widespread punched-out erosions on eczematous skin - start IV aciclovir',
+            '⚠️ Immunocompromised patient with extensive/severe HSV - risk of dissemination',
+            'Eye involvement: Pain, photophobia, visual changes - ophthalmology referral',
+            'Primary genital HSV in pregnancy (especially 3rd trimester) - risk to neonate'
+        ],
+        prognosis: [
+            'Lifelong infection - virus remains dormant in sensory ganglia',
+            'Recurrence rate variable: Average 2-4 episodes/year',
+            'Recurrences typically milder and shorter than primary infection',
+            'Frequency decreases over time in many patients',
+            'Suppressive therapy reduces recurrences by 70-80%',
+            'No cure but highly manageable with antivirals'
         ]
     },
 
@@ -510,7 +616,29 @@ export const dermatologyDatabase = {
             '  • Amitriptyline, gabapentin, pregabalin',
             '  • Topical capsaicin cream',
             '<strong>Prevention</strong>:',
-            '  • Shingles vaccine (Shingrix) - ≥50 years or immunocompromised'
+            '  • Shingles vaccine (Shingrix) - ≥50 years or immunocompromised',
+            '  • Varicella vaccine - children (not routine in UK)'
+        ],
+        redFlags: [
+            '⚠️ Ophthalmic zoster (V1 distribution) - urgent ophthalmology referral same day',
+            '⚠️ Hutchinson sign: Vesicles on tip of nose - high risk of ocular involvement',
+            '⚠️ Ramsay Hunt syndrome: Facial palsy + ear vesicles - ENT/neurology referral',
+            'Disseminated zoster (>2 dermatomes) - indicates immunocompromise',
+            'Motor weakness in affected dermatome - zoster paresis',
+            'Severe headache/meningism - CNS involvement'
+        ],
+        prognosis: [
+            '<strong>Chickenpox</strong>:',
+            '  • Self-limiting in children - resolves in 1-2 weeks',
+            '  • More severe in adults and immunocompromised',
+            '  • Lifelong immunity after infection (but VZV remains dormant)',
+            '<strong>Shingles</strong>:',
+            '  • Rash resolves in 2-4 weeks with treatment',
+            '  • Post-herpetic neuralgia (PHN): 10-20% overall, 50% in >60 years',
+            '  • PHN duration: Resolves in 50% by 3 months, may persist >1 year in 10%',
+            '  • Early antiviral therapy reduces PHN risk',
+            '  • Recurrence rare (5%) but higher in immunocompromised',
+            '  • Vaccine reduces shingles incidence by 90% and PHN by 85%'
         ]
     },
 
@@ -564,10 +692,22 @@ export const dermatologyDatabase = {
             '  • Annual skin checks if multiple BCCs',
             '  • Sun protection advice'
         ],
+        redFlags: [
+            'Rapid growth or change in long-standing lesion',
+            'Central ulceration (rodent ulcer) - more aggressive',
+            'Morphoeic/sclerosing subtype - ill-defined, higher recurrence',
+            'Periocular, nasal, or ear location - may require Mohs surgery',
+            'Large size (>2cm) - higher risk features',
+            'Gorlin syndrome (multiple BCCs) - genetic counselling'
+        ],
         prognosis: [
-            'Excellent prognosis, rarely metastasizes (<0.1%)',
-            'Local recurrence: 5% after excision, higher for morphoeic type',
-            'Can be locally destructive if untreated'
+            'Excellent prognosis - rarely metastasizes (<0.1%)',
+            'Cure rate >95% with appropriate surgical treatment',
+            'Local recurrence: 5% after standard excision, 1-2% after Mohs',
+            'Morphoeic/infiltrative types: Higher recurrence (10-15%)',
+            'Can be locally destructive if untreated (especially facial)',
+            '40% risk of developing another BCC within 3 years',
+            'Metastatic BCC extremely rare but has poor prognosis'
         ]
     },
 
@@ -623,10 +763,28 @@ export const dermatologyDatabase = {
             '  • Treat actinic keratoses (cryotherapy, topical 5-FU, imiquimod)',
             '  • Regular surveillance if immunosuppressed'
         ],
+        redFlags: [
+            '⚠️ Rapidly growing nodule in organ transplant patient - very high metastatic risk',
+            'Lesion >2cm or >4mm deep (Breslow thickness)',
+            'Poorly differentiated histology',
+            'Perineural or lymphovascular invasion',
+            'SCC on lip, ear, or genitals - higher risk sites',
+            'Palpable lymph nodes - urgent staging',
+            'Recurrent SCC after previous treatment'
+        ],
         prognosis: [
-            'Overall 5-year survival: >90% if localized',
-            'Metastasis risk: 2-5% overall, higher if immunosuppressed (10-16%)',
-            'High-risk features: >2cm, >4mm depth, perineural invasion, immunosuppression'
+            'Overall 5-year survival: >95% if localized and treated',
+            '<strong>Metastasis risk</strong>:',
+            '  • Low-risk SCC: 2-5%',
+            '  • Immunosuppressed: 10-16% (organ transplant patients 100x risk)',
+            '  • High-risk features: Up to 20-30%',
+            '<strong>Recurrence</strong>:',
+            '  • Local recurrence: 8% at 5 years',
+            '  • Mohs surgery reduces recurrence to <3%',
+            '<strong>Survival if metastatic</strong>:',
+            '  • 5-year survival with lymph node mets: 25-40%',
+            '  • Distant metastases: <20%',
+            'High-risk features: >2cm, >4mm depth, poorly differentiated, perineural invasion, ear/lip location, immunosuppression'
         ]
     },
 
@@ -704,14 +862,38 @@ export const dermatologyDatabase = {
             '  • Stage IIB-IV: Every 3-6 months for 3 years, then annually',
             '  • Self-examination, sun protection advice'
         ],
+        redFlags: [
+            '⚠️ Any new pigmented lesion in adult or changing mole - 2-week-wait',
+            '⚠️ Nodular melanoma: Rapidly growing pigmented/amelanotic nodule - aggressive',
+            'Amelanotic melanoma: Flesh-colored/pink nodule - easily missed',
+            'Satellite lesions or in-transit metastases',
+            'Lymphadenopathy - stage III disease',
+            'Systemic symptoms: Weight loss, bone pain, neurological signs',
+            'Bleeding, ulceration, or pain in pigmented lesion'
+        ],
         prognosis: [
-            '5-year survival by stage:',
-            '  • Stage I: >95%',
-            '  • Stage II: 65-90%',
-            '  • Stage III: 40-78%',
-            '  • Stage IV: 15-20%',
-            'Breslow thickness most important prognostic factor',
-            'Ulceration and mitotic rate also significant'
+            '<strong>5-year survival by stage</strong>:',
+            '  • Stage 0 (in situ): 99%',
+            '  • Stage IA: 97%',
+            '  • Stage IB: 92%',
+            '  • Stage II: 65-90% (depends on Breslow thickness)',
+            '  • Stage III: 40-78% (depends on nodal burden)',
+            '  • Stage IV: 15-30% (improved with immunotherapy)',
+            '<strong>Prognostic factors</strong>:',
+            '  • <strong>Breslow thickness</strong>: Most important',
+            '    - <1mm: Excellent prognosis',
+            '    - 1-2mm: Good prognosis',
+            '    - 2-4mm: Intermediate',
+            '    - >4mm: Poor prognosis',
+            '  • Ulceration: Worsens prognosis by one sub-stage',
+            '  • Mitotic rate: >1/mm² worse prognosis',
+            '  • Lymph node involvement: Significant reduction in survival',
+            '<strong>Response to treatment</strong>:',
+            '  • Combination immunotherapy (ipilimumab + nivolumab): 58% response rate in metastatic',
+            '  • BRAF-targeted therapy: 68% response rate in BRAF+ metastatic',
+            '  • Adjuvant therapy reduces recurrence by 50% in Stage III',
+            '<strong>Follow-up</strong>:',
+            '  • Lifetime risk of second primary melanoma: 5-10%'
         ]
     },
 
@@ -770,12 +952,39 @@ export const dermatologyDatabase = {
             '  - Nail changes',
             '  - Atopy'
         ],
+        differentialDiagnosis: [
+            'Trichotillomania (hair pulling) - irregular patches, broken hairs varying lengths',
+            'Tinea capitis (fungal) - scale, broken hairs, inflammatory',
+            'Androgenetic alopecia - diffuse thinning, miniaturization',
+            'Telogen effluvium - diffuse shedding after stress/illness',
+            'Scarring alopecia - destroyed follicles, smooth shiny scalp'
+        ],
+        redFlags: [
+            'Scarring or atrophy of scalp - indicates scarring alopecia, not alopecia areata',
+            'Scale or inflammation - consider tinea capitis (get fungal culture)',
+            'Rapidly progressive to totalis/universalis - poor prognostic sign',
+            'Associated severe nail dystrophy - worse prognosis',
+            'Ophiasis pattern (band around occipital/temporal) - resistant to treatment'
+        ],
         prognosis: [
-            'Unpredictable course',
-            'Single patch: 60-80% regrow within 1 year',
-            'Multiple patches or extensive: Poorer prognosis',
-            'Alopecia totalis/universalis: <10% achieve full regrowth',
-            'Recurrence common'
+            '<strong>Overall</strong>: Unpredictable course with high variability',
+            '<strong>Limited patches</strong>:',
+            '  • Single patch: 60-80% spontaneous regrowth within 1 year',
+            '  • Few patches (<50% scalp): 40-50% complete regrowth',
+            '<strong>Extensive disease</strong>:',
+            '  • >50% scalp involvement: 10% complete regrowth',
+            '  • Alopecia totalis: <10% full regrowth',
+            '  • Alopecia universalis: <5% full regrowth',
+            '<strong>Recurrence</strong>: Common (30% within 1 year, 50-80% lifetime)',
+            '<strong>Poor prognostic factors</strong>:',
+            '  • Childhood onset (<10 years)',
+            '  • Extensive hair loss (>50%)',
+            '  • Rapid progression to totalis/universalis',
+            '  • Ophiasis pattern',
+            '  • Nail dystrophy',
+            '  • Atopy',
+            '  • Family history of alopecia areata',
+            '  • Long duration (>1 year without regrowth)'
         ]
     },
 
@@ -850,14 +1059,39 @@ export const dermatologyDatabase = {
             '  • Avoid sharing towels, nail clippers',
             '  • Cotton socks, breathable footwear'
         ],
+        differentialDiagnosis: [
+            '<strong>Psoriasis</strong>: Nail pitting, oil drop sign, subungual hyperkeratosis - can coexist with onychomycosis',
+            '<strong>Lichen planus</strong>: Nail thinning, longitudinal ridging, pterygium',
+            '<strong>Trauma</strong>: Occupational/footwear, single nail, history of injury',
+            '<strong>Eczema/dermatitis</strong>: Irregular pitting, ridging',
+            '<strong>Melanoma</strong>: Longitudinal melanonychia - must exclude!',
+            '<strong>Yellow nail syndrome</strong>: All nails, slow growth, pleural effusions'
+        ],
+        redFlags: [
+            '⚠️ Proximal subungual pattern in immunocompetent - unusual, investigate for immunodeficiency',
+            '⚠️ Single dark longitudinal band (melanonychia) - exclude subungual melanoma',
+            'Rapid onset or painful nail changes - consider alternative diagnosis',
+            'Total nail dystrophy with systemic symptoms - investigate further',
+            'Check LFTs before oral antifungals - contraindicated in liver disease'
+        ],
         prognosis: [
-            'Cure rates:',
-            '  • Terbinafine: 60-70%',
-            '  • Itraconazole: 50-60%',
-            '  • Topical alone: 30-50%',
-            'Recurrence common (20-50%)',
-            'Complete clearance takes 12-18 months (time for nail to grow out)',
-            'Toenails slower than fingernails'
+            '<strong>Cure rates (mycological + clinical)</strong>:',
+            '  • Terbinafine: 60-70% for toenails, 75-80% for fingernails',
+            '  • Itraconazole: 50-60% for toenails',
+            '  • Topical alone: 30-50% (only for mild distal disease)',
+            '<strong>Time to cure</strong>:',
+            '  • Fingernails: 4-6 months visible improvement, 6-9 months complete',
+            '  • Toenails: 6-12 months visible improvement, 12-18 months complete',
+            '  • Must wait for complete nail regrowth (takes longer in elderly)',
+            '<strong>Recurrence</strong>: Common (20-50% within 3 years)',
+            '<strong>Factors affecting cure</strong>:',
+            '  • Poor: Lateral disease, total dystrophy, matrix involvement, elderly, immunosuppression',
+            '  • Good: Distal disease, <50% nail involvement, white superficial type, younger age',
+            '<strong>Relapse prevention</strong>:',
+            '  • Treat tinea pedis',
+            '  • Antifungal foot powder',
+            '  • Breathable footwear',
+            '  • Avoid trauma'
         ]
     },
 
@@ -924,13 +1158,43 @@ export const dermatologyDatabase = {
             '  • Oral corticosteroids: Short pulse therapy',
             '  • Oral JAK inhibitors: Under investigation'
         ],
+        differentialDiagnosis: [
+            'Pityriasis alba - common in children, ill-defined hypopigmentation',
+            'Tinea versicolor - scaly hypopigmented patches, KOH positive',
+            'Post-inflammatory hypopigmentation - history of trauma/eczema',
+            'Chemical leukoderma - occupational exposure',
+            'Halo nevus - depigmented ring around mole (associated with vitiligo)',
+            'Piebaldism - congenital, white forelock, stable'
+        ],
+        redFlags: [
+            'Rapidly progressive vitiligo - may benefit from systemic immunosuppression',
+            'Koebner phenomenon (lesions at trauma sites) - marker of activity',
+            'Associated symptoms: Fatigue, weight loss, hyperpigmentation - screen for Addison disease',
+            'Extensive vitiligo (>50% BSA) - consider depigmentation therapy',
+            'Halo nevi + vitiligo in young person - screen for melanoma family history'
+        ],
         prognosis: [
-            'Unpredictable, chronic',
-            'Spontaneous repigmentation rare (10-20%)',
-            'Segmental vitiligo: Usually stable after initial spread',
-            'Non-segmental vitiligo: Progressive in most',
-            'Response to treatment variable (30-50% achieve some repigmentation)',
-            'Face and trunk respond better than hands and feet'
+            '<strong>Natural history</strong>:',
+            '  • Unpredictable, chronic progressive',
+            '  • Spontaneous repigmentation: 10-20% (more in children)',
+            '  • Segmental vitiligo: Stabilizes after 6-24 months, remains stable',
+            '  • Non-segmental vitiligo: Progressive in 80%, waxing/waning in 20%',
+            '<strong>Treatment response</strong>:',
+            '  • 30-50% achieve some repigmentation with treatment',
+            '  • Face and trunk: Best response (up to 70%)',
+            '  • Hands and feet: Poor response (<20%)',
+            '  • Lips and genitalia: Very poor response',
+            '  • Recent onset (<2 years): Better response',
+            '<strong>Factors favoring repigmentation</strong>:',
+            '  • Childhood onset',
+            '  • Recent onset',
+            '  • Darker skin type (follicular repigmentation easier to see)',
+            '  • Facial/truncal location',
+            '  • Trichrome vitiligo (tan zone between white and normal)',
+            '<strong>Psychosocial impact</strong>:',
+            '  • Significant in visible areas and darker skin types',
+            '  • Depression and anxiety common',
+            '  • Camouflage makeup highly effective for quality of life'
         ]
     },
 
@@ -980,12 +1244,44 @@ export const dermatologyDatabase = {
             '  • Intermittent topical agents',
             '  • High recurrence rate'
         ],
+        differentialDiagnosis: [
+            'Post-inflammatory hyperpigmentation - history of trauma/inflammation',
+            'Drug-induced hyperpigmentation - minocycline, antimalarials, phenytoin',
+            'Exogenous ochronosis - from prolonged hydroquinone use',
+            'Hori nevus - blue-grey pigmentation, deeper dermal',
+            'Addison disease - generalized hyperpigmentation + symptoms',
+            'Riehl melanosis - occupational/cosmetic contact dermatitis'
+        ],
+        redFlags: [
+            'Unilateral distribution - consider alternative diagnosis',
+            'Associated systemic symptoms - investigate for Addison disease',
+            'Blue-grey color - suggests dermal pigment (poor treatment response)',
+            'Ochronosis (blue-black darkening) - from chronic hydroquinone use',
+            'Porphyria cutanea tarda if photosensitivity + hyperpigmentation'
+        ],
         prognosis: [
-            'Chronic and relapsing',
-            'May improve after pregnancy or stopping OCP',
-            'Epidermal pigment responds better than dermal',
-            'Recurrence common without sun protection',
-            'Complete clearance difficult'
+            '<strong>Natural course</strong>:',
+            '  • Chronic and relapsing in most cases',
+            '  • May improve after pregnancy (chloasma gravidarum) - 30% clear within 1 year postpartum',
+            '  • May improve after stopping OCP/HRT',
+            '  • Rarely resolves completely without treatment',
+            '<strong>Treatment response</strong>:',
+            '  • Epidermal pigment: Good response (70-80% with triple therapy)',
+            '  • Dermal pigment: Poor response (<30%)',
+            '  • Mixed epidermal-dermal: Variable response',
+            '  • Triple combination cream: Most effective (60-80% good/excellent improvement)',
+            '  • Improvement visible in 4-8 weeks, maximum at 12-24 weeks',
+            '<strong>Recurrence</strong>:',
+            '  • Very common (50-80%) without maintenance',
+            '  • UV exposure most important trigger',
+            '  • Requires lifelong sun protection',
+            '  • Intermittent treatment may be needed',
+            '<strong>Factors affecting prognosis</strong>:',
+            '  • Epidermal vs dermal pigment (Wood lamp assessment)',
+            '  • Skin type: Fitzpatrick III-VI more challenging',
+            '  • Compliance with sun protection',
+            '  • Ongoing hormonal triggers',
+            '  • Laser treatment risk: Post-inflammatory hyperpigmentation in darker skin types'
         ]
     }
 };
