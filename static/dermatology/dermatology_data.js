@@ -22,7 +22,7 @@ export const dermatologyDatabase = {
                 'Chronic: Lichenification, fissuring, hyperpigmentation/hypopigmentation'
             ],
             symptoms: ['Intense pruritus (worse at night)', 'Dry skin (xerosis)', 'Secondary infection (impetiginization)'],
-            images: ['35.jpg', '36.jpg', '85.jpg', '86.jpg']
+            images: ['23.jpg', '24.jpg', '25.jpg']
         },
         associations: [
             'Atopic triad: Asthma, allergic rhinitis, food allergies',
@@ -98,7 +98,7 @@ export const dermatologyDatabase = {
             distribution: ['Site of contact with allergen', 'May spread beyond contact site', 'Common sites: Hands, face, eyelids, ears'],
             morphology: ['Erythema, vesicles, weeping, scaling', 'Well-demarcated initially', 'Chronic: Lichenification, fissuring'],
             symptoms: ['Pruritus', 'Burning sensation', 'Delayed onset (24-72 hours after exposure)'],
-            images: ['101.jpg', '102.jpg']
+            images: ['26.jpg', '27.jpg']
         },
         commonAllergens: [
             '<strong>Metals</strong>: Nickel (jewelry, belt buckles), chromate, cobalt',
@@ -155,7 +155,7 @@ export const dermatologyDatabase = {
                 'Auspitz sign: Pinpoint bleeding on scale removal',
                 'Plaques may coalesce'
             ],
-            images: ['89.jpg', '90.jpg', '91.jpg', '92.jpg']
+            images: ['28.jpg', '29.jpg', '30.jpg', '31.jpg']
         },
         variants: [
             '<strong>Chronic plaque</strong>: Most common (80-90%)',
@@ -238,7 +238,7 @@ export const dermatologyDatabase = {
                 '<strong>Inflammatory</strong>: Papules, pustules, nodules, cysts'
             ],
             distribution: 'Face (forehead, cheeks, nose, chin), chest, upper back, shoulders',
-            images: ['4.jpg', '5.jpg', '87.jpg', '88.jpg']
+            images: ['32.jpg', '33.jpg', '34.jpg']
         },
         pathophysiology: [
             '1. Increased sebum production (androgenic)',
@@ -308,7 +308,7 @@ export const dermatologyDatabase = {
                 'Papules and pustules (NO comedones)',
                 'Flushing and burning sensation'
             ],
-            images: ['99.jpg', '100.jpg']
+            images: ['35.jpg', '36.jpg']
         },
         subtypes: [
             '<strong>Erythematotelangiectatic</strong>: Flushing, persistent erythema, telangiectasia',
@@ -379,7 +379,7 @@ export const dermatologyDatabase = {
             ],
             distribution: 'Lower limbs most common (>70%), but can affect any site',
             systemicFeatures: ['Fever, rigors', 'Malaise', 'Lymphangitis (red streaks)', 'Regional lymphadenopathy'],
-            images: ['71.jpg', '72.jpg']
+            images: ['37.jpg', '38.jpg']
         },
         causativeOrganisms: [
             '<strong>Most common</strong>: Streptococcus pyogenes (Group A Strep)',
@@ -464,7 +464,7 @@ export const dermatologyDatabase = {
                 '<strong>Bullous (30%)</strong>: Flaccid bullae that rupture easily'
             ],
             distribution: 'Face (perioral, nose), extremities',
-            images: ['73.jpg', '74.jpg']
+            images: ['39.jpg', '40.jpg']
         },
         causativeOrganisms: [
             'Staphylococcus aureus (most common)',
@@ -516,7 +516,7 @@ export const dermatologyDatabase = {
                 '<strong>HSV-1</strong>: Mainly orofacial (cold sores)',
                 '<strong>HSV-2</strong>: Mainly genital (but HSV-1 can affect genitals too)'
             ],
-            images: ['75.jpg', '76.jpg']
+            images: ['41.jpg', '42.jpg']
         },
         triggers: [
             'UV exposure',
@@ -581,7 +581,7 @@ export const dermatologyDatabase = {
                 'Commonest: Thoracic (50%), trigeminal (20%)',
                 'Usually unilateral and does NOT cross midline'
             ],
-            images: ['60.jpg', '61.jpg']
+            images: ['43.jpg', '44.jpg', '45.jpg']
         },
         complications: [
             '<strong>Chickenpox</strong>:',
@@ -655,7 +655,7 @@ export const dermatologyDatabase = {
                 '<strong>Pigmented</strong>: Brown/black pigmentation'
             ],
             distribution: 'Sun-exposed sites: Face (especially nose), ears, scalp, neck',
-            images: ['77.jpg', '78.png', '79.jpg']
+            images: ['46.jpg', '47.jpg', '48.jpg']
         },
         riskFactors: [
             'UV exposure (cumulative sun damage)',
@@ -723,7 +723,7 @@ export const dermatologyDatabase = {
                 'Rapidly growing (weeks-months)'
             ],
             distribution: 'Sun-exposed sites: Scalp, face, ears, dorsal hands, lower lip',
-            images: ['80.jpg', '81.jpg']
+            images: ['49.jpg', '50.jpg', '51.jpg']
         },
         precursors: [
             '<strong>Actinic keratosis</strong>: Rough, scaly patches on sun-exposed skin',
@@ -801,7 +801,7 @@ export const dermatologyDatabase = {
                 '<strong>E</strong>volving: Change in size, shape, color, or symptoms'
             ],
             uglyDuckling: 'Lesion that looks different from surrounding moles',
-            images: ['3.jpg', '82.jpg', '83.jpg', '84.jpg']
+            images: ['3.jpg', '52.jpg', '53.jpg', '54.jpg']
         },
         subtypes: [
             '<strong>Superficial spreading (70%)</strong>: Irregular pigmented macule/patch, slow horizontal growth',
@@ -914,7 +914,7 @@ export const dermatologyDatabase = {
                 '<strong>Alopecia totalis</strong>: Complete scalp hair loss',
                 '<strong>Alopecia universalis</strong>: Loss of all body hair'
             ],
-            images: ['45.jpg', '46.jpg']
+            images: ['55.jpg', '56.jpg']
         },
         associations: [
             'Atopy (asthma, eczema, allergic rhinitis)',
@@ -1007,7 +1007,7 @@ export const dermatologyDatabase = {
                 '<strong>Proximal subungual</strong>: Rare, starts at proximal nail fold (suspect immunosuppression)',
                 '<strong>Total dystrophic</strong>: Entire nail affected'
             ],
-            images: ['97.jpg', '98.jpg']
+            images: ['57.jpg', '58.jpg']
         },
         causativeOrganisms: [
             '<strong>Dermatophytes (90%)</strong>: Trichophyton rubrum (most common)',
@@ -1111,7 +1111,7 @@ export const dermatologyDatabase = {
                 '<strong>Non-segmental (90%)</strong>: Symmetrical, face, hands, wrists, knees, genitals',
                 '<strong>Segmental (10%)</strong>: Unilateral, dermatomal, early onset, stable'
             ],
-            images: ['93.jpg', '94.jpg', '95.jpg']
+            images: ['59.jpg', '60.jpg']
         },
         associations: [
             'Autoimmune diseases (20-30%):',
@@ -1214,7 +1214,7 @@ export const dermatologyDatabase = {
                 '<strong>Malar (20%)</strong>: Cheeks and nose',
                 '<strong>Mandibular (15%)</strong>: Jaw'
             ],
-            images: ['20.jpg', '96.jpg']
+            images: ['61.jpg', '62.jpg']
         },
         triggers: [
             '<strong>Hormonal</strong>: Pregnancy (chloasma gravidarum), combined OCP, HRT',
