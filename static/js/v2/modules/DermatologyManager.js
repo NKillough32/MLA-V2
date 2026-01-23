@@ -399,6 +399,24 @@ export class DermatologyManager {
     renderDetailedCondition(condition) {
         let html = '';
 
+        // Image gallery at the top
+        if (condition.clinicalPresentation?.images && condition.clinicalPresentation.images.length > 0) {
+            html += `
+                <div class="detail-section image-gallery">
+                    <h4>Clinical Images</h4>
+                    <div class="image-gallery-grid">
+                        ${condition.clinicalPresentation.images.map(img => `
+                            <img src="static/assets/dermatology/${img}" 
+                                 alt="${condition.title}" 
+                                 class="condition-image"
+                                 onclick="window.open(this.src, '_blank')"
+                                 title="Click to view full size">
+                        `).join('')}
+                    </div>
+                </div>
+            `;
+        }
+
         // Helper function to render any section
         const renderSection = (title, content) => {
             if (!content) return '';
@@ -938,6 +956,47 @@ export class DermatologyManager {
 
             .detail-section.red-flags h4 {
                 color: #dc2626;
+            }
+
+            /* Image gallery styles */
+            .image-gallery {
+                background: var(--v2-bg-card, #f8fafc);
+                padding: 16px;
+                border-radius: 8px;
+                border: 1px solid var(--v2-border-light, #e2e8f0);
+            }
+
+            .image-gallery-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 12px;
+                margin-top: 12px;
+            }
+
+            .condition-image {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 8px;
+                border: 2px solid var(--v2-border-light, #e2e8f0);
+                cursor: pointer;
+                transition: all 0.3s;
+            }
+
+            .condition-image:hover {
+                transform: scale(1.05);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+                border-color: #3b82f6;
+            }
+
+            @media (max-width: 768px) {
+                .image-gallery-grid {
+                    grid-template-columns: 1fr;
+                }
+                
+                .condition-image {
+                    height: 250px;
+                }
             }
 
             .subsection {
