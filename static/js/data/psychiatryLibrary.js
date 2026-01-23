@@ -591,5 +591,253 @@ export const psychiatryLibrary = [
             'On admission give rights information, offer IMHA/IMCA, and document consent to treatment safeguards (e.g., SOAD after 3 months Section 58).',
             'Track detention/authorisation expiry dates, tribunal/hearing timelines, and regular capacity reviews to move to least restrictive care.'
         ]
+    },
+    {
+        id: 'capgras',
+        title: 'Capgras syndrome',
+        icon: '👥',
+        tags: ['Psychosis', 'Delusional'],
+        summary: 'Delusional belief that a person (usually close family) has been replaced by an identical-looking impostor.',
+        distinguishing: [
+            'Preserved recognition of facial features but conviction the person is different',
+            'Often occurs in schizophrenia, dementia (especially Lewy body), or brain injury; can follow stroke or epilepsy',
+            'Differentiate from prosopagnosia (facial recognition deficit without delusion)'
+        ],
+        firstLine: [
+            'Treat underlying condition (antipsychotics for psychosis, cholinesterase inhibitors for dementia)',
+            'Atypical antipsychotic (risperidone 1–4mg, olanzapine 5–15mg) with psychoeducation for family',
+            'Avoid confrontation; validate distress while gently reality-testing'
+        ],
+        secondLine: [
+            'Switch antipsychotic or add mood stabiliser if affective component',
+            'Consider neuroimaging if new onset or atypical features (CT/MRI for structural lesions)'
+        ],
+        investigations: [
+            'Cognitive assessment (MMSE/MoCA), medication review, exclude delirium',
+            'Neuroimaging (CT/MRI) if acute onset, focal signs, or head trauma history',
+            'Screen for Lewy body dementia features (visual hallucinations, parkinsonism, REM sleep behaviour)'
+        ],
+        crisis: [
+            'Risk of harm to "impostor" if aggression develops—safety plan and close monitoring',
+            'Consider admission if severe distress, violence risk, or inability to care for self'
+        ],
+        monitoring: [
+            'Track delusional intensity and behavioural response',
+            'Monitor antipsychotic side effects and cognitive trajectory; coordinate neurology/dementia team if indicated'
+        ]
+    },
+    {
+        id: 'cotard',
+        title: 'Cotard syndrome (délire de négation)',
+        icon: '💀',
+        tags: ['Psychosis', 'Delusional', 'High risk'],
+        summary: 'Nihilistic delusion that one is dead, does not exist, or has lost organs/blood; often with severe depression.',
+        distinguishing: [
+            'Belief in being dead or rotting, denial of existence, nihilistic themes',
+            'Commonly seen in severe psychotic depression, schizophrenia, or neurological disease (stroke, epilepsy, brain tumour)',
+            'High suicide risk due to belief death has already occurred'
+        ],
+        firstLine: [
+            'Urgent psychiatric assessment—treat underlying severe depression or psychosis',
+            'ECT often most effective for severe psychotic depression with Cotard features',
+            'Atypical antipsychotic (olanzapine 10–20mg, quetiapine 300–600mg) plus antidepressant (venlafaxine 150–225mg, mirtazapine 30–45mg)'
+        ],
+        secondLine: [
+            'Combination antidepressant-antipsychotic or mood stabiliser if bipolar spectrum',
+            'Repeat ECT course if initial response incomplete; consider maintenance ECT'
+        ],
+        investigations: [
+            'CBC, CMP, TFTs, B12/folate, syphilis serology, HIV if indicated',
+            'Neuroimaging (CT/MRI) to exclude stroke, tumour, or focal lesions',
+            'EEG if seizure history or atypical presentation'
+        ],
+        crisis: [
+            'High suicide risk - admit for close observation and rapid treatment',
+            'May refuse food/fluids believing they do not need them or are already dead - monitor nutrition and hydration',
+            'Detention likely required; document capacity impairment and best-interests rationale'
+        ],
+        monitoring: [
+            'Daily mental state review during acute phase; track suicidal ideation and self-neglect',
+            'Monitor ECG if on antipsychotic-antidepressant combinations (QTc prolongation risk)'
+        ]
+    },
+    {
+        id: 'de-clerambault',
+        title: 'De Clérambault syndrome (Erotomania)',
+        icon: '💕',
+        tags: ['Psychosis', 'Delusional'],
+        summary: 'Delusional belief that another person (often of higher status or celebrity) is in love with them.',
+        distinguishing: [
+            'Fixed belief that someone (usually unattainable) loves them and is sending secret signals',
+            'Patient interprets neutral or rejecting behaviour as proof of concealed love',
+            'Can occur as primary disorder or secondary to schizophrenia, bipolar mania, or organic brain disease'
+        ],
+        firstLine: [
+            'Atypical antipsychotic (risperidone 2–6mg, olanzapine 10–20mg, aripiprazole 10–30mg)',
+            'Psychoeducation and gentle reality-testing; no confrontation which may worsen',
+            'Risk assessment for stalking behaviour toward object of delusion'
+        ],
+        secondLine: [
+            'Clozapine for treatment-resistant cases; pimozide historically used but QT-prolonging',
+            'Mood stabiliser (lithium/valproate) if bipolar features; antidepressant if depressive component'
+        ],
+        investigations: [
+            'Cognitive screen, substance use review, thyroid function',
+            'ECG before pimozide or if multiple QT-prolonging agents; neuroimaging if organic cause suspected',
+            'Collateral history for stalking, harassment, or threats'
+        ],
+        crisis: [
+            'Escalate if stalking, threats, or approach behaviour toward object of delusion',
+            'Liaise with police/legal if harassment or safeguarding concerns; may need restraining order',
+            'Detention if risk to public or lack of insight prevents voluntary treatment'
+        ],
+        monitoring: [
+            'Track delusional preoccupation and associated behaviours (letters, visits, online activity)',
+            'Monitor antipsychotic side effects; coordinate with forensic team if legal issues arise'
+        ]
+    },
+    {
+        id: 'fregoli',
+        title: 'Fregoli delusion',
+        icon: '🎭',
+        tags: ['Psychosis', 'Delusional'],
+        summary: 'Delusional belief that different people are actually the same person in disguise, often a persecutor.',
+        distinguishing: [
+            'Patient believes strangers are familiar person(s) disguised or shape-shifting',
+            'Opposite of Capgras (which involves replacement); Fregoli involves disguise/transformation',
+            'Associated with schizophrenia, dementia, brain injury, or delirium'
+        ],
+        firstLine: [
+            'Treat underlying psychotic disorder or organic cause',
+            'Atypical antipsychotic (quetiapine 300–600mg, risperidone 2–6mg, olanzapine 10–20mg)',
+            'Address paranoid ideation and fear of persecution if present'
+        ],
+        secondLine: [
+            'Switch antipsychotic class or add mood stabiliser if mood component',
+            'Neuroimaging (CT/MRI) if new onset, head trauma, or neurological signs'
+        ],
+        investigations: [
+            'Cognitive assessment (MMSE/MoCA), exclude delirium and substance use',
+            'Neuroimaging if acute onset, focal neurology, or post-trauma',
+            'Review medications for anticholinergic or dopaminergic triggers'
+        ],
+        crisis: [
+            'Risk of aggression toward perceived persecutors—safety planning essential',
+            'Admission if violence risk, severe paranoia, or inability to function'
+        ],
+        monitoring: [
+            'Track delusion intensity and paranoid features',
+            'Monitor side effects of antipsychotics and cognitive trajectory; neurology review if structural cause'
+        ]
+    },
+    {
+        id: 'munchausen',
+        title: 'Munchausen syndrome (factitious disorder)',
+        icon: '🏥',
+        tags: ['Somatic', 'Behavioural'],
+        summary: 'Intentional feigning or production of physical/psychological symptoms to assume the sick role, without external incentives.',
+        distinguishing: [
+            'Repeated fabrication of illness with unnecessary medical procedures/admissions',
+            'Differentiate from malingering (clear external gain like compensation) and somatic symptom disorder (genuine distress without conscious deception)',
+            'Munchausen by proxy: fabrication of illness in another person (usually child)—safeguarding emergency'
+        ],
+        firstLine: [
+            'Non-confrontational approach; acknowledge distress but avoid colluding with deception',
+            'Communicate across healthcare teams to prevent repeated investigations and iatrogenic harm',
+            'Offer psychiatric support focusing on underlying needs (trauma, attachment issues) rather than symptom validity'
+        ],
+        secondLine: [
+            'Psychotherapy (CBT/psychodynamic) addressing trauma, self-esteem, and interpersonal patterns',
+            'No specific pharmacological treatment; treat comorbid depression/anxiety/PTSD if present',
+            'Set clear boundaries around future presentations and investigation thresholds'
+        ],
+        investigations: [
+            'Review medical records across sites for pattern of presentations',
+            'Exclude genuine medical conditions before diagnosis; ensure multidisciplinary discussion',
+            'If Munchausen by proxy suspected: urgent safeguarding referral, paediatric review, and potential child protection order'
+        ],
+        crisis: [
+            'Munchausen by proxy is child abuse—immediate safeguarding action, inform police and social services',
+            'Self-harm risk if confronted or exposed; handle disclosure sensitively with psychiatric support available'
+        ],
+        monitoring: [
+            'Coordinate care via single point of contact (e.g., GP or care coordinator)',
+            'Document agreed care plan, red-flag symptoms for re-investigation, and frequency of reviews',
+            'Monitor for escalation or shift to proxy behaviours if patient has dependants'
+        ]
+    },
+    {
+        id: 'othello',
+        title: 'Othello syndrome (delusional jealousy)',
+        icon: '💔',
+        tags: ['Psychosis', 'Delusional', 'High risk'],
+        summary: 'Delusional belief that partner is unfaithful despite lack of evidence; high risk of violence toward partner.',
+        distinguishing: [
+            'Irrational, unshakeable conviction of infidelity with seeking "proof" (checking phones, following partner)',
+            'Can be primary or secondary to schizophrenia, alcohol misuse, dementia, or brain injury',
+            'Very high risk of intimate partner violence and homicide'
+        ],
+        firstLine: [
+            'Urgent risk assessment—consider separation and safety planning for partner',
+            'Atypical antipsychotic (risperidone 2–6mg, olanzapine 10–20mg, quetiapine 300–600mg)',
+            'Treat underlying condition (alcohol detox/abstinence, antipsychotic for schizophrenia, dementia management)'
+        ],
+        secondLine: [
+            'SSRI if obsessional component (fluoxetine 40–60mg, sertraline 100–200mg)',
+            'Clozapine for treatment-resistant cases; lithium or valproate if mood instability',
+            'Intensive monitoring and potentially admission if violence risk remains high'
+        ],
+        investigations: [
+            'Collateral history from partner (safely, away from patient) regarding violence, threats, controlling behaviour',
+            'Alcohol/substance screen; cognitive assessment; neuroimaging if organic cause suspected (dementia, stroke, head injury)',
+            'Risk assessment tools (DASH, SARA) for domestic violence and stalking'
+        ],
+        crisis: [
+            'High risk of intimate partner homicide—urgent safeguarding and MARAC referral',
+            'Offer partner refuge/safety planning; liaise with police if imminent threat',
+            'Detention under MHA if lacks insight and poses serious risk; consider restriction order if forensic involvement'
+        ],
+        monitoring: [
+            'Frequent mental state and risk reviews; track delusional intensity and behaviour toward partner',
+            'Coordinate with MARAC, probation, or forensic services if violence history',
+            'Ensure safe communication channels with partner (separate appointments, third-party contact)'
+        ]
+    },
+    {
+        id: 'stockholm',
+        title: 'Stockholm syndrome',
+        icon: '🔗',
+        tags: ['Trauma', 'Behavioural'],
+        summary: 'Psychological response where hostage/abuse victim develops positive feelings or loyalty toward captor/abuser.',
+        distinguishing: [
+            'Not a formal psychiatric diagnosis; observed phenomenon in hostage situations, domestic violence, trafficking, cults',
+            'Victim identifies with captor, defends them, or resists rescue efforts',
+            'Thought to be survival mechanism—bonding reduces perceived threat and increases chance of survival'
+        ],
+        firstLine: [
+            'Trauma-informed approach; avoid judgment or forced separation initially',
+            'Build therapeutic alliance and safety; validate emotions while gently exploring ambivalence',
+            'Psychoeducation about trauma bonding, power dynamics, and coercive control'
+        ],
+        secondLine: [
+            'Trauma-focused therapy (TF-CBT, EMDR, phase-based trauma therapy) once safety established',
+            'Address PTSD, complex PTSD, depression, or anxiety with evidence-based treatments',
+            'SSRI/SNRI for comorbid PTSD or depression (sertraline 50–150mg, venlafaxine 75–225mg)'
+        ],
+        investigations: [
+            'Comprehensive trauma history (may take time to disclose); screen for PTSD, depression, suicidality',
+            'Physical health review for injuries, neglect, or chronic stress effects',
+            'Safeguarding assessment; risk to others (e.g., children in household)'
+        ],
+        crisis: [
+            'If immediate danger (domestic violence, trafficking, captivity): liaise with police, safeguarding, refuge services',
+            'Victim may refuse help or return to abuser—document capacity, offer ongoing safety planning and harm reduction',
+            'Children involved: mandatory safeguarding referral and child protection measures'
+        ],
+        monitoring: [
+            'Long-term follow-up for PTSD, relationship patterns, and re-victimisation risk',
+            'Support autonomy and agency; avoid coercive rescue which can mirror original trauma dynamics',
+            'Coordinate with social services, domestic violence advocates, and legal support as needed'
+        ]
     }
 ];

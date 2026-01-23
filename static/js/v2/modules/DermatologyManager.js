@@ -432,17 +432,22 @@ export class DermatologyManager {
             } else if (typeof content === 'object') {
                 let objHtml = `<div class="detail-section"><h4>${title}</h4>`;
                 for (const [key, value] of Object.entries(content)) {
+                    // Skip images array (already rendered)
+                    if (key === 'images') continue;
+                    
                     if (Array.isArray(value)) {
+                        const label = key.charAt(0).toUpperCase() + key.slice(1);
                         objHtml += `
                             <div class="subsection">
-                                <strong>${key}</strong>
+                                <div class="subsection-label">${label}:</div>
                                 <ul>
                                     ${value.map(item => `<li>${item}</li>`).join('')}
                                 </ul>
                             </div>
                         `;
-                    } else {
-                        objHtml += `<p><strong>${key}:</strong> ${value}</p>`;
+                    } else if (typeof value === 'string') {
+                        const label = key.charAt(0).toUpperCase() + key.slice(1);
+                        objHtml += `<div class="subsection"><div class="subsection-label">${label}:</div><p>${value}</p></div>`;
                     }
                 }
                 objHtml += '</div>';
@@ -956,6 +961,12 @@ export class DermatologyManager {
 
             .detail-section.red-flags h4 {
                 color: #dc2626;
+                margin-bottom: 12px;
+            }
+
+            .detail-section.red-flags li {
+                color: #7f1d1d;
+                font-weight: 500;
             }
 
             /* Image gallery styles */
@@ -1003,10 +1014,28 @@ export class DermatologyManager {
                 margin-bottom: 16px;
             }
 
-            .subsection strong {
+            .subsection-label {
                 display: block;
                 color: #1e40af;
+                font-weight: 600;
                 margin-bottom: 8px;
+                font-size: 0.95rem;
+                text-transform: capitalize;
+            }
+
+            .subsection p {
+                margin: 0;
+                padding-left: 12px;
+                color: var(--v2-text-primary, #0f172a);
+            }
+
+            .subsection ul {
+                margin: 0;
+                padding-left: 24px;
+            }
+
+            .subsection strong {
+                color: #1e40af;
             }
 
             /* Dark mode support */
