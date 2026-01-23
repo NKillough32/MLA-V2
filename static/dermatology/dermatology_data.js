@@ -22,7 +22,16 @@ export const dermatologyDatabase = {
                 'Chronic: Lichenification, fissuring, hyperpigmentation/hypopigmentation'
             ],
             symptoms: ['Intense pruritus (worse at night)', 'Dry skin (xerosis)', 'Secondary infection (impetiginization)'],
-            images: ['35.jpg', '36.jpg']
+            images: [
+                'Eczema – Atopic.jpg',
+                'Eczema – Atopic2.jpg',
+                'Eczema – Atopic3.jpg',
+                'Eczema.jpg',
+                'Excoriations in eczema.jpg',
+                'Lichenification due to chronic rubbing in eczema.jpg',
+                'Lichenification due to chronic rubbing in eczema2.jpg',
+                'Lichenification in darker skin types.jpg'
+            ]
         },
         associations: [
             'Atopic triad: Asthma, allergic rhinitis, food allergies',
@@ -98,7 +107,7 @@ export const dermatologyDatabase = {
             distribution: ['Site of contact with allergen', 'May spread beyond contact site', 'Common sites: Hands, face, eyelids, ears'],
             morphology: ['Erythema, vesicles, weeping, scaling', 'Well-demarcated initially', 'Chronic: Lichenification, fissuring'],
             symptoms: ['Pruritus', 'Burning sensation', 'Delayed onset (24-72 hours after exposure)'],
-            images: ['26.jpg', '27.jpg']
+            images: []
         },
         commonAllergens: [
             '<strong>Metals</strong>: Nickel (jewelry, belt buckles), chromate, cobalt',
@@ -155,7 +164,16 @@ export const dermatologyDatabase = {
                 'Auspitz sign: Pinpoint bleeding on scale removal',
                 'Plaques may coalesce'
             ],
-            images: ['28.jpg', '29.jpg', '30.jpg', '31.jpg']
+            images: [
+                'Plaque Psoriasis.jpg',
+                'Plaque Psoriasis2.jpg',
+                'Psoriasis.jpg',
+                'Psoriasis2.jpg',
+                'Scalp Psoriasis.jpg',
+                'Pitting.jpg',
+                'Nail changes and arthropathy.jpg',
+                'Köebner phenomenon.jpg'
+            ]
         },
         variants: [
             '<strong>Chronic plaque</strong>: Most common (80-90%)',
@@ -238,7 +256,12 @@ export const dermatologyDatabase = {
                 '<strong>Inflammatory</strong>: Papules, pustules, nodules, cysts'
             ],
             distribution: 'Face (forehead, cheeks, nose, chin), chest, upper back, shoulders',
-            images: ['32.jpg', '33.jpg', '34.jpg']
+            images: [
+                'Acne.jpg',
+                'Closed comedones.jpg',
+                'Open comedones.jpg',
+                'Comedones2.jpg'
+            ]
         },
         pathophysiology: [
             '1. Increased sebum production (androgenic)',
@@ -308,7 +331,7 @@ export const dermatologyDatabase = {
                 'Papules and pustules (NO comedones)',
                 'Flushing and burning sensation'
             ],
-            images: ['35.jpg', '36.jpg']
+            images: []
         },
         subtypes: [
             '<strong>Erythematotelangiectatic</strong>: Flushing, persistent erythema, telangiectasia',
@@ -379,7 +402,7 @@ export const dermatologyDatabase = {
             ],
             distribution: 'Lower limbs most common (>70%), but can affect any site',
             systemicFeatures: ['Fever, rigors', 'Malaise', 'Lymphangitis (red streaks)', 'Regional lymphadenopathy'],
-            images: ['37.jpg', '38.jpg']
+            images: ['Cellulitis with elephantiasis of the penis.jpg']
         },
         causativeOrganisms: [
             '<strong>Most common</strong>: Streptococcus pyogenes (Group A Strep)',
@@ -464,7 +487,7 @@ export const dermatologyDatabase = {
                 '<strong>Bullous (30%)</strong>: Flaccid bullae that rupture easily'
             ],
             distribution: 'Face (perioral, nose), extremities',
-            images: ['39.jpg', '40.jpg']
+            images: ['Impetigo.jpg', 'Bullous impetigo in a new tattoo.jpg']
         },
         causativeOrganisms: [
             'Staphylococcus aureus (most common)',
@@ -516,7 +539,7 @@ export const dermatologyDatabase = {
                 '<strong>HSV-1</strong>: Mainly orofacial (cold sores)',
                 '<strong>HSV-2</strong>: Mainly genital (but HSV-1 can affect genitals too)'
             ],
-            images: ['41.jpg', '42.jpg']
+            images: []
         },
         triggers: [
             'UV exposure',
@@ -581,7 +604,7 @@ export const dermatologyDatabase = {
                 'Commonest: Thoracic (50%), trigeminal (20%)',
                 'Usually unilateral and does NOT cross midline'
             ],
-            images: ['43.jpg', '44.jpg', '45.jpg']
+            images: ['Herpes zoster (shingles).jpg']
         },
         complications: [
             '<strong>Chickenpox</strong>:',
@@ -655,7 +678,7 @@ export const dermatologyDatabase = {
                 '<strong>Pigmented</strong>: Brown/black pigmentation'
             ],
             distribution: 'Sun-exposed sites: Face (especially nose), ears, scalp, neck',
-            images: ['46.jpg', '47.jpg', '48.jpg']
+            images: ['Basal cell carcinoma – nodular type.jpg']
         },
         riskFactors: [
             'UV exposure (cumulative sun damage)',
@@ -723,7 +746,10 @@ export const dermatologyDatabase = {
                 'Rapidly growing (weeks-months)'
             ],
             distribution: 'Sun-exposed sites: Scalp, face, ears, dorsal hands, lower lip',
-            images: ['49.jpg', '50.jpg', '51.jpg']
+            images: [
+                'Squamous cell carcinoma – adjacent to ear.jpg',
+                'Squamous cell carcinoma – glans penis.jpg'
+            ]
         },
         precursors: [
             '<strong>Actinic keratosis</strong>: Rough, scaly patches on sun-exposed skin',
@@ -801,7 +827,13 @@ export const dermatologyDatabase = {
                 '<strong>E</strong>volving: Change in size, shape, color, or symptoms'
             ],
             uglyDuckling: 'Lesion that looks different from surrounding moles',
-            images: ['3.jpg', '52.jpg', '53.jpg', '54.jpg']
+            images: [
+                'Acral lentiginous melanoma.jpg',
+                'Acral lentiginous melanoma (in situ).png',
+                'Lentigo maligna melanoma.jpg',
+                'Nodular melanoma.jpg',
+                'Superficial spreading melanoma.jpg'
+            ]
         },
         subtypes: [
             '<strong>Superficial spreading (70%)</strong>: Irregular pigmented macule/patch, slow horizontal growth',
@@ -914,7 +946,7 @@ export const dermatologyDatabase = {
                 '<strong>Alopecia totalis</strong>: Complete scalp hair loss',
                 '<strong>Alopecia universalis</strong>: Loss of all body hair'
             ],
-            images: ['55.jpg', '56.jpg']
+            images: ['Alopecia areata.jpg', 'Alopecia areata2.jpg', 'Alopecia areata3.jpg']
         },
         associations: [
             'Atopy (asthma, eczema, allergic rhinitis)',
@@ -1007,7 +1039,7 @@ export const dermatologyDatabase = {
                 '<strong>Proximal subungual</strong>: Rare, starts at proximal nail fold (suspect immunosuppression)',
                 '<strong>Total dystrophic</strong>: Entire nail affected'
             ],
-            images: ['57.jpg', '58.jpg']
+            images: ['Tinea pedis with associated tinea unguium.jpg']
         },
         causativeOrganisms: [
             '<strong>Dermatophytes (90%)</strong>: Trichophyton rubrum (most common)',
@@ -1111,7 +1143,7 @@ export const dermatologyDatabase = {
                 '<strong>Non-segmental (90%)</strong>: Symmetrical, face, hands, wrists, knees, genitals',
                 '<strong>Segmental (10%)</strong>: Unilateral, dermatomal, early onset, stable'
             ],
-            images: ['59.jpg', '60.jpg']
+            images: ['Vitiligo.jpg', 'Vitiligo2.jpg', 'Vitiligo3.jpg']
         },
         associations: [
             'Autoimmune diseases (20-30%):',
@@ -1214,7 +1246,7 @@ export const dermatologyDatabase = {
                 '<strong>Malar (20%)</strong>: Cheeks and nose',
                 '<strong>Mandibular (15%)</strong>: Jaw'
             ],
-            images: ['61.jpg', '62.jpg']
+            images: ['Melasma.jpg', 'Melasma2.jpg']
         },
         triggers: [
             '<strong>Hormonal</strong>: Pregnancy (chloasma gravidarum), combined OCP, HRT',
@@ -1283,6 +1315,480 @@ export const dermatologyDatabase = {
             '  • Ongoing hormonal triggers',
             '  • Laser treatment risk: Post-inflammatory hyperpigmentation in darker skin types'
         ]
+    },
+
+    // ADDITIONAL ECZEMA AND ECZEMA-RELATED PRESENTATIONS
+    'eczema-hand': {
+        title: 'Hand Eczema',
+        category: 'inflammatory-eczema',
+        clinicalPresentation: {
+            description: 'Eczematous inflammation of the hands with erythema, fissuring, and scaling',
+            morphology: ['Erythema, vesiculation or fissuring', 'Hyperkeratosis and lichenification in chronic disease'],
+            distribution: 'Palms, fingers, and dorsal hands',
+            images: ['Acute hand eczema.jpg', 'Chronic fissured hand eczema.jpg']
+        }
+    },
+
+    'eczema-discoid': {
+        title: 'Discoid Eczema (Nummular Eczema)',
+        category: 'inflammatory-eczema',
+        clinicalPresentation: {
+            description: 'Coin-shaped, pruritic, eczematous plaques often on limbs',
+            morphology: ['Well-demarcated round or oval plaques', 'Scaling or weeping surface'],
+            images: ['Discoid Eczema.jpg']
+        }
+    },
+
+    'eczema-herpeticum': {
+        title: 'Eczema Herpeticum',
+        category: 'infection-viral',
+        clinicalPresentation: {
+            description: 'Disseminated HSV infection on eczematous skin causing monomorphic vesicles and erosions',
+            morphology: ['Punched-out erosions', 'Grouped vesicles', 'Systemic upset may occur'],
+            images: ['Eczema herpeticum.jpg']
+        }
+    },
+
+    // URTICARIA AND ANGIOEDEMA
+    'urticaria': {
+        title: 'Urticaria',
+        category: 'hypersensitivity',
+        clinicalPresentation: {
+            description: 'Transient wheals with pruritus and dermal edema',
+            morphology: ['Evanescent wheals', 'Dermal edema with erythematous borders'],
+            images: ['Urticaria.jpg', 'Urticaria2.jpg', 'Urticaria3.jpg', 'Urticaria4.jpg']
+        }
+    },
+
+    'angioedema': {
+        title: 'Angioedema',
+        category: 'hypersensitivity',
+        clinicalPresentation: {
+            description: 'Deeper dermal and subcutaneous swelling, often involving lips, eyelids, or tongue',
+            morphology: ['Non-pitting swelling', 'May occur with or without urticaria'],
+            images: ['Angioedema.jpg']
+        }
+    },
+
+    // BACTERIAL INFECTIONS
+    'erysipelas': {
+        title: 'Erysipelas',
+        category: 'infection-bacterial',
+        clinicalPresentation: {
+            description: 'Superficial bacterial skin infection with sharply demarcated erythema',
+            morphology: ['Bright red, raised plaques', 'Well-demarcated borders'],
+            images: ['Erysipelas.jpg', 'Erysipelas2.jpg']
+        }
+    },
+
+    'staphylococcal-scalded-skin-syndrome': {
+        title: 'Staphylococcal Scalded Skin Syndrome',
+        category: 'infection-bacterial',
+        clinicalPresentation: {
+            description: 'Toxin-mediated blistering disease with diffuse erythema and superficial desquamation',
+            morphology: ['Tender erythema', 'Fragile blisters', 'Sheet-like desquamation'],
+            images: ['Staphylococcal scalded skin syndrome.jpg', 'Staphylococcal scalded skin syndrome2.jpg']
+        }
+    },
+
+    'periungual-abscess': {
+        title: 'Periungual Abscess (Paronychia)',
+        category: 'infection-bacterial',
+        clinicalPresentation: {
+            description: 'Localized infection of the nail fold with erythema and purulent collection',
+            morphology: ['Tender swelling of nail fold', 'Possible pus discharge'],
+            images: ['Periungual abscess.jpg']
+        }
+    },
+
+    // FUNGAL INFECTIONS
+    'tinea-capitis': {
+        title: 'Tinea Capitis',
+        category: 'infection-fungal',
+        clinicalPresentation: {
+            description: 'Dermatophyte infection of the scalp causing scaling and hair loss',
+            morphology: ['Patchy alopecia with scale', 'Inflammatory or non-inflammatory'],
+            images: ['Tinea capitis.jpg', 'Diffuse Tinea capitis.jpg']
+        }
+    },
+
+    'tinea-corporis': {
+        title: 'Tinea Corporis',
+        category: 'infection-fungal',
+        clinicalPresentation: {
+            description: 'Ring-shaped dermatophyte infection of glabrous skin',
+            morphology: ['Annular plaques with central clearing', 'Raised scaly border'],
+            images: ['Tinea corporis.jpg']
+        }
+    },
+
+    'tinea-manuum': {
+        title: 'Tinea Manuum',
+        category: 'infection-fungal',
+        clinicalPresentation: {
+            description: 'Dermatophyte infection of the hands, often with scaling and hyperkeratosis',
+            morphology: ['Dry scale on palms', 'Hyperkeratosis or fissuring'],
+            images: ['Tinea manuum.jpg']
+        }
+    },
+
+    'tinea-pedis': {
+        title: 'Tinea Pedis (Athlete’s Foot)',
+        category: 'infection-fungal',
+        clinicalPresentation: {
+            description: 'Dermatophyte infection of the feet with scaling and maceration',
+            morphology: ['Interdigital scaling', 'Plantar hyperkeratosis'],
+            images: ['Tinea pedis with associated tinea unguium.jpg']
+        }
+    },
+
+    'pityriasis-versicolor': {
+        title: 'Pityriasis Versicolor',
+        category: 'infection-fungal',
+        clinicalPresentation: {
+            description: 'Malassezia infection causing hypo- or hyperpigmented scaly macules',
+            morphology: ['Fine scale', 'Mottled pigmentation'],
+            images: ['Pityriasis versicolor.jpg', 'Pityriasis versicolor 2.jpg', 'Pityriasis versicolor3.jpg']
+        }
+    },
+
+    'candidiasis-intertrigo': {
+        title: 'Candidiasis (Intertrigo)',
+        category: 'infection-fungal',
+        clinicalPresentation: {
+            description: 'Candida infection of skin folds with erythema and satellite pustules',
+            morphology: ['Moist erythematous plaques', 'Satellite pustules'],
+            images: ['Candidiasis (right axilla).jpg']
+        }
+    },
+
+    // PARASITIC INFESTATION
+    'scabies': {
+        title: 'Scabies',
+        category: 'infection-parasitic',
+        clinicalPresentation: {
+            description: 'Infestation with Sarcoptes scabiei causing pruritic papules and burrows',
+            morphology: ['Excoriated papules', 'Burrows in web spaces'],
+            images: ['Scabies.jpg']
+        }
+    },
+
+    // AUTOIMMUNE / IMMUNOLOGIC CONDITIONS
+    'bullous-pemphigoid': {
+        title: 'Bullous Pemphigoid',
+        category: 'autoimmune-bullous',
+        clinicalPresentation: {
+            description: 'Autoimmune blistering disease with tense bullae on erythematous skin',
+            morphology: ['Tense bullae', 'Urticated plaques'],
+            images: ['Bullous pemphigoid.jpg']
+        }
+    },
+
+    'pemphigus-vulgaris': {
+        title: 'Pemphigus Vulgaris',
+        category: 'autoimmune-bullous',
+        clinicalPresentation: {
+            description: 'Autoimmune blistering disease with flaccid bullae and mucosal involvement',
+            morphology: ['Flaccid bullae', 'Painful erosions', 'Oral mucosal lesions'],
+            images: ['Pemphigus vulgaris.jpg', 'Pemphigus vulgaris affecting the oral mucosa.jpg']
+        }
+    },
+
+    'stevens-johnson-syndrome': {
+        title: 'Stevens-Johnson Syndrome',
+        category: 'drug-reaction',
+        clinicalPresentation: {
+            description: 'Severe mucocutaneous reaction with epidermal detachment',
+            morphology: ['Targetoid lesions', 'Painful erosions', 'Mucosal involvement'],
+            images: ['Stevens-Johnson syndrome.jpg']
+        }
+    },
+
+    'erythema-multiforme': {
+        title: 'Erythema Multiforme',
+        category: 'hypersensitivity',
+        clinicalPresentation: {
+            description: 'Acute hypersensitivity reaction with target lesions',
+            morphology: ['Targetoid lesions', 'Acral distribution'],
+            images: ['Erythema multiforme.jpg']
+        }
+    },
+
+    'erythema-nodosum': {
+        title: 'Erythema Nodosum',
+        category: 'panniculitis',
+        clinicalPresentation: {
+            description: 'Tender erythematous nodules, usually on shins',
+            morphology: ['Tender subcutaneous nodules', 'No ulceration'],
+            images: ['Erythema nodosum.jpg']
+        }
+    },
+
+    // VASCULAR AND PURPURA
+    'actinic-purpura': {
+        title: 'Actinic Purpura',
+        category: 'vascular',
+        clinicalPresentation: {
+            description: 'Purpuric patches on sun-damaged skin from dermal fragility',
+            morphology: ['Purple ecchymoses', 'Thin atrophic skin'],
+            images: ['Actinic purpura.jpg']
+        }
+    },
+
+    'henoch-schonlein-purpura': {
+        title: 'Henoch-Schönlein Purpura (IgA Vasculitis)',
+        category: 'vascular',
+        clinicalPresentation: {
+            description: 'Palpable purpura with systemic features such as arthralgia or abdominal pain',
+            morphology: ['Palpable purpura on lower limbs', 'Petechiae and ecchymoses'],
+            images: ['Henoch-Schönlein purpura.jpg', 'Henoch-Schönlein purpura2.jpg']
+        }
+    },
+
+    'vascular-malformation': {
+        title: 'Vascular Malformation',
+        category: 'vascular',
+        clinicalPresentation: {
+            description: 'Congenital vascular lesions that grow proportionally with the patient',
+            morphology: ['Soft compressible lesions', 'Color varies by vessel type'],
+            images: ['Vascular malformation.jpg']
+        }
+    },
+
+    'palmar-erythema': {
+        title: 'Palmar Erythema',
+        category: 'vascular',
+        clinicalPresentation: {
+            description: 'Diffuse erythema of palms, often due to systemic causes',
+            morphology: ['Redness over thenar and hypothenar eminences'],
+            images: ['Palmar erythema.jpg']
+        }
+    },
+
+    // ULCERS AND WOUNDS
+    'venous-ulcer': {
+        title: 'Venous Ulcer',
+        category: 'ulcers',
+        clinicalPresentation: {
+            description: 'Shallow, irregular ulcers in the gaiter area due to venous insufficiency',
+            morphology: ['Irregular shallow ulcer', 'Surrounding hemosiderin staining'],
+            images: ['Venous ulcer.jpg', 'Venous ulcer2.jpg', 'Leg ulcers.jpg']
+        }
+    },
+
+    'arterial-ulcer': {
+        title: 'Arterial Ulcer',
+        category: 'ulcers',
+        clinicalPresentation: {
+            description: 'Painful, punched-out ulcers due to arterial insufficiency',
+            morphology: ['Well-demarcated ulcer', 'Pale or necrotic base'],
+            images: ['Arterial ulcer.jpg']
+        }
+    },
+
+    'neuropathic-ulcer': {
+        title: 'Neuropathic Ulcer',
+        category: 'ulcers',
+        clinicalPresentation: {
+            description: 'Pressure-related ulcer in areas of reduced sensation',
+            morphology: ['Punched-out ulcer', 'Callused surrounding skin'],
+            images: ['Neuropathic ulcer.jpg']
+        }
+    },
+
+    // PIGMENTATION AND MELANOCYTIC LESIONS
+    'melanocytic-nevus': {
+        title: 'Benign Melanocytic Naevi',
+        category: 'pigmentation',
+        clinicalPresentation: {
+            description: 'Benign proliferations of melanocytes with uniform pigmentation',
+            morphology: ['Well-circumscribed macules or papules', 'Uniform color'],
+            images: ['Pigmented melanocytic naevus.jpg', 'Congenital naevus.jpg']
+        }
+    },
+
+    'freckles': {
+        title: 'Freckles (Ephelides)',
+        category: 'pigmentation',
+        clinicalPresentation: {
+            description: 'Small hyperpigmented macules on sun-exposed skin',
+            morphology: ['Discrete light brown macules', 'Increase with sun exposure'],
+            images: ['Freckles.jpg']
+        }
+    },
+
+    // HAIR AND HORMONAL
+    'hirsutism': {
+        title: 'Hirsutism',
+        category: 'hair-disorders',
+        clinicalPresentation: {
+            description: 'Excess terminal hair in androgen-dependent areas in women',
+            morphology: ['Coarse terminal hair growth'],
+            images: ['Hirsutism.jpg']
+        }
+    },
+
+    'hypertrichosis': {
+        title: 'Hypertrichosis',
+        category: 'hair-disorders',
+        clinicalPresentation: {
+            description: 'Excessive hair growth in non-androgen dependent areas',
+            morphology: ['Generalized or localized increased hair'],
+            images: ['Hypertrichosis.jpg']
+        }
+    },
+
+    // NAIL AND CLUBBING
+    'onycholysis': {
+        title: 'Onycholysis',
+        category: 'nail-disorders',
+        clinicalPresentation: {
+            description: 'Separation of the nail plate from the nail bed',
+            morphology: ['Distal nail lifting', 'White or yellow discoloration'],
+            images: ['Onycholysis.jpg']
+        }
+    },
+
+    'koilonychia': {
+        title: 'Koilonychia',
+        category: 'nail-disorders',
+        clinicalPresentation: {
+            description: 'Spoon-shaped nails often linked to iron deficiency or systemic disease',
+            morphology: ['Concave nail plates'],
+            images: ['Koilonychia.jpg']
+        }
+    },
+
+    'clubbing': {
+        title: 'Clubbing',
+        category: 'nail-disorders',
+        clinicalPresentation: {
+            description: 'Bulbous enlargement of distal digits associated with systemic disease',
+            morphology: ['Loss of nail bed angle', 'Broadening of fingertips'],
+            images: ['Clubbing.jpg']
+        }
+    },
+
+    // PAPULOSQUAMOUS / INFLAMMATORY
+    'lichen-planus': {
+        title: 'Lichen Planus',
+        category: 'inflammatory-papulosquamous',
+        clinicalPresentation: {
+            description: 'Pruritic, violaceous papules with fine white lines (Wickham striae)',
+            morphology: ['Polygonal flat-topped papules', 'Wickham striae'],
+            images: ['Lichen planus.jpg', 'Lichen planus2.jpg', 'Lichen planus3.jpg', 'Wickham’s striae.jpg']
+        }
+    },
+
+    'discoid-lupus': {
+        title: 'Chronic Discoid Lupus Erythematosus',
+        category: 'connective-tissue',
+        clinicalPresentation: {
+            description: 'Chronic scarring inflammatory plaques on sun-exposed skin',
+            morphology: ['Erythematous plaques with scale', 'Scarring and pigment change'],
+            images: ['Chronic discoid lupus erythematosus.jpg']
+        }
+    },
+
+    'erythroderma': {
+        title: 'Erythroderma',
+        category: 'inflammatory-eczema',
+        clinicalPresentation: {
+            description: 'Generalized erythema and scaling involving most of the body surface',
+            morphology: ['Diffuse erythema', 'Scaling and exfoliation'],
+            images: ['Erythroderma.jpg', 'Erythroderma2.jpg']
+        }
+    },
+
+    // LESION MORPHOLOGY AND BENIGN TUMORS
+    'papules': {
+        title: 'Papules',
+        category: 'lesion-morphology',
+        clinicalPresentation: {
+            description: 'Raised, solid lesions less than 1 cm in diameter',
+            morphology: ['Discrete raised lesions'],
+            images: ['Papules.jpg']
+        }
+    },
+
+    'nodules': {
+        title: 'Nodules',
+        category: 'lesion-morphology',
+        clinicalPresentation: {
+            description: 'Solid lesions extending into the dermis or subcutis',
+            morphology: ['Larger, deeper lesions than papules'],
+            images: ['Nodules.jpg']
+        }
+    },
+
+    'seborrhoeic-keratoses': {
+        title: 'Seborrhoeic Keratoses',
+        category: 'benign-tumors',
+        clinicalPresentation: {
+            description: 'Benign epidermal tumors with a “stuck-on” appearance',
+            morphology: ['Waxy or verrucous plaques', 'Variable pigmentation'],
+            images: ['Seborrhoeic keratoses.jpg']
+        }
+    },
+
+    'pyogenic-granuloma': {
+        title: 'Pyogenic Granuloma',
+        category: 'benign-tumors',
+        clinicalPresentation: {
+            description: 'Rapidly growing vascular papule prone to bleeding',
+            morphology: ['Friable red papule', 'Bleeds easily'],
+            images: ['Pyogenic granuloma.jpg']
+        }
+    },
+
+    'keloid-scars': {
+        title: 'Keloid Scars',
+        category: 'benign-tumors',
+        clinicalPresentation: {
+            description: 'Excessive scar tissue extending beyond the original wound',
+            morphology: ['Firm raised scar', 'May be itchy or painful'],
+            images: ['Keloid scars.jpg', 'Keloid scars2.jpg']
+        }
+    },
+
+    'reaction-insect-bites': {
+        title: 'Reaction to Insect Bites',
+        category: 'hypersensitivity',
+        clinicalPresentation: {
+            description: 'Localized papular urticaria following insect bites',
+            morphology: ['Pruritic papules', 'Central punctum may be present'],
+            images: ['Reaction to insect bites.jpg']
+        }
+    },
+
+    'sunburn': {
+        title: 'Sunburn',
+        category: 'photodermatoses',
+        clinicalPresentation: {
+            description: 'Acute inflammatory response to ultraviolet exposure',
+            morphology: ['Erythema and tenderness', 'Possible blistering'],
+            images: ['Sunburn.jpg']
+        }
+    },
+
+    'striae': {
+        title: 'Striae',
+        category: 'connective-tissue',
+        clinicalPresentation: {
+            description: 'Linear atrophic bands due to dermal stretching',
+            morphology: ['Pink or violaceous striae', 'Later become pale'],
+            images: ['Striae.jpg']
+        }
+    },
+
+    'xanthomata': {
+        title: 'Xanthomata',
+        category: 'metabolic',
+        clinicalPresentation: {
+            description: 'Lipid-laden deposits in skin associated with dyslipidemia',
+            morphology: ['Yellow papules or plaques'],
+            images: ['Xanthomata.jpg']
+        }
     }
 };
 
