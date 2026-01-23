@@ -311,6 +311,10 @@ export class DermatologyManager {
         const isFav = this.isFavorite(condition.id);
         const categoryInfo = this.categories.find(c => c.id === condition.category);
         const categoryName = categoryInfo ? categoryInfo.name : condition.category;
+        const formatListItem = (item) => {
+            if (typeof item !== 'string') return item;
+            return item.replace(/^\s*[•-]\s+/, '');
+        };
 
         return `
             <div class="dermatology-condition-card" data-condition-id="${condition.id}">
@@ -336,7 +340,7 @@ export class DermatologyManager {
                         <div class="condition-section">
                             <strong>Diagnosis</strong>
                             <ul>
-                                ${condition.diagnosis.slice(0, 3).map(item => `<li>${item}</li>`).join('')}
+                                ${condition.diagnosis.slice(0, 3).map(item => `<li>${formatListItem(item)}</li>`).join('')}
                                 ${condition.diagnosis.length > 3 ? `<li class="more-indicator">+${condition.diagnosis.length - 3} more...</li>` : ''}
                             </ul>
                         </div>
@@ -346,7 +350,7 @@ export class DermatologyManager {
                         <div class="condition-section">
                             <strong>Management</strong>
                             <ul>
-                                ${condition.management.slice(0, 3).map(item => `<li>${item}</li>`).join('')}
+                                ${condition.management.slice(0, 3).map(item => `<li>${formatListItem(item)}</li>`).join('')}
                                 ${condition.management.length > 3 ? `<li class="more-indicator">+${condition.management.length - 3} more...</li>` : ''}
                             </ul>
                         </div>
@@ -380,12 +384,20 @@ export class DermatologyManager {
 
         document.body.appendChild(modal);
 
-        // Close on background click or close button
+        const closeModal = () => {
+            modal.remove();
+        };
+
         modal.addEventListener('click', (e) => {
-            if (e.target === modal || e.target.classList.contains('modal-close-btn')) {
-                modal.remove();
+            if (e.target === modal) {
+                closeModal();
             }
         });
+
+        const closeButton = modal.querySelector('.modal-close-btn');
+        if (closeButton) {
+            closeButton.addEventListener('click', closeModal);
+        }
 
         // Prevent closing when clicking modal content
         modal.querySelector('.dermatology-modal').addEventListener('click', (e) => {
@@ -398,6 +410,10 @@ export class DermatologyManager {
      */
     renderDetailedCondition(condition) {
         let html = '';
+        const formatListItem = (item) => {
+            if (typeof item !== 'string') return item;
+            return item.replace(/^\s*[•-]\s+/, '');
+        };
 
         // Image gallery at the top
         if (condition.clinicalPresentation?.images && condition.clinicalPresentation.images.length > 0) {
@@ -425,7 +441,7 @@ export class DermatologyManager {
                     <div class="detail-section">
                         <h4>${title}</h4>
                         <ul>
-                            ${content.map(item => `<li>${item}</li>`).join('')}
+                            ${content.map(item => `<li>${formatListItem(item)}</li>`).join('')}
                         </ul>
                     </div>
                 `;
@@ -441,7 +457,7 @@ export class DermatologyManager {
                             <div class="subsection">
                                 <div class="subsection-label">${label}:</div>
                                 <ul>
-                                    ${value.map(item => `<li>${item}</li>`).join('')}
+                                    ${value.map(item => `<li>${formatListItem(item)}</li>`).join('')}
                                 </ul>
                             </div>
                         `;
