@@ -1141,6 +1141,19 @@ export class DermatologyManager {
             [data-theme="dark"] .subsection-text {
                 background: rgba(59, 130, 246, 0.18);
             }
+
+            [data-theme="dark"] .detail-section.red-flags {
+                background: rgba(239, 68, 68, 0.15);
+                border-left-color: #ef4444;
+            }
+
+            [data-theme="dark"] .detail-section.red-flags h4 {
+                color: #fca5a5;
+            }
+
+            [data-theme="dark"] .detail-section.red-flags li {
+                color: #fecaca;
+            }
         `;
 
         document.head.appendChild(style);
