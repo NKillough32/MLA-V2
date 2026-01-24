@@ -478,6 +478,56 @@ export class DermatologyManager {
             }
         };
 
+        // Helper function to render management section with better hierarchy
+        const renderManagementSection = (items) => {
+            if (!items || !Array.isArray(items)) return '';
+            
+            let html = '<div class="detail-section management-section"><h4>Management</h4>';
+            let currentGroup = null;
+            let groupItems = [];
+
+            items.forEach((item, index) => {
+                const strongMatch = item.match(/<strong>(.*?)<\/strong>:/);
+                
+                if (strongMatch) {
+                    // This is a header - close previous group if exists
+                    if (currentGroup && groupItems.length > 0) {
+                        html += `
+                            <div class="management-group">
+                                <div class="management-group-title">${currentGroup}</div>
+                                <ul class="management-group-list">
+                                    ${groupItems.map(gi => `<li>${formatListItem(gi)}</li>`).join('')}
+                                </ul>
+                            </div>
+                        `;
+                        groupItems = [];
+                    }
+                    currentGroup = strongMatch[1];
+                } else if (currentGroup) {
+                    // This is an item under a header
+                    groupItems.push(item);
+                } else {
+                    // Standalone item without header
+                    html += `<ul><li>${formatListItem(item)}</li></ul>`;
+                }
+            });
+
+            // Close last group if exists
+            if (currentGroup && groupItems.length > 0) {
+                html += `
+                    <div class="management-group">
+                        <div class="management-group-title">${currentGroup}</div>
+                        <ul class="management-group-list">
+                            ${groupItems.map(gi => `<li>${formatListItem(gi)}</li>`).join('')}
+                        </ul>
+                    </div>
+                `;
+            }
+
+            html += '</div>';
+            return html;
+        };
+
         // Clinical Presentation
         if (condition.clinicalPresentation) {
             html += renderSection('Clinical Presentation', condition.clinicalPresentation);
@@ -521,9 +571,9 @@ export class DermatologyManager {
             html += renderSection('Differential Diagnosis', condition.differentialDiagnosis);
         }
 
-        // Management
+        // Management - Special rendering for hierarchical structure
         if (condition.management) {
-            html += renderSection('Management', condition.management);
+            html += renderManagementSection(condition.management);
         }
 
         // Complications
@@ -1001,6 +1051,66 @@ export class DermatologyManager {
                 font-weight: 500;
             }
 
+            /* Management section styles */
+            .management-section {
+                background: var(--v2-bg-card, #f8fafc);
+            }
+
+            .management-group {
+                margin-bottom: 20px;
+                padding: 16px;
+                background: white;
+                border-radius: 8px;
+                border-left: 3px solid #3b82f6;
+            }
+
+            .management-group:last-child {
+                margin-bottom: 0;
+            }
+
+            .management-group-title {
+                font-weight: 600;
+                color: #1e40af;
+                font-size: 1.05rem;
+                margin-bottom: 12px;
+                display: flex;
+                align-items: center;
+            }
+
+            .management-group-title::before {
+                content: '💊';
+                margin-right: 8px;
+                font-size: 1.1rem;
+            }
+
+            .management-group-list {
+                list-style: none;
+                padding-left: 0;
+                margin: 0;
+            }
+
+            .management-group-list li {
+                padding: 8px 12px;
+                margin-bottom: 6px;
+                background: #f1f5f9;
+                border-radius: 4px;
+                line-height: 1.6;
+                position: relative;
+                padding-left: 28px;
+            }
+
+            .management-group-list li::before {
+                content: '▸';
+                position: absolute;
+                left: 12px;
+                color: #3b82f6;
+                font-weight: bold;
+            }
+
+            .management-group-list li:last-child {
+                margin-bottom: 0;
+            }
+
             /* Image gallery styles */
             .image-gallery {
                 background: var(--v2-bg-card, #f8fafc);
@@ -1153,6 +1263,28 @@ export class DermatologyManager {
 
             [data-theme="dark"] .detail-section.red-flags li {
                 color: #fecaca;
+            }
+
+            [data-theme="dark"] .management-section {
+                background: #1e293b;
+            }
+
+            [data-theme="dark"] .management-group {
+                background: #0f172a;
+                border-left-color: #60a5fa;
+            }
+
+            [data-theme="dark"] .management-group-title {
+                color: #93c5fd;
+            }
+
+            [data-theme="dark"] .management-group-list li {
+                background: #1e293b;
+                color: #e2e8f0;
+            }
+
+            [data-theme="dark"] .management-group-list li::before {
+                color: #60a5fa;
             }
         `;
 

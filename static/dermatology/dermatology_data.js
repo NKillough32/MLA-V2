@@ -405,7 +405,13 @@ export const dermatologyDatabase = {
             ],
             distribution: 'Lower limbs most common (>70%), but can affect any site',
             systemicFeatures: ['Fever, rigors', 'Malaise', 'Lymphangitis (red streaks)', 'Regional lymphadenopathy'],
-            images: ['Cellulitis with elephantiasis of the penis.jpg']
+            images: [
+                'Cellulitis.jpg',
+                'Cellulitis2.jpg',
+                'Cellulitis with elephantiasis of the penis.jpg',
+                'Erysipelas.jpg',
+                'Erysipelas2.jpg'
+            ]
         },
         causativeOrganisms: [
             '<strong>Most common</strong>: Streptococcus pyogenes (Group A Strep)',
