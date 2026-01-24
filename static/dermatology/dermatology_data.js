@@ -107,7 +107,10 @@ export const dermatologyDatabase = {
             distribution: ['Site of contact with allergen', 'May spread beyond contact site', 'Common sites: Hands, face, eyelids, ears'],
             morphology: ['Erythema, vesicles, weeping, scaling', 'Well-demarcated initially', 'Chronic: Lichenification, fissuring'],
             symptoms: ['Pruritus', 'Burning sensation', 'Delayed onset (24-72 hours after exposure)'],
-            images: []
+            images: [
+                'Acute hand eczema.jpg',
+                'Chronic fissured hand eczema.jpg'
+            ]
         },
         commonAllergens: [
             '<strong>Metals</strong>: Nickel (jewelry, belt buckles), chromate, cobalt',
@@ -331,7 +334,7 @@ export const dermatologyDatabase = {
                 'Papules and pustules (NO comedones)',
                 'Flushing and burning sensation'
             ],
-            images: []
+            images: ['Rosacea.jpg']
         },
         subtypes: [
             '<strong>Erythematotelangiectatic</strong>: Flushing, persistent erythema, telangiectasia',
@@ -539,7 +542,7 @@ export const dermatologyDatabase = {
                 '<strong>HSV-1</strong>: Mainly orofacial (cold sores)',
                 '<strong>HSV-2</strong>: Mainly genital (but HSV-1 can affect genitals too)'
             ],
-            images: []
+            images: ['Herpes simplex.jpg']
         },
         triggers: [
             'UV exposure',
