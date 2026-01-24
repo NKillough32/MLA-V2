@@ -1335,7 +1335,56 @@ export const dermatologyDatabase = {
             morphology: ['Erythema, vesiculation or fissuring', 'Hyperkeratosis and lichenification in chronic disease'],
             distribution: 'Palms, fingers, and dorsal hands',
             images: ['Acute hand eczema.jpg', 'Chronic fissured hand eczema.jpg']
-        }
+        },
+        subtypes: [
+            '<strong>Irritant contact</strong>: Repeated wet work, detergents, solvents',
+            '<strong>Allergic contact</strong>: Delayed hypersensitivity to allergens (e.g., nickel, rubber)',
+            '<strong>Atopic hand eczema</strong>: Associated with atopic dermatitis',
+            '<strong>Pompholyx (dyshidrotic)</strong>: Deep vesicles on sides of fingers/palms'
+        ],
+        riskFactors: [
+            'Occupational wet work (healthcare, hairdressers, cleaners)',
+            'Frequent handwashing or sanitizers',
+            'Atopic history',
+            'Allergen exposure (metals, fragrances, preservatives)',
+            'Cold weather and low humidity'
+        ],
+        diagnosis: [
+            '<strong>Clinical diagnosis</strong>',
+            '<strong>Patch testing</strong>: If allergic contact suspected',
+            '<strong>Skin swab</strong>: If secondary infection suspected',
+            '<strong>Differentials</strong>: Tinea manuum, psoriasis, scabies, palmoplantar pustulosis'
+        ],
+        management: [
+            '<strong>General measures</strong>:',
+            '  • Emollients after every handwash',
+            '  • Avoid irritants, use soap substitutes',
+            '  • Protective gloves (cotton-lined for wet work)',
+            '<strong>Topical therapy</strong>:',
+            '  • Potent topical corticosteroids short courses',
+            '  • Calcineurin inhibitors for maintenance',
+            '<strong>Severe/refractory</strong>:',
+            '  • Phototherapy (NB-UVB or PUVA)',
+            '  • Systemic therapy (alitretinoin, methotrexate, ciclosporin)',
+            '<strong>Infection</strong>:',
+            '  • Treat secondary bacterial infection with topical/oral antibiotics'
+        ],
+        complications: [
+            'Chronic fissuring and pain',
+            'Secondary infection (impetiginization)',
+            'Occupational impairment',
+            'Post-inflammatory hyperpigmentation'
+        ],
+        redFlags: [
+            'Widespread fissuring with systemic symptoms - consider erythroderma',
+            'Unilateral hand rash with scaling - consider tinea manuum',
+            'Failure to respond to potent steroids - consider allergic contact dermatitis or psoriasis'
+        ],
+        prognosis: [
+            'Chronic relapsing course common',
+            'Better outcomes with trigger avoidance and early treatment',
+            'Occupational cases may persist if exposure continues'
+        ]
     },
 
     'eczema-discoid': {
@@ -1345,7 +1394,37 @@ export const dermatologyDatabase = {
             description: 'Coin-shaped, pruritic, eczematous plaques often on limbs',
             morphology: ['Well-demarcated round or oval plaques', 'Scaling or weeping surface'],
             images: ['Discoid Eczema.jpg']
-        }
+        },
+        associations: [
+            'Xerosis (dry skin), especially in older adults',
+            'Atopic tendency (less strong than atopic eczema)',
+            'Skin trauma or insect bites can trigger lesions'
+        ],
+        diagnosis: [
+            '<strong>Clinical diagnosis</strong>',
+            '<strong>Differentials</strong>: Tinea corporis, psoriasis, contact dermatitis',
+            '<strong>Consider swab</strong>: If oozing/crusting to rule out infection'
+        ],
+        management: [
+            '<strong>General</strong>: Liberal emollients, avoid irritants',
+            '<strong>Topical corticosteroids</strong>: Potent for acute flares',
+            '<strong>Wet wraps</strong>: For severe oozing lesions',
+            '<strong>Antibiotics</strong>: If secondary infection',
+            '<strong>Phototherapy</strong>: For refractory disease'
+        ],
+        complications: [
+            'Secondary infection',
+            'Post-inflammatory pigment changes',
+            'Chronic lichenification'
+        ],
+        redFlags: [
+            'Failure to respond to steroids - exclude tinea (consider fungal culture)',
+            'Widespread disease with systemic symptoms - consider erythroderma'
+        ],
+        prognosis: [
+            'Often chronic with relapses',
+            'May resolve with good emollient use and avoidance of triggers'
+        ]
     },
 
     'eczema-herpeticum': {
@@ -1355,7 +1434,40 @@ export const dermatologyDatabase = {
             description: 'Disseminated HSV infection on eczematous skin causing monomorphic vesicles and erosions',
             morphology: ['Punched-out erosions', 'Grouped vesicles', 'Systemic upset may occur'],
             images: ['Eczema herpeticum.jpg']
-        }
+        },
+        riskFactors: [
+            'Atopic eczema (most common)',
+            'Immunosuppression',
+            'Infants and young children',
+            'Poorly controlled skin barrier disease'
+        ],
+        diagnosis: [
+            '<strong>Clinical diagnosis</strong> (fever + monomorphic vesicles/erosions)',
+            '<strong>HSV PCR</strong> from swab of lesion',
+            '<strong>Consider bacterial cultures</strong> if secondary infection'
+        ],
+        management: [
+            '<strong>Emergency - treat urgently</strong>:',
+            '  • Oral aciclovir 400-800mg 5x daily (mild/moderate)',
+            '  • IV aciclovir if severe, systemic symptoms, or immunocompromised',
+            '  • Supportive care: analgesia, fluids',
+            '<strong>Stop topical steroids temporarily</strong> if severe infection; may restart once improving',
+            '<strong>Infection control</strong>: Isolation from neonates/immunocompromised'
+        ],
+        complications: [
+            'Keratoconjunctivitis (vision-threatening)',
+            'Secondary bacterial infection and sepsis',
+            'Disseminated HSV (life-threatening)'
+        ],
+        redFlags: [
+            '⚠️ Fever, lethargy, widespread erosions - urgent admission',
+            '⚠️ Eye involvement: Pain, photophobia, red eye - urgent ophthalmology',
+            '⚠️ Immunocompromised patient - high risk of dissemination'
+        ],
+        prognosis: [
+            'Rapid improvement with early antiviral therapy',
+            'Delayed treatment increases risk of systemic complications'
+        ]
     },
 
     // URTICARIA AND ANGIOEDEMA
@@ -1366,7 +1478,43 @@ export const dermatologyDatabase = {
             description: 'Transient wheals with pruritus and dermal edema',
             morphology: ['Evanescent wheals', 'Dermal edema with erythematous borders'],
             images: ['Urticaria.jpg', 'Urticaria2.jpg', 'Urticaria3.jpg', 'Urticaria4.jpg']
-        }
+        },
+        types: [
+            '<strong>Acute</strong>: <6 weeks (often infection, drugs, foods)',
+            '<strong>Chronic</strong>: >6 weeks (often idiopathic or autoimmune)',
+            '<strong>Physical</strong>: Dermographism, cold, pressure, cholinergic'
+        ],
+        triggers: [
+            'Infections (viral, bacterial)',
+            'Drugs: NSAIDs, antibiotics',
+            'Foods: Nuts, shellfish, strawberries',
+            'Physical stimuli: Pressure, cold, heat, exercise',
+            'Stress'
+        ],
+        diagnosis: [
+            '<strong>Clinical diagnosis</strong>',
+            '<strong>History</strong>: Duration, triggers, drug exposure',
+            '<strong>Investigations</strong>: Usually not needed; consider FBC, ESR/CRP if chronic'
+        ],
+        management: [
+            '<strong>First-line</strong>: Non-sedating antihistamines (cetirizine, loratadine)',
+            '<strong>Up-titrate</strong>: Up to 4x dose if chronic',
+            '<strong>Short course steroids</strong>: Prednisolone for severe flares',
+            '<strong>Refractory</strong>: Omalizumab or ciclosporin (specialist)',
+            '<strong>Avoid triggers</strong>: NSAIDs, alcohol, heat'
+        ],
+        complications: [
+            'Angioedema',
+            'Sleep disturbance and reduced quality of life'
+        ],
+        redFlags: [
+            '⚠️ Signs of anaphylaxis: Wheeze, hypotension, airway swelling',
+            'Urticaria lasting >24h in fixed location - consider urticarial vasculitis'
+        ],
+        prognosis: [
+            'Acute urticaria resolves within days to weeks',
+            'Chronic urticaria resolves within 1 year in ~50%'
+        ]
     },
 
     'angioedema': {
@@ -1376,7 +1524,38 @@ export const dermatologyDatabase = {
             description: 'Deeper dermal and subcutaneous swelling, often involving lips, eyelids, or tongue',
             morphology: ['Non-pitting swelling', 'May occur with or without urticaria'],
             images: ['Angioedema.jpg']
-        }
+        },
+        causes: [
+            '<strong>Histamine-mediated</strong>: Allergy, urticaria, anaphylaxis',
+            '<strong>Bradykinin-mediated</strong>: ACE inhibitors, hereditary angioedema',
+            '<strong>Idiopathic</strong>: No clear cause'
+        ],
+        diagnosis: [
+            '<strong>Clinical diagnosis</strong>',
+            '<strong>Airway assessment</strong>: Voice changes, stridor',
+            '<strong>Investigations</strong>: C4/C1 esterase inhibitor for hereditary angioedema if recurrent'
+        ],
+        management: [
+            '<strong>Emergency if airway involvement</strong>:',
+            '  • IM adrenaline if anaphylaxis',
+            '  • High-flow oxygen, IV fluids',
+            '<strong>Histamine-mediated</strong>: Antihistamines, steroids, adrenaline if severe',
+            '<strong>Bradykinin-mediated</strong>: Stop ACE inhibitor; consider icatibant or C1 inhibitor',
+            '<strong>Observation</strong>: Monitor for progression'
+        ],
+        complications: [
+            'Airway obstruction',
+            'Recurrent episodes impacting quality of life'
+        ],
+        redFlags: [
+            '⚠️ Tongue or laryngeal swelling',
+            '⚠️ Stridor, hoarseness, drooling',
+            '⚠️ Rapid progression after ACE inhibitor use'
+        ],
+        prognosis: [
+            'Histamine-mediated episodes resolve within 24-72 hours',
+            'Hereditary angioedema may recur without prophylaxis'
+        ]
     },
 
     // BACTERIAL INFECTIONS
@@ -1387,7 +1566,40 @@ export const dermatologyDatabase = {
             description: 'Superficial bacterial skin infection with sharply demarcated erythema',
             morphology: ['Bright red, raised plaques', 'Well-demarcated borders'],
             images: ['Erysipelas.jpg', 'Erysipelas2.jpg']
-        }
+        },
+        causativeOrganisms: [
+            'Streptococcus pyogenes (Group A strep) most common',
+            'Streptococcus groups B, C, G less common'
+        ],
+        riskFactors: [
+            'Skin barrier disruption: Tinea pedis, eczema, trauma',
+            'Lymphoedema or venous insufficiency',
+            'Diabetes, immunosuppression'
+        ],
+        diagnosis: [
+            '<strong>Clinical diagnosis</strong>',
+            '<strong>Consider labs</strong>: FBC, CRP if systemic features',
+            '<strong>Blood cultures</strong>: If febrile or unwell'
+        ],
+        management: [
+            '<strong>Oral antibiotics</strong>: Flucloxacillin 500mg QDS 5-7 days',
+            '<strong>Penicillin allergy</strong>: Clarithromycin or doxycycline',
+            '<strong>Severe/systemic</strong>: IV antibiotics and admission',
+            '<strong>Supportive</strong>: Elevation, analgesia, treat portal of entry'
+        ],
+        complications: [
+            'Sepsis',
+            'Recurrent infection',
+            'Abscess formation'
+        ],
+        redFlags: [
+            'Rapid progression with severe pain - consider necrotizing fasciitis',
+            'Systemic toxicity - urgent admission'
+        ],
+        prognosis: [
+            'Improves rapidly with antibiotics',
+            'Recurrence common if predisposing factors persist'
+        ]
     },
 
     'staphylococcal-scalded-skin-syndrome': {
@@ -1397,7 +1609,37 @@ export const dermatologyDatabase = {
             description: 'Toxin-mediated blistering disease with diffuse erythema and superficial desquamation',
             morphology: ['Tender erythema', 'Fragile blisters', 'Sheet-like desquamation'],
             images: ['Staphylococcal scalded skin syndrome.jpg', 'Staphylococcal scalded skin syndrome2.jpg']
-        }
+        },
+        riskFactors: [
+            'Neonates and young children (<5 years)',
+            'Renal impairment',
+            'Immunosuppression'
+        ],
+        diagnosis: [
+            '<strong>Clinical diagnosis</strong>',
+            '<strong>Positive Nikolsky sign</strong>',
+            '<strong>Culture</strong>: From primary infection site (blood cultures often negative)',
+            '<strong>Differentials</strong>: SJS/TEN (mucosal involvement), bullous impetigo'
+        ],
+        management: [
+            '<strong>Emergency admission</strong>: Manage like burns',
+            '<strong>IV antibiotics</strong>: Flucloxacillin; add clindamycin to reduce toxin',
+            '<strong>Supportive care</strong>: Fluids, analgesia, wound care, thermoregulation',
+            '<strong>Isolation</strong>: Prevent nosocomial spread'
+        ],
+        complications: [
+            'Dehydration and electrolyte imbalance',
+            'Secondary infection and sepsis',
+            'Hypothermia'
+        ],
+        redFlags: [
+            '⚠️ Widespread blistering in child with fever - urgent admission',
+            '⚠️ Mucosal involvement - consider SJS/TEN'
+        ],
+        prognosis: [
+            'Excellent in children with prompt treatment',
+            'Higher mortality in adults due to comorbidities'
+        ]
     },
 
     'periungual-abscess': {
@@ -1407,7 +1649,35 @@ export const dermatologyDatabase = {
             description: 'Localized infection of the nail fold with erythema and purulent collection',
             morphology: ['Tender swelling of nail fold', 'Possible pus discharge'],
             images: ['Periungual abscess.jpg']
-        }
+        },
+        causes: [
+            'Staphylococcus aureus (acute)',
+            'Candida (chronic paronychia)',
+            'Trauma: Nail biting, manicures, ingrown nails'
+        ],
+        diagnosis: [
+            '<strong>Clinical diagnosis</strong>',
+            '<strong>Consider swab</strong> if recurrent or not responding'
+        ],
+        management: [
+            '<strong>Mild</strong>: Warm soaks, topical antiseptics',
+            '<strong>Abscess</strong>: Incision and drainage',
+            '<strong>Antibiotics</strong>: Flucloxacillin if cellulitis; consider doxycycline for MRSA risk',
+            '<strong>Chronic</strong>: Avoid wet work, topical steroids + antifungals'
+        ],
+        complications: [
+            'Felon (deep pulp infection)',
+            'Osteomyelitis (rare)',
+            'Nail dystrophy'
+        ],
+        redFlags: [
+            'Spreading cellulitis or systemic symptoms',
+            'Severe pain or swelling of finger pulp'
+        ],
+        prognosis: [
+            'Excellent with drainage and antibiotics',
+            'Chronic cases require trigger avoidance'
+        ]
     },
 
     // FUNGAL INFECTIONS
@@ -1418,7 +1688,38 @@ export const dermatologyDatabase = {
             description: 'Dermatophyte infection of the scalp causing scaling and hair loss',
             morphology: ['Patchy alopecia with scale', 'Inflammatory or non-inflammatory'],
             images: ['Tinea capitis.jpg', 'Diffuse Tinea capitis.jpg']
-        }
+        },
+        variants: [
+            '<strong>Non-inflammatory</strong>: Grey patch or black dot',
+            '<strong>Inflammatory</strong>: Kerion (boggy tender mass)',
+            '<strong>Favus</strong>: Yellow crusts (scutula)'
+        ],
+        diagnosis: [
+            '<strong>Clinical diagnosis</strong>',
+            '<strong>Mycology</strong>: Hair pluckings and scalp scrapings for microscopy/culture',
+            '<strong>Wood lamp</strong>: Some species fluoresce (Microsporum)',
+            '<strong>Differentials</strong>: Alopecia areata, psoriasis, seborrheic dermatitis'
+        ],
+        management: [
+            '<strong>Systemic antifungals</strong> (topicals alone ineffective):',
+            '  • Oral terbinafine (first-line for Trichophyton)',
+            '  • Oral griseofulvin (Microsporum)',
+            '<strong>Adjunct</strong>: Antifungal shampoo (selenium sulfide/ketoconazole)',
+            '<strong>Contacts</strong>: Treat household contacts if symptomatic',
+            '<strong>School</strong>: Can attend once treatment started'
+        ],
+        complications: [
+            'Scarring alopecia (kerion if untreated)',
+            'Secondary bacterial infection'
+        ],
+        redFlags: [
+            'Painful boggy mass (kerion) - urgent treatment',
+            'Cervical lymphadenopathy or fever'
+        ],
+        prognosis: [
+            'Good with prompt systemic therapy',
+            'Hair regrowth usually complete unless scarring'
+        ]
     },
 
     'tinea-corporis': {
@@ -1428,7 +1729,32 @@ export const dermatologyDatabase = {
             description: 'Ring-shaped dermatophyte infection of glabrous skin',
             morphology: ['Annular plaques with central clearing', 'Raised scaly border'],
             images: ['Tinea corporis.jpg']
-        }
+        },
+        riskFactors: [
+            'Contact with infected humans/animals',
+            'Warm, humid environments',
+            'Immunosuppression'
+        ],
+        diagnosis: [
+            '<strong>Clinical diagnosis</strong>',
+            '<strong>KOH microscopy</strong> of skin scrapings',
+            '<strong>Differentials</strong>: Nummular eczema, psoriasis, pityriasis rosea'
+        ],
+        management: [
+            '<strong>Topical antifungals</strong>: Terbinafine or azoles for 2-4 weeks',
+            '<strong>Extensive</strong>: Oral terbinafine or itraconazole',
+            '<strong>Hygiene</strong>: Avoid sharing towels, treat pets if infected'
+        ],
+        complications: [
+            'Tinea incognito (steroid-modified infection)',
+            'Spread to other sites'
+        ],
+        redFlags: [
+            'Failure to respond to topical therapy - consider alternative diagnosis or systemic therapy'
+        ],
+        prognosis: [
+            'Excellent with appropriate antifungal treatment'
+        ]
     },
 
     'tinea-manuum': {
@@ -1438,7 +1764,30 @@ export const dermatologyDatabase = {
             description: 'Dermatophyte infection of the hands, often with scaling and hyperkeratosis',
             morphology: ['Dry scale on palms', 'Hyperkeratosis or fissuring'],
             images: ['Tinea manuum.jpg']
-        }
+        },
+        associations: [
+            'Often unilateral ("two feet-one hand" syndrome)',
+            'Coexisting tinea pedis or onychomycosis'
+        ],
+        diagnosis: [
+            '<strong>Clinical diagnosis</strong>',
+            '<strong>KOH microscopy</strong> and culture',
+            '<strong>Differentials</strong>: Hand eczema, psoriasis'
+        ],
+        management: [
+            '<strong>Topical antifungals</strong>: Terbinafine or azole for 2-4 weeks',
+            '<strong>Extensive or hyperkeratotic</strong>: Oral terbinafine',
+            '<strong>Treat other sites</strong>: Feet/nails to prevent recurrence'
+        ],
+        complications: [
+            'Chronic fissuring and secondary infection'
+        ],
+        redFlags: [
+            'Unilateral palmar scaling not responding to steroids - suspect tinea'
+        ],
+        prognosis: [
+            'Good with appropriate antifungal therapy'
+        ]
     },
 
     'tinea-pedis': {
@@ -1448,7 +1797,33 @@ export const dermatologyDatabase = {
             description: 'Dermatophyte infection of the feet with scaling and maceration',
             morphology: ['Interdigital scaling', 'Plantar hyperkeratosis'],
             images: ['Tinea pedis with associated tinea unguium.jpg']
-        }
+        },
+        types: [
+            '<strong>Interdigital</strong>: Maceration between toes',
+            '<strong>Moccasin</strong>: Diffuse plantar scaling',
+            '<strong>Vesicular</strong>: Vesicles on instep'
+        ],
+        diagnosis: [
+            '<strong>Clinical diagnosis</strong>',
+            '<strong>KOH microscopy</strong> if uncertain',
+            '<strong>Differentials</strong>: Eczema, psoriasis, contact dermatitis'
+        ],
+        management: [
+            '<strong>Topical antifungals</strong>: Terbinafine/azole for 1-4 weeks',
+            '<strong>Extensive</strong>: Oral terbinafine or itraconazole',
+            '<strong>Foot care</strong>: Keep feet dry, change socks, breathable shoes'
+        ],
+        complications: [
+            'Secondary bacterial infection',
+            'Onychomycosis',
+            'Recurrent cellulitis'
+        ],
+        redFlags: [
+            'Signs of bacterial infection (increasing pain, erythema, fever)'
+        ],
+        prognosis: [
+            'Good with treatment but recurrence common without preventive measures'
+        ]
     },
 
     'pityriasis-versicolor': {
@@ -1458,7 +1833,31 @@ export const dermatologyDatabase = {
             description: 'Malassezia infection causing hypo- or hyperpigmented scaly macules',
             morphology: ['Fine scale', 'Mottled pigmentation'],
             images: ['Pityriasis versicolor.jpg', 'Pityriasis versicolor 2.jpg', 'Pityriasis versicolor3.jpg']
-        }
+        },
+        riskFactors: [
+            'Hot, humid climates',
+            'Oily skin, sweating',
+            'Immunosuppression'
+        ],
+        diagnosis: [
+            '<strong>Clinical diagnosis</strong>',
+            '<strong>KOH prep</strong>: "Spaghetti and meatballs" hyphae and spores',
+            '<strong>Wood lamp</strong>: Yellow-green fluorescence (sometimes)'
+        ],
+        management: [
+            '<strong>Topical antifungals</strong>: Selenium sulfide shampoo, ketoconazole shampoo/cream',
+            '<strong>Oral antifungals</strong>: Itraconazole or fluconazole for extensive disease',
+            '<strong>Maintenance</strong>: Weekly selenium sulfide or ketoconazole to prevent recurrence'
+        ],
+        complications: [
+            'Post-inflammatory hypo/hyperpigmentation (may persist for months)'
+        ],
+        redFlags: [
+            'Failure to respond - consider alternative diagnosis (vitiligo, pityriasis alba)'
+        ],
+        prognosis: [
+            'Good with treatment but high recurrence rates'
+        ]
     },
 
     'candidiasis-intertrigo': {
@@ -1468,7 +1867,35 @@ export const dermatologyDatabase = {
             description: 'Candida infection of skin folds with erythema and satellite pustules',
             morphology: ['Moist erythematous plaques', 'Satellite pustules'],
             images: ['Candidiasis (right axilla).jpg']
-        }
+        },
+        riskFactors: [
+            'Obesity and skin folds',
+            'Diabetes mellitus',
+            'Moisture and friction',
+            'Immunosuppression',
+            'Incontinence'
+        ],
+        diagnosis: [
+            '<strong>Clinical diagnosis</strong>',
+            '<strong>KOH microscopy</strong> if uncertain (pseudohyphae)',
+            '<strong>Differentials</strong>: Inverse psoriasis, irritant intertrigo, erythrasma'
+        ],
+        management: [
+            '<strong>General</strong>: Keep area dry, weight management, reduce friction',
+            '<strong>Topical antifungals</strong>: Clotrimazole or miconazole BD 2-4 weeks',
+            '<strong>Severe</strong>: Oral fluconazole',
+            '<strong>Barrier creams</strong>: Zinc oxide for moisture control'
+        ],
+        complications: [
+            'Secondary bacterial infection',
+            'Recurrent episodes'
+        ],
+        redFlags: [
+            'Refractory or extensive disease - screen for diabetes or immunosuppression'
+        ],
+        prognosis: [
+            'Good with treatment and moisture control'
+        ]
     },
 
     // PARASITIC INFESTATION
@@ -1479,7 +1906,35 @@ export const dermatologyDatabase = {
             description: 'Infestation with Sarcoptes scabiei causing pruritic papules and burrows',
             morphology: ['Excoriated papules', 'Burrows in web spaces'],
             images: ['Scabies.jpg']
-        }
+        },
+        distribution: [
+            'Web spaces of fingers, wrists, axillae, waist, genital area',
+            'Infants: Scalp, palms, soles'
+        ],
+        diagnosis: [
+            '<strong>Clinical diagnosis</strong>',
+            '<strong>Dermatoscopy</strong>: Delta wing sign in burrow',
+            '<strong>Microscopy</strong>: Skin scraping with mites/eggs',
+            '<strong>Differentials</strong>: Eczema, insect bites, dermatitis herpetiformis'
+        ],
+        management: [
+            '<strong>Topical permethrin 5%</strong>: Apply to whole body, repeat in 7 days',
+            '<strong>Oral ivermectin</strong>: For outbreaks or crusted scabies',
+            '<strong>Household contacts</strong>: Treat all close contacts simultaneously',
+            '<strong>Environmental</strong>: Wash bedding/clothes at 60°C or bag for 72 hours'
+        ],
+        complications: [
+            'Secondary bacterial infection (impetigo)',
+            'Post-scabetic itch (can persist for weeks)',
+            'Crusted scabies in immunocompromised'
+        ],
+        redFlags: [
+            'Crusted scabies (hyperkeratotic, widespread) - urgent treatment and isolation',
+            'Infants or elderly with severe infestation'
+        ],
+        prognosis: [
+            'Cures with appropriate treatment and contact management'
+        ]
     },
 
     // AUTOIMMUNE / IMMUNOLOGIC CONDITIONS
@@ -1490,7 +1945,35 @@ export const dermatologyDatabase = {
             description: 'Autoimmune blistering disease with tense bullae on erythematous skin',
             morphology: ['Tense bullae', 'Urticated plaques'],
             images: ['Bullous pemphigoid.jpg']
-        }
+        },
+        associations: [
+            'Elderly patients (most common >70 years)',
+            'Neurological disease (Parkinson, dementia)',
+            'Drug triggers: Loop diuretics, DPP-4 inhibitors'
+        ],
+        diagnosis: [
+            '<strong>Skin biopsy</strong>: Subepidermal blister',
+            '<strong>Direct immunofluorescence</strong>: Linear IgG/C3 at basement membrane',
+            '<strong>Serology</strong>: BP180/BP230 antibodies'
+        ],
+        management: [
+            '<strong>Topical high-potency steroids</strong> (clobetasol) for localized disease',
+            '<strong>Systemic steroids</strong> for extensive disease',
+            '<strong>Steroid-sparing</strong>: Doxycycline, azathioprine, mycophenolate',
+            '<strong>Supportive</strong>: Wound care, infection prevention'
+        ],
+        complications: [
+            'Secondary infection',
+            'Fluid/electrolyte imbalance (extensive disease)'
+        ],
+        redFlags: [
+            'Extensive blistering with systemic symptoms',
+            'Mucosal involvement (rare in BP) - consider pemphigus vulgaris'
+        ],
+        prognosis: [
+            'Chronic relapsing course; remission possible with treatment',
+            'Mortality increased in elderly due to comorbidities'
+        ]
     },
 
     'pemphigus-vulgaris': {
@@ -1500,7 +1983,35 @@ export const dermatologyDatabase = {
             description: 'Autoimmune blistering disease with flaccid bullae and mucosal involvement',
             morphology: ['Flaccid bullae', 'Painful erosions', 'Oral mucosal lesions'],
             images: ['Pemphigus vulgaris.jpg', 'Pemphigus vulgaris affecting the oral mucosa.jpg']
-        }
+        },
+        associations: [
+            'Middle-aged or elderly',
+            'Other autoimmune disease',
+            'Drug-induced (penicillamine, ACE inhibitors)'
+        ],
+        diagnosis: [
+            '<strong>Skin biopsy</strong>: Intraepidermal acantholysis',
+            '<strong>Direct immunofluorescence</strong>: Intercellular IgG ("fishnet")',
+            '<strong>Serology</strong>: Desmoglein 1/3 antibodies'
+        ],
+        management: [
+            '<strong>High-dose systemic steroids</strong>',
+            '<strong>Steroid-sparing agents</strong>: Azathioprine, mycophenolate, rituximab',
+            '<strong>Supportive</strong>: Wound care, infection control, nutrition'
+        ],
+        complications: [
+            'Secondary infection and sepsis',
+            'Fluid loss and electrolyte imbalance',
+            'Malnutrition due to oral involvement'
+        ],
+        redFlags: [
+            'Extensive mucosal involvement or dysphagia',
+            'Signs of sepsis'
+        ],
+        prognosis: [
+            'Chronic disease with significant morbidity',
+            'Improved survival with early immunosuppressive therapy'
+        ]
     },
 
     'stevens-johnson-syndrome': {
@@ -1510,7 +2021,36 @@ export const dermatologyDatabase = {
             description: 'Severe mucocutaneous reaction with epidermal detachment',
             morphology: ['Targetoid lesions', 'Painful erosions', 'Mucosal involvement'],
             images: ['Stevens-Johnson syndrome.jpg']
-        }
+        },
+        causes: [
+            'Drugs: Sulfonamides, antiepileptics, allopurinol, NSAIDs',
+            'Infections: Mycoplasma, HSV (less common)'
+        ],
+        diagnosis: [
+            '<strong>Clinical diagnosis</strong>',
+            '<strong>Skin biopsy</strong>: Full-thickness epidermal necrosis',
+            '<strong>Severity</strong>: BSA involvement (SJS <10%, TEN >30%)'
+        ],
+        management: [
+            '<strong>Emergency admission</strong>: Burns/ICU',
+            '<strong>Stop offending drug</strong> immediately',
+            '<strong>Supportive care</strong>: Fluids, wound care, pain control',
+            '<strong>Specialist input</strong>: Dermatology, ophthalmology',
+            '<strong>Consider</strong>: IVIG, ciclosporin (specialist)'
+        ],
+        complications: [
+            'Sepsis and multi-organ failure',
+            'Ocular scarring and vision loss',
+            'Long-term mucosal strictures'
+        ],
+        redFlags: [
+            '⚠️ Widespread skin pain + mucosal involvement',
+            '⚠️ Rapidly progressive epidermal detachment'
+        ],
+        prognosis: [
+            'Mortality: SJS 5-10%, TEN 30-50%',
+            'Early drug withdrawal improves outcomes'
+        ]
     },
 
     'erythema-multiforme': {
@@ -1520,7 +2060,33 @@ export const dermatologyDatabase = {
             description: 'Acute hypersensitivity reaction with target lesions',
             morphology: ['Targetoid lesions', 'Acral distribution'],
             images: ['Erythema multiforme.jpg']
-        }
+        },
+        triggers: [
+            'HSV infection (most common)',
+            'Mycoplasma pneumoniae',
+            'Medications (less common than SJS)'
+        ],
+        diagnosis: [
+            '<strong>Clinical diagnosis</strong>',
+            '<strong>Differentials</strong>: Urticaria, SJS/TEN',
+            '<strong>Investigations</strong>: HSV testing if recurrent'
+        ],
+        management: [
+            '<strong>Supportive</strong>: Topical steroids, antihistamines',
+            '<strong>Treat trigger</strong>: Antivirals for HSV',
+            '<strong>Severe mucosal involvement</strong>: Consider short course systemic steroids'
+        ],
+        complications: [
+            'Recurrence (especially HSV-associated)',
+            'Mild mucosal involvement'
+        ],
+        redFlags: [
+            'Extensive mucosal involvement or systemic symptoms - consider SJS'
+        ],
+        prognosis: [
+            'Self-limiting over 2-4 weeks',
+            'Recurrence common if HSV not controlled'
+        ]
     },
 
     'erythema-nodosum': {
@@ -1530,7 +2096,34 @@ export const dermatologyDatabase = {
             description: 'Tender erythematous nodules, usually on shins',
             morphology: ['Tender subcutaneous nodules', 'No ulceration'],
             images: ['Erythema nodosum.jpg']
-        }
+        },
+        causes: [
+            'Infections: Streptococcal, TB',
+            'Sarcoidosis',
+            'IBD',
+            'Drugs: OCP, antibiotics'
+        ],
+        diagnosis: [
+            '<strong>Clinical diagnosis</strong>',
+            '<strong>Investigations</strong>: FBC, ESR/CRP, throat swab, CXR',
+            '<strong>Differentials</strong>: Cellulitis, vasculitis, panniculitis'
+        ],
+        management: [
+            '<strong>Treat underlying cause</strong>',
+            '<strong>Supportive</strong>: Rest, NSAIDs, compression',
+            '<strong>Severe</strong>: Short course oral steroids'
+        ],
+        complications: [
+            'Prolonged tenderness and bruising',
+            'Recurrence if underlying cause persists'
+        ],
+        redFlags: [
+            'Systemic symptoms (fever, cough, weight loss) - evaluate for TB or sarcoidosis'
+        ],
+        prognosis: [
+            'Resolves over 3-6 weeks with residual bruising',
+            'Recurrence possible'
+        ]
     },
 
     // VASCULAR AND PURPURA
@@ -1541,7 +2134,32 @@ export const dermatologyDatabase = {
             description: 'Purpuric patches on sun-damaged skin from dermal fragility',
             morphology: ['Purple ecchymoses', 'Thin atrophic skin'],
             images: ['Actinic purpura.jpg']
-        }
+        },
+        riskFactors: [
+            'Chronic sun exposure',
+            'Older age',
+            'Topical/systemic steroid use',
+            'Anticoagulants'
+        ],
+        diagnosis: [
+            '<strong>Clinical diagnosis</strong>',
+            '<strong>Differentials</strong>: Vasculitis, thrombocytopenia, trauma'
+        ],
+        management: [
+            '<strong>Reassurance</strong>: Benign condition',
+            '<strong>Sun protection</strong>: Prevent further dermal damage',
+            '<strong>Review medications</strong>: Consider contribution from anticoagulants'
+        ],
+        complications: [
+            'Cosmetic concerns',
+            'Skin tears with minor trauma'
+        ],
+        redFlags: [
+            'Systemic bruising or mucosal bleeding - evaluate platelet/coagulation disorders'
+        ],
+        prognosis: [
+            'Chronic condition with recurrent lesions'
+        ]
     },
 
     'henoch-schonlein-purpura': {
@@ -1551,7 +2169,37 @@ export const dermatologyDatabase = {
             description: 'Palpable purpura with systemic features such as arthralgia or abdominal pain',
             morphology: ['Palpable purpura on lower limbs', 'Petechiae and ecchymoses'],
             images: ['Henoch-Schönlein purpura.jpg', 'Henoch-Schönlein purpura2.jpg']
-        }
+        },
+        features: [
+            'Purpura (palpable) - mandatory',
+            'Arthralgia/arthritis',
+            'Abdominal pain or GI bleeding',
+            'Renal involvement (hematuria, proteinuria)'
+        ],
+        diagnosis: [
+            '<strong>Clinical diagnosis</strong>',
+            '<strong>Urinalysis</strong>: Hematuria/proteinuria',
+            '<strong>Bloods</strong>: U&E, FBC, ESR/CRP',
+            '<strong>Biopsy</strong>: IgA deposition if uncertain'
+        ],
+        management: [
+            '<strong>Supportive</strong>: Analgesia, hydration',
+            '<strong>Renal monitoring</strong>: Regular urine/blood pressure checks',
+            '<strong>Steroids</strong>: For severe abdominal or renal involvement'
+        ],
+        complications: [
+            'Renal impairment',
+            'Intussusception (children)',
+            'GI bleeding'
+        ],
+        redFlags: [
+            'Gross hematuria or rising creatinine',
+            'Severe abdominal pain or GI bleeding'
+        ],
+        prognosis: [
+            'Most children recover completely within weeks',
+            'Renal involvement determines long-term prognosis'
+        ]
     },
 
     'vascular-malformation': {
@@ -1561,7 +2209,36 @@ export const dermatologyDatabase = {
             description: 'Congenital vascular lesions that grow proportionally with the patient',
             morphology: ['Soft compressible lesions', 'Color varies by vessel type'],
             images: ['Vascular malformation.jpg']
-        }
+        },
+        types: [
+            '<strong>Capillary</strong>: Port-wine stain',
+            '<strong>Venous</strong>: Blue, compressible',
+            '<strong>Lymphatic</strong>: Vesicular or cystic',
+            '<strong>Arteriovenous</strong>: Warm, pulsatile, bruit'
+        ],
+        diagnosis: [
+            '<strong>Clinical assessment</strong>',
+            '<strong>Imaging</strong>: Ultrasound, MRI for extent',
+            '<strong>Differentials</strong>: Infantile hemangioma (proliferative)'
+        ],
+        management: [
+            '<strong>Observation</strong>: Many are stable',
+            '<strong>Laser therapy</strong>: Capillary malformations',
+            '<strong>Sclerotherapy</strong>: Venous/lymphatic lesions',
+            '<strong>Surgery</strong>: Selected cases with complications'
+        ],
+        complications: [
+            'Bleeding or ulceration',
+            'Pain and functional impairment',
+            'High-output cardiac failure (AV malformations)'
+        ],
+        redFlags: [
+            'Rapid growth, pain, bleeding, or ulceration',
+            'Signs of high-flow lesion (thrill/bruit)'
+        ],
+        prognosis: [
+            'Lifelong condition; stable with appropriate management'
+        ]
     },
 
     'palmar-erythema': {
@@ -1571,7 +2248,27 @@ export const dermatologyDatabase = {
             description: 'Diffuse erythema of palms, often due to systemic causes',
             morphology: ['Redness over thenar and hypothenar eminences'],
             images: ['Palmar erythema.jpg']
-        }
+        },
+        causes: [
+            'Physiological (pregnancy)',
+            'Chronic liver disease',
+            'Thyrotoxicosis',
+            'Rheumatoid arthritis'
+        ],
+        diagnosis: [
+            '<strong>Clinical finding</strong>',
+            '<strong>Investigations</strong>: LFTs, thyroid function if indicated'
+        ],
+        management: [
+            '<strong>Treat underlying cause</strong>',
+            '<strong>Reassurance</strong> if physiological'
+        ],
+        redFlags: [
+            'Associated systemic symptoms (jaundice, weight loss)'
+        ],
+        prognosis: [
+            'Depends on underlying cause'
+        ]
     },
 
     // ULCERS AND WOUNDS
@@ -1582,7 +2279,37 @@ export const dermatologyDatabase = {
             description: 'Shallow, irregular ulcers in the gaiter area due to venous insufficiency',
             morphology: ['Irregular shallow ulcer', 'Surrounding hemosiderin staining'],
             images: ['Venous ulcer.jpg', 'Venous ulcer2.jpg', 'Leg ulcers.jpg']
-        }
+        },
+        riskFactors: [
+            'Chronic venous insufficiency',
+            'Varicose veins',
+            'Previous DVT',
+            'Obesity and immobility'
+        ],
+        diagnosis: [
+            '<strong>Clinical assessment</strong>',
+            '<strong>Doppler ultrasound</strong>: Assess venous reflux and arterial supply (ABPI)',
+            '<strong>Differentials</strong>: Arterial ulcer, vasculitic ulcer, malignancy'
+        ],
+        management: [
+            '<strong>Compression therapy</strong>: Mainstay if ABPI adequate',
+            '<strong>Wound care</strong>: Debridement, dressings',
+            '<strong>Elevate legs</strong>',
+            '<strong>Treat infection</strong>: Antibiotics if cellulitis',
+            '<strong>Surgical/vascular</strong>: Consider venous ablation'
+        ],
+        complications: [
+            'Recurrent ulceration',
+            'Infection and cellulitis',
+            'Malignant transformation (Marjolin ulcer)'
+        ],
+        redFlags: [
+            'Non-healing ulcer despite treatment - consider biopsy',
+            'Signs of arterial disease (cold, pulseless foot)'
+        ],
+        prognosis: [
+            'Healing with compression in most, recurrence common'
+        ]
     },
 
     'arterial-ulcer': {
@@ -1592,7 +2319,37 @@ export const dermatologyDatabase = {
             description: 'Painful, punched-out ulcers due to arterial insufficiency',
             morphology: ['Well-demarcated ulcer', 'Pale or necrotic base'],
             images: ['Arterial ulcer.jpg']
-        }
+        },
+        riskFactors: [
+            'Peripheral arterial disease',
+            'Smoking',
+            'Diabetes',
+            'Hyperlipidemia'
+        ],
+        diagnosis: [
+            '<strong>Clinical assessment</strong>',
+            '<strong>ABPI</strong> and Doppler ultrasound',
+            '<strong>Assess pulses</strong> and capillary refill'
+        ],
+        management: [
+            '<strong>Urgent vascular referral</strong>',
+            '<strong>Revascularization</strong> if possible',
+            '<strong>Analgesia</strong>',
+            '<strong>Avoid compression</strong> unless arterial flow adequate',
+            '<strong>Risk factor modification</strong>: Smoking cessation, statins'
+        ],
+        complications: [
+            'Critical limb ischemia',
+            'Gangrene',
+            'Amputation'
+        ],
+        redFlags: [
+            'Rest pain or black eschar - critical ischemia',
+            'Cold, pulseless limb - emergency'
+        ],
+        prognosis: [
+            'Dependent on vascular status and revascularization'
+        ]
     },
 
     'neuropathic-ulcer': {
@@ -1602,7 +2359,35 @@ export const dermatologyDatabase = {
             description: 'Pressure-related ulcer in areas of reduced sensation',
             morphology: ['Punched-out ulcer', 'Callused surrounding skin'],
             images: ['Neuropathic ulcer.jpg']
-        }
+        },
+        riskFactors: [
+            'Diabetic neuropathy',
+            'Charcot foot',
+            'Peripheral neuropathy (alcohol, B12 deficiency)'
+        ],
+        diagnosis: [
+            '<strong>Clinical assessment</strong>',
+            '<strong>Monofilament testing</strong> for neuropathy',
+            '<strong>Foot X-ray</strong> if deep ulcer or suspected osteomyelitis'
+        ],
+        management: [
+            '<strong>Offloading</strong>: Total contact cast or special footwear',
+            '<strong>Wound care</strong>: Debridement and dressings',
+            '<strong>Infection management</strong>: Antibiotics if infected',
+            '<strong>Glycemic control</strong>'
+        ],
+        complications: [
+            'Osteomyelitis',
+            'Amputation',
+            'Recurrent ulcers'
+        ],
+        redFlags: [
+            'Deep ulcer with bone exposure',
+            'Systemic signs of infection'
+        ],
+        prognosis: [
+            'Healing possible with offloading and control of risk factors'
+        ]
     },
 
     // PIGMENTATION AND MELANOCYTIC LESIONS
@@ -1613,7 +2398,35 @@ export const dermatologyDatabase = {
             description: 'Benign proliferations of melanocytes with uniform pigmentation',
             morphology: ['Well-circumscribed macules or papules', 'Uniform color'],
             images: ['Pigmented melanocytic naevus.jpg', 'Congenital naevus.jpg']
-        }
+        },
+        types: [
+            '<strong>Junctional</strong>: Flat, pigmented',
+            '<strong>Compound</strong>: Slightly raised',
+            '<strong>Intradermal</strong>: Skin-colored, dome-shaped',
+            '<strong>Congenital</strong>: Present at birth'
+        ],
+        diagnosis: [
+            '<strong>Clinical assessment</strong>',
+            '<strong>ABCDE criteria</strong> to screen for melanoma',
+            '<strong>Dermoscopy</strong> if atypical'
+        ],
+        management: [
+            '<strong>Reassurance</strong> if benign and stable',
+            '<strong>Excision biopsy</strong> if suspicious or changing',
+            '<strong>Sun protection</strong> advice'
+        ],
+        complications: [
+            'Rare malignant transformation (especially large congenital nevi)'
+        ],
+        redFlags: [
+            'Change in size, shape, or color',
+            'Bleeding or ulceration',
+            'New lesion in adult'
+        ],
+        prognosis: [
+            'Benign with excellent prognosis',
+            'Routine monitoring for atypical nevi'
+        ]
     },
 
     'freckles': {
@@ -1623,7 +2436,21 @@ export const dermatologyDatabase = {
             description: 'Small hyperpigmented macules on sun-exposed skin',
             morphology: ['Discrete light brown macules', 'Increase with sun exposure'],
             images: ['Freckles.jpg']
-        }
+        },
+        associations: [
+            'Fair skin and red/blonde hair',
+            'Sun exposure'
+        ],
+        management: [
+            '<strong>Reassurance</strong>',
+            '<strong>Sun protection</strong> to reduce darkening'
+        ],
+        redFlags: [
+            'New pigmented lesion with change in asymmetry or color - evaluate for melanoma'
+        ],
+        prognosis: [
+            'Benign and may fade with reduced sun exposure'
+        ]
     },
 
     // HAIR AND HORMONAL
@@ -1634,7 +2461,29 @@ export const dermatologyDatabase = {
             description: 'Excess terminal hair in androgen-dependent areas in women',
             morphology: ['Coarse terminal hair growth'],
             images: ['Hirsutism.jpg']
-        }
+        },
+        causes: [
+            'Polycystic ovary syndrome (most common)',
+            'Idiopathic',
+            'Congenital adrenal hyperplasia',
+            'Androgen-secreting tumors'
+        ],
+        diagnosis: [
+            '<strong>Clinical assessment</strong>: Ferriman-Gallwey score',
+            '<strong>Labs</strong>: Testosterone, DHEAS, LH/FSH, prolactin if indicated',
+            '<strong>Consider pelvic ultrasound</strong> for PCOS'
+        ],
+        management: [
+            '<strong>Lifestyle</strong>: Weight loss if overweight',
+            '<strong>Hormonal therapy</strong>: Combined OCP, anti-androgens (spironolactone)',
+            '<strong>Cosmetic</strong>: Shaving, waxing, laser hair removal'
+        ],
+        redFlags: [
+            'Rapid onset or virilization (deep voice, clitoromegaly) - urgent endocrine review'
+        ],
+        prognosis: [
+            'Improves with hormonal control and cosmetic measures'
+        ]
     },
 
     'hypertrichosis': {
@@ -1644,7 +2493,24 @@ export const dermatologyDatabase = {
             description: 'Excessive hair growth in non-androgen dependent areas',
             morphology: ['Generalized or localized increased hair'],
             images: ['Hypertrichosis.jpg']
-        }
+        },
+        causes: [
+            'Congenital syndromes',
+            'Medications (phenytoin, ciclosporin, minoxidil)',
+            'Systemic illness (porphyria, hypothyroidism)'
+        ],
+        diagnosis: [
+            '<strong>Clinical assessment</strong>',
+            '<strong>Medication review</strong>',
+            '<strong>Investigations</strong> if systemic disease suspected'
+        ],
+        management: [
+            '<strong>Treat underlying cause</strong>',
+            '<strong>Cosmetic measures</strong>: Laser hair removal, depilatories'
+        ],
+        prognosis: [
+            'Depends on underlying cause; may resolve if drug-induced'
+        ]
     },
 
     // NAIL AND CLUBBING
@@ -1655,7 +2521,29 @@ export const dermatologyDatabase = {
             description: 'Separation of the nail plate from the nail bed',
             morphology: ['Distal nail lifting', 'White or yellow discoloration'],
             images: ['Onycholysis.jpg']
-        }
+        },
+        causes: [
+            'Trauma or repetitive microtrauma',
+            'Onychomycosis',
+            'Psoriasis',
+            'Thyroid disease'
+        ],
+        diagnosis: [
+            '<strong>Clinical assessment</strong>',
+            '<strong>Consider fungal culture</strong>',
+            '<strong>Assess for psoriasis or thyroid disease</strong>'
+        ],
+        management: [
+            '<strong>Trim detached nail</strong>',
+            '<strong>Treat underlying cause</strong>',
+            '<strong>Keep nails dry</strong> to prevent infection'
+        ],
+        complications: [
+            'Secondary infection'
+        ],
+        prognosis: [
+            'Improves when underlying cause treated'
+        ]
     },
 
     'koilonychia': {
@@ -1665,7 +2553,23 @@ export const dermatologyDatabase = {
             description: 'Spoon-shaped nails often linked to iron deficiency or systemic disease',
             morphology: ['Concave nail plates'],
             images: ['Koilonychia.jpg']
-        }
+        },
+        causes: [
+            'Iron deficiency anemia',
+            'Hemochromatosis (rare)',
+            'Trauma or occupational exposure'
+        ],
+        diagnosis: [
+            '<strong>Clinical assessment</strong>',
+            '<strong>Iron studies</strong> if suspected deficiency'
+        ],
+        management: [
+            '<strong>Treat underlying cause</strong>: Iron replacement',
+            '<strong>Monitor resolution</strong> with nail growth'
+        ],
+        prognosis: [
+            'Reversible with correction of underlying cause'
+        ]
     },
 
     'clubbing': {
@@ -1675,7 +2579,25 @@ export const dermatologyDatabase = {
             description: 'Bulbous enlargement of distal digits associated with systemic disease',
             morphology: ['Loss of nail bed angle', 'Broadening of fingertips'],
             images: ['Clubbing.jpg']
-        }
+        },
+        causes: [
+            'Pulmonary: Lung cancer, bronchiectasis, cystic fibrosis',
+            'Cardiac: Cyanotic heart disease, endocarditis',
+            'GI: IBD, liver disease'
+        ],
+        diagnosis: [
+            '<strong>Clinical assessment</strong>: Schamroth sign',
+            '<strong>Investigations</strong>: Chest X-ray, echocardiogram if indicated'
+        ],
+        management: [
+            '<strong>Treat underlying disease</strong>'
+        ],
+        redFlags: [
+            'New clubbing with systemic symptoms - urgent evaluation for malignancy'
+        ],
+        prognosis: [
+            'Depends on underlying cause'
+        ]
     },
 
     // PAPULOSQUAMOUS / INFLAMMATORY
@@ -1686,7 +2608,35 @@ export const dermatologyDatabase = {
             description: 'Pruritic, violaceous papules with fine white lines (Wickham striae)',
             morphology: ['Polygonal flat-topped papules', 'Wickham striae'],
             images: ['Lichen planus.jpg', 'Lichen planus2.jpg', 'Lichen planus3.jpg', 'Wickham’s striae.jpg']
-        }
+        },
+        associations: [
+            'Hepatitis C infection',
+            'Drug-induced (thiazides, antimalarials)',
+            'Oral and genital mucosal involvement'
+        ],
+        diagnosis: [
+            '<strong>Clinical diagnosis</strong>',
+            '<strong>Biopsy</strong>: Saw-tooth lymphocytic infiltrate',
+            '<strong>Investigations</strong>: Hepatitis C screening if indicated'
+        ],
+        management: [
+            '<strong>Topical steroids</strong>: Potent for cutaneous lesions',
+            '<strong>Oral lesions</strong>: Topical steroid mouthwash',
+            '<strong>Severe</strong>: Systemic steroids or retinoids',
+            '<strong>Pruritus</strong>: Antihistamines'
+        ],
+        complications: [
+            'Post-inflammatory hyperpigmentation',
+            'Scarring alopecia (lichen planopilaris)',
+            'Oral SCC risk in erosive disease'
+        ],
+        redFlags: [
+            'Persistent erosive oral lesions - monitor for malignancy'
+        ],
+        prognosis: [
+            'Often resolves within 1-2 years',
+            'Recurrence possible'
+        ]
     },
 
     'discoid-lupus': {
@@ -1696,7 +2646,33 @@ export const dermatologyDatabase = {
             description: 'Chronic scarring inflammatory plaques on sun-exposed skin',
             morphology: ['Erythematous plaques with scale', 'Scarring and pigment change'],
             images: ['Chronic discoid lupus erythematosus.jpg']
-        }
+        },
+        associations: [
+            'Photosensitivity',
+            'May occur with systemic lupus (5-10%)'
+        ],
+        diagnosis: [
+            '<strong>Skin biopsy</strong>: Interface dermatitis with follicular plugging',
+            '<strong>ANA</strong> if systemic features'
+        ],
+        management: [
+            '<strong>Sun protection</strong>: SPF 50+, protective clothing',
+            '<strong>Topical steroids</strong>: Potent',
+            '<strong>Topical calcineurin inhibitors</strong>',
+            '<strong>Systemic therapy</strong>: Hydroxychloroquine for refractory disease'
+        ],
+        complications: [
+            'Scarring alopecia',
+            'Dyspigmentation',
+            'SCC in chronic lesions (rare)'
+        ],
+        redFlags: [
+            'Systemic symptoms (arthralgia, renal issues) - evaluate for SLE'
+        ],
+        prognosis: [
+            'Chronic with risk of scarring if untreated',
+            'Improves with photoprotection'
+        ]
     },
 
     'erythroderma': {
@@ -1706,7 +2682,37 @@ export const dermatologyDatabase = {
             description: 'Generalized erythema and scaling involving most of the body surface',
             morphology: ['Diffuse erythema', 'Scaling and exfoliation'],
             images: ['Erythroderma.jpg', 'Erythroderma2.jpg']
-        }
+        },
+        causes: [
+            'Psoriasis',
+            'Eczema',
+            'Drug reactions',
+            'Cutaneous T-cell lymphoma'
+        ],
+        diagnosis: [
+            '<strong>Clinical emergency</strong>',
+            '<strong>Investigations</strong>: FBC, U&E, LFTs, skin biopsy',
+            '<strong>Monitor</strong>: Temperature, fluid balance'
+        ],
+        management: [
+            '<strong>Urgent admission</strong>',
+            '<strong>Supportive care</strong>: Warm environment, fluids, emollients',
+            '<strong>Treat underlying cause</strong>',
+            '<strong>Infection control</strong>: Monitor for sepsis'
+        ],
+        complications: [
+            'Hypothermia',
+            'Fluid/electrolyte loss',
+            'High-output cardiac failure',
+            'Infection'
+        ],
+        redFlags: [
+            '⚠️ Systemic instability or fever - urgent admission',
+            '⚠️ Rapid progression with drug exposure'
+        ],
+        prognosis: [
+            'Depends on underlying cause; mortality higher in elderly'
+        ]
     },
 
     // LESION MORPHOLOGY AND BENIGN TUMORS
@@ -1717,7 +2723,19 @@ export const dermatologyDatabase = {
             description: 'Raised, solid lesions less than 1 cm in diameter',
             morphology: ['Discrete raised lesions'],
             images: ['Papules.jpg']
-        }
+        },
+        causes: [
+            'Inflammatory (eczema, acne)',
+            'Infectious (warts, molluscum)',
+            'Neoplastic (BCC, SCC)'
+        ],
+        assessment: [
+            'Assess size, color, surface, distribution',
+            'Look for scale, crust, or umbilication'
+        ],
+        redFlags: [
+            'Rapid growth, ulceration, bleeding - consider malignancy'
+        ]
     },
 
     'nodules': {
@@ -1727,7 +2745,19 @@ export const dermatologyDatabase = {
             description: 'Solid lesions extending into the dermis or subcutis',
             morphology: ['Larger, deeper lesions than papules'],
             images: ['Nodules.jpg']
-        }
+        },
+        causes: [
+            'Inflammatory (erythema nodosum)',
+            'Infectious (abscess)',
+            'Neoplastic (SCC, melanoma)'
+        ],
+        assessment: [
+            'Check size, depth, tenderness, mobility',
+            'Consider ultrasound or biopsy if uncertain'
+        ],
+        redFlags: [
+            'Hard fixed nodule with ulceration or rapid growth'
+        ]
     },
 
     'seborrhoeic-keratoses': {
@@ -1737,7 +2767,22 @@ export const dermatologyDatabase = {
             description: 'Benign epidermal tumors with a “stuck-on” appearance',
             morphology: ['Waxy or verrucous plaques', 'Variable pigmentation'],
             images: ['Seborrhoeic keratoses.jpg']
-        }
+        },
+        diagnosis: [
+            '<strong>Clinical diagnosis</strong>',
+            '<strong>Dermoscopy</strong>: Milia-like cysts, comedo-like openings'
+        ],
+        management: [
+            '<strong>Reassurance</strong>',
+            '<strong>Removal</strong>: Cryotherapy or curettage if symptomatic'
+        ],
+        redFlags: [
+            'Sudden eruption of multiple lesions (Leser-Trélat sign) - consider malignancy workup',
+            'Atypical lesion - consider biopsy to rule out melanoma'
+        ],
+        prognosis: [
+            'Benign and common with age'
+        ]
     },
 
     'pyogenic-granuloma': {
@@ -1747,7 +2792,31 @@ export const dermatologyDatabase = {
             description: 'Rapidly growing vascular papule prone to bleeding',
             morphology: ['Friable red papule', 'Bleeds easily'],
             images: ['Pyogenic granuloma.jpg']
-        }
+        },
+        associations: [
+            'Trauma',
+            'Pregnancy (epulis)',
+            'Certain medications (retinoids)'
+        ],
+        diagnosis: [
+            '<strong>Clinical diagnosis</strong>',
+            '<strong>Biopsy</strong> if atypical or recurrent'
+        ],
+        management: [
+            '<strong>Curettage and cautery</strong>',
+            '<strong>Excision</strong> if large or recurrent',
+            '<strong>Topical treatments</strong>: Timolol for small lesions (specialist)'
+        ],
+        complications: [
+            'Bleeding and ulceration',
+            'Recurrence'
+        ],
+        redFlags: [
+            'Lesion that does not respond to treatment or has atypical pigmentation'
+        ],
+        prognosis: [
+            'Excellent with removal; recurrence possible'
+        ]
     },
 
     'keloid-scars': {
@@ -1757,7 +2826,29 @@ export const dermatologyDatabase = {
             description: 'Excessive scar tissue extending beyond the original wound',
             morphology: ['Firm raised scar', 'May be itchy or painful'],
             images: ['Keloid scars.jpg', 'Keloid scars2.jpg']
-        }
+        },
+        riskFactors: [
+            'Darker skin types',
+            'Family history',
+            'Chest, shoulders, earlobes'
+        ],
+        management: [
+            '<strong>Intralesional steroids</strong>: Triamcinolone injections',
+            '<strong>Silicone gel sheeting</strong>',
+            '<strong>Pressure therapy</strong>',
+            '<strong>Laser therapy</strong> or cryotherapy for refractory scars'
+        ],
+        complications: [
+            'Pruritus and pain',
+            'Cosmetic distress',
+            'High recurrence after excision'
+        ],
+        redFlags: [
+            'Rapidly enlarging scar - consider hypertrophic scar vs keloid'
+        ],
+        prognosis: [
+            'Chronic with high recurrence; requires long-term management'
+        ]
     },
 
     'reaction-insect-bites': {
@@ -1767,7 +2858,25 @@ export const dermatologyDatabase = {
             description: 'Localized papular urticaria following insect bites',
             morphology: ['Pruritic papules', 'Central punctum may be present'],
             images: ['Reaction to insect bites.jpg']
-        }
+        },
+        diagnosis: [
+            '<strong>Clinical diagnosis</strong>',
+            '<strong>Differentials</strong>: Scabies, papular urticaria, contact dermatitis'
+        ],
+        management: [
+            '<strong>Topical steroids</strong> for itch',
+            '<strong>Antihistamines</strong> for pruritus',
+            '<strong>Avoidance</strong>: Insect repellents, protective clothing'
+        ],
+        complications: [
+            'Secondary infection from scratching'
+        ],
+        redFlags: [
+            'Systemic allergic reaction - consider anaphylaxis'
+        ],
+        prognosis: [
+            'Resolves in days to weeks'
+        ]
     },
 
     'sunburn': {
@@ -1777,7 +2886,28 @@ export const dermatologyDatabase = {
             description: 'Acute inflammatory response to ultraviolet exposure',
             morphology: ['Erythema and tenderness', 'Possible blistering'],
             images: ['Sunburn.jpg']
-        }
+        },
+        severity: [
+            '<strong>First-degree</strong>: Erythema, pain',
+            '<strong>Second-degree</strong>: Blistering'
+        ],
+        management: [
+            '<strong>Cool compresses</strong> and moisturizers',
+            '<strong>NSAIDs</strong> for pain',
+            '<strong>Hydration</strong>',
+            '<strong>Avoid further sun exposure</strong>'
+        ],
+        complications: [
+            'Dehydration',
+            'Secondary infection if blistered',
+            'Increased skin cancer risk'
+        ],
+        redFlags: [
+            'Extensive blistering with systemic symptoms - consider heat illness'
+        ],
+        prognosis: [
+            'Usually resolves within 3-7 days'
+        ]
     },
 
     'striae': {
@@ -1787,7 +2917,21 @@ export const dermatologyDatabase = {
             description: 'Linear atrophic bands due to dermal stretching',
             morphology: ['Pink or violaceous striae', 'Later become pale'],
             images: ['Striae.jpg']
-        }
+        },
+        causes: [
+            'Pregnancy',
+            'Rapid weight gain',
+            'Cushing syndrome',
+            'Long-term steroid use'
+        ],
+        management: [
+            '<strong>Reassurance</strong>',
+            '<strong>Topical tretinoin</strong> for early striae (specialist)',
+            '<strong>Laser therapy</strong> for cosmetic improvement'
+        ],
+        prognosis: [
+            'Fade over time but often permanent'
+        ]
     },
 
     'xanthomata': {
@@ -1797,7 +2941,31 @@ export const dermatologyDatabase = {
             description: 'Lipid-laden deposits in skin associated with dyslipidemia',
             morphology: ['Yellow papules or plaques'],
             images: ['Xanthomata.jpg']
-        }
+        },
+        types: [
+            '<strong>Xanthelasma</strong>: Eyelids',
+            '<strong>Tuberous</strong>: Elbows, knees',
+            '<strong>Tendinous</strong>: Achilles tendon',
+            '<strong>Eruptive</strong>: Sudden crops of papules'
+        ],
+        diagnosis: [
+            '<strong>Lipid profile</strong>',
+            '<strong>Assess cardiovascular risk</strong>'
+        ],
+        management: [
+            '<strong>Treat dyslipidemia</strong>: Statins, lifestyle',
+            '<strong>Removal</strong>: Laser or excision for cosmetic reasons'
+        ],
+        complications: [
+            'Indicator of familial hypercholesterolemia',
+            'Increased cardiovascular risk'
+        ],
+        redFlags: [
+            'Eruptive xanthomata - consider severe hypertriglyceridemia'
+        ],
+        prognosis: [
+            'Improve with lipid control; may recur'
+        ]
     }
 };
 
