@@ -149,6 +149,142 @@ export const dermatologyDatabase = {
         ]
     },
 
+    'eczema-contact-irritant': {
+        title: 'Irritant Contact Dermatitis',
+        category: 'inflammatory-eczema',
+        clinicalPresentation: {
+            description: 'Non-immunologic inflammatory reaction caused by repeated or prolonged exposure to irritants',
+            distribution: [
+                'Hands most common (especially fingertips and dorsal hands)',
+                'Forearms, face, eyelids if airborne or splash exposure',
+                'Often sharply demarcated to areas of exposure'
+            ],
+            morphology: [
+                'Acute: Erythema, edema, vesiculation, oozing',
+                'Chronic: Dryness, fissuring, scaling, lichenification',
+                'Pain and burning more prominent than itch'
+            ],
+            symptoms: ['Stinging or burning', 'Cracking or fissures', 'Pruritus variable']
+        },
+        riskFactors: [
+            'Frequent hand washing or wet work (healthcare, catering, cleaning)',
+            'Repeated exposure to detergents, solvents, disinfectants',
+            'Occlusive glove use (sweating, maceration)',
+            'Low humidity or cold weather',
+            'Underlying atopic eczema or barrier impairment'
+        ],
+        diagnosis: [
+            '<strong>Clinical diagnosis</strong> based on exposure history and distribution',
+            'Patch testing: Negative or irrelevant reactions (helps exclude allergic contact dermatitis)',
+            'Consider occupational history: Wet work >2 hours/day or >20 hand washes/day'
+        ],
+        differentialDiagnosis: [
+            'Allergic contact dermatitis (delayed onset, often spreads beyond contact site)',
+            'Atopic eczema (flexural distribution, personal/family atopy)',
+            'Psoriasis (well-demarcated plaques, silvery scale)',
+            'Tinea manuum (unilateral scaling, KOH positive)',
+            'Dyshidrotic eczema (vesicular eruption on palms/soles)'
+        ],
+        management: [
+            '<strong>Trigger reduction</strong>:',
+            '  • Minimize wet work and detergents',
+            '  • Use cotton liners under protective gloves',
+            '  • Avoid alcohol-based cleansers if stinging',
+            '<strong>Skin barrier repair</strong>:',
+            '  • Frequent emollients and barrier creams',
+            '  • Apply after washing and before bed',
+            '<strong>Topical therapy</strong>:',
+            '  • Mild-moderate topical corticosteroids for flares',
+            '  • Potent steroids for short courses on thick skin',
+            '  • Topical calcineurin inhibitors for sensitive areas',
+            '<strong>Occupational measures</strong>:',
+            '  • Workplace assessment and substitution of irritants',
+            '  • Fit testing for gloves and education on hand care'
+        ],
+        complications: [
+            'Chronic hand eczema with fissuring and pain',
+            'Secondary bacterial infection',
+            'Work absenteeism or occupational disability',
+            'Psychological distress due to chronic symptoms'
+        ],
+        redFlags: [
+            'Unilateral or atypical distribution - consider tinea or psoriasis',
+            'Failure to respond to optimal barrier care and steroids - consider patch testing',
+            'Severe fissuring with infection (oozing, crusting) - consider antibiotics'
+        ],
+        prognosis: [
+            'Improves with irritant avoidance and barrier repair',
+            'Chronic course if exposure persists',
+            'Occupational cases may require role modification'
+        ]
+    },
+
+    'seborrhoeic-dermatitis': {
+        title: 'Seborrhoeic Dermatitis',
+        category: 'inflammatory-eczema',
+        clinicalPresentation: {
+            description: 'Chronic relapsing inflammatory condition of sebaceous areas linked to Malassezia overgrowth',
+            distribution: [
+                'Scalp (dandruff), hairline, eyebrows',
+                'Nasolabial folds, glabella, retroauricular areas',
+                'Chest (presternal), interscapular region'
+            ],
+            morphology: [
+                'Greasy yellow-white scale on erythematous base',
+                'Ill-defined patches or plaques',
+                'Scalp scaling with mild erythema'
+            ],
+            symptoms: ['Itch or burning', 'Flaking or dandruff', 'Cosmetic distress']
+        },
+        associations: [
+            'Malassezia species proliferation',
+            'HIV/AIDS (severe or refractory disease)',
+            'Parkinson disease and other neurological disorders',
+            'Stress and sleep deprivation'
+        ],
+        diagnosis: [
+            '<strong>Clinical diagnosis</strong>',
+            'Consider HIV testing if severe, widespread, or sudden onset',
+            'Biopsy rarely needed (spongiotic dermatitis with follicular scale)'
+        ],
+        differentialDiagnosis: [
+            'Psoriasis (thicker scale, well-demarcated plaques, nail changes)',
+            'Atopic eczema (flexural distribution, personal/family atopy)',
+            'Tinea faciei or capitis (KOH positive, broken hairs)',
+            'Rosacea (papules/pustules, no scale)',
+            'Contact dermatitis (clear trigger exposure)'
+        ],
+        management: [
+            '<strong>Scalp</strong>:',
+            '  • Ketoconazole 2% shampoo 2-3x weekly',
+            '  • Selenium sulfide or zinc pyrithione shampoos',
+            '  • Short courses of topical steroids for flares',
+            '<strong>Face and body</strong>:',
+            '  • Topical antifungals: Ketoconazole or ciclopirox cream',
+            '  • Low-potency topical steroids (hydrocortisone 1%) short-term',
+            '  • Calcineurin inhibitors (tacrolimus/pimecrolimus) for sensitive areas',
+            '<strong>Severe/refractory</strong>:',
+            '  • Oral itraconazole or fluconazole (short courses, specialist)',
+            '<strong>Maintenance</strong>:',
+            '  • Intermittent antifungal use to prevent relapse'
+        ],
+        complications: [
+            'Secondary bacterial infection (impetiginization)',
+            'Persistent erythema or post-inflammatory changes',
+            'Significant psychosocial impact'
+        ],
+        redFlags: [
+            'Sudden severe or extensive disease - consider HIV or immunosuppression',
+            'Failure to respond to standard therapy - consider psoriasis or tinea',
+            'Scalp hair loss or broken hairs - exclude tinea capitis'
+        ],
+        prognosis: [
+            'Chronic relapsing course with flares',
+            'Good symptom control with antifungals and short steroid courses',
+            'Relapses common without maintenance therapy'
+        ]
+    },
+
     // PSORIASIS
     'psoriasis-plaque': {
         title: 'Plaque Psoriasis (Psoriasis Vulgaris)',
@@ -388,6 +524,83 @@ export const dermatologyDatabase = {
             'Good response to treatment in most cases',
             'Remissions possible but recurrence common',
             'Telangiectasia permanent unless treated with laser'
+        ]
+    },
+
+    'hidradenitis-suppurativa': {
+        title: 'Hidradenitis Suppurativa',
+        category: 'acne-rosacea',
+        clinicalPresentation: {
+            description: 'Chronic, inflammatory follicular occlusion disorder causing painful nodules, abscesses, and sinus tracts in intertriginous areas',
+            distribution: [
+                'Axillae, groin, perineum, buttocks',
+                'Inframammary folds',
+                'May involve inner thighs and lower abdomen'
+            ],
+            morphology: [
+                'Deep, tender nodules or abscesses',
+                'Sinus tracts with purulent drainage',
+                'Double-ended comedones',
+                'Rope-like scarring and fibrosis'
+            ],
+            symptoms: ['Severe pain', 'Malodorous discharge', 'Scarring and restricted movement']
+        },
+        riskFactors: [
+            'Female sex (3:1)',
+            'Smoking (strong association)',
+            'Obesity and metabolic syndrome',
+            'Family history (autosomal dominant tendency)',
+            'Hormonal factors (flares with menses)',
+            'Associated inflammatory disease: Crohn disease, spondyloarthritis'
+        ],
+        diagnosis: [
+            '<strong>Clinical diagnosis</strong> based on 3 features:',
+            '  • Typical lesions (nodules/abscesses/sinus tracts)',
+            '  • Typical locations (intertriginous areas)',
+            '  • Chronicity/recurrence (≥2 flares in 6 months)',
+            '<strong>Hurley staging</strong>:',
+            '  - Stage I: Abscesses without sinus tracts/scarring',
+            '  - Stage II: Recurrent abscesses with sinus tracts/scarring',
+            '  - Stage III: Diffuse involvement with multiple tracts'
+        ],
+        management: [
+            '<strong>General measures</strong>:',
+            '  • Smoking cessation and weight loss',
+            '  • Gentle skin care, avoid friction and tight clothing',
+            '  • Pain control and wound care',
+            '<strong>Topical therapy (mild)</strong>:',
+            '  • Topical clindamycin 1% BD for 12 weeks',
+            '<strong>Systemic antibiotics</strong>:',
+            '  • Tetracyclines (doxycycline 100mg daily) 3 months',
+            '  • Clindamycin + rifampicin (12 weeks) for refractory disease',
+            '<strong>Hormonal therapy</strong> (females):',
+            '  • Combined OCP or spironolactone',
+            '<strong>Biologic therapy</strong> (moderate-severe):',
+            '  • Adalimumab (first-line biologic)',
+            '  • Infliximab (specialist use)',
+            '<strong>Procedural/surgical</strong>:',
+            '  • Incision and drainage for acute abscesses (short-term relief)',
+            '  • Deroofing or wide excision for chronic sinus tracts',
+            '  • Laser hair removal (Nd:YAG) adjunct'
+        ],
+        complications: [
+            'Chronic scarring and contractures',
+            'Recurrent infections and anemia of chronic disease',
+            'Psychological distress, depression, reduced quality of life',
+            'Squamous cell carcinoma in long-standing perineal disease (rare)',
+            'Fistulae in anogenital disease'
+        ],
+        redFlags: [
+            'Systemic symptoms or spreading cellulitis - consider sepsis',
+            'New ulceration or rapidly growing mass in chronic area - exclude SCC',
+            'Severe perianal disease - consider Crohn disease',
+            'Failure to respond to antibiotics - escalate to dermatology'
+        ],
+        prognosis: [
+            'Chronic relapsing disease with variable course',
+            'Early intervention improves long-term scarring and quality of life',
+            'Smoking cessation and weight loss improve outcomes',
+            'Biologics can induce sustained remission in moderate-severe cases'
         ]
     },
 
