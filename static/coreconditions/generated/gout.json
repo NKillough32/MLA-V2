@@ -1,0 +1,129 @@
+{
+  "id": "gout",
+  "name": "Gout",
+  "domains": [
+    "Rheumatology"
+  ],
+  "generatedAt": "2025-02-14T10:00:00.000Z",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Gout: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nGout is an inflammatory arthritis caused by deposition of monosodium urate crystals in joints and soft tissues due to hyperuricaemia.\n\n### Epidemiology\nGout is common, especially in men and older adults. Risk factors include obesity, alcohol use, diuretic therapy, chronic kidney disease, and high-purine diets.\n\n### Essential Pathophysiology\nSupersaturated serum urate leads to crystal formation, which triggers intense neutrophil-driven inflammation and acute synovitis.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Sudden severe joint pain, often nocturnal\n- Swelling, redness, and warmth of the affected joint\n- First metatarsophalangeal (MTP) joint commonly involved\n\n### Key Signs\n- Hot, exquisitely tender joint with limited range of motion\n- Tophi in chronic disease (ear helix, olecranon, fingers)\n\n### Atypical Presentations\n- Polyarticular attacks\n- Fever and systemic upset mimicking sepsis\n- Atypical joints (knee, wrist, elbow)\n\n### Red Flags Requiring Immediate Action\n- Concern for septic arthritis (fever, severe systemic illness)\n- Immunosuppression or prosthetic joint\n- Rapidly progressive joint destruction\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Joint aspiration for crystal analysis and culture\n- Serum urate (may be normal during acute flare)\n- FBC, CRP/ESR\n\n### Second-line Investigations\n- Ultrasound (double contour sign)\n- X-ray for chronic changes (erosions)\n\n### Specialist Tests\n- Dual-energy CT (urate crystal detection)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is confirmed by identifying monosodium urate crystals on joint aspiration; clinical diagnosis can be made with classic features when aspiration is not possible.\n\n### Key Differential Diagnoses to Exclude\n- Septic arthritis\n- Pseudogout (CPPD disease)\n- Cellulitis\n- Traumatic arthritis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- NSAIDs (if no contraindications)\n- Colchicine\n- Oral or intra-articular corticosteroids\n\n#### Second-line Treatments\n- IL-1 inhibitors for refractory cases (specialist use)\n\n#### Emergency Procedures\n- Joint aspiration if diagnosis uncertain or septic arthritis suspected\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Urate-lowering therapy (e.g., allopurinol)\n- Lifestyle modification (weight loss, reduce alcohol, dietary purines)\n\n#### Second-line Treatments\n- Febuxostat or uricosuric agents (specialist advice)\n\n#### Monitoring Requirements\n- Serum urate monitoring to target < 300-360 μmol/L\n- Renal function and drug adverse effects\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Colchicine\n- **Mechanism of Action**: Inhibits microtubule polymerization, reducing neutrophil activity.\n- **Typical Dosing Range**: 500 mcg 2-4 times daily (dose reduce in renal impairment).\n- **Key Side Effects/Contraindications**: Diarrhoea, myopathy, cytopenias; avoid with strong CYP3A4 inhibitors.\n- **When to Use vs. Alternatives**: Useful if NSAIDs contraindicated.\n\n#### NSAIDs (e.g., naproxen)\n- **Mechanism of Action**: COX inhibition reducing inflammatory prostaglandins.\n- **Typical Dosing Range**: Naproxen 500 mg twice daily.\n- **Key Side Effects/Contraindications**: GI bleeding, renal impairment.\n- **When to Use vs. Alternatives**: First-line if no contraindications.\n\n#### Allopurinol\n- **Mechanism of Action**: Xanthine oxidase inhibitor reducing urate production.\n- **Typical Dosing Range**: Start low (e.g., 100 mg daily) and titrate.\n- **Key Side Effects/Contraindications**: Rash, hypersensitivity; caution in renal impairment.\n- **When to Use vs. Alternatives**: Long-term urate lowering with dose titration.\n\n### Procedures\n\n#### Joint aspiration and intra-articular steroid\n- **What it Involves**: Needle aspiration of synovial fluid and steroid injection.\n- **Indications**: Diagnostic uncertainty or severe monoarthritis.\n- **Key Risks/Complications**: Infection, bleeding.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate urate-lowering therapy and flare management, most patients achieve good symptom control.\n\n### Important Complications to Watch For\n- Tophi and chronic erosive arthropathy\n- Recurrent flares\n- Uric acid nephrolithiasis\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nRecognize gout flares, exclude septic arthritis, initiate acute therapy, and arrange follow-up for urate-lowering strategies.\n\n### When to Escalate to Senior/Specialist\nEscalate if diagnosis is uncertain, septic arthritis is suspected, or flares are refractory.\n\n### Key Safety Considerations\nAvoid NSAIDs in renal impairment or peptic ulcer disease and consider prophylaxis when starting urate-lowering therapy.",
+  "content": {
+    "overview": {
+      "definition": "Gout is an inflammatory arthritis caused by deposition of monosodium urate crystals in joints and soft tissues due to hyperuricaemia.",
+      "epidemiology": "Gout is common, especially in men and older adults. Risk factors include obesity, alcohol use, diuretic therapy, chronic kidney disease, and high-purine diets.",
+      "pathophysiology": "Supersaturated serum urate leads to crystal formation, which triggers intense neutrophil-driven inflammation and acute synovitis."
+    },
+    "recognition": {
+      "symptoms": [
+        "Sudden severe joint pain, often nocturnal",
+        "Swelling, redness, and warmth of the affected joint",
+        "First metatarsophalangeal (MTP) joint commonly involved"
+      ],
+      "signs": [
+        "Hot, exquisitely tender joint with limited range of motion",
+        "Tophi in chronic disease (ear helix, olecranon, fingers)"
+      ],
+      "atypicalPresentations": [
+        "Polyarticular attacks",
+        "Fever and systemic upset mimicking sepsis",
+        "Atypical joints (knee, wrist, elbow)"
+      ],
+      "redFlags": [
+        "Concern for septic arthritis (fever, severe systemic illness)",
+        "Immunosuppression or prosthetic joint",
+        "Rapidly progressive joint destruction"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Joint aspiration for crystal analysis and culture",
+        "Serum urate (may be normal during acute flare)",
+        "FBC, CRP/ESR"
+      ],
+      "secondLine": [
+        "Ultrasound (double contour sign)",
+        "X-ray for chronic changes (erosions)"
+      ],
+      "specialistTests": [
+        "Dual-energy CT (urate crystal detection)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is confirmed by identifying monosodium urate crystals on joint aspiration; clinical diagnosis can be made with classic features when aspiration is not possible.",
+      "differentials": [
+        "Septic arthritis",
+        "Pseudogout (CPPD disease)",
+        "Cellulitis",
+        "Traumatic arthritis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "NSAIDs (if no contraindications)",
+          "Colchicine",
+          "Oral or intra-articular corticosteroids"
+        ],
+        "secondLine": [
+          "IL-1 inhibitors for refractory cases (specialist use)"
+        ],
+        "procedures": [
+          "Joint aspiration if diagnosis uncertain or septic arthritis suspected"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Urate-lowering therapy (e.g., allopurinol)",
+          "Lifestyle modification (weight loss, reduce alcohol, dietary purines)"
+        ],
+        "secondLine": [
+          "Febuxostat or uricosuric agents (specialist advice)"
+        ],
+        "monitoring": [
+          "Serum urate monitoring to target < 300-360 μmol/L",
+          "Renal function and drug adverse effects"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Colchicine",
+          "mechanism": "Inhibits microtubule polymerization, reducing neutrophil activity.",
+          "dosing": "500 mcg 2-4 times daily (dose reduce in renal impairment).",
+          "sideEffects": "Diarrhoea, myopathy, cytopenias; avoid with strong CYP3A4 inhibitors.",
+          "notes": "Useful if NSAIDs contraindicated."
+        },
+        {
+          "name": "NSAIDs (e.g., naproxen)",
+          "mechanism": "COX inhibition reducing inflammatory prostaglandins.",
+          "dosing": "Naproxen 500 mg twice daily.",
+          "sideEffects": "GI bleeding, renal impairment.",
+          "notes": "First-line if no contraindications."
+        },
+        {
+          "name": "Allopurinol",
+          "mechanism": "Xanthine oxidase inhibitor reducing urate production.",
+          "dosing": "Start low (e.g., 100 mg daily) and titrate.",
+          "sideEffects": "Rash, hypersensitivity; caution in renal impairment.",
+          "notes": "Long-term urate lowering with dose titration."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Joint aspiration and intra-articular steroid",
+          "description": "Needle aspiration of synovial fluid and steroid injection.",
+          "indications": "Diagnostic uncertainty or severe monoarthritis.",
+          "risks": "Infection, bleeding."
+        }
+      ]
+    },
+    "prognosis": "With appropriate urate-lowering therapy and flare management, most patients achieve good symptom control.",
+    "complications": [
+      "Tophi and chronic erosive arthropathy",
+      "Recurrent flares",
+      "Uric acid nephrolithiasis"
+    ],
+    "foundationDoctorRole": "Recognize gout flares, exclude septic arthritis, initiate acute therapy, and arrange follow-up for urate-lowering strategies.",
+    "escalation": "Escalate if diagnosis is uncertain, septic arthritis is suspected, or flares are refractory.",
+    "keySafetyConsiderations": "Avoid NSAIDs in renal impairment or peptic ulcer disease and consider prophylaxis when starting urate-lowering therapy."
+  }
+}

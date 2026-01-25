@@ -1,0 +1,126 @@
+{
+  "id": "peptic_ulcer_disease",
+  "name": "Peptic ulcer disease",
+  "domains": [
+    "Gastrointestinal"
+  ],
+  "generatedAt": "2025-02-14T10:00:00.000Z",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Peptic ulcer disease: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nPeptic ulcer disease (PUD) is mucosal ulceration of the stomach or duodenum, most commonly due to Helicobacter pylori infection or NSAID use.\n\n### Epidemiology\nPUD is common worldwide; H. pylori prevalence varies by region. NSAID-related ulcers increase with age and comorbidity.\n\n### Essential Pathophysiology\nImbalance between mucosal defense and acid/pepsin exposure leads to mucosal injury and ulcer formation.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Epigastric pain or burning\n- Dyspepsia, nausea, or bloating\n- Pain related to meals (classically relieved in duodenal ulcers, worsened in gastric ulcers)\n\n### Key Signs\n- Epigastric tenderness\n- Signs of anaemia or GI bleeding\n\n### Atypical Presentations\n- Minimal symptoms in older adults\n- Occult GI bleeding\n\n### Red Flags Requiring Immediate Action\n- Haematemesis or melaena\n- Unintentional weight loss or persistent vomiting\n- Peritonitis or suspected perforation\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- H. pylori testing (urea breath or stool antigen)\n- Full blood count\n- Urea and electrolytes\n\n### Second-line Investigations\n- Upper GI endoscopy (alarm features or age threshold)\n- Biopsy to exclude malignancy in gastric ulcers\n\n### Specialist Tests\n- Repeat endoscopy to confirm healing in gastric ulcers\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is confirmed by endoscopic visualization of an ulcer with or without H. pylori testing.\n\n### Key Differential Diagnoses to Exclude\n- Gastro-oesophageal reflux disease\n- Gastric cancer\n- Pancreatitis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Proton pump inhibitor (PPI) therapy\n- Stop NSAIDs and provide gastroprotection\n\n#### Second-line Treatments\n- H. pylori eradication therapy\n\n#### Emergency Procedures\n- Endoscopic haemostasis for bleeding ulcers\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Complete H. pylori eradication course\n- Maintenance PPI in high-risk patients\n\n#### Second-line Treatments\n- Misoprostol or alternative gastroprotection if NSAIDs required\n\n#### Monitoring Requirements\n- Confirm eradication with breath or stool test\n- Follow-up endoscopy for gastric ulcers\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Proton pump inhibitors (e.g., omeprazole)\n- **Mechanism of Action**: Irreversible inhibition of gastric H+/K+ ATPase reduces acid secretion.\n- **Typical Dosing Range**: Omeprazole 20-40 mg daily.\n- **Key Side Effects/Contraindications**: Headache, diarrhoea; long-term risks include hypomagnesaemia.\n- **When to Use vs. Alternatives**: First-line therapy for ulcer healing.\n\n#### H. pylori eradication therapy\n- **Mechanism of Action**: Combination antibiotic therapy plus acid suppression.\n- **Typical Dosing Range**: PPI + amoxicillin + clarithromycin for 7-14 days (use metronidazole if penicillin allergy).\n- **Key Side Effects/Contraindications**: GI upset, antibiotic resistance.\n- **When to Use vs. Alternatives**: Use guideline-recommended local regimen.\n\n#### Misoprostol\n- **Mechanism of Action**: Prostaglandin analogue increases mucosal protection.\n- **Typical Dosing Range**: 200 mcg 2-4 times daily.\n- **Key Side Effects/Contraindications**: Diarrhoea, uterine contractions (avoid in pregnancy).\n- **When to Use vs. Alternatives**: Alternative gastroprotection if NSAIDs required.\n\n### Procedures\n\n#### Upper GI endoscopy\n- **What it Involves**: Endoscopic visualization with possible biopsy and haemostasis.\n- **Indications**: Alarm features, bleeding, or suspected complications.\n- **Key Risks/Complications**: Bleeding, perforation (rare).\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost ulcers heal with appropriate acid suppression and eradication therapy.\n\n### Important Complications to Watch For\n- Upper GI bleeding\n- Perforation\n- Gastric outlet obstruction\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nRecognize alarm features, initiate PPI therapy, and arrange H. pylori testing and referral for endoscopy when indicated.\n\n### When to Escalate to Senior/Specialist\nEscalate if bleeding, perforation, or suspected malignancy.\n\n### Key Safety Considerations\nReview NSAID use and anticoagulation status; ensure follow-up for gastric ulcers.",
+  "content": {
+    "overview": {
+      "definition": "Peptic ulcer disease (PUD) is mucosal ulceration of the stomach or duodenum, most commonly due to Helicobacter pylori infection or NSAID use.",
+      "epidemiology": "PUD is common worldwide; H. pylori prevalence varies by region. NSAID-related ulcers increase with age and comorbidity.",
+      "pathophysiology": "Imbalance between mucosal defense and acid/pepsin exposure leads to mucosal injury and ulcer formation."
+    },
+    "recognition": {
+      "symptoms": [
+        "Epigastric pain or burning",
+        "Dyspepsia, nausea, or bloating",
+        "Pain related to meals (classically relieved in duodenal ulcers, worsened in gastric ulcers)"
+      ],
+      "signs": [
+        "Epigastric tenderness",
+        "Signs of anaemia or GI bleeding"
+      ],
+      "atypicalPresentations": [
+        "Minimal symptoms in older adults",
+        "Occult GI bleeding"
+      ],
+      "redFlags": [
+        "Haematemesis or melaena",
+        "Unintentional weight loss or persistent vomiting",
+        "Peritonitis or suspected perforation"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "H. pylori testing (urea breath or stool antigen)",
+        "Full blood count",
+        "Urea and electrolytes"
+      ],
+      "secondLine": [
+        "Upper GI endoscopy (alarm features or age threshold)",
+        "Biopsy to exclude malignancy in gastric ulcers"
+      ],
+      "specialistTests": [
+        "Repeat endoscopy to confirm healing in gastric ulcers"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is confirmed by endoscopic visualization of an ulcer with or without H. pylori testing.",
+      "differentials": [
+        "Gastro-oesophageal reflux disease",
+        "Gastric cancer",
+        "Pancreatitis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Proton pump inhibitor (PPI) therapy",
+          "Stop NSAIDs and provide gastroprotection"
+        ],
+        "secondLine": [
+          "H. pylori eradication therapy"
+        ],
+        "procedures": [
+          "Endoscopic haemostasis for bleeding ulcers"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Complete H. pylori eradication course",
+          "Maintenance PPI in high-risk patients"
+        ],
+        "secondLine": [
+          "Misoprostol or alternative gastroprotection if NSAIDs required"
+        ],
+        "monitoring": [
+          "Confirm eradication with breath or stool test",
+          "Follow-up endoscopy for gastric ulcers"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Proton pump inhibitors (e.g., omeprazole)",
+          "mechanism": "Irreversible inhibition of gastric H+/K+ ATPase reduces acid secretion.",
+          "dosing": "Omeprazole 20-40 mg daily.",
+          "sideEffects": "Headache, diarrhoea; long-term risks include hypomagnesaemia.",
+          "notes": "First-line therapy for ulcer healing."
+        },
+        {
+          "name": "H. pylori eradication therapy",
+          "mechanism": "Combination antibiotic therapy plus acid suppression.",
+          "dosing": "PPI + amoxicillin + clarithromycin for 7-14 days (use metronidazole if penicillin allergy).",
+          "sideEffects": "GI upset, antibiotic resistance.",
+          "notes": "Use guideline-recommended local regimen."
+        },
+        {
+          "name": "Misoprostol",
+          "mechanism": "Prostaglandin analogue increases mucosal protection.",
+          "dosing": "200 mcg 2-4 times daily.",
+          "sideEffects": "Diarrhoea, uterine contractions (avoid in pregnancy).",
+          "notes": "Alternative gastroprotection if NSAIDs required."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Upper GI endoscopy",
+          "description": "Endoscopic visualization with possible biopsy and haemostasis.",
+          "indications": "Alarm features, bleeding, or suspected complications.",
+          "risks": "Bleeding, perforation (rare)."
+        }
+      ]
+    },
+    "prognosis": "Most ulcers heal with appropriate acid suppression and eradication therapy.",
+    "complications": [
+      "Upper GI bleeding",
+      "Perforation",
+      "Gastric outlet obstruction"
+    ],
+    "foundationDoctorRole": "Recognize alarm features, initiate PPI therapy, and arrange H. pylori testing and referral for endoscopy when indicated.",
+    "escalation": "Escalate if bleeding, perforation, or suspected malignancy.",
+    "keySafetyConsiderations": "Review NSAID use and anticoagulation status; ensure follow-up for gastric ulcers."
+  }
+}

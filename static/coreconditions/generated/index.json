@@ -1,7 +1,7 @@
 {
   "generatedAt": "2025-12-17T23:02:39.679696",
-  "totalConditions": 543,
-  "processedCount": 543,
+  "totalConditions": 547,
+  "processedCount": 547,
   "model": "gpt-4o-mini",
   "conditions": [
     {
@@ -600,6 +600,15 @@
         "ENT"
       ],
       "filename": "benign_paroxysmal_positional_vertigo.json",
+      "processed": true
+    },
+    {
+      "id": "benign_prostatic_hyperplasia",
+      "name": "Benign prostatic hyperplasia",
+      "domains": [
+        "Urology"
+      ],
+      "filename": "benign_prostatic_hyperplasia.json",
       "processed": true
     },
     {
@@ -1989,6 +1998,15 @@
       "processed": true
     },
     {
+      "id": "gout",
+      "name": "Gout",
+      "domains": [
+        "Rheumatology"
+      ],
+      "filename": "gout.json",
+      "processed": true
+    },
+    {
       "id": "greater_trochanter_bursitis",
       "name": "Greater trochanter bursitis",
       "domains": [
@@ -2311,6 +2329,15 @@
         "Endocrine"
       ],
       "filename": "hyperparathyroidism.json",
+      "processed": true
+    },
+    {
+      "id": "hyperthyroidism",
+      "name": "Hyperthyroidism",
+      "domains": [
+        "Endocrine"
+      ],
+      "filename": "hyperthyroidism.json",
       "processed": true
     },
     {
@@ -3497,6 +3524,15 @@
         "Gynaecology"
       ],
       "filename": "pelvic_inflammatory_disease.json",
+      "processed": true
+    },
+    {
+      "id": "peptic_ulcer_disease",
+      "name": "Peptic ulcer disease",
+      "domains": [
+        "Gastrointestinal"
+      ],
+      "filename": "peptic_ulcer_disease.json",
       "processed": true
     },
     {
