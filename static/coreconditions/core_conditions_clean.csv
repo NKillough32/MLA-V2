@@ -152,6 +152,7 @@ Endocrine,SIADH
 Endocrine,Thyroid cancer
 Endocrine,Thyroid eye disease
 Endocrine,Thyroid nodules
+Endocrine,Hyperthyroidism
 Endocrine,Thyrotoxicosis
 Endocrine,Type 1 diabetes
 Endocrine,Type 2 diabetes
@@ -183,6 +184,7 @@ Gastrointestinal,Metastatic disease
 Gastrointestinal,Non-Alcoholic fatty liver
 Gastrointestinal,Oesophageal cancer
 Gastrointestinal,Pancreatic cancer
+Gastrointestinal,Peptic ulcer disease
 Gastrointestinal,Peptic ulcer disease and gastritis
 Gastrointestinal,Viral hepatitis
 Gastrointestinal Surgery,Acute cholangitis
@@ -625,6 +627,7 @@ Rheumatology,Bursitis
 Rheumatology,Carpal Tunnel syndrome
 Rheumatology,Chronic pain
 Rheumatology,Crystal arthritis
+Rheumatology,Gout
 Rheumatology,DeQuervain?s tenosynovitis?
 Rheumatology,Fibromyalgia
 Rheumatology,Giant cell arteritis (GCA) 
@@ -688,6 +691,7 @@ Urology,Acute pyelonephritis
 Urology,Bladder cancer
 Urology,Epididymitis and orchitis
 Urology,Erectile dysfunction
+Urology,Benign prostatic hyperplasia
 Urology,Prostate cancer
 Urology,Testicular cancer
 Urology,Testicular torsion

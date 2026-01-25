@@ -1,0 +1,136 @@
+{
+  "id": "hyperthyroidism",
+  "name": "Hyperthyroidism",
+  "domains": [
+    "Endocrine"
+  ],
+  "generatedAt": "2025-02-14T10:00:00.000Z",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Hyperthyroidism: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nHyperthyroidism is a clinical state of excess thyroid hormone action, most commonly due to Graves' disease.\n\n### Epidemiology\nMore common in women and middle age. Graves' disease, toxic multinodular goitre, and toxic adenoma are common causes.\n\n### Essential Pathophysiology\nExcess thyroid hormone increases basal metabolic rate and adrenergic activity, leading to systemic hypermetabolic symptoms.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Weight loss with increased appetite\n- Heat intolerance and sweating\n- Palpitations\n- Tremor and anxiety\n- Diarrhoea or increased stool frequency\n\n### Key Signs\n- Tachycardia or atrial fibrillation\n- Fine tremor\n- Goitre\n- Lid lag or stare (Graves')\n\n### Atypical Presentations\n- Apathetic hyperthyroidism in older adults (fatigue, weight loss)\n- Predominant cardiovascular symptoms\n\n### Red Flags Requiring Immediate Action\n- Thyroid storm (fever, delirium, tachyarrhythmia)\n- New-onset atrial fibrillation with haemodynamic compromise\n- Heart failure\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- TSH (suppressed)\n- Free T4 and/or T3 (elevated)\n- ECG (arrhythmias)\n\n### Second-line Investigations\n- Thyroid receptor antibodies (TRAb)\n- Thyroid ultrasound\n\n### Specialist Tests\n- Radioiodine uptake scan (etiology)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is biochemical with suppressed TSH and elevated thyroid hormones, plus clinical features.\n\n### Key Differential Diagnoses to Exclude\n- Anxiety or panic disorder\n- Phaeochromocytoma\n- Thyroiditis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Beta-blockers for symptom control\n- Treat precipitating causes\n\n#### Second-line Treatments\n- Antithyroid drugs in severe symptoms\n\n#### Emergency Procedures\n- Intensive care support in thyroid storm\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Carbimazole (or propylthiouracil in specific settings)\n- Consider definitive therapy (radioiodine or surgery)\n\n#### Second-line Treatments\n- Long-term antithyroid therapy with monitoring\n\n#### Monitoring Requirements\n- Thyroid function tests every 4-6 weeks during titration\n- Monitor for drug adverse effects (agranulocytosis)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Propranolol\n- **Mechanism of Action**: Beta-adrenergic blockade reduces adrenergic symptoms.\n- **Typical Dosing Range**: 10-40 mg three to four times daily.\n- **Key Side Effects/Contraindications**: Bradycardia, bronchospasm.\n- **When to Use vs. Alternatives**: First-line symptom control.\n\n#### Carbimazole\n- **Mechanism of Action**: Inhibits thyroid hormone synthesis.\n- **Typical Dosing Range**: 10-30 mg daily, titrated to response.\n- **Key Side Effects/Contraindications**: Rash, agranulocytosis, cholestasis.\n- **When to Use vs. Alternatives**: Standard first-line antithyroid drug.\n\n#### Propylthiouracil (PTU)\n- **Mechanism of Action**: Inhibits hormone synthesis and peripheral T4 to T3 conversion.\n- **Typical Dosing Range**: 100-150 mg three times daily.\n- **Key Side Effects/Contraindications**: Hepatotoxicity, rash.\n- **When to Use vs. Alternatives**: Used in thyroid storm or first trimester pregnancy.\n\n### Procedures\n\n#### Radioiodine therapy\n- **What it Involves**: Oral radioiodine ablation of thyroid tissue.\n- **Indications**: Relapse after medication or patient preference.\n- **Key Risks/Complications**: Hypothyroidism, worsening ophthalmopathy.\n\n#### Thyroidectomy\n- **What it Involves**: Surgical removal of thyroid tissue.\n- **Indications**: Large goitre, malignancy concern, or preference.\n- **Key Risks/Complications**: Hypocalcaemia, recurrent laryngeal nerve injury.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost patients achieve control with medication or definitive therapy.\n\n### Important Complications to Watch For\n- Atrial fibrillation\n- Osteoporosis\n- Thyroid storm\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nIdentify hyperthyroidism, initiate symptom control with beta-blockers, and arrange endocrine follow-up.\n\n### When to Escalate to Senior/Specialist\nEscalate if thyroid storm is suspected or if severe cardiovascular complications occur.\n\n### Key Safety Considerations\nWarn patients on carbimazole/PTU to seek urgent care for sore throat or fever due to agranulocytosis risk.",
+  "content": {
+    "overview": {
+      "definition": "Hyperthyroidism is a clinical state of excess thyroid hormone action, most commonly due to Graves' disease.",
+      "epidemiology": "More common in women and middle age. Graves' disease, toxic multinodular goitre, and toxic adenoma are common causes.",
+      "pathophysiology": "Excess thyroid hormone increases basal metabolic rate and adrenergic activity, leading to systemic hypermetabolic symptoms."
+    },
+    "recognition": {
+      "symptoms": [
+        "Weight loss with increased appetite",
+        "Heat intolerance and sweating",
+        "Palpitations",
+        "Tremor and anxiety",
+        "Diarrhoea or increased stool frequency"
+      ],
+      "signs": [
+        "Tachycardia or atrial fibrillation",
+        "Fine tremor",
+        "Goitre",
+        "Lid lag or stare (Graves')"
+      ],
+      "atypicalPresentations": [
+        "Apathetic hyperthyroidism in older adults (fatigue, weight loss)",
+        "Predominant cardiovascular symptoms"
+      ],
+      "redFlags": [
+        "Thyroid storm (fever, delirium, tachyarrhythmia)",
+        "New-onset atrial fibrillation with haemodynamic compromise",
+        "Heart failure"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "TSH (suppressed)",
+        "Free T4 and/or T3 (elevated)",
+        "ECG (arrhythmias)"
+      ],
+      "secondLine": [
+        "Thyroid receptor antibodies (TRAb)",
+        "Thyroid ultrasound"
+      ],
+      "specialistTests": [
+        "Radioiodine uptake scan (etiology)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is biochemical with suppressed TSH and elevated thyroid hormones, plus clinical features.",
+      "differentials": [
+        "Anxiety or panic disorder",
+        "Phaeochromocytoma",
+        "Thyroiditis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Beta-blockers for symptom control",
+          "Treat precipitating causes"
+        ],
+        "secondLine": [
+          "Antithyroid drugs in severe symptoms"
+        ],
+        "procedures": [
+          "Intensive care support in thyroid storm"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Carbimazole (or propylthiouracil in specific settings)",
+          "Consider definitive therapy (radioiodine or surgery)"
+        ],
+        "secondLine": [
+          "Long-term antithyroid therapy with monitoring"
+        ],
+        "monitoring": [
+          "Thyroid function tests every 4-6 weeks during titration",
+          "Monitor for drug adverse effects (agranulocytosis)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Propranolol",
+          "mechanism": "Beta-adrenergic blockade reduces adrenergic symptoms.",
+          "dosing": "10-40 mg three to four times daily.",
+          "sideEffects": "Bradycardia, bronchospasm.",
+          "notes": "First-line symptom control."
+        },
+        {
+          "name": "Carbimazole",
+          "mechanism": "Inhibits thyroid hormone synthesis.",
+          "dosing": "10-30 mg daily, titrated to response.",
+          "sideEffects": "Rash, agranulocytosis, cholestasis.",
+          "notes": "Standard first-line antithyroid drug."
+        },
+        {
+          "name": "Propylthiouracil (PTU)",
+          "mechanism": "Inhibits hormone synthesis and peripheral T4 to T3 conversion.",
+          "dosing": "100-150 mg three times daily.",
+          "sideEffects": "Hepatotoxicity, rash.",
+          "notes": "Used in thyroid storm or first trimester pregnancy."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Radioiodine therapy",
+          "description": "Oral radioiodine ablation of thyroid tissue.",
+          "indications": "Relapse after medication or patient preference.",
+          "risks": "Hypothyroidism, worsening ophthalmopathy."
+        },
+        {
+          "name": "Thyroidectomy",
+          "description": "Surgical removal of thyroid tissue.",
+          "indications": "Large goitre, malignancy concern, or preference.",
+          "risks": "Hypocalcaemia, recurrent laryngeal nerve injury."
+        }
+      ]
+    },
+    "prognosis": "Most patients achieve control with medication or definitive therapy.",
+    "complications": [
+      "Atrial fibrillation",
+      "Osteoporosis",
+      "Thyroid storm"
+    ],
+    "foundationDoctorRole": "Identify hyperthyroidism, initiate symptom control with beta-blockers, and arrange endocrine follow-up.",
+    "escalation": "Escalate if thyroid storm is suspected or if severe cardiovascular complications occur.",
+    "keySafetyConsiderations": "Warn patients on carbimazole/PTU to seek urgent care for sore throat or fever due to agranulocytosis risk."
+  }
+}

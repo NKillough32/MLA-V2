@@ -1,0 +1,122 @@
+{
+  "id": "benign_prostatic_hyperplasia",
+  "name": "Benign prostatic hyperplasia",
+  "domains": [
+    "Urology"
+  ],
+  "generatedAt": "2025-02-14T10:00:00.000Z",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Benign prostatic hyperplasia: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nBenign prostatic hyperplasia (BPH) is non-malignant enlargement of the prostate causing lower urinary tract symptoms (LUTS) due to bladder outlet obstruction.\n\n### Epidemiology\nBPH prevalence increases with age, affecting most men over 60.\n\n### Essential Pathophysiology\nHyperplasia of prostatic stromal and epithelial cells leads to urethral compression and increased bladder outlet resistance.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Hesitancy and weak urinary stream\n- Nocturia and frequency\n- Incomplete emptying or post-void dribbling\n- Urgency\n\n### Key Signs\n- Smooth, enlarged prostate on DRE\n- Distended bladder in retention\n\n### Atypical Presentations\n- Recurrent urinary tract infections\n- Visible haematuria\n\n### Red Flags Requiring Immediate Action\n- Acute urinary retention\n- Renal impairment or hydronephrosis\n- Suspected malignancy (hard, irregular prostate or weight loss)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Urinalysis and urine culture if infection suspected\n- PSA (after counselling)\n- Urea and electrolytes\n- Post-void residual/bladder scan\n\n### Second-line Investigations\n- Renal tract ultrasound\n- Uroflowmetry\n\n### Specialist Tests\n- Cystoscopy if red flags or surgical planning\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is clinical based on LUTS, DRE findings, and exclusion of infection or malignancy.\n\n### Key Differential Diagnoses to Exclude\n- Prostate cancer\n- Urinary tract infection\n- Urethral stricture\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Catheterization for acute urinary retention\n- Treat concurrent infection\n\n#### Second-line Treatments\n- Alpha-blocker initiation after retention (urology advice)\n\n#### Emergency Procedures\n- Suprapubic catheter if urethral catheterization fails\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Lifestyle advice (fluid timing, reduce caffeine/alcohol)\n- Alpha-blockers (e.g., tamsulosin)\n\n#### Second-line Treatments\n- 5-alpha reductase inhibitors (e.g., finasteride)\n- Combination therapy for larger prostates\n\n#### Monitoring Requirements\n- Symptom scores and flow\n- Monitor for postural hypotension and sexual side effects\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Tamsulosin\n- **Mechanism of Action**: Alpha-1 blocker relaxing prostatic smooth muscle.\n- **Typical Dosing Range**: 400 mcg once daily.\n- **Key Side Effects/Contraindications**: Postural hypotension, dizziness, ejaculatory dysfunction.\n- **When to Use vs. Alternatives**: First-line for bothersome LUTS.\n\n#### Finasteride\n- **Mechanism of Action**: 5-alpha reductase inhibitor reducing prostate size.\n- **Typical Dosing Range**: 5 mg daily.\n- **Key Side Effects/Contraindications**: Reduced libido, erectile dysfunction.\n- **When to Use vs. Alternatives**: Useful in larger prostates or elevated PSA.\n\n### Procedures\n\n#### Transurethral resection of prostate (TURP)\n- **What it Involves**: Endoscopic removal of prostatic tissue.\n- **Indications**: Refractory symptoms, recurrent retention, or complications.\n- **Key Risks/Complications**: Bleeding, infection, retrograde ejaculation.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost patients improve with medical therapy; surgery offers durable symptom relief when needed.\n\n### Important Complications to Watch For\n- Recurrent urinary retention\n- Recurrent UTIs\n- Hydronephrosis and renal impairment\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nAssess LUTS, exclude infection, initiate alpha-blockers where appropriate, and arrange follow-up or referral.\n\n### When to Escalate to Senior/Specialist\nEscalate for retention, renal impairment, or suspected malignancy.\n\n### Key Safety Considerations\nCounsel about postural hypotension with alpha-blockers and PSA limitations.",
+  "content": {
+    "overview": {
+      "definition": "Benign prostatic hyperplasia (BPH) is non-malignant enlargement of the prostate causing lower urinary tract symptoms (LUTS) due to bladder outlet obstruction.",
+      "epidemiology": "BPH prevalence increases with age, affecting most men over 60.",
+      "pathophysiology": "Hyperplasia of prostatic stromal and epithelial cells leads to urethral compression and increased bladder outlet resistance."
+    },
+    "recognition": {
+      "symptoms": [
+        "Hesitancy and weak urinary stream",
+        "Nocturia and frequency",
+        "Incomplete emptying or post-void dribbling",
+        "Urgency"
+      ],
+      "signs": [
+        "Smooth, enlarged prostate on DRE",
+        "Distended bladder in retention"
+      ],
+      "atypicalPresentations": [
+        "Recurrent urinary tract infections",
+        "Visible haematuria"
+      ],
+      "redFlags": [
+        "Acute urinary retention",
+        "Renal impairment or hydronephrosis",
+        "Suspected malignancy (hard, irregular prostate or weight loss)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Urinalysis and urine culture if infection suspected",
+        "PSA (after counselling)",
+        "Urea and electrolytes",
+        "Post-void residual/bladder scan"
+      ],
+      "secondLine": [
+        "Renal tract ultrasound",
+        "Uroflowmetry"
+      ],
+      "specialistTests": [
+        "Cystoscopy if red flags or surgical planning"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is clinical based on LUTS, DRE findings, and exclusion of infection or malignancy.",
+      "differentials": [
+        "Prostate cancer",
+        "Urinary tract infection",
+        "Urethral stricture"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Catheterization for acute urinary retention",
+          "Treat concurrent infection"
+        ],
+        "secondLine": [
+          "Alpha-blocker initiation after retention (urology advice)"
+        ],
+        "procedures": [
+          "Suprapubic catheter if urethral catheterization fails"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Lifestyle advice (fluid timing, reduce caffeine/alcohol)",
+          "Alpha-blockers (e.g., tamsulosin)"
+        ],
+        "secondLine": [
+          "5-alpha reductase inhibitors (e.g., finasteride)",
+          "Combination therapy for larger prostates"
+        ],
+        "monitoring": [
+          "Symptom scores and flow",
+          "Monitor for postural hypotension and sexual side effects"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Tamsulosin",
+          "mechanism": "Alpha-1 blocker relaxing prostatic smooth muscle.",
+          "dosing": "400 mcg once daily.",
+          "sideEffects": "Postural hypotension, dizziness, ejaculatory dysfunction.",
+          "notes": "First-line for bothersome LUTS."
+        },
+        {
+          "name": "Finasteride",
+          "mechanism": "5-alpha reductase inhibitor reducing prostate size.",
+          "dosing": "5 mg daily.",
+          "sideEffects": "Reduced libido, erectile dysfunction.",
+          "notes": "Useful in larger prostates or elevated PSA."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Transurethral resection of prostate (TURP)",
+          "description": "Endoscopic removal of prostatic tissue.",
+          "indications": "Refractory symptoms, recurrent retention, or complications.",
+          "risks": "Bleeding, infection, retrograde ejaculation."
+        }
+      ]
+    },
+    "prognosis": "Most patients improve with medical therapy; surgery offers durable symptom relief when needed.",
+    "complications": [
+      "Recurrent urinary retention",
+      "Recurrent UTIs",
+      "Hydronephrosis and renal impairment"
+    ],
+    "foundationDoctorRole": "Assess LUTS, exclude infection, initiate alpha-blockers where appropriate, and arrange follow-up or referral.",
+    "escalation": "Escalate for retention, renal impairment, or suspected malignancy.",
+    "keySafetyConsiderations": "Counsel about postural hypotension with alpha-blockers and PSA limitations."
+  }
+}
