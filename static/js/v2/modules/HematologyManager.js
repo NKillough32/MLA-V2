@@ -147,28 +147,33 @@ export class HematologyManager {
      */
     search(query) {
         if (!this.haematologyData) return [];
-        
-        if (!query || query.trim() === '') {
+
+        const normalizedQuery = (query ?? '').toLowerCase().trim();
+        if (!normalizedQuery) {
             return this.getConditions(this.currentCategory);
         }
 
-        const searchTerm = query.toLowerCase().trim();
         const conditions = this.getConditions();
 
-        const results = conditions.filter(condition => {
-            // Search in title
-            if (condition.title.toLowerCase().includes(searchTerm)) return true;
-            
-            // Search in blood film findings
-            if (condition.bloodFilm?.findings?.some(f => f.toLowerCase().includes(searchTerm))) return true;
-            
-            // Search in clinical features
-            if (condition.clinicalFeatures?.some(f => f.toLowerCase().includes(searchTerm))) return true;
-            
-            // Search in causes
-            if (condition.causes?.some(c => c.toLowerCase().includes(searchTerm))) return true;
-            
+        const matchesQuery = (value) => {
+            if (!value) return false;
+            if (typeof value === 'string') {
+                return value.toLowerCase().includes(normalizedQuery);
+            }
+            if (Array.isArray(value)) {
+                return value.some(item => matchesQuery(item));
+            }
+            if (typeof value === 'object') {
+                return Object.values(value).some(item => matchesQuery(item));
+            }
             return false;
+        };
+
+        const results = conditions.filter(condition => {
+            if (matchesQuery(condition.title)) return true;
+            if (matchesQuery(condition.id)) return true;
+            if (matchesQuery(this.getCategoryName(condition.category))) return true;
+            return matchesQuery(condition);
         });
 
         // Filter by category if not 'all'
@@ -205,6 +210,10 @@ export class HematologyManager {
             return;
         }
 
+        const conditions = this.searchQuery
+            ? this.search(this.searchQuery)
+            : this.getConditions(this.currentCategory);
+
         const html = `
             <div class="hematology-header">
                 <h3>🩸 Hematology & Blood Disorders</h3>
@@ -213,7 +222,7 @@ export class HematologyManager {
 
             <div class="hematology-controls">
                 <div class="hematology-search-box">
-                    <input type="text" id="hematology-search-input" placeholder="Search conditions, findings, symptoms..." />
+                    <input type="text" id="hematology-search-input" placeholder="Search conditions, findings, symptoms..." value="${this.searchQuery}" />
                     <span class="hematology-search-icon">🔍</span>
                 </div>
             </div>
@@ -236,7 +245,7 @@ export class HematologyManager {
             <!-- List View -->
             <div id="hematology-list-view" class="hematology-list-view">
                 <div class="hematology-conditions-grid" id="hematology-conditions-grid">
-                    ${this.renderConditionCards()}
+                    ${this.renderConditionCards(conditions)}
                 </div>
                 <div id="hematology-empty-state" class="hematology-empty-state" style="display: none;">
                     <div class="hematology-empty-state-icon">🔍</div>
@@ -275,9 +284,7 @@ export class HematologyManager {
     /**
      * Render condition cards
      */
-    renderConditionCards() {
-        const conditions = this.getConditions(this.currentCategory);
-        
+    renderConditionCards(conditions = this.getConditions(this.currentCategory)) {
         if (conditions.length === 0) {
             return '';
         }
@@ -590,12 +597,12 @@ export class HematologyManager {
         const categoryBtns = document.querySelectorAll('.hematology-category-btn');
         categoryBtns.forEach(btn => {
             btn.addEventListener('click', (e) => {
-                const category = e.target.dataset.category;
+                const category = e.currentTarget.dataset.category;
                 this.currentCategory = category;
                 
                 // Update active state
                 categoryBtns.forEach(b => b.classList.remove('active'));
-                e.target.classList.add('active');
+                e.currentTarget.classList.add('active');
                 
                 this.refreshConditionsList();
             });
@@ -605,7 +612,7 @@ export class HematologyManager {
         const viewBtns = document.querySelectorAll('.hematology-view-btn');
         viewBtns.forEach(btn => {
             btn.addEventListener('click', (e) => {
-                const conditionId = e.target.dataset.conditionId;
+                const conditionId = e.currentTarget.dataset.conditionId;
                 this.renderConditionDetail(conditionId);
             });
         });
@@ -634,16 +641,16 @@ export class HematologyManager {
         favBtns.forEach(btn => {
             btn.addEventListener('click', async (e) => {
                 e.stopPropagation();
-                const conditionId = e.target.dataset.conditionId;
+                const conditionId = e.currentTarget.dataset.conditionId;
                 const isFav = await this.toggleFavorite(conditionId);
                 
                 // Update button state
                 if (isFav) {
-                    e.target.textContent = e.target.textContent.includes('Favorited') ? '⭐ Favorited' : '⭐';
-                    e.target.classList.add('favorited');
+                    e.currentTarget.textContent = e.currentTarget.textContent.includes('Favorited') ? '⭐ Favorited' : '⭐';
+                    e.currentTarget.classList.add('favorited');
                 } else {
-                    e.target.textContent = e.target.textContent.includes('Add to') ? '☆ Add to Favorites' : '☆';
-                    e.target.classList.remove('favorited');
+                    e.currentTarget.textContent = e.currentTarget.textContent.includes('Add to') ? '☆ Add to Favorites' : '☆';
+                    e.currentTarget.classList.remove('favorited');
                 }
             });
         });
