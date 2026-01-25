@@ -2946,6 +2946,14 @@ export const dermatologyDatabase = {
             'Assess size, color, surface, distribution',
             'Look for scale, crust, or umbilication'
         ],
+        management: [
+            '<strong>Initial approach</strong>: Identify underlying cause (inflammatory, infectious, neoplastic)',
+            '<strong>Symptomatic care</strong>: Emollients and mild topical steroids if inflamed or itchy',
+            '<strong>Targeted therapy</strong>:',
+            '  • Treat infection (e.g., warts, molluscum) if suspected',
+            '  • Manage acneiform causes with topical retinoids or benzoyl peroxide',
+            '<strong>Further evaluation</strong>: Dermoscopy or biopsy for atypical, persistent, or suspicious lesions'
+        ],
         redFlags: [
             'Rapid growth, ulceration, bleeding - consider malignancy'
         ]
@@ -2967,6 +2975,14 @@ export const dermatologyDatabase = {
         assessment: [
             'Check size, depth, tenderness, mobility',
             'Consider ultrasound or biopsy if uncertain'
+        ],
+        management: [
+            '<strong>Assess for urgency</strong>: Look for signs of abscess, malignancy, or systemic symptoms',
+            '<strong>Targeted treatment</strong>:',
+            '  • Antibiotics or drainage for suspected infection/abscess',
+            '  • NSAIDs and rest for inflammatory nodules (e.g., erythema nodosum)',
+            '<strong>Specialist input</strong>: Refer for biopsy/excision if diagnosis uncertain or suspicious features',
+            '<strong>Follow-up</strong>: Monitor for change in size, ulceration, or new systemic features'
         ],
         redFlags: [
             'Hard fixed nodule with ulceration or rapid growth'
