@@ -15,6 +15,159 @@ class ClinicalPearlsManager {
     ensureStyles() {
         if (document.getElementById('clinical-pearls-styles')) return;
         const css = `
+            .clinical-pearls-hero {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                align-items: center;
+                justify-content: space-between;
+                padding: 22px 24px;
+                margin-bottom: 18px;
+                border-radius: 18px;
+                background: linear-gradient(135deg, rgba(79,70,229,0.12), rgba(56,189,248,0.08));
+                border: 1px solid rgba(15,23,42,0.08);
+                box-shadow: 0 18px 40px rgba(15,23,42,0.08);
+            }
+
+            .clinical-pearls-hero h2 {
+                margin: 0 0 8px;
+                font-size: 1.6rem;
+                letter-spacing: -0.02em;
+            }
+
+            .clinical-pearls-hero p {
+                margin: 0;
+                max-width: 520px;
+                color: #475569;
+                line-height: 1.5;
+            }
+
+            .clinical-pearls-stats {
+                display: flex;
+                gap: 12px;
+                flex-wrap: wrap;
+            }
+
+            .clinical-pearls-stat {
+                padding: 10px 14px;
+                border-radius: 12px;
+                background: rgba(255,255,255,0.8);
+                border: 1px solid rgba(15,23,42,0.08);
+                min-width: 110px;
+                text-align: center;
+            }
+
+            .clinical-pearls-stat .stat-value {
+                font-size: 1.1rem;
+                font-weight: 700;
+                color: #0f172a;
+            }
+
+            .clinical-pearls-stat .stat-label {
+                display: block;
+                font-size: 0.78rem;
+                text-transform: uppercase;
+                letter-spacing: 0.06em;
+                color: #64748b;
+            }
+
+            .clinical-pearls-toolbar {
+                display: grid;
+                gap: 16px;
+                margin-bottom: 18px;
+            }
+
+            .clinical-pearls-search label {
+                display: block;
+                font-weight: 600;
+                margin-bottom: 6px;
+            }
+
+            .search-input {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                padding: 10px 12px;
+                border-radius: 12px;
+                border: 1px solid rgba(15,23,42,0.12);
+                background: #ffffff;
+                box-shadow: 0 6px 16px rgba(15,23,42,0.06);
+            }
+
+            .search-input input {
+                border: none;
+                outline: none;
+                font-size: 0.98rem;
+                width: 100%;
+                background: transparent;
+                color: #0f172a;
+            }
+
+            .search-hint {
+                margin-top: 6px;
+                font-size: 0.85rem;
+                color: #64748b;
+            }
+
+            .clinical-pearls-filters {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+
+            .filter-pill {
+                border: 1px solid rgba(15,23,42,0.12);
+                background: #ffffff;
+                padding: 8px 12px;
+                border-radius: 999px;
+                font-weight: 600;
+                cursor: pointer;
+                transition: all 160ms ease;
+            }
+
+            .filter-pill.active {
+                background: rgba(79,70,229,0.16);
+                border-color: rgba(79,70,229,0.4);
+                color: #312e81;
+            }
+
+            .clinical-pearls-actions {
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
+            }
+
+            .action-btn {
+                border: 1px solid rgba(15,23,42,0.12);
+                padding: 8px 12px;
+                border-radius: 10px;
+                background: #f8fafc;
+                font-weight: 600;
+                cursor: pointer;
+                transition: all 160ms ease;
+            }
+
+            .action-btn:hover {
+                background: #eef2ff;
+                border-color: rgba(79,70,229,0.4);
+            }
+
+            .pearl-empty {
+                padding: 18px;
+                border-radius: 12px;
+                border: 1px dashed rgba(148,163,184,0.6);
+                color: #64748b;
+                background: rgba(248,250,252,0.8);
+                margin-bottom: 16px;
+                display: none;
+            }
+
+            .pearl-highlight {
+                background: rgba(250,204,21,0.35);
+                border-radius: 4px;
+                padding: 0 2px;
+            }
+
             /* Grid + card shell */
             .knowledge-card-grid {
                 display: grid;
@@ -207,6 +360,44 @@ class ClinicalPearlsManager {
                     background: #252d3f;
                     border-color: #3a4b6b;
                 }
+                .clinical-pearls-hero {
+                    background: linear-gradient(135deg, rgba(59,130,246,0.18), rgba(15,23,42,0.25));
+                    border-color: #2e2e2e;
+                    box-shadow: 0 16px 32px rgba(0,0,0,0.28);
+                }
+                .clinical-pearls-hero p { color: rgba(226,232,240,0.82); }
+                .clinical-pearls-stat {
+                    background: rgba(15,23,42,0.6);
+                    border-color: rgba(148,163,184,0.2);
+                }
+                .clinical-pearls-stat .stat-value { color: #f8fafc; }
+                .clinical-pearls-stat .stat-label { color: rgba(226,232,240,0.6); }
+                .search-input {
+                    background: #0f172a;
+                    border-color: rgba(148,163,184,0.3);
+                }
+                .search-input input { color: #f8fafc; }
+                .search-hint { color: rgba(226,232,240,0.7); }
+                .filter-pill {
+                    background: #0f172a;
+                    border-color: rgba(148,163,184,0.3);
+                    color: #e2e8f0;
+                }
+                .filter-pill.active {
+                    background: rgba(59,130,246,0.35);
+                    border-color: rgba(59,130,246,0.6);
+                    color: #e0e7ff;
+                }
+                .action-btn {
+                    background: #111827;
+                    color: #e2e8f0;
+                    border-color: rgba(148,163,184,0.3);
+                }
+                .pearl-empty {
+                    background: rgba(15,23,42,0.6);
+                    border-color: rgba(148,163,184,0.4);
+                    color: rgba(226,232,240,0.8);
+                }
             }
 
             /* Explicit theme toggle support (data-theme="dark") for in-app dark mode */
@@ -242,6 +433,43 @@ class ClinicalPearlsManager {
             [data-theme="dark"] .section-meta .pill:hover {
                 background: #242c3d;
                 border-color: #3a4b6b;
+            }
+            [data-theme="dark"] .clinical-pearls-hero {
+                background: linear-gradient(135deg, rgba(59,130,246,0.2), rgba(15,23,42,0.35));
+                border-color: #2c2c2c;
+                box-shadow: 0 18px 38px rgba(0,0,0,0.38);
+            }
+            [data-theme="dark"] .clinical-pearls-hero p { color: rgba(226,232,240,0.78); }
+            [data-theme="dark"] .clinical-pearls-stat {
+                background: rgba(15,23,42,0.7);
+                border-color: rgba(148,163,184,0.2);
+            }
+            [data-theme="dark"] .clinical-pearls-stat .stat-value { color: #f8fafc; }
+            [data-theme="dark"] .clinical-pearls-stat .stat-label { color: rgba(226,232,240,0.6); }
+            [data-theme="dark"] .search-input {
+                background: #0b1220;
+                border-color: rgba(148,163,184,0.3);
+            }
+            [data-theme="dark"] .search-input input { color: #f8fafc; }
+            [data-theme="dark"] .filter-pill {
+                background: #0b1220;
+                border-color: rgba(148,163,184,0.3);
+                color: #e2e8f0;
+            }
+            [data-theme="dark"] .filter-pill.active {
+                background: rgba(59,130,246,0.38);
+                border-color: rgba(59,130,246,0.6);
+                color: #e0e7ff;
+            }
+            [data-theme="dark"] .action-btn {
+                background: #0b1220;
+                color: #e2e8f0;
+                border-color: rgba(148,163,184,0.3);
+            }
+            [data-theme="dark"] .pearl-empty {
+                background: rgba(15,23,42,0.7);
+                border-color: rgba(148,163,184,0.4);
+                color: rgba(226,232,240,0.8);
             }
         `;
         const style = document.createElement('style');
@@ -520,6 +748,15 @@ class ClinicalPearlsManager {
         }
     }
 
+    escapeHtml(value) {
+        return String(value)
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;');
+    }
+
     render(panel) {
         if (!panel) {
             console.error('ClinicalPearlsManager: render called without panel');
@@ -537,7 +774,10 @@ class ClinicalPearlsManager {
 
         const cardsHtml = this.sections.map(section => {
             const subsectionsHtml = (section.subsections || []).map(subsection => {
-                const itemsHtml = (subsection.items || []).map(item => `<li>${item}</li>`).join('');
+                const itemsHtml = (subsection.items || []).map(item => {
+                    const safeItem = this.escapeHtml(item);
+                    return `<li data-pearl="${safeItem}">${safeItem}</li>`;
+                }).join('');
                 return `
                     <details class="med-knowledge-subsection" style="border-color:${theme.subsectionBorder};background:${theme.subsectionBg};color:${theme.subtext};">
                         <summary style="color:${theme.summaryColor};">
@@ -564,7 +804,7 @@ class ClinicalPearlsManager {
             `;
 
             return `
-                <section class="knowledge-card">
+                <section class="knowledge-card" data-section="${this.escapeHtml(section.title)}">
                     <div class="knowledge-card-header">
                         <span class="badge" style="background:${theme.badgeBg};color:${theme.badgeColor};">${section.badge}</span>
                         <h3>${section.title}</h3>
@@ -580,11 +820,147 @@ class ClinicalPearlsManager {
             `;
         }).join('');
 
+        const stats = this.getStatistics();
+        const filterButtons = [
+            `<button class="filter-pill active" type="button" data-filter="all">All pearls</button>`,
+            ...this.sections.map(section => `<button class="filter-pill" type="button" data-filter="${this.escapeHtml(section.title)}">${section.title}</button>`)
+        ].join('');
+
         container.innerHTML = `
+            <div class="clinical-pearls-hero">
+                <div>
+                    <h2>Clinical Pearl Playbook</h2>
+                    <p>Navigate high-yield pearls by specialty, filter by focus area, and surface the key line you need before seeing the next patient.</p>
+                </div>
+                <div class="clinical-pearls-stats">
+                    <div class="clinical-pearls-stat">
+                        <span class="stat-value">${stats.totalSections}</span>
+                        <span class="stat-label">Collections</span>
+                    </div>
+                    <div class="clinical-pearls-stat">
+                        <span class="stat-value">${stats.totalSubsections}</span>
+                        <span class="stat-label">Topics</span>
+                    </div>
+                    <div class="clinical-pearls-stat">
+                        <span class="stat-value">${stats.totalPoints}</span>
+                        <span class="stat-label">Pearls</span>
+                    </div>
+                </div>
+            </div>
+            <div class="clinical-pearls-toolbar">
+                <div class="clinical-pearls-search">
+                    <label for="clinical-pearls-search">Search pearls</label>
+                    <div class="search-input">
+                        <span>🔎</span>
+                        <input id="clinical-pearls-search" type="text" placeholder="Try: DKA fluids, aortic dissection, postpartum hemorrhage" data-role="pearl-search" />
+                    </div>
+                    <div class="search-hint"><span class="match-count">${stats.totalPoints} pearls available</span></div>
+                </div>
+                <div class="clinical-pearls-filters">
+                    ${filterButtons}
+                </div>
+                <div class="clinical-pearls-actions">
+                    <button class="action-btn" type="button" data-action="expand">Expand all</button>
+                    <button class="action-btn" type="button" data-action="collapse">Collapse all</button>
+                </div>
+            </div>
+            <div class="pearl-empty" data-role="pearl-empty">No pearls match that search. Try a broader term or clear filters.</div>
             <div class="knowledge-card-grid">
                 ${cardsHtml}
             </div>
         `;
+
+        const searchInput = container.querySelector('[data-role="pearl-search"]');
+        const emptyState = container.querySelector('[data-role="pearl-empty"]');
+        const matchCount = container.querySelector('.match-count');
+        const filterPills = Array.from(container.querySelectorAll('.filter-pill'));
+        const actionButtons = Array.from(container.querySelectorAll('[data-action]'));
+        const cards = Array.from(container.querySelectorAll('.knowledge-card'));
+        let activeFilter = 'all';
+
+        const escapeRegExp = value => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+        const updateHighlights = (li, query) => {
+            const baseText = li.dataset.pearl || li.textContent;
+            if (!query) {
+                li.innerHTML = baseText;
+                return;
+            }
+            const regex = new RegExp(`(${escapeRegExp(query)})`, 'gi');
+            li.innerHTML = baseText.replace(regex, '<mark class="pearl-highlight">$1</mark>');
+        };
+
+        const applyFilters = () => {
+            const query = searchInput ? searchInput.value.trim().toLowerCase() : '';
+            let totalMatches = 0;
+
+            cards.forEach(card => {
+                const matchesFilter = activeFilter === 'all' || card.dataset.section === activeFilter;
+                let cardMatches = 0;
+
+                const details = Array.from(card.querySelectorAll('.med-knowledge-subsection'));
+                details.forEach(detail => {
+                    let detailMatches = 0;
+                    const items = Array.from(detail.querySelectorAll('li'));
+                    items.forEach(li => {
+                        const text = (li.dataset.pearl || '').toLowerCase();
+                        const matchesSearch = !query || text.includes(query);
+                        if (matchesFilter && matchesSearch) {
+                            li.style.display = '';
+                            updateHighlights(li, query);
+                            detailMatches += 1;
+                        } else {
+                            li.style.display = 'none';
+                        }
+                    });
+
+                    if (matchesFilter && detailMatches > 0) {
+                        detail.style.display = '';
+                        detail.open = Boolean(query);
+                        cardMatches += detailMatches;
+                    } else {
+                        detail.style.display = 'none';
+                    }
+                });
+
+                card.style.display = matchesFilter && cardMatches > 0 ? '' : 'none';
+                totalMatches += cardMatches;
+            });
+
+            if (matchCount) {
+                matchCount.textContent = query
+                    ? `${totalMatches} match${totalMatches === 1 ? '' : 'es'}`
+                    : `${stats.totalPoints} pearls available`;
+            }
+            if (emptyState) {
+                emptyState.style.display = totalMatches === 0 ? 'block' : 'none';
+            }
+        };
+
+        filterPills.forEach(pill => {
+            pill.addEventListener('click', () => {
+                filterPills.forEach(btn => btn.classList.remove('active'));
+                pill.classList.add('active');
+                activeFilter = pill.dataset.filter || 'all';
+                applyFilters();
+            });
+        });
+
+        if (searchInput) {
+            searchInput.addEventListener('input', applyFilters);
+        }
+
+        actionButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const action = button.dataset.action;
+                const visibleDetails = Array.from(container.querySelectorAll('.med-knowledge-subsection')).filter(detail => detail.style.display !== 'none');
+                visibleDetails.forEach(detail => {
+                    detail.open = action === 'expand';
+                });
+            });
+        });
+
+        applyFilters();
     }
 }
 
