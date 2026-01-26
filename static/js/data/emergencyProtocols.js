@@ -159,6 +159,31 @@ export const emergencyProtocols = {
         ukGuideline: 'BTS/SIGN 2019',
         criticalActions: ['Early steroids', 'High-flow oxygen', 'Consider magnesium', 'Monitor for deterioration']
     },
+    'pneumothorax-management': {
+        name: 'Pneumothorax: Management',
+        category: 'respiratory',
+        urgency: 'emergency',
+        steps: [
+            'Assess symptoms and physiological compromise; BTS defines minimal symptoms as no significant pain or breathlessness and no physiological compromise',
+            'No or minimal symptoms → conservative care regardless of pneumothorax size',
+            'If symptomatic → assess for high-risk characteristics (haemodynamic compromise, significant hypoxia, bilateral pneumothorax, underlying lung disease, ≥50 years with significant smoking history, haemothorax)',
+            'Symptomatic without high-risk features → choose intervention if safe: conservative care, ambulatory device, or needle aspiration',
+            'Symptomatic with high-risk features → chest drain if safe to intervene',
+            'Assess safety of intervention before aspiration/drain: usually ≥2 cm laterally or apically on chest x-ray, or any size on CT accessible with radiological support',
+            'Escalate immediately for suspected tension pneumothorax or haemodynamic compromise'
+        ],
+        drugs: ['Analgesia as required', 'Supplemental oxygen if hypoxic'],
+        ukGuideline: 'British Thoracic Society (BTS) Spontaneous Pneumothorax Guideline 2023',
+        criticalActions: ['Prioritise symptoms/physiology over size', 'Identify high-risk features early', 'Confirm safe access before intervention', 'Provide safety-netting and follow-up advice'],
+        management: [
+            'Conservative care: primary spontaneous pneumothorax review every 2-4 days as outpatient; secondary spontaneous pneumothorax monitored as inpatient; if stable, follow-up in outpatients in 2-4 weeks',
+            'Ambulatory care: consider devices such as Rocketµ Pleural Vent (8FG catheter on 18G needle with pigtail catheter); one-way valve vents air/fluid and many have diaphragm indicator that fluctuates with respiration',
+            'Needle aspiration: insert chest drain if unsuccessful; if resolved, discharge with follow-up in 2-4 weeks',
+            'Chest drain insertion: inpatient daily review; remove when resolved; discharge with follow-up in 2-4 weeks',
+            'Persistent or recurrent pneumothorax: consider VATS for mechanical/chemical pleurodesis ± bullectomy when persistent air leak or insufficient re-expansion despite drain',
+            'Discharge advice: stop smoking (lifetime risk ~10% in healthy smoking men vs ~0.1% in non-smokers); fitness to fly — avoid air travel until 1 week after check x-ray (CAA suggests 2 weeks after successful drainage if no residual air); scuba diving permanently avoided unless bilateral surgical pleurectomy with normal lung function and post-op CT'
+        ]
+    },
     'stroke-protocol': {
         name: 'Acute Stroke Protocol',
         category: 'neurological',
