@@ -1,0 +1,150 @@
+{
+  "id": "polymyositis",
+  "name": "Polymyositis",
+  "domains": [
+    "Rheumatology"
+  ],
+  "generatedAt": "2026-01-26T12:27:24.130889",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Polymyositis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nPolymyositis is an idiopathic inflammatory myopathy characterized by subacute, symmetric proximal muscle weakness due to immune-mediated muscle inflammation.\n\n### Epidemiology\nPolymyositis is rare, with an estimated incidence of 1-8 per million per year, more common in adults (40-60 years) and in women.\n\n### Essential Pathophysiology\nImmune-mediated muscle injury driven by cytotoxic T cells results in endomysial inflammation and muscle fiber necrosis. It can be associated with other autoimmune diseases and interstitial lung disease.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Progressive, symmetric proximal muscle weakness (hips/shoulders)\n- Difficulty rising from a chair or climbing stairs\n- Dysphagia or choking with meals\n- Fatigue and myalgia\n\n### Key Signs\n- Proximal muscle weakness (hip flexors, shoulder abductors)\n- Reduced muscle endurance\n- Neck flexor weakness\n- Muscle tenderness in some patients\n\n### Atypical Presentations\n- Distal weakness or asymmetry\n- Predominant neck flexor weakness\n- Overlap with connective tissue disease (e.g., scleroderma)\n- Interstitial lung disease presenting before muscle symptoms\n\n### Red Flags Requiring Immediate Action\n- Rapidly progressive weakness with respiratory compromise\n- Severe dysphagia or aspiration risk\n- New cardiac symptoms (arrhythmia, heart failure)\n- Suspected rhabdomyolysis with acute kidney injury\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Creatine kinase (CK), ALT/AST, LDH\n- ESR/CRP\n- Autoantibodies (ANA, myositis-specific antibodies e.g., anti-Jo-1)\n\n### Second-line Investigations\n- Electromyography (EMG)\n- MRI of affected muscles\n\n### Specialist Tests\n- Muscle biopsy\n- Pulmonary function tests and HRCT chest if ILD suspected\n- Echocardiography/ECG if cardiac involvement suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on proximal muscle weakness, elevated muscle enzymes, supportive EMG/MRI findings, and muscle biopsy showing endomysial inflammation.\n\n### Key Differential Diagnoses to Exclude\n- Dermatomyositis\n- Inclusion body myositis\n- Drug-induced myopathy (statins, steroids)\n- Motor neuron disease\n- Hypothyroid myopathy\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- High-dose corticosteroids for severe weakness\n- Supportive care (airway assessment, swallowing precautions)\n\n#### Second-line Treatments\n- Intravenous immunoglobulin (IVIG) for refractory disease or severe dysphagia\n\n#### Emergency Procedures\n- Nasogastric feeding or PEG if severe dysphagia\n- Respiratory support for respiratory failure\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Tapering oral corticosteroids\n- Physiotherapy and graded exercise\n\n#### Second-line Treatments\n- Steroid-sparing immunosuppressants (methotrexate, azathioprine, mycophenolate)\n\n#### Monitoring Requirements\n- Regular CK and clinical strength assessment\n- Monitoring for medication toxicity (CBC, LFTs)\n- Screen for ILD and cardiac involvement\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Prednisolone\n- **Mechanism of Action**: Corticosteroid that suppresses immune-mediated inflammation.\n- **Typical Dosing Range**: 0.5-1 mg/kg/day orally, taper based on response.\n- **Key Side Effects/Contraindications**: Osteoporosis, diabetes, infection risk, hypertension.\n- **When to Use vs. Alternatives**: First-line for active disease; taper to lowest effective dose.\n\n#### Methotrexate\n- **Mechanism of Action**: Immunosuppressant inhibiting folate metabolism and T-cell activation.\n- **Typical Dosing Range**: 10-25 mg weekly with folic acid.\n- **Key Side Effects/Contraindications**: Hepatotoxicity, cytopenias, teratogenicity.\n- **When to Use vs. Alternatives**: Steroid-sparing agent; avoid in significant liver disease.\n\n#### Azathioprine\n- **Mechanism of Action**: Purine analog that inhibits lymphocyte proliferation.\n- **Typical Dosing Range**: 1-3 mg/kg/day orally.\n- **Key Side Effects/Contraindications**: Myelosuppression, hepatotoxicity; check TPMT.\n- **When to Use vs. Alternatives**: Alternative steroid-sparing agent or combination therapy.\n\n#### IVIG\n- **Mechanism of Action**: Immunomodulation via pooled immunoglobulins.\n- **Typical Dosing Range**: 2 g/kg divided over 2-5 days.\n- **Key Side Effects/Contraindications**: Headache, thromboembolism, renal impairment.\n- **When to Use vs. Alternatives**: Severe/refractory disease or prominent dysphagia.\n\n### Procedures\n\n#### Muscle biopsy\n- **What it Involves**: Sampling of affected muscle for histopathology.\n- **Indications**: Diagnostic confirmation and exclusion of mimics.\n- **Key Risks/Complications**: Bleeding, infection, local pain.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMany patients respond to corticosteroids and immunosuppression, but relapses are common and long-term therapy may be required.\n\n### Important Complications to Watch For\n- Interstitial lung disease\n- Dysphagia and aspiration pneumonia\n- Steroid-related complications (osteoporosis, diabetes)\n- Cardiac involvement (arrhythmia, cardiomyopathy)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should recognize proximal weakness, initiate baseline investigations, start supportive care, and coordinate early referral to rheumatology/neurology.\n\n### When to Escalate to Senior/Specialist\nEscalate urgently for respiratory compromise, severe dysphagia, or rapidly progressive weakness.\n\n### Key Safety Considerations\nAssess swallowing safety, monitor for respiratory decline, and screen for steroid side effects.\n",
+  "content": {
+    "overview": {
+      "definition": "Polymyositis is an idiopathic inflammatory myopathy characterized by subacute, symmetric proximal muscle weakness due to immune-mediated muscle inflammation.",
+      "epidemiology": "Polymyositis is rare, with an estimated incidence of 1-8 per million per year, more common in adults (40-60 years) and in women.",
+      "pathophysiology": "Immune-mediated muscle injury driven by cytotoxic T cells results in endomysial inflammation and muscle fiber necrosis. It can be associated with other autoimmune diseases and interstitial lung disease."
+    },
+    "recognition": {
+      "symptoms": [
+        "Progressive, symmetric proximal muscle weakness (hips/shoulders)",
+        "Difficulty rising from a chair or climbing stairs",
+        "Dysphagia or choking with meals",
+        "Fatigue and myalgia"
+      ],
+      "signs": [
+        "Proximal muscle weakness (hip flexors, shoulder abductors)",
+        "Reduced muscle endurance",
+        "Neck flexor weakness",
+        "Muscle tenderness in some patients"
+      ],
+      "atypicalPresentations": [
+        "Distal weakness or asymmetry",
+        "Predominant neck flexor weakness",
+        "Overlap with connective tissue disease (e.g., scleroderma)",
+        "Interstitial lung disease presenting before muscle symptoms"
+      ],
+      "redFlags": [
+        "Rapidly progressive weakness with respiratory compromise",
+        "Severe dysphagia or aspiration risk",
+        "New cardiac symptoms (arrhythmia, heart failure)",
+        "Suspected rhabdomyolysis with acute kidney injury"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Creatine kinase (CK), ALT/AST, LDH",
+        "ESR/CRP",
+        "Autoantibodies (ANA, myositis-specific antibodies e.g., anti-Jo-1)"
+      ],
+      "secondLine": [
+        "Electromyography (EMG)",
+        "MRI of affected muscles"
+      ],
+      "specialistTests": [
+        "Muscle biopsy",
+        "Pulmonary function tests and HRCT chest if ILD suspected",
+        "Echocardiography/ECG if cardiac involvement suspected"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on proximal muscle weakness, elevated muscle enzymes, supportive EMG/MRI findings, and muscle biopsy showing endomysial inflammation.",
+      "differentials": [
+        "Dermatomyositis",
+        "Inclusion body myositis",
+        "Drug-induced myopathy (statins, steroids)",
+        "Motor neuron disease",
+        "Hypothyroid myopathy"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "High-dose corticosteroids for severe weakness",
+          "Supportive care (airway assessment, swallowing precautions)"
+        ],
+        "secondLine": [
+          "Intravenous immunoglobulin (IVIG) for refractory disease or severe dysphagia"
+        ],
+        "emergencyProcedures": [
+          "Nasogastric feeding or PEG if severe dysphagia",
+          "Respiratory support for respiratory failure"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Tapering oral corticosteroids",
+          "Physiotherapy and graded exercise"
+        ],
+        "secondLine": [
+          "Steroid-sparing immunosuppressants (methotrexate, azathioprine, mycophenolate)"
+        ],
+        "monitoring": [
+          "Regular CK and clinical strength assessment",
+          "Monitoring for medication toxicity (CBC, LFTs)",
+          "Screen for ILD and cardiac involvement"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Prednisolone",
+          "mechanism": "Corticosteroid that suppresses immune-mediated inflammation.",
+          "dosing": "0.5-1 mg/kg/day orally, taper based on response.",
+          "sideEffects": "Osteoporosis, diabetes, infection risk, hypertension.",
+          "notes": "First-line for active disease; taper to lowest effective dose."
+        },
+        {
+          "name": "Methotrexate",
+          "mechanism": "Immunosuppressant inhibiting folate metabolism and T-cell activation.",
+          "dosing": "10-25 mg weekly with folic acid.",
+          "sideEffects": "Hepatotoxicity, cytopenias, teratogenicity.",
+          "notes": "Steroid-sparing agent; avoid in significant liver disease."
+        },
+        {
+          "name": "Azathioprine",
+          "mechanism": "Purine analog that inhibits lymphocyte proliferation.",
+          "dosing": "1-3 mg/kg/day orally.",
+          "sideEffects": "Myelosuppression, hepatotoxicity; check TPMT.",
+          "notes": "Alternative steroid-sparing agent or combination therapy."
+        },
+        {
+          "name": "IVIG",
+          "mechanism": "Immunomodulation via pooled immunoglobulins.",
+          "dosing": "2 g/kg divided over 2-5 days.",
+          "sideEffects": "Headache, thromboembolism, renal impairment.",
+          "notes": "Severe/refractory disease or prominent dysphagia."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Muscle biopsy",
+          "description": "Sampling of affected muscle for histopathology.",
+          "indications": "Diagnostic confirmation and exclusion of mimics.",
+          "risks": "Bleeding, infection, local pain."
+        }
+      ]
+    },
+    "prognosis": "Many patients respond to corticosteroids and immunosuppression, but relapses are common and long-term therapy may be required.",
+    "complications": [
+      "Interstitial lung disease",
+      "Dysphagia and aspiration pneumonia",
+      "Steroid-related complications (osteoporosis, diabetes)",
+      "Cardiac involvement (arrhythmia, cardiomyopathy)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should recognize proximal weakness, initiate baseline investigations, start supportive care, and coordinate early referral to rheumatology/neurology.",
+    "escalation": "Escalate urgently for respiratory compromise, severe dysphagia, or rapidly progressive weakness.",
+    "keySafetyConsiderations": [
+      "Assess swallowing safety.",
+      "Monitor for respiratory decline.",
+      "Screen for steroid side effects and infection risk."
+    ]
+  }
+}

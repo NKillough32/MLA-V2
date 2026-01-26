@@ -1,0 +1,155 @@
+{
+  "id": "dermatomyositis",
+  "name": "Dermatomyositis",
+  "domains": [
+    "Rheumatology"
+  ],
+  "generatedAt": "2026-01-26T12:27:24.130911",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Dermatomyositis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nDermatomyositis is an inflammatory myopathy with characteristic cutaneous manifestations and symmetric proximal muscle weakness. It may be associated with malignancy.\n\n### Epidemiology\nDermatomyositis is rare, with adult and juvenile forms. It is more common in women and typically presents between 40-60 years in adults.\n\n### Essential Pathophysiology\nImmune-mediated microangiopathy leads to muscle ischemia and skin inflammation. Myositis-specific autoantibodies can predict phenotype and associated interstitial lung disease.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Proximal muscle weakness\n- Difficulty climbing stairs or lifting arms\n- Skin rash (heliotrope rash, Gottron papules)\n- Myalgia and fatigue\n\n### Key Signs\n- Heliotrope rash around the eyes\n- Gottron papules on knuckles\n- Proximal muscle weakness and tenderness\n- Shawl sign or V-sign photosensitive rash\n\n### Atypical Presentations\n- Amyopathic dermatomyositis (skin features without muscle weakness)\n- Rapidly progressive interstitial lung disease\n- Overlap with other connective tissue diseases\n\n### Red Flags Requiring Immediate Action\n- Severe dysphagia or aspiration risk\n- Rapidly progressive weakness or respiratory compromise\n- Features suggestive of malignancy (weight loss, night sweats)\n- Chest pain or arrhythmias indicating cardiac involvement\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- CK, ALT/AST, LDH\n- ESR/CRP\n- Autoantibodies (ANA, myositis-specific antibodies e.g., anti-Mi-2, anti-MDA5)\n\n### Second-line Investigations\n- MRI of affected muscles\n- Electromyography (EMG)\n\n### Specialist Tests\n- Skin and/or muscle biopsy\n- Malignancy screening (age-appropriate imaging and labs)\n- HRCT chest and pulmonary function tests if ILD suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on characteristic rash, proximal muscle weakness, elevated muscle enzymes, and supportive EMG/MRI or biopsy findings.\n\n### Key Differential Diagnoses to Exclude\n- Polymyositis\n- Systemic lupus erythematosus\n- Psoriasis or eczema\n- Drug-induced myopathy\n- Inclusion body myositis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- High-dose corticosteroids for severe weakness\n- Skin protection and topical steroids for rash\n\n#### Second-line Treatments\n- IVIG for refractory disease or severe dysphagia\n\n#### Emergency Procedures\n- Enteral feeding if severe dysphagia\n- Respiratory support for respiratory failure\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Tapering oral corticosteroids\n- Sun avoidance and photoprotection\n\n#### Second-line Treatments\n- Steroid-sparing immunosuppressants (methotrexate, azathioprine, mycophenolate)\n\n#### Monitoring Requirements\n- Regular CK and muscle strength assessment\n- Dermatology review for skin disease control\n- Malignancy surveillance and ILD monitoring\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Prednisolone\n- **Mechanism of Action**: Corticosteroid that suppresses immune-mediated inflammation.\n- **Typical Dosing Range**: 0.5-1 mg/kg/day orally, taper based on response.\n- **Key Side Effects/Contraindications**: Osteoporosis, diabetes, infection risk, hypertension.\n- **When to Use vs. Alternatives**: First-line for muscle disease.\n\n#### Methotrexate\n- **Mechanism of Action**: Immunosuppressant inhibiting folate metabolism and T-cell activation.\n- **Typical Dosing Range**: 10-25 mg weekly with folic acid.\n- **Key Side Effects/Contraindications**: Hepatotoxicity, cytopenias, teratogenicity.\n- **When to Use vs. Alternatives**: Steroid-sparing agent; helpful for skin disease.\n\n#### Azathioprine\n- **Mechanism of Action**: Purine analog that inhibits lymphocyte proliferation.\n- **Typical Dosing Range**: 1-3 mg/kg/day orally.\n- **Key Side Effects/Contraindications**: Myelosuppression, hepatotoxicity; check TPMT.\n- **When to Use vs. Alternatives**: Alternative steroid-sparing agent or combination therapy.\n\n#### IVIG\n- **Mechanism of Action**: Immunomodulation via pooled immunoglobulins.\n- **Typical Dosing Range**: 2 g/kg divided over 2-5 days.\n- **Key Side Effects/Contraindications**: Headache, thromboembolism, renal impairment.\n- **When to Use vs. Alternatives**: Severe/refractory disease or prominent dysphagia.\n\n### Procedures\n\n#### Skin biopsy\n- **What it Involves**: Sampling of skin lesions for histopathology.\n- **Indications**: Diagnostic confirmation when rash is atypical.\n- **Key Risks/Complications**: Bleeding, infection, scarring.\n\n#### Muscle biopsy\n- **What it Involves**: Sampling of affected muscle for histopathology.\n- **Indications**: Diagnostic confirmation and exclusion of mimics.\n- **Key Risks/Complications**: Bleeding, infection, local pain.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nOutcomes vary; many patients improve with immunosuppression, but relapses and chronic disability can occur. Malignancy-associated disease carries a worse prognosis.\n\n### Important Complications to Watch For\n- Interstitial lung disease\n- Malignancy association (ovarian, lung, GI)\n- Dysphagia and aspiration pneumonia\n- Steroid-related complications\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should recognize the rash/weakness pattern, initiate baseline investigations, provide skin care advice, and refer promptly to rheumatology/dermatology.\n\n### When to Escalate to Senior/Specialist\nEscalate urgently for respiratory compromise, severe dysphagia, or suspicion of underlying malignancy.\n\n### Key Safety Considerations\nProvide sun protection advice, monitor for respiratory decline, and ensure malignancy screening is arranged.\n",
+  "content": {
+    "overview": {
+      "definition": "Dermatomyositis is an inflammatory myopathy with characteristic cutaneous manifestations and symmetric proximal muscle weakness. It may be associated with malignancy.",
+      "epidemiology": "Dermatomyositis is rare, with adult and juvenile forms. It is more common in women and typically presents between 40-60 years in adults.",
+      "pathophysiology": "Immune-mediated microangiopathy leads to muscle ischemia and skin inflammation. Myositis-specific autoantibodies can predict phenotype and associated interstitial lung disease."
+    },
+    "recognition": {
+      "symptoms": [
+        "Proximal muscle weakness",
+        "Difficulty climbing stairs or lifting arms",
+        "Skin rash (heliotrope rash, Gottron papules)",
+        "Myalgia and fatigue"
+      ],
+      "signs": [
+        "Heliotrope rash around the eyes",
+        "Gottron papules on knuckles",
+        "Proximal muscle weakness and tenderness",
+        "Shawl sign or V-sign photosensitive rash"
+      ],
+      "atypicalPresentations": [
+        "Amyopathic dermatomyositis (skin features without muscle weakness)",
+        "Rapidly progressive interstitial lung disease",
+        "Overlap with other connective tissue diseases"
+      ],
+      "redFlags": [
+        "Severe dysphagia or aspiration risk",
+        "Rapidly progressive weakness or respiratory compromise",
+        "Features suggestive of malignancy (weight loss, night sweats)",
+        "Chest pain or arrhythmias indicating cardiac involvement"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "CK, ALT/AST, LDH",
+        "ESR/CRP",
+        "Autoantibodies (ANA, myositis-specific antibodies e.g., anti-Mi-2, anti-MDA5)"
+      ],
+      "secondLine": [
+        "MRI of affected muscles",
+        "Electromyography (EMG)"
+      ],
+      "specialistTests": [
+        "Skin and/or muscle biopsy",
+        "Malignancy screening (age-appropriate imaging and labs)",
+        "HRCT chest and pulmonary function tests if ILD suspected"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on characteristic rash, proximal muscle weakness, elevated muscle enzymes, and supportive EMG/MRI or biopsy findings.",
+      "differentials": [
+        "Polymyositis",
+        "Systemic lupus erythematosus",
+        "Psoriasis or eczema",
+        "Drug-induced myopathy",
+        "Inclusion body myositis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "High-dose corticosteroids for severe weakness",
+          "Skin protection and topical steroids for rash"
+        ],
+        "secondLine": [
+          "IVIG for refractory disease or severe dysphagia"
+        ],
+        "emergencyProcedures": [
+          "Enteral feeding if severe dysphagia",
+          "Respiratory support for respiratory failure"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Tapering oral corticosteroids",
+          "Sun avoidance and photoprotection"
+        ],
+        "secondLine": [
+          "Steroid-sparing immunosuppressants (methotrexate, azathioprine, mycophenolate)"
+        ],
+        "monitoring": [
+          "Regular CK and muscle strength assessment",
+          "Dermatology review for skin disease control",
+          "Malignancy surveillance and ILD monitoring"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Prednisolone",
+          "mechanism": "Corticosteroid that suppresses immune-mediated inflammation.",
+          "dosing": "0.5-1 mg/kg/day orally, taper based on response.",
+          "sideEffects": "Osteoporosis, diabetes, infection risk, hypertension.",
+          "notes": "First-line for muscle disease."
+        },
+        {
+          "name": "Methotrexate",
+          "mechanism": "Immunosuppressant inhibiting folate metabolism and T-cell activation.",
+          "dosing": "10-25 mg weekly with folic acid.",
+          "sideEffects": "Hepatotoxicity, cytopenias, teratogenicity.",
+          "notes": "Steroid-sparing agent; helpful for skin disease."
+        },
+        {
+          "name": "Azathioprine",
+          "mechanism": "Purine analog that inhibits lymphocyte proliferation.",
+          "dosing": "1-3 mg/kg/day orally.",
+          "sideEffects": "Myelosuppression, hepatotoxicity; check TPMT.",
+          "notes": "Alternative steroid-sparing agent or combination therapy."
+        },
+        {
+          "name": "IVIG",
+          "mechanism": "Immunomodulation via pooled immunoglobulins.",
+          "dosing": "2 g/kg divided over 2-5 days.",
+          "sideEffects": "Headache, thromboembolism, renal impairment.",
+          "notes": "Severe/refractory disease or prominent dysphagia."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Skin biopsy",
+          "description": "Sampling of skin lesions for histopathology.",
+          "indications": "Diagnostic confirmation when rash is atypical.",
+          "risks": "Bleeding, infection, scarring."
+        },
+        {
+          "name": "Muscle biopsy",
+          "description": "Sampling of affected muscle for histopathology.",
+          "indications": "Diagnostic confirmation and exclusion of mimics.",
+          "risks": "Bleeding, infection, local pain."
+        }
+      ]
+    },
+    "prognosis": "Outcomes vary; many patients improve with immunosuppression, but relapses and chronic disability can occur. Malignancy-associated disease carries a worse prognosis.",
+    "complications": [
+      "Interstitial lung disease",
+      "Malignancy association (ovarian, lung, GI)",
+      "Dysphagia and aspiration pneumonia",
+      "Steroid-related complications"
+    ],
+    "foundationDoctorRole": "Foundation doctors should recognize the rash/weakness pattern, initiate baseline investigations, provide skin care advice, and refer promptly to rheumatology/dermatology.",
+    "escalation": "Escalate urgently for respiratory compromise, severe dysphagia, or suspicion of underlying malignancy.",
+    "keySafetyConsiderations": [
+      "Provide sun protection advice.",
+      "Monitor for respiratory decline.",
+      "Ensure malignancy screening is arranged."
+    ]
+  }
+}
