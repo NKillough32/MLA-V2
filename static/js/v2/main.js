@@ -4234,9 +4234,26 @@ class MLAQuizApp {
             `;
         };
 
+        const renderImageSection = (image) => {
+            if (!image?.src) return '';
+            const caption = image.caption
+                ? `<figcaption style="margin-top: 0.75rem; color: #475569; font-size: 0.95rem;">${image.caption}</figcaption>`
+                : '';
+            return `
+                <div class="protocol-extra" style="margin-bottom: 20px;">
+                    <h4>🖼️ Pathway Diagram</h4>
+                    <figure style="margin: 0;">
+                        <img src="${image.src}" alt="${image.alt || ''}" loading="lazy" style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 8px 20px rgba(15, 23, 42, 0.12);" />
+                        ${caption}
+                    </figure>
+                </div>
+            `;
+        };
+
         const symptomsHtml = renderExtraList(protocol.symptoms, 'Common Symptoms', '👁️');
         const fundoscopyHtml = renderExtraList(protocol.fundoscopyFindings, 'Fundoscopy Findings', '🔬');
         const managementHtml = renderExtraList(protocol.management, 'Treatment & Management', '💊');
+        const imageHtml = renderImageSection(protocol.image);
 
         const detailHtml = `
             <div class="protocol-detail" onclick="event.stopPropagation();">
@@ -4248,6 +4265,7 @@ class MLAQuizApp {
 
                 ${symptomsHtml}
                 ${fundoscopyHtml}
+                ${imageHtml}
 
                 <div class="protocol-steps">
                     <h4>📋 Protocol Steps</h4>
