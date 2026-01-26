@@ -163,6 +163,12 @@ export const emergencyProtocols = {
         name: 'Pneumothorax: Management',
         category: 'respiratory',
         urgency: 'emergency',
+        // Image asset uploaded manually.
+        image: {
+            src: '/static/assets/emergency/pneumothorax-pathway.png',
+            alt: 'Pneumothorax pathway flowchart',
+            caption: 'Pneumothorax pathway (BTS 2023).'
+        },
         steps: [
             'Assess symptoms and physiological compromise; BTS defines minimal symptoms as no significant pain or breathlessness and no physiological compromise',
             'No or minimal symptoms → conservative care regardless of pneumothorax size',
