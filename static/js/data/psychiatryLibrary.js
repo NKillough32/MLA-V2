@@ -500,6 +500,42 @@ export const psychiatryLibrary = [
         ]
     },
     {
+        id: 'schizotypal',
+        title: 'Schizotypal personality disorder',
+        icon: '🔮',
+        tags: ['Personality', 'Cluster A'],
+        summary: 'Odd beliefs, eccentric behavior, and social difficulties with magical thinking and unusual speech patterns.',
+        distinguishing: [
+            'Magical thinking and paranormal focus (e.g., discussing a "spirit guide")',
+            'Odd or eccentric speech such as a high-pitched voice during consultation',
+            'Beliefs are not necessarily fixed delusions; reality testing often partially intact',
+            'Emotionally unstable personality disorder is unlikely without impulsivity, emptiness, volatile relationships, or repeated suicide attempts',
+            'Histrionic personality disorder is unlikely without suggestibility, self-dramatisation, attention-seeking, or sexual seductiveness',
+            'Schizoaffective disorder is unlikely without prior psychosis plus mania or depression',
+            'Schizoid personality disorder is unlikely without social isolation, emotional coldness, or preference for solitary activities'
+        ],
+        firstLine: [
+            'Supportive psychotherapy with social skills training',
+            'Assess comorbid anxiety/depression and provide targeted treatment'
+        ],
+        secondLine: [
+            'Low-dose antipsychotic for significant cognitive-perceptual symptoms',
+            'Consider CBT to address suspiciousness and odd beliefs'
+        ],
+        investigations: [
+            'Comprehensive psychiatric history and mental state examination',
+            'Collateral history to confirm longstanding pattern and functional impact'
+        ],
+        crisis: [
+            'Escalate if risk concerns or emerging psychosis',
+            'Assess safeguarding and social support needs'
+        ],
+        monitoring: [
+            'Track social functioning, occupational impact, and engagement with therapy',
+            'Monitor for progression to psychotic disorders or mood episodes'
+        ]
+    },
+    {
         id: 'borderline',
         title: 'Emotionally unstable (borderline) personality disorder',
         icon: '🌗',
