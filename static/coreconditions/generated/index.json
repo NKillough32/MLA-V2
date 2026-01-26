@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2025-12-17T23:02:39.679696",
-  "totalConditions": 547,
-  "processedCount": 547,
+  "generatedAt": "2026-01-26T12:27:30.953796",
+  "totalConditions": 549,
+  "processedCount": 549,
   "model": "gpt-4o-mini",
   "conditions": [
     {
@@ -50,15 +50,6 @@
       "processed": true
     },
     {
-      "id": "acute_heart_failure",
-      "name": "Acute Heart failure",
-      "domains": [
-        "Cardiology"
-      ],
-      "filename": "acute_heart_failure.json",
-      "processed": true
-    },
-    {
       "id": "acute_cholangitis",
       "name": "Acute cholangitis",
       "domains": [
@@ -83,6 +74,15 @@
         "Opthalmolgy"
       ],
       "filename": "acute_glaucoma.json",
+      "processed": true
+    },
+    {
+      "id": "acute_heart_failure",
+      "name": "Acute Heart failure",
+      "domains": [
+        "Cardiology"
+      ],
+      "filename": "acute_heart_failure.json",
       "processed": true
     },
     {
@@ -783,24 +783,6 @@
       "processed": true
     },
     {
-      "id": "copd",
-      "name": "COPD",
-      "domains": [
-        "Respiratory"
-      ],
-      "filename": "copd.json",
-      "processed": true
-    },
-    {
-      "id": "covid_19",
-      "name": "COVID-19",
-      "domains": [
-        "Infection"
-      ],
-      "filename": "covid_19.json",
-      "processed": true
-    },
-    {
       "id": "cancer",
       "name": "Cancer",
       "domains": [
@@ -967,15 +949,6 @@
       "processed": true
     },
     {
-      "id": "chronic_heart_failure",
-      "name": "Chronic Heart Failure",
-      "domains": [
-        "Cardiology"
-      ],
-      "filename": "chronic_heart_failure.json",
-      "processed": true
-    },
-    {
       "id": "chronic_cognitive_impairment",
       "name": "Chronic cognitive impairment",
       "domains": [
@@ -1000,6 +973,15 @@
         "Opthalmolgy"
       ],
       "filename": "chronic_glaucoma.json",
+      "processed": true
+    },
+    {
+      "id": "chronic_heart_failure",
+      "name": "Chronic Heart Failure",
+      "domains": [
+        "Cardiology"
+      ],
+      "filename": "chronic_heart_failure.json",
       "processed": true
     },
     {
@@ -1192,6 +1174,15 @@
       "processed": true
     },
     {
+      "id": "copd",
+      "name": "COPD",
+      "domains": [
+        "Respiratory"
+      ],
+      "filename": "copd.json",
+      "processed": true
+    },
+    {
       "id": "cord_prolapse",
       "name": "Cord prolapse",
       "domains": [
@@ -1207,6 +1198,15 @@
         "Palliative Care"
       ],
       "filename": "cough.json",
+      "processed": true
+    },
+    {
+      "id": "covid_19",
+      "name": "COVID-19",
+      "domains": [
+        "Infection"
+      ],
+      "filename": "covid_19.json",
       "processed": true
     },
     {
@@ -1255,15 +1255,6 @@
       "processed": true
     },
     {
-      "id": "dequervains_tenosynovitis",
-      "name": "DeQuervains tenosynovitis",
-      "domains": [
-        "Rheumatology"
-      ],
-      "filename": "dequervains_tenosynovitis.json",
-      "processed": true
-    },
-    {
       "id": "degenerative_disc_disease",
       "name": "Degenerative disc disease",
       "domains": [
@@ -1291,6 +1282,26 @@
       "processed": true
     },
     {
+      "id": "depression",
+      "name": "Depression",
+      "domains": [
+        "Palliative Care",
+        "Psychiatry",
+        "Obstetrics"
+      ],
+      "filename": "depression.json",
+      "processed": true
+    },
+    {
+      "id": "dequervains_tenosynovitis",
+      "name": "DeQuervains tenosynovitis",
+      "domains": [
+        "Rheumatology"
+      ],
+      "filename": "dequervains_tenosynovitis.json",
+      "processed": true
+    },
+    {
       "id": "dermatology_overview",
       "name": "Dermatology Overview",
       "domains": [
@@ -1300,14 +1311,12 @@
       "processed": true
     },
     {
-      "id": "depression",
-      "name": "Depression",
+      "id": "dermatomyositis",
+      "name": "Dermatomyositis",
       "domains": [
-        "Palliative Care",
-        "Psychiatry",
-        "Obstetrics"
+        "Rheumatology"
       ],
-      "filename": "depression.json",
+      "filename": "dermatomyositis.json",
       "processed": true
     },
     {
@@ -1514,6 +1523,15 @@
       "processed": true
     },
     {
+      "id": "elbow_dislocation",
+      "name": "Elbow dislocation",
+      "domains": [
+        "Trauma and Orthopaedics"
+      ],
+      "filename": "elbow_dislocation.json",
+      "processed": true
+    },
+    {
       "id": "elbow_olecranon_bursitis",
       "name": "Elbow - Olecranon bursitis",
       "domains": [
@@ -1529,15 +1547,6 @@
         "Trauma and Orthopaedics"
       ],
       "filename": "elbow_ulnar_nerve_entrapment_cubital_tunnel_syndrome.json",
-      "processed": true
-    },
-    {
-      "id": "elbow_dislocation",
-      "name": "Elbow dislocation",
-      "domains": [
-        "Trauma and Orthopaedics"
-      ],
-      "filename": "elbow_dislocation.json",
       "processed": true
     },
     {
@@ -1867,24 +1876,6 @@
       "processed": true
     },
     {
-      "id": "gu_infection_epididymitis_and_orchitis",
-      "name": "GU infection - Epididymitis and orchitis",
-      "domains": [
-        "Paediatrics"
-      ],
-      "filename": "gu_infection_epididymitis_and_orchitis.json",
-      "processed": true
-    },
-    {
-      "id": "gu_infection_urinary_tract_infection",
-      "name": "GU infection - Urinary tract infection",
-      "domains": [
-        "Paediatrics"
-      ],
-      "filename": "gu_infection_urinary_tract_infection.json",
-      "processed": true
-    },
-    {
       "id": "gallstones_and_biliary_colic",
       "name": "Gallstones and biliary colic",
       "domains": [
@@ -2016,12 +2007,21 @@
       "processed": true
     },
     {
-      "id": "hiv_aids",
-      "name": "HIV/ AIDS",
+      "id": "gu_infection_epididymitis_and_orchitis",
+      "name": "GU infection - Epididymitis and orchitis",
       "domains": [
-        "Infection"
+        "Paediatrics"
       ],
-      "filename": "hiv_aids.json",
+      "filename": "gu_infection_epididymitis_and_orchitis.json",
+      "processed": true
+    },
+    {
+      "id": "gu_infection_urinary_tract_infection",
+      "name": "GU infection - Urinary tract infection",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "gu_infection_urinary_tract_infection.json",
       "processed": true
     },
     {
@@ -2242,6 +2242,15 @@
       "processed": true
     },
     {
+      "id": "hiv_aids",
+      "name": "HIV/ AIDS",
+      "domains": [
+        "Infection"
+      ],
+      "filename": "hiv_aids.json",
+      "processed": true
+    },
+    {
       "id": "human_herpes_viruses",
       "name": "Human herpes viruses",
       "domains": [
@@ -2332,21 +2341,21 @@
       "processed": true
     },
     {
-      "id": "hyperthyroidism",
-      "name": "Hyperthyroidism",
-      "domains": [
-        "Endocrine"
-      ],
-      "filename": "hyperthyroidism.json",
-      "processed": true
-    },
-    {
       "id": "hypertensive_kidney_disease",
       "name": "Hypertensive kidney disease",
       "domains": [
         "Renal"
       ],
       "filename": "hypertensive_kidney_disease.json",
+      "processed": true
+    },
+    {
+      "id": "hyperthyroidism",
+      "name": "Hyperthyroidism",
+      "domains": [
+        "Endocrine"
+      ],
+      "filename": "hyperthyroidism.json",
       "processed": true
     },
     {
@@ -2718,15 +2727,6 @@
       "processed": true
     },
     {
-      "id": "laryngitis",
-      "name": "Laryngitis",
-      "domains": [
-        "ENT"
-      ],
-      "filename": "laryngitis.json",
-      "processed": true
-    },
-    {
       "id": "labyrinthitis",
       "name": "Labyrinthitis",
       "domains": [
@@ -2734,6 +2734,15 @@
         "Neurology"
       ],
       "filename": "labyrinthitis.json",
+      "processed": true
+    },
+    {
+      "id": "laryngitis",
+      "name": "Laryngitis",
+      "domains": [
+        "ENT"
+      ],
+      "filename": "laryngitis.json",
       "processed": true
     },
     {
@@ -2913,6 +2922,15 @@
       "processed": true
     },
     {
+      "id": "medication_considerations_patient_on_antiplatelet_therapy",
+      "name": "Medication considerations- Patient on antiplatelet therapy",
+      "domains": [
+        "Pre-operative Care"
+      ],
+      "filename": "medication_considerations_patient_on_antiplatelet_therapy.json",
+      "processed": true
+    },
+    {
       "id": "medication_considerations_patient_on_oral_contraceptive_pill",
       "name": "Medication considerations - Patient on oral contraceptive pill",
       "domains": [
@@ -2931,15 +2949,6 @@
       "processed": true
     },
     {
-      "id": "medication_considerations_patient_on_antiplatelet_therapy",
-      "name": "Medication considerations- Patient on antiplatelet therapy",
-      "domains": [
-        "Pre-operative Care"
-      ],
-      "filename": "medication_considerations_patient_on_antiplatelet_therapy.json",
-      "processed": true
-    },
-    {
       "id": "melanocytic_naevi",
       "name": "Melanocytic naevi",
       "domains": [
@@ -2955,6 +2964,15 @@
         "Dermatology"
       ],
       "filename": "melanoma.json",
+      "processed": true
+    },
+    {
+      "id": "menieres_disease",
+      "name": "M\u00e9ni\u00e8re's disease",
+      "domains": [
+        "ENT"
+      ],
+      "filename": "menieres_disease.json",
       "processed": true
     },
     {
@@ -3159,15 +3177,6 @@
       "processed": true
     },
     {
-      "id": "menieres_disease",
-      "name": "Ménière's disease",
-      "domains": [
-        "ENT"
-      ],
-      "filename": "menieres_disease.json",
-      "processed": true
-    },
-    {
       "id": "nausea_and_vomiting",
       "name": "Nausea and vomiting",
       "domains": [
@@ -3249,21 +3258,21 @@
       "processed": true
     },
     {
-      "id": "non_alcoholic_fatty_liver",
-      "name": "Non-Alcoholic fatty liver",
-      "domains": [
-        "Gastrointestinal"
-      ],
-      "filename": "non_alcoholic_fatty_liver.json",
-      "processed": true
-    },
-    {
       "id": "non_accidental_injury",
       "name": "Non-accidental injury",
       "domains": [
         "Paediatrics"
       ],
       "filename": "non_accidental_injury.json",
+      "processed": true
+    },
+    {
+      "id": "non_alcoholic_fatty_liver",
+      "name": "Non-Alcoholic fatty liver",
+      "domains": [
+        "Gastrointestinal"
+      ],
+      "filename": "non_alcoholic_fatty_liver.json",
       "processed": true
     },
     {
@@ -3303,15 +3312,6 @@
       "processed": true
     },
     {
-      "id": "ocd",
-      "name": "OCD",
-      "domains": [
-        "Psychiatry"
-      ],
-      "filename": "ocd.json",
-      "processed": true
-    },
-    {
       "id": "obesity",
       "name": "Obesity",
       "domains": [
@@ -3339,6 +3339,15 @@
         "Anaesthesia and Critical Care"
       ],
       "filename": "obstructive_sleep_apnoea.json",
+      "processed": true
+    },
+    {
+      "id": "ocd",
+      "name": "OCD",
+      "domains": [
+        "Psychiatry"
+      ],
+      "filename": "ocd.json",
       "processed": true
     },
     {
@@ -3527,21 +3536,21 @@
       "processed": true
     },
     {
-      "id": "peptic_ulcer_disease",
-      "name": "Peptic ulcer disease",
-      "domains": [
-        "Gastrointestinal"
-      ],
-      "filename": "peptic_ulcer_disease.json",
-      "processed": true
-    },
-    {
       "id": "pemphigus_vulgaris",
       "name": "Pemphigus vulgaris",
       "domains": [
         "Dermatology"
       ],
       "filename": "pemphigus_vulgaris.json",
+      "processed": true
+    },
+    {
+      "id": "peptic_ulcer_disease",
+      "name": "Peptic ulcer disease",
+      "domains": [
+        "Gastrointestinal"
+      ],
+      "filename": "peptic_ulcer_disease.json",
       "processed": true
     },
     {
@@ -3629,21 +3638,21 @@
       "processed": true
     },
     {
-      "id": "perthes_disease",
-      "name": "Perthes' disease",
-      "domains": [
-        "Paediatrics"
-      ],
-      "filename": "perthes_disease.json",
-      "processed": true
-    },
-    {
       "id": "personality_disorders",
       "name": "Personality Disorders",
       "domains": [
         "Psychiatry"
       ],
       "filename": "personality_disorders.json",
+      "processed": true
+    },
+    {
+      "id": "perthes_disease",
+      "name": "Perthes' disease",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "perthes_disease.json",
       "processed": true
     },
     {
@@ -3720,21 +3729,21 @@
       "processed": true
     },
     {
-      "id": "polycystic_ovarian_syndrome_pcos_and_hirsutism",
-      "name": "Polycystic Ovarian Syndrome (PCOS) and Hirsutism",
-      "domains": [
-        "Endocrine"
-      ],
-      "filename": "polycystic_ovarian_syndrome_pcos_and_hirsutism.json",
-      "processed": true
-    },
-    {
       "id": "polycystic_kidney_disease",
       "name": "Polycystic kidney disease",
       "domains": [
         "Renal"
       ],
       "filename": "polycystic_kidney_disease.json",
+      "processed": true
+    },
+    {
+      "id": "polycystic_ovarian_syndrome_pcos_and_hirsutism",
+      "name": "Polycystic Ovarian Syndrome (PCOS) and Hirsutism",
+      "domains": [
+        "Endocrine"
+      ],
+      "filename": "polycystic_ovarian_syndrome_pcos_and_hirsutism.json",
       "processed": true
     },
     {
@@ -3756,6 +3765,15 @@
       "processed": true
     },
     {
+      "id": "polymyositis",
+      "name": "Polymyositis",
+      "domains": [
+        "Rheumatology"
+      ],
+      "filename": "polymyositis.json",
+      "processed": true
+    },
+    {
       "id": "polyneuropathies_diabetic_neuropathy",
       "name": "Polyneuropathies - Diabetic neuropathy",
       "domains": [
@@ -3774,12 +3792,12 @@
       "processed": true
     },
     {
-      "id": "post_traumatic_stress_disorder",
-      "name": "Post Traumatic Stress Disorder",
+      "id": "polypharmacy",
+      "name": "Polypharmacy and Deprescribing",
       "domains": [
-        "Psychiatry"
+        "Care of the Elderly"
       ],
-      "filename": "post_traumatic_stress_disorder.json",
+      "filename": "polypharmacy.json",
       "processed": true
     },
     {
@@ -3807,6 +3825,15 @@
         "Obstetrics"
       ],
       "filename": "post_partum_haemorrhage.json",
+      "processed": true
+    },
+    {
+      "id": "post_traumatic_stress_disorder",
+      "name": "Post Traumatic Stress Disorder",
+      "domains": [
+        "Psychiatry"
+      ],
+      "filename": "post_traumatic_stress_disorder.json",
       "processed": true
     },
     {
@@ -4113,21 +4140,21 @@
       "processed": true
     },
     {
-      "id": "siadh",
-      "name": "SIADH",
-      "domains": [
-        "Endocrine"
-      ],
-      "filename": "siadh.json",
-      "processed": true
-    },
-    {
       "id": "sarcoidosis",
       "name": "Sarcoidosis",
       "domains": [
         "Respiratory"
       ],
       "filename": "sarcoidosis.json",
+      "processed": true
+    },
+    {
+      "id": "sarcopenia",
+      "name": "Sarcopenia",
+      "domains": [
+        "Care of the Elderly"
+      ],
+      "filename": "sarcopenia.json",
       "processed": true
     },
     {
@@ -4245,15 +4272,6 @@
       "processed": true
     },
     {
-      "id": "shoulder_impingement_syndromesubacromial_bursitis",
-      "name": "Shoulder - Impingement syndrome/Subacromial bursitis",
-      "domains": [
-        "Trauma and Orthopaedics"
-      ],
-      "filename": "shoulder_impingement_syndromesubacromial_bursitis.json",
-      "processed": true
-    },
-    {
       "id": "shoulder_dislocation",
       "name": "Shoulder dislocation",
       "domains": [
@@ -4269,6 +4287,24 @@
         "Obstetrics"
       ],
       "filename": "shoulder_dystocia.json",
+      "processed": true
+    },
+    {
+      "id": "shoulder_impingement_syndromesubacromial_bursitis",
+      "name": "Shoulder - Impingement syndrome/Subacromial bursitis",
+      "domains": [
+        "Trauma and Orthopaedics"
+      ],
+      "filename": "shoulder_impingement_syndromesubacromial_bursitis.json",
+      "processed": true
+    },
+    {
+      "id": "siadh",
+      "name": "SIADH",
+      "domains": [
+        "Endocrine"
+      ],
+      "filename": "siadh.json",
       "processed": true
     },
     {
@@ -4477,15 +4513,6 @@
       "processed": true
     },
     {
-      "id": "torch",
-      "name": "TORCH",
-      "domains": [
-        "Obstetrics"
-      ],
-      "filename": "torch.json",
-      "processed": true
-    },
-    {
       "id": "talipes",
       "name": "Talipes",
       "domains": [
@@ -4595,6 +4622,15 @@
         "Paediatrics"
       ],
       "filename": "tonsillitis_and_pharyngitis.json",
+      "processed": true
+    },
+    {
+      "id": "torch",
+      "name": "TORCH",
+      "domains": [
+        "Obstetrics"
+      ],
+      "filename": "torch.json",
       "processed": true
     },
     {
@@ -5031,25 +5067,6 @@
         "Psychiatry"
       ],
       "filename": "wernickes_encephalopathy.json",
-      "processed": true
-    }
-    ,
-    {
-      "id": "polypharmacy",
-      "name": "Polypharmacy and Deprescribing",
-      "domains": [
-        "Care of the Elderly"
-      ],
-      "filename": "polypharmacy.json",
-      "processed": true
-    },
-    {
-      "id": "sarcopenia",
-      "name": "Sarcopenia",
-      "domains": [
-        "Care of the Elderly"
-      ],
-      "filename": "sarcopenia.json",
       "processed": true
     }
   ]
