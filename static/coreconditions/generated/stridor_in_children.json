@@ -1,0 +1,147 @@
+{
+  "id": "stridor_in_children",
+  "name": "Stridor in children",
+  "domains": [
+    "Paediatrics"
+  ],
+  "generatedAt": "2026-02-14T10:15:00.000000",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Stridor in children: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nStridor in children is a high-pitched, noisy breathing sound caused by partial obstruction of the upper airway (supraglottic, glottic, or subglottic). It is a symptom with multiple causes and requires rapid assessment to prevent airway compromise.\n\n### Epidemiology\nStridor is most common in infants and toddlers. Croup is the most frequent cause, with peak incidence between 6 months and 3 years, and is more common in autumn. Epiglottitis is now rare due to Hib vaccination but remains a serious emergency. Laryngomalacia typically presents around 4 weeks of age.\n\n### Essential Pathophysiology\nStridor arises from turbulent airflow through a narrowed upper airway. Causes include inflammatory edema (e.g., croup, epiglottitis), foreign body impaction, congenital airway abnormalities (e.g., laryngomalacia), or extrinsic compression.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Stridor (inspiratory, expiratory, or biphasic)\n- Barking cough (suggestive of croup)\n- Fever or coryzal symptoms (viral infection)\n- Drooling or inability to swallow (suggestive of epiglottitis)\n- Sudden onset coughing/choking (suggestive of foreign body)\n- Feeding difficulty or positional symptoms (suggestive of laryngomalacia)\n\n### Key Signs\n- Respiratory distress (tachypnoea, retractions, nasal flaring)\n- Toxic or unwell appearance (epiglottitis)\n- Hoarse or muffled voice\n- Tripod position\n- Cyanosis (late sign)\n\n### Atypical Presentations\n- Intermittent or positional stridor (laryngomalacia)\n- Afebrile child with sudden onset symptoms (foreign body)\n- Stridor that is worse at night (croup)\n\n### Red Flags Requiring Immediate Action\n- Stridor at rest with severe respiratory distress\n- Drooling or inability to swallow\n- Rapidly progressive symptoms\n- Cyanosis or altered consciousness\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment (history and focused airway examination)\n- Pulse oximetry\n\n### Second-line Investigations\n- Lateral neck X-ray if epiglottitis or retropharyngeal abscess suspected (if safe)\n- Chest X-ray for suspected foreign body (look for air trapping)\n- Blood cultures and inflammatory markers if systemic infection suspected\n\n### Specialist Tests\n- Flexible nasendoscopy or bronchoscopy by ENT/anaesthetics (if stable)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is clinical, based on the presence of stridor and associated features. Identify the likely cause using age, onset, fever, and associated symptoms.\n\n### Key Differential Diagnoses to Exclude\n- Croup\n- Epiglottitis\n- Inhaled foreign body\n- Laryngomalacia\n- Bacterial tracheitis\n- Anaphylaxis\n- Retropharyngeal abscess\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- ABCDE assessment; keep child calm and avoid unnecessary agitation\n- Supplemental oxygen if hypoxic\n- Dexamethasone for suspected croup\n- Nebulized adrenaline for moderate/severe croup (stridor at rest)\n- NPO and urgent airway management planning if epiglottitis suspected\n\n#### Second-line Treatments\n- IV antibiotics for epiglottitis (e.g., ceftriaxone)\n- Rigid bronchoscopy for foreign body removal\n\n#### Emergency Procedures\n- Endotracheal intubation for impending airway obstruction (senior/anaesthetic support)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Reassurance and monitoring for mild laryngomalacia\n- Safety-net advice for parents (worsening breathing, poor feeding, cyanosis)\n\n#### Second-line Treatments\n- ENT referral for persistent or severe laryngomalacia\n\n#### Monitoring Requirements\n- Regular reassessment of respiratory status and hydration\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Dexamethasone\n- **Mechanism of Action**: Corticosteroid that reduces airway inflammation.\n- **Typical Dosing Range**: 0.6 mg/kg PO/IM/IV once (max 10 mg).\n- **Key Side Effects/Contraindications**: Mood changes, GI upset; caution in immunosuppression.\n- **When to Use vs. Alternatives**: First-line for croup of any severity.\n\n#### Nebulized adrenaline\n- **Mechanism of Action**: Vasoconstriction reduces mucosal edema in the upper airway.\n- **Typical Dosing Range**: 5 mL of 1:1000 solution nebulized.\n- **Key Side Effects/Contraindications**: Tachycardia, tremor, hypertension.\n- **When to Use vs. Alternatives**: Moderate/severe croup with stridor at rest.\n\n#### Ceftriaxone\n- **Mechanism of Action**: Broad-spectrum cephalosporin for epiglottitis.\n- **Typical Dosing Range**: 50-100 mg/kg IV daily (max 4 g/day).\n- **Key Side Effects/Contraindications**: Allergy, GI upset, C. difficile risk.\n- **When to Use vs. Alternatives**: Epiglottitis or severe bacterial infection.\n\n### Procedures\n\n#### Endotracheal intubation\n- **What it Involves**: Securing the airway with a tube placed into the trachea.\n- **Indications**: Impending airway obstruction, severe respiratory distress.\n- **Key Risks/Complications**: Trauma to airway, hypoxia, failed intubation.\n\n#### Rigid bronchoscopy\n- **What it Involves**: Endoscopic removal of foreign body under anaesthesia.\n- **Indications**: Suspected inhaled foreign body causing stridor.\n- **Key Risks/Complications**: Bleeding, airway edema, bronchospasm.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nOutcomes depend on cause. Croup usually resolves within days with treatment. Epiglottitis requires urgent airway management but has good outcomes when treated promptly. Laryngomalacia often improves with growth.\n\n### Important Complications to Watch For\n- Airway obstruction and respiratory failure\n- Hypoxic injury\n- Aspiration or pneumonia (especially after foreign body)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should rapidly assess airway, recognize red flags, start first-line therapies for croup, and seek senior help early for suspected epiglottitis or foreign body.\n\n### When to Escalate to Senior/Specialist\nEscalate immediately for stridor at rest with severe distress, drooling, or suspected epiglottitis/foreign body. Involve ENT/anaesthetics urgently.\n\n### Key Safety Considerations\nAvoid agitating a child with suspected epiglottitis; keep them upright and calm. Ensure airway equipment and senior support are immediately available.",
+  "content": {
+    "overview": {
+      "definition": "Stridor in children is a high-pitched, noisy breathing sound caused by partial obstruction of the upper airway (supraglottic, glottic, or subglottic). It is a symptom with multiple causes and requires rapid assessment to prevent airway compromise.",
+      "epidemiology": "Stridor is most common in infants and toddlers. Croup is the most frequent cause, with peak incidence between 6 months and 3 years, and is more common in autumn. Epiglottitis is now rare due to Hib vaccination but remains a serious emergency. Laryngomalacia typically presents around 4 weeks of age.",
+      "pathophysiology": "Stridor arises from turbulent airflow through a narrowed upper airway. Causes include inflammatory edema (e.g., croup, epiglottitis), foreign body impaction, congenital airway abnormalities (e.g., laryngomalacia), or extrinsic compression."
+    },
+    "recognition": {
+      "symptoms": [
+        "Stridor (inspiratory, expiratory, or biphasic)",
+        "Barking cough (suggestive of croup)",
+        "Fever or coryzal symptoms (viral infection)",
+        "Drooling or inability to swallow (suggestive of epiglottitis)",
+        "Sudden onset coughing/choking (suggestive of foreign body)",
+        "Feeding difficulty or positional symptoms (suggestive of laryngomalacia)"
+      ],
+      "signs": [
+        "Respiratory distress (tachypnoea, retractions, nasal flaring)",
+        "Toxic or unwell appearance (epiglottitis)",
+        "Hoarse or muffled voice",
+        "Tripod position",
+        "Cyanosis (late sign)"
+      ],
+      "atypicalPresentations": [
+        "Intermittent or positional stridor (laryngomalacia)",
+        "Afebrile child with sudden onset symptoms (foreign body)",
+        "Stridor that is worse at night (croup)"
+      ],
+      "redFlags": [
+        "Stridor at rest with severe respiratory distress",
+        "Drooling or inability to swallow",
+        "Rapidly progressive symptoms",
+        "Cyanosis or altered consciousness"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment (history and focused airway examination)",
+        "Pulse oximetry"
+      ],
+      "secondLine": [
+        "Lateral neck X-ray if epiglottitis or retropharyngeal abscess suspected (if safe)",
+        "Chest X-ray for suspected foreign body (look for air trapping)",
+        "Blood cultures and inflammatory markers if systemic infection suspected"
+      ],
+      "specialistTests": [
+        "Flexible nasendoscopy or bronchoscopy by ENT/anaesthetics (if stable)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is clinical, based on the presence of stridor and associated features. Identify the likely cause using age, onset, fever, and associated symptoms.",
+      "differentials": [
+        "Croup",
+        "Epiglottitis",
+        "Inhaled foreign body",
+        "Laryngomalacia",
+        "Bacterial tracheitis",
+        "Anaphylaxis",
+        "Retropharyngeal abscess"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "ABCDE assessment; keep child calm and avoid unnecessary agitation",
+          "Supplemental oxygen if hypoxic",
+          "Dexamethasone for suspected croup",
+          "Nebulized adrenaline for moderate/severe croup (stridor at rest)",
+          "NPO and urgent airway management planning if epiglottitis suspected"
+        ],
+        "secondLine": [
+          "IV antibiotics for epiglottitis (e.g., ceftriaxone)",
+          "Rigid bronchoscopy for foreign body removal"
+        ],
+        "procedures": [
+          "Endotracheal intubation for impending airway obstruction (senior/anaesthetic support)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Reassurance and monitoring for mild laryngomalacia",
+          "Safety-net advice for parents (worsening breathing, poor feeding, cyanosis)"
+        ],
+        "secondLine": [
+          "ENT referral for persistent or severe laryngomalacia"
+        ],
+        "monitoring": [
+          "Regular reassessment of respiratory status and hydration"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Dexamethasone",
+          "mechanism": "Corticosteroid that reduces airway inflammation.",
+          "dosing": "0.6 mg/kg PO/IM/IV once (max 10 mg).",
+          "sideEffects": "Mood changes, GI upset; caution in immunosuppression.",
+          "notes": "First-line for croup of any severity."
+        },
+        {
+          "name": "Nebulized adrenaline",
+          "mechanism": "Vasoconstriction reduces mucosal edema in the upper airway.",
+          "dosing": "5 mL of 1:1000 solution nebulized.",
+          "sideEffects": "Tachycardia, tremor, hypertension.",
+          "notes": "Moderate/severe croup with stridor at rest."
+        },
+        {
+          "name": "Ceftriaxone",
+          "mechanism": "Broad-spectrum cephalosporin for epiglottitis.",
+          "dosing": "50-100 mg/kg IV daily (max 4 g/day).",
+          "sideEffects": "Allergy, GI upset, C. difficile risk.",
+          "notes": "Epiglottitis or severe bacterial infection."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Endotracheal intubation",
+          "description": "Securing the airway with a tube placed into the trachea.",
+          "indications": "Impending airway obstruction, severe respiratory distress.",
+          "risks": "Trauma to airway, hypoxia, failed intubation."
+        },
+        {
+          "name": "Rigid bronchoscopy",
+          "description": "Endoscopic removal of foreign body under anaesthesia.",
+          "indications": "Suspected inhaled foreign body causing stridor.",
+          "risks": "Bleeding, airway edema, bronchospasm."
+        }
+      ]
+    },
+    "prognosis": "Outcomes depend on cause. Croup usually resolves within days with treatment. Epiglottitis requires urgent airway management but has good outcomes when treated promptly. Laryngomalacia often improves with growth.",
+    "complications": [
+      "Airway obstruction and respiratory failure",
+      "Hypoxic injury",
+      "Aspiration or pneumonia (especially after foreign body)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should rapidly assess airway, recognize red flags, start first-line therapies for croup, and seek senior help early for suspected epiglottitis or foreign body.",
+    "escalation": "Escalate immediately for stridor at rest with severe distress, drooling, or suspected epiglottitis/foreign body. Involve ENT/anaesthetics urgently.",
+    "keySafetyConsiderations": "Avoid agitating a child with suspected epiglottitis; keep them upright and calm. Ensure airway equipment and senior support are immediately available."
+  }
+}
