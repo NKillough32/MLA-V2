@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-01-26T12:27:30.953796",
-  "totalConditions": 549,
-  "processedCount": 549,
+  "generatedAt": "2026-01-28T14:46:55.550647",
+  "totalConditions": 550,
+  "processedCount": 550,
   "model": "gpt-4o-mini",
   "conditions": [
     {
@@ -2968,7 +2968,7 @@
     },
     {
       "id": "menieres_disease",
-      "name": "M\u00e9ni\u00e8re's disease",
+      "name": "Ménière's disease",
       "domains": [
         "ENT"
       ],
@@ -4406,6 +4406,15 @@
         "Obstetrics"
       ],
       "filename": "stillbirth.json",
+      "processed": true
+    },
+    {
+      "id": "stridor_in_children",
+      "name": "Stridor in children",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "stridor_in_children.json",
       "processed": true
     },
     {
