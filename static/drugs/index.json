@@ -529,6 +529,12 @@
       "indication": "Epilepsy (myoclonic seizures, Lennox-Gastaut syndrome, absence seizures refractory to first-line). Panic disorder (short-term or when SSRIs ineffective). Acute mania (adjunct). REM sleep behavior disorder (off-license)"
     },
     {
+      "id": "clomipramine",
+      "name": "Clomipramine",
+      "class": "Tricyclic antidepressant (TCA)",
+      "indication": "Obsessive-compulsive disorder, depression, panic disorder"
+    },
+    {
       "id": "clopidogrel",
       "name": "Clopidogrel",
       "class": "Antiplatelet drugs, ADP-receptor antagonists",
@@ -2438,6 +2444,6 @@
       "indication": "Adjunct to levodopa in Parkinson's disease to reduce OFF time"
     }
   ],
-  "count": 400,
+  "count": 401,
   "generated": "Drug index for MLA-V2"
 }

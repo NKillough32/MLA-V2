@@ -1,0 +1,14 @@
+{
+  "name": "Clomipramine",
+  "class": "Tricyclic antidepressant (TCA)",
+  "mechanism": "Potent serotonin reuptake inhibition with additional noradrenaline reuptake inhibition; anticholinergic and antihistamine effects",
+  "dosing": "OCD: start 25 mg nocte, increase every 3-4 days to 100-150 mg/day; max 250 mg/day. Depression: 25 mg BD-TDS, titrate to 100-150 mg/day.",
+  "contraindications": "Recent MI, arrhythmias, mania, severe liver disease, narrow-angle glaucoma, concurrent MAOI use",
+  "interactions": "Alcohol (↑ sedation), QT-prolonging drugs, SSRIs/serotonergic agents (serotonin syndrome), CYP2D6 inhibitors (↑ levels)",
+  "monitoring": "ECG before and during titration if cardiac risk; suicide risk (esp <25 years); anticholinergic effects",
+  "pregnancy": "Use with caution; neonatal withdrawal possible",
+  "sideEffects": "Sedation, dry mouth, constipation, urinary retention, orthostatic hypotension, QT prolongation, sexual dysfunction, seizures in overdose",
+  "pharmacokinetics": "Hepatic metabolism (CYP2D6); active metabolite desmethylclomipramine; t½ 19-37 h",
+  "clinicalPearls": "Most serotonergic TCA; effective for OCD when SSRIs inadequate. Cardiotoxic in overdose—dispense small quantities.",
+  "indication": "Obsessive-compulsive disorder, depression, panic disorder"
+}
