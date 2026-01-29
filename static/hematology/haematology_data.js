@@ -71,7 +71,7 @@ export const haematologyDatabase = {
                 variants: [
                     '<strong>Silent carrier</strong> (1 gene deleted): Normal, no anaemia',
                     '<strong>Alpha thal trait</strong> (2 genes): Mild microcytic anaemia',
-                    '<strong>HbH disease</strong> (3 genes): Moderate anaemia, splenomegaly',
+                    '<strong>HbH disease</strong> (3 genes): Moderate anaemia, splenomegaly, Heinz bodies on supravital stain',
                     '<strong>Hb Bart\'s</strong> (4 genes): Incompatible with life (hydrops fetalis)'
                 ]
             },
@@ -376,7 +376,7 @@ export const haematologyDatabase = {
                 'Fragmented cells during haemolysis'
             ],
             image: 'g6pd-bite-cells.jpg',
-            imageDescription: 'Bite cells (degmacytes) show characteristic semi-circular indentations where splenic macrophages have removed Heinz bodies (denatured haemoglobin precipitates). Blister cells appear with haemoglobin pushed to one side. Heinz bodies are not visible on routine staining but require supravital stains (crystal violet/methyl violet). These features appear during acute oxidative haemolytic episodes triggered by drugs, infection, or fava beans. G6PD deficiency impairs the pentose phosphate pathway, leaving RBCs vulnerable to oxidative damage. Between episodes, the blood film may appear entirely normal.'
+            imageDescription: 'Bite cells (degmacytes) show characteristic semi-circular indentations where splenic macrophages have removed Heinz bodies (denatured haemoglobin precipitates). Blister cells appear with haemoglobin pushed to one side. Heinz bodies are not visible on routine staining but require supravital stains (crystal violet/methyl violet). These features appear during acute oxidative haemolytic episodes triggered by drugs, infection, or fava beans. Heinz bodies reflect haemoglobin damage and are classically associated with G6PD deficiency and HbH disease (alpha-thalassaemia). G6PD deficiency impairs the pentose phosphate pathway, leaving RBCs vulnerable to oxidative damage. Between episodes, the blood film may appear entirely normal.'
         },
         labs: {
             'G6PD enzyme assay': 'Low (definitive test)',
@@ -1440,11 +1440,11 @@ export const haematologyDatabase = {
             ],
             image: 'howell-jolly-bodies.jpg',
             alternativeImages: ['Howell-Jolly bodies.jpg'],
-            imageDescription: 'Howell-Jolly bodies appear as small, round, dark purple inclusions (1-2 μm) within red blood cells, representing DNA remnants (nuclear fragments). Normally, the spleen removes these inclusions, so their presence indicates splenic dysfunction (hyposplenism/asplenia). Usually one inclusion per cell, located eccentrically near the cell margin. Common causes include post-splenectomy, sickle cell disease (autosplenectomy), coeliac disease, and congenital asplenia. Associated findings include target cells, acanthocytes, and occasionally nucleated RBCs. Patients are at increased infection risk from encapsulated organisms (pneumococcus, meningococcus, H. influenzae) requiring vaccinations and prophylactic antibiotics.'
+            imageDescription: 'Howell-Jolly bodies appear as small, round, dark purple inclusions (1-2 μm) within red blood cells, representing DNA remnants (nuclear fragments). Normally, the spleen removes these inclusions, so their presence indicates splenic dysfunction (hyposplenism/asplenia). Usually one inclusion per cell, located eccentrically near the cell margin. Common causes include post-splenectomy, sickle cell disease (autosplenectomy), coeliac disease (functional hyposplenism), and congenital asplenia. In coeliac disease, functional hyposplenism can lead to Howell-Jolly bodies with accompanying target cells on the blood film. Associated findings include target cells, acanthocytes, and occasionally nucleated RBCs. Patients are at increased infection risk from encapsulated organisms (pneumococcus, meningococcus, H. influenzae) requiring vaccinations and prophylactic antibiotics.'
         },
         causes: [
             '<strong>Post-splenectomy</strong> - Most common',
-            '<strong>Functional hyposplenism</strong>: Sickle cell disease, coeliac disease',
+            '<strong>Functional hyposplenism</strong>: Sickle cell disease, coeliac disease (Howell-Jolly bodies + target cells)',
             '<strong>Severe megaloblastic anaemia</strong>',
             '<strong>Myelodysplasia</strong>',
             '<strong>Congenital asplenia</strong>'
@@ -1569,7 +1569,7 @@ export const haematologyDatabase = {
                 'Variable number of stippled cells'
             ],
             image: 'basophilic-stippling.jpg',
-            imageDescription: 'Basophilic stippling appears as fine or coarse blue-purple dots scattered throughout the red cell cytoplasm, representing aggregates of residual ribosomal RNA. Fine stippling can be seen in many conditions affecting erythropoiesis. Coarse stippling is more significant and suggests specific pathology. The intensity and coarseness vary by cause. Common in lead poisoning (characteristic coarse stippling), thalassaemia, sideroblastic anaemia, and megaloblastic anaemia. Also seen with accelerated erythropoiesis. While not specific, the pattern and associated findings help narrow differential diagnosis.'
+            imageDescription: 'Basophilic stippling appears as fine or coarse blue-purple dots scattered throughout the red cell cytoplasm, representing aggregates of residual ribosomal RNA. Fine stippling can be seen in many conditions affecting erythropoiesis. Coarse stippling is more significant and suggests specific pathology. The intensity and coarseness vary by cause. Common in lead poisoning (characteristic coarse stippling), thalassaemia, sideroblastic anaemia, and megaloblastic anaemia. Also seen with accelerated erythropoiesis. Hyposplenism in the context of coeliac disease is not a cause of basophilic stippling. While not specific, the pattern and associated findings help narrow differential diagnosis.'
         },
         causes: {
             'Coarse stippling (more specific)': [
@@ -1625,7 +1625,7 @@ export const haematologyDatabase = {
             imageDescription: 'Poikilocytosis refers to variation in red blood cell shape (from Greek "poikilos" = varied). This educational image shows multiple poikilocyte types: (1) Echinocytes (burr cells) - regular small projections; (2) Acanthocytes (spur cells) - irregular projections, seen in liver disease, abetalipoproteinaemia; (3) Schistocytes (fragments) - helmet cells, microangiopathic haemolysis; (4) Spherocytes - round, dense, no central pallor; (5) Target cells - bull\'s eye appearance; (6) Stomatocytes - mouth-like central pallor; (7) Elliptocytes/ovalocytes - oval shape, hereditary elliptocytosis; (8) Tear drops (dacrocytes) - myelofibrosis; (9) Sickle cells - HbS disease. The specific types present provide diagnostic clues to underlying pathology.'
         },
         types: {
-            'Spherocytes': 'Hereditary spherocytosis, AIHA',
+            'Spherocytes': 'Most commonly hereditary spherocytosis; also AIHA',
             'Target cells': 'Liver disease, thalassaemia, HbC, iron deficiency, post-splenectomy',
             'Schistocytes': 'Microangiopathic haemolysis (DIC, TTP, HUS, mechanical valves)',
             'Sickle cells': 'Sickle cell disease',
