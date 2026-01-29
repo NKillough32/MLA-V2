@@ -471,6 +471,55 @@ class OphthalmologyManager {
                 ]
             },
             {
+                title: 'Visual Field Deficits: Patterns & Localization',
+                badge: 'Visual Fields',
+                summary: 'Use the pattern of visual field loss to localize pathology from retina to occipital cortex.',
+                columns: [
+                    {
+                        heading: 'Classic patterns',
+                        items: [
+                            'Monocular vision loss: pre-chiasmal (retina, optic nerve, optic disc)',
+                            'Bitemporal hemianopia: chiasmal compression (pituitary adenoma, craniopharyngioma)',
+                            'Binocular homonymous hemianopia: post-chiasmal lesion (optic tract, radiation, occipital cortex)',
+                            'Superior quadrantanopia (“pie in the sky”): temporal lobe/Meyer’s loop lesion',
+                            'Inferior quadrantanopia (“pie on the floor”): parietal lobe/optic radiation lesion',
+                            'Central scotoma: macula/optic nerve (optic neuritis, macular disease)',
+                            'Altitudinal defect: optic nerve ischemia (AION), glaucoma, retinal vascular occlusion',
+                            'Arcuate scotoma/nasal step: glaucoma with retinal nerve fiber layer loss',
+                            'Enlarged blind spot: papilloedema, optic disc drusen',
+                            'Ring scotoma: retinitis pigmentosa or advanced glaucoma',
+                            'Tunnel vision: advanced glaucoma, retinitis pigmentosa, optic nerve disease'
+                        ]
+                    },
+                    {
+                        heading: 'Localization pearls',
+                        items: [
+                            'Macular sparing suggests occipital cortex lesion (dual blood supply) rather than optic radiation',
+                            'Congruous defects (same shape both eyes) point to occipital cortex; incongruous defects suggest optic tract/radiation',
+                            'Afferent pupillary defect (RAPD) usually indicates optic nerve or severe retinal disease (pre-chiasmal)',
+                            'Temporal lobe lesions can cause superior quadrantanopia ± auditory/temporal lobe symptoms',
+                            'Parietal lobe lesions can cause inferior quadrantanopia ± sensory neglect',
+                            'Optic tract lesions can cause contralateral homonymous hemianopia with a relative afferent pupillary defect',
+                            'Occipital pole lesions cause central field defects; calcarine lesions cause quadrant/hemianopia',
+                            'Optic nerve compression may cause junctional scotoma (central loss in one eye + superior temporal defect in the other)'
+                        ]
+                    },
+                    {
+                        heading: 'Clinical examples & exam tips',
+                        items: [
+                            'Left parietal lobe mass → right homonymous inferior quadrantanopia (loss of right lower quadrant in both eyes)',
+                            'Left temporal lobe mass → right homonymous superior quadrantanopia',
+                            'Pituitary macroadenoma → bitemporal hemianopia with preserved central vision early on',
+                            'CRAO → dense monocular vision loss with RAPD; field loss may be altitudinal or generalized',
+                            'Optic neuritis → painful monocular central scotoma and reduced color vision',
+                            'Use confrontation fields as a rapid screen; confirm with automated perimetry for pattern details',
+                            'Map defects with respect to vertical meridian (chiasmal/post-chiasmal) vs horizontal meridian (retinal/optic nerve)'
+                        ]
+                    }
+                ],
+                note: 'When a left parietal lesion affects optic radiations, the deficit is typically a right homonymous inferior quadrantanopia. Homonymous superior quadrantanopia is more characteristic of temporal lobe (Meyer’s loop) involvement.'
+            },
+            {
                 title: 'Management & Treatment',
                 badge: 'Management',
                 summary: 'Prioritise vision-saving steps: reduce IOP, suppress inflammation, repair retina, or reverse opacity.',
