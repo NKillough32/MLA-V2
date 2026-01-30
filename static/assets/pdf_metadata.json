@@ -29,19 +29,6 @@
     "displayTagline": "Screening for delirium in older patients.",
     "keywordSummary": "Neurology • Geriatrics • Psychiatry • Loc"
   },
-  "4cmortalityinfopdf": {
-    "pdf": "4CMORTALITYinfo",
-    "subjectTitle": "4C MORTALITY",
-    "subjectTagline": "Predicts in-hospital mortality in patients admitted with COVID-19",
-    "keywords": [
-      "All",
-      "CriticalCare",
-      "Resp"
-    ],
-    "displayTitle": "4C MORTALITY",
-    "displayTagline": "Predicts in-hospital mortality in patients admitted with COVID-19.",
-    "keywordSummary": "All • Criticalcare • Resp"
-  },
   "4cmortalityinfo": {
     "pdf": "4CMORTALITYinfo",
     "subjectTitle": "4C MORTALITY",
@@ -55,7 +42,20 @@
     "displayTagline": "Predicts in-hospital mortality in patients admitted with COVID-19.",
     "keywordSummary": "All • Criticalcare • Resp"
   },
-  "4pepsinfopdf": {
+  "4cmortalityinfopdf": {
+    "pdf": "4CMORTALITYinfo",
+    "subjectTitle": "4C MORTALITY",
+    "subjectTagline": "Predicts in-hospital mortality in patients admitted with COVID-19",
+    "keywords": [
+      "All",
+      "CriticalCare",
+      "Resp"
+    ],
+    "displayTitle": "4C MORTALITY",
+    "displayTagline": "Predicts in-hospital mortality in patients admitted with COVID-19.",
+    "keywordSummary": "All • Criticalcare • Resp"
+  },
+  "4pepsinfo": {
     "pdf": "4PEPSinfo",
     "subjectTitle": "4PEPS",
     "subjectTagline": "4-Level Pulmonary Embolism Clinical Probability Score (4PEPS): Rules out PE based on clinical criteria",
@@ -71,7 +71,7 @@
     "displayTagline": "4-Level Pulmonary Embolism Clinical Probability Score (4PEPS): Rules out PE based on clinical criteria.",
     "keywordSummary": "Emergency • Respiratory • PE • Vte"
   },
-  "4pepsinfo": {
+  "4pepsinfopdf": {
     "pdf": "4PEPSinfo",
     "subjectTitle": "4PEPS",
     "subjectTagline": "4-Level Pulmonary Embolism Clinical Probability Score (4PEPS): Rules out PE based on clinical criteria",
@@ -139,7 +139,7 @@
     "displayTagline": "Calculates reference values for distance walked, as a measure of functional status.",
     "keywordSummary": "Gp • Orthopaedics • Rheumatology • Geriatrics"
   },
-  "abcd2infopdf": {
+  "abcd2info": {
     "pdf": "ABCD2info",
     "subjectTitle": "ABCD2",
     "subjectTagline": "Estimates the risk of stroke after a suspected transient ischemic attack (TIA)",
@@ -155,7 +155,7 @@
     "displayTagline": "Estimates the risk of stroke after a suspected transient ischemic attack (TIA).",
     "keywordSummary": "Emergency • Gp • Neurology • Geriatrics"
   },
-  "abcd2info": {
+  "abcd2infopdf": {
     "pdf": "ABCD2info",
     "subjectTitle": "ABCD2",
     "subjectTagline": "Estimates the risk of stroke after a suspected transient ischemic attack (TIA)",
@@ -201,7 +201,7 @@
     "displayTagline": "Diagnoses polymyalgia rheumatica (PMR) in patients based on 2012 EULAR/ACR criteria.",
     "keywordSummary": "Gp • Rheumatology • Pmr • Headache"
   },
-  "acreularrainfo": {
+  "acreularrainfopdf": {
     "pdf": "ACR-EULARRAinfo",
     "subjectTitle": "ACR-EULAR RA",
     "subjectTagline": "Diagnoses rheumatoid arthritis (RA) in patients with undifferentiated inflammatory synovitis",
@@ -216,7 +216,7 @@
     "displayTagline": "Diagnoses rheumatoid arthritis (RA) in patients with undifferentiated inflammatory synovitis.",
     "keywordSummary": "Gp • Rheumatology • Joint • Swelling"
   },
-  "acreularrainfopdf": {
+  "acreularrainfo": {
     "pdf": "ACR-EULARRAinfo",
     "subjectTitle": "ACR-EULAR RA",
     "subjectTagline": "Diagnoses rheumatoid arthritis (RA) in patients with undifferentiated inflammatory synovitis",
@@ -267,7 +267,7 @@
     "displayTagline": "Risk stratifies for gout vs non-gout arthritis.",
     "keywordSummary": "Emergency • Gp • Orthopaedics • Rheumatology"
   },
-  "adhdinfo": {
+  "adhdinfopdf": {
     "pdf": "ADHDinfo",
     "subjectTitle": "ADHD-ADULT SELF-REPORT SCALE",
     "subjectTagline": "Used as diagnostic tool for adult ADHD",
@@ -280,7 +280,7 @@
     "displayTagline": "Used as diagnostic tool for adult ADHD.",
     "keywordSummary": "All • Gp • Psych"
   },
-  "adhdinfopdf": {
+  "adhdinfo": {
     "pdf": "ADHDinfo",
     "subjectTitle": "ADHD-ADULT SELF-REPORT SCALE",
     "subjectTagline": "Used as diagnostic tool for adult ADHD",
@@ -331,22 +331,6 @@
     "displayTagline": "Calculates adjusted body weight. For use in obese patients where actual > ideal body weight.",
     "keywordSummary": "Critical • Care • Itu • Intensive"
   },
-  "ageadjustedcrpesrinfopdf": {
-    "pdf": "AGEADJUSTEDCRPESRinfo",
-    "subjectTitle": "AGE ADJUSTED CRP/ESR",
-    "subjectTagline": "Calculates age-adjusted ESR and CRP in adult patients",
-    "keywords": [
-      "Orthopaedics",
-      "Rheumatology",
-      "GP",
-      "joint",
-      "swelling",
-      "PMR"
-    ],
-    "displayTitle": "AGE ADJUSTED CRP/ESR",
-    "displayTagline": "Calculates age-adjusted ESR and CRP in adult patients.",
-    "keywordSummary": "Orthopaedics • Rheumatology • Gp • Joint"
-  },
   "ageadjustedcrpesrinfo": {
     "pdf": "AGEADJUSTEDCRPESRinfo",
     "subjectTitle": "AGE ADJUSTED CRP/ESR",
@@ -363,7 +347,23 @@
     "displayTagline": "Calculates age-adjusted ESR and CRP in adult patients.",
     "keywordSummary": "Orthopaedics • Rheumatology • Gp • Joint"
   },
-  "ageadjustedddimerinfopdf": {
+  "ageadjustedcrpesrinfopdf": {
+    "pdf": "AGEADJUSTEDCRPESRinfo",
+    "subjectTitle": "AGE ADJUSTED CRP/ESR",
+    "subjectTagline": "Calculates age-adjusted ESR and CRP in adult patients",
+    "keywords": [
+      "Orthopaedics",
+      "Rheumatology",
+      "GP",
+      "joint",
+      "swelling",
+      "PMR"
+    ],
+    "displayTitle": "AGE ADJUSTED CRP/ESR",
+    "displayTagline": "Calculates age-adjusted ESR and CRP in adult patients.",
+    "keywordSummary": "Orthopaedics • Rheumatology • Gp • Joint"
+  },
+  "ageadjustedddimerinfo": {
     "pdf": "AGE-ADJUSTEDD-DIMERinfo",
     "subjectTitle": "AGE-ADJUSTED D-DIMER",
     "subjectTagline": "Adjusts D-dimer cutoffs by age to help rule out VTE in patients ≥50 years old",
@@ -378,7 +378,7 @@
     "displayTagline": "Adjusts D-dimer cutoffs by age to help rule out VTE in patients ≥50 years old.",
     "keywordSummary": "Cardiology • Emergency • Acs • Heart"
   },
-  "ageadjustedddimerinfo": {
+  "ageadjustedddimerinfopdf": {
     "pdf": "AGE-ADJUSTEDD-DIMERinfo",
     "subjectTitle": "AGE-ADJUSTED D-DIMER",
     "subjectTagline": "Adjusts D-dimer cutoffs by age to help rule out VTE in patients ≥50 years old",
@@ -447,7 +447,7 @@
     "displayTagline": "AKIN Classification for acute kidney injury (AKI).",
     "keywordSummary": "Renal • Nephrology"
   },
-  "alcinfopdf": {
+  "alcinfo": {
     "pdf": "ALCinfo",
     "subjectTitle": "ABSOLUTE LYMPHOCYTE COUNT",
     "subjectTagline": "Absolute Lymphocyte Count: predicts CD4 count",
@@ -459,7 +459,7 @@
     "displayTagline": "Absolute Lymphocyte Count: predicts CD4 count.",
     "keywordSummary": "All • Haem"
   },
-  "alcinfo": {
+  "alcinfopdf": {
     "pdf": "ALCinfo",
     "subjectTitle": "ABSOLUTE LYMPHOCYTE COUNT",
     "subjectTagline": "Absolute Lymphocyte Count: predicts CD4 count",
@@ -499,7 +499,7 @@
     "displayTagline": "Predicts likelihood of lower limb cellulitis.",
     "keywordSummary": "Emergency • Gp • Infection • Sepsis"
   },
-  "amt10info": {
+  "amt10infopdf": {
     "pdf": "AMT-10info",
     "subjectTitle": "AMT-10",
     "subjectTagline": "Assesses mental impairment in elderly patients, screening for delirium or dementia",
@@ -516,7 +516,7 @@
     "displayTagline": "Assesses mental impairment in elderly patients, screening for delirium or dementia.",
     "keywordSummary": "Emergency • Gp • Neurology • Geriatrics"
   },
-  "amt10infopdf": {
+  "amt10info": {
     "pdf": "AMT-10info",
     "subjectTitle": "AMT-10",
     "subjectTagline": "Assesses mental impairment in elderly patients, screening for delirium or dementia",
@@ -673,21 +673,6 @@
     "displayTagline": "Evaluates states of metabolic acidosis. Includes correction for Albumin.",
     "keywordSummary": "Critical • Care • Itu • Intensive"
   },
-  "apacheiiscoreinfopdf": {
-    "pdf": "APACHEIISCOREinfo",
-    "subjectTitle": "APACHE II SCORE",
-    "subjectTagline": "Estimates ICU mortality",
-    "keywords": [
-      "Critical",
-      "Care",
-      "ITU",
-      "Intensive",
-      "Care"
-    ],
-    "displayTitle": "APACHE II SCORE",
-    "displayTagline": "Estimates ICU mortality.",
-    "keywordSummary": "Critical • Care • Itu • Intensive"
-  },
   "apacheiiscoreinfo": {
     "pdf": "APACHEIISCOREinfo",
     "subjectTitle": "APACHE II SCORE",
@@ -703,17 +688,20 @@
     "displayTagline": "Estimates ICU mortality.",
     "keywordSummary": "Critical • Care • Itu • Intensive"
   },
-  "apgarscoreinfopdf": {
-    "pdf": "APGARSCOREinfo",
-    "subjectTitle": "APGAR SCORE",
-    "subjectTagline": "Assesses neonates 1 and 5 minutes after birth",
+  "apacheiiscoreinfopdf": {
+    "pdf": "APACHEIISCOREinfo",
+    "subjectTitle": "APACHE II SCORE",
+    "subjectTagline": "Estimates ICU mortality",
     "keywords": [
-      "All",
-      "Paeds"
+      "Critical",
+      "Care",
+      "ITU",
+      "Intensive",
+      "Care"
     ],
-    "displayTitle": "APGAR SCORE",
-    "displayTagline": "Assesses neonates 1 and 5 minutes after birth.",
-    "keywordSummary": "All • Paeds"
+    "displayTitle": "APACHE II SCORE",
+    "displayTagline": "Estimates ICU mortality.",
+    "keywordSummary": "Critical • Care • Itu • Intensive"
   },
   "apgarscoreinfo": {
     "pdf": "APGARSCOREinfo",
@@ -727,7 +715,19 @@
     "displayTagline": "Assesses neonates 1 and 5 minutes after birth.",
     "keywordSummary": "All • Paeds"
   },
-  "apriinfopdf": {
+  "apgarscoreinfopdf": {
+    "pdf": "APGARSCOREinfo",
+    "subjectTitle": "APGAR SCORE",
+    "subjectTagline": "Assesses neonates 1 and 5 minutes after birth",
+    "keywords": [
+      "All",
+      "Paeds"
+    ],
+    "displayTitle": "APGAR SCORE",
+    "displayTagline": "Assesses neonates 1 and 5 minutes after birth.",
+    "keywordSummary": "All • Paeds"
+  },
+  "apriinfo": {
     "pdf": "APRIinfo",
     "subjectTitle": "APRI",
     "subjectTagline": "AST to Platelet Ratio Index. Determines the likelihood of hepatic fibrosis and cirrhosis in patients with hepatitis C",
@@ -741,7 +741,7 @@
     "displayTagline": "AST to Platelet Ratio Index. Determines the likelihood of hepatic fibrosis and cirrhosis in patients with hepatitis C.",
     "keywordSummary": "Gastroenterology • Liver • Abdomen • Alcohol"
   },
-  "apriinfo": {
+  "apriinfopdf": {
     "pdf": "APRIinfo",
     "subjectTitle": "APRI",
     "subjectTagline": "AST to Platelet Ratio Index. Determines the likelihood of hepatic fibrosis and cirrhosis in patients with hepatitis C",
@@ -873,18 +873,6 @@
     "displayTagline": "Ankylosing Spondylitis Disease Activity Score with CRP: stratifies disease severity.",
     "keywordSummary": "All • MSK"
   },
-  "asdasesrinfo": {
-    "pdf": "ASDAS-ESRinfo",
-    "subjectTitle": "ASDAS-ESR",
-    "subjectTagline": "Ankylosing Spondylitis Disease Activity Score with ESR: stratifies disease severity",
-    "keywords": [
-      "All",
-      "MSK"
-    ],
-    "displayTitle": "ASDAS-ESR",
-    "displayTagline": "Ankylosing Spondylitis Disease Activity Score with ESR: stratifies disease severity.",
-    "keywordSummary": "All • MSK"
-  },
   "asdasesrinfopdf": {
     "pdf": "ASDAS-ESRinfo",
     "subjectTitle": "ASDAS-ESR",
@@ -897,7 +885,19 @@
     "displayTagline": "Ankylosing Spondylitis Disease Activity Score with ESR: stratifies disease severity.",
     "keywordSummary": "All • MSK"
   },
-  "asthmapredictiveindexinfopdf": {
+  "asdasesrinfo": {
+    "pdf": "ASDAS-ESRinfo",
+    "subjectTitle": "ASDAS-ESR",
+    "subjectTagline": "Ankylosing Spondylitis Disease Activity Score with ESR: stratifies disease severity",
+    "keywords": [
+      "All",
+      "MSK"
+    ],
+    "displayTitle": "ASDAS-ESR",
+    "displayTagline": "Ankylosing Spondylitis Disease Activity Score with ESR: stratifies disease severity.",
+    "keywordSummary": "All • MSK"
+  },
+  "asthmapredictiveindexinfo": {
     "pdf": "ASTHMAPREDICTIVEINDEXinfo",
     "subjectTitle": "ASTHMA PREDICTIVE INDEX",
     "subjectTagline": "Determines likelihood of paediatric patients (≤3 years age) developing childhood asthma",
@@ -911,7 +911,7 @@
     "displayTagline": "Determines likelihood of paediatric patients (≤3 years age) developing childhood asthma.",
     "keywordSummary": "All • Gp • Paeds • Resp"
   },
-  "asthmapredictiveindexinfo": {
+  "asthmapredictiveindexinfopdf": {
     "pdf": "ASTHMAPREDICTIVEINDEXinfo",
     "subjectTitle": "ASTHMA PREDICTIVE INDEX",
     "subjectTagline": "Determines likelihood of paediatric patients (≤3 years age) developing childhood asthma",
@@ -985,7 +985,7 @@
     "displayTagline": "Identifies at risk drinkers who may not be alcohol dependent.",
     "keywordSummary": "Emergency • Gastroenterology • Gp • Psychiatry"
   },
-  "awolscoreinfo": {
+  "awolscoreinfopdf": {
     "pdf": "AWOLSCOREinfo",
     "subjectTitle": "AWOL DELIRIUM SCORE",
     "subjectTagline": "Predicts risk of delirium during hospital admission",
@@ -999,7 +999,7 @@
     "displayTagline": "Predicts risk of delirium during hospital admission.",
     "keywordSummary": "Geriatrics • Psychiatry • Loc • GCS"
   },
-  "awolscoreinfopdf": {
+  "awolscoreinfo": {
     "pdf": "AWOLSCOREinfo",
     "subjectTitle": "AWOL DELIRIUM SCORE",
     "subjectTagline": "Predicts risk of delirium during hospital admission",
@@ -1041,21 +1041,6 @@
     "displayTagline": "Assesses pain in patients with advanced dementia.",
     "keywordSummary": "Geriatrics • Psychiatry • Pain • Dementia"
   },
-  "alvaradoscoreinfopdf": {
-    "pdf": "AlvaradoScoreinfo",
-    "subjectTitle": "ALVARADO SCORE",
-    "subjectTagline": "Predicts likelihood of acute appendicitis",
-    "keywords": [
-      "Emergency",
-      "Surgery",
-      "General",
-      "Surgery",
-      "Abdomen"
-    ],
-    "displayTitle": "ALVARADO SCORE",
-    "displayTagline": "Predicts likelihood of acute appendicitis.",
-    "keywordSummary": "Emergency • Surgery • General • Surgery"
-  },
   "alvaradoscoreinfo": {
     "pdf": "AlvaradoScoreinfo",
     "subjectTitle": "ALVARADO SCORE",
@@ -1071,21 +1056,20 @@
     "displayTagline": "Predicts likelihood of acute appendicitis.",
     "keywordSummary": "Emergency • Surgery • General • Surgery"
   },
-  "bap65scoreinfopdf": {
-    "pdf": "BAP-65SCOREinfo",
-    "subjectTitle": "BAP-65 SCORE",
-    "subjectTagline": "Predicts mortality in acute COPD exacerbation",
+  "alvaradoscoreinfopdf": {
+    "pdf": "AlvaradoScoreinfo",
+    "subjectTitle": "ALVARADO SCORE",
+    "subjectTagline": "Predicts likelihood of acute appendicitis",
     "keywords": [
       "Emergency",
-      "GP",
-      "Respiratory",
-      "COPD",
-      "SOB",
-      "Chest"
+      "Surgery",
+      "General",
+      "Surgery",
+      "Abdomen"
     ],
-    "displayTitle": "BAP-65 SCORE",
-    "displayTagline": "Predicts mortality in acute COPD exacerbation.",
-    "keywordSummary": "Emergency • Gp • Respiratory • COPD"
+    "displayTitle": "ALVARADO SCORE",
+    "displayTagline": "Predicts likelihood of acute appendicitis.",
+    "keywordSummary": "Emergency • Surgery • General • Surgery"
   },
   "bap65scoreinfo": {
     "pdf": "BAP-65SCOREinfo",
@@ -1103,19 +1087,21 @@
     "displayTagline": "Predicts mortality in acute COPD exacerbation.",
     "keywordSummary": "Emergency • Gp • Respiratory • COPD"
   },
-  "beightoninfopdf": {
-    "pdf": "BEIGHTONinfo",
-    "subjectTitle": "BEIGHTON SCORE",
-    "subjectTagline": "Measures joint hypermobility on a 9-point scale",
+  "bap65scoreinfopdf": {
+    "pdf": "BAP-65SCOREinfo",
+    "subjectTitle": "BAP-65 SCORE",
+    "subjectTagline": "Predicts mortality in acute COPD exacerbation",
     "keywords": [
+      "Emergency",
       "GP",
-      "Orthopaedics",
-      "Rheumatology",
-      "Joint"
+      "Respiratory",
+      "COPD",
+      "SOB",
+      "Chest"
     ],
-    "displayTitle": "BEIGHTON SCORE",
-    "displayTagline": "Measures joint hypermobility on a 9-point scale.",
-    "keywordSummary": "Gp • Orthopaedics • Rheumatology • Joint"
+    "displayTitle": "BAP-65 SCORE",
+    "displayTagline": "Predicts mortality in acute COPD exacerbation.",
+    "keywordSummary": "Emergency • Gp • Respiratory • COPD"
   },
   "beightoninfo": {
     "pdf": "BEIGHTONinfo",
@@ -1131,20 +1117,19 @@
     "displayTagline": "Measures joint hypermobility on a 9-point scale.",
     "keywordSummary": "Gp • Orthopaedics • Rheumatology • Joint"
   },
-  "bisapscoreinfopdf": {
-    "pdf": "BISAPSCOREinfo",
-    "subjectTitle": "BISAP SCORE",
-    "subjectTagline": "Predicts mortality risk in pancreatitis: similar to Ranson's criteria with less variables",
+  "beightoninfopdf": {
+    "pdf": "BEIGHTONinfo",
+    "subjectTitle": "BEIGHTON SCORE",
+    "subjectTagline": "Measures joint hypermobility on a 9-point scale",
     "keywords": [
-      "Gastroenterology",
-      "Surgery",
-      "General",
-      "Surgery",
-      "Abdomen"
+      "GP",
+      "Orthopaedics",
+      "Rheumatology",
+      "Joint"
     ],
-    "displayTitle": "BISAP SCORE",
-    "displayTagline": "Predicts mortality risk in pancreatitis: similar to Ranson's criteria with less variables.",
-    "keywordSummary": "Gastroenterology • Surgery • General • Surgery"
+    "displayTitle": "BEIGHTON SCORE",
+    "displayTagline": "Measures joint hypermobility on a 9-point scale.",
+    "keywordSummary": "Gp • Orthopaedics • Rheumatology • Joint"
   },
   "bisapscoreinfo": {
     "pdf": "BISAPSCOREinfo",
@@ -1161,7 +1146,22 @@
     "displayTagline": "Predicts mortality risk in pancreatitis: similar to Ranson's criteria with less variables.",
     "keywordSummary": "Gastroenterology • Surgery • General • Surgery"
   },
-  "bishopscoreinfopdf": {
+  "bisapscoreinfopdf": {
+    "pdf": "BISAPSCOREinfo",
+    "subjectTitle": "BISAP SCORE",
+    "subjectTagline": "Predicts mortality risk in pancreatitis: similar to Ranson's criteria with less variables",
+    "keywords": [
+      "Gastroenterology",
+      "Surgery",
+      "General",
+      "Surgery",
+      "Abdomen"
+    ],
+    "displayTitle": "BISAP SCORE",
+    "displayTagline": "Predicts mortality risk in pancreatitis: similar to Ranson's criteria with less variables.",
+    "keywordSummary": "Gastroenterology • Surgery • General • Surgery"
+  },
+  "bishopscoreinfo": {
     "pdf": "BISHOPSCOREinfo",
     "subjectTitle": "BISHOP SCORE",
     "subjectTagline": "Predicts likelihood of successful vaginal delivery",
@@ -1173,7 +1173,7 @@
     "displayTagline": "Predicts likelihood of successful vaginal delivery.",
     "keywordSummary": "All • Gynae"
   },
-  "bishopscoreinfo": {
+  "bishopscoreinfopdf": {
     "pdf": "BISHOPSCOREinfo",
     "subjectTitle": "BISHOP SCORE",
     "subjectTagline": "Predicts likelihood of successful vaginal delivery",
@@ -1271,7 +1271,7 @@
     "displayTagline": "Behavioural Pain Scale: Quantifies pain in intubated patients.",
     "keywordSummary": "Critical • Care • Itu • Intensive"
   },
-  "bsainfo": {
+  "bsainfopdf": {
     "pdf": "BSAinfo",
     "subjectTitle": "BSA",
     "subjectTagline": "Calculates body surface area",
@@ -1288,7 +1288,7 @@
     "displayTagline": "Calculates body surface area.",
     "keywordSummary": "Critical • Care • Itu • Intensive"
   },
-  "bsainfopdf": {
+  "bsainfo": {
     "pdf": "BSAinfo",
     "subjectTitle": "BSA",
     "subjectTagline": "Calculates body surface area",
@@ -1365,22 +1365,6 @@
     "displayTagline": "BWPS: Predicts likelihood that biochemical thyrotoxicosis is thyroid storm.",
     "keywordSummary": "All • Endo"
   },
-  "brugadacriteriainfo": {
-    "pdf": "BRUGADACRITERIAinfo",
-    "subjectTitle": "BRUGADA CRITERIA",
-    "subjectTagline": "Distinguishes ventricular tachycardia from supraventricular tachycardia",
-    "keywords": [
-      "Cardiology",
-      "Emergency",
-      "Heart",
-      "arrhythmia",
-      "VT",
-      "SVT"
-    ],
-    "displayTitle": "BRUGADA CRITERIA",
-    "displayTagline": "Distinguishes ventricular tachycardia from supraventricular tachycardia.",
-    "keywordSummary": "Cardiology • Emergency • Heart • Arrhythmia"
-  },
   "brugadacriteriainfopdf": {
     "pdf": "BRUGADACRITERIAinfo",
     "subjectTitle": "BRUGADA CRITERIA",
@@ -1397,7 +1381,23 @@
     "displayTagline": "Distinguishes ventricular tachycardia from supraventricular tachycardia.",
     "keywordSummary": "Cardiology • Emergency • Heart • Arrhythmia"
   },
-  "cagequestionnaireinfo": {
+  "brugadacriteriainfo": {
+    "pdf": "BRUGADACRITERIAinfo",
+    "subjectTitle": "BRUGADA CRITERIA",
+    "subjectTagline": "Distinguishes ventricular tachycardia from supraventricular tachycardia",
+    "keywords": [
+      "Cardiology",
+      "Emergency",
+      "Heart",
+      "arrhythmia",
+      "VT",
+      "SVT"
+    ],
+    "displayTitle": "BRUGADA CRITERIA",
+    "displayTagline": "Distinguishes ventricular tachycardia from supraventricular tachycardia.",
+    "keywordSummary": "Cardiology • Emergency • Heart • Arrhythmia"
+  },
+  "cagequestionnaireinfopdf": {
     "pdf": "CAGEQUESTIONNAIREinfo",
     "subjectTitle": "CAGE QUESTIONNAIRE",
     "subjectTagline": "Screens for excessive drinking and alcoholism",
@@ -1412,7 +1412,7 @@
     "displayTagline": "Screens for excessive drinking and alcoholism.",
     "keywordSummary": "Emergency • Gastroenterology • Gp • Psychiatry"
   },
-  "cagequestionnaireinfopdf": {
+  "cagequestionnaireinfo": {
     "pdf": "CAGEQUESTIONNAIREinfo",
     "subjectTitle": "CAGE QUESTIONNAIRE",
     "subjectTagline": "Screens for excessive drinking and alcoholism",
@@ -1513,19 +1513,6 @@
     "displayTagline": "Calculates stroke risk for patients with AF.",
     "keywordSummary": "Cardiology • Gp • Neurology • Geriatrics"
   },
-  "childpughinfopdf": {
-    "pdf": "CHILD-PUGHinfo",
-    "subjectTitle": "CHILD-PUGH",
-    "subjectTagline": "Estimates liver cirrhosis severity",
-    "keywords": [
-      "Gastroenterology",
-      "hepatic",
-      "hepatology"
-    ],
-    "displayTitle": "CHILD-PUGH",
-    "displayTagline": "Estimates liver cirrhosis severity.",
-    "keywordSummary": "Gastroenterology • Hepatic • Hepatology"
-  },
   "childpughinfo": {
     "pdf": "CHILD-PUGHinfo",
     "subjectTitle": "CHILD-PUGH",
@@ -1539,7 +1526,20 @@
     "displayTagline": "Estimates liver cirrhosis severity.",
     "keywordSummary": "Gastroenterology • Hepatic • Hepatology"
   },
-  "ciwaarinfo": {
+  "childpughinfopdf": {
+    "pdf": "CHILD-PUGHinfo",
+    "subjectTitle": "CHILD-PUGH",
+    "subjectTagline": "Estimates liver cirrhosis severity",
+    "keywords": [
+      "Gastroenterology",
+      "hepatic",
+      "hepatology"
+    ],
+    "displayTitle": "CHILD-PUGH",
+    "displayTagline": "Estimates liver cirrhosis severity.",
+    "keywordSummary": "Gastroenterology • Hepatic • Hepatology"
+  },
+  "ciwaarinfopdf": {
     "pdf": "CIWA-Arinfo",
     "subjectTitle": "CIWA-Ar",
     "subjectTagline": "Assessment severity of alcohol withdrawal",
@@ -1553,7 +1553,7 @@
     "displayTagline": "Assessment severity of alcohol withdrawal.",
     "keywordSummary": "Emergency • Gastroenterology • Gp • Cage"
   },
-  "ciwaarinfopdf": {
+  "ciwaarinfo": {
     "pdf": "CIWA-Arinfo",
     "subjectTitle": "CIWA-Ar",
     "subjectTagline": "Assessment severity of alcohol withdrawal",
@@ -1593,7 +1593,7 @@
     "displayTagline": "Estimates GFR based on serum creatinine based on CKD-EPI Creatinine 2021 equation.",
     "keywordSummary": "Renal • Nephrology • Medicine"
   },
-  "clifcaclfinfo": {
+  "clifcaclfinfopdf": {
     "pdf": "CLIF-CACLFinfo",
     "subjectTitle": "CLIF-C ACLF",
     "subjectTagline": "Predicts mortality in acute-on-chronic liver failure.",
@@ -1606,7 +1606,7 @@
     "displayTagline": "Predicts mortality in acute-on-chronic liver failure.",
     "keywordSummary": "Gastroenterology • Abdomen • Liver"
   },
-  "clifcaclfinfopdf": {
+  "clifcaclfinfo": {
     "pdf": "CLIF-CACLFinfo",
     "subjectTitle": "CLIF-C ACLF",
     "subjectTagline": "Predicts mortality in acute-on-chronic liver failure.",
@@ -1649,7 +1649,7 @@
     "displayTagline": "Global Initiative for Obstructive Lung Disease: Stratifies levels of COPD and provides recommendation on treatment.",
     "keywordSummary": "Respiratory • Gp • Chest • SOB"
   },
-  "correctedqtinfopdf": {
+  "correctedqtinfo": {
     "pdf": "CORRECTEDQTinfo",
     "subjectTitle": "CORRECTED QT",
     "subjectTagline": "Corrects the QT interval for heart rate - QTc",
@@ -1664,7 +1664,7 @@
     "displayTagline": "Corrects the QT interval for heart rate - QTc.",
     "keywordSummary": "Cardiology • Arrhthmia • Chest • Heart"
   },
-  "correctedqtinfo": {
+  "correctedqtinfopdf": {
     "pdf": "CORRECTEDQTinfo",
     "subjectTitle": "CORRECTED QT",
     "subjectTagline": "Corrects the QT interval for heart rate - QTc",
@@ -1737,22 +1737,6 @@
     "displayTagline": "Crohn's Disease Activity Index: current severity of Crohn's disease.",
     "keywordSummary": "Gastroenterology • Abdomen • Inflammatory • Idb"
   },
-  "curb65infopdf": {
-    "pdf": "CURB-65info",
-    "subjectTitle": "CURB-65",
-    "subjectTagline": "Estimates mortality of community-acquired pneumonia",
-    "keywords": [
-      "Emergency",
-      "GP",
-      "Respiratory",
-      "Chest",
-      "SOB",
-      "LRTI"
-    ],
-    "displayTitle": "CURB-65",
-    "displayTagline": "Estimates mortality of community-acquired pneumonia.",
-    "keywordSummary": "Emergency • Gp • Respiratory • Chest"
-  },
   "curb65info": {
     "pdf": "CURB-65info",
     "subjectTitle": "CURB-65",
@@ -1769,17 +1753,21 @@
     "displayTagline": "Estimates mortality of community-acquired pneumonia.",
     "keywordSummary": "Emergency • Gp • Respiratory • Chest"
   },
-  "das28crpinfopdf": {
-    "pdf": "DAS28-CRPinfo",
-    "subjectTitle": "DAS28-CRP",
-    "subjectTagline": "Disease Activity Score-28 for Rheumatoid Arthritis with CRP",
+  "curb65infopdf": {
+    "pdf": "CURB-65info",
+    "subjectTitle": "CURB-65",
+    "subjectTagline": "Estimates mortality of community-acquired pneumonia",
     "keywords": [
-      "All",
-      "MSK"
+      "Emergency",
+      "GP",
+      "Respiratory",
+      "Chest",
+      "SOB",
+      "LRTI"
     ],
-    "displayTitle": "DAS28-CRP",
-    "displayTagline": "Disease Activity Score-28 for Rheumatoid Arthritis with CRP.",
-    "keywordSummary": "All • MSK"
+    "displayTitle": "CURB-65",
+    "displayTagline": "Estimates mortality of community-acquired pneumonia.",
+    "keywordSummary": "Emergency • Gp • Respiratory • Chest"
   },
   "das28crpinfo": {
     "pdf": "DAS28-CRPinfo",
@@ -1793,16 +1781,16 @@
     "displayTagline": "Disease Activity Score-28 for Rheumatoid Arthritis with CRP.",
     "keywordSummary": "All • MSK"
   },
-  "das28esrinfo": {
-    "pdf": "DAS28-ESRinfo",
-    "subjectTitle": "DAS28-ESR",
-    "subjectTagline": "Disease Activity Score-28 for Rheumatoid Arthritis with ESR",
+  "das28crpinfopdf": {
+    "pdf": "DAS28-CRPinfo",
+    "subjectTitle": "DAS28-CRP",
+    "subjectTagline": "Disease Activity Score-28 for Rheumatoid Arthritis with CRP",
     "keywords": [
       "All",
       "MSK"
     ],
-    "displayTitle": "DAS28-ESR",
-    "displayTagline": "Disease Activity Score-28 for Rheumatoid Arthritis with ESR.",
+    "displayTitle": "DAS28-CRP",
+    "displayTagline": "Disease Activity Score-28 for Rheumatoid Arthritis with CRP.",
     "keywordSummary": "All • MSK"
   },
   "das28esrinfopdf": {
@@ -1817,17 +1805,17 @@
     "displayTagline": "Disease Activity Score-28 for Rheumatoid Arthritis with ESR.",
     "keywordSummary": "All • MSK"
   },
-  "dashinfopdf": {
-    "pdf": "DASHinfo",
-    "subjectTitle": "DASH",
-    "subjectTagline": "Predicts likelihood of recurrent VTE after first VTE",
+  "das28esrinfo": {
+    "pdf": "DAS28-ESRinfo",
+    "subjectTitle": "DAS28-ESR",
+    "subjectTagline": "Disease Activity Score-28 for Rheumatoid Arthritis with ESR",
     "keywords": [
       "All",
-      "Haem"
+      "MSK"
     ],
-    "displayTitle": "DASH",
-    "displayTagline": "Predicts likelihood of recurrent VTE after first VTE.",
-    "keywordSummary": "All • Haem"
+    "displayTitle": "DAS28-ESR",
+    "displayTagline": "Disease Activity Score-28 for Rheumatoid Arthritis with ESR.",
+    "keywordSummary": "All • MSK"
   },
   "dashinfo": {
     "pdf": "DASHinfo",
@@ -1841,7 +1829,19 @@
     "displayTagline": "Predicts likelihood of recurrent VTE after first VTE.",
     "keywordSummary": "All • Haem"
   },
-  "duainfo": {
+  "dashinfopdf": {
+    "pdf": "DASHinfo",
+    "subjectTitle": "DASH",
+    "subjectTagline": "Predicts likelihood of recurrent VTE after first VTE",
+    "keywords": [
+      "All",
+      "Haem"
+    ],
+    "displayTitle": "DASH",
+    "displayTagline": "Predicts likelihood of recurrent VTE after first VTE.",
+    "keywordSummary": "All • Haem"
+  },
+  "duainfopdf": {
     "pdf": "DUAinfo",
     "subjectTitle": "DUA CLASSIFICATION",
     "subjectTagline": "Dua classification of ocular chemical injuries",
@@ -1853,7 +1853,7 @@
     "displayTagline": "Dua classification of ocular chemical injuries.",
     "keywordSummary": "All • Ophth"
   },
-  "duainfopdf": {
+  "duainfo": {
     "pdf": "DUAinfo",
     "subjectTitle": "DUA CLASSIFICATION",
     "subjectTagline": "Dua classification of ocular chemical injuries",
@@ -1925,19 +1925,6 @@
     "displayTagline": "Forrest Classification of Upper GI Bleeding: severity based on endoscopic finding.",
     "keywordSummary": "Gastroenterology • Surgery • General • Surgery"
   },
-  "framinghamriskscoreinfo": {
-    "pdf": "FRAMINGHAMRISKSCOREinfo",
-    "subjectTitle": "$$VOID$$FRAMINGHAM RISK SCORE",
-    "subjectTagline": "Estimates 10-year risk of heart attack",
-    "keywords": [
-      "All",
-      "Cardio",
-      "GP"
-    ],
-    "displayTitle": "$$VOID$$FRAMINGHAM RISK SCORE",
-    "displayTagline": "Estimates 10-year risk of heart attack.",
-    "keywordSummary": "All • Cardio • Gp"
-  },
   "framinghamriskscoreinfopdf": {
     "pdf": "FRAMINGHAMRISKSCOREinfo",
     "subjectTitle": "$$VOID$$FRAMINGHAM RISK SCORE",
@@ -1951,20 +1938,18 @@
     "displayTagline": "Estimates 10-year risk of heart attack.",
     "keywordSummary": "All • Cardio • Gp"
   },
-  "feverpaininfo": {
-    "pdf": "FeverPAINinfo",
-    "subjectTitle": "FeverPAIN SCORE",
-    "subjectTagline": "Estimates probability that acute pharyngitis is streptococcal in nature",
+  "framinghamriskscoreinfo": {
+    "pdf": "FRAMINGHAMRISKSCOREinfo",
+    "subjectTitle": "$$VOID$$FRAMINGHAM RISK SCORE",
+    "subjectTagline": "Estimates 10-year risk of heart attack",
     "keywords": [
-      "GP",
-      "ENT",
-      "Otorhinolaryngology",
-      "throat",
-      "tonsillitis"
+      "All",
+      "Cardio",
+      "GP"
     ],
-    "displayTitle": "FeverPAIN SCORE",
-    "displayTagline": "Estimates probability that acute pharyngitis is streptococcal in nature.",
-    "keywordSummary": "Gp • ENT • Otorhinolaryngology • Throat"
+    "displayTitle": "$$VOID$$FRAMINGHAM RISK SCORE",
+    "displayTagline": "Estimates 10-year risk of heart attack.",
+    "keywordSummary": "All • Cardio • Gp"
   },
   "feverpaininfopdf": {
     "pdf": "FeverPAINinfo",
@@ -1981,21 +1966,20 @@
     "displayTagline": "Estimates probability that acute pharyngitis is streptococcal in nature.",
     "keywordSummary": "Gp • ENT • Otorhinolaryngology • Throat"
   },
-  "freewaterdeficitinfo": {
-    "pdf": "FREEWATERDEFICITinfo",
-    "subjectTitle": "FREE WATER DEFICIT",
-    "subjectTagline": "Calculates free water deficit in hypernatremia by estimated total body water",
+  "feverpaininfo": {
+    "pdf": "FeverPAINinfo",
+    "subjectTitle": "FeverPAIN SCORE",
+    "subjectTagline": "Estimates probability that acute pharyngitis is streptococcal in nature",
     "keywords": [
-      "Critical",
-      "Care",
-      "ITU",
-      "Intensive",
-      "Care",
-      "Endocrinology"
+      "GP",
+      "ENT",
+      "Otorhinolaryngology",
+      "throat",
+      "tonsillitis"
     ],
-    "displayTitle": "FREE WATER DEFICIT",
-    "displayTagline": "Calculates free water deficit in hypernatremia by estimated total body water.",
-    "keywordSummary": "Critical • Care • Itu • Intensive"
+    "displayTitle": "FeverPAIN SCORE",
+    "displayTagline": "Estimates probability that acute pharyngitis is streptococcal in nature.",
+    "keywordSummary": "Gp • ENT • Otorhinolaryngology • Throat"
   },
   "freewaterdeficitinfopdf": {
     "pdf": "FREEWATERDEFICITinfo",
@@ -2013,7 +1997,23 @@
     "displayTagline": "Calculates free water deficit in hypernatremia by estimated total body water.",
     "keywordSummary": "Critical • Care • Itu • Intensive"
   },
-  "gad7info": {
+  "freewaterdeficitinfo": {
+    "pdf": "FREEWATERDEFICITinfo",
+    "subjectTitle": "FREE WATER DEFICIT",
+    "subjectTagline": "Calculates free water deficit in hypernatremia by estimated total body water",
+    "keywords": [
+      "Critical",
+      "Care",
+      "ITU",
+      "Intensive",
+      "Care",
+      "Endocrinology"
+    ],
+    "displayTitle": "FREE WATER DEFICIT",
+    "displayTagline": "Calculates free water deficit in hypernatremia by estimated total body water.",
+    "keywordSummary": "Critical • Care • Itu • Intensive"
+  },
+  "gad7infopdf": {
     "pdf": "GAD-7info",
     "subjectTitle": "GAD-7",
     "subjectTagline": "General Anxiety Disorder-7: measures severity of anxiety",
@@ -2026,7 +2026,7 @@
     "displayTagline": "General Anxiety Disorder-7: measures severity of anxiety.",
     "keywordSummary": "Gp • Psychiatry • Mental"
   },
-  "gad7infopdf": {
+  "gad7info": {
     "pdf": "GAD-7info",
     "subjectTitle": "GAD-7",
     "subjectTagline": "General Anxiety Disorder-7: measures severity of anxiety",
@@ -2071,7 +2071,7 @@
     "displayTagline": "Risk stratification of patients with potential GCA.",
     "keywordSummary": "Ophthalmology • Orthopaedics • Headache • Pmr"
   },
-  "gcsinfo": {
+  "gcsinfopdf": {
     "pdf": "GCSinfo",
     "subjectTitle": "GCS",
     "subjectTagline": "Coma severity based on Eye, Verbal, and Motor criteria",
@@ -2090,7 +2090,7 @@
     "displayTagline": "Coma severity based on Eye, Verbal, and Motor criteria.",
     "keywordSummary": "Critical • Care • Itu • Intensive"
   },
-  "gcsinfopdf": {
+  "gcsinfo": {
     "pdf": "GCSinfo",
     "subjectTitle": "GCS",
     "subjectTagline": "Coma severity based on Eye, Verbal, and Motor criteria",
@@ -2211,23 +2211,6 @@
     "displayTagline": "Stratifies upper GI bleeding patient risk status.",
     "keywordSummary": "Emergency • Gastroenterology • Surgery • General"
   },
-  "glasgowimrieinfo": {
-    "pdf": "GLASGOW-IMRIEinfo",
-    "subjectTitle": "GLASGOW-IMRIE",
-    "subjectTagline": "Determines severity of acute pancreatitis",
-    "keywords": [
-      "Emergency",
-      "Gastroenterology",
-      "Surgery",
-      "General",
-      "Surgery",
-      "Abdomen",
-      "pancreas"
-    ],
-    "displayTitle": "GLASGOW-IMRIE",
-    "displayTagline": "Determines severity of acute pancreatitis.",
-    "keywordSummary": "Emergency • Gastroenterology • Surgery • General"
-  },
   "glasgowimrieinfopdf": {
     "pdf": "GLASGOW-IMRIEinfo",
     "subjectTitle": "GLASGOW-IMRIE",
@@ -2245,18 +2228,22 @@
     "displayTagline": "Determines severity of acute pancreatitis.",
     "keywordSummary": "Emergency • Gastroenterology • Surgery • General"
   },
-  "graceacsinfopdf": {
-    "pdf": "GRACEACSinfo",
-    "subjectTitle": "$$VOID$$GRACE ACS",
-    "subjectTagline": "Estimates admission to 6 month mortality for patients with ACS",
+  "glasgowimrieinfo": {
+    "pdf": "GLASGOW-IMRIEinfo",
+    "subjectTitle": "GLASGOW-IMRIE",
+    "subjectTagline": "Determines severity of acute pancreatitis",
     "keywords": [
-      "All",
-      "Cardio",
-      "Emergency"
+      "Emergency",
+      "Gastroenterology",
+      "Surgery",
+      "General",
+      "Surgery",
+      "Abdomen",
+      "pancreas"
     ],
-    "displayTitle": "$$VOID$$GRACE ACS",
-    "displayTagline": "Estimates admission to 6 month mortality for patients with ACS.",
-    "keywordSummary": "All • Cardio • Emergency"
+    "displayTitle": "GLASGOW-IMRIE",
+    "displayTagline": "Determines severity of acute pancreatitis.",
+    "keywordSummary": "Emergency • Gastroenterology • Surgery • General"
   },
   "graceacsinfo": {
     "pdf": "GRACEACSinfo",
@@ -2271,7 +2258,20 @@
     "displayTagline": "Estimates admission to 6 month mortality for patients with ACS.",
     "keywordSummary": "All • Cardio • Emergency"
   },
-  "glasgowalcoholichepatitisinfo": {
+  "graceacsinfopdf": {
+    "pdf": "GRACEACSinfo",
+    "subjectTitle": "$$VOID$$GRACE ACS",
+    "subjectTagline": "Estimates admission to 6 month mortality for patients with ACS",
+    "keywords": [
+      "All",
+      "Cardio",
+      "Emergency"
+    ],
+    "displayTitle": "$$VOID$$GRACE ACS",
+    "displayTagline": "Estimates admission to 6 month mortality for patients with ACS.",
+    "keywordSummary": "All • Cardio • Emergency"
+  },
+  "glasgowalcoholichepatitisinfopdf": {
     "pdf": "GLASGOWALCOHOLICHEPATITISinfo",
     "subjectTitle": "GLASGOW ALCOHOLIC HEPATITIS",
     "subjectTagline": "Predicts mortality in patients with alcoholic hepatitis by lab results and age",
@@ -2285,7 +2285,7 @@
     "displayTagline": "Predicts mortality in patients with alcoholic hepatitis by lab results and age.",
     "keywordSummary": "Gastroenterology • Liver • Hepatology • Hepatic"
   },
-  "glasgowalcoholichepatitisinfopdf": {
+  "glasgowalcoholichepatitisinfo": {
     "pdf": "GLASGOWALCOHOLICHEPATITISinfo",
     "subjectTitle": "GLASGOW ALCOHOLIC HEPATITIS",
     "subjectTagline": "Predicts mortality in patients with alcoholic hepatitis by lab results and age",
@@ -2325,21 +2325,6 @@
     "displayTagline": "Assesses level of anxiety based on clinical questions.",
     "keywordSummary": "Psychiatry • Gp • Mental"
   },
-  "harveybradshawinfo": {
-    "pdf": "HARVEY-BRADSHAWinfo",
-    "subjectTitle": "HARVEY-BRADSHAW",
-    "subjectTagline": "Index stratifies severity of Crohn's disease",
-    "keywords": [
-      "Gastroenterology",
-      "Abdomen",
-      "IBD",
-      "bowel",
-      "inflammatory"
-    ],
-    "displayTitle": "HARVEY-BRADSHAW",
-    "displayTagline": "Index stratifies severity of Crohn's disease.",
-    "keywordSummary": "Gastroenterology • Abdomen • IBD • Bowel"
-  },
   "harveybradshawinfopdf": {
     "pdf": "HARVEY-BRADSHAWinfo",
     "subjectTitle": "HARVEY-BRADSHAW",
@@ -2355,7 +2340,22 @@
     "displayTagline": "Index stratifies severity of Crohn's disease.",
     "keywordSummary": "Gastroenterology • Abdomen • IBD • Bowel"
   },
-  "hasbledscoreinfo": {
+  "harveybradshawinfo": {
+    "pdf": "HARVEY-BRADSHAWinfo",
+    "subjectTitle": "HARVEY-BRADSHAW",
+    "subjectTagline": "Index stratifies severity of Crohn's disease",
+    "keywords": [
+      "Gastroenterology",
+      "Abdomen",
+      "IBD",
+      "bowel",
+      "inflammatory"
+    ],
+    "displayTitle": "HARVEY-BRADSHAW",
+    "displayTagline": "Index stratifies severity of Crohn's disease.",
+    "keywordSummary": "Gastroenterology • Abdomen • IBD • Bowel"
+  },
+  "hasbledscoreinfopdf": {
     "pdf": "HAS-BLEDScoreinfo",
     "subjectTitle": "HAS-BLED Score",
     "subjectTagline": "Estimates risk of major bleeding for patients on anticoagulation",
@@ -2368,7 +2368,7 @@
     "displayTagline": "Estimates risk of major bleeding for patients on anticoagulation.",
     "keywordSummary": "Cardiology • Gp • Haemorrhage"
   },
-  "hasbledscoreinfopdf": {
+  "hasbledscoreinfo": {
     "pdf": "HAS-BLEDScoreinfo",
     "subjectTitle": "HAS-BLED Score",
     "subjectTagline": "Estimates risk of major bleeding for patients on anticoagulation",
@@ -2441,7 +2441,7 @@
     "displayTagline": "Calculates a corrected calcium level for patients with hypoalbuminemia.",
     "keywordSummary": "Critical • Care • Itu • Intensive"
   },
-  "hyponatraemianadeficitadultinfopdf": {
+  "hyponatraemianadeficitadultinfo": {
     "pdf": "HYPONATRAEMIANADEFICIT-ADULTinfo",
     "subjectTitle": "HYPONATRAEMIA NA DEFICIT - ADULT",
     "subjectTagline": "Calculates sodium quantity deficit in hyponatraemia for adults",
@@ -2454,7 +2454,7 @@
     "displayTagline": "Calculates sodium quantity deficit in hyponatraemia for adults.",
     "keywordSummary": "Endocrinology • Electrolytes • Sodium"
   },
-  "hyponatraemianadeficitadultinfo": {
+  "hyponatraemianadeficitadultinfopdf": {
     "pdf": "HYPONATRAEMIANADEFICIT-ADULTinfo",
     "subjectTitle": "HYPONATRAEMIA NA DEFICIT - ADULT",
     "subjectTagline": "Calculates sodium quantity deficit in hyponatraemia for adults",
@@ -2493,7 +2493,7 @@
     "displayTagline": "Calculates sodium quantity deficit in hyponatraemia for children.",
     "keywordSummary": "All • Endo • Paeds"
   },
-  "idealbodyweightinfopdf": {
+  "idealbodyweightinfo": {
     "pdf": "IDEALBODYWEIGHTinfo",
     "subjectTitle": "BODY WEIGHT - IDEAL",
     "subjectTagline": "Calculates ideal body weight using Devine formula",
@@ -2510,7 +2510,7 @@
     "displayTagline": "Calculates ideal body weight using Devine formula.",
     "keywordSummary": "Critical • Care • Itu • Intensive"
   },
-  "idealbodyweightinfo": {
+  "idealbodyweightinfopdf": {
     "pdf": "IDEALBODYWEIGHTinfo",
     "subjectTitle": "BODY WEIGHT - IDEAL",
     "subjectTagline": "Calculates ideal body weight using Devine formula",
@@ -2745,20 +2745,6 @@
     "displayTagline": "Predicts mortality in patients with Alcoholic Hepatitis not responding to steroid therapy.",
     "keywordSummary": "Gastroenterology • Liver • Hepatology • Hepatic"
   },
-  "lrinecinfo": {
-    "pdf": "LRINECinfo",
-    "subjectTitle": "LRINEC SCORE",
-    "subjectTagline": "Predicts likelihood of necrotising fasciitis",
-    "keywords": [
-      "Emergency",
-      "Orthopaedics",
-      "sepsis",
-      "infection"
-    ],
-    "displayTitle": "LRINEC SCORE",
-    "displayTagline": "Predicts likelihood of necrotising fasciitis.",
-    "keywordSummary": "Emergency • Orthopaedics • Sepsis • Infection"
-  },
   "lrinecinfopdf": {
     "pdf": "LRINECinfo",
     "subjectTitle": "LRINEC SCORE",
@@ -2773,7 +2759,21 @@
     "displayTagline": "Predicts likelihood of necrotising fasciitis.",
     "keywordSummary": "Emergency • Orthopaedics • Sepsis • Infection"
   },
-  "maddreysinfopdf": {
+  "lrinecinfo": {
+    "pdf": "LRINECinfo",
+    "subjectTitle": "LRINEC SCORE",
+    "subjectTagline": "Predicts likelihood of necrotising fasciitis",
+    "keywords": [
+      "Emergency",
+      "Orthopaedics",
+      "sepsis",
+      "infection"
+    ],
+    "displayTitle": "LRINEC SCORE",
+    "displayTagline": "Predicts likelihood of necrotising fasciitis.",
+    "keywordSummary": "Emergency • Orthopaedics • Sepsis • Infection"
+  },
+  "maddreysinfo": {
     "pdf": "MADDREY'Sinfo",
     "subjectTitle": "MADDREY'S",
     "subjectTagline": "Maddrey's Discriminant Function for Alcoholic Hepatitis: patients with alcoholic hepatitis that may have a poor prognosis and benefit from steroid treatment",
@@ -2787,7 +2787,7 @@
     "displayTagline": "Maddrey's Discriminant Function for Alcoholic Hepatitis: patients with alcoholic hepatitis that may have a poor prognosis and benefit from steroid treatment.",
     "keywordSummary": "Gastroenterology • Hepatic • Hepatology • Liver"
   },
-  "maddreysinfo": {
+  "maddreysinfopdf": {
     "pdf": "MADDREY'Sinfo",
     "subjectTitle": "MADDREY'S",
     "subjectTagline": "Maddrey's Discriminant Function for Alcoholic Hepatitis: patients with alcoholic hepatitis that may have a poor prognosis and benefit from steroid treatment",
@@ -2827,7 +2827,7 @@
     "displayTagline": "Screens for depression and rates severity.",
     "keywordSummary": "Psychiatry • Gp • Mental"
   },
-  "mapinfo": {
+  "mapinfopdf": {
     "pdf": "MAPinfo",
     "subjectTitle": "MAP",
     "subjectTagline": "Calculates mean arterial pressure",
@@ -2845,7 +2845,7 @@
     "displayTagline": "Calculates mean arterial pressure.",
     "keywordSummary": "Cardiology • Critical • Care • Itu"
   },
-  "mapinfopdf": {
+  "mapinfo": {
     "pdf": "MAPinfo",
     "subjectTitle": "MAP",
     "subjectTagline": "Calculates mean arterial pressure",
@@ -2893,7 +2893,7 @@
     "displayTagline": "Disease Activity Index (DAI) for Ulcerative Colitis: Assesses severity.",
     "keywordSummary": "Gastroenterology • Abdomen • IBD • Inflammatory"
   },
-  "meldnainfo": {
+  "meldnainfopdf": {
     "pdf": "MELD-NAinfo",
     "subjectTitle": "MELD-NA",
     "subjectTagline": "Quantifies end-stage liver disease for transplant planning with sodium used by UNOS/OPTN",
@@ -2908,7 +2908,7 @@
     "displayTagline": "Quantifies end-stage liver disease for transplant planning with sodium used by UNOS/OPTN.",
     "keywordSummary": "Gastroenterology • Abdomen • Liver • Hepatology"
   },
-  "meldnainfopdf": {
+  "meldnainfo": {
     "pdf": "MELD-NAinfo",
     "subjectTitle": "MELD-NA",
     "subjectTagline": "Quantifies end-stage liver disease for transplant planning with sodium used by UNOS/OPTN",
@@ -2957,20 +2957,6 @@
     "displayTagline": "Determines the degree of illness of a patient.",
     "keywordSummary": "Critical • Care • Itu • Intensive"
   },
-  "bishopscoremodifiedinfo": {
-    "pdf": "BISHOPSCOREMODIFIEDinfo",
-    "subjectTitle": "BISHOP SCORE - MODIFIED",
-    "subjectTagline": "Predicts likelihood of successful vaginal delivery with additional parameters to the original Bishop score",
-    "keywords": [
-      "Obstetrics",
-      "Gynaecology",
-      "pregnancy",
-      "birth"
-    ],
-    "displayTitle": "BISHOP SCORE - MODIFIED",
-    "displayTagline": "Predicts likelihood of successful vaginal delivery with additional parameters to the original Bishop score.",
-    "keywordSummary": "Obstetrics • Gynaecology • Pregnancy • Birth"
-  },
   "bishopscoremodifiedinfopdf": {
     "pdf": "BISHOPSCOREMODIFIEDinfo",
     "subjectTitle": "BISHOP SCORE - MODIFIED",
@@ -2985,17 +2971,19 @@
     "displayTagline": "Predicts likelihood of successful vaginal delivery with additional parameters to the original Bishop score.",
     "keywordSummary": "Obstetrics • Gynaecology • Pregnancy • Birth"
   },
-  "molesinfopdf": {
-    "pdf": "MOLESinfo",
-    "subjectTitle": "MOLES SCORE",
-    "subjectTagline": "Estimate risk of melanoma from choroidal naevi features",
+  "bishopscoremodifiedinfo": {
+    "pdf": "BISHOPSCOREMODIFIEDinfo",
+    "subjectTitle": "BISHOP SCORE - MODIFIED",
+    "subjectTagline": "Predicts likelihood of successful vaginal delivery with additional parameters to the original Bishop score",
     "keywords": [
-      "All",
-      "Ophth"
+      "Obstetrics",
+      "Gynaecology",
+      "pregnancy",
+      "birth"
     ],
-    "displayTitle": "MOLES SCORE",
-    "displayTagline": "Estimate risk of melanoma from choroidal naevi features.",
-    "keywordSummary": "All • Ophth"
+    "displayTitle": "BISHOP SCORE - MODIFIED",
+    "displayTagline": "Predicts likelihood of successful vaginal delivery with additional parameters to the original Bishop score.",
+    "keywordSummary": "Obstetrics • Gynaecology • Pregnancy • Birth"
   },
   "molesinfo": {
     "pdf": "MOLESinfo",
@@ -3009,26 +2997,17 @@
     "displayTagline": "Estimate risk of melanoma from choroidal naevi features.",
     "keywordSummary": "All • Ophth"
   },
-  "mustinfopdf": {
-    "pdf": "MUSTinfo",
-    "subjectTitle": "MUST",
-    "subjectTagline": "Malnutrition Universal Screening Tool: identifies malnourished / risk of malnutrition",
+  "molesinfopdf": {
+    "pdf": "MOLESinfo",
+    "subjectTitle": "MOLES SCORE",
+    "subjectTagline": "Estimate risk of melanoma from choroidal naevi features",
     "keywords": [
-      "Critical",
-      "Care",
-      "ITU",
-      "Intensive",
-      "Care",
-      "Gastroenterology",
-      "Surgery",
-      "General",
-      "Surgery",
-      "Geriatrics",
-      "refeeding"
+      "All",
+      "Ophth"
     ],
-    "displayTitle": "MUST",
-    "displayTagline": "Malnutrition Universal Screening Tool: identifies malnourished / risk of malnutrition.",
-    "keywordSummary": "Critical • Care • Itu • Intensive"
+    "displayTitle": "MOLES SCORE",
+    "displayTagline": "Estimate risk of melanoma from choroidal naevi features.",
+    "keywordSummary": "All • Ophth"
   },
   "mustinfo": {
     "pdf": "MUSTinfo",
@@ -3051,17 +3030,26 @@
     "displayTagline": "Malnutrition Universal Screening Tool: identifies malnourished / risk of malnutrition.",
     "keywordSummary": "Critical • Care • Itu • Intensive"
   },
-  "nafldfibrosisscoreinfopdf": {
-    "pdf": "NAFLDFIBROSISSCOREinfo",
-    "subjectTitle": "NAFLD FIBROSIS SCORE",
-    "subjectTagline": "Estimates the degree of hepatic fibrosis based on several laboratory tests",
+  "mustinfopdf": {
+    "pdf": "MUSTinfo",
+    "subjectTitle": "MUST",
+    "subjectTagline": "Malnutrition Universal Screening Tool: identifies malnourished / risk of malnutrition",
     "keywords": [
-      "All",
-      "Gastro"
+      "Critical",
+      "Care",
+      "ITU",
+      "Intensive",
+      "Care",
+      "Gastroenterology",
+      "Surgery",
+      "General",
+      "Surgery",
+      "Geriatrics",
+      "refeeding"
     ],
-    "displayTitle": "NAFLD FIBROSIS SCORE",
-    "displayTagline": "Estimates the degree of hepatic fibrosis based on several laboratory tests.",
-    "keywordSummary": "All • Gastro"
+    "displayTitle": "MUST",
+    "displayTagline": "Malnutrition Universal Screening Tool: identifies malnourished / risk of malnutrition.",
+    "keywordSummary": "Critical • Care • Itu • Intensive"
   },
   "nafldfibrosisscoreinfo": {
     "pdf": "NAFLDFIBROSISSCOREinfo",
@@ -3075,7 +3063,19 @@
     "displayTagline": "Estimates the degree of hepatic fibrosis based on several laboratory tests.",
     "keywordSummary": "All • Gastro"
   },
-  "news2info": {
+  "nafldfibrosisscoreinfopdf": {
+    "pdf": "NAFLDFIBROSISSCOREinfo",
+    "subjectTitle": "NAFLD FIBROSIS SCORE",
+    "subjectTagline": "Estimates the degree of hepatic fibrosis based on several laboratory tests",
+    "keywords": [
+      "All",
+      "Gastro"
+    ],
+    "displayTitle": "NAFLD FIBROSIS SCORE",
+    "displayTagline": "Estimates the degree of hepatic fibrosis based on several laboratory tests.",
+    "keywordSummary": "All • Gastro"
+  },
+  "news2infopdf": {
     "pdf": "NEWS2info",
     "subjectTitle": "NEWS2",
     "subjectTagline": "Determines the degree of illness and prompts critical care intervention",
@@ -3094,7 +3094,7 @@
     "displayTagline": "Determines the degree of illness and prompts critical care intervention.",
     "keywordSummary": "Critical • Care • Itu • Intensive"
   },
-  "news2infopdf": {
+  "news2info": {
     "pdf": "NEWS2info",
     "subjectTitle": "NEWS2",
     "subjectTagline": "Determines the degree of illness and prompts critical care intervention",
@@ -3163,18 +3163,6 @@
     "displayTagline": "New York Heart Association Functional Classification for Heart Failure. Stratifies severity by symptoms.",
     "keywordSummary": "Cardiology • Heart"
   },
-  "ohtsinfo": {
-    "pdf": "OHTSinfo",
-    "subjectTitle": "OHTS CALCULATOR",
-    "subjectTagline": "Ocular Hypertension Treatment Study: Identifies patients that may benefit from intraocular pressure lowering therapy",
-    "keywords": [
-      "All",
-      "Ophth"
-    ],
-    "displayTitle": "OHTS CALCULATOR",
-    "displayTagline": "Ocular Hypertension Treatment Study: Identifies patients that may benefit from intraocular pressure lowering therapy.",
-    "keywordSummary": "All • Ophth"
-  },
   "ohtsinfopdf": {
     "pdf": "OHTSinfo",
     "subjectTitle": "OHTS CALCULATOR",
@@ -3187,7 +3175,19 @@
     "displayTagline": "Ocular Hypertension Treatment Study: Identifies patients that may benefit from intraocular pressure lowering therapy.",
     "keywordSummary": "All • Ophth"
   },
-  "ottawaankleinfopdf": {
+  "ohtsinfo": {
+    "pdf": "OHTSinfo",
+    "subjectTitle": "OHTS CALCULATOR",
+    "subjectTagline": "Ocular Hypertension Treatment Study: Identifies patients that may benefit from intraocular pressure lowering therapy",
+    "keywords": [
+      "All",
+      "Ophth"
+    ],
+    "displayTitle": "OHTS CALCULATOR",
+    "displayTagline": "Ocular Hypertension Treatment Study: Identifies patients that may benefit from intraocular pressure lowering therapy.",
+    "keywordSummary": "All • Ophth"
+  },
+  "ottawaankleinfo": {
     "pdf": "OTTAWAANKLEinfo",
     "subjectTitle": "OTTAWA ANKLE RULE",
     "subjectTagline": "Criteria for ankle / foot trauma injuries to determine if plain radiographs are indicated",
@@ -3202,7 +3202,7 @@
     "displayTagline": "Criteria for ankle / foot trauma injuries to determine if plain radiographs are indicated.",
     "keywordSummary": "Emergency • Orthopaedics • Joint • Ankle"
   },
-  "ottawaankleinfo": {
+  "ottawaankleinfopdf": {
     "pdf": "OTTAWAANKLEinfo",
     "subjectTitle": "OTTAWA ANKLE RULE",
     "subjectTagline": "Criteria for ankle / foot trauma injuries to determine if plain radiographs are indicated",
@@ -3309,7 +3309,7 @@
     "displayTagline": "GCS scoring for children ≤2 years of age.",
     "keywordSummary": "All • Criticalcare • Emergency • Neuro"
   },
-  "painadvanceddementiainfopdf": {
+  "painadvanceddementiainfo": {
     "pdf": "PAINADVANCEDDEMENTIAinfo",
     "subjectTitle": "PAINAD SCALE",
     "subjectTagline": "Assesses pain in patients with advanced dementia",
@@ -3321,7 +3321,7 @@
     "displayTagline": "Assesses pain in patients with advanced dementia.",
     "keywordSummary": "Geriatrics • Psychiatry"
   },
-  "painadvanceddementiainfo": {
+  "painadvanceddementiainfopdf": {
     "pdf": "PAINADVANCEDDEMENTIAinfo",
     "subjectTitle": "PAINAD SCALE",
     "subjectTagline": "Assesses pain in patients with advanced dementia",
@@ -3387,19 +3387,6 @@
     "displayTagline": "Determines severity of paediatric asthma based on physical examination.",
     "keywordSummary": "All • Paeds • Resp"
   },
-  "pcdaiinfopdf": {
-    "pdf": "PCDAIinfo",
-    "subjectTitle": "PCDAI",
-    "subjectTagline": "Paediatric Crohn's Disease Activity Index: current severity of Crohn's disease",
-    "keywords": [
-      "All",
-      "Gastro",
-      "Paeds"
-    ],
-    "displayTitle": "PCDAI",
-    "displayTagline": "Paediatric Crohn's Disease Activity Index: current severity of Crohn's disease.",
-    "keywordSummary": "All • Gastro • Paeds"
-  },
   "pcdaiinfo": {
     "pdf": "PCDAIinfo",
     "subjectTitle": "PCDAI",
@@ -3413,7 +3400,20 @@
     "displayTagline": "Paediatric Crohn's Disease Activity Index: current severity of Crohn's disease.",
     "keywordSummary": "All • Gastro • Paeds"
   },
-  "pedisinfopdf": {
+  "pcdaiinfopdf": {
+    "pdf": "PCDAIinfo",
+    "subjectTitle": "PCDAI",
+    "subjectTagline": "Paediatric Crohn's Disease Activity Index: current severity of Crohn's disease",
+    "keywords": [
+      "All",
+      "Gastro",
+      "Paeds"
+    ],
+    "displayTitle": "PCDAI",
+    "displayTagline": "Paediatric Crohn's Disease Activity Index: current severity of Crohn's disease.",
+    "keywordSummary": "All • Gastro • Paeds"
+  },
+  "pedisinfo": {
     "pdf": "PEDISinfo",
     "subjectTitle": "PEDIS",
     "subjectTagline": "Predicts likelihood of adverse outcomes in diabetic foot ulcers",
@@ -3427,7 +3427,7 @@
     "displayTagline": "Predicts likelihood of adverse outcomes in diabetic foot ulcers.",
     "keywordSummary": "Endocrinology • Orthopaedics • Diabetes • Ulcer"
   },
-  "pedisinfo": {
+  "pedisinfopdf": {
     "pdf": "PEDISinfo",
     "subjectTitle": "PEDIS",
     "subjectTagline": "Predicts likelihood of adverse outcomes in diabetic foot ulcers",
@@ -3495,7 +3495,7 @@
     "displayTagline": "Screening tool to diagnose depression and quantify severity.",
     "keywordSummary": "Gp • Psychiatry • Anxiety"
   },
-  "packyearscalcinfopdf": {
+  "packyearscalcinfo": {
     "pdf": "PackYearsCalcinfo",
     "subjectTitle": "PACK YEARS CALC",
     "subjectTagline": "Calculates pack years in patients with any smoking history.",
@@ -3510,7 +3510,7 @@
     "displayTagline": "Calculates pack years in patients with any smoking history.",
     "keywordSummary": "Gp • Respiratory • Cardiology • Lung"
   },
-  "packyearscalcinfo": {
+  "packyearscalcinfopdf": {
     "pdf": "PackYearsCalcinfo",
     "subjectTitle": "PACK YEARS CALC",
     "subjectTagline": "Calculates pack years in patients with any smoking history.",
@@ -3599,23 +3599,6 @@
     "displayTagline": "Predicts risk of recurrent instability after primary patellar dislocation.",
     "keywordSummary": "All • MSK"
   },
-  "rockallpostendoscopyinfo": {
-    "pdf": "ROCKALLPOST-ENDOSCOPYinfo",
-    "subjectTitle": "ROCKALL POST-ENDOSCOPY",
-    "subjectTagline": "Determines severity of GI bleeding, post endoscopy",
-    "keywords": [
-      "Emergency",
-      "Gastroenterology",
-      "Surgery",
-      "General",
-      "Surgery",
-      "haemorrhage",
-      "UGIB"
-    ],
-    "displayTitle": "ROCKALL POST-ENDOSCOPY",
-    "displayTagline": "Determines severity of GI bleeding, post endoscopy.",
-    "keywordSummary": "Emergency • Gastroenterology • Surgery • General"
-  },
   "rockallpostendoscopyinfopdf": {
     "pdf": "ROCKALLPOST-ENDOSCOPYinfo",
     "subjectTitle": "ROCKALL POST-ENDOSCOPY",
@@ -3633,10 +3616,10 @@
     "displayTagline": "Determines severity of GI bleeding, post endoscopy.",
     "keywordSummary": "Emergency • Gastroenterology • Surgery • General"
   },
-  "rockallpreendoscopyinfo": {
-    "pdf": "ROCKALLPRE-ENDOSCOPYinfo",
-    "subjectTitle": "ROCKALL PRE-ENDOSCOPY",
-    "subjectTagline": "Determines severity of GI bleeding, prior to endoscopy",
+  "rockallpostendoscopyinfo": {
+    "pdf": "ROCKALLPOST-ENDOSCOPYinfo",
+    "subjectTitle": "ROCKALL POST-ENDOSCOPY",
+    "subjectTagline": "Determines severity of GI bleeding, post endoscopy",
     "keywords": [
       "Emergency",
       "Gastroenterology",
@@ -3646,8 +3629,8 @@
       "haemorrhage",
       "UGIB"
     ],
-    "displayTitle": "ROCKALL PRE-ENDOSCOPY",
-    "displayTagline": "Determines severity of GI bleeding, prior to endoscopy.",
+    "displayTitle": "ROCKALL POST-ENDOSCOPY",
+    "displayTagline": "Determines severity of GI bleeding, post endoscopy.",
     "keywordSummary": "Emergency • Gastroenterology • Surgery • General"
   },
   "rockallpreendoscopyinfopdf": {
@@ -3667,20 +3650,22 @@
     "displayTagline": "Determines severity of GI bleeding, prior to endoscopy.",
     "keywordSummary": "Emergency • Gastroenterology • Surgery • General"
   },
-  "roperhallinfopdf": {
-    "pdf": "ROPERHALLinfo",
-    "subjectTitle": "ROPER-HALL CLASSIFICATION",
-    "subjectTagline": "Roper-Hall classification of ocular chemical injuries",
+  "rockallpreendoscopyinfo": {
+    "pdf": "ROCKALLPRE-ENDOSCOPYinfo",
+    "subjectTitle": "ROCKALL PRE-ENDOSCOPY",
+    "subjectTagline": "Determines severity of GI bleeding, prior to endoscopy",
     "keywords": [
-      "Ophthalmology",
-      "chemical",
-      "eye",
-      "alkali",
-      "acid"
+      "Emergency",
+      "Gastroenterology",
+      "Surgery",
+      "General",
+      "Surgery",
+      "haemorrhage",
+      "UGIB"
     ],
-    "displayTitle": "ROPER-HALL CLASSIFICATION",
-    "displayTagline": "Roper-Hall classification of ocular chemical injuries.",
-    "keywordSummary": "Ophthalmology • Chemical • Eye • Alkali"
+    "displayTitle": "ROCKALL PRE-ENDOSCOPY",
+    "displayTagline": "Determines severity of GI bleeding, prior to endoscopy.",
+    "keywordSummary": "Emergency • Gastroenterology • Surgery • General"
   },
   "roperhallinfo": {
     "pdf": "ROPERHALLinfo",
@@ -3697,19 +3682,20 @@
     "displayTagline": "Roper-Hall classification of ocular chemical injuries.",
     "keywordSummary": "Ophthalmology • Chemical • Eye • Alkali"
   },
-  "romeivibsinfo": {
-    "pdf": "RomeIVIBSinfo",
-    "subjectTitle": "ROME IV IBS",
-    "subjectTagline": "Official Rome IV criteria for the diagnosis of irritable bowel syndrome",
+  "roperhallinfopdf": {
+    "pdf": "ROPERHALLinfo",
+    "subjectTitle": "ROPER-HALL CLASSIFICATION",
+    "subjectTagline": "Roper-Hall classification of ocular chemical injuries",
     "keywords": [
-      "Gastroenterology",
-      "GP",
-      "IBS",
-      "bowel"
+      "Ophthalmology",
+      "chemical",
+      "eye",
+      "alkali",
+      "acid"
     ],
-    "displayTitle": "ROME IV IBS",
-    "displayTagline": "Official Rome IV criteria for the diagnosis of irritable bowel syndrome.",
-    "keywordSummary": "Gastroenterology • Gp • IBS • Bowel"
+    "displayTitle": "ROPER-HALL CLASSIFICATION",
+    "displayTagline": "Roper-Hall classification of ocular chemical injuries.",
+    "keywordSummary": "Ophthalmology • Chemical • Eye • Alkali"
   },
   "romeivibsinfopdf": {
     "pdf": "RomeIVIBSinfo",
@@ -3725,22 +3711,19 @@
     "displayTagline": "Official Rome IV criteria for the diagnosis of irritable bowel syndrome.",
     "keywordSummary": "Gastroenterology • Gp • IBS • Bowel"
   },
-  "saaginfopdf": {
-    "pdf": "SAAGinfo",
-    "subjectTitle": "SAAG",
-    "subjectTagline": "Serum Ascites Albumin Gradient. Helps determine the possible underlying cause of ascites",
+  "romeivibsinfo": {
+    "pdf": "RomeIVIBSinfo",
+    "subjectTitle": "ROME IV IBS",
+    "subjectTagline": "Official Rome IV criteria for the diagnosis of irritable bowel syndrome",
     "keywords": [
       "Gastroenterology",
-      "liver",
-      "hepatology",
-      "hepatic",
-      "cirrhosis",
-      "ascites",
-      "ascitic"
+      "GP",
+      "IBS",
+      "bowel"
     ],
-    "displayTitle": "SAAG",
-    "displayTagline": "Serum Ascites Albumin Gradient. Helps determine the possible underlying cause of ascites.",
-    "keywordSummary": "Gastroenterology • Liver • Hepatology • Hepatic"
+    "displayTitle": "ROME IV IBS",
+    "displayTagline": "Official Rome IV criteria for the diagnosis of irritable bowel syndrome.",
+    "keywordSummary": "Gastroenterology • Gp • IBS • Bowel"
   },
   "saaginfo": {
     "pdf": "SAAGinfo",
@@ -3759,7 +3742,24 @@
     "displayTagline": "Serum Ascites Albumin Gradient. Helps determine the possible underlying cause of ascites.",
     "keywordSummary": "Gastroenterology • Liver • Hepatology • Hepatic"
   },
-  "sgarbossamodifiedinfopdf": {
+  "saaginfopdf": {
+    "pdf": "SAAGinfo",
+    "subjectTitle": "SAAG",
+    "subjectTagline": "Serum Ascites Albumin Gradient. Helps determine the possible underlying cause of ascites",
+    "keywords": [
+      "Gastroenterology",
+      "liver",
+      "hepatology",
+      "hepatic",
+      "cirrhosis",
+      "ascites",
+      "ascitic"
+    ],
+    "displayTitle": "SAAG",
+    "displayTagline": "Serum Ascites Albumin Gradient. Helps determine the possible underlying cause of ascites.",
+    "keywordSummary": "Gastroenterology • Liver • Hepatology • Hepatic"
+  },
+  "sgarbossamodifiedinfo": {
     "pdf": "SGARBOSSAMODIFIEDinfo",
     "subjectTitle": "SGARBOSSA MODIFIED",
     "subjectTagline": "Criteria to diagnose acute MI in patients with prior LBBB",
@@ -3776,7 +3776,7 @@
     "displayTagline": "Criteria to diagnose acute MI in patients with prior LBBB.",
     "keywordSummary": "Cardiology • Emergency • Gp • Acs"
   },
-  "sgarbossamodifiedinfo": {
+  "sgarbossamodifiedinfopdf": {
     "pdf": "SGARBOSSAMODIFIEDinfo",
     "subjectTitle": "SGARBOSSA MODIFIED",
     "subjectTagline": "Criteria to diagnose acute MI in patients with prior LBBB",
@@ -3891,25 +3891,6 @@
     "displayTagline": "Screens for obstructive sleep apnea.",
     "keywordSummary": "Gp • Respiratory • SOB • Sleep"
   },
-  "serumosmolalityinfo": {
-    "pdf": "SERUMOSMOLALITYinfo",
-    "subjectTitle": "SERUM OSMOLALITY",
-    "subjectTagline": "Calculates the expected serum osmolality to allow comparison to measured osmolality",
-    "keywords": [
-      "Critical",
-      "Care",
-      "ITU",
-      "Intensive",
-      "Care",
-      "Endocrinology",
-      "Renal",
-      "Nephrology",
-      "kidney"
-    ],
-    "displayTitle": "SERUM OSMOLALITY",
-    "displayTagline": "Calculates the expected serum osmolality to allow comparison to measured osmolality.",
-    "keywordSummary": "Critical • Care • Itu • Intensive"
-  },
   "serumosmolalityinfopdf": {
     "pdf": "SERUMOSMOLALITYinfo",
     "subjectTitle": "SERUM OSMOLALITY",
@@ -3929,7 +3910,26 @@
     "displayTagline": "Calculates the expected serum osmolality to allow comparison to measured osmolality.",
     "keywordSummary": "Critical • Care • Itu • Intensive"
   },
-  "sgarbossacriteriainfo": {
+  "serumosmolalityinfo": {
+    "pdf": "SERUMOSMOLALITYinfo",
+    "subjectTitle": "SERUM OSMOLALITY",
+    "subjectTagline": "Calculates the expected serum osmolality to allow comparison to measured osmolality",
+    "keywords": [
+      "Critical",
+      "Care",
+      "ITU",
+      "Intensive",
+      "Care",
+      "Endocrinology",
+      "Renal",
+      "Nephrology",
+      "kidney"
+    ],
+    "displayTitle": "SERUM OSMOLALITY",
+    "displayTagline": "Calculates the expected serum osmolality to allow comparison to measured osmolality.",
+    "keywordSummary": "Critical • Care • Itu • Intensive"
+  },
+  "sgarbossacriteriainfopdf": {
     "pdf": "SGARBOSSACRITERIAinfo",
     "subjectTitle": "SGARBOSSA CRITERIA",
     "subjectTagline": "Criteria to diagnose acute MI in patients with prior LBBB.",
@@ -3943,7 +3943,7 @@
     "displayTagline": "Criteria to diagnose acute MI in patients with prior LBBB.",
     "keywordSummary": "All • Cardio • Emergency • Gp"
   },
-  "sgarbossacriteriainfopdf": {
+  "sgarbossacriteriainfo": {
     "pdf": "SGARBOSSACRITERIAinfo",
     "subjectTitle": "SGARBOSSA CRITERIA",
     "subjectTagline": "Criteria to diagnose acute MI in patients with prior LBBB.",
@@ -3987,21 +3987,6 @@
     "displayTagline": "Stratifies severity of Ulcerative Colitis.",
     "keywordSummary": "Gastroenterology • Abdomen • IBD • Inflammatory"
   },
-  "twistinfopdf": {
-    "pdf": "TWISTinfo",
-    "subjectTitle": "TWIST",
-    "subjectTagline": "Testicular workup for ischaemia and suspected torsion: Diagnosis of testicular torsion / indication for ultrasound",
-    "keywords": [
-      "Emergency",
-      "abdomen",
-      "urology",
-      "testicle",
-      "scrotum"
-    ],
-    "displayTitle": "TWIST",
-    "displayTagline": "Testicular workup for ischaemia and suspected torsion: Diagnosis of testicular torsion / indication for ultrasound.",
-    "keywordSummary": "Emergency • Abdomen • Urology • Testicle"
-  },
   "twistinfo": {
     "pdf": "TWISTinfo",
     "subjectTitle": "TWIST",
@@ -4017,19 +4002,20 @@
     "displayTagline": "Testicular workup for ischaemia and suspected torsion: Diagnosis of testicular torsion / indication for ultrasound.",
     "keywordSummary": "Emergency • Abdomen • Urology • Testicle"
   },
-  "ukeldinfopdf": {
-    "pdf": "UKELDinfo",
-    "subjectTitle": "UKELD",
-    "subjectTagline": "Predicts mortality in end-stage liver disease patients for transplant planning (UK)",
+  "twistinfopdf": {
+    "pdf": "TWISTinfo",
+    "subjectTitle": "TWIST",
+    "subjectTagline": "Testicular workup for ischaemia and suspected torsion: Diagnosis of testicular torsion / indication for ultrasound",
     "keywords": [
-      "Gastroenterology",
-      "liver",
-      "hepatic",
-      "hepatology"
+      "Emergency",
+      "abdomen",
+      "urology",
+      "testicle",
+      "scrotum"
     ],
-    "displayTitle": "UKELD",
-    "displayTagline": "Predicts mortality in end-stage liver disease patients for transplant planning (UK).",
-    "keywordSummary": "Gastroenterology • Liver • Hepatic • Hepatology"
+    "displayTitle": "TWIST",
+    "displayTagline": "Testicular workup for ischaemia and suspected torsion: Diagnosis of testicular torsion / indication for ultrasound.",
+    "keywordSummary": "Emergency • Abdomen • Urology • Testicle"
   },
   "ukeldinfo": {
     "pdf": "UKELDinfo",
@@ -4045,7 +4031,21 @@
     "displayTagline": "Predicts mortality in end-stage liver disease patients for transplant planning (UK).",
     "keywordSummary": "Gastroenterology • Liver • Hepatic • Hepatology"
   },
-  "urineaniongapinfopdf": {
+  "ukeldinfopdf": {
+    "pdf": "UKELDinfo",
+    "subjectTitle": "UKELD",
+    "subjectTagline": "Predicts mortality in end-stage liver disease patients for transplant planning (UK)",
+    "keywords": [
+      "Gastroenterology",
+      "liver",
+      "hepatic",
+      "hepatology"
+    ],
+    "displayTitle": "UKELD",
+    "displayTagline": "Predicts mortality in end-stage liver disease patients for transplant planning (UK).",
+    "keywordSummary": "Gastroenterology • Liver • Hepatic • Hepatology"
+  },
+  "urineaniongapinfo": {
     "pdf": "URINEANIONGAPinfo",
     "subjectTitle": "URINE ANION GAP",
     "subjectTagline": "Detects urine acidosis for evaluation of non-gap metabolic acidosis",
@@ -4064,7 +4064,7 @@
     "displayTagline": "Detects urine acidosis for evaluation of non-gap metabolic acidosis.",
     "keywordSummary": "Critical • Care • Itu • Intensive"
   },
-  "urineaniongapinfo": {
+  "urineaniongapinfopdf": {
     "pdf": "URINEANIONGAPinfo",
     "subjectTitle": "URINE ANION GAP",
     "subjectTagline": "Detects urine acidosis for evaluation of non-gap metabolic acidosis",
@@ -4185,7 +4185,7 @@
     "displayTagline": "Calculates risk of PE based on clinical criteria.",
     "keywordSummary": "Emergency • Gp • Haematology • Respiratory"
   },
-  "westhaveninfo": {
+  "westhaveninfopdf": {
     "pdf": "WESTHAVENinfo",
     "subjectTitle": "WEST HAVEN CRITERIA",
     "subjectTagline": "Defines criteria for the grades / stages of hepatic encephalopathy",
@@ -4204,7 +4204,7 @@
     "displayTagline": "Defines criteria for the grades / stages of hepatic encephalopathy.",
     "keywordSummary": "Critical • Care • Itu • Intensive"
   },
-  "westhaveninfopdf": {
+  "westhaveninfo": {
     "pdf": "WESTHAVENinfo",
     "subjectTitle": "WEST HAVEN CRITERIA",
     "subjectTagline": "Defines criteria for the grades / stages of hepatic encephalopathy",
@@ -4289,22 +4289,6 @@
     "displayTagline": "Identifies high-risk patients for in-hospital mortality with suspected infection.",
     "keywordSummary": "Critical • Care • Itu • Intensive"
   },
-  "abdopainaxpdf": {
-    "pdf": "AbdoPainAx",
-    "subjectTitle": "Abdominal Pain Assessment",
-    "subjectTagline": "A-E assessment of abdominal pain, including advice on key signs and symptoms, useful investigations and potential diagnoses",
-    "keywords": [
-      "Gastroenterology",
-      "Surgery",
-      "abdomen",
-      "IBD",
-      "colitis",
-      "appendicitis"
-    ],
-    "displayTitle": "Abdominal Pain Assessment",
-    "displayTagline": "A-E assessment of abdominal pain, including advice on key signs and symptoms, useful investigations and potential diagnoses.",
-    "keywordSummary": "Gastroenterology • Surgery • Abdomen • IBD"
-  },
   "abdopainax": {
     "pdf": "AbdoPainAx",
     "subjectTitle": "Abdominal Pain Assessment",
@@ -4321,23 +4305,21 @@
     "displayTagline": "A-E assessment of abdominal pain, including advice on key signs and symptoms, useful investigations and potential diagnoses.",
     "keywordSummary": "Gastroenterology • Surgery • Abdomen • IBD"
   },
-  "chestpainaxpdf": {
-    "pdf": "ChestPainAx",
-    "subjectTitle": "Chest Pain Assessment",
-    "subjectTagline": "A-E assessment of chest pain, including advice on key signs and symptoms, useful investigations and potential diagnoses",
+  "abdopainaxpdf": {
+    "pdf": "AbdoPainAx",
+    "subjectTitle": "Abdominal Pain Assessment",
+    "subjectTagline": "A-E assessment of abdominal pain, including advice on key signs and symptoms, useful investigations and potential diagnoses",
     "keywords": [
-      "Emergency",
-      "Cardiology",
-      "Respiratory",
-      "Medicine",
-      "ACS",
-      "STEMI",
-      "NSTEMI",
-      "heart"
+      "Gastroenterology",
+      "Surgery",
+      "abdomen",
+      "IBD",
+      "colitis",
+      "appendicitis"
     ],
-    "displayTitle": "Chest Pain Assessment",
-    "displayTagline": "A-E assessment of chest pain, including advice on key signs and symptoms, useful investigations and potential diagnoses.",
-    "keywordSummary": "Emergency • Cardiology • Respiratory • Medicine"
+    "displayTitle": "Abdominal Pain Assessment",
+    "displayTagline": "A-E assessment of abdominal pain, including advice on key signs and symptoms, useful investigations and potential diagnoses.",
+    "keywordSummary": "Gastroenterology • Surgery • Abdomen • IBD"
   },
   "chestpainax": {
     "pdf": "ChestPainAx",
@@ -4357,20 +4339,23 @@
     "displayTagline": "A-E assessment of chest pain, including advice on key signs and symptoms, useful investigations and potential diagnoses.",
     "keywordSummary": "Emergency • Cardiology • Respiratory • Medicine"
   },
-  "confirmingdeath": {
-    "pdf": "ConfirmingDeath",
-    "subjectTitle": "Confirming Death",
-    "subjectTagline": "Explains the process for confirming death",
+  "chestpainaxpdf": {
+    "pdf": "ChestPainAx",
+    "subjectTitle": "Chest Pain Assessment",
+    "subjectTagline": "A-E assessment of chest pain, including advice on key signs and symptoms, useful investigations and potential diagnoses",
     "keywords": [
-      "Geriatrics",
-      "Surgery",
+      "Emergency",
+      "Cardiology",
+      "Respiratory",
       "Medicine",
-      "RIP",
-      "confirmation"
+      "ACS",
+      "STEMI",
+      "NSTEMI",
+      "heart"
     ],
-    "displayTitle": "Confirming Death",
-    "displayTagline": "Explains the process for confirming death.",
-    "keywordSummary": "Geriatrics • Surgery • Medicine • Rip"
+    "displayTitle": "Chest Pain Assessment",
+    "displayTagline": "A-E assessment of chest pain, including advice on key signs and symptoms, useful investigations and potential diagnoses.",
+    "keywordSummary": "Emergency • Cardiology • Respiratory • Medicine"
   },
   "confirmingdeathpdf": {
     "pdf": "ConfirmingDeath",
@@ -4387,23 +4372,20 @@
     "displayTagline": "Explains the process for confirming death.",
     "keywordSummary": "Geriatrics • Surgery • Medicine • Rip"
   },
-  "confusionax": {
-    "pdf": "ConfusionAx",
-    "subjectTitle": "Confusion Assessment",
-    "subjectTagline": "A-E assessment of confusion, including advice on key signs and symptoms, useful investigations and potential diagnoses",
+  "confirmingdeath": {
+    "pdf": "ConfirmingDeath",
+    "subjectTitle": "Confirming Death",
+    "subjectTagline": "Explains the process for confirming death",
     "keywords": [
-      "Neurology",
       "Geriatrics",
+      "Surgery",
       "Medicine",
-      "dementia",
-      "infection",
-      "AMTS",
-      "violent",
-      "aggression"
+      "RIP",
+      "confirmation"
     ],
-    "displayTitle": "Confusion Assessment",
-    "displayTagline": "A-E assessment of confusion, including advice on key signs and symptoms, useful investigations and potential diagnoses.",
-    "keywordSummary": "Neurology • Geriatrics • Medicine • Dementia"
+    "displayTitle": "Confirming Death",
+    "displayTagline": "Explains the process for confirming death.",
+    "keywordSummary": "Geriatrics • Surgery • Medicine • Rip"
   },
   "confusionaxpdf": {
     "pdf": "ConfusionAx",
@@ -4423,26 +4405,23 @@
     "displayTagline": "A-E assessment of confusion, including advice on key signs and symptoms, useful investigations and potential diagnoses.",
     "keywordSummary": "Neurology • Geriatrics • Medicine • Dementia"
   },
-  "deterioratingpatientax": {
-    "pdf": "DeterioratingPatientAx",
-    "subjectTitle": "Deteriorating Patient Assessment",
-    "subjectTagline": "A-E assessment of the deteriorating patient, including advice on key signs and symptoms, useful investigations and potential diagnoses",
+  "confusionax": {
+    "pdf": "ConfusionAx",
+    "subjectTitle": "Confusion Assessment",
+    "subjectTagline": "A-E assessment of confusion, including advice on key signs and symptoms, useful investigations and potential diagnoses",
     "keywords": [
-      "Emergency",
-      "Cardiology",
       "Neurology",
-      "Respiratory",
-      "Surgery",
+      "Geriatrics",
       "Medicine",
-      "Sepsis",
-      "ACS",
-      "unwell",
-      "highNEWS",
-      "hypotension"
+      "dementia",
+      "infection",
+      "AMTS",
+      "violent",
+      "aggression"
     ],
-    "displayTitle": "Deteriorating Patient Assessment",
-    "displayTagline": "A-E assessment of the deteriorating patient, including advice on key signs and symptoms, useful investigations and potential diagnoses.",
-    "keywordSummary": "Emergency • Cardiology • Neurology • Respiratory"
+    "displayTitle": "Confusion Assessment",
+    "displayTagline": "A-E assessment of confusion, including advice on key signs and symptoms, useful investigations and potential diagnoses.",
+    "keywordSummary": "Neurology • Geriatrics • Medicine • Dementia"
   },
   "deterioratingpatientaxpdf": {
     "pdf": "DeterioratingPatientAx",
@@ -4465,7 +4444,28 @@
     "displayTagline": "A-E assessment of the deteriorating patient, including advice on key signs and symptoms, useful investigations and potential diagnoses.",
     "keywordSummary": "Emergency • Cardiology • Neurology • Respiratory"
   },
-  "ophthalmologyexpdf": {
+  "deterioratingpatientax": {
+    "pdf": "DeterioratingPatientAx",
+    "subjectTitle": "Deteriorating Patient Assessment",
+    "subjectTagline": "A-E assessment of the deteriorating patient, including advice on key signs and symptoms, useful investigations and potential diagnoses",
+    "keywords": [
+      "Emergency",
+      "Cardiology",
+      "Neurology",
+      "Respiratory",
+      "Surgery",
+      "Medicine",
+      "Sepsis",
+      "ACS",
+      "unwell",
+      "highNEWS",
+      "hypotension"
+    ],
+    "displayTitle": "Deteriorating Patient Assessment",
+    "displayTagline": "A-E assessment of the deteriorating patient, including advice on key signs and symptoms, useful investigations and potential diagnoses.",
+    "keywordSummary": "Emergency • Cardiology • Neurology • Respiratory"
+  },
+  "ophthalmologyex": {
     "pdf": "OphthalmologyEx",
     "subjectTitle": "Eye Assessment",
     "subjectTagline": "A-E assessment of the eye, including advice on key signs and symptoms, useful investigations and potential diagnoses",
@@ -4488,7 +4488,7 @@
     "displayTagline": "A-E assessment of the eye, including advice on key signs and symptoms, useful investigations and potential diagnoses.",
     "keywordSummary": "Surgery • Eyes • Redeye • Conjunctivitis"
   },
-  "ophthalmologyex": {
+  "ophthalmologyexpdf": {
     "pdf": "OphthalmologyEx",
     "subjectTitle": "Eye Assessment",
     "subjectTagline": "A-E assessment of the eye, including advice on key signs and symptoms, useful investigations and potential diagnoses",
@@ -4577,22 +4577,6 @@
     "displayTagline": "A-E assessment of fever, including advice on key signs and symptoms, useful investigations and potential diagnoses.",
     "keywordSummary": "Emergency • Microbiology • Medicine • Temperature"
   },
-  "haematuriaaxpdf": {
-    "pdf": "HaematuriaAx",
-    "subjectTitle": "Haematuria Assessment",
-    "subjectTagline": "A-E assessment of haematuria, including advice on key signs and symptoms, useful investigations and potential diagnoses",
-    "keywords": [
-      "Surgery",
-      "Medicine",
-      "bleeding",
-      "renal",
-      "uti",
-      "blood"
-    ],
-    "displayTitle": "Haematuria Assessment",
-    "displayTagline": "A-E assessment of haematuria, including advice on key signs and symptoms, useful investigations and potential diagnoses.",
-    "keywordSummary": "Surgery • Medicine • Bleeding • Renal"
-  },
   "haematuriaax": {
     "pdf": "HaematuriaAx",
     "subjectTitle": "Haematuria Assessment",
@@ -4609,23 +4593,21 @@
     "displayTagline": "A-E assessment of haematuria, including advice on key signs and symptoms, useful investigations and potential diagnoses.",
     "keywordSummary": "Surgery • Medicine • Bleeding • Renal"
   },
-  "haematemesisax": {
-    "pdf": "HaematemesisAx",
-    "subjectTitle": "Haematemesis Assessment",
-    "subjectTagline": "A-E assessment of haematemesis, including advice on key signs and symptoms, useful investigations and potential diagnoses",
+  "haematuriaaxpdf": {
+    "pdf": "HaematuriaAx",
+    "subjectTitle": "Haematuria Assessment",
+    "subjectTagline": "A-E assessment of haematuria, including advice on key signs and symptoms, useful investigations and potential diagnoses",
     "keywords": [
-      "Emergency",
-      "Gastroenterology",
+      "Surgery",
       "Medicine",
-      "UGIB",
-      "Liver",
       "bleeding",
-      "varices",
-      "melena"
+      "renal",
+      "uti",
+      "blood"
     ],
-    "displayTitle": "Haematemesis Assessment",
-    "displayTagline": "A-E assessment of haematemesis, including advice on key signs and symptoms, useful investigations and potential diagnoses.",
-    "keywordSummary": "Emergency • Gastroenterology • Medicine • Ugib"
+    "displayTitle": "Haematuria Assessment",
+    "displayTagline": "A-E assessment of haematuria, including advice on key signs and symptoms, useful investigations and potential diagnoses.",
+    "keywordSummary": "Surgery • Medicine • Bleeding • Renal"
   },
   "haematemesisaxpdf": {
     "pdf": "HaematemesisAx",
@@ -4645,7 +4627,25 @@
     "displayTagline": "A-E assessment of haematemesis, including advice on key signs and symptoms, useful investigations and potential diagnoses.",
     "keywordSummary": "Emergency • Gastroenterology • Medicine • Ugib"
   },
-  "haemoptysisaxpdf": {
+  "haematemesisax": {
+    "pdf": "HaematemesisAx",
+    "subjectTitle": "Haematemesis Assessment",
+    "subjectTagline": "A-E assessment of haematemesis, including advice on key signs and symptoms, useful investigations and potential diagnoses",
+    "keywords": [
+      "Emergency",
+      "Gastroenterology",
+      "Medicine",
+      "UGIB",
+      "Liver",
+      "bleeding",
+      "varices",
+      "melena"
+    ],
+    "displayTitle": "Haematemesis Assessment",
+    "displayTagline": "A-E assessment of haematemesis, including advice on key signs and symptoms, useful investigations and potential diagnoses.",
+    "keywordSummary": "Emergency • Gastroenterology • Medicine • Ugib"
+  },
+  "haemoptysisax": {
     "pdf": "HaemoptysisAx",
     "subjectTitle": "Haemoptysis Assessment",
     "subjectTagline": "A-E assessment of haemoptysis, including advice on key signs and symptoms, useful investigations and potential diagnoses",
@@ -4664,7 +4664,7 @@
     "displayTagline": "A-E assessment of haemoptysis, including advice on key signs and symptoms, useful investigations and potential diagnoses.",
     "keywordSummary": "Respiratory • Medicine • Bleeding • Cough"
   },
-  "haemoptysisax": {
+  "haemoptysisaxpdf": {
     "pdf": "HaemoptysisAx",
     "subjectTitle": "Haemoptysis Assessment",
     "subjectTagline": "A-E assessment of haemoptysis, including advice on key signs and symptoms, useful investigations and potential diagnoses",
@@ -4751,7 +4751,7 @@
     "displayTagline": "A-E assessment of leg swelling, including advice on key signs and symptoms, useful investigations and potential diagnoses.",
     "keywordSummary": "Cardiology • Orthopaedics • Surgery • Medicine"
   },
-  "lowgcsaxpdf": {
+  "lowgcsax": {
     "pdf": "LowGCSAx",
     "subjectTitle": "Low GCS Assessment",
     "subjectTagline": "A-E assessment of a patient with low GCS score, including advice on key signs and symptoms, useful investigations and potential diagnoses",
@@ -4772,7 +4772,7 @@
     "displayTagline": "A-E assessment of a patient with low GCS score, including advice on key signs and symptoms, useful investigations and potential diagnoses.",
     "keywordSummary": "Emergency • Endocrinology • Neurology • Geriatrics"
   },
-  "lowgcsax": {
+  "lowgcsaxpdf": {
     "pdf": "LowGCSAx",
     "subjectTitle": "Low GCS Assessment",
     "subjectTagline": "A-E assessment of a patient with low GCS score, including advice on key signs and symptoms, useful investigations and potential diagnoses",
@@ -4833,7 +4833,7 @@
     "displayTagline": "A-E assessment of low urine output, including advice on key signs and symptoms, useful investigations and potential diagnoses.",
     "keywordSummary": "Geriatrics • Surgery • Medicine • Renalfailure"
   },
-  "painfullimbax": {
+  "painfullimbaxpdf": {
     "pdf": "PainfulLimbAx",
     "subjectTitle": "Painful Limb Assessment",
     "subjectTagline": "A-E assessment of a painful limb, including advice on key signs and symptoms, useful investigations and potential diagnoses",
@@ -4852,7 +4852,7 @@
     "displayTagline": "A-E assessment of a painful limb, including advice on key signs and symptoms, useful investigations and potential diagnoses.",
     "keywordSummary": "Orthopaedics • Surgery • Fracture • Injury"
   },
-  "painfullimbaxpdf": {
+  "painfullimbax": {
     "pdf": "PainfulLimbAx",
     "subjectTitle": "Painful Limb Assessment",
     "subjectTagline": "A-E assessment of a painful limb, including advice on key signs and symptoms, useful investigations and potential diagnoses",
@@ -4905,29 +4905,6 @@
     "displayTagline": "A-E assessment of rectal bleeding, including advice on key signs and symptoms, useful investigations and potential diagnoses.",
     "keywordSummary": "Gastroenterology • Surgery • Prbleeding • Rectalcancer"
   },
-  "sobaxpdf": {
-    "pdf": "SOBAx",
-    "subjectTitle": "SOB Assessment",
-    "subjectTagline": "A-E assessment of shortness of breath, including advice on key signs and symptoms, useful investigations and potential diagnoses",
-    "keywords": [
-      "Emergency",
-      "Cardiology",
-      "Respiratory",
-      "Medicine",
-      "shortnessofbreath",
-      "asthma",
-      "copd",
-      "lowsaturations",
-      "pneumonia",
-      "PE",
-      "pulmonary",
-      "emoblism",
-      "sputum"
-    ],
-    "displayTitle": "SOB Assessment",
-    "displayTagline": "A-E assessment of shortness of breath, including advice on key signs and symptoms, useful investigations and potential diagnoses.",
-    "keywordSummary": "Emergency • Cardiology • Respiratory • Medicine"
-  },
   "sobax": {
     "pdf": "SOBAx",
     "subjectTitle": "SOB Assessment",
@@ -4951,7 +4928,30 @@
     "displayTagline": "A-E assessment of shortness of breath, including advice on key signs and symptoms, useful investigations and potential diagnoses.",
     "keywordSummary": "Emergency • Cardiology • Respiratory • Medicine"
   },
-  "strokeaxpdf": {
+  "sobaxpdf": {
+    "pdf": "SOBAx",
+    "subjectTitle": "SOB Assessment",
+    "subjectTagline": "A-E assessment of shortness of breath, including advice on key signs and symptoms, useful investigations and potential diagnoses",
+    "keywords": [
+      "Emergency",
+      "Cardiology",
+      "Respiratory",
+      "Medicine",
+      "shortnessofbreath",
+      "asthma",
+      "copd",
+      "lowsaturations",
+      "pneumonia",
+      "PE",
+      "pulmonary",
+      "emoblism",
+      "sputum"
+    ],
+    "displayTitle": "SOB Assessment",
+    "displayTagline": "A-E assessment of shortness of breath, including advice on key signs and symptoms, useful investigations and potential diagnoses.",
+    "keywordSummary": "Emergency • Cardiology • Respiratory • Medicine"
+  },
+  "strokeax": {
     "pdf": "StrokeAx",
     "subjectTitle": "Stroke Assessment",
     "subjectTagline": "A-E assessment of suspected stroke, including advice on key signs and symptoms, useful investigations and potential diagnoses",
@@ -4972,7 +4972,7 @@
     "displayTagline": "A-E assessment of suspected stroke, including advice on key signs and symptoms, useful investigations and potential diagnoses.",
     "keywordSummary": "Emergency • Neurology • Geriatrics • Medicine"
   },
-  "strokeax": {
+  "strokeaxpdf": {
     "pdf": "StrokeAx",
     "subjectTitle": "Stroke Assessment",
     "subjectTagline": "A-E assessment of suspected stroke, including advice on key signs and symptoms, useful investigations and potential diagnoses",
@@ -5067,25 +5067,6 @@
     "displayTagline": "Evidence based management strategy for acute asthma.",
     "keywordSummary": "Emergency • Respiratory • Medicine • Shortnessofbreath"
   },
-  "acuteseizuremx": {
-    "pdf": "AcuteSeizureMx",
-    "subjectTitle": "Acute Seizure Management",
-    "subjectTagline": "Evidence based management strategy for seizures",
-    "keywords": [
-      "Emergency",
-      "Neurology",
-      "Medicine",
-      "fit",
-      "epilepsy",
-      "headinjury",
-      "status",
-      "epilepticus",
-      "pseudo"
-    ],
-    "displayTitle": "Acute Seizure Management",
-    "displayTagline": "Evidence based management strategy for seizures.",
-    "keywordSummary": "Emergency • Neurology • Medicine • Fit"
-  },
   "acuteseizuremxpdf": {
     "pdf": "AcuteSeizureMx",
     "subjectTitle": "Acute Seizure Management",
@@ -5105,7 +5086,26 @@
     "displayTagline": "Evidence based management strategy for seizures.",
     "keywordSummary": "Emergency • Neurology • Medicine • Fit"
   },
-  "afmx": {
+  "acuteseizuremx": {
+    "pdf": "AcuteSeizureMx",
+    "subjectTitle": "Acute Seizure Management",
+    "subjectTagline": "Evidence based management strategy for seizures",
+    "keywords": [
+      "Emergency",
+      "Neurology",
+      "Medicine",
+      "fit",
+      "epilepsy",
+      "headinjury",
+      "status",
+      "epilepticus",
+      "pseudo"
+    ],
+    "displayTitle": "Acute Seizure Management",
+    "displayTagline": "Evidence based management strategy for seizures.",
+    "keywordSummary": "Emergency • Neurology • Medicine • Fit"
+  },
+  "afmxpdf": {
     "pdf": "AFMx",
     "subjectTitle": "AF Management",
     "subjectTagline": "Evidence based management strategy for atrial fibirillation",
@@ -5122,7 +5122,7 @@
     "displayTagline": "Evidence based management strategy for atrial fibirillation.",
     "keywordSummary": "Cardiology • Medicine • Atrialfibrillation • Tachycardia"
   },
-  "afmxpdf": {
+  "afmx": {
     "pdf": "AFMx",
     "subjectTitle": "AF Management",
     "subjectTagline": "Evidence based management strategy for atrial fibirillation",
@@ -5287,7 +5287,7 @@
     "displayTagline": "Flowchart for managing bradycardia.",
     "keywordSummary": "Emergency • Cardiology • Medicine • Heartblock"
   },
-  "cervicalspineinjurypdf": {
+  "cervicalspineinjury": {
     "pdf": "CervicalSpineInjury",
     "subjectTitle": "Cervical Spine Injury",
     "subjectTagline": "Evidence based guidelines on the investigation and imaging of cervical spine injuries",
@@ -5309,7 +5309,7 @@
     "displayTagline": "Evidence based guidelines on the investigation and imaging of cervical spine injuries.",
     "keywordSummary": "Emergency • Orthopaedics • Radiology • Surgery"
   },
-  "cervicalspineinjury": {
+  "cervicalspineinjurypdf": {
     "pdf": "CervicalSpineInjury",
     "subjectTitle": "Cervical Spine Injury",
     "subjectTagline": "Evidence based guidelines on the investigation and imaging of cervical spine injuries",
@@ -5403,7 +5403,7 @@
     "displayTagline": "Evidence based management strategy for constipation.",
     "keywordSummary": "Gastroenterology • Geriatrics • Medicine • Opiates"
   },
-  "copdexacerbationmxpdf": {
+  "copdexacerbationmx": {
     "pdf": "COPDExacerbationMx",
     "subjectTitle": "COPD Exacerbation Management",
     "subjectTagline": "Evidence based management strategy for chornic obstructive pulmonary disease exacerbations",
@@ -5421,7 +5421,7 @@
     "displayTagline": "Evidence based management strategy for chornic obstructive pulmonary disease exacerbations.",
     "keywordSummary": "Respiratory • Medicine • Wheeze • T2rf"
   },
-  "copdexacerbationmx": {
+  "copdexacerbationmxpdf": {
     "pdf": "COPDExacerbationMx",
     "subjectTitle": "COPD Exacerbation Management",
     "subjectTagline": "Evidence based management strategy for chornic obstructive pulmonary disease exacerbations",
@@ -5477,7 +5477,7 @@
     "displayTagline": "Evidence based guidance on the investigation and management of decompensated cirrhosis.",
     "keywordSummary": "Emergency • Gastroenterology • Medicine • Liver"
   },
-  "dvtpemxpdf": {
+  "dvtpemx": {
     "pdf": "DVTPEMx",
     "subjectTitle": "DVT / PE Management",
     "subjectTagline": "Evidence based management strategy for pulmonary emobolism and deep vein thrombosis",
@@ -5498,7 +5498,7 @@
     "displayTagline": "Evidence based management strategy for pulmonary emobolism and deep vein thrombosis.",
     "keywordSummary": "Emergency • Haematology • Respiratory • Surgery"
   },
-  "dvtpemx": {
+  "dvtpemxpdf": {
     "pdf": "DVTPEMx",
     "subjectTitle": "DVT / PE Management",
     "subjectTagline": "Evidence based management strategy for pulmonary emobolism and deep vein thrombosis",
@@ -5657,22 +5657,6 @@
     "displayTagline": "Evidence based management strategy for decompensated heart failure.",
     "keywordSummary": "Cardiology • Medicine • Ccf • Pulmonaryoedema"
   },
-  "hypercalcaemiamx": {
-    "pdf": "HypercalcaemiaMx",
-    "subjectTitle": "Hypercalcaemia Management",
-    "subjectTagline": "Evidence based management strategy of high calcium levels",
-    "keywords": [
-      "Endocrinology",
-      "Gastroenterology",
-      "Medicine",
-      "electrolytes",
-      "calcium",
-      "high"
-    ],
-    "displayTitle": "Hypercalcaemia Management",
-    "displayTagline": "Evidence based management strategy of high calcium levels.",
-    "keywordSummary": "Endocrinology • Gastroenterology • Medicine • Electrolytes"
-  },
   "hypercalcaemiamxpdf": {
     "pdf": "HypercalcaemiaMx",
     "subjectTitle": "Hypercalcaemia Management",
@@ -5689,24 +5673,21 @@
     "displayTagline": "Evidence based management strategy of high calcium levels.",
     "keywordSummary": "Endocrinology • Gastroenterology • Medicine • Electrolytes"
   },
-  "hyperglycaemiamx": {
-    "pdf": "HyperglycaemiaMx",
-    "subjectTitle": "Hyperglycaemia Management",
-    "subjectTagline": "Evidence based management strategy of high glucose levels",
+  "hypercalcaemiamx": {
+    "pdf": "HypercalcaemiaMx",
+    "subjectTitle": "Hypercalcaemia Management",
+    "subjectTagline": "Evidence based management strategy of high calcium levels",
     "keywords": [
       "Endocrinology",
       "Gastroenterology",
       "Medicine",
-      "diabetes",
-      "DKA",
-      "HHS",
-      "insulin",
-      "high",
-      "glucose"
+      "electrolytes",
+      "calcium",
+      "high"
     ],
-    "displayTitle": "Hyperglycaemia Management",
-    "displayTagline": "Evidence based management strategy of high glucose levels.",
-    "keywordSummary": "Endocrinology • Gastroenterology • Medicine • Diabetes"
+    "displayTitle": "Hypercalcaemia Management",
+    "displayTagline": "Evidence based management strategy of high calcium levels.",
+    "keywordSummary": "Endocrinology • Gastroenterology • Medicine • Electrolytes"
   },
   "hyperglycaemiamxpdf": {
     "pdf": "HyperglycaemiaMx",
@@ -5727,7 +5708,26 @@
     "displayTagline": "Evidence based management strategy of high glucose levels.",
     "keywordSummary": "Endocrinology • Gastroenterology • Medicine • Diabetes"
   },
-  "hyperkalemiamxpdf": {
+  "hyperglycaemiamx": {
+    "pdf": "HyperglycaemiaMx",
+    "subjectTitle": "Hyperglycaemia Management",
+    "subjectTagline": "Evidence based management strategy of high glucose levels",
+    "keywords": [
+      "Endocrinology",
+      "Gastroenterology",
+      "Medicine",
+      "diabetes",
+      "DKA",
+      "HHS",
+      "insulin",
+      "high",
+      "glucose"
+    ],
+    "displayTitle": "Hyperglycaemia Management",
+    "displayTagline": "Evidence based management strategy of high glucose levels.",
+    "keywordSummary": "Endocrinology • Gastroenterology • Medicine • Diabetes"
+  },
+  "hyperkalemiamx": {
     "pdf": "HyperkalemiaMx",
     "subjectTitle": "Hyperkalemia Management",
     "subjectTagline": "Evidence based management strategy of high potassium levels",
@@ -5744,7 +5744,7 @@
     "displayTagline": "Evidence based management strategy of high potassium levels.",
     "keywordSummary": "Endocrinology • Gastroenterology • Medicine • Potassium"
   },
-  "hyperkalemiamx": {
+  "hyperkalemiamxpdf": {
     "pdf": "HyperkalemiaMx",
     "subjectTitle": "Hyperkalemia Management",
     "subjectTagline": "Evidence based management strategy of high potassium levels",
@@ -5795,26 +5795,6 @@
     "displayTagline": "Evidence based management strategy of low calcium levels.",
     "keywordSummary": "Endocrinology • Gastroenterology • Medicine • Calcium"
   },
-  "hypoglycaemiamx": {
-    "pdf": "HypoglycaemiaMx",
-    "subjectTitle": "Hypoglycaemia Management",
-    "subjectTagline": "Evidence based management strategy of low glucose levels",
-    "keywords": [
-      "Endocrinology",
-      "Gastroenterology",
-      "Medicine",
-      "coma",
-      "diabetic",
-      "seizure",
-      "refeedingsyndrome",
-      "glucose",
-      "low",
-      "BM"
-    ],
-    "displayTitle": "Hypoglycaemia Management",
-    "displayTagline": "Evidence based management strategy of low glucose levels.",
-    "keywordSummary": "Endocrinology • Gastroenterology • Medicine • Coma"
-  },
   "hypoglycaemiamxpdf": {
     "pdf": "HypoglycaemiaMx",
     "subjectTitle": "Hypoglycaemia Management",
@@ -5835,22 +5815,25 @@
     "displayTagline": "Evidence based management strategy of low glucose levels.",
     "keywordSummary": "Endocrinology • Gastroenterology • Medicine • Coma"
   },
-  "hypokalemiamx": {
-    "pdf": "HypokalemiaMx",
-    "subjectTitle": "Hypokalemia Management",
-    "subjectTagline": "Evidence based management strategy of low potassium levels",
+  "hypoglycaemiamx": {
+    "pdf": "HypoglycaemiaMx",
+    "subjectTitle": "Hypoglycaemia Management",
+    "subjectTagline": "Evidence based management strategy of low glucose levels",
     "keywords": [
       "Endocrinology",
       "Gastroenterology",
       "Medicine",
-      "potassium",
-      "electrolytes",
+      "coma",
+      "diabetic",
+      "seizure",
+      "refeedingsyndrome",
+      "glucose",
       "low",
-      "refeedingsyndrome"
+      "BM"
     ],
-    "displayTitle": "Hypokalemia Management",
-    "displayTagline": "Evidence based management strategy of low potassium levels.",
-    "keywordSummary": "Endocrinology • Gastroenterology • Medicine • Potassium"
+    "displayTitle": "Hypoglycaemia Management",
+    "displayTagline": "Evidence based management strategy of low glucose levels.",
+    "keywordSummary": "Endocrinology • Gastroenterology • Medicine • Coma"
   },
   "hypokalemiamxpdf": {
     "pdf": "HypokalemiaMx",
@@ -5869,7 +5852,24 @@
     "displayTagline": "Evidence based management strategy of low potassium levels.",
     "keywordSummary": "Endocrinology • Gastroenterology • Medicine • Potassium"
   },
-  "hypomagnesemiamx": {
+  "hypokalemiamx": {
+    "pdf": "HypokalemiaMx",
+    "subjectTitle": "Hypokalemia Management",
+    "subjectTagline": "Evidence based management strategy of low potassium levels",
+    "keywords": [
+      "Endocrinology",
+      "Gastroenterology",
+      "Medicine",
+      "potassium",
+      "electrolytes",
+      "low",
+      "refeedingsyndrome"
+    ],
+    "displayTitle": "Hypokalemia Management",
+    "displayTagline": "Evidence based management strategy of low potassium levels.",
+    "keywordSummary": "Endocrinology • Gastroenterology • Medicine • Potassium"
+  },
+  "hypomagnesemiamxpdf": {
     "pdf": "HypomagnesemiaMx",
     "subjectTitle": "Hypomagnesemia Management",
     "subjectTagline": "Evidence based management strategy of low magnesium levels",
@@ -5886,7 +5886,7 @@
     "displayTagline": "Evidence based management strategy of low magnesium levels.",
     "keywordSummary": "Endocrinology • Gastroenterology • Medicine • Magnesium"
   },
-  "hypomagnesemiamxpdf": {
+  "hypomagnesemiamx": {
     "pdf": "HypomagnesemiaMx",
     "subjectTitle": "Hypomagnesemia Management",
     "subjectTagline": "Evidence based management strategy of low magnesium levels",
@@ -5939,23 +5939,6 @@
     "displayTagline": "Evidence based management strategy of low sodium levels.",
     "keywordSummary": "Endocrinology • Gastroenterology • Medicine • Sodium"
   },
-  "hypophosphatemiamxpdf": {
-    "pdf": "HypophosphatemiaMx",
-    "subjectTitle": "Hypophosphatemia Management",
-    "subjectTagline": "Evidence based management strategy of low phosphate levels",
-    "keywords": [
-      "Endocrinology",
-      "Gastroenterology",
-      "Medicine",
-      "Phosphate",
-      "electrolytes",
-      "refeedingsyndrome",
-      "low"
-    ],
-    "displayTitle": "Hypophosphatemia Management",
-    "displayTagline": "Evidence based management strategy of low phosphate levels.",
-    "keywordSummary": "Endocrinology • Gastroenterology • Medicine • Phosphate"
-  },
   "hypophosphatemiamx": {
     "pdf": "HypophosphatemiaMx",
     "subjectTitle": "Hypophosphatemia Management",
@@ -5973,24 +5956,22 @@
     "displayTagline": "Evidence based management strategy of low phosphate levels.",
     "keywordSummary": "Endocrinology • Gastroenterology • Medicine • Phosphate"
   },
-  "inrmxpdf": {
-    "pdf": "INRMx",
-    "subjectTitle": "INR Management",
-    "subjectTagline": "Algorithm for initiating and monitoring anticoagulation with warfarin",
+  "hypophosphatemiamxpdf": {
+    "pdf": "HypophosphatemiaMx",
+    "subjectTitle": "Hypophosphatemia Management",
+    "subjectTagline": "Evidence based management strategy of low phosphate levels",
     "keywords": [
-      "Haematology",
-      "Surgery",
+      "Endocrinology",
+      "Gastroenterology",
       "Medicine",
-      "warfarin",
-      "clotting",
-      "bleeding",
-      "haemorrhage",
-      "anticoagulation",
-      "vitamink"
+      "Phosphate",
+      "electrolytes",
+      "refeedingsyndrome",
+      "low"
     ],
-    "displayTitle": "INR Management",
-    "displayTagline": "Algorithm for initiating and monitoring anticoagulation with warfarin.",
-    "keywordSummary": "Haematology • Surgery • Medicine • Warfarin"
+    "displayTitle": "Hypophosphatemia Management",
+    "displayTagline": "Evidence based management strategy of low phosphate levels.",
+    "keywordSummary": "Endocrinology • Gastroenterology • Medicine • Phosphate"
   },
   "inrmx": {
     "pdf": "INRMx",
@@ -6011,24 +5992,24 @@
     "displayTagline": "Algorithm for initiating and monitoring anticoagulation with warfarin.",
     "keywordSummary": "Haematology • Surgery • Medicine • Warfarin"
   },
-  "ivfluidmx": {
-    "pdf": "IVFluidMx",
-    "subjectTitle": "IV Fluid Management",
-    "subjectTagline": "Evidence based guidance on the management of intravenous fluids",
+  "inrmxpdf": {
+    "pdf": "INRMx",
+    "subjectTitle": "INR Management",
+    "subjectTagline": "Algorithm for initiating and monitoring anticoagulation with warfarin",
     "keywords": [
-      "Emergency",
-      "Gastroenterology",
+      "Haematology",
       "Surgery",
       "Medicine",
-      "sepsis",
-      "dehydration",
-      "fluids",
-      "nacl",
-      "hartmanns"
+      "warfarin",
+      "clotting",
+      "bleeding",
+      "haemorrhage",
+      "anticoagulation",
+      "vitamink"
     ],
-    "displayTitle": "IV Fluid Management",
-    "displayTagline": "Evidence based guidance on the management of intravenous fluids.",
-    "keywordSummary": "Emergency • Gastroenterology • Surgery • Medicine"
+    "displayTitle": "INR Management",
+    "displayTagline": "Algorithm for initiating and monitoring anticoagulation with warfarin.",
+    "keywordSummary": "Haematology • Surgery • Medicine • Warfarin"
   },
   "ivfluidmxpdf": {
     "pdf": "IVFluidMx",
@@ -6049,7 +6030,77 @@
     "displayTagline": "Evidence based guidance on the management of intravenous fluids.",
     "keywordSummary": "Emergency • Gastroenterology • Surgery • Medicine"
   },
-  "nauseamx": {
+  "ivfluidmx": {
+    "pdf": "IVFluidMx",
+    "subjectTitle": "IV Fluid Management",
+    "subjectTagline": "Evidence based guidance on the management of intravenous fluids",
+    "keywords": [
+      "Emergency",
+      "Gastroenterology",
+      "Surgery",
+      "Medicine",
+      "sepsis",
+      "dehydration",
+      "fluids",
+      "nacl",
+      "hartmanns"
+    ],
+    "displayTitle": "IV Fluid Management",
+    "displayTagline": "Evidence based guidance on the management of intravenous fluids.",
+    "keywordSummary": "Emergency • Gastroenterology • Surgery • Medicine"
+  },
+  "ivfluidtherapyinadults": {
+    "pdf": "IV fluid therapy in adults.pdf",
+    "subjectTitle": "IV Fluid Therapy in Adults",
+    "subjectTagline": "Guidance on intravenous fluid therapy in adult patients",
+    "keywords": [
+      "Emergency",
+      "Medicine",
+      "Surgery",
+      "IV",
+      "fluids",
+      "hydration",
+      "resuscitation"
+    ],
+    "displayTitle": "IV Fluid Therapy in Adults",
+    "displayTagline": "Guidance on intravenous fluid therapy in adult patients.",
+    "keywordSummary": "Emergency • Medicine • Surgery • IV"
+  },
+  "ivfluidtherapyinadultspdfpdf": {
+    "pdf": "IV fluid therapy in adults.pdf",
+    "subjectTitle": "IV Fluid Therapy in Adults",
+    "subjectTagline": "Guidance on intravenous fluid therapy in adult patients",
+    "keywords": [
+      "Emergency",
+      "Medicine",
+      "Surgery",
+      "IV",
+      "fluids",
+      "hydration",
+      "resuscitation"
+    ],
+    "displayTitle": "IV Fluid Therapy in Adults",
+    "displayTagline": "Guidance on intravenous fluid therapy in adult patients.",
+    "keywordSummary": "Emergency • Medicine • Surgery • IV"
+  },
+  "ivfluidtherapyinadultspdf": {
+    "pdf": "IV fluid therapy in adults.pdf",
+    "subjectTitle": "IV Fluid Therapy in Adults",
+    "subjectTagline": "Guidance on intravenous fluid therapy in adult patients",
+    "keywords": [
+      "Emergency",
+      "Medicine",
+      "Surgery",
+      "IV",
+      "fluids",
+      "hydration",
+      "resuscitation"
+    ],
+    "displayTitle": "IV Fluid Therapy in Adults",
+    "displayTagline": "Guidance on intravenous fluid therapy in adult patients.",
+    "keywordSummary": "Emergency • Medicine • Surgery • IV"
+  },
+  "nauseamxpdf": {
     "pdf": "NauseaMx",
     "subjectTitle": "Nausea Management",
     "subjectTagline": "Evidence based management strategy for nausea",
@@ -6067,7 +6118,7 @@
     "displayTagline": "Evidence based management strategy for nausea.",
     "keywordSummary": "Gastroenterology • Geriatrics • Surgery • Medicine"
   },
-  "nauseamxpdf": {
+  "nauseamx": {
     "pdf": "NauseaMx",
     "subjectTitle": "Nausea Management",
     "subjectTagline": "Evidence based management strategy for nausea",
@@ -6169,7 +6220,7 @@
     "displayTagline": "Evidence based management strategy for pain.",
     "keywordSummary": "Orthopaedics • Geriatrics • Surgery • Medicine"
   },
-  "paracetamoloverdosemx": {
+  "paracetamoloverdosemxpdf": {
     "pdf": "ParacetamolOverdoseMx",
     "subjectTitle": "Paracetamol Overdose Management",
     "subjectTagline": "Evidence based management strategy for paracetamol overdose",
@@ -6185,7 +6236,7 @@
     "displayTagline": "Evidence based management strategy for paracetamol overdose.",
     "keywordSummary": "Emergency • Gastroenterology • Medicine • Nac"
   },
-  "paracetamoloverdosemxpdf": {
+  "paracetamoloverdosemx": {
     "pdf": "ParacetamolOverdoseMx",
     "subjectTitle": "Paracetamol Overdose Management",
     "subjectTagline": "Evidence based management strategy for paracetamol overdose",
@@ -6341,25 +6392,6 @@
     "displayTagline": "Overview of different types of sedation and general management advice.",
     "keywordSummary": "Neurology • Geriatrics • Medicine • Agitation"
   },
-  "sepsis6pdf": {
-    "pdf": "Sepsis6",
-    "subjectTitle": "Sepsis 6",
-    "subjectTagline": "Information on sedation strategies for use in aggressive patients or insomnia",
-    "keywords": [
-      "Emergency",
-      "Microbiology",
-      "Surgery",
-      "Medicine",
-      "infection",
-      "detriorating",
-      "rash",
-      "septicaemia",
-      "fever"
-    ],
-    "displayTitle": "Sepsis 6",
-    "displayTagline": "Information on sedation strategies for use in aggressive patients or insomnia.",
-    "keywordSummary": "Emergency • Microbiology • Surgery • Medicine"
-  },
   "sepsis6": {
     "pdf": "Sepsis6",
     "subjectTitle": "Sepsis 6",
@@ -6379,7 +6411,26 @@
     "displayTagline": "Information on sedation strategies for use in aggressive patients or insomnia.",
     "keywordSummary": "Emergency • Microbiology • Surgery • Medicine"
   },
-  "strokemxpdf": {
+  "sepsis6pdf": {
+    "pdf": "Sepsis6",
+    "subjectTitle": "Sepsis 6",
+    "subjectTagline": "Information on sedation strategies for use in aggressive patients or insomnia",
+    "keywords": [
+      "Emergency",
+      "Microbiology",
+      "Surgery",
+      "Medicine",
+      "infection",
+      "detriorating",
+      "rash",
+      "septicaemia",
+      "fever"
+    ],
+    "displayTitle": "Sepsis 6",
+    "displayTagline": "Information on sedation strategies for use in aggressive patients or insomnia.",
+    "keywordSummary": "Emergency • Microbiology • Surgery • Medicine"
+  },
+  "strokemx": {
     "pdf": "StrokeMx",
     "subjectTitle": "Stroke Management",
     "subjectTagline": "Evidence based management strategy for stroke",
@@ -6397,7 +6448,7 @@
     "displayTagline": "Evidence based management strategy for stroke.",
     "keywordSummary": "Emergency • Neurology • Medicine • NIHSS"
   },
-  "strokemx": {
+  "strokemxpdf": {
     "pdf": "StrokeMx",
     "subjectTitle": "Stroke Management",
     "subjectTagline": "Evidence based management strategy for stroke",
@@ -6453,7 +6504,7 @@
     "displayTagline": "Flowchart on the management of tachycardia.",
     "keywordSummary": "Emergency • Cardiology • Medicine • Palpitations"
   },
-  "transfusionmxpdf": {
+  "transfusionmx": {
     "pdf": "TransfusionMx",
     "subjectTitle": "Transfusion Indication",
     "subjectTagline": "Guidance on the transfusion of blood and blood products",
@@ -6471,7 +6522,7 @@
     "displayTagline": "Guidance on the transfusion of blood and blood products.",
     "keywordSummary": "Haematology • Surgery • Medicine • Blood"
   },
-  "transfusionmx": {
+  "transfusionmxpdf": {
     "pdf": "TransfusionMx",
     "subjectTitle": "Transfusion Indication",
     "subjectTagline": "Guidance on the transfusion of blood and blood products",
@@ -6523,7 +6574,7 @@
     "displayTagline": "Flowchart describing key steps in the management of a suspected transfusion reaction.",
     "keywordSummary": "Emergency • Haematology • Medicine • Anyphylaxis"
   },
-  "uppergibleedmxpdf": {
+  "uppergibleedmx": {
     "pdf": "UpperGIBleedMx",
     "subjectTitle": "Upper GI Bleed Management",
     "subjectTagline": "Evidence based management strategy for upper gastrointestinal bleeding",
@@ -6546,7 +6597,7 @@
     "displayTagline": "Evidence based management strategy for upper gastrointestinal bleeding.",
     "keywordSummary": "Emergency • Gastroenterology • Haematology • Medicine"
   },
-  "uppergibleedmx": {
+  "uppergibleedmxpdf": {
     "pdf": "UpperGIBleedMx",
     "subjectTitle": "Upper GI Bleed Management",
     "subjectTagline": "Evidence based management strategy for upper gastrointestinal bleeding",
@@ -6643,7 +6694,7 @@
     "displayTagline": "Interpretation and normal values of arterial blood gas samples.",
     "keywordSummary": "Emergency • Respiratory • Medicine • Arterialbloodgas"
   },
-  "axr": {
+  "axrpdf": {
     "pdf": "AXR",
     "subjectTitle": "Abdo X-ray",
     "subjectTagline": "Systematic interpreation of abdominal X-rays",
@@ -6659,7 +6710,7 @@
     "displayTagline": "Systematic interpreation of abdominal X-rays.",
     "keywordSummary": "Emergency • Gastroenterology • Radiology • Surgery"
   },
-  "axrpdf": {
+  "axr": {
     "pdf": "AXR",
     "subjectTitle": "Abdo X-ray",
     "subjectTagline": "Systematic interpreation of abdominal X-rays",
@@ -6711,29 +6762,6 @@
     "displayTagline": "Staging and possible differential diagnoses of acute kidney injury.",
     "keywordSummary": "Medicine • Renalfailure • Acutekidneyinjury • Creatinine"
   },
-  "asciticfluidanalysis": {
-    "pdf": "AsciticFluidAnalysis",
-    "subjectTitle": "Ascitic Fluid Analysis",
-    "subjectTagline": "Systematic intepretation of ascitic fluid",
-    "keywords": [
-      "Gastroenterology",
-      "Microbiology",
-      "Medicine",
-      "Ascites",
-      "paracetnesis",
-      "tap",
-      "SBP",
-      "spontaneous",
-      "bacterial",
-      "peritonitis",
-      "decompensated",
-      "cirrhosis",
-      "saag"
-    ],
-    "displayTitle": "Ascitic Fluid Analysis",
-    "displayTagline": "Systematic intepretation of ascitic fluid.",
-    "keywordSummary": "Gastroenterology • Microbiology • Medicine • Ascites"
-  },
   "asciticfluidanalysispdf": {
     "pdf": "AsciticFluidAnalysis",
     "subjectTitle": "Ascitic Fluid Analysis",
@@ -6757,7 +6785,30 @@
     "displayTagline": "Systematic intepretation of ascitic fluid.",
     "keywordSummary": "Gastroenterology • Microbiology • Medicine • Ascites"
   },
-  "capacityconsentpdf": {
+  "asciticfluidanalysis": {
+    "pdf": "AsciticFluidAnalysis",
+    "subjectTitle": "Ascitic Fluid Analysis",
+    "subjectTagline": "Systematic intepretation of ascitic fluid",
+    "keywords": [
+      "Gastroenterology",
+      "Microbiology",
+      "Medicine",
+      "Ascites",
+      "paracetnesis",
+      "tap",
+      "SBP",
+      "spontaneous",
+      "bacterial",
+      "peritonitis",
+      "decompensated",
+      "cirrhosis",
+      "saag"
+    ],
+    "displayTitle": "Ascitic Fluid Analysis",
+    "displayTagline": "Systematic intepretation of ascitic fluid.",
+    "keywordSummary": "Gastroenterology • Microbiology • Medicine • Ascites"
+  },
+  "capacityconsent": {
     "pdf": "CapacityConsent",
     "subjectTitle": "Capacity & Consent",
     "subjectTagline": "Key steps in assessing a patient's capcity and in gaining consent for procedures",
@@ -6777,7 +6828,7 @@
     "displayTagline": "Key steps in assessing a patient's capcity and in gaining consent for procedures.",
     "keywordSummary": "Neurology • Orthopaedics • Geriatrics • Surgery"
   },
-  "capacityconsent": {
+  "capacityconsentpdf": {
     "pdf": "CapacityConsent",
     "subjectTitle": "Capacity & Consent",
     "subjectTagline": "Key steps in assessing a patient's capcity and in gaining consent for procedures",
@@ -6915,29 +6966,6 @@
     "displayTagline": "Systematic intepretation of cerebral spinal fluid.",
     "keywordSummary": "Emergency • Microbiology • Neurology • Medicine"
   },
-  "ecgpdf": {
-    "pdf": "ECG",
-    "subjectTitle": "ECG Analysis",
-    "subjectTagline": "Systematic interpreation of electrocardiograms",
-    "keywords": [
-      "Emergency",
-      "Cardiology",
-      "Endocrinology",
-      "Respiratory",
-      "Medicine",
-      "heart",
-      "arrythmia",
-      "AF",
-      "VT",
-      "SVT",
-      "bundle",
-      "branch",
-      "block"
-    ],
-    "displayTitle": "ECG Analysis",
-    "displayTagline": "Systematic interpreation of electrocardiograms.",
-    "keywordSummary": "Emergency • Cardiology • Endocrinology • Respiratory"
-  },
   "ecg": {
     "pdf": "ECG",
     "subjectTitle": "ECG Analysis",
@@ -6961,22 +6989,28 @@
     "displayTagline": "Systematic interpreation of electrocardiograms.",
     "keywordSummary": "Emergency • Cardiology • Endocrinology • Respiratory"
   },
-  "gentamicinpdf": {
-    "pdf": "Gentamicin",
-    "subjectTitle": "Gentamicin",
-    "subjectTagline": "Information on the initiation and monitoring of gentamicin",
+  "ecgpdf": {
+    "pdf": "ECG",
+    "subjectTitle": "ECG Analysis",
+    "subjectTagline": "Systematic interpreation of electrocardiograms",
     "keywords": [
-      "Microbiology",
+      "Emergency",
+      "Cardiology",
+      "Endocrinology",
+      "Respiratory",
       "Medicine",
-      "Antibiotics",
-      "gram",
-      "negative",
-      "dosing",
-      "monitoring"
+      "heart",
+      "arrythmia",
+      "AF",
+      "VT",
+      "SVT",
+      "bundle",
+      "branch",
+      "block"
     ],
-    "displayTitle": "Gentamicin",
-    "displayTagline": "Information on the initiation and monitoring of gentamicin.",
-    "keywordSummary": "Microbiology • Medicine • Antibiotics • Gram"
+    "displayTitle": "ECG Analysis",
+    "displayTagline": "Systematic interpreation of electrocardiograms.",
+    "keywordSummary": "Emergency • Cardiology • Endocrinology • Respiratory"
   },
   "gentamicin": {
     "pdf": "Gentamicin",
@@ -6995,22 +7029,22 @@
     "displayTagline": "Information on the initiation and monitoring of gentamicin.",
     "keywordSummary": "Microbiology • Medicine • Antibiotics • Gram"
   },
-  "insulinpdf": {
-    "pdf": "Insulin",
-    "subjectTitle": "Insulin",
-    "subjectTagline": "Information on the range of insulin strategies",
+  "gentamicinpdf": {
+    "pdf": "Gentamicin",
+    "subjectTitle": "Gentamicin",
+    "subjectTagline": "Information on the initiation and monitoring of gentamicin",
     "keywords": [
-      "Endocrinology",
+      "Microbiology",
       "Medicine",
-      "diabetes",
-      "DKA",
-      "HHS",
-      "bm",
-      "hyperglycaemia"
+      "Antibiotics",
+      "gram",
+      "negative",
+      "dosing",
+      "monitoring"
     ],
-    "displayTitle": "Insulin",
-    "displayTagline": "Information on the range of insulin strategies.",
-    "keywordSummary": "Endocrinology • Medicine • Diabetes • Dka"
+    "displayTitle": "Gentamicin",
+    "displayTagline": "Information on the initiation and monitoring of gentamicin.",
+    "keywordSummary": "Microbiology • Medicine • Antibiotics • Gram"
   },
   "insulin": {
     "pdf": "Insulin",
@@ -7029,7 +7063,24 @@
     "displayTagline": "Information on the range of insulin strategies.",
     "keywordSummary": "Endocrinology • Medicine • Diabetes • Dka"
   },
-  "ivfluidspdf": {
+  "insulinpdf": {
+    "pdf": "Insulin",
+    "subjectTitle": "Insulin",
+    "subjectTagline": "Information on the range of insulin strategies",
+    "keywords": [
+      "Endocrinology",
+      "Medicine",
+      "diabetes",
+      "DKA",
+      "HHS",
+      "bm",
+      "hyperglycaemia"
+    ],
+    "displayTitle": "Insulin",
+    "displayTagline": "Information on the range of insulin strategies.",
+    "keywordSummary": "Endocrinology • Medicine • Diabetes • Dka"
+  },
+  "ivfluids": {
     "pdf": "IVFluids",
     "subjectTitle": "IV Fluid Types",
     "subjectTagline": "Information on the differing options for intravenous fluid replacement",
@@ -7047,7 +7098,7 @@
     "displayTagline": "Information on the differing options for intravenous fluid replacement.",
     "keywordSummary": "Gastroenterology • Surgery • Medicine • Ivf"
   },
-  "ivfluids": {
+  "ivfluidspdf": {
     "pdf": "IVFluids",
     "subjectTitle": "IV Fluid Types",
     "subjectTagline": "Information on the differing options for intravenous fluid replacement",
@@ -7099,22 +7150,6 @@
     "displayTagline": "Systematic intepretation of fluid aspirated from a joint.",
     "keywordSummary": "Microbiology • Orthopaedics • Surgery • Gout"
   },
-  "mskanatomy": {
-    "pdf": "MSKAnatomy",
-    "subjectTitle": "MSK Anatomy",
-    "subjectTagline": "Information on the anatomy of muscles and bones",
-    "keywords": [
-      "Orthopaedics",
-      "Radiology",
-      "Surgery",
-      "bone",
-      "ligament",
-      "muscle"
-    ],
-    "displayTitle": "MSK Anatomy",
-    "displayTagline": "Information on the anatomy of muscles and bones.",
-    "keywordSummary": "Orthopaedics • Radiology • Surgery • Bone"
-  },
   "mskanatomypdf": {
     "pdf": "MSKAnatomy",
     "subjectTitle": "MSK Anatomy",
@@ -7131,7 +7166,23 @@
     "displayTagline": "Information on the anatomy of muscles and bones.",
     "keywordSummary": "Orthopaedics • Radiology • Surgery • Bone"
   },
-  "mskxraypdf": {
+  "mskanatomy": {
+    "pdf": "MSKAnatomy",
+    "subjectTitle": "MSK Anatomy",
+    "subjectTagline": "Information on the anatomy of muscles and bones",
+    "keywords": [
+      "Orthopaedics",
+      "Radiology",
+      "Surgery",
+      "bone",
+      "ligament",
+      "muscle"
+    ],
+    "displayTitle": "MSK Anatomy",
+    "displayTagline": "Information on the anatomy of muscles and bones.",
+    "keywordSummary": "Orthopaedics • Radiology • Surgery • Bone"
+  },
+  "mskxray": {
     "pdf": "MSKXray",
     "subjectTitle": "MSK X-ray",
     "subjectTagline": "Systematic interpreation of musculoskeletal X-rays",
@@ -7148,7 +7199,7 @@
     "displayTagline": "Systematic interpreation of musculoskeletal X-rays.",
     "keywordSummary": "Orthopaedics • Radiology • Surgery • Radiology"
   },
-  "mskxray": {
+  "mskxraypdf": {
     "pdf": "MSKXray",
     "subjectTitle": "MSK X-ray",
     "subjectTagline": "Systematic interpreation of musculoskeletal X-rays",
@@ -7203,7 +7254,7 @@
     "displayTagline": "Information on the anatomy of the central and peripheral nervous system.",
     "keywordSummary": "Emergency • Neurology • Orthopaedics • Geriatrics"
   },
-  "neuroexampdf": {
+  "neuroexam": {
     "pdf": "NeuroExam",
     "subjectTitle": "Neuro Exam",
     "subjectTagline": "Systematic A-E assessment of the neurologcal system, including advice on key signs and symptoms, useful investigations and potential diagnoses",
@@ -7222,7 +7273,7 @@
     "displayTagline": "Systematic A-E assessment of the neurologcal system, including advice on key signs and symptoms, useful investigations and potential diagnoses.",
     "keywordSummary": "Emergency • Neurology • Orthopaedics • Geriatrics"
   },
-  "neuroexam": {
+  "neuroexampdf": {
     "pdf": "NeuroExam",
     "subjectTitle": "Neuro Exam",
     "subjectTagline": "Systematic A-E assessment of the neurologcal system, including advice on key signs and symptoms, useful investigations and potential diagnoses",
@@ -7377,7 +7428,7 @@
     "displayTagline": "Information on the assessment of patients pre-operatively.",
     "keywordSummary": "Orthopaedics • Surgery • Assessment • Theatre"
   },
-  "refeedingsyndrome": {
+  "refeedingsyndromepdf": {
     "pdf": "RefeedingSyndrome",
     "subjectTitle": "Refeeding Syndrome",
     "subjectTagline": "Information on the diangosis, monitoring and replacement of patients with suspected refeeding syndrome",
@@ -7398,7 +7449,7 @@
     "displayTagline": "Information on the diangosis, monitoring and replacement of patients with suspected refeeding syndrome.",
     "keywordSummary": "Endocrinology • Gastroenterology • Geriatrics • Medicine"
   },
-  "refeedingsyndromepdf": {
+  "refeedingsyndrome": {
     "pdf": "RefeedingSyndrome",
     "subjectTitle": "Refeeding Syndrome",
     "subjectTagline": "Information on the diangosis, monitoring and replacement of patients with suspected refeeding syndrome",
@@ -7477,19 +7528,6 @@
     "displayTagline": "Information on gaining consent prior to administering blood products.",
     "keywordSummary": "Haematology • Surgery • Medicine • Ethics"
   },
-  "vancomycinpdf": {
-    "pdf": "Vancomycin",
-    "subjectTitle": "Vancomycin",
-    "subjectTagline": "Information on the initiation and monitoring of vancomycin",
-    "keywords": [
-      "Microbiology",
-      "Medicine",
-      "Antibiotics"
-    ],
-    "displayTitle": "Vancomycin",
-    "displayTagline": "Information on the initiation and monitoring of vancomycin.",
-    "keywordSummary": "Microbiology • Medicine • Antibiotics"
-  },
   "vancomycin": {
     "pdf": "Vancomycin",
     "subjectTitle": "Vancomycin",
@@ -7503,25 +7541,18 @@
     "displayTagline": "Information on the initiation and monitoring of vancomycin.",
     "keywordSummary": "Microbiology • Medicine • Antibiotics"
   },
-  "vascularanatomy": {
-    "pdf": "VascularAnatomy",
-    "subjectTitle": "Vascular Anatomy",
-    "subjectTagline": "Information on the macroscopic and microscopic anatomy of blood vessels",
+  "vancomycinpdf": {
+    "pdf": "Vancomycin",
+    "subjectTitle": "Vancomycin",
+    "subjectTagline": "Information on the initiation and monitoring of vancomycin",
     "keywords": [
-      "Cardiology",
-      "Haematology",
-      "Orthopaedics",
-      "Radiology",
-      "Surgery",
+      "Microbiology",
       "Medicine",
-      "artery",
-      "arteries",
-      "veins",
-      "heart"
+      "Antibiotics"
     ],
-    "displayTitle": "Vascular Anatomy",
-    "displayTagline": "Information on the macroscopic and microscopic anatomy of blood vessels.",
-    "keywordSummary": "Cardiology • Haematology • Orthopaedics • Radiology"
+    "displayTitle": "Vancomycin",
+    "displayTagline": "Information on the initiation and monitoring of vancomycin.",
+    "keywordSummary": "Microbiology • Medicine • Antibiotics"
   },
   "vascularanatomypdf": {
     "pdf": "VascularAnatomy",
@@ -7543,7 +7574,27 @@
     "displayTagline": "Information on the macroscopic and microscopic anatomy of blood vessels.",
     "keywordSummary": "Cardiology • Haematology • Orthopaedics • Radiology"
   },
-  "aao2gradientinfopdfpdf": {
+  "vascularanatomy": {
+    "pdf": "VascularAnatomy",
+    "subjectTitle": "Vascular Anatomy",
+    "subjectTagline": "Information on the macroscopic and microscopic anatomy of blood vessels",
+    "keywords": [
+      "Cardiology",
+      "Haematology",
+      "Orthopaedics",
+      "Radiology",
+      "Surgery",
+      "Medicine",
+      "artery",
+      "arteries",
+      "veins",
+      "heart"
+    ],
+    "displayTitle": "Vascular Anatomy",
+    "displayTagline": "Information on the macroscopic and microscopic anatomy of blood vessels.",
+    "keywordSummary": "Cardiology • Haematology • Orthopaedics • Radiology"
+  },
+  "aao2gradientinfopdf": {
     "pdf": "A-aO2Gradientinfo.pdf",
     "subjectTitle": "A–a O₂ Gradient",
     "subjectTagline": "Alveolar–arterial oxygen gradient interpretation",
@@ -7569,7 +7620,7 @@
     "displayTagline": "Alveolar–arterial oxygen gradient interpretation.",
     "keywordSummary": "Respiratory • Oxygen • Gasexchange"
   },
-  "aao2gradientinfopdf": {
+  "aao2gradientinfopdfpdf": {
     "pdf": "A-aO2Gradientinfo.pdf",
     "subjectTitle": "A–a O₂ Gradient",
     "subjectTagline": "Alveolar–arterial oxygen gradient interpretation",
@@ -7595,19 +7646,6 @@
     "displayTagline": "Risk of stroke after TIA.",
     "keywordSummary": "Stroke • TIA • Risk"
   },
-  "abcd2stroke": {
-    "pdf": "ABCD2Stroke.pdf",
-    "subjectTitle": "ABCD² Stroke Risk Score",
-    "subjectTagline": "Risk of stroke after TIA",
-    "keywords": [
-      "stroke",
-      "TIA",
-      "risk"
-    ],
-    "displayTitle": "ABCD² Stroke Risk Score",
-    "displayTagline": "Risk of stroke after TIA.",
-    "keywordSummary": "Stroke • TIA • Risk"
-  },
   "abcd2strokepdfpdf": {
     "pdf": "ABCD2Stroke.pdf",
     "subjectTitle": "ABCD² Stroke Risk Score",
@@ -7621,7 +7659,20 @@
     "displayTagline": "Risk of stroke after TIA.",
     "keywordSummary": "Stroke • TIA • Risk"
   },
-  "abicscoreinfopdf": {
+  "abcd2stroke": {
+    "pdf": "ABCD2Stroke.pdf",
+    "subjectTitle": "ABCD² Stroke Risk Score",
+    "subjectTagline": "Risk of stroke after TIA",
+    "keywords": [
+      "stroke",
+      "TIA",
+      "risk"
+    ],
+    "displayTitle": "ABCD² Stroke Risk Score",
+    "displayTagline": "Risk of stroke after TIA.",
+    "keywordSummary": "Stroke • TIA • Risk"
+  },
+  "abicscoreinfo": {
     "pdf": "ABICSCOREinfo.pdf",
     "subjectTitle": "ABIC Score",
     "subjectTagline": "Prognostic score for alcoholic hepatitis",
@@ -7634,7 +7685,7 @@
     "displayTagline": "Prognostic score for alcoholic hepatitis.",
     "keywordSummary": "Alcohol • Hepatitis • Prognosis"
   },
-  "abicscoreinfo": {
+  "abicscoreinfopdf": {
     "pdf": "ABICSCOREinfo.pdf",
     "subjectTitle": "ABIC Score",
     "subjectTagline": "Prognostic score for alcoholic hepatitis",
@@ -7673,19 +7724,6 @@
     "displayTagline": "Assessment and initial management.",
     "keywordSummary": "Meningitis • Infection • Antibiotics"
   },
-  "bacterialmeningitisinfo": {
-    "pdf": "BACTERIALMENINGITISinfo.pdf",
-    "subjectTitle": "Bacterial Meningitis",
-    "subjectTagline": "Assessment and initial management",
-    "keywords": [
-      "meningitis",
-      "infection",
-      "antibiotics"
-    ],
-    "displayTitle": "Bacterial Meningitis",
-    "displayTagline": "Assessment and initial management.",
-    "keywordSummary": "Meningitis • Infection • Antibiotics"
-  },
   "bacterialmeningitisinfopdfpdf": {
     "pdf": "BACTERIALMENINGITISinfo.pdf",
     "subjectTitle": "Bacterial Meningitis",
@@ -7699,17 +7737,18 @@
     "displayTagline": "Assessment and initial management.",
     "keywordSummary": "Meningitis • Infection • Antibiotics"
   },
-  "bodyweight": {
-    "pdf": "BodyWeight.pdf",
-    "subjectTitle": "Body Weight",
-    "subjectTagline": "Conversion & dosing reference",
+  "bacterialmeningitisinfo": {
+    "pdf": "BACTERIALMENINGITISinfo.pdf",
+    "subjectTitle": "Bacterial Meningitis",
+    "subjectTagline": "Assessment and initial management",
     "keywords": [
-      "weight",
-      "dosing"
+      "meningitis",
+      "infection",
+      "antibiotics"
     ],
-    "displayTitle": "Body Weight",
-    "displayTagline": "Conversion & dosing reference.",
-    "keywordSummary": "Weight • Dosing"
+    "displayTitle": "Bacterial Meningitis",
+    "displayTagline": "Assessment and initial management.",
+    "keywordSummary": "Meningitis • Infection • Antibiotics"
   },
   "bodyweightpdf": {
     "pdf": "BodyWeight.pdf",
@@ -7735,7 +7774,19 @@
     "displayTagline": "Conversion & dosing reference.",
     "keywordSummary": "Weight • Dosing"
   },
-  "chadsvaspdfpdf": {
+  "bodyweight": {
+    "pdf": "BodyWeight.pdf",
+    "subjectTitle": "Body Weight",
+    "subjectTagline": "Conversion & dosing reference",
+    "keywords": [
+      "weight",
+      "dosing"
+    ],
+    "displayTitle": "Body Weight",
+    "displayTagline": "Conversion & dosing reference.",
+    "keywordSummary": "Weight • Dosing"
+  },
+  "chadsvaspdf": {
     "pdf": "CHADS-VAS.pdf",
     "subjectTitle": "CHA2DS2-VASc Score",
     "subjectTagline": "Stroke risk in atrial fibrillation",
@@ -7748,7 +7799,7 @@
     "displayTagline": "Stroke risk in atrial fibrillation.",
     "keywordSummary": "Af • Stroke • Risk"
   },
-  "chadsvaspdf": {
+  "chadsvaspdfpdf": {
     "pdf": "CHADS-VAS.pdf",
     "subjectTitle": "CHA2DS2-VASc Score",
     "subjectTagline": "Stroke risk in atrial fibrillation",
@@ -7849,19 +7900,6 @@
     "displayTagline": "Clinical guidance is for informational purposes only.",
     "keywordSummary": "Legal • Disclaimer"
   },
-  "dukeendocarditis": {
-    "pdf": "DukeEndocarditis.pdf",
-    "subjectTitle": "Duke Criteria",
-    "subjectTagline": "Diagnostic criteria for infective endocarditis",
-    "keywords": [
-      "endocarditis",
-      "infection",
-      "diagnosis"
-    ],
-    "displayTitle": "Duke Criteria",
-    "displayTagline": "Diagnostic criteria for infective endocarditis.",
-    "keywordSummary": "Endocarditis • Infection • Diagnosis"
-  },
   "dukeendocarditispdfpdf": {
     "pdf": "DukeEndocarditis.pdf",
     "subjectTitle": "Duke Criteria",
@@ -7888,7 +7926,20 @@
     "displayTagline": "Diagnostic criteria for infective endocarditis.",
     "keywordSummary": "Endocarditis • Infection • Diagnosis"
   },
-  "epistaxisrefpdfpdf": {
+  "dukeendocarditis": {
+    "pdf": "DukeEndocarditis.pdf",
+    "subjectTitle": "Duke Criteria",
+    "subjectTagline": "Diagnostic criteria for infective endocarditis",
+    "keywords": [
+      "endocarditis",
+      "infection",
+      "diagnosis"
+    ],
+    "displayTitle": "Duke Criteria",
+    "displayTagline": "Diagnostic criteria for infective endocarditis.",
+    "keywordSummary": "Endocarditis • Infection • Diagnosis"
+  },
+  "epistaxisrefpdf": {
     "pdf": "EpistaxisRef.pdf",
     "subjectTitle": "Epistaxis",
     "subjectTagline": "Assessment and management of nasal bleeding",
@@ -7901,7 +7952,7 @@
     "displayTagline": "Assessment and management of nasal bleeding.",
     "keywordSummary": "ENT • Bleeding • Epistaxis"
   },
-  "epistaxisrefpdf": {
+  "epistaxisrefpdfpdf": {
     "pdf": "EpistaxisRef.pdf",
     "subjectTitle": "Epistaxis",
     "subjectTagline": "Assessment and management of nasal bleeding",
@@ -7927,6 +7978,18 @@
     "displayTagline": "Assessment and management of nasal bleeding.",
     "keywordSummary": "ENT • Bleeding • Epistaxis"
   },
+  "fallsaxref": {
+    "pdf": "FallsAxRef.pdf",
+    "subjectTitle": "Falls Assessment",
+    "subjectTagline": "Initial assessment and red flags for falls",
+    "keywords": [
+      "falls",
+      "geriatric"
+    ],
+    "displayTitle": "Falls Assessment",
+    "displayTagline": "Initial assessment and red flags for falls.",
+    "keywordSummary": "Falls • Geriatric"
+  },
   "fallsaxrefpdfpdf": {
     "pdf": "FallsAxRef.pdf",
     "subjectTitle": "Falls Assessment",
@@ -7951,18 +8014,6 @@
     "displayTagline": "Initial assessment and red flags for falls.",
     "keywordSummary": "Falls • Geriatric"
   },
-  "fallsaxref": {
-    "pdf": "FallsAxRef.pdf",
-    "subjectTitle": "Falls Assessment",
-    "subjectTagline": "Initial assessment and red flags for falls",
-    "keywords": [
-      "falls",
-      "geriatric"
-    ],
-    "displayTitle": "Falls Assessment",
-    "displayTagline": "Initial assessment and red flags for falls.",
-    "keywordSummary": "Falls • Geriatric"
-  },
   "feveraxref": {
     "pdf": "FeverAxRef.pdf",
     "subjectTitle": "Fever Assessment",
@@ -7975,7 +8026,7 @@
     "displayTagline": "Approach to fever in adults.",
     "keywordSummary": "Fever • Infection"
   },
-  "feveraxrefpdfpdf": {
+  "feveraxrefpdf": {
     "pdf": "FeverAxRef.pdf",
     "subjectTitle": "Fever Assessment",
     "subjectTagline": "Approach to fever in adults",
@@ -7987,7 +8038,7 @@
     "displayTagline": "Approach to fever in adults.",
     "keywordSummary": "Fever • Infection"
   },
-  "feveraxrefpdf": {
+  "feveraxrefpdfpdf": {
     "pdf": "FeverAxRef.pdf",
     "subjectTitle": "Fever Assessment",
     "subjectTagline": "Approach to fever in adults",
@@ -8077,7 +8128,7 @@
     "displayTagline": "Risk assessment for upper GI bleeding.",
     "keywordSummary": "GI • Bleeding • Ugib"
   },
-  "gracemipdf": {
+  "gracemi": {
     "pdf": "GraceMI.pdf",
     "subjectTitle": "GRACE Score",
     "subjectTagline": "Risk stratification after acute coronary syndrome",
@@ -8090,7 +8141,7 @@
     "displayTagline": "Risk stratification after acute coronary syndrome.",
     "keywordSummary": "MI • Acs • Prognosis"
   },
-  "gracemi": {
+  "gracemipdf": {
     "pdf": "GraceMI.pdf",
     "subjectTitle": "GRACE Score",
     "subjectTagline": "Risk stratification after acute coronary syndrome",
@@ -8116,7 +8167,7 @@
     "displayTagline": "Risk stratification after acute coronary syndrome.",
     "keywordSummary": "MI • Acs • Prognosis"
   },
-  "hasbled": {
+  "hasbledpdfpdf": {
     "pdf": "HAS-BLED.pdf",
     "subjectTitle": "HAS-BLED Score",
     "subjectTagline": "Bleeding risk in atrial fibrillation anticoagulation",
@@ -8129,7 +8180,7 @@
     "displayTagline": "Bleeding risk in atrial fibrillation anticoagulation.",
     "keywordSummary": "Af • Bleeding • Risk"
   },
-  "hasbledpdfpdf": {
+  "hasbled": {
     "pdf": "HAS-BLED.pdf",
     "subjectTitle": "HAS-BLED Score",
     "subjectTagline": "Bleeding risk in atrial fibrillation anticoagulation",
@@ -8155,7 +8206,7 @@
     "displayTagline": "Bleeding risk in atrial fibrillation anticoagulation.",
     "keywordSummary": "Af • Bleeding • Risk"
   },
-  "kingscriteriaparacetamolpdfpdf": {
+  "kingscriteriaparacetamolpdf": {
     "pdf": "KingsCriteriaParacetamol.pdf",
     "subjectTitle": "King's College Criteria",
     "subjectTagline": "Prognosis in paracetamol overdose",
@@ -8168,7 +8219,7 @@
     "displayTagline": "Prognosis in paracetamol overdose.",
     "keywordSummary": "Overdose • Paracetamol • Liver"
   },
-  "kingscriteriaparacetamolpdf": {
+  "kingscriteriaparacetamolpdfpdf": {
     "pdf": "KingsCriteriaParacetamol.pdf",
     "subjectTitle": "King's College Criteria",
     "subjectTagline": "Prognosis in paracetamol overdose",
@@ -8194,6 +8245,14 @@
     "displayTagline": "Prognosis in paracetamol overdose.",
     "keywordSummary": "Overdose • Paracetamol • Liver"
   },
+  "missingpdfpdf": {
+    "pdf": "Missing.pdf",
+    "subjectTitle": "Missing Document",
+    "subjectTagline": "Placeholder — metadata required",
+    "keywords": [],
+    "displayTitle": "Missing Document",
+    "displayTagline": "Placeholder — metadata required."
+  },
   "missing": {
     "pdf": "Missing.pdf",
     "subjectTitle": "Missing Document",
@@ -8210,28 +8269,7 @@
     "displayTitle": "Missing Document",
     "displayTagline": "Placeholder — metadata required."
   },
-  "missingpdfpdf": {
-    "pdf": "Missing.pdf",
-    "subjectTitle": "Missing Document",
-    "subjectTagline": "Placeholder — metadata required",
-    "keywords": [],
-    "displayTitle": "Missing Document",
-    "displayTagline": "Placeholder — metadata required."
-  },
   "scarbossa": {
-    "pdf": "Scarbossa.pdf",
-    "subjectTitle": "Sgarbossa Criteria",
-    "subjectTagline": "ECG criteria for MI in LBBB",
-    "keywords": [
-      "ECG",
-      "MI",
-      "LBBB"
-    ],
-    "displayTitle": "Sgarbossa Criteria",
-    "displayTagline": "ECG criteria for MI in LBBB.",
-    "keywordSummary": "ECG • MI • Lbbb"
-  },
-  "scarbossapdf": {
     "pdf": "Scarbossa.pdf",
     "subjectTitle": "Sgarbossa Criteria",
     "subjectTagline": "ECG criteria for MI in LBBB",
@@ -8257,500 +8295,95 @@
     "displayTagline": "ECG criteria for MI in LBBB.",
     "keywordSummary": "ECG • MI • Lbbb"
   },
-  "criticalcare": {
-    "pdf": "static/revision/1. Critical Care",
-    "subjectTitle": "Critical Care (PLAB Revision)",
-    "subjectTagline": "Resuscitation, shock, ventilation, and ICU organ support aligned to MLA topics.",
+  "scarbossapdf": {
+    "pdf": "Scarbossa.pdf",
+    "subjectTitle": "Sgarbossa Criteria",
+    "subjectTagline": "ECG criteria for MI in LBBB",
     "keywords": [
-      "Critical care",
-      "Resuscitation",
-      "Sepsis",
-      "Ventilation",
-      "Shock",
-      "Airway"
+      "ECG",
+      "MI",
+      "LBBB"
     ],
-    "displayTitle": "Critical Care Revision Guide",
-    "displayTagline": "PLAB-aligned critical care revision for resuscitation, ventilation, and shock management.",
-    "keywordSummary": "Critical care • Resuscitation • Sepsis • Ventilation"
+    "displayTitle": "Sgarbossa Criteria",
+    "displayTagline": "ECG criteria for MI in LBBB.",
+    "keywordSummary": "ECG • MI • Lbbb"
   },
-  "dermatology": {
-    "pdf": "static/revision/2. Dermatology",
-    "subjectTitle": "Dermatology (PLAB Revision)",
-    "subjectTagline": "Rashes, infections, skin tumours, and dermatological emergencies matched to MLA coverage.",
+  "antibioticoverview": {
+    "pdf": "Antibiotic Overview.pdf",
+    "subjectTitle": "Antibiotic Overview",
+    "subjectTagline": "Overview of common antibiotics and indications",
     "keywords": [
-      "Dermatology",
-      "Rash",
-      "Skin cancer",
-      "Infection",
-      "Eczema",
-      "Psoriasis"
+      "Microbiology",
+      "Medicine",
+      "Antibiotics"
     ],
-    "displayTitle": "Dermatology Revision Guide",
-    "displayTagline": "PLAB-focused dermatology revision on inflammatory, infectious, and malignant skin disease.",
-    "keywordSummary": "Dermatology • Rash • Infection • Skin cancer"
+    "displayTitle": "Antibiotic Overview",
+    "displayTagline": "Overview of common antibiotics and indications.",
+    "keywordSummary": "Microbiology • Medicine • Antibiotics"
   },
-  "emergencymedicine": {
-    "pdf": "static/revision/3. Emergency Medicine",
-    "subjectTitle": "Emergency Medicine (PLAB Revision)",
-    "subjectTagline": "Major presentations, trauma, and ED decision-making reflecting MLA expectations.",
+  "antibioticoverviewpdfpdf": {
+    "pdf": "Antibiotic Overview.pdf",
+    "subjectTitle": "Antibiotic Overview",
+    "subjectTagline": "Overview of common antibiotics and indications",
     "keywords": [
-      "Emergency",
-      "Trauma",
-      "Triage",
-      "Resuscitation",
-      "Shock",
-      "Poisoning"
+      "Microbiology",
+      "Medicine",
+      "Antibiotics"
     ],
-    "displayTitle": "Emergency Medicine Revision Guide",
-    "displayTagline": "PLAB revision for common ED scenarios, trauma calls, and time-critical decisions.",
-    "keywordSummary": "Emergency • Trauma • Triage • Resuscitation"
+    "displayTitle": "Antibiotic Overview",
+    "displayTagline": "Overview of common antibiotics and indications.",
+    "keywordSummary": "Microbiology • Medicine • Antibiotics"
   },
-  "endocrine": {
-    "pdf": "static/revision/4. Endocrine",
-    "subjectTitle": "Endocrine (PLAB Revision)",
-    "subjectTagline": "Diabetes, thyroid disease, adrenal crises, and electrolyte disorders as per MLA topics.",
+  "antibioticoverviewpdf": {
+    "pdf": "Antibiotic Overview.pdf",
+    "subjectTitle": "Antibiotic Overview",
+    "subjectTagline": "Overview of common antibiotics and indications",
     "keywords": [
-      "Endocrine",
-      "Diabetes",
-      "Thyroid",
-      "Adrenal",
-      "Calcium",
-      "Electrolytes"
+      "Microbiology",
+      "Medicine",
+      "Antibiotics"
     ],
-    "displayTitle": "Endocrine Revision Guide",
-    "displayTagline": "PLAB-oriented endocrine revision covering diabetes, thyroid, adrenal, and calcium balance disorders.",
-    "keywordSummary": "Endocrine • Diabetes • Thyroid • Adrenal"
+    "displayTitle": "Antibiotic Overview",
+    "displayTagline": "Overview of common antibiotics and indications.",
+    "keywordSummary": "Microbiology • Medicine • Antibiotics"
   },
-  "ent": {
-    "pdf": "static/revision/5. ENT",
-    "subjectTitle": "ENT (PLAB Revision)",
-    "subjectTagline": "Ear, nose, and throat infections, airway risks, and urgent presentations mapped to MLA content.",
+  "antibioticscheatsheetpdfpdf": {
+    "pdf": "Antibiotics Cheat Sheet.pdf",
+    "subjectTitle": "Antibiotics Cheat Sheet",
+    "subjectTagline": "Quick reference for common antibiotics and dosing",
     "keywords": [
-      "ENT",
-      "Airway",
-      "Epistaxis",
-      "Otitis",
-      "Tonsillitis",
-      "Sinusitis"
+      "Microbiology",
+      "Medicine",
+      "Antibiotics"
     ],
-    "displayTitle": "ENT Revision Guide",
-    "displayTagline": "PLAB-focused ENT revision covering airway risks, epistaxis, otitis, and throat emergencies.",
-    "keywordSummary": "ENT • Airway • Epistaxis • Infection"
+    "displayTitle": "Antibiotics Cheat Sheet",
+    "displayTagline": "Quick reference for common antibiotics and dosing.",
+    "keywordSummary": "Microbiology • Medicine • Antibiotics"
   },
-  "gastroenterology": {
-    "pdf": "static/revision/6. Gastroenterology",
-    "subjectTitle": "Gastroenterology (PLAB Revision)",
-    "subjectTagline": "Upper and lower GI disease, liver pathology, and acute abdomen topics aligned to MLA.",
+  "antibioticscheatsheetpdf": {
+    "pdf": "Antibiotics Cheat Sheet.pdf",
+    "subjectTitle": "Antibiotics Cheat Sheet",
+    "subjectTagline": "Quick reference for common antibiotics and dosing",
     "keywords": [
-      "Gastroenterology",
-      "Liver",
-      "IBD",
-      "Pancreatitis",
-      "GI bleed",
-      "Hepatitis"
+      "Microbiology",
+      "Medicine",
+      "Antibiotics"
     ],
-    "displayTitle": "Gastroenterology Revision Guide",
-    "displayTagline": "PLAB-style gastroenterology revision for GI bleeding, IBD, hepatology, and acute abdomen.",
-    "keywordSummary": "Gastroenterology • Liver • IBD • GI bleed"
+    "displayTitle": "Antibiotics Cheat Sheet",
+    "displayTagline": "Quick reference for common antibiotics and dosing.",
+    "keywordSummary": "Microbiology • Medicine • Antibiotics"
   },
-  "haematology": {
-    "pdf": "static/revision/7. Haematology",
-    "subjectTitle": "Haematology (PLAB Revision)",
-    "subjectTagline": "Anaemia, coagulation, transfusion, and haematological malignancy review for MLA.",
+  "antibioticscheatsheet": {
+    "pdf": "Antibiotics Cheat Sheet.pdf",
+    "subjectTitle": "Antibiotics Cheat Sheet",
+    "subjectTagline": "Quick reference for common antibiotics and dosing",
     "keywords": [
-      "Haematology",
-      "Anaemia",
-      "Coagulation",
-      "Transfusion",
-      "Thrombosis",
-      "Malignancy"
+      "Microbiology",
+      "Medicine",
+      "Antibiotics"
     ],
-    "displayTitle": "Haematology Revision Guide",
-    "displayTagline": "PLAB revision covering anaemia, clotting disorders, transfusion, and malignant haematology.",
-    "keywordSummary": "Haematology • Anaemia • Coagulation • Transfusion"
-  },
-  "neurology": {
-    "pdf": "static/revision/8. Neurology",
-    "subjectTitle": "Neurology (PLAB Revision)",
-    "subjectTagline": "Stroke, seizures, neuropathies, and neurology examination in line with MLA themes.",
-    "keywords": [
-      "Neurology",
-      "Stroke",
-      "Seizure",
-      "Headache",
-      "Neuropathy",
-      "Movement"
-    ],
-    "displayTitle": "Neurology Revision Guide",
-    "displayTagline": "PLAB-ready neurology revision for stroke, seizures, headaches, and neurological examination.",
-    "keywordSummary": "Neurology • Stroke • Seizure • Headache"
-  },
-  "urology": {
-    "pdf": "static/revision/9. Urology",
-    "subjectTitle": "Urology (PLAB Revision)",
-    "subjectTagline": "Renal colic, retention, prostate disease, and UTIs reflecting MLA scope.",
-    "keywords": [
-      "Urology",
-      "Renal colic",
-      "Retention",
-      "UTI",
-      "Prostate",
-      "Stone"
-    ],
-    "displayTitle": "Urology Revision Guide",
-    "displayTagline": "PLAB revision on urinary obstruction, stones, prostate disease, and infection.",
-    "keywordSummary": "Urology • Renal colic • Retention • UTI"
-  },
-  "obstetricsandgynaecology": {
-    "pdf": "static/revision/10. Obstetrics and Gynaecology",
-    "subjectTitle": "Obstetrics and Gynaecology (PLAB Revision)",
-    "subjectTagline": "Antenatal care, obstetric emergencies, contraception, and common gynae issues for MLA.",
-    "keywords": [
-      "Obstetrics",
-      "Gynaecology",
-      "Pregnancy",
-      "Contraception",
-      "Labour",
-      "Postpartum"
-    ],
-    "displayTitle": "Obstetrics and Gynaecology Revision Guide",
-    "displayTagline": "PLAB-aligned obstetrics and gynaecology revision covering pregnancy care and acute gynae problems.",
-    "keywordSummary": "Obstetrics • Gynaecology • Pregnancy • Contraception"
-  },
-  "radiology": {
-    "pdf": "static/revision/11. Radiology",
-    "subjectTitle": "Radiology (PLAB Revision)",
-    "subjectTagline": "Imaging interpretation, modality choice, and radiation safety aligned with MLA.",
-    "keywords": [
-      "Radiology",
-      "Imaging",
-      "X-ray",
-      "CT",
-      "MRI",
-      "Ultrasound"
-    ],
-    "displayTitle": "Radiology Revision Guide",
-    "displayTagline": "PLAB-focused radiology revision on interpreting common studies and selecting safe imaging.",
-    "keywordSummary": "Radiology • Imaging • X-ray • CT"
-  },
-  "ophthalmology": {
-    "pdf": "static/revision/12. Ophthalmology",
-    "subjectTitle": "Ophthalmology (PLAB Revision)",
-    "subjectTagline": "Red eye, acute vision loss, trauma, and ocular examinations aligned to MLA outcomes.",
-    "keywords": [
-      "Ophthalmology",
-      "Red eye",
-      "Vision loss",
-      "Trauma",
-      "Glaucoma",
-      "Retina"
-    ],
-    "displayTitle": "Ophthalmology Revision Guide",
-    "displayTagline": "PLAB revision for red eye, acute vision loss, ocular trauma, and key eye examinations.",
-    "keywordSummary": "Ophthalmology • Red eye • Vision loss • Trauma"
-  },
-  "orthopaedics": {
-    "pdf": "static/revision/13. Orthopaedics",
-    "subjectTitle": "Orthopaedics (PLAB Revision)",
-    "subjectTagline": "Fractures, dislocations, immobilisation, and MSK infection in MLA scope.",
-    "keywords": [
-      "Orthopaedics",
-      "Fracture",
-      "Dislocation",
-      "Immobilisation",
-      "MSK infection",
-      "Back pain"
-    ],
-    "displayTitle": "Orthopaedics Revision Guide",
-    "displayTagline": "PLAB-oriented orthopaedics revision on fractures, MSK emergencies, and postoperative care.",
-    "keywordSummary": "Orthopaedics • Fracture • Dislocation • MSK"
-  },
-  "paediatrics": {
-    "pdf": "static/revision/14. Paediatrics",
-    "subjectTitle": "Paediatrics (PLAB Revision)",
-    "subjectTagline": "Childhood emergencies, safeguarding, growth, and common infections mapped to MLA content.",
-    "keywords": [
-      "Paediatrics",
-      "Fever",
-      "Respiratory",
-      "Sepsis",
-      "Safeguarding",
-      "Dosing"
-    ],
-    "displayTitle": "Paediatrics Revision Guide",
-    "displayTagline": "PLAB-style paediatrics revision for acute illness, safeguarding, and paediatric prescribing.",
-    "keywordSummary": "Paediatrics • Fever • Safeguarding • Dosing"
-  },
-  "geriatric": {
-    "pdf": "static/revision/15. Geriatric",
-    "subjectTitle": "Geriatric Medicine (PLAB Revision)",
-    "subjectTagline": "Frailty, falls, delirium, and polypharmacy considerations aligned with MLA.",
-    "keywords": [
-      "Geriatrics",
-      "Frailty",
-      "Falls",
-      "Delirium",
-      "Polypharmacy",
-      "Capacity"
-    ],
-    "displayTitle": "Geriatric Medicine Revision Guide",
-    "displayTagline": "PLAB-aligned geriatrics revision on frailty syndromes, cognition, and medicines optimisation.",
-    "keywordSummary": "Geriatrics • Frailty • Falls • Delirium"
-  },
-  "rheumatology": {
-    "pdf": "static/revision/16. Rheumatology",
-    "subjectTitle": "Rheumatology (PLAB Revision)",
-    "subjectTagline": "Inflammatory arthritis, connective tissue disease, vasculitis, and MSK assessment.",
-    "keywords": [
-      "Rheumatology",
-      "Arthritis",
-      "Autoimmune",
-      "Vasculitis",
-      "Back pain",
-      "MSK"
-    ],
-    "displayTitle": "Rheumatology Revision Guide",
-    "displayTagline": "PLAB-focused rheumatology revision for arthritis patterns, autoimmune disease, and MSK examination.",
-    "keywordSummary": "Rheumatology • Arthritis • Autoimmune • Vasculitis"
-  },
-  "genetics": {
-    "pdf": "static/revision/17. Genetics",
-    "subjectTitle": "Genetics (PLAB Revision)",
-    "subjectTagline": "Inheritance patterns, screening, and counselling topics aligned to MLA expectations.",
-    "keywords": [
-      "Genetics",
-      "Inheritance",
-      "Counselling",
-      "Screening",
-      "Genomic",
-      "Risk"
-    ],
-    "displayTitle": "Genetics Revision Guide",
-    "displayTagline": "PLAB revision for inheritance patterns, genetic screening, and counselling conversations.",
-    "keywordSummary": "Genetics • Inheritance • Screening • Counselling"
-  },
-  "vascularsurgery": {
-    "pdf": "static/revision/18. Vascular surgery",
-    "subjectTitle": "Vascular Surgery (PLAB Revision)",
-    "subjectTagline": "Peripheral vascular disease, aneurysms, acute limb ischaemia, and postoperative issues.",
-    "keywords": [
-      "Vascular",
-      "Peripheral arterial disease",
-      "Aneurysm",
-      "Limb ischaemia",
-      "Bypass",
-      "Claudication"
-    ],
-    "displayTitle": "Vascular Surgery Revision Guide",
-    "displayTagline": "PLAB-oriented vascular surgery revision covering aneurysms, PAD, and acute limb ischaemia.",
-    "keywordSummary": "Vascular • PAD • Aneurysm • Limb ischaemia"
-  },
-  "cardiology": {
-    "pdf": "static/revision/19. Cardiology",
-    "subjectTitle": "Cardiology (PLAB Revision)",
-    "subjectTagline": "Chest pain, arrhythmias, heart failure, and valvular disease aligned with MLA topics.",
-    "keywords": [
-      "Cardiology",
-      "ACS",
-      "Arrhythmia",
-      "Heart failure",
-      "Valve",
-      "Hypertension"
-    ],
-    "displayTitle": "Cardiology Revision Guide",
-    "displayTagline": "PLAB-ready cardiology revision on ACS, arrhythmias, heart failure, and valve disease.",
-    "keywordSummary": "Cardiology • ACS • Arrhythmia • Heart failure"
-  },
-  "epidemiology": {
-    "pdf": "static/revision/20. Epidemiology",
-    "subjectTitle": "Epidemiology (PLAB Revision)",
-    "subjectTagline": "Study design, screening metrics, biases, and population health calculations for MLA.",
-    "keywords": [
-      "Epidemiology",
-      "Screening",
-      "Biostatistics",
-      "Bias",
-      "Study design",
-      "Risk"
-    ],
-    "displayTitle": "Epidemiology Revision Guide",
-    "displayTagline": "PLAB-style epidemiology revision covering screening performance, study types, and bias.",
-    "keywordSummary": "Epidemiology • Screening • Biostatistics • Bias"
-  },
-  "oncology": {
-    "pdf": "static/revision/21. Oncology",
-    "subjectTitle": "Oncology (PLAB Revision)",
-    "subjectTagline": "Cancer red flags, staging, treatment complications, and symptom control per MLA content.",
-    "keywords": [
-      "Oncology",
-      "Cancer",
-      "Staging",
-      "Chemotherapy",
-      "Radiotherapy",
-      "Palliative"
-    ],
-    "displayTitle": "Oncology Revision Guide",
-    "displayTagline": "PLAB-focused oncology revision for cancer recognition, staging principles, and treatment effects.",
-    "keywordSummary": "Oncology • Cancer • Staging • Chemotherapy"
-  },
-  "anatomy": {
-    "pdf": "static/revision/22. Anatomy",
-    "subjectTitle": "Anatomy (PLAB Revision)",
-    "subjectTagline": "Regional anatomy, surface landmarks, and nerve/vascular supply aligned with MLA structures.",
-    "keywords": [
-      "Anatomy",
-      "Musculoskeletal",
-      "Neuroanatomy",
-      "Vascular",
-      "Surface marking",
-      "Nerves"
-    ],
-    "displayTitle": "Anatomy Revision Guide",
-    "displayTagline": "PLAB-style anatomy revision on regional structures, key nerves, and surface landmarks.",
-    "keywordSummary": "Anatomy • Musculoskeletal • Neuroanatomy • Vascular"
-  },
-  "psychiatry": {
-    "pdf": "static/revision/23. Psychiatry",
-    "subjectTitle": "Psychiatry (PLAB Revision)",
-    "subjectTagline": "Mood disorders, psychosis, risk assessment, capacity, and substance misuse per MLA.",
-    "keywords": [
-      "Psychiatry",
-      "Depression",
-      "Psychosis",
-      "Risk",
-      "Capacity",
-      "Addiction"
-    ],
-    "displayTitle": "Psychiatry Revision Guide",
-    "displayTagline": "PLAB-focused psychiatry revision on mood, psychosis, risk, and capacity assessments.",
-    "keywordSummary": "Psychiatry • Depression • Psychosis • Risk"
-  },
-  "ethics": {
-    "pdf": "static/revision/24. Ethics",
-    "subjectTitle": "Ethics and Law (PLAB Revision)",
-    "subjectTagline": "Consent, confidentiality, safeguarding, and GMC-aligned ethical frameworks.",
-    "keywords": [
-      "Ethics",
-      "Consent",
-      "Confidentiality",
-      "Capacity",
-      "Safeguarding",
-      "Law"
-    ],
-    "displayTitle": "Ethics Revision Guide",
-    "displayTagline": "PLAB-ready ethics revision for consent, confidentiality, safeguarding, and legal duties.",
-    "keywordSummary": "Ethics • Consent • Confidentiality • Safeguarding"
-  },
-  "generalsurgery": {
-    "pdf": "static/revision/25.General Surgery",
-    "subjectTitle": "General Surgery (PLAB Revision)",
-    "subjectTagline": "Abdominal emergencies, perioperative care, hernias, and postoperative complications.",
-    "keywords": [
-      "Surgery",
-      "Appendicitis",
-      "Hernia",
-      "Perioperative",
-      "Gallbladder",
-      "Bowel obstruction"
-    ],
-    "displayTitle": "General Surgery Revision Guide",
-    "displayTagline": "PLAB-aligned general surgery revision on acute abdomen, hernias, and perioperative issues.",
-    "keywordSummary": "Surgery • Acute abdomen • Hernia • Perioperative"
-  },
-  "genitourinary": {
-    "pdf": "static/revision/26. Genitourinary",
-    "subjectTitle": "Genitourinary (PLAB Revision)",
-    "subjectTagline": "Genital and urinary tract infections, STIs, and reproductive tract disorders as per MLA.",
-    "keywords": [
-      "Genitourinary",
-      "STI",
-      "UTI",
-      "Pelvic pain",
-      "Renal",
-      "Reproductive"
-    ],
-    "displayTitle": "Genitourinary Revision Guide",
-    "displayTagline": "PLAB-focused genitourinary revision covering UTIs, STIs, pelvic pain, and renal tract issues.",
-    "keywordSummary": "Genitourinary • STI • UTI • Pelvic pain"
-  },
-  "palliativecare": {
-    "pdf": "static/revision/27. Palliative Care",
-    "subjectTitle": "Palliative Care (PLAB Revision)",
-    "subjectTagline": "Symptom control, communication, advance care planning, and end-of-life care per MLA.",
-    "keywords": [
-      "Palliative",
-      "End of life",
-      "Pain",
-      "Nausea",
-      "Communication",
-      "Advance care"
-    ],
-    "displayTitle": "Palliative Care Revision Guide",
-    "displayTagline": "PLAB-ready palliative care revision for symptom control and end-of-life decision-making.",
-    "keywordSummary": "Palliative • End of life • Pain • Communication"
-  },
-  "pharmacology": {
-    "pdf": "static/revision/28. Pharmacology",
-    "subjectTitle": "Pharmacology (PLAB Revision)",
-    "subjectTagline": "Drug classes, mechanisms, interactions, and safe prescribing mapped to MLA outcomes.",
-    "keywords": [
-      "Pharmacology",
-      "Prescribing",
-      "Side effects",
-      "Interactions",
-      "Dosing",
-      "Monitoring"
-    ],
-    "displayTitle": "Pharmacology Revision Guide",
-    "displayTagline": "PLAB-focused pharmacology revision covering mechanisms, side effects, and safe prescribing.",
-    "keywordSummary": "Pharmacology • Prescribing • Side effects • Interactions"
-  },
-  "infectiousdiseases": {
-    "pdf": "static/revision/29. Infectious Diseases",
-    "subjectTitle": "Infectious Diseases (PLAB Revision)",
-    "subjectTagline": "Sepsis, antimicrobial stewardship, vaccination, and travel infections aligned to MLA topics.",
-    "keywords": [
-      "Infection",
-      "Sepsis",
-      "Antibiotics",
-      "Vaccination",
-      "Travel",
-      "Isolation"
-    ],
-    "displayTitle": "Infectious Diseases Revision Guide",
-    "displayTagline": "PLAB revision for infection recognition, sepsis pathways, and antimicrobial stewardship.",
-    "keywordSummary": "Infection • Sepsis • Antibiotics • Vaccination"
-  },
-  "nephrology": {
-    "pdf": "static/revision/30. Nephrology",
-    "subjectTitle": "Nephrology (PLAB Revision)",
-    "subjectTagline": "AKI, CKD, electrolyte disorders, dialysis, and hypertension within MLA scope.",
-    "keywords": [
-      "Nephrology",
-      "AKI",
-      "CKD",
-      "Electrolytes",
-      "Dialysis",
-      "Hypertension"
-    ],
-    "displayTitle": "Nephrology Revision Guide",
-    "displayTagline": "PLAB-style nephrology revision on kidney injury, CKD, electrolytes, and renal replacement.",
-    "keywordSummary": "Nephrology • AKI • CKD • Electrolytes"
-  },
-  "respiratory": {
-    "pdf": "static/revision/31. Respiratory",
-    "subjectTitle": "Respiratory (PLAB Revision)",
-    "subjectTagline": "Asthma, COPD, pneumonia, pleural disease, and respiratory failure aligned with MLA content.",
-    "keywords": [
-      "Respiratory",
-      "Asthma",
-      "COPD",
-      "Pneumonia",
-      "Pleural",
-      "Respiratory failure"
-    ],
-    "displayTitle": "Respiratory Revision Guide",
-    "displayTagline": "PLAB-focused respiratory revision covering airway disease, infection, and pleural pathology.",
-    "keywordSummary": "Respiratory • Asthma • COPD • Pneumonia"
+    "displayTitle": "Antibiotics Cheat Sheet",
+    "displayTagline": "Quick reference for common antibiotics and dosing.",
+    "keywordSummary": "Microbiology • Medicine • Antibiotics"
   }
 }
