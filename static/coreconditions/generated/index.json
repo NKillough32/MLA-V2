@@ -1,7 +1,7 @@
 {
   "generatedAt": "2026-01-28T14:46:55.550647",
-  "totalConditions": 550,
-  "processedCount": 550,
+  "totalConditions": 551,
+  "processedCount": 551,
   "model": "gpt-4o-mini",
   "conditions": [
     {
@@ -1070,6 +1070,15 @@
         "Gastrointestinal Surgery"
       ],
       "filename": "colorectal_tumours.json",
+      "processed": true
+    },
+    {
+      "id": "common_travel_related_illnesses",
+      "name": "Common travel-related illnesses and presentations",
+      "domains": [
+        "Infection"
+      ],
+      "filename": "common_travel_related_illnesses.json",
       "processed": true
     },
     {
