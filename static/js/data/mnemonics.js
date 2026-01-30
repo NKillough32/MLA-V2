@@ -123,6 +123,20 @@ export const mnemonicsDatabase = {
             '<strong>Emergency</strong>: Requires immediate senior review and ITU consideration'
         ]
     },
+    'bush-50-chest-drain': {
+        title: 'BUSH 50 - High Risk Characteristics (Chest Drain)',
+        category: 'respiratory',
+        mnemonic: 'BUSH 50',
+        meaning: 'High-risk features for chest drain consideration',
+        usage: 'Identify patients with pneumothorax who need closer monitoring and intervention',
+        details: [
+            '<strong>B</strong> - <strong>Bilateral pneumothoraces</strong>',
+            '<strong>U</strong> - <strong>Underlying lung disease</strong>',
+            '<strong>S</strong> - <strong>Significant hypoxia</strong>',
+            '<strong>H</strong> - <strong>Haemothorax/haemodynamically unstable</strong>',
+            '<strong>50</strong> - <strong>Over 50 with a smoking history</strong>'
+        ]
+    },
     'dope-ventilator-troubleshoot': {
         title: 'DOPE - Ventilator Troubleshooting',
         category: 'emergency',
