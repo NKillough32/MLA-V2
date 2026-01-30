@@ -1287,7 +1287,13 @@ export class GlobalSearchManager {
         this.resultActions.clear();
         const totalMatches = groups.reduce((sum, group) => sum + group.matches.length, 0);
         if (this.metaContainer) {
-            this.metaContainer.textContent = `Showing ${totalMatches} matches across ${groups.length} areas for "${query}".`;
+            const topAreas = [...groups]
+                .sort((a, b) => b.total - a.total)
+                .slice(0, 3)
+                .map(group => `${group.label} (${group.total})`)
+                .join(', ');
+            const topAreasLabel = topAreas ? ` Top areas: ${topAreas}.` : '';
+            this.metaContainer.textContent = `Showing ${totalMatches} matches across ${groups.length} areas for "${query}".${topAreasLabel}`;
         }
 
         const html = groups.map(group => {
