@@ -633,7 +633,7 @@ Rheumatology,Gout
 Rheumatology,DeQuervain?s tenosynovitis?
 Rheumatology,Dermatomyositis
 Rheumatology,Fibromyalgia
-Rheumatology,Giant cell arteritis (GCA) 
+Rheumatology,Giant cell arteritis (temporal arteritis, GCA)
 Rheumatology,Greater trochanter bursitis?
 Rheumatology,Idiopathic/Seronegative arthritis
 Rheumatology,Impingement syndrome/subacromial bursitis?
@@ -656,6 +656,11 @@ Rheumatology,Spinal fracture
 Rheumatology,Systemic lupus erythematosus (SLE)
 Rheumatology,Systemic sclerosis (Scleroderma)
 Rheumatology,Vasculitis
+Rheumatology,Granulomatosis with polyangiitis (c-ANCA)
+Rheumatology,Microscopic polyangiitis (p-ANCA)
+Rheumatology,Eosinophilic granulomatosis with polyangiitis (p-ANCA)
+Rheumatology,Polyarteritis nodosa
+Rheumatology,IgA vasculitis (Henoch-Schonlein purpura)
 Trauma and Orthopaedics,Achilles tendon rupture
 Trauma and Orthopaedics,Ankle fracture
 Trauma and Orthopaedics,Anterior cruciate ligament (ACL) tear
