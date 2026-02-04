@@ -1,0 +1,106 @@
+{
+  "id": "thyroid_storm",
+  "name": "Thyroid storm",
+  "domains": [
+    "Endocrine"
+  ],
+  "generatedAt": "2026-02-14T12:00:00.000000",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Thyroid storm: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nThyroid storm is a life-threatening exacerbation of thyrotoxicosis with hypermetabolic state, fever, and organ dysfunction.\n\n### Epidemiology\nRare but occurs in untreated hyperthyroidism precipitated by infection, surgery, trauma, or stopping antithyroid medication.\n\n### Essential Pathophysiology\nExcess thyroid hormone increases catecholamine sensitivity and metabolic demand, leading to hyperthermia, tachyarrhythmias, and multiorgan failure.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fever and profuse sweating\n- Palpitations, chest pain\n- Agitation, delirium\n- Nausea, vomiting, diarrhoea\n\n### Key Signs\n- Tachycardia or atrial fibrillation\n- Hyperthermia\n- Tremor, goitre, lid lag\n- Heart failure signs\n\n### Atypical Presentations\n- Elderly with apathy and heart failure (apathetic thyroid storm)\n\n### Red Flags Requiring Immediate Action\n- Altered consciousness\n- Cardiac arrhythmias or heart failure\n- Hyperthermia > 40°C\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- TFTs (TSH suppressed, raised T3/T4)\n- FBC, U&E, LFTs, glucose\n- ECG\n\n### Second-line Investigations\n- CXR or cultures if infection suspected\n- ABG if respiratory compromise\n\n### Specialist Tests\n- Thyroid receptor antibodies if unclear cause\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nClinical diagnosis supported by Burch-Wartofsky score; treat immediately without waiting for results.\n\n### Key Differential Diagnoses to Exclude\n- Sepsis\n- Neuroleptic malignant syndrome\n- Pheochromocytoma crisis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Beta-blocker (propranolol) to control adrenergic symptoms\n- Antithyroid drug (propylthiouracil or carbimazole)\n- IV hydrocortisone\n\n#### Second-line Treatments\n- Iodine solution after antithyroid drug (e.g., Lugol's)\n- Treat precipitating cause (e.g., antibiotics)\n\n#### Emergency Procedures\n- Critical care support for organ failure\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Transition to oral antithyroid therapy\n- Plan definitive therapy (radioiodine or surgery)\n\n#### Second-line Treatments\n- Endocrinology follow-up for relapse prevention\n\n#### Monitoring Requirements\n- Continuous cardiac monitoring\n- Repeat TFTs after stabilization\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Propranolol\n- **Mechanism of Action**: Beta-blocker reducing adrenergic effects and peripheral T4 to T3 conversion (high dose).\n- **Typical Dosing Range**: 40-80 mg PO 6-hourly or IV as per protocol.\n- **Key Side Effects/Contraindications**: Bronchospasm, bradycardia; avoid in severe asthma.\n- **When to Use vs. Alternatives**: First-line for rate control; use esmolol if ICU.\n\n#### Propylthiouracil (PTU)\n- **Mechanism of Action**: Inhibits thyroid hormone synthesis and peripheral conversion.\n- **Typical Dosing Range**: 500-1000 mg loading then 250 mg 4-hourly.\n- **Key Side Effects/Contraindications**: Hepatotoxicity, agranulocytosis.\n- **When to Use vs. Alternatives**: Preferred in thyroid storm for T4->T3 blockade.\n\n### Procedures\n- Supportive critical care, cooling, and fluid management.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMortality remains significant without prompt treatment; early therapy reduces risk.\n\n### Important Complications to Watch For\n- Arrhythmias\n- Heart failure\n- Hepatic failure\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nRecognize thyroid storm, initiate beta-blocker and antithyroid therapy per protocol, and arrange ICU review.\n\n### When to Escalate to Senior/Specialist\nImmediate escalation for hyperthermia, arrhythmia, or altered mental state.\n\n### Key Safety Considerations\nStart antithyroid drug before iodine; monitor for beta-blocker contraindications.\n",
+  "content": {
+    "overview": {
+      "definition": "Thyroid storm is a life-threatening exacerbation of thyrotoxicosis with hypermetabolic state, fever, and organ dysfunction.",
+      "epidemiology": "Rare but occurs in untreated hyperthyroidism precipitated by infection, surgery, trauma, or stopping antithyroid medication.",
+      "pathophysiology": "Excess thyroid hormone increases catecholamine sensitivity and metabolic demand, leading to hyperthermia, tachyarrhythmias, and multiorgan failure."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fever and profuse sweating",
+        "Palpitations, chest pain",
+        "Agitation, delirium",
+        "Nausea, vomiting, diarrhoea"
+      ],
+      "signs": [
+        "Tachycardia or atrial fibrillation",
+        "Hyperthermia",
+        "Tremor, goitre, lid lag",
+        "Heart failure signs"
+      ],
+      "atypicalPresentations": [
+        "Elderly with apathy and heart failure (apathetic thyroid storm)"
+      ],
+      "redFlags": [
+        "Altered consciousness",
+        "Cardiac arrhythmias or heart failure",
+        "Hyperthermia > 40°C"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "TFTs (TSH suppressed, raised T3/T4)",
+        "FBC, U&E, LFTs, glucose",
+        "ECG"
+      ],
+      "secondLine": [
+        "CXR or cultures if infection suspected",
+        "ABG if respiratory compromise"
+      ],
+      "specialistTests": [
+        "Thyroid receptor antibodies if unclear cause"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Clinical diagnosis supported by Burch-Wartofsky score; treat immediately without waiting for results.",
+      "differentials": [
+        "Sepsis",
+        "Neuroleptic malignant syndrome",
+        "Pheochromocytoma crisis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Beta-blocker (propranolol) to control adrenergic symptoms",
+          "Antithyroid drug (propylthiouracil or carbimazole)",
+          "IV hydrocortisone"
+        ],
+        "secondLine": [
+          "Iodine solution after antithyroid drug (e.g., Lugol's)",
+          "Treat precipitating cause (e.g., antibiotics)"
+        ],
+        "procedures": [
+          "Critical care support for organ failure"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Transition to oral antithyroid therapy",
+          "Plan definitive therapy (radioiodine or surgery)"
+        ],
+        "secondLine": [
+          "Endocrinology follow-up for relapse prevention"
+        ],
+        "monitoring": [
+          "Continuous cardiac monitoring",
+          "Repeat TFTs after stabilization"
+        ]
+      },
+      "drugs": [
+        "Propranolol",
+        "Propylthiouracil",
+        "Hydrocortisone"
+      ],
+      "procedures": [
+        "Supportive critical care"
+      ]
+    },
+    "prognosis": "Mortality remains significant without prompt treatment; early therapy reduces risk.",
+    "complications": [
+      "Arrhythmias",
+      "Heart failure",
+      "Hepatic failure"
+    ],
+    "foundationDoctorRole": "Recognize thyroid storm, initiate beta-blocker and antithyroid therapy per protocol, and arrange ICU review.",
+    "escalation": "Immediate escalation for hyperthermia, arrhythmia, or altered mental state."
+  }
+}

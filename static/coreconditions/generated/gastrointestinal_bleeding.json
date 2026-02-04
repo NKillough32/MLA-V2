@@ -1,0 +1,106 @@
+{
+  "id": "gastrointestinal_bleeding",
+  "name": "Gastrointestinal bleeding",
+  "domains": [
+    "Gastrointestinal"
+  ],
+  "generatedAt": "2026-02-14T12:00:00.000000",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Gastrointestinal bleeding: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nGastrointestinal (GI) bleeding is bleeding from the GI tract, presenting as haematemesis, coffee-ground vomit, melaena, or fresh PR bleeding depending on the source.\n\n### Epidemiology\nUpper GI bleeding is commonly due to peptic ulcer disease or varices; lower GI bleeding is commonly from diverticular disease, haemorrhoids, or malignancy.\n\n### Essential Pathophysiology\nBleeding results from mucosal ulceration, vascular erosion, or variceal rupture, leading to acute blood loss and potential haemodynamic compromise.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Haematemesis or coffee-ground vomit\n- Melaena or fresh PR bleeding\n- Dizziness, syncope\n- Abdominal pain or dyspepsia\n\n### Key Signs\n- Tachycardia, hypotension\n- Pallor, cool peripheries\n- Abdominal tenderness or stigmata of chronic liver disease\n\n### Atypical Presentations\n- Iron deficiency anaemia without overt bleeding\n- Occult bleeding in elderly patients\n\n### Red Flags Requiring Immediate Action\n- Haemodynamic instability\n- Massive haematemesis or ongoing PR bleeding\n- Altered mental state or shock\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- ABC assessment and vital signs\n- FBC, U&E, LFTs, coagulation profile\n- Group and save/crossmatch\n\n### Second-line Investigations\n- Upper GI endoscopy (OGD) within 24 hours\n- CT angiography for ongoing lower GI bleeding\n\n### Specialist Tests\n- Colonoscopy after stabilization\n- Interventional radiology if endoscopy fails\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is clinical with confirmation by endoscopy or imaging; use risk scores (e.g., Glasgow-Blatchford) for upper GI bleeding.\n\n### Key Differential Diagnoses to Exclude\n- Epistaxis with swallowed blood\n- Haemoptysis\n- Ingestion of iron or bismuth\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Resuscitation with IV fluids and blood products\n- Correct coagulopathy (vitamin K, PCC)\n- High-dose IV PPI for suspected upper GI bleed\n\n#### Second-line Treatments\n- Endoscopic therapy (clips, cautery, banding)\n- IV terlipressin and antibiotics for variceal bleeding\n\n#### Emergency Procedures\n- Urgent endoscopy or interventional radiology for uncontrolled bleeding\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Eradicate H. pylori if present\n- Start oral PPI and treat underlying cause\n\n#### Second-line Treatments\n- Surgical consultation if re-bleeding or malignancy\n\n#### Monitoring Requirements\n- Repeat Hb and haemodynamic monitoring\n- Follow-up endoscopy for high-risk lesions\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Proton pump inhibitor (e.g., omeprazole)\n- **Mechanism of Action**: Suppresses gastric acid to stabilize clots and heal ulcers.\n- **Typical Dosing Range**: 80 mg IV bolus then 8 mg/hour infusion (acute); 20-40 mg PO daily.\n- **Key Side Effects/Contraindications**: Headache, diarrhoea; generally safe short term.\n- **When to Use vs. Alternatives**: Use in suspected upper GI bleeding.\n\n#### Terlipressin\n- **Mechanism of Action**: Splanchnic vasoconstriction to reduce portal pressure.\n- **Typical Dosing Range**: 2 mg IV every 4 hours.\n- **Key Side Effects/Contraindications**: Ischaemia, arrhythmia, hyponatraemia.\n- **When to Use vs. Alternatives**: Use for suspected variceal bleeding.\n\n### Procedures\n\n#### Upper GI endoscopy\n- **What it Involves**: Diagnostic and therapeutic visualization of upper GI tract.\n- **Indications**: Suspected upper GI bleeding.\n- **Key Risks/Complications**: Aspiration, perforation, re-bleeding.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost patients recover with prompt resuscitation and endoscopic therapy; prognosis depends on comorbidity and severity.\n\n### Important Complications to Watch For\n- Shock and multi-organ failure\n- Re-bleeding\n- Aspiration pneumonia\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nPerform rapid ABC assessment, initiate resuscitation, order urgent labs, and prepare for endoscopy.\n\n### When to Escalate to Senior/Specialist\nImmediate escalation for haemodynamic instability, ongoing bleeding, or suspected varices.\n\n### Key Safety Considerations\nDo not delay resuscitation for investigations; ensure crossmatch and monitor for re-bleeding.\n",
+  "content": {
+    "overview": {
+      "definition": "Gastrointestinal (GI) bleeding is bleeding from the GI tract, presenting as haematemesis, coffee-ground vomit, melaena, or fresh PR bleeding depending on the source.",
+      "epidemiology": "Upper GI bleeding is commonly due to peptic ulcer disease or varices; lower GI bleeding is commonly from diverticular disease, haemorrhoids, or malignancy.",
+      "pathophysiology": "Bleeding results from mucosal ulceration, vascular erosion, or variceal rupture, leading to acute blood loss and potential haemodynamic compromise."
+    },
+    "recognition": {
+      "symptoms": [
+        "Haematemesis or coffee-ground vomit",
+        "Melaena or fresh PR bleeding",
+        "Dizziness, syncope",
+        "Abdominal pain or dyspepsia"
+      ],
+      "signs": [
+        "Tachycardia, hypotension",
+        "Pallor, cool peripheries",
+        "Abdominal tenderness or stigmata of chronic liver disease"
+      ],
+      "atypicalPresentations": [
+        "Iron deficiency anaemia without overt bleeding",
+        "Occult bleeding in elderly patients"
+      ],
+      "redFlags": [
+        "Haemodynamic instability",
+        "Massive haematemesis or ongoing PR bleeding",
+        "Altered mental state or shock"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "ABC assessment and vital signs",
+        "FBC, U&E, LFTs, coagulation profile",
+        "Group and save/crossmatch"
+      ],
+      "secondLine": [
+        "Upper GI endoscopy (OGD) within 24 hours",
+        "CT angiography for ongoing lower GI bleeding"
+      ],
+      "specialistTests": [
+        "Colonoscopy after stabilization",
+        "Interventional radiology if endoscopy fails"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is clinical with confirmation by endoscopy or imaging; use risk scores (e.g., Glasgow-Blatchford) for upper GI bleeding.",
+      "differentials": [
+        "Epistaxis with swallowed blood",
+        "Haemoptysis",
+        "Ingestion of iron or bismuth"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Resuscitation with IV fluids and blood products",
+          "Correct coagulopathy (vitamin K, PCC)",
+          "High-dose IV PPI for suspected upper GI bleed"
+        ],
+        "secondLine": [
+          "Endoscopic therapy (clips, cautery, banding)",
+          "IV terlipressin and antibiotics for variceal bleeding"
+        ],
+        "procedures": [
+          "Urgent endoscopy or interventional radiology for uncontrolled bleeding"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Eradicate H. pylori if present",
+          "Start oral PPI and treat underlying cause"
+        ],
+        "secondLine": [
+          "Surgical consultation if re-bleeding or malignancy"
+        ],
+        "monitoring": [
+          "Repeat Hb and haemodynamic monitoring",
+          "Follow-up endoscopy for high-risk lesions"
+        ]
+      },
+      "drugs": [
+        "Proton pump inhibitor",
+        "Terlipressin"
+      ],
+      "procedures": [
+        "Upper GI endoscopy"
+      ]
+    },
+    "prognosis": "Most patients recover with prompt resuscitation and endoscopic therapy; prognosis depends on comorbidity and severity.",
+    "complications": [
+      "Shock and multi-organ failure",
+      "Re-bleeding",
+      "Aspiration pneumonia"
+    ],
+    "foundationDoctorRole": "Perform rapid ABC assessment, initiate resuscitation, order urgent labs, and prepare for endoscopy.",
+    "escalation": "Immediate escalation for haemodynamic instability, ongoing bleeding, or suspected varices."
+  }
+}

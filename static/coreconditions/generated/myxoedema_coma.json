@@ -1,0 +1,106 @@
+{
+  "id": "myxoedema_coma",
+  "name": "Myxoedema coma",
+  "domains": [
+    "Endocrine"
+  ],
+  "generatedAt": "2026-02-14T12:00:00.000000",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Myxoedema coma: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nMyxoedema coma is severe decompensated hypothyroidism with hypothermia, altered mental state, and organ dysfunction.\n\n### Epidemiology\nTypically affects elderly patients with longstanding hypothyroidism and is precipitated by infection, cold exposure, or sedatives.\n\n### Essential Pathophysiology\nMarked deficiency of thyroid hormone causes reduced metabolic rate, hypoventilation, hypothermia, bradycardia, and impaired consciousness.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Lethargy or confusion\n- Cold intolerance\n- Constipation\n- Dyspnoea\n\n### Key Signs\n- Hypothermia\n- Bradycardia, hypotension\n- Slow reflexes, myxoedematous facies\n- Hypoventilation\n\n### Atypical Presentations\n- Elderly with falls or delirium\n- Hyponatraemia without clear cause\n\n### Red Flags Requiring Immediate Action\n- Reduced consciousness\n- Hypothermia with bradycardia\n- Respiratory failure\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- TFTs (high TSH, low free T4)\n- U&E, glucose, ABG\n- ECG\n\n### Second-line Investigations\n- CXR and cultures if infection suspected\n- Cortisol to exclude adrenal insufficiency\n\n### Specialist Tests\n- CT head if altered consciousness unexplained\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nClinical diagnosis in severe hypothyroidism with hypothermia and altered mental state; treat immediately.\n\n### Key Differential Diagnoses to Exclude\n- Sepsis\n- Stroke\n- Drug intoxication\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- IV levothyroxine (or liothyronine per specialist advice)\n- IV hydrocortisone until adrenal insufficiency excluded\n- Passive rewarming and supportive care\n\n#### Second-line Treatments\n- Treat precipitating cause (e.g., antibiotics)\n- Ventilatory support if hypoventilation\n\n#### Emergency Procedures\n- Critical care admission for airway and temperature management\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Transition to oral levothyroxine\n- Education on adherence\n\n#### Second-line Treatments\n- Endocrinology follow-up\n\n#### Monitoring Requirements\n- Monitor temperature, heart rate, and TFTs\n- Watch for arrhythmias\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Levothyroxine\n- **Mechanism of Action**: Synthetic T4 replacement restoring metabolic activity.\n- **Typical Dosing Range**: 200-400 micrograms IV loading (per specialist), then 50-100 micrograms daily.\n- **Key Side Effects/Contraindications**: Arrhythmias, myocardial ischaemia.\n- **When to Use vs. Alternatives**: Use IV in myxoedema coma.\n\n#### Hydrocortisone\n- **Mechanism of Action**: Covers potential adrenal insufficiency and stress response.\n- **Typical Dosing Range**: 100 mg IV stat then 50 mg 6-hourly.\n- **Key Side Effects/Contraindications**: Hyperglycaemia, fluid retention.\n- **When to Use vs. Alternatives**: Give until adrenal insufficiency excluded.\n\n### Procedures\n- Supportive critical care and rewarming.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMortality remains high without prompt treatment; early recognition improves outcomes.\n\n### Important Complications to Watch For\n- Respiratory failure\n- Arrhythmias\n- Seizures\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nRecognize myxoedema coma, initiate IV thyroid hormone and steroids per protocol, and arrange ICU care.\n\n### When to Escalate to Senior/Specialist\nImmediate escalation for hypothermia, reduced consciousness, or respiratory compromise.\n\n### Key Safety Considerations\nAvoid aggressive external rewarming; monitor for arrhythmias and adrenal insufficiency.\n",
+  "content": {
+    "overview": {
+      "definition": "Myxoedema coma is severe decompensated hypothyroidism with hypothermia, altered mental state, and organ dysfunction.",
+      "epidemiology": "Typically affects elderly patients with longstanding hypothyroidism and is precipitated by infection, cold exposure, or sedatives.",
+      "pathophysiology": "Marked deficiency of thyroid hormone causes reduced metabolic rate, hypoventilation, hypothermia, bradycardia, and impaired consciousness."
+    },
+    "recognition": {
+      "symptoms": [
+        "Lethargy or confusion",
+        "Cold intolerance",
+        "Constipation",
+        "Dyspnoea"
+      ],
+      "signs": [
+        "Hypothermia",
+        "Bradycardia, hypotension",
+        "Slow reflexes, myxoedematous facies",
+        "Hypoventilation"
+      ],
+      "atypicalPresentations": [
+        "Elderly with falls or delirium",
+        "Hyponatraemia without clear cause"
+      ],
+      "redFlags": [
+        "Reduced consciousness",
+        "Hypothermia with bradycardia",
+        "Respiratory failure"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "TFTs (high TSH, low free T4)",
+        "U&E, glucose, ABG",
+        "ECG"
+      ],
+      "secondLine": [
+        "CXR and cultures if infection suspected",
+        "Cortisol to exclude adrenal insufficiency"
+      ],
+      "specialistTests": [
+        "CT head if altered consciousness unexplained"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Clinical diagnosis in severe hypothyroidism with hypothermia and altered mental state; treat immediately.",
+      "differentials": [
+        "Sepsis",
+        "Stroke",
+        "Drug intoxication"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "IV levothyroxine (or liothyronine per specialist advice)",
+          "IV hydrocortisone until adrenal insufficiency excluded",
+          "Passive rewarming and supportive care"
+        ],
+        "secondLine": [
+          "Treat precipitating cause (e.g., antibiotics)",
+          "Ventilatory support if hypoventilation"
+        ],
+        "procedures": [
+          "Critical care admission for airway and temperature management"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Transition to oral levothyroxine",
+          "Education on adherence"
+        ],
+        "secondLine": [
+          "Endocrinology follow-up"
+        ],
+        "monitoring": [
+          "Monitor temperature, heart rate, and TFTs",
+          "Watch for arrhythmias"
+        ]
+      },
+      "drugs": [
+        "Levothyroxine",
+        "Hydrocortisone"
+      ],
+      "procedures": [
+        "Supportive critical care"
+      ]
+    },
+    "prognosis": "Mortality remains high without prompt treatment; early recognition improves outcomes.",
+    "complications": [
+      "Respiratory failure",
+      "Arrhythmias",
+      "Seizures"
+    ],
+    "foundationDoctorRole": "Recognize myxoedema coma, initiate IV thyroid hormone and steroids per protocol, and arrange ICU care.",
+    "escalation": "Immediate escalation for hypothermia, reduced consciousness, or respiratory compromise."
+  }
+}

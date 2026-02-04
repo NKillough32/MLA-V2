@@ -125,6 +125,7 @@ ENT,Presbycusis
 ENT,Rhinosinusitis and nasal polyps
 ENT,Tonsillitis and pharyngitis
 Endocrine,Addison?s disease
+Endocrine,Adrenal crisis
 Endocrine,Conn?s syndrome
 Endocrine,Cushing?s disease
 Endocrine,Cushing?s syndrome
@@ -153,6 +154,8 @@ Endocrine,Thyroid cancer
 Endocrine,Thyroid eye disease
 Endocrine,Thyroid nodules
 Endocrine,Hyperthyroidism
+Endocrine,Myxoedema coma
+Endocrine,Thyroid storm
 Endocrine,Thyrotoxicosis
 Endocrine,Type 1 diabetes
 Endocrine,Type 2 diabetes
@@ -186,6 +189,7 @@ Gastrointestinal,Oesophageal cancer
 Gastrointestinal,Pancreatic cancer
 Gastrointestinal,Peptic ulcer disease
 Gastrointestinal,Peptic ulcer disease and gastritis
+Gastrointestinal,Gastrointestinal bleeding
 Gastrointestinal,Viral hepatitis
 Gastrointestinal Surgery,Acute cholangitis
 Gastrointestinal Surgery,Acute pancreatitis
@@ -600,6 +604,7 @@ Renal,Isotonic fluid loss
 Renal,Nephrotic syndrome?
 Renal,Other electrolyte imbalances
 Renal,Polycystic kidney disease
+Renal,Renal colic
 Renal,Urethral syndrome
 Renal,Urinary tract infection
 Respiratory,Allergic disorders
