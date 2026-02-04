@@ -1,0 +1,104 @@
+{
+  "id": "giant_cell_arteritis_temporal_arteritis_gca",
+  "name": "Giant cell arteritis (temporal arteritis, GCA)",
+  "domains": [
+    "Rheumatology"
+  ],
+  "generatedAt": "2026-02-04T12:32:22.304000",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Giant cell arteritis (temporal arteritis, GCA): Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nGiant cell arteritis (GCA) is a large- and medium-vessel vasculitis affecting older adults, often involving the temporal arteries and associated with polymyalgia rheumatica.\n\n### Epidemiology\nOccurs in patients over 50 years, more common in women and Northern European populations.\n\n### Essential Pathophysiology\nGranulomatous inflammation of arterial walls causes luminal narrowing, leading to ischemic complications including vision loss.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- New headache, scalp tenderness\n- Jaw claudication\n- Visual symptoms (diplopia, transient or permanent vision loss)\n- Systemic symptoms (fever, weight loss)\n\n### Key Signs\n- Temporal artery tenderness or reduced pulse\n- Visual impairment\n\n### Atypical Presentations\n- Isolated visual symptoms\n- PMR symptoms without headache\n\n### Red Flags Requiring Immediate Action\n- Sudden vision loss\n- Severe headache with jaw claudication\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- ESR/CRP\n- FBC\n\n### Second-line Investigations\n- Temporal artery ultrasound\n\n### Specialist Tests\n- Temporal artery biopsy\n- MRA/CTA if large-vessel disease suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is clinical with elevated inflammatory markers and confirmation via biopsy or imaging.\n\n### Key Differential Diagnoses to Exclude\n- Migraine or tension headache\n- Other vasculitides\n- Intracranial pathology\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate high-dose corticosteroids (do not delay for biopsy)\n\n#### Emergency Procedures\n- Urgent ophthalmology/rheumatology referral\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Steroid taper with monitoring\n- Consider steroid-sparing agents (e.g., methotrexate or tocilizumab)\n\n#### Monitoring Requirements\n- Monitor vision, inflammatory markers, and steroid complications\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Prednisolone\n- **Mechanism of Action**: Anti-inflammatory and immunosuppressive.\n- **Typical Dosing Range**: High-dose induction then taper.\n- **Key Side Effects/Contraindications**: Infection risk, osteoporosis, hyperglycaemia.\n- **When to Use vs. Alternatives**: Start immediately when suspected.\n\n### Procedures\n\n#### Temporal artery biopsy\n- **What it Involves**: Surgical sampling of temporal artery.\n- **Indications**: Diagnostic confirmation.\n- **Key Risks/Complications**: Bleeding, infection, scarring.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nPrompt treatment prevents vision loss, but relapse can occur.\n\n### Important Complications to Watch For\n- Permanent vision loss\n- Aortic aneurysm\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nStart steroids immediately when suspected and arrange urgent referral.\n\n### When to Escalate to Senior/Specialist\nImmediate escalation for visual symptoms or neurological deficits.\n\n### Key Safety Considerations\nMonitor for steroid side effects and ensure bone protection.\n",
+  "content": {
+    "overview": {
+      "definition": "Giant cell arteritis (GCA) is a large- and medium-vessel vasculitis affecting older adults, often involving the temporal arteries and associated with polymyalgia rheumatica.",
+      "epidemiology": "Occurs in patients over 50 years, more common in women and Northern European populations.",
+      "pathophysiology": "Granulomatous inflammation of arterial walls causes luminal narrowing, leading to ischemic complications including vision loss."
+    },
+    "recognition": {
+      "symptoms": [
+        "New headache, scalp tenderness",
+        "Jaw claudication",
+        "Visual symptoms (diplopia, transient or permanent vision loss)",
+        "Systemic symptoms (fever, weight loss)"
+      ],
+      "signs": [
+        "Temporal artery tenderness or reduced pulse",
+        "Visual impairment"
+      ],
+      "atypicalPresentations": [
+        "Isolated visual symptoms",
+        "PMR symptoms without headache"
+      ],
+      "redFlags": [
+        "Sudden vision loss",
+        "Severe headache with jaw claudication"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "ESR/CRP",
+        "FBC"
+      ],
+      "secondLine": [
+        "Temporal artery ultrasound"
+      ],
+      "specialistTests": [
+        "Temporal artery biopsy",
+        "MRA/CTA if large-vessel disease suspected"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is clinical with elevated inflammatory markers and confirmation via biopsy or imaging.",
+      "differentials": [
+        "Migraine or tension headache",
+        "Other vasculitides",
+        "Intracranial pathology"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate high-dose corticosteroids (do not delay for biopsy)"
+        ],
+        "secondLine": [],
+        "procedures": [
+          "Urgent ophthalmology/rheumatology referral"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Steroid taper with monitoring",
+          "Consider steroid-sparing agents (e.g., methotrexate or tocilizumab)"
+        ],
+        "secondLine": [],
+        "monitoring": [
+          "Monitor vision, inflammatory markers, and steroid complications"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Prednisolone",
+          "mechanism": "Anti-inflammatory and immunosuppressive.",
+          "dosing": "High-dose induction then taper.",
+          "sideEffects": "Infection risk, osteoporosis, hyperglycaemia.",
+          "notes": "Start immediately when suspected."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Temporal artery biopsy",
+          "description": "Surgical sampling of temporal artery.",
+          "indications": "Diagnostic confirmation.",
+          "risks": "Bleeding, infection, scarring."
+        }
+      ]
+    },
+    "prognosis": "Prompt treatment prevents vision loss, but relapse can occur.",
+    "complications": [
+      "Permanent vision loss",
+      "Aortic aneurysm"
+    ],
+    "foundationDoctorRole": "Start steroids immediately when suspected and arrange urgent referral.",
+    "escalation": "Immediate escalation for visual symptoms or neurological deficits.",
+    "keySafetyConsiderations": "Monitor for steroid side effects and ensure bone protection."
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "id": "polyarteritis_nodosa",
+  "name": "Polyarteritis nodosa",
+  "domains": [
+    "Rheumatology"
+  ],
+  "generatedAt": "2026-02-04T12:32:22.303976",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Polyarteritis nodosa: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nPolyarteritis nodosa (PAN) is a necrotizing vasculitis of medium-sized arteries, classically sparing the lungs and associated with hepatitis B in a subset.\n\n### Epidemiology\nPAN is rare and typically presents in middle age.\n\n### Essential Pathophysiology\nSegmental arterial inflammation causes aneurysm formation, thrombosis, and organ ischemia.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fever, weight loss, myalgia\n- Abdominal pain (mesenteric ischemia)\n- Peripheral neuropathy (mononeuritis multiplex)\n- Testicular pain\n\n### Key Signs\n- Livedo reticularis, nodules, ulcers\n- Hypertension (renal artery involvement)\n- Neurological deficits\n\n### Atypical Presentations\n- Isolated cutaneous PAN\n\n### Red Flags Requiring Immediate Action\n- Severe abdominal pain or GI bleeding\n- Rapidly progressive neuropathy\n- Hypertensive emergency\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- FBC, U&E, LFTs\n- ESR/CRP\n- Urinalysis (usually no GN)\n- Hepatitis B/C serology\n\n### Second-line Investigations\n- CT/MR angiography showing microaneurysms\n\n### Specialist Tests\n- Biopsy of affected tissue\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical features with angiographic or histological evidence of medium-vessel vasculitis.\n\n### Key Differential Diagnoses to Exclude\n- ANCA-associated vasculitis\n- Atherosclerotic disease\n- Cholesterol emboli\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- High-dose corticosteroids\n\n#### Second-line Treatments\n- Cyclophosphamide for severe disease\n- Antiviral therapy if hepatitis B-associated\n\n#### Emergency Procedures\n- Urgent specialist referral for organ-threatening disease\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Tapering steroids with steroid-sparing agents\n\n#### Monitoring Requirements\n- Blood pressure, renal function, and treatment toxicity\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Prednisolone\n- **Mechanism of Action**: Anti-inflammatory and immunosuppressive.\n- **Typical Dosing Range**: High-dose induction then taper.\n- **Key Side Effects/Contraindications**: Infection, hyperglycaemia, osteoporosis.\n- **When to Use vs. Alternatives**: Foundation of therapy.\n\n#### Cyclophosphamide\n- **Mechanism of Action**: Alkylating agent suppressing immune response.\n- **Typical Dosing Range**: Specialist induction regimen.\n- **Key Side Effects/Contraindications**: Myelosuppression, haemorrhagic cystitis, infertility.\n- **When to Use vs. Alternatives**: Used for severe, organ-threatening disease.\n\n### Procedures\n\n#### Angiography\n- **What it Involves**: Vascular imaging to detect microaneurysms or stenoses.\n- **Indications**: Suspected PAN with organ involvement.\n- **Key Risks/Complications**: Contrast nephropathy, bleeding.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nPrognosis improves with treatment but depends on organ involvement.\n\n### Important Complications to Watch For\n- Renal infarction or failure\n- Mesenteric ischemia\n- Peripheral neuropathy\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nRecognise systemic vasculitis features, arrange investigations, and escalate.\n\n### When to Escalate to Senior/Specialist\nImmediate escalation for GI bleeding, neurological deficits, or hypertensive emergency.\n\n### Key Safety Considerations\nMonitor blood pressure and screen for hepatitis B before immunosuppression.\n",
+  "content": {
+    "overview": {
+      "definition": "Polyarteritis nodosa (PAN) is a necrotizing vasculitis of medium-sized arteries, classically sparing the lungs and associated with hepatitis B in a subset.",
+      "epidemiology": "PAN is rare and typically presents in middle age.",
+      "pathophysiology": "Segmental arterial inflammation causes aneurysm formation, thrombosis, and organ ischemia."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fever, weight loss, myalgia",
+        "Abdominal pain (mesenteric ischemia)",
+        "Peripheral neuropathy (mononeuritis multiplex)",
+        "Testicular pain"
+      ],
+      "signs": [
+        "Livedo reticularis, nodules, ulcers",
+        "Hypertension (renal artery involvement)",
+        "Neurological deficits"
+      ],
+      "atypicalPresentations": [
+        "Isolated cutaneous PAN"
+      ],
+      "redFlags": [
+        "Severe abdominal pain or GI bleeding",
+        "Rapidly progressive neuropathy",
+        "Hypertensive emergency"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "FBC, U&E, LFTs",
+        "ESR/CRP",
+        "Urinalysis (usually no GN)",
+        "Hepatitis B/C serology"
+      ],
+      "secondLine": [
+        "CT/MR angiography showing microaneurysms"
+      ],
+      "specialistTests": [
+        "Biopsy of affected tissue"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical features with angiographic or histological evidence of medium-vessel vasculitis.",
+      "differentials": [
+        "ANCA-associated vasculitis",
+        "Atherosclerotic disease",
+        "Cholesterol emboli"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "High-dose corticosteroids"
+        ],
+        "secondLine": [
+          "Cyclophosphamide for severe disease",
+          "Antiviral therapy if hepatitis B-associated"
+        ],
+        "procedures": [
+          "Urgent specialist referral for organ-threatening disease"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Tapering steroids with steroid-sparing agents"
+        ],
+        "secondLine": [],
+        "monitoring": [
+          "Blood pressure, renal function, and treatment toxicity"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Prednisolone",
+          "mechanism": "Anti-inflammatory and immunosuppressive.",
+          "dosing": "High-dose induction then taper.",
+          "sideEffects": "Infection, hyperglycaemia, osteoporosis.",
+          "notes": "Foundation of therapy."
+        },
+        {
+          "name": "Cyclophosphamide",
+          "mechanism": "Alkylating agent suppressing immune response.",
+          "dosing": "Specialist induction regimen.",
+          "sideEffects": "Myelosuppression, haemorrhagic cystitis, infertility.",
+          "notes": "Used for severe, organ-threatening disease."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Angiography",
+          "description": "Vascular imaging to detect microaneurysms or stenoses.",
+          "indications": "Suspected PAN with organ involvement.",
+          "risks": "Contrast nephropathy, bleeding."
+        }
+      ]
+    },
+    "prognosis": "Prognosis improves with treatment but depends on organ involvement.",
+    "complications": [
+      "Renal infarction or failure",
+      "Mesenteric ischemia",
+      "Peripheral neuropathy"
+    ],
+    "foundationDoctorRole": "Recognise systemic vasculitis features, arrange investigations, and escalate.",
+    "escalation": "Immediate escalation for GI bleeding, neurological deficits, or hypertensive emergency.",
+    "keySafetyConsiderations": "Monitor blood pressure and screen for hepatitis B before immunosuppression."
+  }
+}

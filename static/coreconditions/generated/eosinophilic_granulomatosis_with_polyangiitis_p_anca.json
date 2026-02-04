@@ -1,0 +1,122 @@
+{
+  "id": "eosinophilic_granulomatosis_with_polyangiitis_p_anca",
+  "name": "Eosinophilic granulomatosis with polyangiitis (p-ANCA)",
+  "domains": [
+    "Rheumatology"
+  ],
+  "generatedAt": "2026-02-04T12:32:22.303888",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Eosinophilic granulomatosis with polyangiitis (p-ANCA): Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nEosinophilic granulomatosis with polyangiitis (EGPA, Churg–Strauss) is a small-vessel vasculitis associated with asthma, eosinophilia, and granulomatous inflammation; p-ANCA positivity occurs in a subset.\n\n### Epidemiology\nEGPA is rare, often presenting in middle age, and typically in patients with long-standing asthma or allergic rhinitis.\n\n### Essential Pathophysiology\nEosinophil-driven inflammation causes tissue infiltration and necrotizing vasculitis affecting lungs, skin, peripheral nerves, and other organs.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Asthma or worsening asthma control\n- Chronic rhinosinusitis or nasal polyps\n- Dyspnoea, cough, pleuritic chest pain\n- Peripheral neuropathy symptoms (foot drop, paraesthesia)\n- Constitutional symptoms\n\n### Key Signs\n- Wheeze\n- Palpable purpura\n- Mononeuritis multiplex\n- Eosinophilia on labs\n\n### Atypical Presentations\n- Cardiac involvement (chest pain, heart failure)\n- GI vasculitis (abdominal pain, bleeding)\n\n### Red Flags Requiring Immediate Action\n- Cardiac involvement\n- Severe hypoxia or pulmonary infiltrates\n- Rapidly progressive neuropathy\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- FBC with eosinophil count\n- ESR/CRP\n- U&E, LFTs\n- Chest X-ray\n\n### Second-line Investigations\n- ANCA (MPO/p-ANCA)\n- CT chest\n\n### Specialist Tests\n- Biopsy of affected tissue\n- Echocardiography if cardiac symptoms\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is clinical with eosinophilia, asthma, and vasculitis features, supported by ANCA and biopsy showing eosinophilic granulomatous inflammation.\n\n### Key Differential Diagnoses to Exclude\n- Asthma with hypereosinophilia\n- Granulomatosis with polyangiitis\n- Hypereosinophilic syndrome\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- High-dose corticosteroids\n\n#### Second-line Treatments\n- Rituximab or cyclophosphamide for organ-threatening disease\n- Mepolizumab for relapsing or eosinophilic disease\n\n#### Emergency Procedures\n- Urgent specialist referral for cardiac or neurological involvement\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Maintenance immunosuppression (azathioprine, methotrexate)\n- Optimise asthma control\n\n#### Monitoring Requirements\n- Eosinophil counts, organ function, and drug toxicity\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Prednisolone\n- **Mechanism of Action**: Anti-inflammatory and immunosuppressive.\n- **Typical Dosing Range**: High-dose induction then taper.\n- **Key Side Effects/Contraindications**: Infection risk, hyperglycaemia, osteoporosis.\n- **When to Use vs. Alternatives**: Foundation of therapy.\n\n#### Mepolizumab\n- **Mechanism of Action**: Anti-IL-5 monoclonal antibody reducing eosinophils.\n- **Typical Dosing Range**: Specialist protocol dosing.\n- **Key Side Effects/Contraindications**: Injection site reactions, headache.\n- **When to Use vs. Alternatives**: Add-on for relapsing disease.\n\n### Procedures\n\n#### Tissue biopsy\n- **What it Involves**: Sampling of affected tissue for histology.\n- **Indications**: Confirm diagnosis.\n- **Key Risks/Complications**: Bleeding, infection depending on site.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost patients respond to steroids, but relapses are common.\n\n### Important Complications to Watch For\n- Cardiac involvement (major cause of mortality)\n- Peripheral neuropathy\n- Treatment-related infection\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nRecognise asthma plus systemic vasculitis features, initiate investigations, and escalate.\n\n### When to Escalate to Senior/Specialist\nImmediate escalation for cardiac, renal, or neurological involvement.\n\n### Key Safety Considerations\nMonitor for steroid side effects and ensure asthma is optimised.\n",
+  "content": {
+    "overview": {
+      "definition": "Eosinophilic granulomatosis with polyangiitis (EGPA, Churg–Strauss) is a small-vessel vasculitis associated with asthma, eosinophilia, and granulomatous inflammation; p-ANCA positivity occurs in a subset.",
+      "epidemiology": "EGPA is rare, often presenting in middle age, typically in patients with long-standing asthma or allergic rhinitis.",
+      "pathophysiology": "Eosinophil-driven inflammation causes tissue infiltration and necrotizing vasculitis affecting lungs, skin, peripheral nerves, and other organs."
+    },
+    "recognition": {
+      "symptoms": [
+        "Asthma or worsening asthma control",
+        "Chronic rhinosinusitis or nasal polyps",
+        "Dyspnoea, cough, pleuritic chest pain",
+        "Peripheral neuropathy symptoms (foot drop, paraesthesia)",
+        "Constitutional symptoms"
+      ],
+      "signs": [
+        "Wheeze",
+        "Palpable purpura",
+        "Mononeuritis multiplex",
+        "Eosinophilia on labs"
+      ],
+      "atypicalPresentations": [
+        "Cardiac involvement (chest pain, heart failure)",
+        "GI vasculitis (abdominal pain, bleeding)"
+      ],
+      "redFlags": [
+        "Cardiac involvement",
+        "Severe hypoxia or pulmonary infiltrates",
+        "Rapidly progressive neuropathy"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "FBC with eosinophil count",
+        "ESR/CRP",
+        "U&E, LFTs",
+        "Chest X-ray"
+      ],
+      "secondLine": [
+        "ANCA (MPO/p-ANCA)",
+        "CT chest"
+      ],
+      "specialistTests": [
+        "Biopsy of affected tissue",
+        "Echocardiography if cardiac symptoms"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is clinical with eosinophilia, asthma, and vasculitis features, supported by ANCA and biopsy showing eosinophilic granulomatous inflammation.",
+      "differentials": [
+        "Asthma with hypereosinophilia",
+        "Granulomatosis with polyangiitis",
+        "Hypereosinophilic syndrome"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "High-dose corticosteroids"
+        ],
+        "secondLine": [
+          "Rituximab or cyclophosphamide for organ-threatening disease",
+          "Mepolizumab for relapsing or eosinophilic disease"
+        ],
+        "procedures": [
+          "Urgent specialist referral for cardiac or neurological involvement"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Maintenance immunosuppression (azathioprine, methotrexate)",
+          "Optimise asthma control"
+        ],
+        "secondLine": [],
+        "monitoring": [
+          "Eosinophil counts, organ function, and drug toxicity"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Prednisolone",
+          "mechanism": "Anti-inflammatory and immunosuppressive.",
+          "dosing": "High-dose induction then taper.",
+          "sideEffects": "Infection risk, hyperglycaemia, osteoporosis.",
+          "notes": "Foundation of therapy."
+        },
+        {
+          "name": "Mepolizumab",
+          "mechanism": "Anti-IL-5 monoclonal antibody reducing eosinophils.",
+          "dosing": "Specialist protocol dosing.",
+          "sideEffects": "Injection site reactions, headache.",
+          "notes": "Add-on for relapsing disease."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Tissue biopsy",
+          "description": "Sampling of affected tissue for histology.",
+          "indications": "Confirm diagnosis.",
+          "risks": "Bleeding, infection depending on site."
+        }
+      ]
+    },
+    "prognosis": "Most patients respond to steroids, but relapses are common.",
+    "complications": [
+      "Cardiac involvement",
+      "Peripheral neuropathy",
+      "Treatment-related infection"
+    ],
+    "foundationDoctorRole": "Recognise asthma plus systemic vasculitis features, initiate investigations, and escalate.",
+    "escalation": "Immediate escalation for cardiac, renal, or neurological involvement.",
+    "keySafetyConsiderations": "Monitor for steroid side effects and ensure asthma is optimised."
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "id": "iga_vasculitis_henoch_schonlein_purpura",
+  "name": "IgA vasculitis (Henoch-Schonlein purpura)",
+  "domains": [
+    "Rheumatology"
+  ],
+  "generatedAt": "2026-02-04T12:32:22.303989",
+  "model": "gpt-4o-mini",
+  "rawContent": "# IgA vasculitis (Henoch-Schonlein purpura): Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nIgA vasculitis (Henoch–Schönlein purpura) is a small-vessel immune complex vasculitis characterized by palpable purpura, arthralgia, abdominal pain, and renal involvement.\n\n### Epidemiology\nCommon in children but can affect adults; often follows an upper respiratory infection.\n\n### Essential Pathophysiology\nIgA immune complex deposition in small vessels causes inflammation, leading to skin, joint, GI, and renal manifestations.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Purpuric rash (legs/buttocks)\n- Arthralgia or arthritis\n- Abdominal pain, vomiting\n- Haematuria\n\n### Key Signs\n- Palpable purpura\n- Joint swelling or tenderness\n- Abdominal tenderness\n\n### Atypical Presentations\n- Adults with predominant renal disease\n\n### Red Flags Requiring Immediate Action\n- GI bleeding or severe abdominal pain\n- Rising creatinine or heavy proteinuria\n- Suspected intussusception (children)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Urinalysis and urine protein/creatinine ratio\n- FBC, U&E\n- ESR/CRP\n\n### Second-line Investigations\n- Serum IgA (may be elevated)\n- Stool occult blood\n\n### Specialist Tests\n- Renal biopsy if significant nephritis\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nClinical diagnosis based on palpable purpura plus one or more of abdominal pain, arthralgia/arthritis, or renal involvement.\n\n### Key Differential Diagnoses to Exclude\n- Meningococcemia\n- Thrombocytopenic purpura\n- ANCA-associated vasculitis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care (analgesia, hydration)\n\n#### Second-line Treatments\n- Corticosteroids for severe GI or renal disease (specialist input)\n\n#### Emergency Procedures\n- Surgical review for suspected intussusception\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Monitor blood pressure and urinalysis\n\n#### Monitoring Requirements\n- Regular urine and renal function monitoring for months after presentation\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Prednisolone\n- **Mechanism of Action**: Anti-inflammatory and immunosuppressive.\n- **Typical Dosing Range**: Specialist-guided dosing for severe disease.\n- **Key Side Effects/Contraindications**: Infection risk, hyperglycaemia, GI upset.\n- **When to Use vs. Alternatives**: Consider for significant GI or renal involvement.\n\n### Procedures\n\n#### Renal biopsy\n- **What it Involves**: Percutaneous sampling for histology.\n- **Indications**: Significant proteinuria or declining renal function.\n- **Key Risks/Complications**: Bleeding, pain.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost children recover fully; adults have higher risk of chronic kidney disease.\n\n### Important Complications to Watch For\n- IgA nephritis/chronic kidney disease\n- Intussusception\n- GI bleeding\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nRecognise typical presentation, monitor renal involvement, and provide safety-netting.\n\n### When to Escalate to Senior/Specialist\nEscalate for renal impairment, heavy proteinuria, GI bleeding, or severe abdominal pain.\n\n### Key Safety Considerations\nEnsure regular follow-up urinalysis and blood pressure monitoring.\n",
+  "content": {
+    "overview": {
+      "definition": "IgA vasculitis (Henoch–Schönlein purpura) is a small-vessel immune complex vasculitis characterized by palpable purpura, arthralgia, abdominal pain, and renal involvement.",
+      "epidemiology": "Common in children but can affect adults; often follows an upper respiratory infection.",
+      "pathophysiology": "IgA immune complex deposition in small vessels causes inflammation, leading to skin, joint, GI, and renal manifestations."
+    },
+    "recognition": {
+      "symptoms": [
+        "Purpuric rash (legs/buttocks)",
+        "Arthralgia or arthritis",
+        "Abdominal pain, vomiting",
+        "Haematuria"
+      ],
+      "signs": [
+        "Palpable purpura",
+        "Joint swelling or tenderness",
+        "Abdominal tenderness"
+      ],
+      "atypicalPresentations": [
+        "Adults with predominant renal disease"
+      ],
+      "redFlags": [
+        "GI bleeding or severe abdominal pain",
+        "Rising creatinine or heavy proteinuria",
+        "Suspected intussusception"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Urinalysis and urine protein/creatinine ratio",
+        "FBC, U&E",
+        "ESR/CRP"
+      ],
+      "secondLine": [
+        "Serum IgA (may be elevated)",
+        "Stool occult blood"
+      ],
+      "specialistTests": [
+        "Renal biopsy if significant nephritis"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Clinical diagnosis based on palpable purpura plus one or more of abdominal pain, arthralgia/arthritis, or renal involvement.",
+      "differentials": [
+        "Meningococcemia",
+        "Thrombocytopenic purpura",
+        "ANCA-associated vasculitis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care (analgesia, hydration)"
+        ],
+        "secondLine": [
+          "Corticosteroids for severe GI or renal disease (specialist input)"
+        ],
+        "procedures": [
+          "Surgical review for suspected intussusception"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Monitor blood pressure and urinalysis"
+        ],
+        "secondLine": [],
+        "monitoring": [
+          "Regular urine and renal function monitoring for months after presentation"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Prednisolone",
+          "mechanism": "Anti-inflammatory and immunosuppressive.",
+          "dosing": "Specialist-guided dosing for severe disease.",
+          "sideEffects": "Infection risk, hyperglycaemia, GI upset.",
+          "notes": "Consider for significant GI or renal involvement."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Renal biopsy",
+          "description": "Percutaneous sampling for histology.",
+          "indications": "Significant proteinuria or declining renal function.",
+          "risks": "Bleeding, pain."
+        }
+      ]
+    },
+    "prognosis": "Most children recover fully; adults have higher risk of chronic kidney disease.",
+    "complications": [
+      "IgA nephritis/chronic kidney disease",
+      "Intussusception",
+      "GI bleeding"
+    ],
+    "foundationDoctorRole": "Recognise typical presentation, monitor renal involvement, and provide safety-netting.",
+    "escalation": "Escalate for renal impairment, heavy proteinuria, GI bleeding, or severe abdominal pain.",
+    "keySafetyConsiderations": "Ensure regular follow-up urinalysis and blood pressure monitoring."
+  }
+}
