@@ -1,0 +1,131 @@
+{
+  "id": "granulomatosis_with_polyangiitis_c_anca",
+  "name": "Granulomatosis with polyangiitis (c-ANCA)",
+  "domains": [
+    "Rheumatology"
+  ],
+  "generatedAt": "2026-02-04T12:32:22.303841",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Granulomatosis with polyangiitis (c-ANCA): Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nGranulomatosis with polyangiitis (GPA) is a necrotizing granulomatous vasculitis affecting small and medium-sized vessels, classically associated with PR3-ANCA (c-ANCA) positivity and ENT, pulmonary, and renal involvement.\n\n### Epidemiology\nGPA is rare (around 10–20 per million). It typically presents in middle age but can occur at any age.\n\n### Essential Pathophysiology\nAutoimmune inflammation causes granuloma formation and necrotizing vasculitis, leading to tissue ischemia and organ damage, particularly in the upper airways, lungs, and kidneys.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Chronic sinusitis, nasal crusting, epistaxis\n- Cough, haemoptysis, pleuritic chest pain\n- Haematuria, frothy urine\n- Fatigue, fever, weight loss\n- Arthralgia\n\n### Key Signs\n- Nasal ulcers or septal perforation\n- Crackles or wheeze\n- Purpura, skin ulcers\n- Hypertension or oedema (renal involvement)\n\n### Atypical Presentations\n- Isolated ENT disease\n- Subglottic stenosis\n\n### Red Flags Requiring Immediate Action\n- Haemoptysis or suspected pulmonary haemorrhage\n- Rapidly progressive glomerulonephritis\n- Severe systemic deterioration\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- FBC, U&E, LFTs\n- ESR/CRP\n- Urinalysis and urine protein/creatinine ratio\n- Chest X-ray\n\n### Second-line Investigations\n- ANCA (PR3/c-ANCA)\n- CT chest/sinuses\n\n### Specialist Tests\n- Renal biopsy (necrotizing GN)\n- ENT or lung biopsy where feasible\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on compatible clinical features with supportive ANCA testing and tissue biopsy showing granulomatous necrotizing vasculitis.\n\n### Key Differential Diagnoses to Exclude\n- Microscopic polyangiitis\n- Eosinophilic granulomatosis with polyangiitis\n- Tuberculosis or fungal infection\n- Malignancy\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- High-dose corticosteroids (e.g., IV methylprednisolone then oral prednisolone)\n- Induction with rituximab or cyclophosphamide\n\n#### Second-line Treatments\n- Plasma exchange in life-threatening pulmonary haemorrhage or severe RPGN (specialist decision)\n\n#### Emergency Procedures\n- Urgent referral to rheumatology/nephrology\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Maintenance immunosuppression (e.g., azathioprine, methotrexate, rituximab)\n\n#### Second-line Treatments\n- Co-trimoxazole prophylaxis where indicated\n\n#### Monitoring Requirements\n- Serial renal function, urinalysis, ANCA trends, and drug toxicity\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Prednisolone\n- **Mechanism of Action**: Broad anti-inflammatory and immunosuppressive effects.\n- **Typical Dosing Range**: High-dose induction then taper per specialist plan.\n- **Key Side Effects/Contraindications**: Infection risk, hyperglycaemia, osteoporosis, hypertension.\n- **When to Use vs. Alternatives**: Foundation of induction therapy with additional agents.\n\n#### Rituximab\n- **Mechanism of Action**: Anti-CD20 monoclonal antibody depleting B cells.\n- **Typical Dosing Range**: Induction regimen per protocol.\n- **Key Side Effects/Contraindications**: Infusion reactions, infections, hepatitis B reactivation.\n- **When to Use vs. Alternatives**: Equivalent to cyclophosphamide for induction.\n\n#### Cyclophosphamide\n- **Mechanism of Action**: Alkylating agent suppressing immune response.\n- **Typical Dosing Range**: IV or oral induction under specialist care.\n- **Key Side Effects/Contraindications**: Myelosuppression, haemorrhagic cystitis, infertility.\n- **When to Use vs. Alternatives**: Used for severe, organ-threatening disease.\n\n### Procedures\n\n#### Renal biopsy\n- **What it Involves**: Percutaneous sampling for histology.\n- **Indications**: Suspected rapidly progressive glomerulonephritis.\n- **Key Risks/Complications**: Bleeding, pain, arteriovenous fistula.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith early diagnosis and treatment, remission is achievable, but relapse is common.\n\n### Important Complications to Watch For\n- Renal failure\n- Pulmonary haemorrhage\n- Treatment-related infection\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nRecognise red flags, initiate urgent investigations, and start supportive care while escalating to specialists.\n\n### When to Escalate to Senior/Specialist\nImmediate escalation for haemoptysis, rising creatinine, or multi-organ involvement.\n\n### Key Safety Considerations\nMonitor renal function, avoid nephrotoxins, and screen for infection before immunosuppression.\n",
+  "content": {
+    "overview": {
+      "definition": "Granulomatosis with polyangiitis (GPA) is a necrotizing granulomatous vasculitis of small and medium-sized vessels, classically associated with PR3-ANCA (c-ANCA) and ENT, pulmonary, and renal disease.",
+      "epidemiology": "GPA is rare (around 10–20 per million) and most often presents in middle age.",
+      "pathophysiology": "Autoimmune inflammation causes granuloma formation and necrotizing vasculitis, leading to tissue ischemia and organ damage, particularly in upper airways, lungs, and kidneys."
+    },
+    "recognition": {
+      "symptoms": [
+        "Chronic sinusitis, nasal crusting, epistaxis",
+        "Cough, haemoptysis, pleuritic chest pain",
+        "Haematuria or frothy urine",
+        "Fatigue, fever, weight loss",
+        "Arthralgia"
+      ],
+      "signs": [
+        "Nasal ulcers or septal perforation",
+        "Crackles or wheeze",
+        "Purpura or skin ulcers",
+        "Hypertension or oedema (renal involvement)"
+      ],
+      "atypicalPresentations": [
+        "Isolated ENT disease",
+        "Subglottic stenosis"
+      ],
+      "redFlags": [
+        "Haemoptysis or suspected pulmonary haemorrhage",
+        "Rapidly progressive glomerulonephritis",
+        "Severe systemic deterioration"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "FBC, U&E, LFTs",
+        "ESR/CRP",
+        "Urinalysis and urine protein/creatinine ratio",
+        "Chest X-ray"
+      ],
+      "secondLine": [
+        "ANCA (PR3/c-ANCA)",
+        "CT chest/sinuses"
+      ],
+      "specialistTests": [
+        "Renal biopsy",
+        "ENT or lung biopsy if needed"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on compatible clinical features with supportive ANCA testing and tissue biopsy showing granulomatous necrotizing vasculitis.",
+      "differentials": [
+        "Microscopic polyangiitis",
+        "Eosinophilic granulomatosis with polyangiitis",
+        "Tuberculosis or fungal infection",
+        "Malignancy"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "High-dose corticosteroids",
+          "Induction with rituximab or cyclophosphamide"
+        ],
+        "secondLine": [
+          "Plasma exchange in life-threatening pulmonary haemorrhage or severe RPGN (specialist decision)"
+        ],
+        "procedures": [
+          "Urgent referral to rheumatology/nephrology"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Maintenance immunosuppression (e.g., azathioprine, methotrexate, rituximab)"
+        ],
+        "secondLine": [
+          "Co-trimoxazole prophylaxis where indicated"
+        ],
+        "monitoring": [
+          "Serial renal function, urinalysis, ANCA trends, and drug toxicity"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Prednisolone",
+          "mechanism": "Broad anti-inflammatory and immunosuppressive effects.",
+          "dosing": "High-dose induction then taper per specialist plan.",
+          "sideEffects": "Infection risk, hyperglycaemia, osteoporosis, hypertension.",
+          "notes": "Foundation of induction therapy with additional agents."
+        },
+        {
+          "name": "Rituximab",
+          "mechanism": "Anti-CD20 monoclonal antibody depleting B cells.",
+          "dosing": "Induction regimen per protocol.",
+          "sideEffects": "Infusion reactions, infections, hepatitis B reactivation.",
+          "notes": "Equivalent to cyclophosphamide for induction."
+        },
+        {
+          "name": "Cyclophosphamide",
+          "mechanism": "Alkylating agent suppressing immune response.",
+          "dosing": "IV or oral induction under specialist care.",
+          "sideEffects": "Myelosuppression, haemorrhagic cystitis, infertility.",
+          "notes": "Used for severe, organ-threatening disease."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Renal biopsy",
+          "description": "Percutaneous sampling for histology.",
+          "indications": "Suspected rapidly progressive glomerulonephritis.",
+          "risks": "Bleeding, pain, arteriovenous fistula."
+        }
+      ]
+    },
+    "prognosis": "With early diagnosis and treatment, remission is achievable, but relapse is common.",
+    "complications": [
+      "Renal failure",
+      "Pulmonary haemorrhage",
+      "Treatment-related infection"
+    ],
+    "foundationDoctorRole": "Recognise red flags, initiate urgent investigations, and start supportive care while escalating to specialists.",
+    "escalation": "Immediate escalation for haemoptysis, rising creatinine, or multi-organ involvement.",
+    "keySafetyConsiderations": "Monitor renal function, avoid nephrotoxins, and screen for infection before immunosuppression."
+  }
+}

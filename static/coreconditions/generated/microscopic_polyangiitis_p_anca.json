@@ -1,0 +1,117 @@
+{
+  "id": "microscopic_polyangiitis_p_anca",
+  "name": "Microscopic polyangiitis (p-ANCA)",
+  "domains": [
+    "Rheumatology"
+  ],
+  "generatedAt": "2026-02-04T12:32:22.303875",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Microscopic polyangiitis (p-ANCA): Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nMicroscopic polyangiitis (MPA) is a necrotizing small-vessel vasculitis without granulomas, often associated with MPO-ANCA (p-ANCA) and involving kidneys and lungs.\n\n### Epidemiology\nMPA is rare and typically affects middle-aged to older adults.\n\n### Essential Pathophysiology\nImmune-mediated small-vessel inflammation leads to capillaritis and organ damage, most commonly in kidneys and lungs.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Haematuria, oliguria, or frothy urine\n- Cough, dyspnoea, haemoptysis\n- Fatigue, fever, weight loss\n- Arthralgia\n\n### Key Signs\n- Hypertension or oedema\n- Crackles, hypoxia\n- Purpura\n\n### Atypical Presentations\n- Isolated renal disease\n- Peripheral neuropathy\n\n### Red Flags Requiring Immediate Action\n- Pulmonary haemorrhage\n- Rapidly progressive glomerulonephritis\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- FBC, U&E, LFTs\n- ESR/CRP\n- Urinalysis and urine protein/creatinine ratio\n- Chest X-ray\n\n### Second-line Investigations\n- ANCA (MPO/p-ANCA)\n- CT chest\n\n### Specialist Tests\n- Renal biopsy\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical features plus ANCA testing and biopsy showing necrotizing small-vessel vasculitis without granulomas.\n\n### Key Differential Diagnoses to Exclude\n- Granulomatosis with polyangiitis\n- Anti-GBM disease\n- Lupus nephritis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- High-dose corticosteroids\n- Induction with rituximab or cyclophosphamide\n\n#### Second-line Treatments\n- Plasma exchange in selected severe pulmonary-renal cases (specialist decision)\n\n#### Emergency Procedures\n- Urgent rheumatology/nephrology input\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Maintenance immunosuppression (azathioprine, methotrexate, rituximab)\n\n#### Monitoring Requirements\n- Renal function, urinalysis, and drug toxicity monitoring\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Prednisolone\n- **Mechanism of Action**: Anti-inflammatory and immunosuppressive.\n- **Typical Dosing Range**: High-dose induction then taper.\n- **Key Side Effects/Contraindications**: Infection, hyperglycaemia, osteoporosis.\n- **When to Use vs. Alternatives**: Base of induction regimens.\n\n#### Rituximab\n- **Mechanism of Action**: Anti-CD20 B-cell depletion.\n- **Typical Dosing Range**: Induction regimen per protocol.\n- **Key Side Effects/Contraindications**: Infusion reactions, infections.\n- **When to Use vs. Alternatives**: Alternative to cyclophosphamide.\n\n### Procedures\n\n#### Renal biopsy\n- **What it Involves**: Percutaneous sampling for histology.\n- **Indications**: Suspected RPGN.\n- **Key Risks/Complications**: Bleeding, pain.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith treatment, remission is common but relapse can occur.\n\n### Important Complications to Watch For\n- Renal failure\n- Pulmonary haemorrhage\n- Serious infections\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nRecognise pulmonary-renal syndrome, arrange urgent investigations, and escalate.\n\n### When to Escalate to Senior/Specialist\nImmediate escalation for haemoptysis, hypoxia, or rising creatinine.\n\n### Key Safety Considerations\nMonitor renal function closely and avoid nephrotoxic medications.\n",
+  "content": {
+    "overview": {
+      "definition": "Microscopic polyangiitis (MPA) is a necrotizing small-vessel vasculitis without granulomas, often associated with MPO-ANCA (p-ANCA) and involving kidneys and lungs.",
+      "epidemiology": "MPA is rare and typically affects middle-aged to older adults.",
+      "pathophysiology": "Immune-mediated small-vessel inflammation leads to capillaritis and organ damage, most commonly in kidneys and lungs."
+    },
+    "recognition": {
+      "symptoms": [
+        "Haematuria, oliguria, or frothy urine",
+        "Cough, dyspnoea, haemoptysis",
+        "Fatigue, fever, weight loss",
+        "Arthralgia"
+      ],
+      "signs": [
+        "Hypertension or oedema",
+        "Crackles, hypoxia",
+        "Purpura"
+      ],
+      "atypicalPresentations": [
+        "Isolated renal disease",
+        "Peripheral neuropathy"
+      ],
+      "redFlags": [
+        "Pulmonary haemorrhage",
+        "Rapidly progressive glomerulonephritis"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "FBC, U&E, LFTs",
+        "ESR/CRP",
+        "Urinalysis and urine protein/creatinine ratio",
+        "Chest X-ray"
+      ],
+      "secondLine": [
+        "ANCA (MPO/p-ANCA)",
+        "CT chest"
+      ],
+      "specialistTests": [
+        "Renal biopsy"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on compatible clinical features plus ANCA testing and biopsy showing necrotizing small-vessel vasculitis without granulomas.",
+      "differentials": [
+        "Granulomatosis with polyangiitis",
+        "Anti-GBM disease",
+        "Lupus nephritis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "High-dose corticosteroids",
+          "Induction with rituximab or cyclophosphamide"
+        ],
+        "secondLine": [
+          "Plasma exchange in selected severe pulmonary-renal cases (specialist decision)"
+        ],
+        "procedures": [
+          "Urgent rheumatology/nephrology input"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Maintenance immunosuppression (azathioprine, methotrexate, rituximab)"
+        ],
+        "secondLine": [],
+        "monitoring": [
+          "Renal function, urinalysis, and drug toxicity monitoring"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Prednisolone",
+          "mechanism": "Anti-inflammatory and immunosuppressive.",
+          "dosing": "High-dose induction then taper.",
+          "sideEffects": "Infection, hyperglycaemia, osteoporosis.",
+          "notes": "Base of induction regimens."
+        },
+        {
+          "name": "Rituximab",
+          "mechanism": "Anti-CD20 B-cell depletion.",
+          "dosing": "Induction regimen per protocol.",
+          "sideEffects": "Infusion reactions, infections.",
+          "notes": "Alternative to cyclophosphamide."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Renal biopsy",
+          "description": "Percutaneous sampling for histology.",
+          "indications": "Suspected RPGN.",
+          "risks": "Bleeding, pain."
+        }
+      ]
+    },
+    "prognosis": "With treatment, remission is common but relapse can occur.",
+    "complications": [
+      "Renal failure",
+      "Pulmonary haemorrhage",
+      "Serious infections"
+    ],
+    "foundationDoctorRole": "Recognise pulmonary-renal syndrome, arrange urgent investigations, and escalate.",
+    "escalation": "Immediate escalation for haemoptysis, hypoxia, or rising creatinine.",
+    "keySafetyConsiderations": "Monitor renal function closely and avoid nephrotoxic medications."
+  }
+}
