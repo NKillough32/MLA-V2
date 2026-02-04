@@ -1,7 +1,7 @@
 {
   "generatedAt": "2026-02-04T13:14:46.633097",
-  "totalConditions": 562,
-  "processedCount": 562,
+  "totalConditions": 563,
+  "processedCount": 563,
   "model": "gpt-4o-mini",
   "conditions": [
     {
@@ -1864,6 +1864,15 @@
         "Dermatology"
       ],
       "filename": "folliculitis.json",
+      "processed": true
+    },
+    {
+      "id": "food_poisoning_infection",
+      "name": "Food poisoning and gastrointestinal infection",
+      "domains": [
+        "Infection"
+      ],
+      "filename": "food_poisoning_infection.json",
       "processed": true
     },
     {

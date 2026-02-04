@@ -1,0 +1,146 @@
+{
+  "id": "food_poisoning_infection",
+  "name": "Food poisoning and gastrointestinal infection",
+  "domains": [
+    "Infection"
+  ],
+  "generatedAt": "2026-02-04T13:14:46.633097",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Food poisoning and gastrointestinal infection: Quick Reference\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nFood poisoning and gastrointestinal infections are typically acute illnesses caused by ingestion of contaminated food or water. Key differentiators include incubation period, presence of blood, and epidemiologic context.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Diarrhoea (watery or bloody)\n- Abdominal pain/cramps\n- Nausea and vomiting\n- Fever, myalgia, headache\n\n### Red Flags\n- Severe dehydration\n- Persistent high fever\n- Bloody diarrhoea with severe abdominal pain\n- Immunocompromised patient or recent antibiotic use\n\n## 3. CAUSES BY PATHOGEN\n\n### Bacterial causes\n- **Campylobacter**: Incubation 2–5 days. Prodromal fever, headache, myalgia → abdominal pain (often RIF), bloody diarrhoea. Associated with undercooked poultry.\n- **Salmonella**: Incubation 12–72 hours. Fever, abdominal pain, diarrhoea (may be bloody). Associated with eggs, poultry, dairy.\n- **Shigella**: Incubation 1–3 days. Fever, abdominal cramps, bloody diarrhoea, tenesmus. Highly infectious.\n- **E. coli (ETEC/EHEC)**: Incubation 1–8 days. EHEC may cause bloody diarrhoea and HUS. Associated with undercooked beef, unpasteurised products.\n- **C. difficile**: Incubation variable. Watery diarrhoea, abdominal pain. Associated with antibiotic use.\n\n### Viral causes\n- **Norovirus**: Incubation 12–48 hours. Explosive vomiting, watery diarrhoea, short duration (24–48h).\n- **Rotavirus**: Incubation 1–3 days. Watery diarrhoea, vomiting, fever. More common in children.\n\n### Parasitic causes\n- **Giardia**: Incubation 1–2 weeks. Prolonged watery diarrhoea, flatulence, bloating, steatorrhoea. No blood.\n- **Cryptosporidium**: Incubation 2–10 days. Watery diarrhoea, abdominal cramps. Can be prolonged.\n\n## 4. KEY DISTINGUISHING FACTORS\n- Incubation period\n- Presence or absence of blood\n- Associated symptoms (fever, myalgia, tenesmus, vomiting)\n- Epidemiology (food history, travel, outbreaks, antibiotic use)\n",
+  "content": {
+    "overview": {
+      "definition": "Food poisoning and gastrointestinal infections are typically acute illnesses caused by ingestion of contaminated food or water.",
+      "epidemiology": "Common worldwide with outbreaks in households, institutions, and food venues. Risk increases with unsafe food handling, travel, and recent antibiotic use.",
+      "pathophysiology": "Pathogens or their toxins inflame the gastrointestinal mucosa, leading to secretory or inflammatory diarrhoea and systemic symptoms."
+    },
+    "recognition": {
+      "symptoms": [
+        "Diarrhoea (watery or bloody)",
+        "Abdominal pain or cramps",
+        "Nausea and vomiting",
+        "Fever, myalgia, headache"
+      ],
+      "signs": [
+        "Dehydration (dry mucous membranes, tachycardia)",
+        "Abdominal tenderness"
+      ],
+      "redFlags": [
+        "Severe dehydration",
+        "Persistent high fever",
+        "Bloody diarrhoea with severe abdominal pain",
+        "Immunocompromised patient or recent antibiotic use"
+      ]
+    },
+    "causes": {
+      "bacterial": [
+        {
+          "pathogen": "Campylobacter",
+          "incubation": "2–5 days",
+          "features": "Prodromal fever, headache, myalgia → abdominal pain (often RIF), bloody diarrhoea.",
+          "associations": "Undercooked poultry."
+        },
+        {
+          "pathogen": "Salmonella",
+          "incubation": "12–72 hours",
+          "features": "Fever, abdominal pain, diarrhoea (may be bloody).",
+          "associations": "Eggs, poultry, dairy."
+        },
+        {
+          "pathogen": "Shigella",
+          "incubation": "1–3 days",
+          "features": "Fever, abdominal cramps, bloody diarrhoea, tenesmus.",
+          "associations": "Highly infectious, person-to-person spread."
+        },
+        {
+          "pathogen": "E. coli (ETEC/EHEC)",
+          "incubation": "1–8 days",
+          "features": "EHEC may cause bloody diarrhoea and HUS.",
+          "associations": "Undercooked beef, unpasteurised products."
+        },
+        {
+          "pathogen": "Clostridioides difficile",
+          "incubation": "Variable",
+          "features": "Watery diarrhoea, abdominal pain.",
+          "associations": "Recent antibiotic use."
+        }
+      ],
+      "viral": [
+        {
+          "pathogen": "Norovirus",
+          "incubation": "12–48 hours",
+          "features": "Explosive vomiting, watery diarrhoea, short duration (24–48h)."
+        },
+        {
+          "pathogen": "Rotavirus",
+          "incubation": "1–3 days",
+          "features": "Watery diarrhoea, vomiting, fever; more common in children."
+        }
+      ],
+      "parasitic": [
+        {
+          "pathogen": "Giardia",
+          "incubation": "1–2 weeks",
+          "features": "Prolonged watery diarrhoea, flatulence, bloating, steatorrhoea; no blood."
+        },
+        {
+          "pathogen": "Cryptosporidium",
+          "incubation": "2–10 days",
+          "features": "Watery diarrhoea, abdominal cramps; can be prolonged."
+        }
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical and based on symptom pattern, incubation period, and exposure history.",
+      "differentials": [
+        "Inflammatory bowel disease",
+        "Appendicitis",
+        "Ischaemic colitis",
+        "Medication-induced diarrhoea"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Oral rehydration and electrolyte replacement",
+          "Antiemetics and antipyretics as needed"
+        ],
+        "secondLine": [
+          "IV fluids for severe dehydration",
+          "Targeted antimicrobials if indicated by pathogen or severity"
+        ],
+        "procedures": []
+      },
+      "chronic": {
+        "firstLine": [
+          "Dietary modification during recovery",
+          "Monitor for prolonged symptoms"
+        ],
+        "secondLine": [
+          "Specialist referral if symptoms persist or complications develop"
+        ],
+        "monitoring": [
+          "Hydration status",
+          "Resolution of diarrhoea and fever"
+        ]
+      },
+      "drugs": [],
+      "procedures": []
+    },
+    "prognosis": "Most cases are self-limiting over days; some bacterial and parasitic infections can be prolonged or complicated without appropriate therapy.",
+    "complications": [
+      "Dehydration",
+      "Hemolytic uremic syndrome (EHEC)",
+      "Post-infectious IBS",
+      "Reactive arthritis (Campylobacter)"
+    ],
+    "foundationDoctorRole": "Assess hydration, identify red flags, collect exposure history, and provide supportive care while escalating severe cases.",
+    "escalation": "Escalate for severe dehydration, persistent high fever, bloody diarrhoea with systemic toxicity, or immunocompromised patients.",
+    "keySafetyConsiderations": "Avoid antimotility agents in bloody diarrhoea or suspected EHEC; prioritize infection control and safe food handling advice.",
+    "keyDistinguishingFactors": [
+      "Incubation period",
+      "Presence or absence of blood",
+      "Associated symptoms (fever, myalgia, tenesmus, vomiting)",
+      "Epidemiology (food history, travel, outbreaks, antibiotic use)"
+    ]
+  }
+}
