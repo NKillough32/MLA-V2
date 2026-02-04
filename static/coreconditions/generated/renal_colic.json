@@ -1,0 +1,105 @@
+{
+  "id": "renal_colic",
+  "name": "Renal colic",
+  "domains": [
+    "Renal"
+  ],
+  "generatedAt": "2026-02-14T12:00:00.000000",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Renal colic: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nRenal colic is acute flank pain caused by obstruction of the urinary tract, most commonly due to ureteric stones.\n\n### Epidemiology\nUrolithiasis affects up to 10% of adults; peak incidence is 30-50 years, with higher rates in men.\n\n### Essential Pathophysiology\nA stone obstructs urine flow, causing ureteric spasm and increased pressure, leading to severe colicky pain and potential hydronephrosis.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Sudden severe flank pain radiating to groin\n- Nausea and vomiting\n- Urinary frequency or dysuria\n- Haematuria\n\n### Key Signs\n- Restless, unable to get comfortable\n- Costovertebral angle tenderness\n- Normal or low-grade fever (high fever suggests infection)\n\n### Atypical Presentations\n- Isolated groin pain\n- Pain in pregnancy presenting as abdominal discomfort\n\n### Red Flags Requiring Immediate Action\n- Fever or sepsis with obstruction\n- Single kidney or known CKD with obstruction\n- Uncontrolled pain or vomiting\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Urinalysis (haematuria, infection)\n- U&E, creatinine\n- Pregnancy test in women of childbearing age\n\n### Second-line Investigations\n- Non-contrast CT KUB (gold standard)\n- Ultrasound if pregnant or radiation avoidance\n\n### Specialist Tests\n- CT urogram or IVU if diagnosis unclear\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is clinical with imaging confirmation of stone and obstruction.\n\n### Key Differential Diagnoses to Exclude\n- Pyelonephritis\n- Appendicitis\n- Abdominal aortic aneurysm\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Analgesia (NSAIDs first line, opioids if needed)\n- Antiemetics\n- Encourage oral fluids if not vomiting\n\n#### Second-line Treatments\n- Tamsulosin for medical expulsive therapy (if appropriate)\n- IV fluids if dehydrated\n\n#### Emergency Procedures\n- Urgent urology review for obstructed infected system\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Stone analysis and metabolic work-up after passage\n- Dietary advice (hydration, reduce sodium)\n\n#### Second-line Treatments\n- Elective lithotripsy or ureteroscopy for persistent stones\n\n#### Monitoring Requirements\n- Repeat imaging for persistent symptoms\n- Monitor renal function if obstruction\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### NSAIDs (e.g., diclofenac)\n- **Mechanism of Action**: Reduce prostaglandin-mediated ureteric spasm and pain.\n- **Typical Dosing Range**: 75 mg IM stat or 50 mg PO TDS (local protocols).\n- **Key Side Effects/Contraindications**: Renal impairment, GI bleeding, asthma.\n- **When to Use vs. Alternatives**: First-line if no contraindications.\n\n#### Tamsulosin\n- **Mechanism of Action**: Alpha-1 blocker that relaxes ureteric smooth muscle.\n- **Typical Dosing Range**: 0.4 mg PO daily for up to 4 weeks.\n- **Key Side Effects/Contraindications**: Postural hypotension, dizziness.\n- **When to Use vs. Alternatives**: Consider for distal ureteric stones.\n\n### Procedures\n\n#### Ureteric stent or nephrostomy\n- **What it Involves**: Decompresses obstructed collecting system.\n- **Indications**: Obstruction with infection, solitary kidney, or deteriorating renal function.\n- **Key Risks/Complications**: Infection, bleeding, stent discomfort.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost stones <5 mm pass spontaneously; larger stones may need intervention.\n\n### Important Complications to Watch For\n- Obstructive uropathy and AKI\n- Infection and sepsis\n- Recurrence\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nProvide analgesia, order appropriate imaging, and screen for infection or obstruction.\n\n### When to Escalate to Senior/Specialist\nEscalate for fever, sepsis, solitary kidney, rising creatinine, or uncontrolled pain.\n\n### Key Safety Considerations\nDo not discharge patients with suspected infected obstruction; ensure safety netting and follow-up.\n",
+  "content": {
+    "overview": {
+      "definition": "Renal colic is acute flank pain caused by obstruction of the urinary tract, most commonly due to ureteric stones.",
+      "epidemiology": "Urolithiasis affects up to 10% of adults; peak incidence is 30-50 years, with higher rates in men.",
+      "pathophysiology": "A stone obstructs urine flow, causing ureteric spasm and increased pressure, leading to severe colicky pain and potential hydronephrosis."
+    },
+    "recognition": {
+      "symptoms": [
+        "Sudden severe flank pain radiating to groin",
+        "Nausea and vomiting",
+        "Urinary frequency or dysuria",
+        "Haematuria"
+      ],
+      "signs": [
+        "Restless, unable to get comfortable",
+        "Costovertebral angle tenderness",
+        "Normal or low-grade fever (high fever suggests infection)"
+      ],
+      "atypicalPresentations": [
+        "Isolated groin pain",
+        "Pain in pregnancy presenting as abdominal discomfort"
+      ],
+      "redFlags": [
+        "Fever or sepsis with obstruction",
+        "Single kidney or known CKD with obstruction",
+        "Uncontrolled pain or vomiting"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Urinalysis (haematuria, infection)",
+        "U&E, creatinine",
+        "Pregnancy test in women of childbearing age"
+      ],
+      "secondLine": [
+        "Non-contrast CT KUB (gold standard)",
+        "Ultrasound if pregnant or radiation avoidance"
+      ],
+      "specialistTests": [
+        "CT urogram or IVU if diagnosis unclear"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is clinical with imaging confirmation of stone and obstruction.",
+      "differentials": [
+        "Pyelonephritis",
+        "Appendicitis",
+        "Abdominal aortic aneurysm"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Analgesia (NSAIDs first line, opioids if needed)",
+          "Antiemetics",
+          "Encourage oral fluids if not vomiting"
+        ],
+        "secondLine": [
+          "Tamsulosin for medical expulsive therapy (if appropriate)",
+          "IV fluids if dehydrated"
+        ],
+        "procedures": [
+          "Urgent urology review for obstructed infected system"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Stone analysis and metabolic work-up after passage",
+          "Dietary advice (hydration, reduce sodium)"
+        ],
+        "secondLine": [
+          "Elective lithotripsy or ureteroscopy for persistent stones"
+        ],
+        "monitoring": [
+          "Repeat imaging for persistent symptoms",
+          "Monitor renal function if obstruction"
+        ]
+      },
+      "drugs": [
+        "NSAIDs",
+        "Tamsulosin"
+      ],
+      "procedures": [
+        "Ureteric stent or nephrostomy"
+      ]
+    },
+    "prognosis": "Most stones <5 mm pass spontaneously; larger stones may need intervention.",
+    "complications": [
+      "Obstructive uropathy and AKI",
+      "Infection and sepsis",
+      "Recurrence"
+    ],
+    "foundationDoctorRole": "Provide analgesia, order appropriate imaging, and screen for infection or obstruction.",
+    "escalation": "Escalate for fever, sepsis, solitary kidney, rising creatinine, or uncontrolled pain."
+  }
+}

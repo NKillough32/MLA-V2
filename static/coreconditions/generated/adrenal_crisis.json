@@ -1,0 +1,106 @@
+{
+  "id": "adrenal_crisis",
+  "name": "Adrenal crisis",
+  "domains": [
+    "Endocrine"
+  ],
+  "generatedAt": "2026-02-14T12:00:00.000000",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Adrenal crisis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAdrenal crisis is a life-threatening acute deficiency of cortisol (often with aldosterone deficiency) leading to shock, metabolic disturbance, and organ dysfunction.\n\n### Epidemiology\nIt occurs in patients with known adrenal insufficiency, after abrupt steroid withdrawal, or during intercurrent illness, trauma, or surgery without stress-dose steroids.\n\n### Essential Pathophysiology\nLoss of cortisol causes impaired vascular tone, hypoglycaemia, and reduced response to catecholamines; aldosterone deficiency leads to sodium loss, volume depletion, and hyperkalaemia.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Severe weakness and fatigue\n- Nausea, vomiting, abdominal pain\n- Dizziness or syncope\n- Fever or intercurrent infection symptoms\n\n### Key Signs\n- Hypotension or shock\n- Dehydration\n- Hyperpigmentation (primary adrenal insufficiency)\n- Altered mental state\n\n### Atypical Presentations\n- Unexplained hypoglycaemia\n- Hyponatraemia without overt GI symptoms\n\n### Red Flags Requiring Immediate Action\n- Refractory hypotension\n- Hypoglycaemia with altered consciousness\n- Suspected adrenal crisis in a steroid-dependent patient\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Capillary glucose\n- U&E, glucose, FBC, CRP\n- Serum cortisol (do not delay treatment)\n\n### Second-line Investigations\n- Serum ACTH\n- Blood cultures if infection suspected\n\n### Specialist Tests\n- Short Synacthen test (after stabilization)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nClinical diagnosis in an at-risk patient with hypotension, dehydration, and biochemical abnormalities; treat immediately without waiting for cortisol results.\n\n### Key Differential Diagnoses to Exclude\n- Sepsis\n- Gastroenteritis with dehydration\n- Hypovolaemic shock\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- IV hydrocortisone 100 mg stat, then 50 mg 6-hourly or 200 mg/24h infusion\n- IV 0.9% saline resuscitation\n- Correct hypoglycaemia with IV dextrose\n\n#### Second-line Treatments\n- Treat precipitating cause (e.g., antibiotics for infection)\n- Add IV glucose-containing fluids if recurrent hypoglycaemia\n\n#### Emergency Procedures\n- Escalate to critical care if shock persists\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Convert to oral hydrocortisone when stable\n- Restart/optimize fludrocortisone in primary adrenal insufficiency\n\n#### Second-line Treatments\n- Endocrinology review for long-term management and education\n\n#### Monitoring Requirements\n- Monitor electrolytes, glucose, and blood pressure\n- Watch for recurrent hypotension\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Hydrocortisone\n- **Mechanism of Action**: Replaces cortisol to restore vascular responsiveness and metabolism.\n- **Typical Dosing Range**: 100 mg IV stat, then 50 mg IV 6-hourly or 200 mg/24h infusion.\n- **Key Side Effects/Contraindications**: Hyperglycaemia, fluid retention; no absolute contraindication in crisis.\n- **When to Use vs. Alternatives**: First-line for all adrenal crisis cases.\n\n#### Fludrocortisone\n- **Mechanism of Action**: Mineralocorticoid replacement to restore sodium balance.\n- **Typical Dosing Range**: 50-100 micrograms daily (when oral intake resumes).\n- **Key Side Effects/Contraindications**: Hypertension, oedema, hypokalaemia.\n- **When to Use vs. Alternatives**: Needed in primary adrenal insufficiency once stable.\n\n### Procedures\n- No specific procedure beyond resuscitation and monitoring.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith prompt steroid replacement and fluids, most patients recover within 24-48 hours. Delays increase mortality.\n\n### Important Complications to Watch For\n- Refractory shock\n- Arrhythmias from electrolyte disturbance\n- Hypoglycaemic seizures\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nRecognize adrenal crisis early, give immediate IV hydrocortisone, start fluids, and alert seniors.\n\n### When to Escalate to Senior/Specialist\nImmediate escalation for hypotension, altered consciousness, or persistent electrolyte derangement.\n\n### Key Safety Considerations\nDo not delay steroid treatment while awaiting cortisol results; document steroid dependence and sick-day rules.\n",
+  "content": {
+    "overview": {
+      "definition": "Adrenal crisis is a life-threatening acute deficiency of cortisol (often with aldosterone deficiency) leading to shock, metabolic disturbance, and organ dysfunction.",
+      "epidemiology": "It occurs in patients with known adrenal insufficiency, after abrupt steroid withdrawal, or during intercurrent illness, trauma, or surgery without stress-dose steroids.",
+      "pathophysiology": "Loss of cortisol causes impaired vascular tone, hypoglycaemia, and reduced response to catecholamines; aldosterone deficiency leads to sodium loss, volume depletion, and hyperkalaemia."
+    },
+    "recognition": {
+      "symptoms": [
+        "Severe weakness and fatigue",
+        "Nausea, vomiting, abdominal pain",
+        "Dizziness or syncope",
+        "Fever or intercurrent infection symptoms"
+      ],
+      "signs": [
+        "Hypotension or shock",
+        "Dehydration",
+        "Hyperpigmentation (primary adrenal insufficiency)",
+        "Altered mental state"
+      ],
+      "atypicalPresentations": [
+        "Unexplained hypoglycaemia",
+        "Hyponatraemia without overt GI symptoms"
+      ],
+      "redFlags": [
+        "Refractory hypotension",
+        "Hypoglycaemia with altered consciousness",
+        "Suspected adrenal crisis in a steroid-dependent patient"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Capillary glucose",
+        "U&E, glucose, FBC, CRP",
+        "Serum cortisol (do not delay treatment)"
+      ],
+      "secondLine": [
+        "Serum ACTH",
+        "Blood cultures if infection suspected"
+      ],
+      "specialistTests": [
+        "Short Synacthen test (after stabilization)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Clinical diagnosis in an at-risk patient with hypotension, dehydration, and biochemical abnormalities; treat immediately without waiting for cortisol results.",
+      "differentials": [
+        "Sepsis",
+        "Gastroenteritis with dehydration",
+        "Hypovolaemic shock"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "IV hydrocortisone 100 mg stat, then 50 mg 6-hourly or 200 mg/24h infusion",
+          "IV 0.9% saline resuscitation",
+          "Correct hypoglycaemia with IV dextrose"
+        ],
+        "secondLine": [
+          "Treat precipitating cause (e.g., antibiotics for infection)",
+          "Add IV glucose-containing fluids if recurrent hypoglycaemia"
+        ],
+        "procedures": [
+          "Escalate to critical care if shock persists"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Convert to oral hydrocortisone when stable",
+          "Restart/optimize fludrocortisone in primary adrenal insufficiency"
+        ],
+        "secondLine": [
+          "Endocrinology review for long-term management and education"
+        ],
+        "monitoring": [
+          "Monitor electrolytes, glucose, and blood pressure",
+          "Watch for recurrent hypotension"
+        ]
+      },
+      "drugs": [
+        "Hydrocortisone",
+        "Fludrocortisone"
+      ],
+      "procedures": [
+        "Resuscitation and monitoring"
+      ]
+    },
+    "prognosis": "With prompt steroid replacement and fluids, most patients recover within 24-48 hours. Delays increase mortality.",
+    "complications": [
+      "Refractory shock",
+      "Arrhythmias from electrolyte disturbance",
+      "Hypoglycaemic seizures"
+    ],
+    "foundationDoctorRole": "Recognize adrenal crisis early, give immediate IV hydrocortisone, start fluids, and alert seniors.",
+    "escalation": "Immediate escalation for hypotension, altered consciousness, or persistent electrolyte derangement."
+  }
+}

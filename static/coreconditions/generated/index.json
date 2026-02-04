@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-02-04T12:32:41.611617",
-  "totalConditions": 557,
-  "processedCount": 557,
+  "generatedAt": "2026-02-04T13:14:46.633097",
+  "totalConditions": 562,
+  "processedCount": 562,
   "model": "gpt-4o-mini",
   "conditions": [
     {
@@ -186,6 +186,15 @@
         "Gynaecology"
       ],
       "filename": "adenomyosis.json",
+      "processed": true
+    },
+    {
+      "id": "adrenal_crisis",
+      "name": "Adrenal crisis",
+      "domains": [
+        "Endocrine"
+      ],
+      "filename": "adrenal_crisis.json",
       "processed": true
     },
     {
@@ -1604,6 +1613,15 @@
       "processed": true
     },
     {
+      "id": "eosinophilic_granulomatosis_with_polyangiitis_p_anca",
+      "name": "Eosinophilic granulomatosis with polyangiitis (p-ANCA)",
+      "domains": [
+        "Rheumatology"
+      ],
+      "filename": "eosinophilic_granulomatosis_with_polyangiitis_p_anca.json",
+      "processed": true
+    },
+    {
       "id": "epididymitis_and_orchitis",
       "name": "Epididymitis and orchitis",
       "domains": [
@@ -1933,6 +1951,15 @@
       "processed": true
     },
     {
+      "id": "gastrointestinal_bleeding",
+      "name": "Gastrointestinal bleeding",
+      "domains": [
+        "Gastrointestinal"
+      ],
+      "filename": "gastrointestinal_bleeding.json",
+      "processed": true
+    },
+    {
       "id": "gastrointestinal_malignancies",
       "name": "Gastrointestinal Malignancies",
       "domains": [
@@ -1979,6 +2006,15 @@
       "processed": true
     },
     {
+      "id": "giant_cell_arteritis_temporal_arteritis_gca",
+      "name": "Giant cell arteritis (temporal arteritis, GCA)",
+      "domains": [
+        "Rheumatology"
+      ],
+      "filename": "giant_cell_arteritis_temporal_arteritis_gca.json",
+      "processed": true
+    },
+    {
       "id": "glomerulonephritis",
       "name": "Glomerulonephritis",
       "domains": [
@@ -2004,6 +2040,15 @@
         "Rheumatology"
       ],
       "filename": "gout.json",
+      "processed": true
+    },
+    {
+      "id": "granulomatosis_with_polyangiitis_c_anca",
+      "name": "Granulomatosis with polyangiitis (c-ANCA)",
+      "domains": [
+        "Rheumatology"
+      ],
+      "filename": "granulomatosis_with_polyangiitis_c_anca.json",
       "processed": true
     },
     {
@@ -2485,6 +2530,15 @@
         "Rheumatology"
       ],
       "filename": "idiopathicseronegative_arthritis.json",
+      "processed": true
+    },
+    {
+      "id": "iga_vasculitis_henoch_schonlein_purpura",
+      "name": "IgA vasculitis (Henoch-Schonlein purpura)",
+      "domains": [
+        "Rheumatology"
+      ],
+      "filename": "iga_vasculitis_henoch_schonlein_purpura.json",
       "processed": true
     },
     {
@@ -2977,7 +3031,7 @@
     },
     {
       "id": "menieres_disease",
-      "name": "Ménière's disease",
+      "name": "M\u00e9ni\u00e8re's disease",
       "domains": [
         "ENT"
       ],
@@ -3064,6 +3118,15 @@
         "Haematology"
       ],
       "filename": "microcytic_anaemia.json",
+      "processed": true
+    },
+    {
+      "id": "microscopic_polyangiitis_p_anca",
+      "name": "Microscopic polyangiitis (p-ANCA)",
+      "domains": [
+        "Rheumatology"
+      ],
+      "filename": "microscopic_polyangiitis_p_anca.json",
       "processed": true
     },
     {
@@ -3183,6 +3246,15 @@
         "Cardiology"
       ],
       "filename": "myocarditis.json",
+      "processed": true
+    },
+    {
+      "id": "myxoedema_coma",
+      "name": "Myxoedema coma",
+      "domains": [
+        "Endocrine"
+      ],
+      "filename": "myxoedema_coma.json",
       "processed": true
     },
     {
@@ -3738,6 +3810,15 @@
       "processed": true
     },
     {
+      "id": "polyarteritis_nodosa",
+      "name": "Polyarteritis nodosa",
+      "domains": [
+        "Rheumatology"
+      ],
+      "filename": "polyarteritis_nodosa.json",
+      "processed": true
+    },
+    {
       "id": "polycystic_kidney_disease",
       "name": "Polycystic kidney disease",
       "domains": [
@@ -4046,6 +4127,15 @@
         "Paediatrics"
       ],
       "filename": "reactive_arthritis.json",
+      "processed": true
+    },
+    {
+      "id": "renal_colic",
+      "name": "Renal colic",
+      "domains": [
+        "Renal"
+      ],
+      "filename": "renal_colic.json",
       "processed": true
     },
     {
@@ -4623,6 +4713,15 @@
       "processed": true
     },
     {
+      "id": "thyroid_storm",
+      "name": "Thyroid storm",
+      "domains": [
+        "Endocrine"
+      ],
+      "filename": "thyroid_storm.json",
+      "processed": true
+    },
+    {
       "id": "thyrotoxicosis",
       "name": "Thyrotoxicosis",
       "domains": [
@@ -5085,60 +5184,6 @@
         "Psychiatry"
       ],
       "filename": "wernickes_encephalopathy.json",
-      "processed": true
-    },
-    {
-      "id": "granulomatosis_with_polyangiitis_c_anca",
-      "name": "Granulomatosis with polyangiitis (c-ANCA)",
-      "domains": [
-        "Rheumatology"
-      ],
-      "filename": "granulomatosis_with_polyangiitis_c_anca.json",
-      "processed": true
-    },
-    {
-      "id": "microscopic_polyangiitis_p_anca",
-      "name": "Microscopic polyangiitis (p-ANCA)",
-      "domains": [
-        "Rheumatology"
-      ],
-      "filename": "microscopic_polyangiitis_p_anca.json",
-      "processed": true
-    },
-    {
-      "id": "eosinophilic_granulomatosis_with_polyangiitis_p_anca",
-      "name": "Eosinophilic granulomatosis with polyangiitis (p-ANCA)",
-      "domains": [
-        "Rheumatology"
-      ],
-      "filename": "eosinophilic_granulomatosis_with_polyangiitis_p_anca.json",
-      "processed": true
-    },
-    {
-      "id": "polyarteritis_nodosa",
-      "name": "Polyarteritis nodosa",
-      "domains": [
-        "Rheumatology"
-      ],
-      "filename": "polyarteritis_nodosa.json",
-      "processed": true
-    },
-    {
-      "id": "iga_vasculitis_henoch_schonlein_purpura",
-      "name": "IgA vasculitis (Henoch-Schonlein purpura)",
-      "domains": [
-        "Rheumatology"
-      ],
-      "filename": "iga_vasculitis_henoch_schonlein_purpura.json",
-      "processed": true
-    },
-    {
-      "id": "giant_cell_arteritis_temporal_arteritis_gca",
-      "name": "Giant cell arteritis (temporal arteritis, GCA)",
-      "domains": [
-        "Rheumatology"
-      ],
-      "filename": "giant_cell_arteritis_temporal_arteritis_gca.json",
       "processed": true
     }
   ]
