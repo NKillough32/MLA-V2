@@ -1,0 +1,138 @@
+{
+  "id": "mnires_disease",
+  "name": "Ménière's disease",
+  "domains": [
+    "ENT"
+  ],
+  "generatedAt": "2025-12-17T21:37:03.155642",
+  "model": "gpt-4o-mini",
+  "rawContent": "Ménière's disease: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nMeniere's disease is a chronic inner ear disorder characterized by episodes of vertigo, tinnitus, hearing loss, and aural fullness due to abnormal fluid accumulation in the inner ear.\n\n### Epidemiology\nMeniere's disease affects approximately 0.2% of the population, with a higher prevalence in adults aged 40-60 years. It is slightly more common in women than men.\n\n### Essential Pathophysiology\nThe exact cause of Meniere's disease is unknown, but it is believed to involve an abnormal accumulation of endolymphatic fluid in the inner ear, leading to increased pressure and dysfunction of the vestibular and auditory systems.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Recurrent episodes of vertigo (spinning sensation) lasting 20 minutes to several hours\n- Tinnitus (ringing or buzzing in the ear)\n- Fluctuating hearing loss\n- Aural fullness (sensation of pressure in the ear)\n\n### Key Signs\n- Unilateral hearing loss (often fluctuating)\n- Nystagmus (involuntary eye movements) during vertigo attacks\n- Positive Romberg test during acute episodes\n\n### Atypical Presentations\n- Bilateral symptoms (less common, may suggest a different diagnosis)\n- Prolonged episodes of vertigo lasting more than 24 hours\n- Severe imbalance without significant vertigo\n\n### Red Flags Requiring Immediate Action\n- Sudden onset of severe headache (could indicate a central cause)\n- Neurological deficits (suggestive of stroke or other central pathology)\n- Persistent unilateral hearing loss that does not fluctuate\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Audiometry (to assess hearing loss)\n- Vestibular function tests (e.g., caloric testing)\n- Tympanometry (to rule out middle ear pathology)\n\n### Second-line Investigations\n- MRI of the brain and internal auditory canals (to exclude tumors or other structural abnormalities)\n- Blood tests (to rule out autoimmune or infectious causes)\n\n### Specialist Tests\n- Electrocochleography (ECoG) to measure inner ear fluid pressure\n- Vestibular evoked myogenic potentials (VEMP)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the presence of recurrent vertigo episodes, fluctuating hearing loss, tinnitus, and aural fullness. The criteria established by the American Academy of Otolaryngology-Head and Neck Surgery include: 1) Two or more episodes of vertigo, each lasting 20 minutes to 12 hours; 2) Audiometric confirmation of sensorineural hearing loss; 3) Tinnitus or aural fullness; 4) Exclusion of other causes.\n\n### Key Differential Diagnoses to Exclude\n- Vestibular migraine\n- Acoustic neuroma\n- Labyrinthitis\n- Benign paroxysmal positional vertigo (BPPV)\n- Central vestibular disorders (e.g., multiple sclerosis)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Antihistamines (e.g., meclizine) for symptomatic relief of vertigo\n- Benzodiazepines (e.g., diazepam) for acute anxiety and vertigo control\n\n#### Second-line Treatments\n- Intravenous fluids and antiemetics if dehydration occurs due to vomiting\n\n#### Emergency Procedures\n- Vestibular rehabilitation therapy (to improve balance and reduce vertigo symptoms)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Dietary modifications (low-salt diet to reduce fluid retention)\n- Diuretics (e.g., hydrochlorothiazide) to help reduce endolymphatic pressure\n\n#### Second-line Treatments\n- Intratympanic steroid injections (e.g., dexamethasone) for persistent symptoms\n\n#### Monitoring Requirements\n- Regular audiometric assessments to monitor hearing changes\n- Patient education on lifestyle modifications and triggers\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Meclizine\n- **Mechanism of Action**: Antihistamine that reduces vertigo and motion sickness\n- **Typical Dosing Range**: 25-100 mg orally, taken 1 hour before travel or as needed\n- **Key Side Effects/Contraindications**: Drowsiness, dry mouth, blurred vision\n- **When to Use vs. Alternatives**: Use caution in elderly patients due to sedation.\n\n#### Hydrochlorothiazide\n- **Mechanism of Action**: Thiazide diuretic that reduces fluid retention\n- **Typical Dosing Range**: 25-50 mg orally once daily\n- **Key Side Effects/Contraindications**: Hypokalemia, dehydration, dizziness\n- **When to Use vs. Alternatives**: Monitor electrolytes regularly.\n\n#### Dexamethasone\n- **Mechanism of Action**: Corticosteroid that reduces inflammation and edema\n- **Typical Dosing Range**: 4-10 mg intratympanic injection every 4-6 weeks\n- **Key Side Effects/Contraindications**: Infection risk, local pain\n- **When to Use vs. Alternatives**: Consider in patients with refractory symptoms.\n\n### Procedures\n\n#### Vestibular rehabilitation therapy\n- **What it Involves**: A structured program of exercises designed to improve balance and reduce dizziness\n- **Indications**: Patients with chronic vestibular dysfunction and imbalance\n- **Key Risks/Complications**: May initially exacerbate symptoms before improvement.\n\n#### Intratympanic steroid injection\n- **What it Involves**: Injection of steroids into the middle ear to reduce inner ear inflammation\n- **Indications**: Persistent symptoms despite medical management\n- **Key Risks/Complications**: Tympanic membrane perforation, infection, transient pain.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMeniere's disease is a chronic condition with variable prognosis. Some patients experience spontaneous remission, while others may have progressive hearing loss and recurrent episodes of vertigo. Long-term management is often required.\n\n### Important Complications to Watch For\n- Permanent hearing loss\n- Increased risk of falls due to balance issues\n- Psychological impact (anxiety, depression) due to chronic symptoms\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the symptoms of Meniere's disease, perform initial assessments, and provide supportive care. They should also educate patients about lifestyle modifications and the importance of follow-up.\n\n### When to Escalate to Senior/Specialist\nRefer to an ENT specialist if: 1) Symptoms are severe or unresponsive to initial management; 2) There are atypical features or red flags; 3) The patient requires further diagnostic testing or specialist interventions.\n\n### Key Safety Considerations\nMonitor for signs of dehydration in patients with severe vertigo and vomiting. Ensure patient safety during acute episodes, especially in preventing falls. Educate patients on avoiding known triggers (e.g., stress, certain foods) and the importance of regular follow-up.\n",
+  "content": {
+    "overview": {
+      "definition": "Meniere's disease is a chronic inner ear disorder characterized by episodes of vertigo, tinnitus, hearing loss, and aural fullness due to abnormal fluid accumulation in the inner ear.",
+      "epidemiology": "Meniere's disease affects approximately 0.2% of the population, with a higher prevalence in adults aged 40-60 years. It is slightly more common in women than men.",
+      "pathophysiology": "The exact cause of Meniere's disease is unknown, but it is believed to involve an abnormal accumulation of endolymphatic fluid in the inner ear, leading to increased pressure and dysfunction of the vestibular and auditory systems."
+    },
+    "recognition": {
+      "symptoms": [
+        "Recurrent episodes of vertigo (spinning sensation) lasting 20 minutes to several hours",
+        "Tinnitus (ringing or buzzing in the ear)",
+        "Fluctuating hearing loss",
+        "Aural fullness (sensation of pressure in the ear)"
+      ],
+      "signs": [
+        "Unilateral hearing loss (often fluctuating)",
+        "Nystagmus (involuntary eye movements) during vertigo attacks",
+        "Positive Romberg test during acute episodes"
+      ],
+      "atypicalPresentations": [
+        "Bilateral symptoms (less common, may suggest a different diagnosis)",
+        "Prolonged episodes of vertigo lasting more than 24 hours",
+        "Severe imbalance without significant vertigo"
+      ],
+      "redFlags": [
+        "Sudden onset of severe headache (could indicate a central cause)",
+        "Neurological deficits (suggestive of stroke or other central pathology)",
+        "Persistent unilateral hearing loss that does not fluctuate"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Audiometry (to assess hearing loss)",
+        "Vestibular function tests (e.g., caloric testing)",
+        "Tympanometry (to rule out middle ear pathology)"
+      ],
+      "secondLine": [
+        "MRI of the brain and internal auditory canals (to exclude tumors or other structural abnormalities)",
+        "Blood tests (to rule out autoimmune or infectious causes)"
+      ],
+      "specialistTests": [
+        "Electrocochleography (ECoG) to measure inner ear fluid pressure",
+        "Vestibular evoked myogenic potentials (VEMP)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the presence of recurrent vertigo episodes, fluctuating hearing loss, tinnitus, and aural fullness. The criteria established by the American Academy of Otolaryngology-Head and Neck Surgery include: 1) Two or more episodes of vertigo, each lasting 20 minutes to 12 hours; 2) Audiometric confirmation of sensorineural hearing loss; 3) Tinnitus or aural fullness; 4) Exclusion of other causes.",
+      "differentials": [
+        "Vestibular migraine",
+        "Acoustic neuroma",
+        "Labyrinthitis",
+        "Benign paroxysmal positional vertigo (BPPV)",
+        "Central vestibular disorders (e.g., multiple sclerosis)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Antihistamines (e.g., meclizine) for symptomatic relief of vertigo",
+          "Benzodiazepines (e.g., diazepam) for acute anxiety and vertigo control"
+        ],
+        "secondLine": [
+          "Intravenous fluids and antiemetics if dehydration occurs due to vomiting"
+        ],
+        "procedures": [
+          "Vestibular rehabilitation therapy (to improve balance and reduce vertigo symptoms)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Dietary modifications (low-salt diet to reduce fluid retention)",
+          "Diuretics (e.g., hydrochlorothiazide) to help reduce endolymphatic pressure"
+        ],
+        "secondLine": [
+          "Intratympanic steroid injections (e.g., dexamethasone) for persistent symptoms"
+        ],
+        "monitoring": [
+          "Regular audiometric assessments to monitor hearing changes",
+          "Patient education on lifestyle modifications and triggers"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Meclizine",
+          "mechanism": "Antihistamine that reduces vertigo and motion sickness",
+          "dosing": "25-100 mg orally, taken 1 hour before travel or as needed",
+          "sideEffects": "Drowsiness, dry mouth, blurred vision",
+          "notes": "Use caution in elderly patients due to sedation."
+        },
+        {
+          "name": "Hydrochlorothiazide",
+          "mechanism": "Thiazide diuretic that reduces fluid retention",
+          "dosing": "25-50 mg orally once daily",
+          "sideEffects": "Hypokalemia, dehydration, dizziness",
+          "notes": "Monitor electrolytes regularly."
+        },
+        {
+          "name": "Dexamethasone",
+          "mechanism": "Corticosteroid that reduces inflammation and edema",
+          "dosing": "4-10 mg intratympanic injection every 4-6 weeks",
+          "sideEffects": "Infection risk, local pain",
+          "notes": "Consider in patients with refractory symptoms."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Vestibular rehabilitation therapy",
+          "description": "A structured program of exercises designed to improve balance and reduce dizziness",
+          "indications": "Patients with chronic vestibular dysfunction and imbalance",
+          "risks": "May initially exacerbate symptoms before improvement."
+        },
+        {
+          "name": "Intratympanic steroid injection",
+          "description": "Injection of steroids into the middle ear to reduce inner ear inflammation",
+          "indications": "Persistent symptoms despite medical management",
+          "risks": "Tympanic membrane perforation, infection, transient pain."
+        }
+      ]
+    },
+    "prognosis": "Meniere's disease is a chronic condition with variable prognosis. Some patients experience spontaneous remission, while others may have progressive hearing loss and recurrent episodes of vertigo. Long-term management is often required.",
+    "complications": [
+      "Permanent hearing loss",
+      "Increased risk of falls due to balance issues",
+      "Psychological impact (anxiety, depression) due to chronic symptoms"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the symptoms of Meniere's disease, perform initial assessments, and provide supportive care. They should also educate patients about lifestyle modifications and the importance of follow-up.",
+    "escalation": "Refer to an ENT specialist if: 1) Symptoms are severe or unresponsive to initial management; 2) There are atypical features or red flags; 3) The patient requires further diagnostic testing or specialist interventions.",
+    "keySafetyConsiderations": "Monitor for signs of dehydration in patients with severe vertigo and vomiting. Ensure patient safety during acute episodes, especially in preventing falls. Educate patients on avoiding known triggers (e.g., stress, certain foods) and the importance of regular follow-up."
+  }
+}

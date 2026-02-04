@@ -1,0 +1,118 @@
+{
+  "id": "common_travel_related_illnesses_and_presentations",
+  "name": "Common travel-related illnesses and presentations",
+  "domains": [
+    "Infection"
+  ],
+  "generatedAt": "2026-02-14T10:05:00.000000",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Common travel-related illnesses and presentations: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nThis core condition summarises common travel-related infections and their typical clinical presentations to support rapid recognition in a returned traveller.\n\n### Epidemiology\nFebrile illness after travel is common; risk varies by destination, season, vaccination status, and exposure history (food/water, freshwater, mosquitoes).\n\n### Essential Pathophysiology\nPresentations reflect pathogen-specific tissue tropism (e.g., EBV lymphoid infection, Leptospira vasculitis, Salmonella bacteraemia, Plasmodium erythrocyte invasion, Yellow fever viral hepatitis/haemorrhagic disease).\n\n## 2. RECOGNITION\n\n### Key Symptoms (presentations)\n- **Infectious mononucleosis (EBV)**: fever, sore throat, profound fatigue, malaise.\n- **Leptospirosis**: acute fever, severe myalgia (classically calves), headache, photophobia.\n- **Typhoid fever**: sustained stepwise fever, headache, abdominal pain, constipation or diarrhoea.\n- **Malaria**: episodic fevers/rigors, sweats, headache, myalgia, nausea.\n- **Yellow fever**: fever, headache, myalgia/back pain, nausea; biphasic illness with jaundice or haemorrhage in severe cases.\n\n### Key Signs\n- **Infectious mononucleosis**: cervical lymphadenopathy, tonsillar exudates, hepatosplenomegaly.\n- **Leptospirosis**: conjunctival suffusion, jaundice (Weil disease), meningism.\n- **Typhoid fever**: relative bradycardia, abdominal tenderness, rose spots, hepatosplenomegaly.\n- **Malaria**: anaemia, jaundice, splenomegaly, altered mental status (severe malaria).\n- **Yellow fever**: jaundice, bleeding, hypotension, \"black vomit\" in severe disease.\n\n### Atypical Presentations\n- Mild or afebrile presentations after partial treatment or prophylaxis.\n- Overlap syndromes (e.g., diarrhoea-predominant typhoid, predominant jaundice in leptospirosis/yellow fever).\n\n### Red Flags Requiring Immediate Action\n- Altered consciousness, seizures, or focal neurology.\n- Jaundice with bleeding or hypotension.\n- Severe anaemia, respiratory distress, or renal failure.\n- Any febrile returned traveller where malaria has not been excluded.\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Detailed travel history (destinations, dates, exposures, prophylaxis, vaccines).\n- FBC, U&E, LFTs, CRP.\n- Thick/thin blood films and rapid antigen tests for malaria.\n- Blood cultures (typhoid), EBV serology, and leptospira serology/PCR as indicated.\n\n### Second-line Investigations\n- Urinalysis and CK (leptospirosis).\n- Coagulation profile (yellow fever/severe infection).\n- Imaging if focal complications suspected (e.g., hepatosplenic).\n\n### Specialist Tests\n- PCR panels for arboviruses, specialist reference lab testing as per local guidance.\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on compatible travel history plus syndrome-specific clinical features and confirmatory testing. Malaria must be excluded urgently in any febrile returned traveller.\n\n### Key Differential Diagnoses to Exclude\n- Other causes of febrile traveller (dengue, chikungunya, rickettsial infections).\n- Viral hepatitis, influenza, COVID-19, HIV seroconversion.\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Urgent malaria testing and treatment per protocol if positive or suspected.\n- Supportive care: fluids, antipyretics, monitoring for complications.\n\n#### Second-line Treatments\n- Targeted therapy: antibiotics for typhoid/leptospirosis; antivirals/supportive care for viral illnesses as per local guidance.\n\n#### Emergency Procedures\n- Escalate to senior/critical care for severe malaria, haemorrhagic disease, or organ failure.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Follow-up for convalescence, monitor LFTs/renal function if abnormal.\n\n#### Second-line Treatments\n- Specialist infectious diseases review for persistent symptoms or complications.\n\n#### Monitoring Requirements\n- Repeat malaria films if initial tests negative but suspicion remains.\n- Monitor for relapse (e.g., malaria, typhoid) and complications.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n- Antimalarials (per local resistance patterns).\n- Ceftriaxone/azithromycin for typhoid where indicated.\n- Doxycycline/penicillin for leptospirosis where indicated.\n\n### Procedures\n- None specific; supportive care and organ support if severe.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost cases resolve with appropriate treatment, but delayed diagnosis increases risk of complications.\n\n### Important Complications to Watch For\n- Severe malaria (cerebral malaria, renal failure).\n- Typhoid intestinal perforation or haemorrhage.\n- Leptospirosis with jaundice/renal failure (Weil disease).\n- Yellow fever with fulminant hepatic failure/bleeding.\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should take a detailed travel history, initiate urgent malaria testing, start supportive care, and escalate promptly when red flags are present.\n\n### When to Escalate to Senior/Specialist\nImmediate escalation for severe disease, abnormal consciousness, bleeding, or organ failure; early ID input for suspected tropical infections.\n\n### Key Safety Considerations\nNever miss malaria in a febrile returned traveller. Document exposure risks and vaccination/prophylaxis status clearly.\n",
+  "content": {
+    "overview": {
+      "definition": "This core condition summarises common travel-related infections and their typical clinical presentations to support rapid recognition in a returned traveller.",
+      "epidemiology": "Febrile illness after travel is common; risk varies by destination, season, vaccination status, and exposure history (food/water, freshwater, mosquitoes).",
+      "pathophysiology": "Presentations reflect pathogen-specific tissue tropism (e.g., EBV lymphoid infection, Leptospira vasculitis, Salmonella bacteraemia, Plasmodium erythrocyte invasion, Yellow fever viral hepatitis/haemorrhagic disease)."
+    },
+    "recognition": {
+      "symptoms": [
+        "Infectious mononucleosis: fever, sore throat, profound fatigue",
+        "Leptospirosis: acute fever, severe myalgia (calves), headache",
+        "Typhoid fever: sustained stepwise fever, abdominal pain, constipation or diarrhoea",
+        "Malaria: episodic fevers/rigors, sweats, headache, myalgia",
+        "Yellow fever: fever, headache, myalgia/back pain, nausea"
+      ],
+      "signs": [
+        "Infectious mononucleosis: cervical lymphadenopathy, tonsillar exudates, hepatosplenomegaly",
+        "Leptospirosis: conjunctival suffusion, jaundice (Weil disease)",
+        "Typhoid fever: relative bradycardia, rose spots, abdominal tenderness",
+        "Malaria: anaemia, jaundice, splenomegaly",
+        "Yellow fever: jaundice, bleeding, hypotension"
+      ],
+      "atypicalPresentations": [
+        "Mild or afebrile presentations after partial treatment or prophylaxis",
+        "Overlap syndromes with predominant diarrhoea or jaundice"
+      ],
+      "redFlags": [
+        "Altered consciousness, seizures, or focal neurology",
+        "Jaundice with bleeding or hypotension",
+        "Severe anaemia, respiratory distress, or renal failure",
+        "Any febrile returned traveller where malaria has not been excluded"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Detailed travel history (destinations, dates, exposures, prophylaxis, vaccines)",
+        "FBC, U&E, LFTs, CRP",
+        "Thick/thin blood films and rapid antigen tests for malaria",
+        "Blood cultures, EBV serology, leptospira serology/PCR as indicated"
+      ],
+      "secondLine": [
+        "Urinalysis and CK (leptospirosis)",
+        "Coagulation profile if haemorrhagic features",
+        "Imaging if focal complications suspected"
+      ],
+      "specialistTests": [
+        "PCR panels for arboviruses and reference lab testing per local guidance"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on compatible travel history plus syndrome-specific clinical features and confirmatory testing. Malaria must be excluded urgently in any febrile returned traveller.",
+      "differentials": [
+        "Dengue, chikungunya, rickettsial infections",
+        "Viral hepatitis",
+        "Influenza, COVID-19",
+        "HIV seroconversion"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Urgent malaria testing and treatment per protocol if positive or suspected",
+          "Supportive care: fluids, antipyretics, monitoring"
+        ],
+        "secondLine": [
+          "Targeted therapy: antibiotics for typhoid/leptospirosis as indicated"
+        ],
+        "emergency": [
+          "Escalate to critical care for severe malaria, haemorrhagic disease, or organ failure"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Follow-up for convalescence and monitoring of abnormal labs"
+        ],
+        "secondLine": [
+          "Specialist infectious diseases review for persistent symptoms"
+        ],
+        "monitoring": [
+          "Repeat malaria films if initial tests negative but suspicion remains",
+          "Monitor for relapse and complications"
+        ]
+      }
+    },
+    "drugsAndProcedures": {
+      "drugs": [
+        "Antimalarials per local resistance patterns",
+        "Ceftriaxone/azithromycin for typhoid where indicated",
+        "Doxycycline/penicillin for leptospirosis where indicated"
+      ],
+      "procedures": [
+        "Supportive care and organ support if severe"
+      ]
+    },
+    "prognosis": {
+      "expectedOutcomes": "Most cases resolve with appropriate treatment, but delayed diagnosis increases risk of complications.",
+      "complications": [
+        "Severe malaria (cerebral malaria, renal failure)",
+        "Typhoid intestinal perforation or haemorrhage",
+        "Leptospirosis with jaundice/renal failure (Weil disease)",
+        "Yellow fever with fulminant hepatic failure or bleeding"
+      ]
+    },
+    "foundationDoctorRole": {
+      "responsibilities": "Take a detailed travel history, initiate urgent malaria testing, start supportive care, and escalate promptly when red flags are present.",
+      "escalation": "Immediate escalation for severe disease, abnormal consciousness, bleeding, or organ failure; early ID input for suspected tropical infections.",
+      "safety": "Never miss malaria in a febrile returned traveller. Document exposure risks and vaccination/prophylaxis status clearly."
+    }
+  }
+}
