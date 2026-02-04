@@ -140,6 +140,40 @@ export const emergencyProtocols = {
         ukGuideline: 'Joint British Diabetes Societies 2012',
         criticalActions: ['Careful fluid replacement', 'Lower insulin doses', 'Thromboprophylaxis']
     },
+    'electrolyte-disturbance-management': {
+        name: 'Electrolyte Disturbance Management',
+        category: 'metabolic',
+        urgency: 'emergency',
+        steps: [
+            'Initial assessment: ABCDE, check vitals, establish IV access, obtain ECG',
+            'Send urgent labs: U&Es, Mg, Ca, phosphate, glucose, renal function, ABG/VBG if unwell',
+            'Identify if symptomatic (arrhythmia, seizures, syncope, severe weakness, altered mental state) or asymptomatic',
+            'Symptomatic → treat immediately while awaiting full results',
+            'Asymptomatic → correct underlying cause and replace/adjust slowly with close monitoring',
+            'Check medications and precipitants (diuretics, ACEi/ARB, steroids, insulin, laxatives, renal failure)',
+            'Repeat electrolytes and ECG at intervals based on severity and treatment response'
+        ],
+        drugs: [
+            'Hyperkalaemia: IV calcium gluconate, insulin + dextrose, nebulised salbutamol',
+            'Severe hyponatraemia with seizures: hypertonic saline (3%) under senior guidance',
+            'Hypocalcaemia with tetany/seizures: IV calcium gluconate',
+            'Hypomagnesaemia with arrhythmia: IV magnesium sulphate'
+        ],
+        ukGuideline: 'NICE/Cochrane summaries (local protocol dependent)',
+        criticalActions: [
+            'Treat life-threatening symptoms first (arrhythmia, seizure, altered consciousness)',
+            'Continuous ECG monitoring for significant K+, Ca2+, or Mg2+ disturbance',
+            'Avoid rapid over-correction; follow local rate limits'
+        ],
+        management: [
+            'Symptomatic or severe derangement: resus area, continuous monitoring, senior review/ICU if unstable',
+            'Asymptomatic mild-moderate: oral replacement where possible, treat cause (vomiting/diarrhoea, renal failure, endocrine)',
+            'Hyperkalaemia: stop K+ raising drugs, consider dialysis if refractory or renal failure',
+            'Hyponatraemia: assess volume status; fluid restrict if SIADH, give isotonic fluids if hypovolaemic',
+            'Hypokalaemia: replace K+ and Mg2+ (Mg deficiency prevents correction)',
+            'Hypophosphataemia: replace cautiously, especially in malnutrition/refeeding'
+        ]
+    },
     'acute-asthma': {
         name: 'Acute Asthma Management',
         category: 'respiratory',
