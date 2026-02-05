@@ -357,9 +357,16 @@ export class DrugReferenceManager {
                 // Add active class to clicked button
                 btn.classList.add('active');
                 
-                // Show corresponding content
-                const targetContent = document.getElementById(`${tabName}-tab`) || 
-                                    document.getElementById(`${tabName}-database-tab`);
+                // Show corresponding content - handle specific IDs
+                let targetContent;
+                if (tabName === 'database') {
+                    targetContent = document.getElementById('drug-database-tab');
+                } else if (tabName === 'pregnancy') {
+                    targetContent = document.getElementById('pregnancy-tab');
+                } else {
+                    targetContent = document.getElementById(`${tabName}-tab`);
+                }
+                
                 if (targetContent) {
                     targetContent.classList.add('active');
                 }
