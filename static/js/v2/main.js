@@ -139,7 +139,7 @@ class MLAQuizApp {
         const calculatorInitialization = calculatorManager.initialize();
         const referenceInitializers = [
             this.drugManager.initialize(),
-            this.pregnancyDrugsManager.initialize(),
+            // PregnancyDrugsManager now initializes on-demand when tab is clicked
             this.labManager.initialize(),
             this.guidelinesManager.initialize(),
             this.proceduresManager.initialize(),
@@ -153,6 +153,9 @@ class MLAQuizApp {
             this.laddersManager.initialize(),
             hematologyManager.initialize()
         ];
+
+        // Setup pregnancy drugs event listener (will initialize on tab click)
+        this.pregnancyDrugsManager.setupEventListeners();
 
         await Promise.all([calculatorInitialization, ...referenceInitializers]);
 
@@ -1084,7 +1087,6 @@ class MLAQuizApp {
         // Map navigation data-tool values to actual panel IDs
         const panelIdMap = {
             'drug-reference': 'drug-panel',
-            'pregnancy-drugs': 'pregnancy-drugs-panel',
             'core-conditions': 'core-conditions-panel',
             'calculators': 'calculator-panel',
             'calculator-detail': 'calculator-detail',
@@ -1132,9 +1134,6 @@ class MLAQuizApp {
         switch(toolType) {
             case 'drug-reference':
                 this.loadDrugReferenceContent(panel);
-                break;
-            case 'pregnancy-drugs':
-                this.loadPregnancyDrugsContent(panel);
                 break;
             case 'core-conditions':
                 this.loadCoreConditionsContent(panel);
@@ -1646,22 +1645,6 @@ class MLAQuizApp {
     }
 
     /**
-     * Load pregnancy & breastfeeding drugs content  
-     */
-    loadPregnancyDrugsContent(panel) {
-        if (!panel) {
-            console.error('loadPregnancyDrugsContent: panel is null');
-            return;
-        }
-        // The PregnancyDrugsManager handles all rendering when initialized
-        // Content is already set up in the HTML, just ensure it's rendered
-        if (this.pregnancyDrugsManager && this.pregnancyDrugsManager.initialized) {
-            console.debug('✅ Pregnancy drugs panel already initialized');
-        } else {
-            console.debug('📊 Initializing pregnancy drugs content...');
-        }
-    }
-
     /**
      * Load Core Conditions content
      */

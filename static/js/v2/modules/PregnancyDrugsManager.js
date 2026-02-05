@@ -37,9 +37,6 @@ export class PregnancyDrugsManager {
             // Setup search
             this.setupSearch();
 
-            // Setup event listeners
-            this.setupEventListeners();
-
             this.initialized = true;
             console.log('✅ PregnancyDrugsManager initialized');
 
@@ -91,7 +88,8 @@ export class PregnancyDrugsManager {
     setupEventListeners() {
         // Listen for global search
         this.eventBus.on('global-search-query', (query) => {
-            if (document.getElementById('pregnancy-drugs-panel')?.style.display !== 'none') {
+            const pregnancyTab = document.getElementById('pregnancy-tab');
+            if (pregnancyTab && pregnancyTab.classList.contains('active')) {
                 this.searchQuery = query.toLowerCase();
                 const searchInput = document.getElementById('pregnancyDrugsSearch');
                 if (searchInput) searchInput.value = query;
@@ -102,6 +100,13 @@ export class PregnancyDrugsManager {
         // Navigation from other modules
         this.eventBus.on('show-pregnancy-drug', (drugName) => {
             this.showDrugInfo(drugName);
+        });
+        
+        // Listen for tab load event
+        this.eventBus.on('load-pregnancy-drugs', () => {
+            if (!this.initialized) {
+                this.initialize();
+            }
         });
     }
 

@@ -1430,10 +1430,18 @@ export class GlobalSearchManager {
                 navigate('drug-reference', () => this.app?.showDrugDetail?.(action.key));
                 break;
             case 'pregnancy-drug':
-                navigate('pregnancy-drugs', () => {
-                    if (this.managers.pregnancyDrugsManager && action.data) {
-                        this.managers.pregnancyDrugsManager.showDrugDetail(action.data.drug);
+                navigate('drug-reference', () => {
+                    // Switch to pregnancy tab
+                    const pregnancyTab = document.querySelector('[data-tab="pregnancy"]');
+                    if (pregnancyTab) {
+                        pregnancyTab.click();
                     }
+                    // Show drug detail
+                    setTimeout(() => {
+                        if (this.managers.pregnancyDrugsManager && action.data) {
+                            this.managers.pregnancyDrugsManager.showDrugDetail(action.data.drug);
+                        }
+                    }, 100);
                 });
                 break;
             case 'lab-panel':

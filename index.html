@@ -12079,6 +12079,66 @@
             .cc-safety-box {
                 padding: 14px 16px;
 
+            /* Drug Panel Tabs */
+            .drug-panel-tabs {
+                display: flex;
+                gap: 8px;
+                margin-bottom: 24px;
+                padding-bottom: 16px;
+                border-bottom: 2px solid var(--v2-border);
+            }
+
+            .drug-tab-btn {
+                flex: 1;
+                padding: 12px 20px;
+                background: var(--v2-bg-secondary);
+                border: 2px solid var(--v2-border);
+                border-radius: 10px;
+                color: var(--v2-text-secondary);
+                font-size: 15px;
+                font-weight: 600;
+                cursor: pointer;
+                transition: all 0.2s ease;
+            }
+
+            .drug-tab-btn:hover {
+                background: var(--v2-bg-card);
+                border-color: rgba(139, 92, 246, 0.3);
+                transform: translateY(-1px);
+            }
+
+            .drug-tab-btn.active {
+                background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(99, 102, 241, 0.15));
+                border-color: rgba(139, 92, 246, 0.5);
+                color: var(--v2-primary);
+                box-shadow: 0 2px 8px rgba(139, 92, 246, 0.15);
+            }
+
+            .drug-tab-content {
+                display: none;
+                padding: 20px;
+                animation: fadeIn 0.3s ease;
+            }
+
+            .drug-tab-content.active {
+                display: block;
+            }
+
+            #drug-database-tab {
+                padding: 0; /* Drug reference has its own padding */
+            }
+
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                    transform: translateY(5px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
             /* Pregnancy & Breastfeeding Drug Safety Styles */
             .pregnancy-drugs-header {
                 text-align: center;
@@ -14098,7 +14158,6 @@
             <button class="tool-nav-btn" data-tool="pdf-library">📚 PDF Library</button>
             <button class="tool-nav-btn" data-tool="core-conditions">📖 Core Conditions</button>
             <button class="tool-nav-btn active" data-tool="drug-reference">💊 Drug Reference</button>
-            <button class="tool-nav-btn" data-tool="pregnancy-drugs">🤰 Pregnancy & Breastfeeding</button>
             <button class="tool-nav-btn" data-tool="examination">🩺 Examination</button>
             <button class="tool-nav-btn" data-tool="differential-dx">🔍 Differential Dx</button>
             <button class="tool-nav-btn" data-tool="calculators">🧮 Calculators</button>
@@ -14128,9 +14187,74 @@
         <div class="tools-content">
             <!-- Drug Reference Panel -->
             <div id="drug-panel" class="tool-panel active">
-                <div id="drug-reference-container">
-                    <!-- Content loaded dynamically by JavaScript -->
-                    <div class="loading-message">📊 Loading drug reference...</div>
+                <!-- Drug Panel Tabs -->
+                <div class="drug-panel-tabs">
+                    <button class="drug-tab-btn active" data-tab="database">💊 Drug Database</button>
+                    <button class="drug-tab-btn" data-tab="pregnancy">🤰 Pregnancy & Breastfeeding</button>
+                </div>
+                
+                <!-- Drug Database Tab Content -->
+                <div id="drug-database-tab" class="drug-tab-content active">
+                    <div id="drug-reference-container">
+                        <!-- Content loaded dynamically by JavaScript -->
+                        <div class="loading-message">💊 Loading drug reference...</div>
+                    </div>
+                </div>
+                
+                <!-- Pregnancy & Breastfeeding Tab Content -->
+                <div id="pregnancy-tab" class="drug-tab-content">
+                    <div class="pregnancy-drugs-header">
+                        <h2>🤰 Pregnancy & Breastfeeding Drug Safety</h2>
+                        <p class="subtitle">Comprehensive guide to contraindicated drugs and safe alternatives</p>
+                    </div>
+
+                    <div class="pregnancy-drugs-controls">
+                        <input type="text" id="pregnancyDrugsSearch" placeholder="🔍 Search drugs..." class="search-input">
+                        
+                        <div class="category-filters">
+                            <button class="pregnancy-category-btn active" data-category="all">All Drugs</button>
+                            <button class="pregnancy-category-btn" data-category="pregnancy_all">🚫 All Trimesters</button>
+                            <button class="pregnancy-category-btn" data-category="pregnancy_t1">1️⃣ 1st Trimester</button>
+                            <button class="pregnancy-category-btn" data-category="pregnancy_t2">2️⃣ 2nd Trimester</button>
+                            <button class="pregnancy-category-btn" data-category="pregnancy_t3">3️⃣ 3rd Trimester</button>
+                            <button class="pregnancy-category-btn" data-category="breastfeeding">🤱 Breastfeeding</button>
+                        </div>
+                    </div>
+
+                    <div class="pregnancy-drugs-content">
+                        <div class="quick-reference-section">
+                            <h3>Quick Reference Lists</h3>
+                            <div class="quick-ref-grid">
+                                <div class="quick-ref-card safe">
+                                    <h4>✅ Generally Safe in Pregnancy</h4>
+                                    <div id="safePregDrugs"></div>
+                                </div>
+                                <div class="quick-ref-card safe">
+                                    <h4>✅ Generally Safe in Breastfeeding</h4>
+                                    <div id="safeBFDrugs"></div>
+                                </div>
+                                <div class="quick-ref-card danger">
+                                    <h4>🚫 Absolute Contraindications</h4>
+                                    <div id="absoluteContraDrugs"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="drug-categories-section">
+                            <h3>Drug Categories</h3>
+                            <div id="pregnancyDrugsList"></div>
+                        </div>
+
+                        <div class="clinical-pearls-section">
+                            <h3>💡 Clinical Pearls</h3>
+                            <div id="pregnancyClinicalPearls"></div>
+                        </div>
+
+                        <div class="resources-section">
+                            <h3>📚 Resources & Guidelines</h3>
+                            <div id="pregnancyResourcesList"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -14306,62 +14430,6 @@
             <div id="dermatology-panel" class="tool-panel">
                 <div id="dermatology-container">
                     <div class="loading-message">🩺 Loading dermatology reference...</div>
-                </div>
-            </div>
-
-            <!-- Pregnancy & Breastfeeding Drug Safety Panel -->
-            <div id="pregnancy-drugs-panel" class="tool-panel">
-                <div class="pregnancy-drugs-header">
-                    <h2>🤰 Pregnancy & Breastfeeding Drug Safety</h2>
-                    <p class="subtitle">Comprehensive guide to contraindicated drugs and safe alternatives</p>
-                </div>
-
-                <div class="pregnancy-drugs-controls">
-                    <input type="text" id="pregnancyDrugsSearch" placeholder="🔍 Search drugs..." class="search-input">
-                    
-                    <div class="category-filters">
-                        <button class="pregnancy-category-btn active" data-category="all">All Drugs</button>
-                        <button class="pregnancy-category-btn" data-category="pregnancy_all">🚫 All Trimesters</button>
-                        <button class="pregnancy-category-btn" data-category="pregnancy_t1">1️⃣ 1st Trimester</button>
-                        <button class="pregnancy-category-btn" data-category="pregnancy_t2">2️⃣ 2nd Trimester</button>
-                        <button class="pregnancy-category-btn" data-category="pregnancy_t3">3️⃣ 3rd Trimester</button>
-                        <button class="pregnancy-category-btn" data-category="breastfeeding">🤱 Breastfeeding</button>
-                    </div>
-                </div>
-
-                <div class="pregnancy-drugs-content">
-                    <div class="quick-reference-section">
-                        <h3>Quick Reference Lists</h3>
-                        <div class="quick-ref-grid">
-                            <div class="quick-ref-card safe">
-                                <h4>✅ Generally Safe in Pregnancy</h4>
-                                <div id="safePregDrugs"></div>
-                            </div>
-                            <div class="quick-ref-card safe">
-                                <h4>✅ Generally Safe in Breastfeeding</h4>
-                                <div id="safeBFDrugs"></div>
-                            </div>
-                            <div class="quick-ref-card danger">
-                                <h4>🚫 Absolute Contraindications</h4>
-                                <div id="absoluteContraDrugs"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="drug-categories-section">
-                        <h3>Drug Categories</h3>
-                        <div id="pregnancyDrugsList"></div>
-                    </div>
-
-                    <div class="clinical-pearls-section">
-                        <h3>💡 Clinical Pearls</h3>
-                        <div id="pregnancyClinicalPearls"></div>
-                    </div>
-
-                    <div class="resources-section">
-                        <h3>📚 Resources & Guidelines</h3>
-                        <div id="pregnancyResourcesList"></div>
-                    </div>
                 </div>
             </div>
 

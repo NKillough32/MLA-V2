@@ -330,8 +330,49 @@ export class DrugReferenceManager {
             drugCount: index.count 
         });
         
+        // Setup tab switching
+        this.setupTabs();
+        
         this.initialized = true;
         console.log('✅ DrugReferenceManager initialized with lazy loading');
+    }
+
+    /**
+     * Setup tab switching for drug panel
+     */
+    setupTabs() {
+        const tabButtons = document.querySelectorAll('.drug-tab-btn');
+        const tabContents = document.querySelectorAll('.drug-tab-content');
+        
+        if (tabButtons.length === 0) return;
+        
+        tabButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const tabName = btn.dataset.tab;
+                
+                // Remove active class from all buttons and contents
+                tabButtons.forEach(b => b.classList.remove('active'));
+                tabContents.forEach(c => c.classList.remove('active'));
+                
+                // Add active class to clicked button
+                btn.classList.add('active');
+                
+                // Show corresponding content
+                const targetContent = document.getElementById(`${tabName}-tab`) || 
+                                    document.getElementById(`${tabName}-database-tab`);
+                if (targetContent) {
+                    targetContent.classList.add('active');
+                }
+                
+                // Emit event for tab switch
+                this.eventBus.emit('drug-tab-switched', { tab: tabName });
+                
+                // Initialize pregnancy drugs manager when switching to that tab
+                if (tabName === 'pregnancy') {
+                    this.eventBus.emit('load-pregnancy-drugs');
+                }
+            });
+        });
     }
 
 
