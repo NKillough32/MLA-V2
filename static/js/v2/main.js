@@ -1390,6 +1390,13 @@ class MLAQuizApp {
         // Load initial category (alphabetical)
         this.showDrugCategory('alphabetical', container);
         
+        // Setup drug panel tabs (needs to be called after panel is loaded)
+        setTimeout(() => {
+            if (this.drugManager && this.drugManager.setupTabs) {
+                this.drugManager.setupTabs();
+            }
+        }, 100);
+        
         console.log('🏥 Drug reference content loaded with voice search');
     }
     
