@@ -415,6 +415,63 @@ export class DermatologyManager {
             return item.replace(/^\s*[•-]\s+/, '');
         };
 
+        // High-Yield Clinical Pearls Section at the top
+        if (condition.redFlags || condition.complications || condition.triggers || condition.management) {
+            html += `
+                <div class="derm-pearls-section">
+                    <h3 class="derm-pearls-title">💎 High-Yield Clinical Pearls</h3>
+                    
+                    ${condition.redFlags && condition.redFlags.length > 0 ? `
+                    <div class="derm-pearl-subsection">
+                        <h4 class="derm-pearl-subtitle">🚨 Red Flags - Don't Miss</h4>
+                        <ul class="derm-red-flag-list">
+                            ${condition.redFlags.map(item => `<li class="derm-red-flag-item">${item}</li>`).join('')}
+                        </ul>
+                    </div>
+                    ` : ''}
+
+                    ${condition.triggers && condition.triggers.length > 0 ? `
+                    <div class="derm-pearl-subsection">
+                        <h4 class="derm-pearl-subtitle">⚡ Key Triggers to Ask About</h4>
+                        <ul class="derm-trigger-list">
+                            ${condition.triggers.slice(0, 4).map(item => `<li>${formatListItem(item)}</li>`).join('')}
+                        </ul>
+                    </div>
+                    ` : ''}
+
+                    ${condition.diagnosis && condition.diagnosis.length > 0 ? `
+                    <div class="derm-pearl-subsection">
+                        <h4 class="derm-pearl-subtitle">📋 Quick Diagnostic Approach</h4>
+                        <div class="derm-diagnosis-box">
+                            ${condition.diagnosis.slice(0, 3).map(item => `<div>${formatListItem(item)}</div>`).join('')}
+                        </div>
+                    </div>
+                    ` : ''}
+
+                    ${condition.management && condition.management.length > 0 ? `
+                    <div class="derm-pearl-subsection">
+                        <h4 class="derm-pearl-subtitle">💊 First-Line Management</h4>
+                        <div class="derm-mgmt-quick">
+                            ${condition.management.slice(0, 4).map(item => {
+                                const clean = formatListItem(item).replace(/<strong>|<\/strong>/g, '');
+                                return `<div class="derm-mgmt-item">${clean}</div>`;
+                            }).join('')}
+                        </div>
+                    </div>
+                    ` : ''}
+
+                    ${condition.complications && condition.complications.length > 0 ? `
+                    <div class="derm-pearl-subsection">
+                        <h4 class="derm-pearl-subtitle">⚠️ Watch For Complications</h4>
+                        <ul class="derm-complication-list">
+                            ${condition.complications.slice(0, 4).map(item => `<li>${formatListItem(item)}</li>`).join('')}
+                        </ul>
+                    </div>
+                    ` : ''}
+                </div>
+            `;
+        }
+
         // Image gallery at the top
         if (condition.clinicalPresentation?.images && condition.clinicalPresentation.images.length > 0) {
             html += `

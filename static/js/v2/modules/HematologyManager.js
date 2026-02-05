@@ -343,6 +343,65 @@ export class HematologyManager {
             </div>
         `;
 
+        // High-Yield Clinical Pearls Section
+        if (condition.bloodFilm || condition.labs || condition.management || condition.complications) {
+            html += `
+                <div class="hem-pearls-section">
+                    <h3 class="hem-pearls-title">💎 High-Yield Clinical Pearls</h3>
+                    
+                    ${condition.bloodFilm && condition.bloodFilm.findings ? `
+                    <div class="hem-pearl-subsection">
+                        <h4 class="hem-pearl-subtitle">🔬 Key Blood Film Findings</h4>
+                        <ul class="hem-finding-list">
+                            ${condition.bloodFilm.findings.slice(0, 4).map(item => `<li class="hem-finding-item">${item}</li>`).join('')}
+                        </ul>
+                    </div>
+                    ` : ''}
+
+                    ${condition.labs ? `
+                    <div class="hem-pearl-subsection">
+                        <h4 class="hem-pearl-subtitle">📊 Critical Lab Values</h4>
+                        <div class="hem-lab-quick">
+                            ${Object.entries(condition.labs).slice(0, 4).map(([test, value]) => `
+                                <div class="hem-lab-card">
+                                    <div class="hem-lab-test">${test}</div>
+                                    <div class="hem-lab-value">${value}</div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                    ` : ''}
+
+                    ${condition.causes && Array.isArray(condition.causes) ? `
+                    <div class="hem-pearl-subsection">
+                        <h4 class="hem-pearl-subtitle">🎯 Must-Know Causes</h4>
+                        <ul class="hem-cause-list">
+                            ${condition.causes.slice(0, 4).map(item => `<li>${item}</li>`).join('')}
+                        </ul>
+                    </div>
+                    ` : ''}
+
+                    ${condition.management ? `
+                    <div class="hem-pearl-subsection">
+                        <h4 class="hem-pearl-subtitle">💊 Treatment Essentials</h4>
+                        <div class="hem-mgmt-quick">
+                            ${condition.management.slice(0, 3).map(item => `<div class="hem-mgmt-item">${item}</div>`).join('')}
+                        </div>
+                    </div>
+                    ` : ''}
+
+                    ${condition.complications ? `
+                    <div class="hem-pearl-subsection">
+                        <h4 class="hem-pearl-subtitle">⚠️ Watch For Complications</h4>
+                        <ul class="hem-complication-list">
+                            ${condition.complications.slice(0, 4).map(item => `<li>${item}</li>`).join('')}
+                        </ul>
+                    </div>
+                    ` : ''}
+                </div>
+            `;
+        }
+
         // Blood Film Section
         if (condition.bloodFilm) {
             // Collect all available images
