@@ -2164,11 +2164,17 @@ class MLAQuizApp {
             <!-- Additional Clinical Details from rawContent -->
             ${enhancedCondition?.rawContent ? `
             <div class="cc-section">
-                <h3 class="cc-section-title">📚 Additional Clinical Details</h3>
+                <h3 class="cc-section-title">📚 Detailed Clinical Reference</h3>
                 <div class="cc-subsection">
-                    <div class="cc-raw-content">
-                        ${this.markdownToHtml(enhancedCondition.rawContent)}
-                    </div>
+                    <details class="cc-raw-content-details">
+                        <summary class="cc-raw-content-summary">
+                            <span>📖 View complete clinical reference with guidelines & protocols</span>
+                            <span class="cc-toggle-icon">▼</span>
+                        </summary>
+                        <div class="cc-raw-content">
+                            ${this.markdownToHtml(enhancedCondition.rawContent)}
+                        </div>
+                    </details>
                 </div>
             </div>
             ` : ''}

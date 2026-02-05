@@ -655,41 +655,63 @@ class OphthalmologyManager {
         let visibleCount = 0;
         let totalCount = 0;
         
-        // Filter condition cards (from Condition Spotlights section)
-        const conditionCards = root.querySelectorAll('.ophthal-condition-card');
-        conditionCards.forEach(card => {
-            const text = card.textContent.toLowerCase();
-            const matches = !this.searchTerm || text.includes(this.searchTerm);
-            card.classList.toggle('hidden', !matches);
-            if (matches) visibleCount++;
-            totalCount++;
-        });
-        
-        // Filter list items in columnar sections
-        const allSections = root.querySelectorAll('.ophthal-card');
-        allSections.forEach(section => {
-            // Skip the image gallery section
-            if (section.querySelector('.ophthal-image-grid')) return;
+        if (!this.searchTerm) {
+            // No search term - show everything
+            root.querySelectorAll('.ophthal-condition-card.hidden').forEach(el => el.classList.remove('hidden'));
+            root.querySelectorAll('.ophthal-card.hidden').forEach(el => el.classList.remove('hidden'));
+            root.querySelectorAll('.ophthal-subsection li.hidden, .ophthal-columns li.hidden').forEach(el => el.classList.remove('hidden'));
             
-            let sectionHasMatch = false;
-            const listItems = section.querySelectorAll('.ophthal-subsection li, .ophthal-columns li');
+            // Count all items
+            totalCount = root.querySelectorAll('.ophthal-condition-card').length + 
+                        root.querySelectorAll('.ophthal-subsection li, .ophthal-columns li').length;
+            visibleCount = totalCount;
+        } else {
+            // Filter condition cards (from Condition Spotlights section)
+            const conditionCards = root.querySelectorAll('.ophthal-condition-card');
+            conditionCards.forEach(card => {
+                const text = card.textContent.toLowerCase();
+                const matches = text.includes(this.searchTerm);
+                card.classList.toggle('hidden', !matches);
+                if (matches) visibleCount++;
+                totalCount++;
+            });
             
-            if (listItems.length > 0) {
-                listItems.forEach(item => {
-                    const text = item.textContent.toLowerCase();
-                    const matches = !this.searchTerm || text.includes(this.searchTerm);
-                    item.classList.toggle('hidden', !matches);
-                    if (matches) {
-                        sectionHasMatch = true;
-                        visibleCount++;
-                    }
-                    totalCount++;
-                });
+            // Filter sections and their list items
+            const allSections = root.querySelectorAll('.ophthal-card');
+            allSections.forEach(section => {
+                // Skip the image gallery section
+                if (section.querySelector('.ophthal-image-grid')) {
+                    section.classList.remove('hidden');
+                    return;
+                }
                 
-                // Hide section if no items match
-                section.classList.toggle('hidden', !sectionHasMatch && this.searchTerm);
-            }
-        });
+                let sectionHasMatch = false;
+                const listItems = section.querySelectorAll('.ophthal-subsection li, .ophthal-columns li');
+                
+                if (listItems.length > 0) {
+                    // Section has list items - filter them
+                    listItems.forEach(item => {
+                        const text = item.textContent.toLowerCase();
+                        const matches = text.includes(this.searchTerm);
+                        item.classList.toggle('hidden', !matches);
+                        if (matches) {
+                            sectionHasMatch = true;
+                            visibleCount++;
+                        }
+                        totalCount++;
+                    });
+                    
+                    // Hide section if no items match
+                    section.classList.toggle('hidden', !sectionHasMatch);
+                } else {
+                    // Section has no list items (might be a different type of content)
+                    // Check if section text matches
+                    const text = section.textContent.toLowerCase();
+                    const matches = text.includes(this.searchTerm);
+                    section.classList.toggle('hidden', !matches);
+                }
+            });
+        }
         
         // Update stats
         const statsEl = root.querySelector('.ophthal-search-stats');
