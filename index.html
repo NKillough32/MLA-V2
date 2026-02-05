@@ -12018,6 +12018,140 @@
                 transform: translateX(-2px);
             }
 
+            /* Clinical Pearls Section Styles */
+            .cc-pearls-section {
+                background: linear-gradient(135deg, rgba(251, 191, 36, 0.05) 0%, rgba(245, 158, 11, 0.05) 100%);
+                border: 2px solid rgba(251, 191, 36, 0.3);
+                border-radius: 16px;
+                padding: 20px;
+            }
+
+            .cc-pearl-list {
+                list-style: none;
+                padding-left: 0;
+            }
+
+            .cc-pearl-item {
+                padding: 12px 16px;
+                margin-bottom: 10px;
+                background: rgba(251, 191, 36, 0.08);
+                border-left: 4px solid #f59e0b;
+                border-radius: 8px;
+                font-weight: 500;
+                transition: all 0.2s ease;
+            }
+
+            .cc-pearl-item:hover {
+                background: rgba(251, 191, 36, 0.12);
+                transform: translateX(4px);
+            }
+
+            .cc-red-flag-highlight {
+                list-style: none;
+                padding-left: 0;
+            }
+
+            .cc-red-flag-item {
+                padding: 12px 16px;
+                margin-bottom: 10px;
+                background: rgba(239, 68, 68, 0.08);
+                border-left: 4px solid #dc2626;
+                border-radius: 8px;
+                font-weight: 600;
+                color: #dc2626;
+                transition: all 0.2s ease;
+            }
+
+            .cc-red-flag-item:hover {
+                background: rgba(239, 68, 68, 0.12);
+                transform: translateX(4px);
+            }
+
+            .cc-pearl-box {
+                padding: 14px 16px;
+                background: rgba(99, 102, 241, 0.08);
+                border: 1px solid rgba(99, 102, 241, 0.2);
+                border-radius: 8px;
+                font-size: 13px;
+                line-height: 1.7;
+            }
+
+            .cc-safety-box {
+                padding: 14px 16px;
+                background: rgba(34, 197, 94, 0.08);
+                border-left: 4px solid #22c55e;
+                border-radius: 8px;
+                font-size: 13px;
+                line-height: 1.7;
+                font-weight: 500;
+            }
+
+            .cc-escalation-box {
+                padding: 14px 16px;
+                background: rgba(239, 68, 68, 0.08);
+                border-left: 4px solid #ef4444;
+                border-radius: 8px;
+                font-size: 13px;
+                line-height: 1.7;
+                font-weight: 500;
+            }
+
+            .cc-drug-quick-ref {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+                gap: 12px;
+            }
+
+            .cc-drug-card {
+                padding: 12px 16px;
+                background: var(--v2-bg-card);
+                border: 2px solid var(--v2-border);
+                border-radius: 10px;
+                transition: all 0.2s ease;
+            }
+
+            .cc-drug-card:hover {
+                border-color: var(--v2-primary);
+                box-shadow: 0 4px 12px rgba(99, 102, 241, 0.15);
+                transform: translateY(-2px);
+            }
+
+            .cc-drug-name {
+                font-weight: 700;
+                font-size: 14px;
+                color: var(--v2-primary);
+                margin-bottom: 8px;
+            }
+
+            .cc-drug-detail {
+                font-size: 12px;
+                line-height: 1.6;
+                color: var(--v2-text-secondary);
+                margin-top: 6px;
+            }
+
+            .cc-drug-detail strong {
+                color: var(--v2-text-primary);
+                font-weight: 600;
+            }
+
+            .cc-differential-quick {
+                list-style: none;
+                padding-left: 0;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 8px;
+            }
+
+            .cc-differential-quick li {
+                padding: 8px 12px;
+                background: rgba(239, 68, 68, 0.05);
+                border-left: 3px solid #f87171;
+                border-radius: 6px;
+                font-size: 13px;
+                font-weight: 500;
+            }
+
             /* Responsive */
             @media (max-width: 768px) {
                 .cc-conditions-grid {

@@ -2113,40 +2113,91 @@ class MLAQuizApp {
             </div>
             ` : ''}
 
-            ${condition.clinicalPearls && condition.clinicalPearls.length > 0 ? `
-            <div class="cc-section">
-                <h3 class="cc-section-title">💎 Clinical Pearls</h3>
-                <ul class="cc-list cc-pearl-list">
-                    ${condition.clinicalPearls.map(item => `<li>${item}</li>`).join('')}
-                </ul>
-            </div>
-            ` : ''}
-
-            <!-- Foundation Doctor Role -->
-            ${condition.foundationRole || condition.escalation || condition.safetyConsiderations ? `
-            <div class="cc-section">
-                <h3 class="cc-section-title">👨‍⚕️ Foundation Doctor Role</h3>
+            <!-- High-Yield Clinical Pearls & Key Points -->
+            ${(condition.clinicalPearls && condition.clinicalPearls.length > 0) || 
+              (condition.recognition?.redFlags && condition.recognition.redFlags.length > 0) ||
+              (condition.safetyConsiderations) ||
+              (condition.diagnosis?.criteria) ? `
+            <div class="cc-section cc-pearls-section">
+                <h3 class="cc-section-title">💎 High-Yield Clinical Pearls</h3>
                 
-                ${condition.foundationRole ? `
+                ${condition.clinicalPearls && condition.clinicalPearls.length > 0 ? `
                 <div class="cc-subsection">
-                    <h4 class="cc-subsection-title">Responsibilities & Limitations</h4>
-                    <p style="padding: 12px 16px; background: var(--v2-bg-card); border-radius: 8px; line-height: 1.8;">${condition.foundationRole}</p>
+                    <h4 class="cc-subsection-title">🎯 Key Takeaways</h4>
+                    <ul class="cc-list cc-pearl-list">
+                        ${condition.clinicalPearls.map(item => `<li class="cc-pearl-item">💡 ${item}</li>`).join('')}
+                    </ul>
                 </div>
                 ` : ''}
 
-                ${condition.escalation ? `
+                ${condition.recognition?.redFlags && condition.recognition.redFlags.length > 0 ? `
                 <div class="cc-subsection">
-                    <h4 class="cc-subsection-title">⚠️ When to Escalate</h4>
-                    <p style="padding: 12px 16px; background: rgba(239, 68, 68, 0.1); border-left: 4px solid #ef4444; border-radius: 8px; line-height: 1.8;">${condition.escalation}</p>
+                    <h4 class="cc-subsection-title">🚨 Red Flags - Don't Miss</h4>
+                    <ul class="cc-list cc-red-flag-highlight">
+                        ${condition.recognition.redFlags.map(item => `<li class="cc-red-flag-item">⚠️ ${item}</li>`).join('')}
+                    </ul>
+                </div>
+                ` : ''}
+
+                ${condition.diagnosis?.criteria ? `
+                <div class="cc-subsection">
+                    <h4 class="cc-subsection-title">📋 Quick Diagnostic Criteria</h4>
+                    <div class="cc-pearl-box">${condition.diagnosis.criteria}</div>
+                </div>
+                ` : ''}
+
+                ${((condition.drugs && condition.drugs.length > 0) || (condition.management?.drugs && condition.management.drugs.length > 0)) ? `
+                <div class="cc-subsection">
+                    <h4 class="cc-subsection-title">💊 Key Medications at a Glance</h4>
+                    <div class="cc-drug-quick-ref">
+                        ${(condition.drugs || condition.management?.drugs || []).slice(0, 3).map(drug => `
+                            <div class="cc-drug-card">
+                                <div class="cc-drug-name">${drug.name}</div>
+                                ${drug.dosing ? `<div class="cc-drug-detail"><strong>Dose:</strong> ${drug.dosing}</div>` : ''}
+                                ${drug.notes ? `<div class="cc-drug-detail"><strong>💡</strong> ${drug.notes}</div>` : ''}
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+                ` : ''}
+
+                ${condition.diagnosis?.differential && condition.diagnosis.differential.length > 0 ? `
+                <div class="cc-subsection">
+                    <h4 class="cc-subsection-title">🔍 Must-Exclude Differentials</h4>
+                    <ul class="cc-list cc-differential-quick">
+                        ${condition.diagnosis.differential.slice(0, 4).map(diff => {
+                            const shortDiff = diff.split(':')[0];
+                            return `<li>❌ ${shortDiff}</li>`;
+                        }).join('')}
+                    </ul>
                 </div>
                 ` : ''}
 
                 ${condition.safetyConsiderations ? `
                 <div class="cc-subsection">
-                    <h4 class="cc-subsection-title">🛡️ Key Safety Considerations</h4>
-                    <p style="padding: 12px 16px; background: rgba(34, 197, 94, 0.1); border-left: 4px solid #22c55e; border-radius: 8px; line-height: 1.8;">${condition.safetyConsiderations}</p>
+                    <h4 class="cc-subsection-title">🛡️ Safety First</h4>
+                    <div class="cc-safety-box">${condition.safetyConsiderations}</div>
                 </div>
                 ` : ''}
+
+                ${condition.escalation ? `
+                <div class="cc-subsection">
+                    <h4 class="cc-subsection-title">📞 When to Escalate</h4>
+                    <div class="cc-escalation-box">${condition.escalation}</div>
+                </div>
+                ` : ''}
+            </div>
+            ` : ''}
+
+            <!-- Foundation Doctor Role -->
+            ${condition.foundationRole && !condition.safetyConsiderations && !condition.escalation ? `
+            <div class="cc-section">
+                <h3 class="cc-section-title">👨‍⚕️ Foundation Doctor Role</h3>
+                
+                <div class="cc-subsection">
+                    <h4 class="cc-subsection-title">Responsibilities & Limitations</h4>
+                    <p style="padding: 12px 16px; background: var(--v2-bg-card); border-radius: 8px; line-height: 1.8;">${condition.foundationRole}</p>
+                </div>
             </div>
             ` : ''}
             
