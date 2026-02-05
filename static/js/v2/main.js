@@ -21,6 +21,7 @@ import { OfflineManager } from './modules/OfflineManager.js';
 
 // Reference Modules (require external database files)
 import { DrugReferenceManager } from './modules/DrugReferenceManager.js';
+import { PregnancyDrugsManager } from './modules/PregnancyDrugsManager.js';
 import { LabValuesManager } from './modules/LabValuesManager.js';
 import { GuidelinesManager } from './modules/GuidelinesManager.js';
 import { proceduresManager } from './modules/ProceduresManager.js';
@@ -54,6 +55,7 @@ class MLAQuizApp {
     constructor() {
         this.initialized = false;
         this.drugManager = new DrugReferenceManager();
+        this.pregnancyDrugsManager = new PregnancyDrugsManager();
         this.labManager = new LabValuesManager();
         this.guidelinesManager = new GuidelinesManager();
         this.anatomyManager = anatomyManager;
@@ -137,6 +139,7 @@ class MLAQuizApp {
         const calculatorInitialization = calculatorManager.initialize();
         const referenceInitializers = [
             this.drugManager.initialize(),
+            this.pregnancyDrugsManager.initialize(),
             this.labManager.initialize(),
             this.guidelinesManager.initialize(),
             this.proceduresManager.initialize(),
@@ -855,6 +858,7 @@ class MLAQuizApp {
             app: this,
             managers: {
                 drugManager: this.drugManager,
+                pregnancyDrugsManager: this.pregnancyDrugsManager,
                 labManager: this.labManager,
                 guidelinesManager: this.guidelinesManager,
                 proceduresManager: this.proceduresManager,
@@ -1080,6 +1084,7 @@ class MLAQuizApp {
         // Map navigation data-tool values to actual panel IDs
         const panelIdMap = {
             'drug-reference': 'drug-panel',
+            'pregnancy-drugs': 'pregnancy-drugs-panel',
             'core-conditions': 'core-conditions-panel',
             'calculators': 'calculator-panel',
             'calculator-detail': 'calculator-detail',
@@ -1127,6 +1132,9 @@ class MLAQuizApp {
         switch(toolType) {
             case 'drug-reference':
                 this.loadDrugReferenceContent(panel);
+                break;
+            case 'pregnancy-drugs':
+                this.loadPregnancyDrugsContent(panel);
                 break;
             case 'core-conditions':
                 this.loadCoreConditionsContent(panel);
@@ -1635,6 +1643,23 @@ class MLAQuizApp {
     
     speakDrugName(drugName) {
         this.drugManager.speakDrugName(drugName);
+    }
+
+    /**
+     * Load pregnancy & breastfeeding drugs content  
+     */
+    loadPregnancyDrugsContent(panel) {
+        if (!panel) {
+            console.error('loadPregnancyDrugsContent: panel is null');
+            return;
+        }
+        // The PregnancyDrugsManager handles all rendering when initialized
+        // Content is already set up in the HTML, just ensure it's rendered
+        if (this.pregnancyDrugsManager && this.pregnancyDrugsManager.initialized) {
+            console.debug('✅ Pregnancy drugs panel already initialized');
+        } else {
+            console.debug('📊 Initializing pregnancy drugs content...');
+        }
     }
 
     /**

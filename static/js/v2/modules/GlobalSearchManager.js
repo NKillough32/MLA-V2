@@ -231,6 +231,7 @@ export class GlobalSearchManager {
         const operations = [
             this.buildCoreConditionResults(query),
             this.buildDrugResults(query),
+            this.buildPregnancyDrugResults(query),
             this.buildPdfResults(query),
             this.buildGuidelineResults(query),
             this.buildDifferentialResults(query),
@@ -574,6 +575,26 @@ export class GlobalSearchManager {
                 action: { type: 'drug', key: drug.key }
             })
         });
+    }
+
+    async buildPregnancyDrugResults(query) {
+        const manager = this.managers.pregnancyDrugsManager;
+        if (!manager?.search) return null;
+        const results = manager.search(query);
+        if (!results || !results.length) return null;
+        
+        return {
+            id: 'pregnancy-drugs',
+            label: 'Pregnancy & Breastfeeding Safety',
+            icon: '🤰',
+            total: results.length,
+            matches: results.slice(0, this.options.limits.drugs || 4).map(result => ({
+                title: result.title,
+                subtitle: result.subtitle,
+                meta: result.content.substring(0, 100),
+                action: { type: 'pregnancy-drug', data: result.data }
+            }))
+        };
     }
 
     async buildCalculatorResults(query) {
@@ -1407,6 +1428,13 @@ export class GlobalSearchManager {
         switch (action.type) {
             case 'drug':
                 navigate('drug-reference', () => this.app?.showDrugDetail?.(action.key));
+                break;
+            case 'pregnancy-drug':
+                navigate('pregnancy-drugs', () => {
+                    if (this.managers.pregnancyDrugsManager && action.data) {
+                        this.managers.pregnancyDrugsManager.showDrugDetail(action.data.drug);
+                    }
+                });
                 break;
             case 'lab-panel':
                 navigate('lab-values', () => this.app?.showLabPanel?.(action.key));
