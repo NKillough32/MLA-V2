@@ -696,7 +696,7 @@ export class GlobalSearchManager {
                 (column.items || []).forEach(item => {
                     if (item.toLowerCase().includes(term)) {
                         // Extract the first part before any parenthetical or dash as the title
-                        const titleMatch = item.match(/^([^(—\-]+)/);
+                        const titleMatch = item.match(/^([^(:—-]+)/);
                         const title = titleMatch ? titleMatch[1].trim() : item;
                         matches.push({
                             title: title,

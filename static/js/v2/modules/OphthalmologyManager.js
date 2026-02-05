@@ -652,24 +652,52 @@ class OphthalmologyManager {
     filterConditions(searchTerm) {
         this.searchTerm = searchTerm.toLowerCase().trim();
         const root = this.container || document;
-        const conditionCards = root.querySelectorAll('.ophthal-condition-card');
         let visibleCount = 0;
+        let totalCount = 0;
         
+        // Filter condition cards (from Condition Spotlights section)
+        const conditionCards = root.querySelectorAll('.ophthal-condition-card');
         conditionCards.forEach(card => {
             const text = card.textContent.toLowerCase();
             const matches = !this.searchTerm || text.includes(this.searchTerm);
             card.classList.toggle('hidden', !matches);
             if (matches) visibleCount++;
+            totalCount++;
+        });
+        
+        // Filter list items in columnar sections
+        const allSections = root.querySelectorAll('.ophthal-card');
+        allSections.forEach(section => {
+            // Skip the image gallery section
+            if (section.querySelector('.ophthal-image-grid')) return;
+            
+            let sectionHasMatch = false;
+            const listItems = section.querySelectorAll('.ophthal-subsection li, .ophthal-columns li');
+            
+            if (listItems.length > 0) {
+                listItems.forEach(item => {
+                    const text = item.textContent.toLowerCase();
+                    const matches = !this.searchTerm || text.includes(this.searchTerm);
+                    item.classList.toggle('hidden', !matches);
+                    if (matches) {
+                        sectionHasMatch = true;
+                        visibleCount++;
+                    }
+                    totalCount++;
+                });
+                
+                // Hide section if no items match
+                section.classList.toggle('hidden', !sectionHasMatch && this.searchTerm);
+            }
         });
         
         // Update stats
         const statsEl = root.querySelector('.ophthal-search-stats');
         if (statsEl) {
-            const total = conditionCards.length;
             if (this.searchTerm) {
-                statsEl.textContent = `Showing ${visibleCount} of ${total} conditions`;
+                statsEl.textContent = `Showing ${visibleCount} of ${totalCount} items`;
             } else {
-                statsEl.textContent = `${total} conditions available`;
+                statsEl.textContent = `${totalCount} items available`;
             }
         }
     }
