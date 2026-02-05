@@ -1767,11 +1767,74 @@ class MLAQuizApp {
     }
 
     /**
+     * Convert basic markdown to HTML for display
+     */
+    markdownToHtml(markdown) {
+        if (!markdown) return '';
+        
+        let html = markdown
+            // Headers (process from most specific to least)
+            .replace(/^#### (.*$)/gim, '<h4>$1</h4>')
+            .replace(/^### (.*$)/gim, '<h3>$1</h3>')
+            .replace(/^## (.*$)/gim, '<h2>$1</h2>')
+            // Bold
+            .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+            // Lists - preserve them for later wrapping
+            .replace(/^\- (.*$)/gim, '<li>$1</li>')
+            .replace(/^\* (.*$)/gim, '<li>$1</li>');
+        
+        // Split into lines to handle list grouping
+        const lines = html.split('\n');
+        const processed = [];
+        let inList = false;
+        
+        for (let i = 0; i < lines.length; i++) {
+            const line = lines[i].trim();
+            
+            if (line.startsWith('<li>')) {
+                if (!inList) {
+                    processed.push('<ul>');
+                    inList = true;
+                }
+                processed.push(line);
+            } else {
+                if (inList) {
+                    processed.push('</ul>');
+                    inList = false;
+                }
+                if (line) {
+                    processed.push(line);
+                }
+            }
+        }
+        
+        if (inList) {
+            processed.push('</ul>');
+        }
+        
+        html = processed.join('\n');
+        
+        // Handle paragraphs - lines that aren't headers, lists, or other block elements
+        html = html.replace(/^(?!<[hul]|<\/[ul])(.*?)$/gim, (match) => {
+            const trimmed = match.trim();
+            if (trimmed && !trimmed.startsWith('<')) {
+                return '<p>' + trimmed + '</p>';
+            }
+            return match;
+        });
+        
+        return html;
+    }
+
+    /**
      * Show detailed condition view
      */
     async showConditionDetail(conditionId, listView, detailView) {
         const condition = await this.coreConditionsManager.viewCondition(conditionId);
         if (!condition) return;
+
+        // Get the raw enhanced condition data to access rawContent
+        const enhancedCondition = await this.coreConditionsManager.getEnhancedCondition(condition.name);
 
         // Hide list, show detail
         listView.style.display = 'none';
@@ -2094,6 +2157,18 @@ class MLAQuizApp {
                     <ul class="cc-list">
                         ${condition.relatedConditions.map(rc => `<li><a href="#" class="cc-related-link" data-id="${rc.id}">${rc.name}</a>${rc.note ? ` — ${rc.note}` : ''}</li>`).join('')}
                     </ul>
+                </div>
+            </div>
+            ` : ''}
+
+            <!-- Additional Clinical Details from rawContent -->
+            ${enhancedCondition?.rawContent ? `
+            <div class="cc-section">
+                <h3 class="cc-section-title">📚 Additional Clinical Details</h3>
+                <div class="cc-subsection">
+                    <div class="cc-raw-content">
+                        ${this.markdownToHtml(enhancedCondition.rawContent)}
+                    </div>
                 </div>
             </div>
             ` : ''}
