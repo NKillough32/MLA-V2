@@ -29,7 +29,7 @@ export class PregnancyDrugsManager {
             console.log('🤰 Initializing PregnancyDrugsManager...');
 
             // Load favorites
-            this.loadFavorites();
+            await this.loadFavorites();
 
             // Setup UI
             this.setupUI();
@@ -403,14 +403,14 @@ export class PregnancyDrugsManager {
         container.innerHTML = html;
     }
 
-    toggleFavorite(drugName) {
+    async toggleFavorite(drugName) {
         if (this.favorites.has(drugName)) {
             this.favorites.delete(drugName);
         } else {
             this.favorites.add(drugName);
         }
         
-        this.saveFavorites();
+        await this.saveFavorites();
         this.renderDrugs();
         
         analytics.track('pregnancy_drug_favorite_toggled', { 
@@ -419,15 +419,23 @@ export class PregnancyDrugsManager {
         });
     }
 
-    loadFavorites() {
-        const saved = this.storage.get('pregnancy_drugs_favorites');
-        if (saved) {
-            this.favorites = new Set(saved);
+    async loadFavorites() {
+        try {
+            const favorites = await this.storage.getItem('pregnancy_drugs_favorites');
+            if (favorites) {
+                this.favorites = new Set(JSON.parse(favorites));
+            }
+        } catch (error) {
+            console.error('Failed to load favorites:', error);
         }
     }
 
-    saveFavorites() {
-        this.storage.set('pregnancy_drugs_favorites', Array.from(this.favorites));
+    async saveFavorites() {
+        try {
+            await this.storage.setItem('pregnancy_drugs_favorites', JSON.stringify(Array.from(this.favorites)));
+        } catch (error) {
+            console.error('Failed to save favorites:', error);
+        }
     }
 
     showDrugInfo(drugName) {
