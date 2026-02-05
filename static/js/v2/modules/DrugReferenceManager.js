@@ -341,21 +341,34 @@ export class DrugReferenceManager {
      * Setup tab switching for drug panel
      */
     setupTabs() {
+        console.log('🔧 Setting up drug panel tabs...');
         const tabButtons = document.querySelectorAll('.drug-tab-btn');
         const tabContents = document.querySelectorAll('.drug-tab-content');
         
-        if (tabButtons.length === 0) return;
+        console.log('🔧 Found tab buttons:', tabButtons.length, 'tab contents:', tabContents.length);
         
-        tabButtons.forEach(btn => {
-            btn.addEventListener('click', () => {
-                const tabName = btn.dataset.tab;
+        if (tabButtons.length === 0) {
+            console.warn('⚠️ No tab buttons found');
+            return;
+        }
+        
+        tabButtons.forEach((btn, index) => {
+            console.log(`🔧 Setting up button ${index}:`, btn.dataset.tab);
+            
+            // Remove any existing listeners by cloning the button
+            const newBtn = btn.cloneNode(true);
+            btn.parentNode.replaceChild(newBtn, btn);
+            
+            newBtn.addEventListener('click', (e) => {
+                console.log('🔘 Tab button clicked:', newBtn.dataset.tab);
+                const tabName = newBtn.dataset.tab;
                 
                 // Remove active class from all buttons and contents
-                tabButtons.forEach(b => b.classList.remove('active'));
-                tabContents.forEach(c => c.classList.remove('active'));
+                document.querySelectorAll('.drug-tab-btn').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.drug-tab-content').forEach(c => c.classList.remove('active'));
                 
                 // Add active class to clicked button
-                btn.classList.add('active');
+                newBtn.classList.add('active');
                 
                 // Show corresponding content - handle specific IDs
                 let targetContent;
@@ -367,8 +380,13 @@ export class DrugReferenceManager {
                     targetContent = document.getElementById(`${tabName}-tab`);
                 }
                 
+                console.log('🔘 Target content element:', targetContent);
+                
                 if (targetContent) {
                     targetContent.classList.add('active');
+                    console.log('✅ Tab switched to:', tabName);
+                } else {
+                    console.error('❌ Target content not found for tab:', tabName);
                 }
                 
                 // Emit event for tab switch
@@ -376,10 +394,13 @@ export class DrugReferenceManager {
                 
                 // Initialize pregnancy drugs manager when switching to that tab
                 if (tabName === 'pregnancy') {
+                    console.log('🤰 Emitting load-pregnancy-drugs event');
                     this.eventBus.emit('load-pregnancy-drugs');
                 }
             });
         });
+        
+        console.log('✅ Drug panel tabs setup complete');
     }
 
 
