@@ -6,7 +6,7 @@
 import { eventBus } from './EventBus.js';
 import { storage } from './StorageManager.js';
 import { analytics } from './AnalyticsManager.js';
-import pregnancyBreastfeedingData from '../../drugs/pregnancy_breastfeeding_guide.js';
+import { pregnancyBreastfeedingData } from '../../data/pregnancyBreastfeedingData.js';
 
 export class PregnancyDrugsManager {
     constructor() {
