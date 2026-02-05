@@ -12084,56 +12084,55 @@
             /* Drug Panel Tabs */
             .drug-panel-tabs {
                 display: flex;
-                gap: 8px;
-                margin-bottom: 24px;
-                padding-bottom: 16px;
-                border-bottom: 2px solid var(--v2-border);
+                gap: 12px;
+                margin-bottom: 0;
+                padding: 8px;
+                background: var(--v2-bg-secondary);
+                border-radius: 14px;
+                border: 1px solid var(--v2-border);
                 position: relative;
                 z-index: 100;
-                background: var(--v2-bg-primary);
             }
 
             .drug-tab-btn {
                 flex: 1;
-                padding: 14px 24px;
-                background: var(--v2-bg-secondary);
-                border: 2px solid var(--v2-border);
-                border-radius: 12px;
+                padding: 16px 28px;
+                background: transparent;
+                border: none;
+                border-radius: 10px;
                 color: var(--v2-text-secondary);
                 font-size: 15px;
-                font-weight: 600;
+                font-weight: 700;
                 cursor: pointer !important;
-                transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+                transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
                 pointer-events: auto !important;
                 position: relative;
                 z-index: 101;
                 user-select: none;
                 -webkit-tap-highlight-color: transparent;
+                text-shadow: none;
             }
 
             .drug-tab-btn:hover {
-                background: var(--v2-bg-card);
-                border-color: rgba(139, 92, 246, 0.5);
-                transform: translateY(-2px);
-                box-shadow: 0 4px 12px rgba(139, 92, 246, 0.15);
+                background: rgba(139, 92, 246, 0.08);
+                color: var(--v2-text-primary);
             }
 
             .drug-tab-btn:active {
-                transform: translateY(0);
-                box-shadow: 0 2px 6px rgba(139, 92, 246, 0.1);
+                transform: scale(0.98);
             }
 
             .drug-tab-btn.active {
-                background: linear-gradient(135deg, #8b5cf6, #6366f1);
-                border-color: #8b5cf6;
+                background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 50%, #6366f1 100%);
                 color: white;
-                box-shadow: 0 4px 16px rgba(139, 92, 246, 0.3);
+                box-shadow: 0 4px 20px rgba(139, 92, 246, 0.4), inset 0 1px 0 rgba(255,255,255,0.2);
+                text-shadow: 0 1px 2px rgba(0,0,0,0.2);
             }
 
             .drug-tab-btn.active:hover {
-                background: linear-gradient(135deg, #7c3aed, #5b21b6);
-                transform: translateY(-2px);
-                box-shadow: 0 6px 20px rgba(139, 92, 246, 0.4);
+                background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 50%, #5b21b6 100%);
+                box-shadow: 0 6px 24px rgba(139, 92, 246, 0.5), inset 0 1px 0 rgba(255,255,255,0.2);
+                transform: translateY(-1px);
             }
 
             .drug-tab-content {
@@ -12149,12 +12148,12 @@
             }
 
             #drug-database-tab {
-                padding: 0 !important; /* Drug reference has its own padding */
+                padding: 20px 0 0 0 !important;
                 position: relative;
             }
 
             #pregnancy-tab {
-                padding: 20px 0 0 0;
+                padding: 24px 0 0 0;
             }
 
             @keyframes fadeIn {
@@ -12171,29 +12170,39 @@
             /* Pregnancy & Breastfeeding Drug Safety Styles */
             .pregnancy-drugs-header {
                 text-align: center;
-                margin-bottom: 32px;
-                padding: 24px;
-                background: linear-gradient(135deg, rgba(139, 92, 246, 0.08), rgba(99, 102, 241, 0.08));
-                border-radius: 16px;
-                border: 2px solid rgba(139, 92, 246, 0.15);
+                margin-bottom: 28px;
+                padding: 28px 24px;
+                background: linear-gradient(135deg, rgba(139, 92, 246, 0.12) 0%, rgba(99, 102, 241, 0.08) 100%);
+                border-radius: 20px;
+                border: 1px solid rgba(139, 92, 246, 0.2);
+                position: relative;
+                overflow: hidden;
+            }
+
+            .pregnancy-drugs-header::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 4px;
+                background: linear-gradient(90deg, #8b5cf6, #6366f1, #8b5cf6);
             }
 
             .pregnancy-drugs-header h2 {
-                margin: 0 0 12px 0;
-                font-size: 26px;
-                font-weight: 700;
+                margin: 0 0 10px 0;
+                font-size: 24px;
+                font-weight: 800;
                 color: var(--v2-text-primary);
-                background: linear-gradient(135deg, #8b5cf6, #6366f1);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                background-clip: text;
+                letter-spacing: -0.5px;
             }
 
             .pregnancy-drugs-header .subtitle {
                 margin: 0;
                 color: var(--v2-text-secondary);
-                font-size: 15px;
+                font-size: 14px;
                 font-weight: 500;
+                opacity: 0.85;
             }
 
             .pregnancy-drugs-controls {
@@ -12227,48 +12236,52 @@
                 display: flex;
                 gap: 10px;
                 flex-wrap: wrap;
-                justify-content: flex-start;
-                padding: 16px;
-                background: var(--v2-bg-secondary);
-                border-radius: 12px;
-                border: 1px solid var(--v2-border);
+                justify-content: center;
+                padding: 0;
+                background: transparent;
+                border-radius: 0;
+                border: none;
             }
 
             .pregnancy-category-btn {
-                padding: 10px 18px;
-                border: 2px solid rgba(139, 92, 246, 0.2);
+                padding: 12px 20px;
+                border: 2px solid transparent;
                 background: var(--v2-bg-secondary);
                 color: var(--v2-text-primary);
-                border-radius: 24px;
+                border-radius: 50px;
                 cursor: pointer !important;
-                font-size: 14px;
-                font-weight: 600;
+                font-size: 13px;
+                font-weight: 700;
                 transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
                 user-select: none;
                 -webkit-tap-highlight-color: transparent;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+                white-space: nowrap;
             }
 
             .pregnancy-category-btn:hover {
-                background: rgba(139, 92, 246, 0.15);
-                border-color: rgba(139, 92, 246, 0.5);
-                transform: translateY(-1px);
-                box-shadow: 0 2px 8px rgba(139, 92, 246, 0.15);
+                background: var(--v2-bg-card);
+                border-color: rgba(139, 92, 246, 0.3);
+                transform: translateY(-2px);
+                box-shadow: 0 4px 16px rgba(139, 92, 246, 0.15);
             }
 
             .pregnancy-category-btn:active {
-                transform: translateY(0);
+                transform: translateY(0) scale(0.98);
             }
 
             .pregnancy-category-btn.active {
-                background: linear-gradient(135deg, #8b5cf6, #6366f1);
+                background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 50%, #6366f1 100%);
                 color: white;
-                border-color: #8b5cf6;
-                box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+                border-color: transparent;
+                box-shadow: 0 4px 16px rgba(139, 92, 246, 0.4), inset 0 1px 0 rgba(255,255,255,0.2);
+                text-shadow: 0 1px 2px rgba(0,0,0,0.15);
             }
 
             .pregnancy-category-btn.active:hover {
-                background: linear-gradient(135deg, #7c3aed, #5b21b6);
-                box-shadow: 0 6px 16px rgba(139, 92, 246, 0.4);
+                background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 50%, #5b21b6 100%);
+                box-shadow: 0 6px 20px rgba(139, 92, 246, 0.5);
+                transform: translateY(-2px);
             }
 
             .pregnancy-drugs-content {
@@ -12279,182 +12292,222 @@
             .drug-categories-section,
             .clinical-pearls-section,
             .resources-section {
-                margin-bottom: 40px;
-                padding: 24px;
-                background: var(--v2-bg-secondary);
-                border-radius: 16px;
-                border: 1px solid var(--v2-border);
+                margin-bottom: 28px;
+                padding: 0;
+                background: transparent;
+                border-radius: 0;
+                border: none;
             }
 
             .quick-reference-section h3,
             .drug-categories-section h3,
             .clinical-pearls-section h3,
             .resources-section h3 {
-                font-size: 20px;
-                font-weight: 700;
+                font-size: 18px;
+                font-weight: 800;
                 margin: 0 0 20px 0;
                 color: var(--v2-text-primary);
-                padding: 14px 18px;
-                background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(99, 102, 241, 0.1));
-                border-radius: 10px;
+                padding: 16px 20px;
+                background: linear-gradient(135deg, var(--v2-bg-secondary) 0%, var(--v2-bg-card) 100%);
+                border-radius: 14px;
+                border: 1px solid var(--v2-border);
                 border-left: 4px solid #8b5cf6;
                 display: flex;
                 align-items: center;
-                gap: 8px;
+                gap: 10px;
+                letter-spacing: -0.3px;
             }
 
             .quick-ref-grid {
                 display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-                gap: 20px;
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 16px;
             }
 
             .quick-ref-card {
-                background: var(--v2-bg-primary);
-                border-radius: 14px;
-                padding: 22px;
-                border: 2px solid var(--v2-border);
-                transition: all 0.2s ease;
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+                background: var(--v2-bg-secondary);
+                border-radius: 16px;
+                padding: 20px;
+                border: 1px solid var(--v2-border);
+                transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
             }
 
             .quick-ref-card:hover {
-                transform: translateY(-2px);
-                box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+                transform: translateY(-3px);
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
             }
 
             .quick-ref-card.safe {
-                border-color: rgba(34, 197, 94, 0.3);
-                background: linear-gradient(135deg, rgba(34, 197, 94, 0.05), rgba(22, 163, 74, 0.05));
+                border-left: 4px solid #22c55e;
+                background: linear-gradient(135deg, rgba(34, 197, 94, 0.06) 0%, var(--v2-bg-secondary) 100%);
+            }
+
+            .quick-ref-card.safe:hover {
+                border-color: #22c55e;
+                box-shadow: 0 8px 24px rgba(34, 197, 94, 0.15);
             }
 
             .quick-ref-card.danger {
-                border-color: rgba(239, 68, 68, 0.3);
-                background: linear-gradient(135deg, rgba(239, 68, 68, 0.05), rgba(220, 38, 38, 0.05));
+                border-left: 4px solid #ef4444;
+                background: linear-gradient(135deg, rgba(239, 68, 68, 0.06) 0%, var(--v2-bg-secondary) 100%);
+            }
+
+            .quick-ref-card.danger:hover {
+                border-color: #ef4444;
+                box-shadow: 0 8px 24px rgba(239, 68, 68, 0.15);
             }
 
             .quick-ref-card h4 {
                 margin-top: 0;
-                margin-bottom: 14px;
-                font-size: 16px;
+                margin-bottom: 16px;
+                font-size: 15px;
                 font-weight: 700;
+                color: var(--v2-text-primary);
+                display: flex;
+                align-items: center;
+                gap: 8px;
             }
 
             .quick-ref-list {
                 list-style: none;
                 padding: 0;
                 margin: 0;
-                max-height: 300px;
+                max-height: 220px;
                 overflow-y: auto;
             }
 
             .quick-ref-list li {
-                padding: 6px 0;
-                font-size: 14px;
-                color: var(--v2-text-secondary);
-                border-bottom: 1px solid rgba(139, 92, 246, 0.1);
+                padding: 8px 12px;
+                font-size: 13px;
+                color: var(--v2-text-primary);
+                background: var(--v2-bg-primary);
+                border-radius: 8px;
+                margin-bottom: 6px;
+                font-weight: 500;
             }
 
             .quick-ref-list li:last-child {
-                border-bottom: none;
+                margin-bottom: 0;
             }
 
             .quick-ref-list.contraindicated li {
                 color: #dc2626;
                 font-weight: 600;
+                background: rgba(220, 38, 38, 0.08);
             }
 
             .pregnancy-category-section {
-                margin-bottom: 28px;
+                margin-bottom: 32px;
             }
 
             .category-header {
-                font-size: 18px;
+                font-size: 16px;
                 font-weight: 700;
-                margin-bottom: 18px;
+                margin-bottom: 16px;
                 color: var(--v2-text-primary);
                 padding: 14px 18px;
-                background: linear-gradient(135deg, rgba(139, 92, 246, 0.12), rgba(99, 102, 241, 0.12));
+                background: var(--v2-bg-secondary);
                 border-radius: 12px;
+                border: 1px solid var(--v2-border);
                 border-left: 4px solid #8b5cf6;
                 display: flex;
                 align-items: center;
-                gap: 8px;
+                gap: 10px;
+                letter-spacing: -0.2px;
             }
 
             .drugs-grid {
                 display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-                gap: 20px;
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                gap: 16px;
             }
 
             .pregnancy-drug-card {
-                background: var(--v2-bg-primary);
-                border: 2px solid rgba(139, 92, 246, 0.15);
-                border-radius: 14px;
-                padding: 20px;
+                background: var(--v2-bg-secondary);
+                border: 1px solid var(--v2-border);
+                border-radius: 16px;
+                padding: 18px;
                 cursor: pointer !important;
-                transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+                transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
                 position: relative;
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
             }
 
             .pregnancy-drug-card:hover {
                 transform: translateY(-4px);
-                box-shadow: 0 12px 28px rgba(139, 92, 246, 0.2);
-                border-color: rgba(139, 92, 246, 0.5);
+                box-shadow: 0 12px 32px rgba(139, 92, 246, 0.15);
+                border-color: rgba(139, 92, 246, 0.4);
             }
 
             .pregnancy-drug-card.severity-absolute {
+                border-left: 4px solid #dc2626;
+                background: linear-gradient(135deg, rgba(220, 38, 38, 0.04) 0%, var(--v2-bg-secondary) 100%);
+            }
+
+            .pregnancy-drug-card.severity-absolute:hover {
+                box-shadow: 0 12px 32px rgba(220, 38, 38, 0.15);
                 border-color: #dc2626;
-                background: linear-gradient(135deg, rgba(220, 38, 38, 0.05), rgba(239, 68, 68, 0.05));
             }
 
             .pregnancy-drug-card.severity-contraindicated {
+                border-left: 4px solid #ea580c;
+                background: linear-gradient(135deg, rgba(234, 88, 12, 0.04) 0%, var(--v2-bg-secondary) 100%);
+            }
+
+            .pregnancy-drug-card.severity-contraindicated:hover {
+                box-shadow: 0 12px 32px rgba(234, 88, 12, 0.15);
                 border-color: #ea580c;
-                background: linear-gradient(135deg, rgba(234, 88, 12, 0.05), rgba(249, 115, 22, 0.05));
             }
 
             .pregnancy-drug-card.severity-caution {
+                border-left: 4px solid #eab308;
+                background: linear-gradient(135deg, rgba(234, 179, 8, 0.04) 0%, var(--v2-bg-secondary) 100%);
+            }
+
+            .pregnancy-drug-card.severity-caution:hover {
+                box-shadow: 0 12px 32px rgba(234, 179, 8, 0.15);
                 border-color: #eab308;
-                background: linear-gradient(135deg, rgba(234, 179, 8, 0.05), rgba(250, 204, 21, 0.05));
             }
 
             .drug-card-header {
                 display: flex;
                 justify-content: space-between;
                 align-items: flex-start;
-                margin-bottom: 10px;
+                margin-bottom: 12px;
             }
 
             .drug-name {
-                font-size: 18px;
+                font-size: 17px;
                 font-weight: 700;
                 margin: 0;
                 color: var(--v2-text-primary);
                 flex: 1;
+                letter-spacing: -0.3px;
+                line-height: 1.3;
             }
 
             .favorite-btn {
-                background: rgba(139, 92, 246, 0.05);
-                border: 2px solid rgba(139, 92, 246, 0.15);
-                font-size: 20px;
+                background: var(--v2-bg-tertiary);
+                border: 1px solid var(--v2-border);
+                font-size: 18px;
                 cursor: pointer !important;
                 padding: 0;
-                width: 36px;
-                height: 36px;
+                width: 34px;
+                height: 34px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                border-radius: 50%;
+                border-radius: 10px;
                 transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
                 flex-shrink: 0;
+                margin-left: 12px;
             }
 
             .favorite-btn:hover {
-                background: rgba(139, 92, 246, 0.15);
-                border-color: rgba(139, 92, 246, 0.4);
-                transform: scale(1.1);
+                background: rgba(234, 179, 8, 0.1);
+                border-color: rgba(234, 179, 8, 0.4);
+                transform: scale(1.08);
             }
 
             .favorite-btn:active {
@@ -12472,35 +12525,37 @@
             }
 
             .drug-examples {
-                font-size: 13px;
-                color: var(--v2-text-secondary);
-                margin-bottom: 12px;
+                font-size: 12px;
+                color: var(--v2-text-tertiary);
+                margin-bottom: 14px;
                 font-style: italic;
+                line-height: 1.4;
             }
 
             .drug-severity-badge {
-                display: inline-block;
-                padding: 6px 12px;
-                border-radius: 20px;
-                font-size: 11px;
+                display: inline-flex;
+                align-items: center;
+                padding: 5px 10px;
+                border-radius: 8px;
+                font-size: 10px;
                 font-weight: 700;
                 text-transform: uppercase;
-                letter-spacing: 0.5px;
-                margin-bottom: 12px;
+                letter-spacing: 0.6px;
+                margin-bottom: 14px;
             }
 
             .drug-severity-badge.severity-absolute {
-                background: #dc2626;
+                background: linear-gradient(135deg, #dc2626, #b91c1c);
                 color: white;
             }
 
             .drug-severity-badge.severity-contraindicated {
-                background: #ea580c;
+                background: linear-gradient(135deg, #ea580c, #c2410c);
                 color: white;
             }
 
             .drug-severity-badge.severity-caution {
-                background: #eab308;
+                background: linear-gradient(135deg, #eab308, #ca8a04);
                 color: #1c1c1e;
             }
 
@@ -12508,7 +12563,7 @@
                 display: flex;
                 flex-wrap: wrap;
                 gap: 6px;
-                margin-bottom: 12px;
+                margin-bottom: 14px;
             }
 
             .badge-pregnancy,
@@ -12516,51 +12571,54 @@
             .badge-t2,
             .badge-t3,
             .badge-bf {
-                padding: 4px 10px;
-                border-radius: 12px;
-                font-size: 11px;
+                padding: 4px 8px;
+                border-radius: 6px;
+                font-size: 10px;
                 font-weight: 600;
+                letter-spacing: 0.3px;
             }
 
             .badge-pregnancy,
             .badge-bf {
-                background: #dc2626;
+                background: rgba(220, 38, 38, 0.9);
                 color: white;
             }
 
             .badge-t1 {
-                background: #ef4444;
+                background: rgba(239, 68, 68, 0.9);
                 color: white;
             }
 
             .badge-t2 {
-                background: #f97316;
+                background: rgba(249, 115, 22, 0.9);
                 color: white;
             }
 
             .badge-t3 {
-                background: #f59e0b;
+                background: rgba(245, 158, 11, 0.9);
                 color: white;
             }
 
             .drug-reason {
                 font-size: 13px;
-                line-height: 1.5;
-                color: var(--v2-text-primary);
-                margin-bottom: 12px;
+                line-height: 1.55;
+                color: var(--v2-text-secondary);
+                margin-bottom: 14px;
             }
 
             .drug-alternatives {
-                font-size: 13px;
-                padding: 10px;
-                background: rgba(34, 197, 94, 0.1);
+                font-size: 12px;
+                padding: 12px 14px;
+                background: rgba(34, 197, 94, 0.08);
                 border-left: 3px solid #22c55e;
-                border-radius: 6px;
+                border-radius: 10px;
                 color: var(--v2-text-primary);
+                line-height: 1.5;
             }
 
             .drug-alternatives strong {
-                color: #059669;
+                color: #10b981;
+                font-weight: 600;
             }
 
             /* Pregnancy Drug Modal */
