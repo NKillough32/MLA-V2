@@ -638,8 +638,10 @@ export class CoreConditionsManager {
         const content = enhanced.content;
         
         return {
+            id: enhanced.id,
             name: enhanced.name,
             domains: enhanced.domains,
+            synonyms: content.synonyms || enhanced.synonyms || [],
             overview: content.overview || null,
             recognition: {
                 typical: content.recognition?.symptoms || [],
@@ -660,13 +662,10 @@ export class CoreConditionsManager {
             management: {
                 acute: content.management?.acute || null,
                 chronic: content.management?.chronic || null,
-                complications: content.complications || [],
                 drugs: content.management?.drugs || [],
                 procedures: content.management?.procedures || []
-                ,
-                // Pass through any related conditions defined in the enhanced JSON
-                relatedConditions: enhanced.relatedConditions || content.relatedConditions || []
             },
+            complications: content.complications || [],
             clinicalPearls: content.clinicalPearls || [],
             prognosis: content.prognosis || '',
             foundationRole: content.foundationDoctorRole || '',
@@ -674,6 +673,7 @@ export class CoreConditionsManager {
             safetyConsiderations: content.keySafetyConsiderations || '',
             drugs: content.management?.drugs || [],
             procedures: content.management?.procedures || [],
+            relatedConditions: enhanced.relatedConditions || content.relatedConditions || [],
             enhanced: true // Flag to indicate this is enhanced content
         };
     }

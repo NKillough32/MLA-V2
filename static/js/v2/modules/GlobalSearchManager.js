@@ -673,6 +673,7 @@ export class GlobalSearchManager {
         const matches = [];
 
         sections.forEach(section => {
+            // Search in conditions (Condition Spotlights section)
             (section.conditions || []).forEach(condition => {
                 const haystack = [
                     condition.name,
@@ -688,6 +689,23 @@ export class GlobalSearchManager {
                         action: { type: 'ophthalmology', name: condition.name, section: section.title }
                     });
                 }
+            });
+
+            // Search in columns/items (other sections)
+            (section.columns || []).forEach(column => {
+                (column.items || []).forEach(item => {
+                    if (item.toLowerCase().includes(term)) {
+                        // Extract the first part before any parenthetical or dash as the title
+                        const titleMatch = item.match(/^([^(—\-]+)/);
+                        const title = titleMatch ? titleMatch[1].trim() : item;
+                        matches.push({
+                            title: title,
+                            subtitle: `${section.title} · ${column.heading}`,
+                            meta: item.length > title.length ? item.substring(title.length).trim() : '',
+                            action: { type: 'ophthalmology', name: title, section: section.title }
+                        });
+                    }
+                });
             });
         });
 

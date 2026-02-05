@@ -1985,16 +1985,30 @@ class MLAQuizApp {
                     </ul>
                 </div>
                 ` : ''}
+            </div>
 
-                ${condition.management.complications && condition.management.complications.length > 0 ? `
+            <!-- Complications & Prognosis -->
+            ${(condition.complications && condition.complications.length > 0) || condition.prognosis ? `
+            <div class="cc-section">
+                <h3 class="cc-section-title">📊 Complications & Prognosis</h3>
+                
+                ${condition.complications && condition.complications.length > 0 ? `
                 <div class="cc-subsection">
-                    <h4 class="cc-subsection-title">Complications</h4>
+                    <h4 class="cc-subsection-title">Important Complications to Watch For</h4>
                     <ul class="cc-list">
-                        ${condition.management.complications.map(item => `<li>${item}</li>`).join('')}
+                        ${condition.complications.map(item => `<li>${item}</li>`).join('')}
                     </ul>
                 </div>
                 ` : ''}
+
+                ${condition.prognosis ? `
+                <div class="cc-subsection">
+                    <h4 class="cc-subsection-title">Expected Outcomes</h4>
+                    <div class="cc-prognosis-box">${condition.prognosis}</div>
+                </div>
+                ` : ''}
             </div>
+            ` : ''}
 
             <!-- Drugs & Procedures -->
             ${((condition.drugs && condition.drugs.length > 0) || (condition.procedures && condition.procedures.length > 0) || (condition.management.drugs && condition.management.drugs.length > 0) || (condition.management.procedures && condition.management.procedures.length > 0)) ? `
@@ -2042,13 +2056,6 @@ class MLAQuizApp {
                 <ul class="cc-list cc-pearl-list">
                     ${condition.clinicalPearls.map(item => `<li>${item}</li>`).join('')}
                 </ul>
-            </div>
-            ` : ''}
-
-            ${condition.prognosis ? `
-            <div class="cc-section">
-                <h3 class="cc-section-title">📊 Prognosis</h3>
-                <div class="cc-prognosis-box">${condition.prognosis}</div>
             </div>
             ` : ''}
 
