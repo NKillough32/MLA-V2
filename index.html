@@ -12191,13 +12191,19 @@
             /* Pregnancy & Breastfeeding Drug Safety Styles */
             .pregnancy-drugs-header {
                 text-align: center;
-                margin-bottom: 28px;
-                padding: 28px 24px;
-                background: linear-gradient(135deg, rgba(139, 92, 246, 0.12) 0%, rgba(99, 102, 241, 0.08) 100%);
-                border-radius: 20px;
-                border: 1px solid rgba(139, 92, 246, 0.2);
+                margin-bottom: 32px;
+                padding: 36px 32px;
+                background: linear-gradient(135deg, 
+                    rgba(139, 92, 246, 0.15) 0%, 
+                    rgba(99, 102, 241, 0.12) 50%,
+                    rgba(79, 70, 229, 0.08) 100%);
+                border-radius: 24px;
+                border: 2px solid rgba(139, 92, 246, 0.25);
                 position: relative;
                 overflow: hidden;
+                box-shadow: 0 12px 40px rgba(139, 92, 246, 0.15),
+                           0 4px 16px rgba(139, 92, 246, 0.1),
+                           inset 0 1px 0 rgba(255, 255, 255, 0.1);
             }
 
             .pregnancy-drugs-header::before {
@@ -12206,16 +12212,32 @@
                 top: 0;
                 left: 0;
                 right: 0;
-                height: 4px;
-                background: linear-gradient(90deg, #8b5cf6, #6366f1, #8b5cf6);
+                height: 6px;
+                background: linear-gradient(90deg, 
+                    #8b5cf6 0%, 
+                    #6366f1 25%, 
+                    #a855f7 50%, 
+                    #6366f1 75%, 
+                    #8b5cf6 100%);
+                animation: shimmer 3s ease-in-out infinite;
+            }
+            
+            @keyframes shimmer {
+                0%, 100% { opacity: 1; }
+                50% { opacity: 0.8; }
             }
 
             .pregnancy-drugs-header h2 {
-                margin: 0 0 10px 0;
-                font-size: 24px;
-                font-weight: 800;
-                color: var(--v2-text-primary);
+                margin: 0 0 16px 0;
+                font-size: 32px;
+                font-weight: 900;
+                background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
                 letter-spacing: -0.5px;
+                text-shadow: 0 2px 8px rgba(139, 92, 246, 0.15);
+                line-height: 1.2;
             }
 
             .pregnancy-drugs-header .subtitle {
@@ -12266,21 +12288,27 @@
             }
 
             .pregnancy-category-btn {
-                padding: 12px 20px;
-                border: 2px solid var(--v2-border);
-                background: var(--v2-bg-card);
+                padding: 16px 24px;
+                border: 2px solid transparent;
+                background: linear-gradient(135deg, 
+                    rgba(255, 255, 255, 0.9) 0%, 
+                    rgba(248, 250, 252, 0.95) 100%);
                 color: var(--v2-text-primary);
-                border-radius: 12px;
+                border-radius: 16px;
                 cursor: pointer !important;
-                font-size: 13px;
-                font-weight: 600;
-                transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+                font-size: 14px;
+                font-weight: 700;
+                transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
                 user-select: none;
                 -webkit-tap-highlight-color: transparent;
-                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08),
+                           0 2px 4px rgba(0, 0, 0, 0.04),
+                           inset 0 1px 0 rgba(255, 255, 255, 0.4);
                 white-space: nowrap;
                 position: relative;
                 overflow: hidden;
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
             }
 
             .pregnancy-category-btn::before {
@@ -12297,11 +12325,16 @@
             }
 
             .pregnancy-category-btn:hover {
-                background: var(--v2-bg-card);
+                background: linear-gradient(135deg, 
+                    rgba(139, 92, 246, 0.12) 0%, 
+                    rgba(99, 102, 241, 0.08) 100%);
                 border-color: #8b5cf6;
-                transform: translateY(-3px);
-                box-shadow: 0 8px 20px rgba(139, 92, 246, 0.25);
-                color: #7c3aed;
+                transform: translateY(-4px) scale(1.02);
+                box-shadow: 0 12px 28px rgba(139, 92, 246, 0.25),
+                           0 4px 12px rgba(139, 92, 246, 0.15),
+                           inset 0 1px 0 rgba(255, 255, 255, 0.6);
+                color: #6366f1;
+                cursor: pointer !important;
             }
 
             .pregnancy-category-btn:hover::before {
@@ -12314,11 +12347,15 @@
             }
 
             .pregnancy-category-btn.active {
-                background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 50%, #6366f1 100%);
+                background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 35%, #6366f1 70%, #5b21b6 100%);
                 color: white;
                 border-color: transparent;
-                box-shadow: 0 4px 16px rgba(139, 92, 246, 0.4), inset 0 1px 0 rgba(255,255,255,0.2);
-                text-shadow: 0 1px 2px rgba(0,0,0,0.15);
+                box-shadow: 0 8px 24px rgba(139, 92, 246, 0.4),
+                           0 4px 12px rgba(139, 92, 246, 0.3),
+                           inset 0 1px 0 rgba(255,255,255,0.3),
+                           inset 0 -1px 0 rgba(0,0,0,0.1);
+                text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+                transform: translateY(-2px);
             }
 
             .pregnancy-category-btn.active::before {
@@ -12326,9 +12363,12 @@
             }
 
             .pregnancy-category-btn.active:hover {
-                background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 50%, #5b21b6 100%);
-                box-shadow: 0 8px 24px rgba(139, 92, 246, 0.5);
-                transform: translateY(-3px);
+                background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 35%, #5b21b6 70%, #4c1d95 100%);
+                box-shadow: 0 12px 32px rgba(139, 92, 246, 0.5),
+                           0 6px 16px rgba(139, 92, 246, 0.35),
+                           inset 0 1px 0 rgba(255,255,255,0.4),
+                           inset 0 -1px 0 rgba(0,0,0,0.15);
+                transform: translateY(-4px) scale(1.02);
             }
 
             .pregnancy-drugs-content {
@@ -12354,13 +12394,24 @@
             }
 
             .pregnancy-highlight-pill {
-                padding: 8px 14px;
+                padding: 12px 20px;
                 border-radius: 999px;
-                background: rgba(139, 92, 246, 0.1);
-                border: 1px solid rgba(139, 92, 246, 0.2);
-                color: var(--v2-text-primary);
-                font-size: 12px;
-                font-weight: 600;
+                background: linear-gradient(135deg, 
+                    rgba(139, 92, 246, 0.15) 0%, 
+                    rgba(99, 102, 241, 0.12) 100%);
+                border: 1.5px solid rgba(139, 92, 246, 0.25);
+                color: #6366f1;
+                font-size: 13px;
+                font-weight: 700;
+                box-shadow: 0 4px 12px rgba(139, 92, 246, 0.15),
+                           inset 0 1px 0 rgba(255, 255, 255, 0.2);
+                transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+            
+            .pregnancy-highlight-pill:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 8px 24px rgba(139, 92, 246, 0.2),
+                           inset 0 1px 0 rgba(255, 255, 255, 0.3);
             }
 
             .pregnancy-search-wrap {
@@ -12414,19 +12465,25 @@
             .drug-categories-section h3,
             .clinical-pearls-section h3,
             .resources-section h3 {
-                font-size: 17px;
-                font-weight: 800;
-                margin: 0 0 20px 0;
+                font-size: 20px;
+                font-weight: 900;
+                margin: 0 0 24px 0;
                 color: var(--v2-text-primary);
-                padding: 14px 18px;
-                background: linear-gradient(135deg, var(--v2-bg-secondary) 0%, var(--v2-bg-card) 100%);
-                border-radius: 14px;
-                border: 1px solid var(--v2-border);
-                border-left: 4px solid #8b5cf6;
+                padding: 18px 24px;
+                background: linear-gradient(135deg, 
+                    rgba(139, 92, 246, 0.1) 0%, 
+                    rgba(99, 102, 241, 0.08) 100%);
+                border-radius: 16px;
+                border: 2px solid rgba(139, 92, 246, 0.2);
+                border-left: 6px solid #8b5cf6;
                 display: flex;
                 align-items: center;
-                gap: 10px;
+                gap: 12px;
                 letter-spacing: -0.3px;
+                box-shadow: 0 4px 12px rgba(139, 92, 246, 0.1),
+                           inset 0 1px 0 rgba(255, 255, 255, 0.3);
+                position: relative;
+                overflow: hidden;
             }
 
             .quick-ref-grid {
@@ -12436,17 +12493,29 @@
             }
 
             .quick-ref-card {
-                background: var(--v2-bg-card);
-                border-radius: 16px;
-                padding: 20px;
-                border: 1px solid var(--v2-border);
-                transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+                background: linear-gradient(135deg, 
+                    rgba(255, 255, 255, 0.95) 0%, 
+                    rgba(248, 250, 252, 0.9) 100%);
+                border-radius: 20px;
+                padding: 24px;
+                border: 2px solid rgba(139, 92, 246, 0.15);
+                transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08),
+                           0 2px 8px rgba(0, 0, 0, 0.04),
+                           inset 0 1px 0 rgba(255, 255, 255, 0.5);
                 overflow: hidden;
+                position: relative;
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
             }
 
             .quick-ref-card:hover {
-                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+                transform: translateY(-6px);
+                box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12),
+                           0 6px 16px rgba(0, 0, 0, 0.08),
+                           0 2px 8px rgba(139, 92, 246, 0.1),
+                           inset 0 1px 0 rgba(255, 255, 255, 0.7);
+                border-color: rgba(139, 92, 246, 0.25);
             }
 
             .quick-ref-card.safe {
@@ -12488,14 +12557,19 @@
             .qr-pill {
                 display: flex;
                 align-items: center;
-                gap: 6px;
-                padding: 8px 10px;
-                border-radius: 8px;
-                font-size: 12px;
-                font-weight: 500;
+                gap: 8px;
+                padding: 12px 16px;
+                border-radius: 12px;
+                font-size: 13px;
+                font-weight: 600;
                 line-height: 1.3;
-                transition: all 0.15s ease;
-                cursor: default;
+                transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+                cursor: pointer;
+                border: 1.5px solid transparent;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06),
+                           inset 0 1px 0 rgba(255, 255, 255, 0.3);
+                position: relative;
+                overflow: hidden;
             }
 
             .qr-pill__icon {
@@ -12509,9 +12583,11 @@
             }
 
             .qr-pill--safe {
-                background: var(--v2-bg-card);
-                border: 1px solid rgba(34, 197, 94, 0.2);
-                color: var(--v2-text-primary);
+                background: linear-gradient(135deg, 
+                    rgba(34, 197, 94, 0.12) 0%, 
+                    rgba(16, 185, 129, 0.08) 100%);
+                border: 1.5px solid rgba(34, 197, 94, 0.25);
+                color: #059669;
             }
 
             .qr-pill--safe .qr-pill__icon {
@@ -12520,49 +12596,70 @@
             }
 
             .qr-pill--safe:hover {
-                background: rgba(34, 197, 94, 0.1);
+                background: linear-gradient(135deg, 
+                    rgba(34, 197, 94, 0.18) 0%, 
+                    rgba(16, 185, 129, 0.15) 100%);
                 border-color: rgba(34, 197, 94, 0.4);
-                transform: translateY(-1px);
-                box-shadow: 0 3px 10px rgba(34, 197, 94, 0.12);
+                transform: translateY(-3px) scale(1.02);
+                box-shadow: 0 6px 16px rgba(34, 197, 94, 0.2),
+                           inset 0 1px 0 rgba(255, 255, 255, 0.4);
             }
 
             .qr-pill--danger {
-                background: rgba(220, 38, 38, 0.06);
-                border: 1px solid rgba(220, 38, 38, 0.2);
+                background: linear-gradient(135deg, 
+                    rgba(220, 38, 38, 0.12) 0%, 
+                    rgba(239, 68, 68, 0.08) 100%);
+                border: 1.5px solid rgba(220, 38, 38, 0.25);
                 color: #dc2626;
                 font-weight: 600;
             }
 
             .qr-pill--danger:hover {
-                background: rgba(220, 38, 38, 0.12);
+                background: linear-gradient(135deg, 
+                    rgba(220, 38, 38, 0.18) 0%, 
+                    rgba(239, 68, 68, 0.15) 100%);
                 border-color: rgba(220, 38, 38, 0.4);
-                transform: translateY(-1px);
-                box-shadow: 0 3px 10px rgba(220, 38, 38, 0.12);
+                transform: translateY(-3px) scale(1.02);
+                box-shadow: 0 6px 16px rgba(220, 38, 38, 0.2),
+                           inset 0 1px 0 rgba(255, 255, 255, 0.4);
             }
 
             .pregnancy-category-section {
-                margin-bottom: 32px;
-                background: var(--v2-bg-card);
-                border-radius: 20px;
-                padding: 20px;
-                border: 1px solid var(--v2-border);
-                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+                margin-bottom: 36px;
+                background: linear-gradient(135deg, 
+                    rgba(255, 255, 255, 0.95) 0%, 
+                    rgba(248, 250, 252, 0.9) 100%);
+                border-radius: 24px;
+                padding: 28px;
+                border: 2px solid rgba(139, 92, 246, 0.15);
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08),
+                           0 4px 12px rgba(0, 0, 0, 0.04),
+                           inset 0 1px 0 rgba(255, 255, 255, 0.5);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             }
 
             .category-header {
-                font-size: 17px;
-                font-weight: 700;
-                margin-bottom: 20px;
+                font-size: 20px;
+                font-weight: 800;
+                margin-bottom: 24px;
                 color: var(--v2-text-primary);
-                padding: 16px 20px;
-                background: linear-gradient(135deg, rgba(139, 92, 246, 0.08) 0%, rgba(99, 102, 241, 0.05) 100%);
-                border-radius: 14px;
-                border: 1px solid rgba(139, 92, 246, 0.15);
-                border-left: 4px solid #8b5cf6;
+                padding: 20px 24px;
+                background: linear-gradient(135deg, 
+                    rgba(139, 92, 246, 0.12) 0%, 
+                    rgba(99, 102, 241, 0.08) 100%);
+                border-radius: 16px;
+                border: 2px solid rgba(139, 92, 246, 0.2);
+                border-left: 6px solid #8b5cf6;
                 display: flex;
                 align-items: center;
-                gap: 10px;
+                gap: 12px;
                 letter-spacing: -0.2px;
+                box-shadow: 0 4px 12px rgba(139, 92, 246, 0.1),
+                           inset 0 1px 0 rgba(255, 255, 255, 0.3);
+                position: relative;
+                overflow: hidden;
             }
 
             .category-header::before {
@@ -12579,16 +12676,22 @@
 
             /* ── New Preg Card System ── */
             .preg-card {
-                background: var(--v2-bg-card);
-                border: 1px solid var(--v2-border);
-                border-radius: 18px;
+                background: linear-gradient(135deg, 
+                    rgba(255, 255, 255, 0.95) 0%, 
+                    rgba(248, 250, 252, 0.9) 100%);
+                border: 2px solid rgba(139, 92, 246, 0.15);
+                border-radius: 20px;
                 cursor: pointer !important;
-                transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
                 position: relative;
-                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08),
+                           0 2px 8px rgba(0, 0, 0, 0.04),
+                           inset 0 1px 0 rgba(255, 255, 255, 0.5);
                 overflow: hidden;
                 display: flex;
                 flex-direction: column;
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
             }
 
             .preg-card__top-bar {
@@ -12622,8 +12725,13 @@
             }
 
             .preg-card:hover {
-                transform: translateY(-6px);
-                box-shadow: 0 20px 50px rgba(0, 0, 0, 0.14);
+                transform: translateY(-8px) scale(1.02);
+                box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15),
+                           0 8px 24px rgba(0, 0, 0, 0.1),
+                           0 4px 12px rgba(139, 92, 246, 0.15),
+                           inset 0 1px 0 rgba(255, 255, 255, 0.7);
+                border-color: rgba(139, 92, 246, 0.3);
+                cursor: pointer !important;
             }
 
             .preg-card.severity-absolute:hover {
@@ -16551,13 +16659,29 @@
             }
             
             // Initialize pregnancy drugs manager when switching to that tab
-            if (tabName === 'pregnancy' && window.MLAQuizApp) {
-                console.log('🤰 Initializing pregnancy drugs manager');
-                setTimeout(() => {
-                    if (window.MLAQuizApp.pregnancyDrugsManager && !window.MLAQuizApp.pregnancyDrugsManager.initialized) {
-                        window.MLAQuizApp.pregnancyDrugsManager.initialize();
-                    }
-                }, 100);
+            if (tabName === 'pregnancy') {
+                console.log('🤰 Pregnancy tab clicked - checking MLAQuizApp...');
+                console.log('MLAQuizApp exists:', !!window.MLAQuizApp);
+                
+                if (window.MLAQuizApp) {
+                    console.log('pregnancyDrugsManager exists:', !!window.MLAQuizApp.pregnancyDrugsManager);
+                    console.log('Manager initialized:', window.MLAQuizApp.pregnancyDrugsManager?.initialized);
+                    
+                    setTimeout(() => {
+                        if (window.MLAQuizApp.pregnancyDrugsManager && !window.MLAQuizApp.pregnancyDrugsManager.initialized) {
+                            console.log('🚀 Starting pregnancy drugs manager initialization...');
+                            window.MLAQuizApp.pregnancyDrugsManager.initialize().catch(err => {
+                                console.error('❌ Pregnancy manager init failed:', err);
+                            });
+                        } else if (!window.MLAQuizApp.pregnancyDrugsManager) {
+                            console.error('❌ pregnancyDrugsManager not found in MLAQuizApp');
+                        } else {
+                            console.log('ℹ️ Pregnancy manager already initialized');
+                        }
+                    }, 100);
+                } else {
+                    console.error('❌ MLAQuizApp not found on window object');
+                }
             }
         };
         

@@ -27,6 +27,13 @@ export class PregnancyDrugsManager {
 
         try {
             console.log('🤰 Initializing PregnancyDrugsManager...');
+            
+            // Check data integrity
+            console.log('📊 Data check:', {
+                drugCategories: this.data?.drugCategories?.length || 0,
+                safetyCategories: !!this.data?.safetyCategories,
+                version: this.data?.version || 'unknown'
+            });
 
             // Load favorites
             await this.loadFavorites();
@@ -47,8 +54,29 @@ export class PregnancyDrugsManager {
     }
 
     setupUI() {
+        console.log('🔧 Setting up PregnancyDrugsManager UI...');
+        
+        // Check if required DOM elements exist
+        const requiredElements = [
+            'pregnancyDrugsList',
+            'safePregDrugs', 
+            'safeBFDrugs',
+            'absoluteContraDrugs',
+            'pregnancyClinicalPearls',
+            'pregnancyResourcesList'
+        ];
+        
+        const missingElements = requiredElements.filter(id => !document.getElementById(id));
+        if (missingElements.length > 0) {
+            console.error('❌ Missing DOM elements:', missingElements);
+            return;
+        }
+        
+        console.log('✅ All required DOM elements found');
+        
         // Category filter buttons
         const categoryButtons = document.querySelectorAll('.pregnancy-category-btn');
+        console.log(`🔘 Found ${categoryButtons.length} category buttons`);
         categoryButtons.forEach(btn => {
             btn.addEventListener('click', () => {
                 categoryButtons.forEach(b => b.classList.remove('active'));
@@ -69,10 +97,12 @@ export class PregnancyDrugsManager {
         });
 
         // Initial render
+        console.log('🎨 Starting initial render...');
         this.renderDrugs();
         this.renderQuickReferences();
         this.renderResources();
         this.renderClinicalPearls();
+        console.log('✅ Render complete');
     }
 
     setupSearch() {
@@ -111,8 +141,16 @@ export class PregnancyDrugsManager {
     }
 
     renderDrugs() {
+        console.log('🎯 Starting renderDrugs...');
         const container = document.getElementById('pregnancyDrugsList');
-        if (!container) return;
+        if (!container) {
+            console.error('❌ pregnancyDrugsList container not found!');
+            return;
+        }
+
+        console.log(`📊 Data categories available: ${this.data.drugCategories.length}`);
+        console.log(`🔍 Current category: ${this.currentCategory}`);
+        console.log(`🔎 Search query: "${this.searchQuery}"`);
 
         let html = '';
         let matchCount = 0;
@@ -149,6 +187,7 @@ export class PregnancyDrugsManager {
             `;
         }
 
+        console.log(`📋 Generated HTML length: ${html.length} chars, ${matchCount} drugs`);
         container.innerHTML = html;
 
         // Setup favorite buttons
@@ -167,6 +206,8 @@ export class PregnancyDrugsManager {
                 this.showDrugDetail(drugName);
             });
         });
+        
+        console.log('✅ renderDrugs complete');
     }
 
     filterDrug(drug) {
@@ -338,24 +379,36 @@ export class PregnancyDrugsManager {
     }
 
     renderQuickReferences() {
+        console.log('📋 Starting renderQuickReferences...');
         const safePregContainer = document.getElementById('safePregDrugs');
         const safeBFContainer = document.getElementById('safeBFDrugs');
         const absoluteContraContainer = document.getElementById('absoluteContraDrugs');
 
+        console.log('🔍 Quick ref containers found:', {
+            safePregDrugs: !!safePregContainer,
+            safeBFDrugs: !!safeBFContainer, 
+            absoluteContraDrugs: !!absoluteContraContainer
+        });
+
         if (safePregContainer) {
             const drugs = this.data.safetyCategories.generallySafe.drugs;
+            console.log(`✅ Safe preg drugs: ${drugs.length}`);
             safePregContainer.innerHTML = this.renderDrugTable(drugs, 'safe');
         }
 
         if (safeBFContainer) {
             const drugs = this.data.safetyCategories.generallySafeBreastfeeding.drugs;
+            console.log(`🤱 Safe BF drugs: ${drugs.length}`);
             safeBFContainer.innerHTML = this.renderDrugTable(drugs, 'safe');
         }
 
         if (absoluteContraContainer) {
             const drugs = this.data.safetyCategories.absoluteContraindications.drugs;
+            console.log(`🚫 Contraindicated drugs: ${drugs.length}`);
             absoluteContraContainer.innerHTML = this.renderDrugTable(drugs, 'danger');
         }
+        
+        console.log('✅ renderQuickReferences complete');
     }
 
     renderDrugTable(drugs, type) {
