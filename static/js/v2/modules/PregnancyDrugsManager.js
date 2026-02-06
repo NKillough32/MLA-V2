@@ -329,30 +329,43 @@ export class PregnancyDrugsManager {
 
         if (safePregContainer) {
             const drugs = this.data.safetyCategories.generallySafe.drugs;
-            safePregContainer.innerHTML = `
-                <ul class="quick-ref-list">
-                    ${drugs.map(drug => `<li>${drug}</li>`).join('')}
-                </ul>
-            `;
+            safePregContainer.innerHTML = this.renderDrugTable(drugs, 'safe');
         }
 
         if (safeBFContainer) {
             const drugs = this.data.safetyCategories.generallySafeBreastfeeding.drugs;
-            safeBFContainer.innerHTML = `
-                <ul class="quick-ref-list">
-                    ${drugs.map(drug => `<li>${drug}</li>`).join('')}
-                </ul>
-            `;
+            safeBFContainer.innerHTML = this.renderDrugTable(drugs, 'safe');
         }
 
         if (absoluteContraContainer) {
             const drugs = this.data.safetyCategories.absoluteContraindications.drugs;
-            absoluteContraContainer.innerHTML = `
-                <ul class="quick-ref-list contraindicated">
-                    ${drugs.map(drug => `<li>🚫 ${drug}</li>`).join('')}
-                </ul>
-            `;
+            absoluteContraContainer.innerHTML = this.renderDrugTable(drugs, 'danger');
         }
+    }
+
+    renderDrugTable(drugs, type) {
+        // Split drugs into 3 columns
+        const colSize = Math.ceil(drugs.length / 3);
+        const col1 = drugs.slice(0, colSize);
+        const col2 = drugs.slice(colSize, colSize * 2);
+        const col3 = drugs.slice(colSize * 2);
+        
+        const icon = type === 'danger' ? '🚫 ' : '';
+        const cellClass = type === 'danger' ? 'danger-cell' : 'safe-cell';
+        
+        return `
+            <table class="quick-ref-table ${type}">
+                <tbody>
+                    ${col1.map((drug, i) => `
+                        <tr>
+                            <td class="${cellClass}">${icon}${drug}</td>
+                            <td class="${cellClass}">${col2[i] ? icon + col2[i] : ''}</td>
+                            <td class="${cellClass}">${col3[i] ? icon + col3[i] : ''}</td>
+                        </tr>
+                    `).join('')}
+                </tbody>
+            </table>
+        `;
     }
 
     showQuickReference(category) {

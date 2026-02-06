@@ -12237,37 +12237,59 @@
                 gap: 10px;
                 flex-wrap: wrap;
                 justify-content: center;
-                padding: 0;
-                background: transparent;
-                border-radius: 0;
-                border: none;
+                padding: 16px;
+                background: var(--v2-bg-secondary);
+                border-radius: 16px;
+                border: 1px solid var(--v2-border);
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
             }
 
             .pregnancy-category-btn {
                 padding: 12px 20px;
-                border: 2px solid transparent;
-                background: var(--v2-bg-secondary);
+                border: 2px solid var(--v2-border);
+                background: var(--v2-bg-card);
                 color: var(--v2-text-primary);
-                border-radius: 50px;
+                border-radius: 12px;
                 cursor: pointer !important;
                 font-size: 13px;
-                font-weight: 700;
-                transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+                font-weight: 600;
+                transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
                 user-select: none;
                 -webkit-tap-highlight-color: transparent;
-                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
                 white-space: nowrap;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .pregnancy-category-btn::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: linear-gradient(135deg, rgba(139, 92, 246, 0.15) 0%, rgba(99, 102, 241, 0.15) 100%);
+                opacity: 0;
+                transition: opacity 0.25s ease;
+                border-radius: 10px;
             }
 
             .pregnancy-category-btn:hover {
                 background: var(--v2-bg-card);
-                border-color: rgba(139, 92, 246, 0.3);
-                transform: translateY(-2px);
-                box-shadow: 0 4px 16px rgba(139, 92, 246, 0.15);
+                border-color: #8b5cf6;
+                transform: translateY(-3px);
+                box-shadow: 0 8px 20px rgba(139, 92, 246, 0.25);
+                color: #7c3aed;
+            }
+
+            .pregnancy-category-btn:hover::before {
+                opacity: 1;
             }
 
             .pregnancy-category-btn:active {
-                transform: translateY(0) scale(0.98);
+                transform: translateY(-1px) scale(0.98);
+                box-shadow: 0 4px 12px rgba(139, 92, 246, 0.2);
             }
 
             .pregnancy-category-btn.active {
@@ -12278,10 +12300,14 @@
                 text-shadow: 0 1px 2px rgba(0,0,0,0.15);
             }
 
+            .pregnancy-category-btn.active::before {
+                display: none;
+            }
+
             .pregnancy-category-btn.active:hover {
                 background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 50%, #5b21b6 100%);
-                box-shadow: 0 6px 20px rgba(139, 92, 246, 0.5);
-                transform: translateY(-2px);
+                box-shadow: 0 8px 24px rgba(139, 92, 246, 0.5);
+                transform: translateY(-3px);
             }
 
             .pregnancy-drugs-content {
@@ -12447,6 +12473,57 @@
                 gap: 8px;
             }
 
+            /* Quick Reference 3-Column Table Styles */
+            .quick-ref-table {
+                width: 100%;
+                border-collapse: separate;
+                border-spacing: 6px;
+                table-layout: fixed;
+            }
+
+            .quick-ref-table td {
+                padding: 10px 12px;
+                font-size: 12px;
+                font-weight: 500;
+                background: var(--v2-bg-card);
+                border-radius: 8px;
+                color: var(--v2-text-primary);
+                vertical-align: top;
+                line-height: 1.4;
+                transition: all 0.2s ease;
+            }
+
+            .quick-ref-table td:empty {
+                background: transparent;
+            }
+
+            .quick-ref-table td.safe-cell:not(:empty) {
+                border-left: 3px solid #22c55e;
+            }
+
+            .quick-ref-table td.safe-cell:not(:empty):hover {
+                background: rgba(34, 197, 94, 0.12);
+                transform: translateX(2px);
+            }
+
+            .quick-ref-table td.danger-cell:not(:empty) {
+                color: #dc2626;
+                font-weight: 600;
+                background: rgba(220, 38, 38, 0.08);
+                border-left: 3px solid #dc2626;
+            }
+
+            .quick-ref-table td.danger-cell:not(:empty):hover {
+                background: rgba(220, 38, 38, 0.16);
+                transform: translateX(2px);
+            }
+
+            .quick-ref-card {
+                max-height: 320px;
+                overflow-y: auto;
+            }
+
+            /* Legacy list styles - keeping for backward compatibility */
             .quick-ref-list {
                 list-style: none;
                 padding: 0;
@@ -12477,22 +12554,32 @@
 
             .pregnancy-category-section {
                 margin-bottom: 32px;
+                background: var(--v2-bg-card);
+                border-radius: 20px;
+                padding: 20px;
+                border: 1px solid var(--v2-border);
+                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
             }
 
             .category-header {
-                font-size: 16px;
+                font-size: 17px;
                 font-weight: 700;
-                margin-bottom: 16px;
+                margin-bottom: 20px;
                 color: var(--v2-text-primary);
-                padding: 14px 18px;
-                background: var(--v2-bg-secondary);
-                border-radius: 12px;
-                border: 1px solid var(--v2-border);
+                padding: 16px 20px;
+                background: linear-gradient(135deg, rgba(139, 92, 246, 0.08) 0%, rgba(99, 102, 241, 0.05) 100%);
+                border-radius: 14px;
+                border: 1px solid rgba(139, 92, 246, 0.15);
                 border-left: 4px solid #8b5cf6;
                 display: flex;
                 align-items: center;
                 gap: 10px;
                 letter-spacing: -0.2px;
+            }
+
+            .category-header::before {
+                content: '💊';
+                font-size: 18px;
             }
 
             .drugs-grid {
@@ -12505,22 +12592,45 @@
                 background: var(--v2-bg-secondary);
                 border: 1px solid var(--v2-border);
                 border-radius: 16px;
-                padding: 18px;
+                padding: 20px;
                 cursor: pointer !important;
-                transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+                transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
                 position: relative;
                 box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+                overflow: hidden;
+            }
+
+            .pregnancy-drug-card::after {
+                content: 'Click for details →';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                padding: 10px;
+                background: linear-gradient(to top, rgba(139, 92, 246, 0.1), transparent);
+                font-size: 11px;
+                font-weight: 600;
+                color: #8b5cf6;
+                text-align: center;
+                opacity: 0;
+                transform: translateY(100%);
+                transition: all 0.25s ease;
+            }
+
+            .pregnancy-drug-card:hover::after {
+                opacity: 1;
+                transform: translateY(0);
             }
 
             .pregnancy-drug-card:hover {
-                transform: translateY(-4px);
-                box-shadow: 0 12px 32px rgba(139, 92, 246, 0.15);
-                border-color: rgba(139, 92, 246, 0.4);
+                transform: translateY(-6px);
+                box-shadow: 0 16px 40px rgba(139, 92, 246, 0.2);
+                border-color: rgba(139, 92, 246, 0.5);
             }
 
             .pregnancy-drug-card.severity-absolute {
-                border-left: 4px solid #dc2626;
-                background: linear-gradient(135deg, rgba(220, 38, 38, 0.04) 0%, var(--v2-bg-secondary) 100%);
+                border-left: 5px solid #dc2626;
+                background: linear-gradient(135deg, rgba(220, 38, 38, 0.06) 0%, var(--v2-bg-secondary) 100%);
             }
 
             .pregnancy-drug-card.severity-absolute:hover {
@@ -12935,47 +13045,78 @@
             .clinical-pearls-list {
                 list-style: none;
                 padding: 0;
+                display: grid;
+                gap: 10px;
             }
 
             .clinical-pearls-list li {
-                padding: 12px 16px;
-                margin-bottom: 10px;
-                background: rgba(251, 191, 36, 0.08);
+                padding: 14px 18px;
+                background: linear-gradient(135deg, rgba(251, 191, 36, 0.1) 0%, rgba(245, 158, 11, 0.05) 100%);
                 border-left: 4px solid #f59e0b;
-                border-radius: 8px;
+                border-radius: 12px;
+                border: 1px solid rgba(245, 158, 11, 0.15);
                 line-height: 1.6;
+                font-size: 13px;
+                color: var(--v2-text-primary);
+                transition: all 0.2s ease;
+            }
+
+            .clinical-pearls-list li:hover {
+                background: linear-gradient(135deg, rgba(251, 191, 36, 0.16) 0%, rgba(245, 158, 11, 0.1) 100%);
+                transform: translateX(4px);
+                border-color: rgba(245, 158, 11, 0.3);
             }
 
             .resources-section .resource-card {
                 background: var(--v2-bg-secondary);
                 padding: 18px;
-                border-radius: 10px;
-                border: 2px solid rgba(139, 92, 246, 0.15);
+                border-radius: 14px;
+                border: 1px solid var(--v2-border);
                 margin-bottom: 14px;
+                transition: all 0.25s ease;
+                cursor: default;
+            }
+
+            .resources-section .resource-card:hover {
+                border-color: rgba(139, 92, 246, 0.3);
+                box-shadow: 0 6px 20px rgba(139, 92, 246, 0.1);
+                transform: translateY(-2px);
             }
 
             .resource-card h4 {
                 margin-top: 0;
                 margin-bottom: 8px;
-                font-size: 16px;
+                font-size: 15px;
+                font-weight: 600;
                 color: var(--v2-text-primary);
             }
 
             .resource-card p {
                 font-size: 13px;
                 color: var(--v2-text-secondary);
-                margin-bottom: 10px;
+                margin-bottom: 12px;
+                line-height: 1.5;
             }
 
             .resource-card a {
+                display: inline-flex;
+                align-items: center;
+                gap: 6px;
                 color: #8b5cf6;
                 text-decoration: none;
                 font-weight: 600;
-                font-size: 14px;
+                font-size: 13px;
+                padding: 8px 14px;
+                background: rgba(139, 92, 246, 0.1);
+                border-radius: 8px;
+                transition: all 0.2s ease;
+                cursor: pointer !important;
             }
 
             .resource-card a:hover {
-                text-decoration: underline;
+                background: rgba(139, 92, 246, 0.2);
+                color: #7c3aed;
+                transform: translateX(3px);
             }
 
             @media (max-width: 768px) {
@@ -13018,7 +13159,8 @@
 
                 .pregnancy-category-btn {
                     padding: 8px 14px;
-                    font-size: 13px;
+                    font-size: 12px;
+                    border-radius: 10px;
                 }
 
                 .pregnancy-drugs-header h2 {
@@ -13030,6 +13172,37 @@
                 .clinical-pearls-section,
                 .resources-section {
                     padding: 16px;
+                }
+
+                /* Responsive table - stack on mobile */
+                .quick-ref-table {
+                    display: block;
+                }
+
+                .quick-ref-table tbody {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 6px;
+                }
+
+                .quick-ref-table tr {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 6px;
+                }
+
+                .quick-ref-table td {
+                    width: auto !important;
+                }
+
+                .pregnancy-category-section {
+                    padding: 14px;
+                    margin-bottom: 20px;
+                }
+
+                .pregnancy-drug-card::after {
+                    font-size: 10px;
+                    padding: 8px;
                 }
             }
 
