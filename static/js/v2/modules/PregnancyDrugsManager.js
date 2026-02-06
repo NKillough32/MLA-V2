@@ -544,6 +544,314 @@ export class PregnancyDrugsManager {
                 font-size: 0.875rem;
                 pointer-events: none;
             }
+
+            /* Card Styles */
+            .pregnancy-card {
+                background: #fff;
+                border: 1px solid rgba(15,23,42,0.08);
+                border-radius: 12px;
+                padding: 16px 20px;
+                margin-bottom: 16px;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+                transition: box-shadow 0.2s;
+            }
+            .pregnancy-badge {
+                display: inline-block;
+                background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+                color: white;
+                padding: 4px 10px;
+                border-radius: 6px;
+                font-size: 0.8rem;
+                font-weight: 600;
+                margin-bottom: 8px;
+            }
+            .pregnancy-card h3 {
+                margin: 8px 0;
+                color: #0f172a;
+                font-size: 1.3rem;
+                font-weight: 700;
+            }
+            .card-summary {
+                color: #475569;
+                font-size: 0.95rem;
+                margin-bottom: 12px;
+                line-height: 1.6;
+            }
+            
+            /* Column Layout */
+            .pregnancy-columns { 
+                display: grid; 
+                gap: 10px; 
+            }
+            .pregnancy-subsection {
+                border: 1px solid rgba(15,23,42,0.08);
+                border-radius: 10px;
+                padding: 10px 12px;
+                background: #fff;
+                box-shadow: inset 0 1px 0 rgba(255,255,255,0.7);
+            }
+            .pregnancy-subsection h4 { 
+                margin: 0 0 6px 0; 
+                font-size: 0.96rem; 
+                color: #1d4ed8;
+            }
+            .pregnancy-subsection ul { 
+                margin: 0; 
+                padding-left: 18px; 
+                display: grid; 
+                gap: 6px; 
+            }
+            .pregnancy-subsection li { 
+                line-height: 1.5; 
+                font-size: 0.9rem;
+            }
+
+            /* Quick Reference Pills */
+            .qr-pill-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 8px;
+                margin-top: 10px;
+            }
+            .qr-pill {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                padding: 8px 12px;
+                border-radius: 8px;
+                font-size: 0.875rem;
+                font-weight: 500;
+                transition: all 0.2s;
+                cursor: pointer;
+            }
+            .qr-pill--safe {
+                background: linear-gradient(135deg, #10b981, #059669);
+                color: white;
+            }
+            .qr-pill--danger {
+                background: linear-gradient(135deg, #ef4444, #dc2626);
+                color: white;
+            }
+            .qr-pill:hover {
+                transform: translateY(-1px);
+                box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+            }
+            .qr-pill__icon {
+                font-weight: bold;
+            }
+            .qr-pill__name {
+                flex: 1;
+            }
+
+            /* Drug Category Sections */
+            .pregnancy-category-section {
+                margin-bottom: 24px;
+            }
+            .category-header {
+                font-size: 1.25rem;
+                font-weight: 700;
+                color: #1e293b;
+                margin-bottom: 12px;
+                padding-bottom: 6px;
+                border-bottom: 2px solid #e2e8f0;
+            }
+            .drugs-grid {
+                display: grid;
+                gap: 12px;
+                grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            }
+
+            /* Drug Cards */
+            .preg-card {
+                background: white;
+                border-radius: 12px;
+                overflow: hidden;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+                transition: all 0.3s ease;
+                cursor: pointer;
+                border: 1px solid rgba(15,23,42,0.08);
+            }
+            .preg-card:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            }
+            .preg-card__top-bar {
+                height: 4px;
+            }
+            .severity-absolute .preg-card__top-bar {
+                background: linear-gradient(90deg, #dc2626, #ef4444);
+            }
+            .severity-contraindicated .preg-card__top-bar {
+                background: linear-gradient(90deg, #f59e0b, #f97316);
+            }
+            .severity-caution .preg-card__top-bar {
+                background: linear-gradient(90deg, #eab308, #facc15);
+            }
+            .severity-safe .preg-card__top-bar {
+                background: linear-gradient(90deg, #10b981, #059669);
+            }
+            .preg-card__body {
+                padding: 16px;
+            }
+            .preg-card__header {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin-bottom: 12px;
+            }
+            .preg-card__name {
+                font-size: 1.1rem;
+                font-weight: 700;
+                color: #1e293b;
+                margin: 0 0 4px 0;
+            }
+            .preg-card__examples {
+                font-size: 0.85rem;
+                color: #64748b;
+                font-style: italic;
+            }
+            .preg-card__fav {
+                background: none;
+                border: none;
+                font-size: 1.2rem;
+                cursor: pointer;
+                padding: 4px;
+                border-radius: 4px;
+                transition: background 0.2s;
+            }
+            .preg-card__fav:hover {
+                background: rgba(59,130,246,0.1);
+            }
+            .preg-card__severity {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                padding: 8px 12px;
+                border-radius: 8px;
+                font-size: 0.875rem;
+                font-weight: 600;
+                margin-bottom: 12px;
+            }
+            .severity-absolute .preg-card__severity {
+                background: rgba(239,68,68,0.1);
+                color: #dc2626;
+            }
+            .severity-contraindicated .preg-card__severity {
+                background: rgba(249,115,22,0.1);
+                color: #ea580c;
+            }
+            .severity-caution .preg-card__severity {
+                background: rgba(251,191,36,0.1);
+                color: #d97706;
+            }
+            .severity-safe .preg-card__severity {
+                background: rgba(16,185,129,0.1);
+                color: #059669;
+            }
+            .preg-card__badges {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 6px;
+                margin-bottom: 12px;
+            }
+            .preg-badge {
+                font-size: 0.75rem;
+                padding: 3px 8px;
+                border-radius: 12px;
+                font-weight: 600;
+                color: white;
+            }
+            .preg-badge--all { background: #dc2626; }
+            .preg-badge--t1 { background: #7c3aed; }
+            .preg-badge--t2 { background: #2563eb; }
+            .preg-badge--t3 { background: #0891b2; }
+            .preg-badge--bf { background: #ec4899; }
+            .preg-card__reason {
+                margin-bottom: 12px;
+            }
+            .preg-card__reason-label {
+                font-size: 0.75rem;
+                font-weight: 600;
+                color: #374151;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+                margin-bottom: 4px;
+            }
+            .preg-card__reason-text {
+                font-size: 0.875rem;
+                color: #4b5563;
+                line-height: 1.5;
+                margin: 0;
+            }
+            .preg-card__alt {
+                margin-bottom: 12px;
+            }
+            .preg-card__alt-label {
+                font-size: 0.75rem;
+                font-weight: 600;
+                color: #059669;
+                margin-bottom: 4px;
+            }
+            .preg-card__alt-text {
+                font-size: 0.875rem;
+                color: #4b5563;
+                line-height: 1.5;
+                margin: 0;
+            }
+            .preg-card__footer {
+                text-align: right;
+                border-top: 1px solid #f1f5f9;
+                padding-top: 8px;
+            }
+            .preg-card__cta {
+                font-size: 0.8rem;
+                color: #3b82f6;
+                font-weight: 500;
+            }
+
+            /* Clinical Pearls */
+            .clinical-pearls-list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            .clinical-pearls-list li {
+                padding: 8px 0;
+                border-bottom: 1px solid #f1f5f9;
+                font-size: 0.9rem;
+                line-height: 1.5;
+            }
+            .clinical-pearls-list li:last-child {
+                border-bottom: none;
+            }
+
+            /* Resources */
+            .resource-card {
+                border: 1px solid #e2e8f0;
+                border-radius: 8px;
+                padding: 12px;
+                margin-bottom: 12px;
+                background: #fff;
+            }
+            .resource-card h4 {
+                margin: 0 0 8px 0;
+                color: #1e293b;
+                font-size: 1rem;
+            }
+            .resource-card p {
+                margin: 0 0 8px 0;
+                color: #64748b;
+                font-size: 0.875rem;
+            }
+            .resource-card a {
+                color: #3b82f6;
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 0.875rem;
+            }
+            .resource-card a:hover {
+                text-decoration: underline;
+            }
         `;
         document.head.appendChild(style);
     }
