@@ -732,6 +732,8 @@ export class PregnancyDrugsManager {
     }
 
     updateSearchResults() {
+        if (!this.container) return;
+        
         const cards = this.container.querySelectorAll('.preg-card');
         let visibleCount = 0;
 
@@ -758,6 +760,8 @@ export class PregnancyDrugsManager {
     }
 
     filterDrugs() {
+        if (!this.container) return;
+        
         const cards = this.container.querySelectorAll('.preg-card');
         
         cards.forEach(card => {
@@ -805,6 +809,8 @@ export class PregnancyDrugsManager {
         }
 
         // Update UI
+        if (!this.container) return;
+        
         const favButton = this.container.querySelector(`[data-drug="${drugName}"]`);
         if (favButton) {
             favButton.textContent = this.favorites.has(drugName) ? '★' : '☆';
@@ -817,6 +823,12 @@ export class PregnancyDrugsManager {
     }
 
     setupEventListeners() {
+        // Check if container exists (render hasn't been called yet)
+        if (!this.container) {
+            console.log('🔧 PregnancyDrugsManager: Container not ready, skipping event listeners for now');
+            return;
+        }
+
         // Search functionality
         const searchInput = this.container.querySelector('.pregnancy-search-input');
         if (searchInput) {
