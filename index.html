@@ -11449,6 +11449,76 @@
                 border-color: rgba(255, 204, 0, 0.5);
             }
 
+            /* MSK Investigations Styles */
+            .msk-header {
+                background: linear-gradient(135deg, #0f766e 0%, #14b8a6 25%, #06b6d4 75%, #0891b2 100%);
+                padding: 2rem;
+                margin: -1rem -1rem 2rem -1rem;
+                border-radius: 12px 12px 0 0;
+                color: white;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .msk-header::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20" fill="none"><defs><pattern id="bones" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><rect x="8" y="2" width="4" height="16" fill="rgba(255,255,255,0.1)" rx="2"/><circle cx="10" cy="4" r="2" fill="rgba(255,255,255,0.05)"/><circle cx="10" cy="16" r="2" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100%" height="100%" fill="url(%23bones)"/></svg>') repeat;
+                opacity: 0.3;
+                pointer-events: none;
+            }
+
+            .msk-header h2 {
+                font-size: 1.75rem;
+                font-weight: 700;
+                margin: 0 0 0.5rem 0;
+                text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+                position: relative;
+                z-index: 1;
+            }
+
+            .msk-header .subtitle {
+                font-size: 1rem;
+                opacity: 0.95;
+                margin-bottom: 1.5rem;
+                font-weight: 400;
+                line-height: 1.4;
+                position: relative;
+                z-index: 1;
+            }
+
+            .msk-header-highlights {
+                display: flex;
+                gap: 1rem;
+                flex-wrap: wrap;
+                position: relative;
+                z-index: 1;
+            }
+
+            .msk-header-highlights .highlight-pill {
+                background: rgba(255, 255, 255, 0.2);
+                backdrop-filter: blur(10px);
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                color: white;
+                padding: 0.5rem 1rem;
+                border-radius: 25px;
+                font-size: 0.875rem;
+                font-weight: 500;
+                white-space: nowrap;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                transition: all 0.2s ease;
+            }
+
+            .msk-header-highlights .highlight-pill:hover {
+                background: rgba(255, 255, 255, 0.3);
+                transform: translateY(-1px);
+                box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            }
+
             /* Core Conditions Styles */
             #core-conditions-container {
                 padding: 12px;
@@ -14969,6 +15039,7 @@
                 <div class="drug-panel-tabs">
                     <button class="drug-tab-btn active" data-tab="database" onclick="window.switchDrugTab('database')">💊 Drug Database</button>
                     <button class="drug-tab-btn" data-tab="pregnancy" onclick="window.switchDrugTab('pregnancy')">🤰 Pregnancy & Breastfeeding</button>
+                    <button class="drug-tab-btn" data-tab="msk" onclick="window.switchDrugTab('msk')">🦴 MSK Investigations</button>
                 </div>
                 
                 <!-- Drug Database Tab Content -->
@@ -15046,6 +15117,24 @@
                                 <div id="pregnancyResourcesList"></div>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <!-- MSK Investigations Tab Content -->
+                <div id="msk-tab" class="drug-tab-content">
+                    <div class="msk-header">
+                        <h2>🦴 MSK Investigations & Management</h2>
+                        <div class="subtitle">Comprehensive guide to musculoskeletal investigations, findings interpretation, and evidence-based management</div>
+                        <div class="msk-header-highlights">
+                            <div class="highlight-pill">🔍 Imaging interpretation</div>
+                            <div class="highlight-pill">📊 Laboratory investigations</div>
+                            <div class="highlight-pill">⚡ Emergency conditions</div>
+                            <div class="highlight-pill">💊 First-line treatments</div>
+                        </div>
+                    </div>
+                    <div id="content-area">
+                        <!-- MSK content will be loaded here by JavaScript -->
+                        <div class="loading-message">🦴 Loading MSK investigations...</div>
                     </div>
                 </div>
             </div>
@@ -16814,6 +16903,30 @@
                             console.error('❌ pregnancyDrugsManager not found in MLAQuizApp');
                         } else {
                             console.log('ℹ️ Pregnancy manager already initialized');
+                        }
+                    }, 100);
+                } else {
+                    console.error('❌ MLAQuizApp not found on window object');
+                }
+            }
+            
+            // Initialize MSK investigations manager when switching to that tab
+            if (tabName === 'msk') {
+                console.log('🦴 MSK tab clicked - checking MLAQuizApp...');
+                console.log('MLAQuizApp exists:', !!window.MLAQuizApp);
+                
+                if (window.MLAQuizApp) {
+                    console.log('mskInvestigationsManager exists:', !!window.MLAQuizApp.mskInvestigationsManager);
+                    
+                    setTimeout(() => {
+                        if (window.MLAQuizApp.mskInvestigationsManager) {
+                            console.log('🚀 MSK investigations manager already active');
+                            // Manager initializes itself in constructor, just ensure it's rendered
+                            if (typeof window.MLAQuizApp.mskInvestigationsManager.render === 'function') {
+                                window.MLAQuizApp.mskInvestigationsManager.render();
+                            }
+                        } else {
+                            console.error('❌ mskInvestigationsManager not found in MLAQuizApp');
                         }
                     }, 100);
                 } else {

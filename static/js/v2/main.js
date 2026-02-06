@@ -22,6 +22,7 @@ import { OfflineManager } from './modules/OfflineManager.js';
 // Reference Modules (require external database files)
 import { DrugReferenceManager } from './modules/DrugReferenceManager.js';
 import { PregnancyDrugsManager } from './modules/PregnancyDrugsManager.js';
+import { MSKInvestigationsManager } from './modules/MSKInvestigationsManager.js';
 import { LabValuesManager } from './modules/LabValuesManager.js';
 import { GuidelinesManager } from './modules/GuidelinesManager.js';
 import { proceduresManager } from './modules/ProceduresManager.js';
@@ -56,6 +57,7 @@ class MLAQuizApp {
         this.initialized = false;
         this.drugManager = new DrugReferenceManager();
         this.pregnancyDrugsManager = new PregnancyDrugsManager();
+        this.mskInvestigationsManager = new MSKInvestigationsManager();
         this.labManager = new LabValuesManager();
         this.guidelinesManager = new GuidelinesManager();
         this.anatomyManager = anatomyManager;
@@ -862,6 +864,7 @@ class MLAQuizApp {
             managers: {
                 drugManager: this.drugManager,
                 pregnancyDrugsManager: this.pregnancyDrugsManager,
+                mskInvestigationsManager: this.mskInvestigationsManager,
                 labManager: this.labManager,
                 guidelinesManager: this.guidelinesManager,
                 proceduresManager: this.proceduresManager,
