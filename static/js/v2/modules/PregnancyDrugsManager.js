@@ -144,6 +144,28 @@ export class PregnancyDrugsManager {
                             "Prefer drugs with established safety data",
                             "Consider maternal health benefits vs infant risks"
                         ]
+                    },
+                    {
+                        heading: "Monitoring in Pregnancy",
+                        items: [
+                            "TDM for narrow therapeutic index drugs (lithium, phenytoin)",
+                            "Increased monitoring frequency due to physiological changes",
+                            "Dose adjustments often needed - increased clearance", 
+                            "Regular fetal monitoring for essential teratogenic drugs",
+                            "Specialist input for complex cases",
+                            "Document risks/benefits and patient counselling"
+                        ]
+                    },
+                    {
+                        heading: "Emergency Situations", 
+                        items: [
+                            "Life-threatening maternal condition takes priority",
+                            "Use safest effective drug with shortest exposure",
+                            "Single dose exposure rarely causes major problems",
+                            "Consider pregnancy test before any X-rays/CT",
+                            "Emergency contraception within 120 hours (ulipristal 120h, levonorgestrel 72h)",
+                            "Immediate specialist obstetric input if concerns"
+                        ]
                     }
                 ]
             },
@@ -482,6 +504,183 @@ export class PregnancyDrugsManager {
                             }
                         ]
                     },
+                    // Gastrointestinal
+                    {
+                        category: "Gastrointestinal",
+                        list: [
+                            {
+                                name: "Misoprostol",
+                                examples: "Misoprostol",
+                                pregnancy: ["pregnancy_all"],
+                                breastfeeding: [],
+                                severity: "absolute",
+                                reason: "Potent uterotonic - causes uterine contractions, abortion, premature labour",
+                                alternatives: "Omeprazole, H2 antagonists for peptic ulcer disease"
+                            },
+                            {
+                                name: "Loperamide (high dose)",
+                                examples: "Loperamide >16mg daily",
+                                pregnancy: ["pregnancy_all"],
+                                breastfeeding: [],
+                                severity: "contraindicated", 
+                                reason: "Limited safety data at high doses, potential for withdrawal in neonate",
+                                alternatives: "Oral rehydration, dietary modification, low-dose loperamide if essential"
+                            },
+                            {
+                                name: "Magnesium trisilicate antacids",
+                                examples: "Magnesium trisilicate mixtures",
+                                pregnancy: ["pregnancy_all"],
+                                breastfeeding: [],
+                                severity: "contraindicated",
+                                reason: "Risk of renal stones and hypermagnasaemia with prolonged use",
+                                alternatives: "Calcium carbonate, Gaviscon, lifestyle modifications"
+                            }
+                        ]
+                    },
+                    // Respiratory
+                    {
+                        category: "Respiratory", 
+                        list: [
+                            {
+                                name: "Theophylline (high dose)",
+                                examples: "Theophylline >300mg daily",
+                                pregnancy: ["pregnancy_t3"],
+                                breastfeeding: ["breastfeeding"],
+                                severity: "caution",
+                                reason: "Neonatal irritability, apnoea, tachycardia if maternal levels high",
+                                alternatives: "Inhaled bronchodilators preferred (Salbutamol, Salmeterol)"
+                            },
+                            {
+                                name: "Pseudoephedrine",
+                                examples: "Pseudoephedrine, Phenylephrine",
+                                pregnancy: ["pregnancy_t1"],
+                                breastfeeding: ["breastfeeding"],
+                                severity: "contraindicated",
+                                reason: "Vasoconstriction, potential gastroschisis risk in 1st trimester",
+                                alternatives: "Saline nasal drops, steam inhalation, topical decongestants (short-term)"
+                            }
+                        ]
+                    },
+                    // Oncology & Chemotherapy
+                    {
+                        category: "Oncology & Chemotherapy",
+                        list: [
+                            {
+                                name: "Cytotoxic Chemotherapy",
+                                examples: "Cyclophosphamide, Doxorubicin, Cisplatin, 5-FU",
+                                pregnancy: ["pregnancy_all"],
+                                breastfeeding: ["breastfeeding"],
+                                severity: "absolute",
+                                reason: "Severe teratogenicity, fetal death, growth retardation, congenital malformations",
+                                alternatives: "Delay treatment if possible, specialist oncology input essential"
+                            },
+                            {
+                                name: "Tamoxifen",
+                                examples: "Tamoxifen",
+                                pregnancy: ["pregnancy_all"],
+                                breastfeeding: ["breastfeeding"],
+                                severity: "absolute", 
+                                reason: "Teratogenic - genital tract malformations, DES-like syndrome",
+                                alternatives: "Discontinue 2 months before conception, consider other hormonal therapies"
+                            }
+                        ]
+                    },
+                    // Hormones & Contraception
+                    {
+                        category: "Hormones & Contraception",
+                        list: [
+                            {
+                                name: "Combined Oral Contraceptive",
+                                examples: "Ethinylestradiol/Levonorgestrel, Microgynon",
+                                pregnancy: ["pregnancy_all"],
+                                breastfeeding: ["breastfeeding"],
+                                severity: "contraindicated",
+                                reason: "No benefit in pregnancy, potential masculinization of female fetus", 
+                                alternatives: "Discontinue if pregnancy suspected, progesterone-only methods while breastfeeding"
+                            },
+                            {
+                                name: "Testosterone",
+                                examples: "Testosterone gel, injections, patches",
+                                pregnancy: ["pregnancy_all"],
+                                breastfeeding: ["breastfeeding"],
+                                severity: "absolute",
+                                reason: "Masculinization of female fetus - ambiguous genitalia",
+                                alternatives: "N/A - contraindicated in women of childbearing potential"
+                            }
+                        ]
+                    },
+                    // Infectious Diseases
+                    {
+                        category: "Infectious Diseases",
+                        list: [
+                            {
+                                name: "Ribavirin",
+                                examples: "Ribavirin",
+                                pregnancy: ["pregnancy_all"],
+                                breastfeeding: ["breastfeeding"],
+                                severity: "absolute",
+                                reason: "Severe teratogen - embryocidal and teratogenic in all animal species tested",
+                                alternatives: "Avoid conception for 6 months after treatment, alternative antivirals"
+                            },
+                            {
+                                name: "Live Vaccines",
+                                examples: "MMR, Varicella, BCG, Yellow Fever",
+                                pregnancy: ["pregnancy_all"],
+                                breastfeeding: [],
+                                severity: "contraindicated",
+                                reason: "Theoretical risk of fetal infection from live attenuated organisms",
+                                alternatives: "Inactivated vaccines where available, delay until post-delivery"
+                            }
+                        ]
+                    },
+                    // Neurology
+                    {
+                        category: "Neurology",
+                        list: [
+                            {
+                                name: "Ergot Alkaloids",
+                                examples: "Ergotamine, Dihydroergotamine, Methysergide",
+                                pregnancy: ["pregnancy_all"],
+                                breastfeeding: ["breastfeeding"],
+                                severity: "absolute",
+                                reason: "Potent uterotonic activity - uterine contractions, fetal death",
+                                alternatives: "Triptans (Sumatriptan has most data), paracetamol, magnesium"
+                            },
+                            {
+                                name: "Vigabatrin",
+                                examples: "Vigabatrin",
+                                pregnancy: ["pregnancy_all"],
+                                breastfeeding: [],
+                                severity: "contraindicated",
+                                reason: "Retinal toxicity, teratogenic in animals - cleft palate, microphthalmia",
+                                alternatives: "Levetiracetam, lamotrigine (specialist review essential)"
+                            }
+                        ]
+                    },
+                    // Rheumatology & Autoimmune
+                    {
+                        category: "Rheumatology & Autoimmune",
+                        list: [
+                            {
+                                name: "Cyclophosphamide",
+                                examples: "Cyclophosphamide",
+                                pregnancy: ["pregnancy_all"],
+                                breastfeeding: ["breastfeeding"],
+                                severity: "absolute",
+                                reason: "Severe teratogen - growth retardation, CNS malformations, limb defects",
+                                alternatives: "Azathioprine, rituximab (specialist use), prednisolone"
+                            },
+                            {
+                                name: "JAK Inhibitors",
+                                examples: "Tofacitinib, Baricitinib, Upadacitinib",
+                                pregnancy: ["pregnancy_all"],
+                                breastfeeding: ["breastfeeding"],
+                                severity: "contraindicated",
+                                reason: "Limited human data, teratogenic in animal studies",
+                                alternatives: "Biologic DMARDs (Adalimumab, Etanercept), conventional DMARDs"
+                            }
+                        ]
+                    },
                     // Other Important Drugs
                     {
                         category: "Other Important Drugs",
@@ -503,6 +702,168 @@ export class PregnancyDrugsManager {
                                 severity: "contraindicated",
                                 reason: "Oxytoxic - uterine contractions, vasoconstriction",
                                 alternatives: "Paracetamol, Triptans (Sumatriptan has most data)"
+                            }
+                        ]
+                    },
+                    // Ophthalmology
+                    {
+                        category: "Ophthalmology",
+                        list: [
+                            {
+                                name: "Chloramphenicol (topical)",
+                                examples: "Chloramphenicol eye drops/ointment",
+                                pregnancy: ["pregnancy_all"],
+                                breastfeeding: ["breastfeeding"],
+                                severity: "contraindicated",
+                                reason: "Risk of aplastic anaemia (rare), Grey baby syndrome in neonates",
+                                alternatives: "Fusidic acid, Gentamicin drops, Azithromycin"
+                            },
+                            {
+                                name: "Prednisolone (topical)",
+                                examples: "Prednisolone eye drops",
+                                pregnancy: [],
+                                breastfeeding: [],
+                                severity: "safe",
+                                reason: "Minimal systemic absorption from topical use - generally safe",
+                                alternatives: "Use minimal effective dose and duration"
+                            }
+                        ]
+                    },
+                    // Dermatology Advanced
+                    {
+                        category: "Dermatology Advanced",
+                        list: [
+                            {
+                                name: "Topical Steroids (potent)",
+                                examples: "Clobetasol propionate, Betamethasone dipropionate",
+                                pregnancy: [],
+                                breastfeeding: [],
+                                severity: "caution",
+                                reason: "Potent steroids may have systemic effects if used extensively",
+                                alternatives: "Moderate potency steroids, emollients, minimize duration"
+                            },
+                            {
+                                name: "Calcipotriol",
+                                examples: "Calcipotriol (Dovonex)",
+                                pregnancy: [],
+                                breastfeeding: [],
+                                severity: "caution",
+                                reason: "Risk of hypercalcaemia with extensive use - theoretical teratogenic risk",
+                                alternatives: "Topical steroids, coal tar preparations"
+                            }
+                        ]
+                    },
+                    // Anaesthetics & Sedatives
+                    {
+                        category: "Anaesthetics & Sedatives",
+                        list: [
+                            {
+                                name: "Nitrous Oxide (prolonged)",
+                                examples: "Entonox (prolonged labour use), dental nitrous oxide",
+                                pregnancy: ["pregnancy_t1"],
+                                breastfeeding: [],
+                                severity: "caution",
+                                reason: "Prolonged exposure may interfere with DNA synthesis, teratogenic in animals",
+                                alternatives: "Regional anaesthesia, minimize exposure duration"
+                            },
+                            {
+                                name: "Propofol",
+                                examples: "Propofol",
+                                pregnancy: [],
+                                breastfeeding: [],
+                                severity: "safe",
+                                reason: "Commonly used in obstetric anaesthesia - no known teratogenic effects",
+                                alternatives: "Standard anaesthetic of choice in pregnancy"
+                            }
+                        ]
+                    },
+                    // Advanced Therapeutics
+                    {
+                        category: "Advanced Therapeutics",
+                        list: [
+                            {
+                                name: "Monoclonal Antibodies",
+                                examples: "Rituximab, Bevacizumab, Trastuzumab",
+                                pregnancy: ["pregnancy_all"],
+                                breastfeeding: ["breastfeeding"],
+                                severity: "contraindicated",
+                                reason: "Large molecules, limited data - potential for immunosuppression and organ development issues",
+                                alternatives: "Conventional chemotherapy with known pregnancy profiles where essential"
+                            },
+                            {
+                                name: "Aminosalicylates",
+                                examples: "Mesalazine, Olsalazine, Balsalazide",
+                                pregnancy: [],
+                                breastfeeding: [],
+                                severity: "safe",
+                                reason: "Generally safe for IBD maintenance - benefits outweigh risks",
+                                alternatives: "Continue treatment - disease control more important than drug risk"
+                            }
+                        ]
+                    },
+                    // Emergency & Critical Care
+                    {
+                        category: "Emergency & Critical Care",
+                        list: [
+                            {
+                                name: "Adrenaline/Epinephrine",
+                                examples: "Adrenaline auto-injectors (EpiPen), IV adrenaline",
+                                pregnancy: [],
+                                breastfeeding: [],
+                                severity: "safe",
+                                reason: "Life-saving in anaphylaxis - benefits far outweigh any theoretical risks",
+                                alternatives: "No alternatives for severe anaphylaxis - use without hesitation"
+                            },
+                            {
+                                name: "Atropine",
+                                examples: "Atropine",
+                                pregnancy: [],
+                                breastfeeding: [],
+                                severity: "safe",
+                                reason: "Crosses placenta but no evidence of harm - safe in emergencies",
+                                alternatives: "Essential emergency drug - use when indicated"
+                            },
+                            {
+                                name: "Amiodarone",
+                                examples: "Amiodarone",
+                                pregnancy: ["pregnancy_all"],
+                                breastfeeding: ["breastfeeding"],
+                                severity: "contraindicated",
+                                reason: "Fetal thyroid dysfunction, growth retardation, IUGR",
+                                alternatives: "DC cardioversion, other antiarrhythmics (flecainide, sotalol), β-blockers"
+                            }
+                        ]
+                    },
+                    // Vaccines & Immunizations
+                    {
+                        category: "Vaccines & Immunizations",
+                        list: [
+                            {
+                                name: "COVID-19 Vaccines (mRNA)",
+                                examples: "Pfizer-BioNTech, Moderna",
+                                pregnancy: [],
+                                breastfeeding: [],
+                                severity: "safe",
+                                reason: "Recommended in pregnancy - vaccines do not contain live virus, excellent safety data",
+                                alternatives: "Benefits outweigh risks - pregnant women at higher risk from COVID-19"
+                            },
+                            {
+                                name: "Influenza Vaccine",
+                                examples: "Inactivated influenza vaccine",
+                                pregnancy: [],
+                                breastfeeding: [],
+                                severity: "safe",
+                                reason: "Recommended in pregnancy (any trimester) - reduces maternal and neonatal morbidity",
+                                alternatives: "Annual vaccination strongly recommended"
+                            },
+                            {
+                                name: "Pertussis Vaccine",
+                                examples: "dTaP (combined diphtheria, tetanus, acellular pertussis)",
+                                pregnancy: [],
+                                breastfeeding: [],
+                                severity: "safe",
+                                reason: "Recommended 16-32 weeks (ideally 20-32 weeks) - maternal antibodies protect newborn",
+                                alternatives: "Essential for neonatal protection - give each pregnancy"
                             }
                         ]
                     }
@@ -1028,6 +1389,16 @@ export class PregnancyDrugsManager {
                     <li>💡 Methotrexate: STOP 3-6 months before conception + 5mg folic acid until after delivery</li>
                     <li>💡 Neonatal withdrawal can occur with prolonged opiate, SSRI, or benzodiazepine use</li>
                     <li>💡 ACE inhibitors/ARBs: Fetotoxic - switch to Methyldopa, Labetalol or Nifedipine BEFORE conception if possible</li>
+                    <li>💊 Physiological changes: ↑GFR, ↑cardiac output, ↓albumin, ↑progesterone → altered pharmacokinetics</li>
+                    <li>💊 Critical periods: Weeks 3-8 (organogenesis), weeks 8-15 (palatogenesis), throughout (growth/development)</li>
+                    <li>💊 Breastfeeding timing: Dose immediately after feeding to minimize infant exposure at next feed</li>
+                    <li>💊 Live vaccines contraindicated in pregnancy but most inactivated vaccines are safe and recommended</li>
+                    <li>💊 Insulin requirements typically ↑ 50-100% during pregnancy - frequent monitoring essential</li>
+                    <li>💊 Antiepileptic levels often ↓ in pregnancy due to increased clearance - monitor levels monthly</li>
+                    <li>💊 Psychiatric medications: Don't stop abruptly - risk of relapse often outweighs teratogenic risk</li>
+                    <li>💊 Emergency situations: Maternal life takes priority - use safest effective treatment</li>
+                    <li>💊 Herbal remedies not automatically safe - many lack safety data and have drug interactions</li>
+                    <li>💊 Smoking cessation: Nicotine replacement safer than continued smoking, but behavioural support first-line</li>
                 </ul>
             </div>
         `;
@@ -1117,10 +1488,6 @@ export class PregnancyDrugsManager {
                     <div class="preg-card__alt">
                         <div class="preg-card__alt-label">✅ Alternative</div>
                         <p class="preg-card__alt-text">${drug.alternatives}</p>
-                    </div>
-
-                    <div class="preg-card__footer">
-                        <span class="preg-card__cta">View full details →</span>
                     </div>
                 </div>
             </div>
