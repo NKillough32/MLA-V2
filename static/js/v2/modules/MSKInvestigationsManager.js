@@ -1374,3 +1374,6 @@ class MSKInvestigationsManager {
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = MSKInvestigationsManager;
 }
+
+// ES6 export
+export { MSKInvestigationsManager };
