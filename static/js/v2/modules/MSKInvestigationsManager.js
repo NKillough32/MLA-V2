@@ -22,283 +22,747 @@ class MSKInvestigationsManager {
     buildInvestigations() {
         return [
             {
-                badge: "🔬 Imaging",
-                title: "MSK Imaging Investigations",
-                summary: "Comprehensive guide to musculoskeletal imaging modalities and findings",
+                badge: "🔬 MSK Tests & Findings",
+                title: "MSK Investigations: Normal & Abnormal Findings",
+                summary: "Comprehensive guide to MSK tests, their normal values, abnormal findings, clinical significance, and management",
                 categories: [
                     {
-                        title: "Plain Radiographs (X-rays)",
+                        title: "🩸 Essential Laboratory Tests",
                         investigations: [
                             {
-                                name: "Cervical Spine X-ray",
-                                indications: "Neck trauma, chronic pain, neurological symptoms, rheumatoid arthritis screening",
-                                views: "AP, Lateral (C1-C7), Odontoid peg view, Flexion/Extension (if stable)",
+                                name: "ESR (Erythrocyte Sedimentation Rate)",
+                                normalRange: "Men: <age/2, Women: <(age+10)/2 mm/hr",
+                                indications: "Suspected inflammatory arthritis, infection, malignancy, temporal arteritis",
                                 abnormalFindings: {
-                                    "Loss of cervical lordosis": {
-                                        significance: "Muscle spasm, degenerative change, or structural abnormality",
-                                        causes: "Acute injury, chronic degeneration, inflammatory arthritis",
-                                        firstLine: "NSAIDs, physiotherapy, muscle relaxants if acute spasm"
+                                    "Elevated ESR (>50mm/hr)": {
+                                        significance: "Non-specific inflammatory response",
+                                        causes: "RA, PMR, infection, malignancy, renal disease, pregnancy",
+                                        firstLine: "Investigate underlying cause, repeat with CRP, clinical correlation essential"
                                     },
-                                    "Osteophytes": {
-                                        significance: "Degenerative change (cervical spondylosis)",
-                                        causes: "Age-related wear, previous injury, genetic predisposition",
-                                        firstLine: "Conservative management, NSAIDs, physiotherapy, activity modification"
-                                    },
-                                    "Joint space narrowing": {
-                                        significance: "Cartilage loss, facet joint arthritis",
-                                        causes: "Osteoarthritis, inflammatory arthritis, previous trauma",
-                                        firstLine: "Analgesia, physiotherapy, ergonomic assessment"
-                                    },
-                                    "Atlantoaxial subluxation": {
-                                        significance: "C1-C2 instability (>3mm adults, >5mm children)",
-                                        causes: "Rheumatoid arthritis, Down syndrome, trauma, infection",
-                                        firstLine: "URGENT orthopaedic/neurosurgical referral, immobilization"
+                                    "Very high ESR (>100mm/hr)": {
+                                        significance: "Suggests serious underlying pathology",
+                                        causes: "Temporal arteritis, malignancy, severe infection, myeloma",
+                                        firstLine: "URGENT further investigation, consider temporal artery biopsy if >50 years"
                                     }
                                 },
-                                redFlags: "Neurological deficit, high-velocity trauma, rheumatoid arthritis with new symptoms",
-                                limitations: "Poor soft tissue visualization, requires multiple views for adequacy"
+                                redFlags: "ESR >100mm/hr with visual symptoms - giant cell arteritis",
+                                limitations: "Affected by age, gender, anaemia, pregnancy - less specific than CRP"
                             },
                             {
-                                name: "Lumbar Spine X-ray",
-                                indications: "Low back pain >6 weeks, trauma, red flag symptoms, pre-surgical assessment",
-                                views: "AP and Lateral weight-bearing, Oblique if spondylolysis suspected",
+                                name: "CRP (C-Reactive Protein)",
+                                normalRange: "<3 mg/L (varies by lab)",
+                                indications: "Acute inflammation, infection, monitoring treatment response",
                                 abnormalFindings: {
-                                    "Disc space narrowing": {
-                                        significance: "Intervertebral disc degeneration",
-                                        causes: "Age, mechanical stress, genetic factors, previous injury",
-                                        firstLine: "Activity modification, physiotherapy, NSAIDs, weight management"
+                                    "Moderately elevated (3-50 mg/L)": {
+                                        significance: "Mild to moderate inflammatory response",
+                                        causes: "Viral infection, mild bacterial infection, inflammatory arthritis flare",
+                                        firstLine: "Clinical correlation, repeat in 1-2 weeks, investigate if persistent"
                                     },
-                                    "Spondylolisthesis": {
-                                        significance: "Forward slippage of vertebra (Grade I-V)",
-                                        causes: "Degenerative, isthmic (pars defect), dysplastic, traumatic",
-                                        firstLine: "Grade I-II: Conservative with physio. Grade III+: Surgical referral"
+                                    "Highly elevated (>50 mg/L)": {
+                                        significance: "Significant inflammatory process",
+                                        causes: "Bacterial infection, septic arthritis, severe inflammatory disease",
+                                        firstLine: "Investigate infection source, blood cultures, consider antibiotics"
                                     },
-                                    "Pars interarticularis defect": {
-                                        significance: "Stress fracture of neural arch (spondylolysis)",
-                                        causes: "Repetitive hyperextension (gymnastics, cricket fast bowling)",
-                                        firstLine: "Activity restriction, bracing, physiotherapy, gradual return"
-                                    },
-                                    "Schmorl's nodes": {
-                                        significance: "Disc herniation into vertebral body",
-                                        causes: "Developmental, trauma, degenerative change",
-                                        firstLine: "Usually asymptomatic - no specific treatment needed"
+                                    "Extreme elevation (>200 mg/L)": {
+                                        significance: "Severe infection or inflammatory response",
+                                        causes: "Sepsis, necrotizing fasciitis, severe bacterial infection",
+                                        firstLine: "URGENT investigation, broad-spectrum antibiotics, intensive monitoring"
                                     }
                                 },
-                                redFlags: "Cauda equina symptoms, progressive neurological deficit, suspected malignancy",
-                                limitations: "Cannot visualize discs, nerve roots, or soft tissues adequately"
+                                redFlags: "CRP >200 mg/L - sepsis protocol, immediate assessment",
+                                limitations: "Non-specific, can be normal in early infection or viral illness"
                             },
                             {
-                                name: "Hip X-ray",
-                                indications: "Hip pain, trauma, developmental dysplasia screening, arthritis assessment",
-                                views: "AP pelvis, Lateral hip (frog-leg or cross-table)",
+                                name: "Rheumatoid Factor (RF)",
+                                normalRange: "<15 IU/mL (varies by lab)",
+                                indications: "Suspected rheumatoid arthritis, Sjögren's syndrome, mixed connective tissue disease",
                                 abnormalFindings: {
-                                    "Joint space narrowing": {
-                                        significance: "Cartilage loss indicating osteoarthritis",
-                                        causes: "Primary OA, secondary to dysplasia/FAI, inflammatory arthritis",
-                                        firstLine: "Weight management, physiotherapy, NSAIDs, activity modification"
+                                    "Positive RF (>15 IU/mL)": {
+                                        significance: "Associated with rheumatoid arthritis but not specific",
+                                        causes: "RA (70%), Sjögren's, SLE, elderly (5%), chronic infections, liver disease",
+                                        firstLine: "Check anti-CCP antibodies, clinical assessment for RA criteria"
                                     },
-                                    "Acetabular dysplasia": {
-                                        significance: "Shallow socket predisposing to OA (CE angle <20°)",
-                                        causes: "Developmental, genetic factors, positioning in utero",
-                                        firstLine: "Activity modification, strengthening, orthopaedic referral if symptomatic"
-                                    },
-                                    "Femoroacetabular impingement": {
-                                        significance: "Cam (femoral) or Pincer (acetabular) morphology causing impingement",
-                                        causes: "Developmental, athletic activity, genetic predisposition",
-                                        firstLine: "Activity modification, physiotherapy, NSAIDs, consider arthroscopy"
-                                    },
-                                    "Neck of femur #": {
-                                        significance: "Fracture classification affects treatment (Garden, AO)",
-                                        causes: "Osteoporotic fragility fracture, high-energy trauma",
-                                        firstLine: "URGENT orthopaedic referral, analgesia, DVT prophylaxis"
+                                    "High-titre RF (>100 IU/mL)": {
+                                        significance: "More likely to be associated with RA, worse prognosis",
+                                        causes: "RA with erosive disease, extra-articular manifestations",
+                                        firstLine: "Early DMARD therapy, rheumatology referral, monitor for complications"
                                     }
                                 },
-                                redFlags: "Inability to weight bear, severe pain, suspected fracture, AVN risk factors",
-                                limitations: "Early AVN not visible, labral tears not seen"
+                                patterns: "Over 99% of patients with SLE are ANA positive, therefore it is a useful rule out test",
+                                limitations: "Present in 30% of RA patients, 5% of healthy elderly, non-specific"
                             },
                             {
-                                name: "Knee X-ray",
-                                indications: "Persistent knee pain, trauma (Ottawa rules), suspected arthritis, loose bodies",
-                                views: "AP, Lateral, Skyline/Sunrise (patellofemoral), Tunnel view (OCD)",
+                                name: "Anti-CCP Antibodies",
+                                normalRange: "<20 units (varies by lab)",
+                                indications: "Suspected RA, especially if RF negative, prognostic information",
                                 abnormalFindings: {
-                                    "Tibiofemoral joint space narrowing": {
-                                        significance: "Medial/lateral compartment osteoarthritis",
-                                        causes: "Primary OA, meniscal tear, previous injury, malalignment",
-                                        firstLine: "Physiotherapy, weight management, NSAIDs, activity modification"
+                                    "Positive anti-CCP": {
+                                        significance: "Highly specific for RA (95% specificity)",
+                                        causes: "RA - associated with more aggressive, erosive disease",
+                                        firstLine: "Early aggressive DMARD therapy, rheumatology referral within 6 weeks"
                                     },
-                                    "Patellofemoral arthritis": {
-                                        significance: "Cartilage loss behind patella/trochlear groove",
-                                        causes: "Maltracking, previous dislocation, overuse, genetics",
-                                        firstLine: "Quadriceps strengthening, patella taping, activity modification"
-                                    },
-                                    "Osteochondritis dissecans": {
-                                        significance: "Subchondral bone necrosis with overlying cartilage damage",
-                                        causes: "Repetitive microtrauma, vascular insufficiency, genetic factors",
-                                        firstLine: "Activity restriction, physiotherapy, orthopaedic referral"
-                                    },
-                                    "Loose bodies": {
-                                        significance: "Free bone/cartilage fragments causing mechanical symptoms",
-                                        causes: "Osteochondral fracture, arthritis, synovial chondromatosis",
-                                        firstLine: "Arthroscopic removal if symptomatic, physiotherapy"
+                                    "High-titre anti-CCP": {
+                                        significance: "Increased risk of joint damage and extra-articular features",
+                                        causes: "RA with poor prognosis, higher disease activity",
+                                        firstLine: "Combination DMARD therapy, biological agents consideration"
                                     }
                                 },
-                                redFlags: "Unable to straight leg raise, severe effusion, suspected fracture, locked knee",
-                                limitations: "Meniscal tears invisible, cruciate ligament integrity not assessed"
+                                limitations: "Can precede clinical RA by years, expensive test"
+                            },
+                            {
+                                name: "Bone Profile (Calcium, Phosphate, ALP, PTH)",
+                                normalRange: "Ca: 2.2-2.6 mmol/L, PO4: 0.8-1.4 mmol/L, ALP: 30-130 U/L, PTH: 1.1-6.8 pmol/L",
+                                indications: "Suspected metabolic bone disease, monitoring bisphosphonate therapy",
+                                abnormalFindings: {
+                                    "Low Ca, Low PO4, Raised ALP, Raised PTH": {
+                                        significance: "Classic pattern of osteomalacia",
+                                        causes: "Vitamin D deficiency, malabsorption, renal disease, dietary insufficiency",
+                                        firstLine: "Vitamin D replacement, investigate underlying cause, bone protection"
+                                    },
+                                    "Hypercalcemia": {
+                                        significance: "May indicate malignancy, hyperparathyroidism, or granulomatous disease",
+                                        causes: "Malignancy (most common), primary hyperparathyroidism, sarcoidosis, vitamin D toxicity",
+                                        firstLine: "URGENT investigation if >3.0 mmol/L, PTH levels, imaging for malignancy"
+                                    }
+                                },
+                                redFlags: "Hypocalcemia/vitamin D deficiency should be corrected before giving bisphosphonates",
+                                limitations: "Multiple factors affect bone metabolism"
+                            },
+                            {
+                                name: "Joint Aspiration & Synovial Fluid Analysis",
+                                normalRange: "Clear, colourless, <200 WBC/μL, no crystals, negative culture",
+                                indications: "Suspected septic arthritis, gout, pseudogout, inflammatory arthritis",
+                                abnormalFindings: {
+                                    "Purulent fluid, >50,000 WBC/μL": {
+                                        significance: "Septic arthritis until proven otherwise",
+                                        causes: "Bacterial infection (S. aureus most common), gonorrhea in young adults",
+                                        firstLine: "URGENT IV antibiotics (flucloxacillin), surgical washout, joint protection"
+                                    },
+                                    "Needle-shaped, negatively birefringent crystals": {
+                                        significance: "Monosodium urate crystals - confirms gout",
+                                        causes: "Hyperuricemia, dietary factors, genetics, medications",
+                                        firstLine: "Colchicine if NSAIDs contraindicated, then allopurinol after first attack"
+                                    },
+                                    "Rod-shaped, positively birefringent crystals": {
+                                        significance: "Calcium pyrophosphate crystals - pseudogout/chondrocalcinosis",
+                                        causes: "Age, previous trauma, haemochromatosis, hyperparathyroidism",
+                                        firstLine: "NSAIDs, colchicine, intra-articular steroids, treat underlying causes"
+                                    },
+                                    "High WBC, predominantly PMNs, yellow cloudy": {
+                                        significance: "Inflammatory arthritis (RA pattern)",
+                                        causes: "RA, seronegative arthritis, crystal arthropathy",
+                                        firstLine: "Joint aspirate shows high WBC count, predominantly PMNs with absence of crystals"
+                                    }
+                                },
+                                redFlags: "In young adults with septic arthritis, Neisseria gonorrhoeae is the most common organism",
+                                limitations: "Technical skill required, infection risk, may need repeat sampling"
                             }
                         ]
                     },
                     {
-                        title: "Advanced Imaging",
+                        title: "📸 Essential Imaging Tests",
                         investigations: [
                             {
-                                name: "MRI Spine",
-                                indications: "Neurological deficit, failed conservative treatment >6 weeks, red flags, surgical planning",
-                                sequences: "T1, T2, STIR sagittal + T2 axial, +/- gadolinium if infection/tumor suspected",
+                                name: "X-rays (Plain Radiographs)",
+                                normalRange: "Normal bone density, joint space preservation, no fractures or deformity",
+                                indications: "Trauma evaluation, arthritis assessment, bone pain, deformity",
+                                views: "Minimum 2 views (AP & lateral), additional oblique/specialized views as needed",
                                 abnormalFindings: {
-                                    "Disc prolapse/herniation": {
-                                        significance: "Disc material compressing neural structures",
-                                        causes: "Degenerative, acute injury, genetic predisposition",
-                                        firstLine: "Conservative: physio, NSAIDs, neuropathic pain agents, epidural injection"
+                                    "Fracture": {
+                                        significance: "Bone discontinuity requiring specific management based on location/type",
+                                        causes: "Trauma, osteoporosis, pathological (malignancy, infection)",
+                                        firstLine: "Immobilization, analgesia, orthopedic referral. Fall onto outstretched hand (FOOSH) commonly results in Colle's fracture"
+                                    },
+                                    "Joint space narrowing": {
+                                        significance: "Cartilage loss indicating osteoarthritis progression",
+                                        causes: "Age-related degeneration, previous trauma, inflammatory arthritis",
+                                        firstLine: "Activity modification, physiotherapy, NSAIDs, weight management"
+                                    },
+                                    "Osteophytes": {
+                                        significance: "Bone spurs indicating degenerative joint disease",
+                                        causes: "Chronic joint stress, age-related wear, genetic factors",
+                                        firstLine: "Conservative management unless causing mechanical symptoms"
+                                    },
+                                    "Erosions": {
+                                        significance: "Bone destruction typical of inflammatory arthritis",
+                                        causes: "RA, psoriatic arthritis, infection, crystal arthropathy",
+                                        firstLine: "Urgent rheumatology referral, early DMARD therapy"
+                                    },
+                                    "Sacroiliitis": {
+                                        significance: "Inflammation of sacroiliac joints - ankylosing spondylitis",
+                                        causes: "HLA-B27 associated spondyloarthropathy",
+                                        firstLine: "Diagnosis of ankylosing spondylitis can be best supported by sacro-ilitis on pelvic X-ray"
+                                    },
+                                    "Subchondral sclerosis and squaring of lumbar vertebrae": {
+                                        significance: "Ankylosing spondylitis - x-ray findings",
+                                        causes: "Chronic inflammatory spondyloarthropathy with syndesmophyte formation",
+                                        firstLine: "NSAIDs, physiotherapy, anti-TNF therapy, spine mobility exercises"
+                                    }
+                                },
+                                redFlags: "X-rays should not be taken of obvious ankle injuries if neurovascular compromise is present - immediate reduction/stabilisation instead",
+                                limitations: "Poor soft tissue detail, may miss early changes, 2D representation of 3D structure"
+                            },
+                            {
+                                name: "MRI Scanning",
+                                normalRange: "Normal signal intensity, no structural abnormalities, intact soft tissues",
+                                indications: "Soft tissue injury, spinal pathology, early arthritis, osteomyelitis",
+                                sequences: "T1, T2, STIR/fat-sat sequences, gadolinium enhancement when indicated",
+                                abnormalFindings: {
+                                    "Meniscal tear": {
+                                        significance: "Horizontal, vertical, or complex tear affecting knee function",
+                                        causes: "Acute injury (young), degenerative (>40), associated with ACL injury",
+                                        firstLine: "MRI is the most appropriate imaging modality to diagnose meniscal tears"
+                                    },
+                                    "Bone marrow oedema": {
+                                        significance: "High signal on STIR indicating bone stress, infection, or malignancy",
+                                        causes: "Acute trauma, stress fracture, osteomyelitis, bone tumours",
+                                        firstLine: "Investigate underlying cause, activity modification, specific treatment based on aetiology"
+                                    },
+                                    "Osteomyelitis changes": {
+                                        significance: "Bone infection with marrow oedema and enhancement",
+                                        causes: "Staphylococcus aureus most common, haematogenous or direct spread",
+                                        firstLine: "Osteomyelitis: MRI is the imaging modality of choice. Long-term IV antibiotics"
+                                    },
+                                    "Disc degeneration/herniation": {
+                                        significance: "Intervertebral disc pathology causing nerve compression",
+                                        causes: "Age-related degeneration, trauma, genetic factors",
+                                        firstLine: "Conservative management initially, surgical referral if neurological deficit"
                                     },
                                     "Spinal stenosis": {
                                         significance: "Narrowing of spinal canal causing neurogenic claudication",
-                                        causes: "Degenerative (ligamentum flavum hypertrophy), congenital, spondylolisthesis",
-                                        firstLine: "Physiotherapy, activity modification, epidural injections, surgical decompression"
-                                    },
-                                    "Modic changes": {
-                                        significance: "Vertebral endplate changes (Type I-III indicating inflammation/sclerosis)",
-                                        causes: "Degenerative disc disease, biomechanical stress, possible infection",
-                                        firstLine: "Type I: Anti-TNF therapy consideration, physio. Type II/III: Conservative"
-                                    },
-                                    "Cord compression": {
-                                        significance: "Spinal cord signal change with compression",
-                                        causes: "Disc herniation, tumor, hematoma, abscess, stenosis",
-                                        firstLine: "URGENT neurosurgical referral, high-dose steroids if acute"
+                                        causes: "Degenerative changes, ligamentum flavum hypertrophy, disc bulging",
+                                        firstLine: "Activity modification, physiotherapy, epidural injections, surgical decompression"
                                     }
                                 },
-                                redFlags: "Myelopathy signs, cauda equina syndrome, progressive neurological deficit",
-                                limitations: "Contraindicated with some implants, claustrophobia, cost"
+                                redFlags: "Back pain with previous history of cancer is a red flag",
+                                limitations: "Expensive, contraindications (pacemakers, claustrophobia), may show incidental findings"
                             },
                             {
-                                name: "MRI Shoulder",
-                                indications: "Rotator cuff pathology, instability, persistent pain, pre-arthroscopy planning",
-                                sequences: "Oblique coronal/sagittal T1, T2, PD fat-sat, +/- arthrogram for labral tears",
+                                name: "Ultrasound MSK",
+                                normalRange: "Normal echogenicity, intact tendons/ligaments, no fluid collections",
+                                indications: "Tendon pathology, guided injections, dynamic assessment, soft tissue masses",
+                                technique: "High-frequency probe, multiple planes, dynamic assessment with movement",
                                 abnormalFindings: {
+                                    "Tendinopathy": {
+                                        significance: "Tendon thickening with hypoechoic areas and possible tears",
+                                        causes: "Overuse, aging, biomechanical factors, systemic disease",
+                                        firstLine: "Load management, eccentric exercises, activity modification"
+                                    },
+                                    "Achilles rupture": {
+                                        significance: "Complete or partial discontinuity of Achilles tendon",
+                                        causes: "Acute loading of deconditioned tendon, fluoroquinolone use",
+                                        firstLine: "Ultrasound is the initial imaging modality of choice for suspected Achilles tendon rupture"
+                                    },
                                     "Rotator cuff tear": {
-                                        significance: "Partial or full thickness tear affecting function",
-                                        causes: "Degenerative, acute trauma, impingement, chronic overuse",
-                                        firstLine: "Physiotherapy, NSAIDs, steroid injection, surgery if full thickness >1cm"
+                                        significance: "Partial or full thickness tear affecting shoulder function",
+                                        causes: "Degeneration, impingement, acute trauma, chronic overuse",
+                                        firstLine: "Physiotherapy for partial tears, surgical consideration for full thickness tears"
                                     },
-                                    "Subacromial impingement": {
-                                        significance: "Narrowed subacromial space causing pain",
-                                        causes: "Acromial morphology, rotator cuff weakness, overuse",
-                                        firstLine: "Physiotherapy (scapular stabilization), activity modification, injection"
-                                    },
-                                    "Labral tear": {
-                                        significance: "SLAP lesion or Bankart lesion affecting stability",
-                                        causes: "Trauma, repetitive overhead activity, degenerative",
-                                        firstLine: "Physiotherapy, activity modification, arthroscopic repair if unstable"
-                                    },
-                                    "Frozen shoulder": {
-                                        significance: "Capsular thickening and inflammation",
-                                        causes: "Idiopathic, diabetes, thyroid disease, immobilization",
-                                        firstLine: "Early mobilization, steroid injection, physiotherapy, patience (2-3 years)"
+                                    "Joint effusion": {
+                                        significance: "Fluid within joint space indicating inflammation or injury",
+                                        causes: "Trauma, infection, inflammatory arthritis, crystal arthropathy",
+                                        firstLine: "Investigate underlying cause, consider aspiration if large volume"
                                     }
                                 },
-                                redFlags: "Acute complete tear in young patient, neurological symptoms, infection signs",
-                                limitations: "Arthrogram needed for small labral tears, patient positioning important"
-                            },
-                            {
-                                name: "MRI Knee",
-                                indications: "Meniscal/ligament injury, persistent effusion, osteochondral lesions, pre-arthroscopy",
-                                sequences: "Sagittal PD, T2 fat-sat, Coronal PD fat-sat, Axial T2 fat-sat",
-                                abnormalFindings: {
-                                    "ACL tear": {
-                                        significance: "Complete/partial rupture affecting knee stability",
-                                        causes: "Non-contact pivoting injury, direct trauma, degenerative in older patients",
-                                        firstLine: "RICE, physiotherapy, functional bracing, surgical reconstruction if active"
-                                    },
-                                    "Meniscal tear": {
-                                        significance: "Horizontal, vertical, or complex tear affecting function",
-                                        causes: "Acute injury (young), degenerative (>40), associated with ACL injury",
-                                        firstLine: "Conservative if degenerative, arthroscopic repair if traumatic and repairable"
-                                    },
-                                    "Bone marrow edema": {
-                                        significance: "High signal on STIR indicating bone stress/injury",
-                                        causes: "Acute trauma, stress fracture, AVN, infection, tumour",
-                                        firstLine: "Activity modification, analgesia, investigate underlying cause"
-                                    },
-                                    "Baker's cyst": {
-                                        significance: "Popliteal cyst often associated with intra-articular pathology",
-                                        causes: "Knee effusion, meniscal tear, arthritis causing one-way valve effect",
-                                        firstLine: "Treat underlying knee pathology, aspiration if large, physiotherapy"
-                                    }
-                                },
-                                redFlags: "Suspected fracture, infection, tumour, acute locked knee",
-                                limitations: "Motion artifact, metallic implants cause artifact"
+                                redFlags: "Signs of infection, complete tendon rupture in active individuals",
+                                limitations: "Operator dependent, limited penetration, cannot assess deep structures well"
                             }
                         ]
                     },
                     {
-                        title: "Ultrasound MSK",
+                        title: "⚠️ Red Flag Investigations",
                         investigations: [
                             {
-                                name: "Shoulder Ultrasound",
-                                indications: "Rotator cuff assessment, guided injections, dynamic evaluation, cost-effective imaging",
-                                technique: "High-frequency probe, multiple planes, dynamic assessment with movement",
+                                name: "DEXA Scan (Bone Density)",
+                                normalRange: "T-score >-1.0 (normal), -1.0 to -2.5 (osteopenia), <-2.5 (osteoporosis)",
+                                indications: "Fracture risk assessment, monitoring osteoporosis treatment",
                                 abnormalFindings: {
-                                    "Rotator cuff tendinosis": {
-                                        significance: "Thickened, heterogeneous tendon without tear",
-                                        causes: "Overuse, aging, repetitive microtrauma, poor posture",
-                                        firstLine: "Load management, eccentric strengthening, NSAIDs, activity modification"
+                                    "Osteoporosis (T-score <-2.5)": {
+                                        significance: "Increased fracture risk, especially spine and hip",
+                                        causes: "Post-menopause, steroid use, age, genetics, lifestyle factors",
+                                        firstLine: "A postmenopausal woman who's had an osteoporotic vertebral fracture should be started on a bisphosphonate straight away - don't wait for a DEXA scan"
                                     },
-                                    "Subacromial bursitis": {
-                                        significance: "Thickened, inflamed bursa with or without effusion",
-                                        causes: "Impingement, overuse, crystal arthropathy, infection (rare)",
-                                        firstLine: "Rest, NSAIDs, physiotherapy, steroid injection if severe"
-                                    },
-                                    "Calcific tendinitis": {
-                                        significance: "Calcium deposits within tendon (usually supraspinatus)",
-                                        causes: "Degenerative process, metabolic factors, genetic predisposition",
-                                        firstLine: "NSAIDs, physiotherapy, steroid injection, shock wave therapy, needling"
-                                    },
-                                    "Biceps tendinopathy": {
-                                        significance: "Thickening/tear of long head of biceps in bicipital groove",
-                                        causes: "Overuse, impingement, SLAP lesion, degenerative change",
-                                        firstLine: "Activity modification, physiotherapy, injection, surgery if unstable"
+                                    "Fragility fracture": {
+                                        significance: "Fracture from minimal trauma indicating underlying bone weakness",
+                                        causes: "Osteoporosis, osteomalacia, malignancy, hyperparathyroidism",
+                                        firstLine: "Start alendronate in patients ≥75 years following a fragility fracture, without waiting for a DEXA scan"
                                     }
                                 },
-                                redFlags: "Complete rotator cuff tear in young patient, signs of infection",
-                                limitations: "Operator dependent, limited by patient habitus, bone shadowing"
+                                patterns: "Fragility fracture risk scores (QFracture/FRAX) can be used to guide the need for DEXA scanning",
+                                redFlags: "Bisphosphonates are associated with an increased risk of atypical stress fractures"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                badge: "🎯 Clinical Management Pearls",
+                title: "Essential MSK Clinical Management",
+                summary: "Critical clinical decision-making points and evidence-based management strategies",
+                categories: [
+                    {
+                        title: "🦴 Fracture & Trauma Management",
+                        investigations: [
+                            {
+                                name: "Ankle Injury Assessment",
+                                indications: "Ankle trauma, pain, swelling, inability to bear weight",
+                                patterns: "Ottawa ankle rules: bony tenderness over the malleoli zones OR an inability to walk four weight-bearing steps",
+                                abnormalFindings: {
+                                    "Ankle fracture": {
+                                        significance: "Disruption of ankle mortise requiring urgent reduction",
+                                        causes: "Inversion injury, high energy trauma, rotational forces",
+                                        firstLine: "It is important to reduce an ankle fracture as soon as possible due to risk of damage to the skin"
+                                    },
+                                    "Ankle sprain": {
+                                        significance: "Ligament injury, most commonly lateral ligament complex",
+                                        causes: "Inversion of the foot is the most common mechanism of ankle sprain",
+                                        firstLine: "RICE protocol, functional rehabilitation, consider physiotherapy"
+                                    }
+                                },
+                                redFlags: "Neurovascular compromise requires immediate reduction, open fractures need urgent orthopaedic input"
                             },
                             {
-                                name: "Achilles Ultrasound",
-                                indications: "Posterior heel pain, suspected rupture, tendinopathy assessment, guided injection",
-                                technique: "High-frequency probe, longitudinal and transverse views, compare with contralateral",
+                                name: "Hip Fracture Management",
+                                indications: "Hip pain after fall, inability to weight bear, shortened externally rotated leg",
+                                patterns: "Intracapsular vs extracapsular location affects blood supply and treatment choice",
                                 abnormalFindings: {
-                                    "Achilles tendinopathy": {
-                                        significance: "Thickened tendon with hypoechoic areas and neovascularisation",
-                                        causes: "Overuse, training errors, biomechanical factors, fluoroquinolones",
-                                        firstLine: "Load management, eccentric strengthening, heel raise, activity modification"
+                                    "Intertrochanteric fracture": {
+                                        significance: "Extracapsular fracture with good blood supply",
+                                        causes: "Osteoporotic bone, fall from standing height, elderly population",
+                                        firstLine: "Dynamic hip screws are the preferred surgical management for intertrochanteric (extracapsular) proximal femoral fracture"
                                     },
-                                    "Achilles rupture": {
-                                        significance: "Complete or partial discontinuity of tendon fibres",
-                                        causes: "Acute loading of deconditioned tendon, steroid use, fluoroquinolones",
-                                        firstLine: "Partial: Conservative with boot. Complete: Surgical repair vs conservative"
-                                    },
-                                    "Retrocalcaneal bursitis": {
-                                        significance: "Inflamed bursa between Achilles and calcaneus",
-                                        causes: "Shoe irritation, Haglund's deformity, inflammatory arthritis",
-                                        firstLine: "Heel pads, shoe modification, NSAIDs, injection if severe"
-                                    },
-                                    "Insertional tendinopathy": {
-                                        significance: "Degenerative change at bone-tendon junction with calcification",
-                                        causes: "Mechanical overload, Haglund's deformity, inflammatory conditions",
-                                        firstLine: "Activity modification, heel lifts, eccentric exercises, shock wave therapy"
+                                    "Sciatic nerve injury": {
+                                        significance: "Complication affecting foot dorsiflexion and sensation",
+                                        causes: "Posterior hip dislocation, surgical trauma, prolonged pressure",
+                                        firstLine: "Sciatic nerve injury is a common complication of posterior hip dislocation"
                                     }
                                 },
-                                redFlags: "Complete rupture needing surgical consideration, suspected infection",
-                                limitations: "Cannot assess intrasubstance tears as well as MRI"
+                                redFlags: "Compartment syndrome most commonly associated with supracondylar and tibial shaft fractures"
+                            },
+                            {
+                                name: "Scaphoid Fracture",
+                                indications: "Wrist pain after FOOSH injury, anatomical snuffbox tenderness",
+                                patterns: "High risk of non-union due to retrograde blood supply",
+                                abnormalFindings: {
+                                    "Suspected scaphoid fracture": {
+                                        significance: "May not be visible on initial X-rays, high non-union risk",
+                                        causes: "Fall onto outstretched hand, forced dorsiflexion of wrist",
+                                        firstLine: "In the emergency department, suspected scaphoid fractures should be managed with immobilisation using a Futuro splint or standard below-elbow backslab before specialist review"
+                                    }
+                                },
+                                redFlags: "Delayed diagnosis leads to non-union and long-term disability"
+                            },
+                            {
+                                name: "Rib Fractures",
+                                indications: "Chest trauma, localized chest wall pain, respiratory compromise",
+                                patterns: "Most are managed conservatively, complications include pneumothorax and flail chest",
+                                abnormalFindings: {
+                                    "Simple rib fractures": {
+                                        significance: "Usually heal well with conservative management",
+                                        causes: "Direct trauma, coughing fits in elderly, pathological fractures",
+                                        firstLine: "The majority of simple rib fractures are managed conservatively"
+                                    },
+                                    "Multiple rib fractures": {
+                                        significance: "Risk of respiratory compromise and complications",
+                                        causes: "High energy trauma, elderly osteoporotic bone",
+                                        firstLine: "Nerve blocks may be considered if a rib fracture is not controlled by normal analgesia"
+                                    }
+                                },
+                                patterns: "Marfan's syndrome is associated with repeated pneumothoraces"
+                            }
+                        ]
+                    },
+                    {
+                        title: "💊 Arthritis & Inflammatory Management",
+                        title: "💊 Arthritis & Inflammatory Management",
+                        investigations: [
+                            {
+                                name: "Rheumatoid Arthritis Management",
+                                indications: "Symmetrical polyarthritis, morning stiffness >1hr, positive RF/anti-CCP",
+                                patterns: "Early aggressive treatment improves long-term outcomes",
+                                abnormalFindings: {
+                                    "New diagnosis RA": {
+                                        significance: "Autoimmune inflammatory arthritis requiring immediate treatment",
+                                        causes: "Genetic predisposition, environmental triggers, molecular mimicry",
+                                        firstLine: "Rheumatoid arthritis: initial management is conventional DMARD monotherapy (usually methotrexate), often with short-term bridging corticosteroid"
+                                    },
+                                    "RA flare": {
+                                        significance: "Increased disease activity requiring anti-inflammatory treatment",
+                                        causes: "Inadequate disease control, stress, infection, medication non-compliance",
+                                        firstLine: "Intramuscular steroids such as methylprednisolone are used to manage the acute flares of rheumatoid arthritis"
+                                    },
+                                    "Bilateral carpal tunnel syndrome": {
+                                        significance: "Common complication of RA due to synovial inflammation",
+                                        causes: "Synovial thickening in carpal tunnel, joint deformities",
+                                        firstLine: "Rheumatoid arthritis is a common cause of bilateral carpal tunnel syndrome"
+                                    },
+                                    "Methotrexate monitoring": {
+                                        significance: "Essential to prevent serious side effects",
+                                        causes: "Hepatotoxicity, myelosuppression, mucositis potential",
+                                        firstLine: "Methotrexate may cause hepatotoxicity - monitor LFTs. Prescribing folate with methotrexate reduces the risk of myelosuppression"
+                                    }
+                                },
+                                redFlags: "It is important to perform a chest X-ray to look for TB prior to starting biologics for rheumatoid arthritis as they can cause reactivation",
+                                patterns: "Folinic acid is the treatment of choice for methotrexate toxicity"
+                            },
+                            {
+                                name: "Gout Management", 
+                                indications: "1st metatarsophalangeal (MTP) joint pain and swelling → ? gout",
+                                patterns: "Acute treatment different from long-term prevention",
+                                abnormalFindings: {
+                                    "Acute gout attack": {
+                                        significance: "Intense inflammatory response to uric acid crystals",
+                                        causes: "Hyperuricemia, dietary triggers, dehydration, medications",
+                                        firstLine: "Colchicine should be used to treat acute gout if NSAIDs are contraindicated for example a peptic ulcer"
+                                    },
+                                    "First gout attack": {
+                                        significance: "High likelihood of recurrence without prevention",
+                                        causes: "Uric acid overproduction or underexcretion",
+                                        firstLine: "Offer allopurinol to all patients after their first attack of gout"
+                                    },
+                                    "Reactive arthritis": {
+                                        significance: "Post-infectious arthritis, not typically acute onset",
+                                        causes: "Previous GI or GU infection, HLA-B27 association",
+                                        firstLine: "Reactive arthritis is not typically acute - it can develop up to 4 weeks after precipitating infection and can run a relapsing-remitting course over several months. Acute reactive arthritis can be treated with NSAIDs, as long as there are no contraindications"
+                                    }
+                                },
+                                patterns: "Haemochromatosis is a risk factor for pseudogout"
+                            },
+                            {
+                                name: "Osteoarthritis Management",
+                                indications: "Joint pain worse with activity, morning stiffness <30 minutes, crepitus",
+                                patterns: "Conservative management first-line, topical before oral NSAIDs",
+                                abnormalFindings: {
+                                    "Hand osteoarthritis": {
+                                        significance: "Common pattern affecting specific joints",
+                                        causes: "Age, genetics, previous trauma, occupational factors",
+                                        firstLine: "Carpometacarpal and distal interphalangeal joint involvement is characteristic of hand osteoarthritis. Squaring of the thumbs is a characteristic feature"
+                                    },
+                                    "Knee osteoarthritis": {
+                                        significance: "Weight-bearing joint requiring specific management approach",
+                                        causes: "Age, obesity, previous injury, mechanical alignment",
+                                        firstLine: "Knee osteoarthritis - topical NSAIDs are first-line"
+                                    }
+                                },
+                                patterns: "Bouchard's nodes (PIP) and Heberden's nodes (DIP) are characteristic of hand OA"
+                            },
+                            {
+                                name: "Psoriatic Arthritis",
+                                indications: "Asymmetrical arthritis, psoriatic skin changes, nail involvement",
+                                patterns: "Several patterns: oligoarticular, polyarticular, axial, distal",
+                                abnormalFindings: {
+                                    "Moderate/severe psoriatic arthropathy": {
+                                        significance: "Progressive joint destruction requiring DMARD therapy",
+                                        causes: "Autoimmune process affecting skin and joints",
+                                        firstLine: "Moderate/severe psoriatic arthropathy → methotrexate"
+                                    }
+                                },
+                                redFlags: "Erosive arthritis, axial involvement, severe skin disease"
+                            },
+                            {
+                                name: "Ankylosing Spondylitis",
+                                indications: "Inflammatory back pain, morning stiffness, young male",
+                                patterns: "Progressive spinal fusion, HLA-B27 positive in 90%",
+                                abnormalFindings: {
+                                    "Clinical findings": {
+                                        significance: "Reduced spine mobility in multiple planes",
+                                        causes: "Chronic inflammation leading to ankylosis",
+                                        firstLine: "Clinical findings in ankylosing spondylitis include reduced chest expansion, reduced lateral flexion and reduced forward flexion (Schober's test)"
+                                    },
+                                    "Radiological changes": {
+                                        significance: "Structural changes confirming diagnosis",
+                                        causes: "Chronic enthesitis and syndesmophyte formation",
+                                        firstLine: "Ankylosing spondylitis - x-ray findings: subchondral erosions, sclerosis and squaring of lumbar vertebrae"
+                                    }
+                                },
+                                patterns: "Diagnosis of ankylosing spondylitis can be best supported by sacro-ilitis on a pelvic X-ray"
+                            },
+                            {
+                                name: "Giant Cell Arteritis",
+                                indications: "Temporal headache, jaw claudication, visual symptoms, age >50",
+                                patterns: "Medical emergency if visual symptoms present",
+                                abnormalFindings: {
+                                    "Suspected GCA": {
+                                        significance: "Risk of permanent visual loss if untreated",
+                                        causes: "Large vessel vasculitis, genetic and environmental factors",
+                                        firstLine: "Glucocorticoids should be given once a diagnosis of giant cell arteritis is suspected - don't wait for the temporal artery biopsy etc"
+                                    },
+                                    "Visual loss": {
+                                        significance: "Anterior ischemic optic neuropathy - ophthalmological emergency",
+                                        causes: "Arterial occlusion due to giant cell arteritis",
+                                        firstLine: "Patients with suspected visual loss secondary to giant cell arteritis are usually given IV methylprednisolone initially. Anterior ischemic optic neuropathy - fundoscopy typically shows a swollen pale disc and blurred margins"
+                                    }
+                                },
+                                redFlags: "Visual symptoms, jaw claudication, ESR >100 in elderly patient"
+                            }
+                        ]
+                    },
+                    {
+                        title: "🚨 Septic Arthritis & Infection",
+                        investigations: [
+                            {
+                                name: "Septic Arthritis Management",
+                                indications: "Hot, swollen, tender joint, fever, systemic upset",
+                                patterns: "Joint destruction occurs rapidly, early treatment crucial",
+                                abnormalFindings: {
+                                    "Suspected septic arthritis": {
+                                        significance: "Joint destruction within hours, medical emergency",
+                                        causes: "Staphylococcus aureus most common, haematogenous or direct spread",
+                                        firstLine: "Septic arthritis: IV flucloxacillin"
+                                    },
+                                    "Young adult septic arthritis": {
+                                        significance: "Different organism profile in sexually active adults",
+                                        causes: "Neisseria gonorrhoeae more common in young adults",
+                                        firstLine: "In young adults with septic arthritis, Neisseria gonorrhoeae is the most common organism found"
+                                    }
+                                },
+                                redFlags: "Any red, hot, swollen joint requires urgent assessment and joint aspiration"
+                            },
+                            {
+                                name: "Osteomyelitis & Discitis",
+                                indications: "Bone pain, fever, systemic upset, risk factors for infection",
+                                patterns: "Chronic infection requiring prolonged antibiotic therapy",
+                                abnormalFindings: {
+                                    "Osteomyelitis": {
+                                        significance: "Bone infection requiring early recognition and treatment",
+                                        causes: "Staphylococcus aureus is the most common cause of osteomyelitis",
+                                        firstLine: "Long-term IV antibiotics, surgical debridement if indicated"
+                                    },
+                                    "Discitis": {
+                                        significance: "Spinal infection that can cause cord compression",
+                                        causes: "Staphylococcus aureus is the most common cause of discitis",
+                                        firstLine: "IV antibiotics, immobilization, urgent spinal surgery if neurological compromise"
+                                    }
+                                },
+                                patterns: "MRI is imaging of choice for both osteomyelitis and discitis"
+                            }
+                        ]
+                    },
+                    {
+                        title: "💀 Bone Protection & Metabolism",
+                        investigations: [
+                            {
+                                name: "Osteoporosis Management",
+                                indications: "Fragility fracture, high risk factors, DEXA showing osteoporosis",
+                                patterns: "Prevention better than cure, immediate treatment for fragility fractures",
+                                abnormalFindings: {
+                                    "Post-menopausal osteoporotic fracture": {
+                                        significance: "Indicates established osteoporosis requiring immediate treatment",
+                                        causes: "Estrogen deficiency, age, genetics, lifestyle factors",
+                                        firstLine: "A postmenopausal woman who's had an osteoporotic vertebral fracture should be started on a bisphosphonate straight away - don't wait for a DEXA scan"
+                                    },
+                                    "Elderly fragility fracture": {
+                                        significance: "High risk of further fractures within first year",
+                                        causes: "Osteoporosis, falls risk, comorbidities",
+                                        firstLine: "Start alendronate in patients ≥75 years following a fragility fracture, without waiting for a DEXA scan"
+                                    },
+                                    "Steroid-induced osteoporosis": {
+                                        significance: "Rapid bone loss with steroid therapy",
+                                        causes: "Suppressed osteoblast activity, increased osteoclast activity",
+                                        firstLine: "Bone protection for patients who are going to take long-term steroids should start immediately"
+                                    },
+                                    "Osteomalacia": {
+                                        significance: "Vitamin D deficiency causing bone pain and proximal weakness",
+                                        causes: "Inadequate sun exposure, dietary deficiency, malabsorption",
+                                        firstLine: "Bone pain, tenderness and proximal myopathy (→ waddling gait) → ?osteomalacia. Vitamin D replacement therapy"
+                                    }
+                                },
+                                redFlags: "Hypocalcemia/vitamin D deficiency should be corrected before giving bisphosphonates"
+                            }
+                        ]
+                    },
+                    {
+                        title: "🔍 Nerve & Soft Tissue Conditions",
+                        investigations: [
+                            {
+                                name: "Carpal Tunnel Syndrome",
+                                indications: "Numbness/tingling in median nerve distribution, night symptoms",
+                                patterns: "Conservative treatment first, especially in pregnancy",
+                                abnormalFindings: {
+                                    "Positive Phalen's test": {
+                                        significance: "Provocative test confirming median nerve compression",
+                                        causes: "Synovial thickening, pregnancy, RA, diabetes, hypothyroidism",
+                                        firstLine: "Phalen's test is used to assess carpal tunnel syndrome. The patient's wrist is held in maximum flexion (reverse prayer sign) for 30-60 seconds. The test is positive if there is numbness in the median nerve distribution"
+                                    },
+                                    "Mild-moderate CTS": {
+                                        significance: "Symptoms may respond to conservative treatment",
+                                        causes: "Compression of median nerve in carpal tunnel",
+                                        firstLine: "Carpal tunnel syndrome: a trial of conservative treatment (wrist splint +/- steroid injection) should be tried initially for patients with mild-moderate symptoms"
+                                    },
+                                    "CTS in pregnancy": {
+                                        significance: "Often resolves after delivery, avoid surgery",
+                                        causes: "Fluid retention and hormonal changes",
+                                        firstLine: "Wrist splinting is a particularly useful and effective treatment for carpal tunnel syndrome in pregnancy, as symptoms may settle following delivery"
+                                    }
+                                },
+                                patterns: "Rheumatoid arthritis is a common cause of bilateral carpal tunnel syndrome"
+                            },
+                            {
+                                name: "Sciatica & Radiculopathy",
+                                indications: "Leg pain in dermatomal distribution, back pain with radiation",
+                                patterns: "Conservative treatment first, surgery if persistent neurological deficit",
+                                abnormalFindings: {
+                                    "L5 radiculopathy": {
+                                        significance: "Specific pattern of weakness and sensory loss",
+                                        causes: "Disc herniation, spinal stenosis, nerve compression",
+                                        firstLine: "L5 lesion features = loss of foot dorsiflexion + sensory loss dorsum of the foot"
+                                    },
+                                    "S1 radiculopathy": {
+                                        significance: "Different pattern affecting plantar flexion and reflexes",
+                                        causes: "Disc herniation at L5/S1 level, lateral recess stenosis",
+                                        firstLine: "S1 lesion features = Sensory loss of posterolateral aspect of leg and lateral aspect of foot, weakness in plantar flexion of foot, reduced ankle reflex, positive sciatic nerve stretch test"
+                                    },
+                                    "Persistent sciatica": {
+                                        significance: "Failed conservative treatment may need surgical assessment",
+                                        causes: "Ongoing nerve compression, inflammatory response",
+                                        firstLine: "A referral for sciatica is appropriate after 4-6 weeks of conservative treatment (analgesia and physiotherapy) has failed"
+                                    }
+                                },
+                                patterns: "Radiculopathy follows a dermatomal distribution, unlike named nerve pathology"
+                            },
+                            {
+                                name: "Tendon Conditions",
+                                indications: "Localized tendon pain, swelling, functional impairment",
+                                patterns: "Load management and eccentric exercises are key treatments",
+                                abnormalFindings: {
+                                    "De Quervain's tenosynovitis": {
+                                        significance: "Inflammation of thumb extensors and abductors",
+                                        causes: "Repetitive thumb movements, pregnancy, inflammatory conditions",
+                                        firstLine: "De Quervain's tenosynovitis: inflammation of the sheath containing the extensor pollicis brevis and abductor pollicis longus tendons"
+                                    },
+                                    "Lateral epicondylitis": {
+                                        significance: "Tennis elbow - common extensor origin tendinopathy",
+                                        causes: "Overuse, poor technique, repetitive wrist extension",
+                                        firstLine: "Lateral epicondylitis: worse on resisted wrist extension/supination whilst elbow extended"
+                                    },
+                                    "Frozen shoulder": {
+                                        significance: "Adhesive capsulitis with progressive stiffness",
+                                        causes: "Idiopathic, diabetes, thyroid disease, immobilization",
+                                        firstLine: "External rotation (on both active and passive movement) is classically impaired in adhesive capsulitis"
+                                    },
+                                    "Meralgia paraesthetica": {
+                                        significance: "Lateral femoral cutaneous nerve compression",
+                                        causes: "Tight clothing, obesity, pregnancy, diabetes",
+                                        firstLine: "Meralgia paraesthetica causes pain in the lateral cutaneous nerve of the thigh distribution"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        title: "🔬 Systemic Connective Tissue Conditions",
+                        investigations: [
+                            {
+                                name: "Polymyositis & Dermatomyositis",
+                                indications: "Proximal muscle weakness, raised CK, skin changes",
+                                patterns: "High malignancy association, especially dermatomyositis",
+                                abnormalFindings: {
+                                    "Polymyositis": {
+                                        significance: "Inflammatory muscle disease without skin involvement",
+                                        causes: "Autoimmune inflammatory myopathy",
+                                        firstLine: "Proximal muscle weakness + raised CK + no rash → ?polymyositis"
+                                    },
+                                    "New dermatomyositis": {
+                                        significance: "Strong association with underlying malignancy",
+                                        causes: "Paraneoplastic syndrome or idiopathic autoimmune",
+                                        firstLine: "In patients with a new diagnosis of dermatomyositis, urgent malignancy screen is needed"
+                                    }
+                                },
+                                redFlags: "New dermatomyositis requires urgent cancer screening"
+                            },
+                            {
+                                name: "Drug-Induced MSK Conditions",
+                                indications: "New symptoms after starting medications, medication history review",
+                                patterns: "Important to recognize drug-related causes",
+                                abnormalFindings: {
+                                    "Hydroxychloroquine retinopathy": {
+                                        significance: "Irreversible retinal damage with antimalarial",
+                                        causes: "Cumulative dose-related toxicity",
+                                        firstLine: "Hydroxychloroquine - may result in a severe and permanent retinopathy"
+                                    },
+                                    "Sulfasalazine allergy": {
+                                        significance: "Cross-reactivity with aspirin allergies",
+                                        causes: "Sulfonamide component causing allergic reaction",
+                                        firstLine: "Patients who are allergic to aspirin may also react to sulfasalazine"
+                                    }
+                                },
+                                patterns: "Always consider medication side effects in new symptoms"
+                            },
+                            {
+                                name: "Chronic Fatigue & Vasculitis",
+                                indications: "Unexplained fatigue, systemic symptoms, multi-organ involvement",
+                                patterns: "Systemic conditions requiring multidisciplinary approach",
+                                abnormalFindings: {
+                                    "Chronic fatigue syndrome": {
+                                        significance: "Disabling fatigue lasting >3 months",
+                                        causes: "Unknown etiology, post-viral triggers possible",
+                                        firstLine: "Chronic fatigue syndrome: the symptoms should be present for 3 months before making a diagnosis"
+                                    },
+                                    "ANCA-associated vasculitis": {
+                                        significance: "Systemic necrotizing vasculitis affecting multiple organs",
+                                        causes: "Granulomatosis with polyangiitis, microscopic polyangiitis, eosinophilic GPA",
+                                        firstLine: "Renal impairment, respiratory symptoms, joint pain, systemic features → consider ANCA associated vasculitis"
+                                    }
+                                }
+                            },
+                            {
+                                name: "Genetic Connective Tissue Disorders",
+                                indications: "Family history, unusual features, multiple system involvement",
+                                patterns: "Often multisystem involvement with MSK manifestations",
+                                abnormalFindings: {
+                                    "Ehlers-Danlos syndrome": {
+                                        significance: "Connective tissue disorder with cardiovascular risks",
+                                        causes: "Genetic collagen defects affecting multiple systems",
+                                        firstLine: "Ehlers-Danlos is associated with an increased risk of aortic dissection"
+                                    },
+                                    "Marfan syndrome": {
+                                        significance: "Connective tissue disorder with pulmonary complications",
+                                        causes: "Fibrillin-1 gene mutations affecting connective tissue",
+                                        firstLine: "Marfan's syndrome is associated with repeated pneumothoraces"
+                                    }
+                                }
+                            },
+                            {
+                                name: "Bone Tumours",
+                                indications: "Unexplained bone pain, pathological fracture, suspicious imaging",
+                                patterns: "Age distribution helps differentiate primary tumours",
+                                abnormalFindings: {
+                                    "Osteosarcoma": {
+                                        significance: "Most common primary bone malignancy in children/young adults",
+                                        causes: "Unknown, possible genetic factors, radiation exposure",
+                                        firstLine: "Osteosarcoma - malignant tumour that occurs most frequently in the metaphyseal region of long bones prior to epiphyseal closure"
+                                    },
+                                    "Suspicious bone lesion in child": {
+                                        significance: "High index of suspicion needed for bone sarcomas",
+                                        causes: "Primary bone tumours more common in children",
+                                        firstLine: "Consider a very urgent (<48hr) referral for specialist assessment of children and young people with an X-ray which could suggest bone sarcoma"
+                                    }
+                                },
+                                redFlags: "Bone pain in children, pathological fractures, rapid growth of lesions"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                badge: "⚡ Emergency MSK",
+                title: "MSK Emergencies & Trauma",
+                summary: "Time-critical musculoskeletal conditions requiring immediate assessment and management",
+                categories: [
+                    {
+                        title: "Fracture Complications",
+                        investigations: [
+                            {
+                                name: "Compartment Syndrome",
+                                indications: "Severe limb pain, swelling, neurological symptoms after trauma or surgery",
+                                abnormalFindings: {
+                                    "Acute compartment syndrome": {
+                                        significance: "Surgical emergency - tissue death within 6 hours",
+                                        causes: "Fractures (supracondylar, tibial shaft), burns, vascular injury",
+                                        firstLine: "URGENT fasciotomy within 6 hours, pain relief, elevate limb"
+                                    }
+                                },
+                                redFlags: "Compartment syndrome is most commonly associated with supracondylar and tibial shaft fractures"
                             }
                         ]
                     }
