@@ -854,90 +854,90 @@ export class PregnancyDrugsManager {
             }
 
             /* Dark Mode Support */
-            .dark .pregnancy-card {
+            body.dark-mode .pregnancy-card {
                 background: #1e293b;
                 border-color: rgba(148,163,184,0.1);
                 color: #e2e8f0;
             }
-            .dark .pregnancy-card h3 {
+            body.dark-mode .pregnancy-card h3 {
                 color: #f1f5f9;
             }
-            .dark .card-summary {
+            body.dark-mode .card-summary {
                 color: #94a3b8;
             }
-            .dark .pregnancy-search-input {
+            body.dark-mode .pregnancy-search-input {
                 background: #334155;
                 border-color: rgba(148,163,184,0.2);
                 color: #e2e8f0;
             }
-            .dark .pregnancy-search-input::placeholder {
+            body.dark-mode .pregnancy-search-input::placeholder {
                 color: #94a3b8;
             }
-            .dark .pregnancy-search-stats {
+            body.dark-mode .pregnancy-search-stats {
                 color: #94a3b8;
             }
-            .dark .pregnancy-subsection {
+            body.dark-mode .pregnancy-subsection {
                 background: #334155;
                 border-color: rgba(148,163,184,0.1);
             }
-            .dark .pregnancy-subsection h4 {
+            body.dark-mode .pregnancy-subsection h4 {
                 color: #60a5fa;
             }
-            .dark .pregnancy-subsection li {
+            body.dark-mode .pregnancy-subsection li {
                 color: #cbd5e1;
             }
-            .dark .category-header {
+            body.dark-mode .category-header {
                 color: #f1f5f9;
                 border-color: #475569;
             }
-            .dark .preg-card {
+            body.dark-mode .preg-card {
                 background: #334155;
                 border-color: rgba(148,163,184,0.1);
             }
-            .dark .preg-card__name {
+            body.dark-mode .preg-card__name {
                 color: #f1f5f9;
             }
-            .dark .preg-card__examples {
+            body.dark-mode .preg-card__examples {
                 color: #94a3b8;
             }
-            .dark .preg-card__reason-label,
-            .dark .preg-card__alt-label {
+            body.dark-mode .preg-card__reason-label,
+            body.dark-mode .preg-card__alt-label {
                 color: #cbd5e1;
             }
-            .dark .preg-card__reason-text,
-            .dark .preg-card__alt-text {
+            body.dark-mode .preg-card__reason-text,
+            body.dark-mode .preg-card__alt-text {
                 color: #94a3b8;
             }
-            .dark .preg-card__footer {
+            body.dark-mode .preg-card__footer {
                 border-color: #475569;
             }
-            .dark .preg-card__cta {
+            body.dark-mode .preg-card__cta {
                 color: #60a5fa;
             }
-            .dark .preg-card__fav:hover {
+            body.dark-mode .preg-card__fav:hover {
                 background: rgba(96,165,250,0.1);
             }
-            .dark .clinical-pearls-list li {
+            body.dark-mode .clinical-pearls-list li {
                 border-color: #475569;
                 color: #cbd5e1;
             }
-            .dark .resource-card {
+            body.dark-mode .resource-card {
                 background: #334155;
                 border-color: rgba(148,163,184,0.1);
             }
-            .dark .resource-card h4 {
+            body.dark-mode .resource-card h4 {
                 color: #f1f5f9;
             }
-            .dark .resource-card p {
+            body.dark-mode .resource-card p {
                 color: #94a3b8;
             }
-            .dark .resource-card a {
+            body.dark-mode .resource-card a {
                 color: #60a5fa;
             }
-            .dark .qr-pill {
+            body.dark-mode .qr-pill {
                 color: white;
             }
-            .dark .qr-pill:hover {
+            body.dark-mode .qr-pill:hover {
                 box-shadow: 0 4px 8px rgba(0,0,0,0.3);
             }
         `;
