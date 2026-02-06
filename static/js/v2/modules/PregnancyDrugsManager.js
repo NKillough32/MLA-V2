@@ -852,6 +852,94 @@ export class PregnancyDrugsManager {
             .resource-card a:hover {
                 text-decoration: underline;
             }
+
+            /* Dark Mode Support */
+            .dark .pregnancy-card {
+                background: #1e293b;
+                border-color: rgba(148,163,184,0.1);
+                color: #e2e8f0;
+            }
+            .dark .pregnancy-card h3 {
+                color: #f1f5f9;
+            }
+            .dark .card-summary {
+                color: #94a3b8;
+            }
+            .dark .pregnancy-search-input {
+                background: #334155;
+                border-color: rgba(148,163,184,0.2);
+                color: #e2e8f0;
+            }
+            .dark .pregnancy-search-input::placeholder {
+                color: #94a3b8;
+            }
+            .dark .pregnancy-search-stats {
+                color: #94a3b8;
+            }
+            .dark .pregnancy-subsection {
+                background: #334155;
+                border-color: rgba(148,163,184,0.1);
+            }
+            .dark .pregnancy-subsection h4 {
+                color: #60a5fa;
+            }
+            .dark .pregnancy-subsection li {
+                color: #cbd5e1;
+            }
+            .dark .category-header {
+                color: #f1f5f9;
+                border-color: #475569;
+            }
+            .dark .preg-card {
+                background: #334155;
+                border-color: rgba(148,163,184,0.1);
+            }
+            .dark .preg-card__name {
+                color: #f1f5f9;
+            }
+            .dark .preg-card__examples {
+                color: #94a3b8;
+            }
+            .dark .preg-card__reason-label,
+            .dark .preg-card__alt-label {
+                color: #cbd5e1;
+            }
+            .dark .preg-card__reason-text,
+            .dark .preg-card__alt-text {
+                color: #94a3b8;
+            }
+            .dark .preg-card__footer {
+                border-color: #475569;
+            }
+            .dark .preg-card__cta {
+                color: #60a5fa;
+            }
+            .dark .preg-card__fav:hover {
+                background: rgba(96,165,250,0.1);
+            }
+            .dark .clinical-pearls-list li {
+                border-color: #475569;
+                color: #cbd5e1;
+            }
+            .dark .resource-card {
+                background: #334155;
+                border-color: rgba(148,163,184,0.1);
+            }
+            .dark .resource-card h4 {
+                color: #f1f5f9;
+            }
+            .dark .resource-card p {
+                color: #94a3b8;
+            }
+            .dark .resource-card a {
+                color: #60a5fa;
+            }
+            .dark .qr-pill {
+                color: white;
+            }
+            .dark .qr-pill:hover {
+                box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            }
         `;
         document.head.appendChild(style);
     }
