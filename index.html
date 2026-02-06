@@ -15006,6 +15006,7 @@
             <button class="tool-nav-btn" data-tool="pdf-library">📚 PDF Library</button>
             <button class="tool-nav-btn" data-tool="core-conditions">📖 Core Conditions</button>
             <button class="tool-nav-btn active" data-tool="drug-reference">💊 Drug Reference</button>
+            <button class="tool-nav-btn" data-tool="msk-investigations">🦴 MSK Investigations</button>
             <button class="tool-nav-btn" data-tool="examination">🩺 Examination</button>
             <button class="tool-nav-btn" data-tool="differential-dx">🔍 Differential Dx</button>
             <button class="tool-nav-btn" data-tool="calculators">🧮 Calculators</button>
@@ -15039,7 +15040,6 @@
                 <div class="drug-panel-tabs">
                     <button class="drug-tab-btn active" data-tab="database" onclick="window.switchDrugTab('database')">💊 Drug Database</button>
                     <button class="drug-tab-btn" data-tab="pregnancy" onclick="window.switchDrugTab('pregnancy')">🤰 Pregnancy & Breastfeeding</button>
-                    <button class="drug-tab-btn" data-tab="msk" onclick="window.switchDrugTab('msk')">🦴 MSK Investigations</button>
                 </div>
                 
                 <!-- Drug Database Tab Content -->
@@ -15119,23 +15119,23 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- MSK Investigations Tab Content -->
-                <div id="msk-tab" class="drug-tab-content">
-                    <div class="msk-header">
-                        <h2>🦴 MSK Investigations & Management</h2>
-                        <div class="subtitle">Comprehensive guide to musculoskeletal investigations, findings interpretation, and evidence-based management</div>
-                        <div class="msk-header-highlights">
-                            <div class="highlight-pill">🔍 Imaging interpretation</div>
-                            <div class="highlight-pill">📊 Laboratory investigations</div>
-                            <div class="highlight-pill">⚡ Emergency conditions</div>
-                            <div class="highlight-pill">💊 First-line treatments</div>
-                        </div>
+            <!-- MSK Investigations Panel -->
+            <div id="msk-investigations-panel" class="tool-panel">
+                <div class="msk-header">
+                    <h2>🦴 MSK Investigations & Management</h2>
+                    <div class="subtitle">Comprehensive guide to musculoskeletal investigations, findings interpretation, and evidence-based management</div>
+                    <div class="msk-header-highlights">
+                        <div class="highlight-pill">🔍 Imaging interpretation</div>
+                        <div class="highlight-pill">📊 Laboratory investigations</div>
+                        <div class="highlight-pill">⚡ Emergency conditions</div>
+                        <div class="highlight-pill">💊 First-line treatments</div>
                     </div>
-                    <div id="content-area">
-                        <!-- MSK content will be loaded here by JavaScript -->
-                        <div class="loading-message">🦴 Loading MSK investigations...</div>
-                    </div>
+                </div>
+                <div id="content-area">
+                    <!-- MSK content will be loaded here by JavaScript -->
+                    <div class="loading-message">🦴 Loading MSK investigations...</div>
                 </div>
             </div>
 
@@ -16872,8 +16872,6 @@
                 targetContent = document.getElementById('drug-database-tab');
             } else if (tabName === 'pregnancy') {
                 targetContent = document.getElementById('pregnancy-tab');
-            } else {
-                targetContent = document.getElementById(`${tabName}-tab`);
             }
             
             if (targetContent) {
@@ -16903,30 +16901,6 @@
                             console.error('❌ pregnancyDrugsManager not found in MLAQuizApp');
                         } else {
                             console.log('ℹ️ Pregnancy manager already initialized');
-                        }
-                    }, 100);
-                } else {
-                    console.error('❌ MLAQuizApp not found on window object');
-                }
-            }
-            
-            // Initialize MSK investigations manager when switching to that tab
-            if (tabName === 'msk') {
-                console.log('🦴 MSK tab clicked - checking MLAQuizApp...');
-                console.log('MLAQuizApp exists:', !!window.MLAQuizApp);
-                
-                if (window.MLAQuizApp) {
-                    console.log('mskInvestigationsManager exists:', !!window.MLAQuizApp.mskInvestigationsManager);
-                    
-                    setTimeout(() => {
-                        if (window.MLAQuizApp.mskInvestigationsManager) {
-                            console.log('🚀 MSK investigations manager already active');
-                            // Manager initializes itself in constructor, just ensure it's rendered
-                            if (typeof window.MLAQuizApp.mskInvestigationsManager.render === 'function') {
-                                window.MLAQuizApp.mskInvestigationsManager.render();
-                            }
-                        } else {
-                            console.error('❌ mskInvestigationsManager not found in MLAQuizApp');
                         }
                     }, 100);
                 } else {

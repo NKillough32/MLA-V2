@@ -256,6 +256,7 @@ class MLAQuizApp {
         const preloadTargets = [
             { id: 'drug-panel', log: '🏥 Preloading drug reference content...', loader: panel => this.loadDrugReferenceContent(panel) },
             { id: 'core-conditions-panel', log: '📖 Preloading Core Conditions...', loader: panel => this.loadCoreConditionsContent(panel) },
+            { id: 'msk-investigations-panel', log: '🦴 Preloading MSK Investigations...', loader: panel => this.loadMSKInvestigationsContent(panel) },
             { id: 'lab-panel', log: '🧪 Preloading lab values content...', loader: panel => this.loadLabValuesContent(panel) },
             { id: 'procedures-panel', log: '🏥 Preloading procedures content...', loader: panel => this.loadProceduresContent(panel) },
             { id: 'guidelines-panel', log: '📋 Preloading guidelines content...', loader: panel => this.loadGuidelinesContent(panel) },
@@ -1091,6 +1092,7 @@ class MLAQuizApp {
         const panelIdMap = {
             'drug-reference': 'drug-panel',
             'core-conditions': 'core-conditions-panel',
+            'msk-investigations': 'msk-investigations-panel',
             'calculators': 'calculator-panel',
             'calculator-detail': 'calculator-detail',
             'lab-values': 'lab-panel',
@@ -1140,6 +1142,9 @@ class MLAQuizApp {
                 break;
             case 'core-conditions':
                 this.loadCoreConditionsContent(panel);
+                break;
+            case 'msk-investigations':
+                this.loadMSKInvestigationsContent(panel);
                 break;
             case 'hematology':
                 this.loadHematologyContent(panel);
@@ -1782,6 +1787,27 @@ class MLAQuizApp {
             detailView.classList.remove('active');
             listView.style.display = 'block';
         });
+    }
+
+    /**
+     * Load MSK Investigations content
+     */
+    loadMSKInvestigationsContent(panel) {
+        console.log('🦴 Loading MSK Investigations content...');
+        
+        // The MSK manager initializes itself and populates the content area
+        if (this.mskInvestigationsManager) {
+            console.log('✅ MSK Investigations manager already loaded');
+            
+            // Ensure the content area exists in this panel
+            const contentArea = panel.querySelector('#content-area');
+            if (contentArea && contentArea.innerHTML.includes('Loading MSK investigations')) {
+                // Replace loading message with manager's content
+                this.mskInvestigationsManager.render();
+            }
+        } else {
+            console.error('❌ MSK Investigations manager not found');
+        }
     }
 
     /**

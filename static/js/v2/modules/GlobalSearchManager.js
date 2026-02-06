@@ -42,6 +42,7 @@ export class GlobalSearchManager {
                 genetics: 4,
                 developmental: 4,
                 coreConditions: 6,
+                mskInvestigations: 6,
                 psychiatry: 6,
                 medStatsEthics: 6,
                 clinicalPearls: 6,
@@ -230,6 +231,7 @@ export class GlobalSearchManager {
         // Core Conditions -> Drugs -> PDFs -> remaining sections.
         const operations = [
             this.buildCoreConditionResults(query),
+            this.buildMSKInvestigationResults(query),
             this.buildDrugResults(query),
             this.buildPregnancyDrugResults(query),
             this.buildPdfResults(query),
@@ -469,6 +471,60 @@ export class GlobalSearchManager {
             icon: '📖',
             total: matches.length,
             matches: mapped
+        };
+    }
+
+    async buildMSKInvestigationResults(query) {
+        const manager = this.managers.mskInvestigationsManager;
+        if (!manager?.investigations) return null;
+        
+        const matches = [];
+        const term = query.toLowerCase();
+        
+        // Search through all MSK investigations
+        manager.investigations.forEach(section => {
+            if (section.categories) {
+                section.categories.forEach(category => {
+                    if (category.investigations) {
+                        category.investigations.forEach(inv => {
+                            const searchText = [
+                                inv.name,
+                                inv.indications,
+                                inv.views,
+                                inv.sequences,
+                                inv.technique,
+                                inv.normalRange,
+                                Object.keys(inv.abnormalFindings || {}).join(' '),
+                                Object.values(inv.abnormalFindings || {}).map(f => 
+                                    `${f.significance} ${f.causes} ${f.firstLine}`
+                                ).join(' ')
+                            ].filter(Boolean).join(' ').toLowerCase();
+                            
+                            if (searchText.includes(term)) {
+                                matches.push({
+                                    title: inv.name,
+                                    subtitle: category.title,
+                                    badge: section.badge || 'Investigation',
+                                    action: { type: 'msk-investigation', name: inv.name, category: category.title }
+                                });
+                            }
+                        });
+                    }
+                });
+            }
+        });
+
+        if (!matches.length) return null;
+
+        const limit = this.options.limits.mskInvestigations || this.options.defaultLimit;
+        const ranked = this.rankMatches(matches, query, item => item.title);
+
+        return {
+            id: 'msk-investigations',
+            label: 'MSK Investigations',
+            icon: '🦴',
+            total: matches.length,
+            matches: ranked.slice(0, limit)
         };
     }
 
@@ -1458,6 +1514,25 @@ export class GlobalSearchManager {
                 break;
             case 'mnemonic':
                 navigate('mnemonics', () => this.app?.showMnemonicDetail?.(action.key));
+                break;
+            case 'msk-investigation':
+                navigate('msk-investigations', () => {
+                    try {
+                        // The MSK manager handles its own search and filtering
+                        if (this.managers.mskInvestigationsManager) {
+                            // Set search term to filter results
+                            const searchInput = document.querySelector('#mskSearchInput');
+                            if (searchInput) {
+                                searchInput.value = action.name;
+                                // Trigger the search/filter
+                                const event = new Event('input', { bubbles: true });
+                                searchInput.dispatchEvent(event);
+                            }
+                        }
+                    } catch (e) {
+                        console.warn('MSK investigation navigation failed:', e);
+                    }
+                });
                 break;
             case 'med-stats':
                 navigate('med-stats-ethics', () => {

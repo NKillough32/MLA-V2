@@ -1175,7 +1175,20 @@ class MSKInvestigationsManager {
     }
 
     render() {
-        const container = document.getElementById('content-area');
+        let container = document.getElementById('content-area');
+        
+        // If we're in the standalone MSK panel, find the content area within that panel
+        if (!container || !container.offsetParent) {
+            const mskPanel = document.getElementById('msk-investigations-panel');
+            if (mskPanel) {
+                container = mskPanel.querySelector('#content-area');
+            }
+        }
+        
+        if (!container) {
+            console.error('❌ Content area not found for MSK investigations');
+            return;
+        }
         
         const html = `
             <div class="msk-investigations-container">
