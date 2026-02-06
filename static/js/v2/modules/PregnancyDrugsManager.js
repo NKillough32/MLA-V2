@@ -152,7 +152,7 @@ export class PregnancyDrugsManager {
         container.innerHTML = html;
 
         // Setup favorite buttons
-        container.querySelectorAll('.favorite-btn').forEach(btn => {
+        container.querySelectorAll('.preg-card__fav').forEach(btn => {
             btn.addEventListener('click', (e) => {
                 e.stopPropagation();
                 const drugName = btn.dataset.drug;
@@ -161,7 +161,7 @@ export class PregnancyDrugsManager {
         });
 
         // Setup drug card clicks
-        container.querySelectorAll('.pregnancy-drug-card').forEach(card => {
+        container.querySelectorAll('.preg-card').forEach(card => {
             card.addEventListener('click', () => {
                 const drugName = card.dataset.drug;
                 this.showDrugDetail(drugName);
@@ -197,33 +197,48 @@ export class PregnancyDrugsManager {
     renderDrugCard(drug, isFavorite) {
         const severity = drug.pregnancy.severity || 'CAUTION';
         const severityClass = this.getSeverityClass(severity);
+        const severityIcon = severity.includes('ABSOLUTE') ? '⛔' : severity.includes('AVOID') || severity.includes('CONTRAINDICATED') ? '⚠️' : '⚡';
 
         return `
-            <div class="pregnancy-drug-card ${severityClass}" data-drug="${drug.drug}">
-                <div class="drug-card-header">
-                    <h4 class="drug-name">${drug.drug}</h4>
-                    <button class="favorite-btn ${isFavorite ? 'active' : ''}" data-drug="${drug.drug}" title="${isFavorite ? 'Remove from favorites' : 'Add to favorites'}">
-                        ${isFavorite ? '★' : '☆'}
-                    </button>
-                </div>
-                <div class="drug-examples">
-                    ${drug.examples.slice(0, 3).join(', ')}${drug.examples.length > 3 ? '...' : ''}
-                </div>
-                <div class="drug-severity-badge ${severityClass}">
-                    ${severity}
-                </div>
-                <div class="drug-contraindications">
-                    ${drug.pregnancy.allTrimesters ? '<span class="badge-pregnancy">🚫 All Trimesters</span>' : ''}
-                    ${drug.pregnancy.t1 && !drug.pregnancy.allTrimesters ? '<span class="badge-t1">T1</span>' : ''}
-                    ${drug.pregnancy.t2 && !drug.pregnancy.allTrimesters ? '<span class="badge-t2">T2</span>' : ''}
-                    ${drug.pregnancy.t3 && !drug.pregnancy.allTrimesters ? '<span class="badge-t3">T3</span>' : ''}
-                    ${drug.breastfeeding.contraindicated ? '<span class="badge-bf">🚫 Breastfeeding</span>' : ''}
-                </div>
-                <div class="drug-reason">
-                    ${drug.pregnancy.reason.substring(0, 100)}${drug.pregnancy.reason.length > 100 ? '...' : ''}
-                </div>
-                <div class="drug-alternatives">
-                    <strong>Alternative:</strong> ${drug.alternatives.pregnancy}
+            <div class="preg-card ${severityClass}" data-drug="${drug.drug}">
+                <div class="preg-card__top-bar ${severityClass}"></div>
+                <div class="preg-card__body">
+                    <div class="preg-card__header">
+                        <div class="preg-card__title-wrap">
+                            <h4 class="preg-card__name">${drug.drug}</h4>
+                            <span class="preg-card__examples">${drug.examples.join(', ')}</span>
+                        </div>
+                        <button class="preg-card__fav ${isFavorite ? 'active' : ''}" data-drug="${drug.drug}" title="${isFavorite ? 'Remove from favorites' : 'Add to favorites'}">
+                            ${isFavorite ? '★' : '☆'}
+                        </button>
+                    </div>
+
+                    <div class="preg-card__severity ${severityClass}">
+                        <span class="preg-card__severity-icon">${severityIcon}</span>
+                        <span class="preg-card__severity-text">${severity}</span>
+                    </div>
+
+                    <div class="preg-card__badges">
+                        ${drug.pregnancy.allTrimesters ? '<span class="preg-badge preg-badge--all">🚫 All Trimesters</span>' : ''}
+                        ${drug.pregnancy.t1 && !drug.pregnancy.allTrimesters ? '<span class="preg-badge preg-badge--t1">T1</span>' : ''}
+                        ${drug.pregnancy.t2 && !drug.pregnancy.allTrimesters ? '<span class="preg-badge preg-badge--t2">T2</span>' : ''}
+                        ${drug.pregnancy.t3 && !drug.pregnancy.allTrimesters ? '<span class="preg-badge preg-badge--t3">T3</span>' : ''}
+                        ${drug.breastfeeding.contraindicated ? '<span class="preg-badge preg-badge--bf">🤱 Breastfeeding</span>' : ''}
+                    </div>
+
+                    <div class="preg-card__reason">
+                        <div class="preg-card__reason-label">Risk</div>
+                        <p class="preg-card__reason-text">${drug.pregnancy.reason}</p>
+                    </div>
+
+                    <div class="preg-card__alt">
+                        <div class="preg-card__alt-label">✅ Alternative</div>
+                        <p class="preg-card__alt-text">${drug.alternatives.pregnancy}</p>
+                    </div>
+
+                    <div class="preg-card__footer">
+                        <span class="preg-card__cta">View full details →</span>
+                    </div>
                 </div>
             </div>
         `;
@@ -344,27 +359,18 @@ export class PregnancyDrugsManager {
     }
 
     renderDrugTable(drugs, type) {
-        // Split drugs into 3 columns
-        const colSize = Math.ceil(drugs.length / 3);
-        const col1 = drugs.slice(0, colSize);
-        const col2 = drugs.slice(colSize, colSize * 2);
-        const col3 = drugs.slice(colSize * 2);
-        
-        const icon = type === 'danger' ? '🚫 ' : '';
-        const cellClass = type === 'danger' ? 'danger-cell' : 'safe-cell';
+        const cellClass = type === 'danger' ? 'qr-pill--danger' : 'qr-pill--safe';
+        const icon = type === 'danger' ? '🚫' : '✓';
         
         return `
-            <table class="quick-ref-table ${type}">
-                <tbody>
-                    ${col1.map((drug, i) => `
-                        <tr>
-                            <td class="${cellClass}">${icon}${drug}</td>
-                            <td class="${cellClass}">${col2[i] ? icon + col2[i] : ''}</td>
-                            <td class="${cellClass}">${col3[i] ? icon + col3[i] : ''}</td>
-                        </tr>
-                    `).join('')}
-                </tbody>
-            </table>
+            <div class="qr-pill-grid">
+                ${drugs.map(drug => `
+                    <div class="qr-pill ${cellClass}">
+                        <span class="qr-pill__icon">${icon}</span>
+                        <span class="qr-pill__name">${drug}</span>
+                    </div>
+                `).join('')}
+            </div>
         `;
     }
 

@@ -12424,27 +12424,27 @@
 
             .quick-ref-grid {
                 display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-                gap: 16px;
+                grid-template-columns: 1fr;
+                gap: 20px;
             }
 
             .quick-ref-card {
                 background: var(--v2-bg-secondary);
-                border-radius: 16px;
-                padding: 20px;
+                border-radius: 18px;
+                padding: 22px;
                 border: 1px solid var(--v2-border);
                 transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+                overflow: hidden;
             }
 
             .quick-ref-card:hover {
-                transform: translateY(-3px);
-                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
             }
 
             .quick-ref-card.safe {
-                border-left: 4px solid #22c55e;
-                background: linear-gradient(135deg, rgba(34, 197, 94, 0.06) 0%, var(--v2-bg-secondary) 100%);
+                border-top: 4px solid #22c55e;
+                background: linear-gradient(180deg, rgba(34, 197, 94, 0.05) 0%, var(--v2-bg-secondary) 100%);
             }
 
             .quick-ref-card.safe:hover {
@@ -12453,8 +12453,8 @@
             }
 
             .quick-ref-card.danger {
-                border-left: 4px solid #ef4444;
-                background: linear-gradient(135deg, rgba(239, 68, 68, 0.06) 0%, var(--v2-bg-secondary) 100%);
+                border-top: 4px solid #ef4444;
+                background: linear-gradient(180deg, rgba(239, 68, 68, 0.05) 0%, var(--v2-bg-secondary) 100%);
             }
 
             .quick-ref-card.danger:hover {
@@ -12473,54 +12473,66 @@
                 gap: 8px;
             }
 
-            /* Quick Reference 3-Column Table Styles */
-            .quick-ref-table {
-                width: 100%;
-                border-collapse: separate;
-                border-spacing: 6px;
-                table-layout: fixed;
+            /* Quick Reference Pill Grid */
+            .qr-pill-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 8px;
             }
 
-            .quick-ref-table td {
+            .qr-pill {
+                display: flex;
+                align-items: center;
+                gap: 8px;
                 padding: 10px 12px;
+                border-radius: 10px;
                 font-size: 12px;
                 font-weight: 500;
-                background: var(--v2-bg-card);
-                border-radius: 8px;
-                color: var(--v2-text-primary);
-                vertical-align: top;
-                line-height: 1.4;
+                line-height: 1.3;
                 transition: all 0.2s ease;
+                cursor: default;
             }
 
-            .quick-ref-table td:empty {
-                background: transparent;
+            .qr-pill__icon {
+                font-size: 12px;
+                flex-shrink: 0;
             }
 
-            .quick-ref-table td.safe-cell:not(:empty) {
-                border-left: 3px solid #22c55e;
+            .qr-pill__name {
+                flex: 1;
+                min-width: 0;
             }
 
-            .quick-ref-table td.safe-cell:not(:empty):hover {
-                background: rgba(34, 197, 94, 0.12);
-                transform: translateX(2px);
+            .qr-pill--safe {
+                background: var(--v2-bg-card);
+                border: 1px solid rgba(34, 197, 94, 0.2);
+                color: var(--v2-text-primary);
             }
 
-            .quick-ref-table td.danger-cell:not(:empty) {
+            .qr-pill--safe .qr-pill__icon {
+                color: #22c55e;
+                font-weight: 700;
+            }
+
+            .qr-pill--safe:hover {
+                background: rgba(34, 197, 94, 0.1);
+                border-color: rgba(34, 197, 94, 0.4);
+                transform: translateY(-1px);
+                box-shadow: 0 3px 10px rgba(34, 197, 94, 0.12);
+            }
+
+            .qr-pill--danger {
+                background: rgba(220, 38, 38, 0.06);
+                border: 1px solid rgba(220, 38, 38, 0.2);
                 color: #dc2626;
                 font-weight: 600;
-                background: rgba(220, 38, 38, 0.08);
-                border-left: 3px solid #dc2626;
             }
 
-            .quick-ref-table td.danger-cell:not(:empty):hover {
-                background: rgba(220, 38, 38, 0.16);
-                transform: translateX(2px);
-            }
-
-            .quick-ref-card {
-                max-height: 320px;
-                overflow-y: auto;
+            .qr-pill--danger:hover {
+                background: rgba(220, 38, 38, 0.12);
+                border-color: rgba(220, 38, 38, 0.4);
+                transform: translateY(-1px);
+                box-shadow: 0 3px 10px rgba(220, 38, 38, 0.12);
             }
 
             /* Legacy list styles - keeping for backward compatibility */
@@ -12584,229 +12596,282 @@
 
             .drugs-grid {
                 display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-                gap: 16px;
+                grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+                gap: 20px;
             }
 
-            .pregnancy-drug-card {
-                background: var(--v2-bg-secondary);
+            /* ── New Preg Card System ── */
+            .preg-card {
+                background: var(--v2-bg-card);
                 border: 1px solid var(--v2-border);
-                border-radius: 16px;
-                padding: 20px;
+                border-radius: 18px;
                 cursor: pointer !important;
                 transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
                 position: relative;
-                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
                 overflow: hidden;
+                display: flex;
+                flex-direction: column;
             }
 
-            .pregnancy-drug-card::after {
-                content: 'Click for details →';
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                padding: 10px;
-                background: linear-gradient(to top, rgba(139, 92, 246, 0.1), transparent);
-                font-size: 11px;
-                font-weight: 600;
-                color: #8b5cf6;
-                text-align: center;
-                opacity: 0;
-                transform: translateY(100%);
-                transition: all 0.25s ease;
+            .preg-card__top-bar {
+                height: 6px;
+                width: 100%;
+                flex-shrink: 0;
             }
 
-            .pregnancy-drug-card:hover::after {
-                opacity: 1;
-                transform: translateY(0);
+            .preg-card__top-bar.severity-absolute {
+                background: linear-gradient(90deg, #dc2626, #ef4444, #dc2626);
             }
 
-            .pregnancy-drug-card:hover {
+            .preg-card__top-bar.severity-contraindicated {
+                background: linear-gradient(90deg, #ea580c, #f97316, #ea580c);
+            }
+
+            .preg-card__top-bar.severity-caution {
+                background: linear-gradient(90deg, #eab308, #facc15, #eab308);
+            }
+
+            .preg-card__top-bar.severity-safe {
+                background: linear-gradient(90deg, #22c55e, #4ade80, #22c55e);
+            }
+
+            .preg-card__body {
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
+                flex: 1;
+            }
+
+            .preg-card:hover {
                 transform: translateY(-6px);
-                box-shadow: 0 16px 40px rgba(139, 92, 246, 0.2);
-                border-color: rgba(139, 92, 246, 0.5);
+                box-shadow: 0 20px 50px rgba(0, 0, 0, 0.14);
             }
 
-            .pregnancy-drug-card.severity-absolute {
-                border-left: 5px solid #dc2626;
-                background: linear-gradient(135deg, rgba(220, 38, 38, 0.06) 0%, var(--v2-bg-secondary) 100%);
-            }
-
-            .pregnancy-drug-card.severity-absolute:hover {
-                box-shadow: 0 12px 32px rgba(220, 38, 38, 0.15);
+            .preg-card.severity-absolute:hover {
                 border-color: #dc2626;
+                box-shadow: 0 20px 50px rgba(220, 38, 38, 0.18);
             }
 
-            .pregnancy-drug-card.severity-contraindicated {
-                border-left: 4px solid #ea580c;
-                background: linear-gradient(135deg, rgba(234, 88, 12, 0.04) 0%, var(--v2-bg-secondary) 100%);
-            }
-
-            .pregnancy-drug-card.severity-contraindicated:hover {
-                box-shadow: 0 12px 32px rgba(234, 88, 12, 0.15);
+            .preg-card.severity-contraindicated:hover {
                 border-color: #ea580c;
+                box-shadow: 0 20px 50px rgba(234, 88, 12, 0.18);
             }
 
-            .pregnancy-drug-card.severity-caution {
-                border-left: 4px solid #eab308;
-                background: linear-gradient(135deg, rgba(234, 179, 8, 0.04) 0%, var(--v2-bg-secondary) 100%);
-            }
-
-            .pregnancy-drug-card.severity-caution:hover {
-                box-shadow: 0 12px 32px rgba(234, 179, 8, 0.15);
+            .preg-card.severity-caution:hover {
                 border-color: #eab308;
+                box-shadow: 0 20px 50px rgba(234, 179, 8, 0.18);
             }
 
-            .drug-card-header {
+            .preg-card__header {
                 display: flex;
                 justify-content: space-between;
                 align-items: flex-start;
-                margin-bottom: 12px;
+                gap: 12px;
             }
 
-            .drug-name {
-                font-size: 17px;
-                font-weight: 700;
-                margin: 0;
-                color: var(--v2-text-primary);
+            .preg-card__title-wrap {
                 flex: 1;
-                letter-spacing: -0.3px;
-                line-height: 1.3;
+                min-width: 0;
             }
 
-            .favorite-btn {
+            .preg-card__name {
+                font-size: 18px;
+                font-weight: 800;
+                margin: 0 0 4px 0;
+                color: var(--v2-text-primary);
+                letter-spacing: -0.3px;
+                line-height: 1.25;
+            }
+
+            .preg-card__examples {
+                font-size: 12px;
+                color: var(--v2-text-tertiary);
+                font-style: italic;
+                line-height: 1.4;
+                display: block;
+            }
+
+            .preg-card__fav {
                 background: var(--v2-bg-tertiary);
                 border: 1px solid var(--v2-border);
                 font-size: 18px;
                 cursor: pointer !important;
                 padding: 0;
-                width: 34px;
-                height: 34px;
+                width: 36px;
+                height: 36px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 border-radius: 10px;
                 transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
                 flex-shrink: 0;
-                margin-left: 12px;
             }
 
-            .favorite-btn:hover {
-                background: rgba(234, 179, 8, 0.1);
-                border-color: rgba(234, 179, 8, 0.4);
-                transform: scale(1.08);
+            .preg-card__fav:hover {
+                background: rgba(234, 179, 8, 0.15);
+                border-color: rgba(234, 179, 8, 0.5);
+                transform: scale(1.1);
             }
 
-            .favorite-btn:active {
-                transform: scale(0.95);
-            }
-
-            .favorite-btn.active {
+            .preg-card__fav.active {
                 color: #eab308;
                 background: rgba(234, 179, 8, 0.15);
                 border-color: #eab308;
             }
 
-            .favorite-btn.active:hover {
-                background: rgba(234, 179, 8, 0.25);
-            }
-
-            .drug-examples {
+            .preg-card__severity {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                padding: 10px 14px;
+                border-radius: 12px;
                 font-size: 12px;
-                color: var(--v2-text-tertiary);
-                margin-bottom: 14px;
-                font-style: italic;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
                 line-height: 1.4;
             }
 
-            .drug-severity-badge {
-                display: inline-flex;
-                align-items: center;
-                padding: 5px 10px;
-                border-radius: 8px;
-                font-size: 10px;
-                font-weight: 700;
-                text-transform: uppercase;
-                letter-spacing: 0.6px;
-                margin-bottom: 14px;
+            .preg-card__severity-icon {
+                font-size: 16px;
+                flex-shrink: 0;
             }
 
-            .drug-severity-badge.severity-absolute {
+            .preg-card__severity-text {
+                flex: 1;
+            }
+
+            .preg-card__severity.severity-absolute {
+                background: linear-gradient(135deg, rgba(220, 38, 38, 0.12), rgba(220, 38, 38, 0.06));
+                color: #dc2626;
+                border: 1px solid rgba(220, 38, 38, 0.2);
+            }
+
+            .preg-card__severity.severity-contraindicated {
+                background: linear-gradient(135deg, rgba(234, 88, 12, 0.12), rgba(234, 88, 12, 0.06));
+                color: #ea580c;
+                border: 1px solid rgba(234, 88, 12, 0.2);
+            }
+
+            .preg-card__severity.severity-caution {
+                background: linear-gradient(135deg, rgba(234, 179, 8, 0.12), rgba(234, 179, 8, 0.06));
+                color: #b45309;
+                border: 1px solid rgba(234, 179, 8, 0.25);
+            }
+
+            .preg-card__severity.severity-safe {
+                background: linear-gradient(135deg, rgba(34, 197, 94, 0.12), rgba(34, 197, 94, 0.06));
+                color: #16a34a;
+                border: 1px solid rgba(34, 197, 94, 0.2);
+            }
+
+            .preg-card__badges {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 6px;
+            }
+
+            .preg-badge {
+                padding: 5px 10px;
+                border-radius: 8px;
+                font-size: 11px;
+                font-weight: 600;
+                letter-spacing: 0.3px;
+                display: inline-flex;
+                align-items: center;
+                gap: 4px;
+            }
+
+            .preg-badge--all {
                 background: linear-gradient(135deg, #dc2626, #b91c1c);
                 color: white;
             }
 
-            .drug-severity-badge.severity-contraindicated {
-                background: linear-gradient(135deg, #ea580c, #c2410c);
+            .preg-badge--bf {
+                background: linear-gradient(135deg, #9333ea, #7c3aed);
                 color: white;
             }
 
-            .drug-severity-badge.severity-caution {
-                background: linear-gradient(135deg, #eab308, #ca8a04);
-                color: #1c1c1e;
+            .preg-badge--t1 {
+                background: linear-gradient(135deg, #ef4444, #dc2626);
+                color: white;
             }
 
-            .drug-contraindications {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 6px;
-                margin-bottom: 14px;
+            .preg-badge--t2 {
+                background: linear-gradient(135deg, #f97316, #ea580c);
+                color: white;
             }
 
-            .badge-pregnancy,
-            .badge-t1,
-            .badge-t2,
-            .badge-t3,
-            .badge-bf {
-                padding: 4px 8px;
-                border-radius: 6px;
+            .preg-badge--t3 {
+                background: linear-gradient(135deg, #f59e0b, #d97706);
+                color: white;
+            }
+
+            .preg-card__reason {
+                background: var(--v2-bg-secondary);
+                border-radius: 12px;
+                padding: 14px 16px;
+                border: 1px solid var(--v2-border);
+            }
+
+            .preg-card__reason-label {
                 font-size: 10px;
-                font-weight: 600;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                color: var(--v2-text-tertiary);
+                margin-bottom: 6px;
+            }
+
+            .preg-card__reason-text {
+                font-size: 13px;
+                line-height: 1.6;
+                color: var(--v2-text-secondary);
+                margin: 0;
+            }
+
+            .preg-card__alt {
+                background: linear-gradient(135deg, rgba(34, 197, 94, 0.08), rgba(34, 197, 94, 0.03));
+                border: 1px solid rgba(34, 197, 94, 0.2);
+                border-radius: 12px;
+                padding: 14px 16px;
+            }
+
+            .preg-card__alt-label {
+                font-size: 11px;
+                font-weight: 700;
+                color: #16a34a;
+                margin-bottom: 6px;
                 letter-spacing: 0.3px;
             }
 
-            .badge-pregnancy,
-            .badge-bf {
-                background: rgba(220, 38, 38, 0.9);
-                color: white;
-            }
-
-            .badge-t1 {
-                background: rgba(239, 68, 68, 0.9);
-                color: white;
-            }
-
-            .badge-t2 {
-                background: rgba(249, 115, 22, 0.9);
-                color: white;
-            }
-
-            .badge-t3 {
-                background: rgba(245, 158, 11, 0.9);
-                color: white;
-            }
-
-            .drug-reason {
+            .preg-card__alt-text {
                 font-size: 13px;
-                line-height: 1.55;
-                color: var(--v2-text-secondary);
-                margin-bottom: 14px;
-            }
-
-            .drug-alternatives {
-                font-size: 12px;
-                padding: 12px 14px;
-                background: rgba(34, 197, 94, 0.08);
-                border-left: 3px solid #22c55e;
-                border-radius: 10px;
+                line-height: 1.6;
                 color: var(--v2-text-primary);
-                line-height: 1.5;
+                margin: 0;
             }
 
-            .drug-alternatives strong {
-                color: #10b981;
+            .preg-card__footer {
+                margin-top: auto;
+                padding-top: 6px;
+                border-top: 1px solid var(--v2-border);
+                text-align: right;
+            }
+
+            .preg-card__cta {
+                font-size: 12px;
                 font-weight: 600;
+                color: #8b5cf6;
+                transition: all 0.2s ease;
+                opacity: 0.6;
+            }
+
+            .preg-card:hover .preg-card__cta {
+                opacity: 1;
+                letter-spacing: 0.3px;
             }
 
             /* Pregnancy Drug Modal */
@@ -13174,35 +13239,30 @@
                     padding: 16px;
                 }
 
-                /* Responsive table - stack on mobile */
-                .quick-ref-table {
-                    display: block;
-                }
-
-                .quick-ref-table tbody {
-                    display: flex;
-                    flex-direction: column;
+                /* Responsive pill grid - 2 columns on mobile */
+                .qr-pill-grid {
+                    grid-template-columns: repeat(2, 1fr);
                     gap: 6px;
                 }
 
-                .quick-ref-table tr {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 6px;
-                }
-
-                .quick-ref-table td {
-                    width: auto !important;
+                .qr-pill {
+                    padding: 8px 10px;
+                    font-size: 11px;
                 }
 
                 .pregnancy-category-section {
                     padding: 14px;
-                    margin-bottom: 20px;
+                    margin-bottom: 16px;
+                    border-radius: 14px;
                 }
 
-                .pregnancy-drug-card::after {
-                    font-size: 10px;
-                    padding: 8px;
+                .preg-card__body {
+                    padding: 16px;
+                    gap: 12px;
+                }
+
+                .preg-card__name {
+                    font-size: 16px;
                 }
             }
 
