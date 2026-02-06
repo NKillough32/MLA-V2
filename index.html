@@ -12312,6 +12312,9 @@
 
             .pregnancy-drugs-content {
                 margin-top: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 28px;
             }
 
             .pregnancy-drugs-header-top {
@@ -12356,33 +12359,11 @@
                 padding-left: 42px;
             }
 
-            .pregnancy-main-layout {
+            /* Bottom grid for pearls + resources */
+            .pregnancy-bottom-grid {
                 display: grid;
-                grid-template-columns: minmax(250px, 310px) minmax(0, 1fr);
+                grid-template-columns: 1fr 1fr;
                 gap: 20px;
-                align-items: start;
-            }
-
-            .pregnancy-sidebar {
-                position: sticky;
-                top: 16px;
-                display: grid;
-                gap: 16px;
-            }
-
-            .pregnancy-sidebar .quick-reference-section,
-            .pregnancy-sidebar .clinical-pearls-section,
-            .pregnancy-sidebar .resources-section,
-            .pregnancy-primary-content .drug-categories-section {
-                background: var(--v2-bg-secondary);
-                border: 1px solid var(--v2-border);
-                border-radius: 16px;
-                padding: 16px;
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-            }
-
-            .pregnancy-primary-content {
-                min-width: 0;
             }
 
             .pregnancy-results-caption {
@@ -12396,22 +12377,23 @@
             .drug-categories-section,
             .clinical-pearls-section,
             .resources-section {
-                margin-bottom: 28px;
-                padding: 0;
-                background: transparent;
-                border-radius: 0;
-                border: none;
+                margin-bottom: 0;
+                padding: 20px;
+                background: var(--v2-bg-secondary);
+                border-radius: 18px;
+                border: 1px solid var(--v2-border);
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
             }
 
             .quick-reference-section h3,
             .drug-categories-section h3,
             .clinical-pearls-section h3,
             .resources-section h3 {
-                font-size: 18px;
+                font-size: 17px;
                 font-weight: 800;
                 margin: 0 0 20px 0;
                 color: var(--v2-text-primary);
-                padding: 16px 20px;
+                padding: 14px 18px;
                 background: linear-gradient(135deg, var(--v2-bg-secondary) 0%, var(--v2-bg-card) 100%);
                 border-radius: 14px;
                 border: 1px solid var(--v2-border);
@@ -12424,14 +12406,14 @@
 
             .quick-ref-grid {
                 display: grid;
-                grid-template-columns: 1fr;
-                gap: 20px;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 16px;
             }
 
             .quick-ref-card {
-                background: var(--v2-bg-secondary);
-                border-radius: 18px;
-                padding: 22px;
+                background: var(--v2-bg-card);
+                border-radius: 16px;
+                padding: 20px;
                 border: 1px solid var(--v2-border);
                 transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
                 box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
@@ -12444,7 +12426,6 @@
 
             .quick-ref-card.safe {
                 border-top: 4px solid #22c55e;
-                background: linear-gradient(180deg, rgba(34, 197, 94, 0.05) 0%, var(--v2-bg-secondary) 100%);
             }
 
             .quick-ref-card.safe:hover {
@@ -12454,7 +12435,6 @@
 
             .quick-ref-card.danger {
                 border-top: 4px solid #ef4444;
-                background: linear-gradient(180deg, rgba(239, 68, 68, 0.05) 0%, var(--v2-bg-secondary) 100%);
             }
 
             .quick-ref-card.danger:hover {
@@ -12464,8 +12444,8 @@
 
             .quick-ref-card h4 {
                 margin-top: 0;
-                margin-bottom: 16px;
-                font-size: 15px;
+                margin-bottom: 14px;
+                font-size: 14px;
                 font-weight: 700;
                 color: var(--v2-text-primary);
                 display: flex;
@@ -12476,20 +12456,20 @@
             /* Quick Reference Pill Grid */
             .qr-pill-grid {
                 display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 8px;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 6px;
             }
 
             .qr-pill {
                 display: flex;
                 align-items: center;
-                gap: 8px;
-                padding: 10px 12px;
-                border-radius: 10px;
+                gap: 6px;
+                padding: 8px 10px;
+                border-radius: 8px;
                 font-size: 12px;
                 font-weight: 500;
                 line-height: 1.3;
-                transition: all 0.2s ease;
+                transition: all 0.15s ease;
                 cursor: default;
             }
 
@@ -12533,35 +12513,6 @@
                 border-color: rgba(220, 38, 38, 0.4);
                 transform: translateY(-1px);
                 box-shadow: 0 3px 10px rgba(220, 38, 38, 0.12);
-            }
-
-            /* Legacy list styles - keeping for backward compatibility */
-            .quick-ref-list {
-                list-style: none;
-                padding: 0;
-                margin: 0;
-                max-height: 220px;
-                overflow-y: auto;
-            }
-
-            .quick-ref-list li {
-                padding: 8px 12px;
-                font-size: 13px;
-                color: var(--v2-text-primary);
-                background: var(--v2-bg-card);
-                border-radius: 8px;
-                margin-bottom: 6px;
-                font-weight: 500;
-            }
-
-            .quick-ref-list li:last-child {
-                margin-bottom: 0;
-            }
-
-            .quick-ref-list.contraindicated li {
-                color: #dc2626;
-                font-weight: 600;
-                background: rgba(220, 38, 38, 0.08);
             }
 
             .pregnancy-category-section {
@@ -13190,17 +13141,8 @@
                     grid-template-columns: 1fr;
                 }
 
-                .pregnancy-main-layout {
+                .pregnancy-bottom-grid {
                     grid-template-columns: 1fr;
-                }
-
-                .pregnancy-sidebar {
-                    position: static;
-                    order: 2;
-                }
-
-                .pregnancy-primary-content {
-                    order: 1;
                 }
 
                 .trimester-info {
@@ -13236,13 +13178,12 @@
                 .drug-categories-section,
                 .clinical-pearls-section,
                 .resources-section {
-                    padding: 16px;
+                    padding: 14px;
                 }
 
-                /* Responsive pill grid - 2 columns on mobile */
                 .qr-pill-grid {
-                    grid-template-columns: repeat(2, 1fr);
-                    gap: 6px;
+                    grid-template-columns: 1fr;
+                    gap: 4px;
                 }
 
                 .qr-pill {
@@ -14797,44 +14738,42 @@
                     </div>
 
                     <div class="pregnancy-drugs-content">
-                        <div class="pregnancy-main-layout">
-                            <aside class="pregnancy-sidebar" aria-label="Quick references and guidance">
-                                <div class="quick-reference-section">
-                                    <h3>Quick Reference Lists</h3>
-                                    <div class="quick-ref-grid">
-                                        <div class="quick-ref-card safe">
-                                            <h4>✅ Generally Safe in Pregnancy</h4>
-                                            <div id="safePregDrugs"></div>
-                                        </div>
-                                        <div class="quick-ref-card safe">
-                                            <h4>✅ Generally Safe in Breastfeeding</h4>
-                                            <div id="safeBFDrugs"></div>
-                                        </div>
-                                        <div class="quick-ref-card danger">
-                                            <h4>🚫 Absolute Contraindications</h4>
-                                            <div id="absoluteContraDrugs"></div>
-                                        </div>
-                                    </div>
+                        <!-- Quick Reference Lists - Full Width -->
+                        <div class="quick-reference-section">
+                            <h3>Quick Reference Lists</h3>
+                            <div class="quick-ref-grid">
+                                <div class="quick-ref-card safe">
+                                    <h4>✅ Generally Safe in Pregnancy</h4>
+                                    <div id="safePregDrugs"></div>
                                 </div>
+                                <div class="quick-ref-card safe">
+                                    <h4>✅ Generally Safe in Breastfeeding</h4>
+                                    <div id="safeBFDrugs"></div>
+                                </div>
+                                <div class="quick-ref-card danger">
+                                    <h4>🚫 Absolute Contraindications</h4>
+                                    <div id="absoluteContraDrugs"></div>
+                                </div>
+                            </div>
+                        </div>
 
-                                <div class="clinical-pearls-section">
-                                    <h3>💡 Clinical Pearls</h3>
-                                    <div id="pregnancyClinicalPearls"></div>
-                                </div>
+                        <!-- Drug Categories - Full Width -->
+                        <div class="drug-categories-section">
+                            <h3>Drug Categories</h3>
+                            <p class="pregnancy-results-caption">Select a filter above to narrow by trimester or breastfeeding risk. Click any card for detailed recommendations.</p>
+                            <div id="pregnancyDrugsList"></div>
+                        </div>
 
-                                <div class="resources-section">
-                                    <h3>📚 Resources & Guidelines</h3>
-                                    <div id="pregnancyResourcesList"></div>
-                                </div>
-                            </aside>
-
-                            <section class="pregnancy-primary-content" aria-label="Medication categories and contraindications">
-                                <div class="drug-categories-section">
-                                    <h3>Drug Categories</h3>
-                                    <p class="pregnancy-results-caption">Select a filter above to narrow by trimester or breastfeeding risk. Click any card for detailed recommendations.</p>
-                                    <div id="pregnancyDrugsList"></div>
-                                </div>
-                            </section>
+                        <!-- Clinical Pearls & Resources - Two Column -->
+                        <div class="pregnancy-bottom-grid">
+                            <div class="clinical-pearls-section">
+                                <h3>💡 Clinical Pearls</h3>
+                                <div id="pregnancyClinicalPearls"></div>
+                            </div>
+                            <div class="resources-section">
+                                <h3>📚 Resources & Guidelines</h3>
+                                <div id="pregnancyResourcesList"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
