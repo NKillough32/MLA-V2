@@ -976,22 +976,25 @@ class MSKInvestigationsManager {
             }
 
             .msk-normal-range {
-                background: rgba(34,197,94,0.1);
-                color: #15803d;
-                padding: 6px 12px;
+                background: rgba(16, 185, 129, 0.1);
+                border: 1px solid rgba(16, 185, 129, 0.2);
+                color: #047857;
+                padding: 8px 14px;
                 border-radius: 6px;
-                font-size: 0.85rem;
-                font-weight: 500;
+                font-size: 0.875rem;
+                font-weight: 600;
                 margin-bottom: 12px;
                 display: inline-block;
             }
 
             .msk-indications {
-                background: rgba(59,130,246,0.1);
-                color: #1d4ed8;
-                padding: 8px 12px;
+                background: rgba(59, 130, 246, 0.1);
+                border: 1px solid rgba(59, 130, 246, 0.2);
+                color: #1e40af;
+                padding: 10px 14px;
                 border-radius: 6px;
                 font-size: 0.9rem;
+                font-weight: 500;
                 margin-bottom: 16px;
             }
 
@@ -1001,71 +1004,88 @@ class MSKInvestigationsManager {
 
             .msk-finding {
                 background: #f8fafc;
-                border-left: 4px solid #e2e8f0;
-                padding: 12px 16px;
+                border: 1px solid #e2e8f0;
+                border-left: 4px solid #3b82f6;
+                padding: 16px;
                 margin-bottom: 12px;
-                border-radius: 0 8px 8px 0;
+                border-radius: 8px;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.1);
             }
 
             .msk-finding-name {
-                font-weight: 600;
-                color: #0f172a;
-                font-size: 0.95rem;
-                margin-bottom: 8px;
+                font-weight: 700;
+                color: #1e293b;
+                font-size: 1rem;
+                margin-bottom: 10px;
             }
 
             .msk-finding-detail {
-                margin-bottom: 6px;
+                margin-bottom: 8px;
                 font-size: 0.875rem;
-                line-height: 1.5;
+                line-height: 1.6;
+                padding: 8px 12px;
+                border-radius: 6px;
+                margin-left: 8px;
             }
 
             .msk-significance {
-                color: #0369a1;
+                background: rgba(59, 130, 246, 0.08);
+                border-left: 3px solid #3b82f6;
+                color: #1e40af;
+                font-weight: 500;
             }
 
             .msk-causes {
-                color: #7c2d12;
+                background: rgba(245, 158, 11, 0.08);
+                border-left: 3px solid #f59e0b;
+                color: #92400e;
+                font-weight: 500;
             }
 
             .msk-treatment {
-                color: #15803d;
-                font-weight: 500;
-                background: rgba(34,197,94,0.05);
-                padding: 4px 8px;
-                border-radius: 4px;
-                margin-top: 4px;
+                background: rgba(16, 185, 129, 0.08);
+                border-left: 3px solid #10b981;
+                color: #047857;
+                font-weight: 600;
+                padding: 10px 14px;
+                border-radius: 6px;
+                margin: 8px 0 0 8px;
             }
 
             .msk-red-flags {
-                background: rgba(239,68,68,0.1);
+                background: rgba(239, 68, 68, 0.1);
+                border: 1px solid rgba(239, 68, 68, 0.2);
                 border-left: 4px solid #ef4444;
-                color: #dc2626;
-                padding: 8px 12px;
-                border-radius: 0 6px 6px 0;
+                color: #991b1b;
+                padding: 12px 16px;
+                border-radius: 6px;
                 font-size: 0.875rem;
-                font-weight: 500;
-                margin-top: 12px;
+                font-weight: 600;
+                margin-top: 16px;
             }
 
             .msk-limitations {
-                background: rgba(251,191,36,0.1);
+                background: rgba(251, 191, 36, 0.1);
+                border: 1px solid rgba(251, 191, 36, 0.2);
                 border-left: 4px solid #f59e0b;
-                color: #d97706;
-                padding: 8px 12px;
-                border-radius: 0 6px 6px 0;
+                color: #92400e;
+                padding: 12px 16px;
+                border-radius: 6px;
                 font-size: 0.875rem;
-                margin-top: 12px;
+                font-weight: 500;
+                margin-top: 16px;
             }
 
             .msk-views, .msk-sequences, .msk-technique {
-                background: rgba(168,85,247,0.1);
-                color: #7c3aed;
-                padding: 8px 12px;
+                background: rgba(139, 92, 246, 0.1);
+                border: 1px solid rgba(139, 92, 246, 0.2);
+                color: #6b21a8;
+                padding: 10px 14px;
                 border-radius: 6px;
-                font-size: 0.85rem;
+                font-size: 0.875rem;
+                font-weight: 500;
                 margin-bottom: 12px;
-                font-family: 'Segoe UI', monospace;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             }
 
             /* Severity indicators */
@@ -1087,45 +1107,83 @@ class MSKInvestigationsManager {
             /* Dark mode support */
             body.dark-mode .msk-search-input {
                 background: #1e293b;
-                border-color: rgba(148,163,184,0.2);
-                color: #e2e8f0;
+                border-color: rgba(148,163,184,0.3);
+                color: #f1f5f9;
             }
 
             body.dark-mode .msk-category {
                 background: #1e293b;
-                border-color: rgba(148,163,184,0.1);
+                border-color: rgba(148,163,184,0.2);
             }
 
             body.dark-mode .msk-investigation {
-                border-color: rgba(148,163,184,0.1);
+                border-color: rgba(148,163,184,0.2);
             }
 
             body.dark-mode .msk-investigation h4 {
-                color: #e2e8f0;
+                color: #f1f5f9;
             }
 
             body.dark-mode .msk-finding {
                 background: #334155;
-                border-left-color: #64748b;
+                border-color: rgba(148,163,184,0.3);
+                border-left-color: #60a5fa;
             }
 
             body.dark-mode .msk-finding-name {
-                color: #e2e8f0;
+                color: #f1f5f9;
             }
 
-            body.dark-mode .msk-indications {
-                background: rgba(59,130,246,0.2);
-                color: #93c5fd;
+            body.dark-mode .msk-significance {
+                background: rgba(96, 165, 250, 0.15);
+                border-left-color: #60a5fa;
+                color: #bfdbfe;
             }
 
-            body.dark-mode .msk-normal-range {
-                background: rgba(34,197,94,0.2);
-                color: #86efac;
+            body.dark-mode .msk-causes {
+                background: rgba(251, 191, 36, 0.15);
+                border-left-color: #fbbf24;
+                color: #fde68a;
             }
 
             body.dark-mode .msk-treatment {
-                background: rgba(34,197,94,0.1);
-                color: #86efac;
+                background: rgba(52, 211, 153, 0.15);
+                border-left-color: #34d399;
+                color: #a7f3d0;
+            }
+
+            body.dark-mode .msk-indications {
+                background: rgba(96, 165, 250, 0.15);
+                border-color: rgba(96, 165, 250, 0.3);
+                color: #bfdbfe;
+            }
+
+            body.dark-mode .msk-normal-range {
+                background: rgba(52, 211, 153, 0.15);
+                border-color: rgba(52, 211, 153, 0.3);
+                color: #a7f3d0;
+            }
+
+            body.dark-mode .msk-red-flags {
+                background: rgba(248, 113, 113, 0.15);
+                border-color: rgba(248, 113, 113, 0.3);
+                border-left-color: #f87171;
+                color: #fca5a5;
+            }
+
+            body.dark-mode .msk-limitations {
+                background: rgba(251, 191, 36, 0.15);
+                border-color: rgba(251, 191, 36, 0.3);
+                border-left-color: #fbbf24;
+                color: #fde68a;
+            }
+
+            body.dark-mode .msk-views,
+            body.dark-mode .msk-sequences,
+            body.dark-mode .msk-technique {
+                background: rgba(167, 139, 250, 0.15);
+                border-color: rgba(167, 139, 250, 0.3);
+                color: #c4b5fd;
             }
 
             /* Filter buttons */
