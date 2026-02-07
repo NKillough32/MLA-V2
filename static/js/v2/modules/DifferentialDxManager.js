@@ -98,13 +98,6 @@ export class DifferentialDxManager {
         
         this.bindDifferentialEvents();
     }
-                    ${this.generateDifferentialGrid()}
-                </div>
-            </div>
-        `;
-
-        this.bindDifferentialEvents();
-    }
 
     /**
      * Generate differential diagnosis grid HTML
