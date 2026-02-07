@@ -275,16 +275,7 @@ export class DermatologyManager {
 
                 <!-- Controls -->
                 <div class="dermatology-controls">
-                    <!-- Search -->
-                    <div class="dermatology-search-box">
-                        <span class="dermatology-search-icon">🔍</span>
-                        <input 
-                            type="text" 
-                            placeholder="Search conditions, symptoms, treatments..." 
-                            value="${this.searchQuery}"
-                            id="dermatology-search-input"
-                        />
-                    </div>
+                    ${this.searchComponent.generateHTML()}
 
                     <!-- Category Filter -->
                     <div class="dermatology-category-filter">
@@ -327,6 +318,12 @@ export class DermatologyManager {
                 </div>
             </div>
         `;
+
+        // Initialize the search component
+        const searchContainer = container.querySelector('[data-component="standardized-search"]');
+        if (searchContainer) {
+            this.searchComponent.initialize(searchContainer);
+        }
 
         this.attachEventListeners(container);
     }
@@ -689,15 +686,6 @@ export class DermatologyManager {
      * Attach event listeners
      */
     attachEventListeners(container) {
-        // Search input
-        const searchInput = container.querySelector('#dermatology-search-input');
-        if (searchInput) {
-            searchInput.addEventListener('input', (e) => {
-                this.searchQuery = e.target.value;
-                this.render(container);
-            });
-        }
-
         // Category buttons
         container.querySelectorAll('.dermatology-category-btn').forEach(btn => {
             btn.addEventListener('click', (e) => {
@@ -709,18 +697,32 @@ export class DermatologyManager {
             });
         });
 
+        // Attach listeners to results
+        const resultsGrid = container.querySelector('.dermatology-conditions-grid');
+        if (resultsGrid) {
+            this.attachResultsEventListeners(resultsGrid);
+        }
+    }
+
+    /**
+     * Attach event listeners specifically to result cards
+     */
+    attachResultsEventListeners(resultsContainer) {
         // Favorite buttons
-        container.querySelectorAll('.favorite-btn').forEach(btn => {
+        resultsContainer.querySelectorAll('.favorite-btn').forEach(btn => {
             btn.addEventListener('click', async (e) => {
                 e.stopPropagation();
                 const conditionId = btn.dataset.conditionId;
                 await this.toggleFavorite(conditionId);
-                this.render(container);
+                // Update just this button
+                const isFav = this.isFavorite(conditionId);
+                btn.textContent = isFav ? '⭐' : '☆';
+                btn.className = `favorite-btn ${isFav ? 'favorited' : ''}`;
             });
         });
 
         // View details buttons
-        container.querySelectorAll('.view-details-btn').forEach(btn => {
+        resultsContainer.querySelectorAll('.view-details-btn').forEach(btn => {
             btn.addEventListener('click', (e) => {
                 const conditionId = btn.dataset.conditionId;
                 const condition = this.getCondition(conditionId);
@@ -732,7 +734,7 @@ export class DermatologyManager {
         });
 
         // Condition cards (click to view details)
-        container.querySelectorAll('.dermatology-condition-card').forEach(card => {
+        resultsContainer.querySelectorAll('.dermatology-condition-card').forEach(card => {
             card.addEventListener('click', (e) => {
                 // Don't trigger if clicking favorite button or view details button
                 if (e.target.closest('.favorite-btn') || e.target.closest('.view-details-btn')) {
@@ -756,6 +758,9 @@ export class DermatologyManager {
         this.currentFilter = filter;
         this.searchQuery = searchTerm;
         this.currentCategory = filter;
+        
+        // Update only the results, not the entire interface
+        this.updateResults();
         console.log(`Dermatology search: "${searchTerm}" with filter: "${filter}"`);
     }
 
@@ -767,6 +772,9 @@ export class DermatologyManager {
         this.currentSearchTerm = searchTerm;
         this.currentCategory = filter;
         this.searchQuery = searchTerm;
+        
+        // Update only the results, not the entire interface
+        this.updateResults();
         console.log(`Dermatology filter changed: "${filter}" with search: "${searchTerm}"`);
     }
 
@@ -778,7 +786,47 @@ export class DermatologyManager {
         this.currentFilter = 'all';
         this.searchQuery = '';
         this.currentCategory = 'all';
+        
+        // Update only the results, not the entire interface
+        this.updateResults();
         console.log('Dermatology search cleared');
+    }
+
+    /**
+     * Update just the results section without re-rendering the entire interface
+     */
+    updateResults() {
+        const container = document.querySelector('.dermatology-container');
+        if (!container) return;
+        
+        const conditions = this.getConditions(this.currentCategory);
+        const filteredConditions = this.searchQuery 
+            ? this.search(this.searchQuery)
+            : conditions;
+
+        const stats = this.getStatistics();
+        
+        // Update stats
+        const statsElements = container.querySelectorAll('.stat-value');
+        if (statsElements[1]) {
+            statsElements[1].textContent = filteredConditions.length;
+        }
+        
+        // Update results grid
+        const resultsGrid = container.querySelector('.dermatology-conditions-grid');
+        if (resultsGrid) {
+            resultsGrid.innerHTML = filteredConditions.length > 0 
+                ? filteredConditions.map(condition => this.renderConditionCard(condition)).join('') 
+                : `<div class="no-results"><p>No conditions found matching your search.</p></div>`;
+            
+            // Re-attach event listeners to new result cards
+            this.attachResultsEventListeners(resultsGrid);
+        }
+
+        // Apply highlighting if there's a search term
+        if (this.searchQuery) {
+            this.searchComponent.applyHighlighting(resultsGrid, this.searchQuery);
+        }
     }
 
     /**

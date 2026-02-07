@@ -241,57 +241,63 @@ export class HematologyManager {
             : this.getConditions(this.currentCategory);
 
         const html = `
-            <div class="hematology-header">
-                <h3>🩸 Hematology & Blood Disorders</h3>
-                <p>Comprehensive guide to blood disorders and blood film presentations</p>
-            </div>
-
-            <div class="hematology-controls">
-                <div class="hematology-search-box">
-                    <input type="text" id="hematology-search-input" placeholder="Search conditions, findings, symptoms..." value="${this.searchQuery}" />
-                    <span class="hematology-search-icon">🔍</span>
+            <div class="hematology-container">
+                <div class="hematology-header">
+                    <h3>🩸 Hematology & Blood Disorders</h3>
+                    <p>Comprehensive guide to blood disorders and blood film presentations</p>
                 </div>
-            </div>
 
-            <div class="hematology-category-filter" id="hematology-category-filter">
-                ${this.renderCategoryFilters()}
-            </div>
-
-            <div class="hematology-stats" id="hematology-stats">
-                <span class="stat-item">
-                    <span class="stat-value">${Object.keys(this.haematologyData || {}).length}</span>
-                    <span class="stat-label">Conditions</span>
-                </span>
-                <span class="stat-item">
-                    <span class="stat-value">${this.categories.length - 1}</span>
-                    <span class="stat-label">Categories</span>
-                </span>
-            </div>
-
-            <!-- List View -->
-            <div id="hematology-list-view" class="hematology-list-view">
-                <div class="hematology-conditions-grid" id="hematology-conditions-grid">
-                    ${this.renderConditionCards(conditions)}
+                <div class="hematology-controls">
+                    ${this.searchComponent.generateHTML()}
                 </div>
-                <div id="hematology-empty-state" class="hematology-empty-state" style="display: none;">
-                    <div class="hematology-empty-state-icon">🔍</div>
-                    <h4>No conditions found</h4>
-                    <p>Try adjusting your search or category filter</p>
-                </div>
-            </div>
 
-            <!-- Detail View -->
-            <div id="hematology-detail-view" class="hematology-detail-view" style="display: none;">
-                <button class="hematology-back-btn" id="hematology-back-btn">
-                    ← Back to List
-                </button>
-                <div id="hematology-detail-content" class="hematology-detail-content">
-                    <!-- Condition details will be rendered here -->
+                <div class="hematology-category-filter" id="hematology-category-filter">
+                    ${this.renderCategoryFilters()}
+                </div>
+
+                <div class="hematology-stats" id="hematology-stats">
+                    <span class="stat-item">
+                        <span class="stat-value">${Object.keys(this.haematologyData || {}).length}</span>
+                        <span class="stat-label">Conditions</span>
+                    </span>
+                    <span class="stat-item">
+                        <span class="stat-value">${this.categories.length - 1}</span>
+                        <span class="stat-label">Categories</span>
+                    </span>
+                </div>
+
+                <!-- List View -->
+                <div id="hematology-list-view" class="hematology-list-view">
+                    <div class="hematology-conditions-grid" id="hematology-conditions-grid">
+                        ${this.renderConditionCards(conditions)}
+                    </div>
+                    <div id="hematology-empty-state" class="hematology-empty-state" style="display: none;">
+                        <div class="hematology-empty-state-icon">🔍</div>
+                        <h4>No conditions found</h4>
+                        <p>Try adjusting your search or category filter</p>
+                    </div>
+                </div>
+
+                <!-- Detail View -->
+                <div id="hematology-detail-view" class="hematology-detail-view" style="display: none;">
+                    <button class="hematology-back-btn" id="hematology-back-btn">
+                        ← Back to List
+                    </button>
+                    <div id="hematology-detail-content" class="hematology-detail-content">
+                        <!-- Condition details will be rendered here -->
+                    </div>
                 </div>
             </div>
         `;
 
         container.innerHTML = html;
+        
+        // Initialize the search component
+        const searchContainer = container.querySelector('[data-component="standardized-search"]');
+        if (searchContainer) {
+            this.searchComponent.initialize(searchContainer);
+        }
+        
         this.attachEventListeners();
     }
 
@@ -669,15 +675,6 @@ export class HematologyManager {
      * Attach event listeners
      */
     attachEventListeners() {
-        // Search input
-        const searchInput = document.getElementById('hematology-search-input');
-        if (searchInput) {
-            searchInput.addEventListener('input', (e) => {
-                this.searchQuery = e.target.value;
-                this.refreshConditionsList();
-            });
-        }
-
         // Category filters
         const categoryBtns = document.querySelectorAll('.hematology-category-btn');
         categoryBtns.forEach(btn => {
@@ -800,6 +797,7 @@ export class HematologyManager {
         this.currentFilter = filter;
         this.searchQuery = searchTerm;
         this.currentCategory = filter;
+        this.refreshConditionsList();
         console.log(`Hematology search: "${searchTerm}" with filter: "${filter}"`);
     }
 
@@ -811,6 +809,7 @@ export class HematologyManager {
         this.currentSearchTerm = searchTerm;
         this.currentCategory = filter;
         this.searchQuery = searchTerm;
+        this.refreshConditionsList();
         console.log(`Hematology filter changed: "${filter}" with search: "${searchTerm}"`);
     }
 
@@ -822,6 +821,7 @@ export class HematologyManager {
         this.currentFilter = 'all';
         this.searchQuery = '';
         this.currentCategory = 'all';
+        this.refreshConditionsList();
         console.log('Hematology search cleared');
     }
 }
