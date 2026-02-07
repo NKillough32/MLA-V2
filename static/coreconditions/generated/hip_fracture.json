@@ -11,13 +11,13 @@
     "overview": {
       "definition": "A hip fracture is a break in the upper quarter of the femur (thigh bone) that typically occurs due to a fall or trauma, particularly in older adults with osteoporosis.",
       "epidemiology": "Hip fractures are common in the elderly, with an incidence of approximately 300,000 cases annually in the United States. They are more prevalent in women due to higher rates of osteoporosis.",
-      "pathophysiology": "Hip fractures often result from low-energy trauma in osteoporotic bones. The fracture can occur in different locations: intracapsular (within the hip joint capsule) or extracapsular (outside the joint capsule). Blood supply to the femoral head can be compromised, leading to avascular necrosis."
+      "pathophysiology": "Hip fractures often result from low-energy trauma in osteoporotic bones, especially in osteoporotic elderly females. The fracture can occur in different locations: intracapsular (subcapital: from the edge of the femoral head to the insertion of the capsule) or extracapsular (trochanteric or subtrochanteric - the lesser trochanter is the dividing line). The blood supply to the femoral head runs up the neck and thus avascular necrosis is a risk in displaced fractures."
     },
     "recognition": {
       "symptoms": [
         "Severe hip pain",
-        "Inability to bear weight on the affected leg",
-        "Shortened and externally rotated leg"
+        "Inability to bear weight on the affected leg (note: patients with non-displaced or incomplete neck of femur fractures may be able to weight bear)",
+        "The classic signs are a shortened and externally rotated leg"
       ],
       "signs": [
         "Deformity of the hip",
@@ -46,7 +46,7 @@
       ]
     },
     "diagnosis": {
-      "criteria": "Diagnosis is primarily based on clinical presentation and confirmed by imaging (X-ray).",
+      "criteria": "Diagnosis is primarily based on clinical presentation and confirmed by imaging (X-ray). The Garden classification system is commonly used: Type I - Stable fracture with impaction in valgus; Type II - Complete fracture but undisplaced; Type III - Displaced fracture, usually rotated and angulated, but still has boney contact; Type IV - Complete boney disruption. Blood supply disruption is most common following Types III and IV.",
       "differentials": [
         "Pelvic fracture",
         "Proximal femoral stress fracture",
@@ -60,11 +60,20 @@
           "Analgesia (e.g., paracetamol, NSAIDs)",
           "Immobilization of the limb"
         ],
-        "secondLine": [
-          "Surgical intervention (e.g., hip hemiarthroplasty or total hip replacement)"
+        "intracapsularUndisplaced": [
+          "Internal fixation, or hemiarthroplasty if unfit"
+        ],
+        "intracapsularDisplaced": [
+          "NICE recommend replacement arthroplasty (total hip replacement or hemiarthroplasty) to all patients with a displaced intracapsular hip fracture",
+          "Total hip replacement is favoured over hemiarthroplasty if patients were able to walk independently outdoors with no more than the use of a stick AND are not cognitively impaired AND are medically fit for anaesthesia and the procedure"
+        ],
+        "extracapsular": [
+          "Stable intertrochanteric fractures: dynamic hip screw",
+          "Reverse oblique, transverse or subtrochanteric fractures: intramedullary device"
         ],
         "procedures": [
-          "Surgical fixation (e.g., intramedullary nailing, dynamic hip screw)"
+          "Surgical fixation (e.g., intramedullary nailing, dynamic hip screw)",
+          "Hip hemiarthroplasty or total hip replacement"
         ]
       },
       "chronic": {

@@ -324,12 +324,27 @@ class MSKInvestigationsManager {
                             {
                                 name: "Hip Fracture Management",
                                 indications: "Hip pain after fall, inability to weight bear, shortened externally rotated leg",
-                                patterns: "Intracapsular vs extracapsular location affects blood supply and treatment choice",
+                                patterns: "Intracapsular vs extracapsular location affects blood supply and treatment choice. Garden Classification: Type I - Stable fracture with impaction in valgus; Type II - Complete fracture but undisplaced; Type III - Displaced fracture, usually rotated and angulated; Type IV - Complete boney disruption. Blood supply disruption most common in Types III and IV",
                                 abnormalFindings: {
-                                    "Intertrochanteric fracture": {
-                                        significance: "Extracapsular fracture with good blood supply",
+                                    "Intracapsular undisplaced fracture": {
+                                        significance: "Lower risk of avascular necrosis, better blood supply preservation",
+                                        causes: "Osteoporotic bone, low-energy trauma in elderly",
+                                        firstLine: "Internal fixation, or hemiarthroplasty if unfit for surgery"
+                                    },
+                                    "Intracapsular displaced fracture": {
+                                        significance: "High risk of avascular necrosis due to compromised femoral head blood supply",
+                                        causes: "Osteoporotic bone, fall from standing height, especially elderly females",
+                                        firstLine: "NICE recommend replacement arthroplasty (total hip replacement or hemiarthroplasty) to all patients. Total hip replacement favoured if patients can walk independently outdoors with stick only, not cognitively impaired, and medically fit"
+                                    },
+                                    "Intertrochanteric fracture (extracapsular)": {
+                                        significance: "Extracapsular fracture with good blood supply, stable pattern",
                                         causes: "Osteoporotic bone, fall from standing height, elderly population",
-                                        firstLine: "Dynamic hip screws are the preferred surgical management for intertrochanteric (extracapsular) proximal femoral fracture"
+                                        firstLine: "Dynamic hip screws are preferred for stable intertrochanteric fractures"
+                                    },
+                                    "Subtrochanteric fracture (extracapsular)": {
+                                        significance: "Complex fracture pattern below lesser trochanter",
+                                        causes: "High-energy trauma or pathological fracture",
+                                        firstLine: "Intramedullary device preferred for reverse oblique, transverse or subtrochanteric fractures"
                                     },
                                     "Sciatic nerve injury": {
                                         significance: "Complication affecting foot dorsiflexion and sensation",
@@ -337,7 +352,7 @@ class MSKInvestigationsManager {
                                         firstLine: "Sciatic nerve injury is a common complication of posterior hip dislocation"
                                     }
                                 },
-                                redFlags: "Compartment syndrome most commonly associated with supracondylar and tibial shaft fractures"
+                                redFlags: "Neurovascular compromise, patients with non-displaced fractures may still weight bear. Note: blood supply to femoral head runs up neck - avascular necrosis risk in displaced fractures"
                             },
                             {
                                 name: "Scaphoid Fracture",
