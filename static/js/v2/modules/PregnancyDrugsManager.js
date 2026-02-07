@@ -7,6 +7,7 @@
 import { eventBus } from './EventBus.js';
 import { storage } from './StorageManager.js';
 import { analytics } from './AnalyticsManager.js';
+import { StandardizedSearchComponent } from '../components/StandardizedSearchComponent.js';
 
 export class PregnancyDrugsManager {
     constructor() {
@@ -20,6 +21,32 @@ export class PregnancyDrugsManager {
         this.initialized = false;
         this.version = "1.0.0";
         this.lastUpdated = "2026-02-05";
+        
+        // Initialize search component with pregnancy drug-specific filters
+        this.searchComponent = new StandardizedSearchComponent({
+            placeholder: "Search pregnancy/lactation drug safety (e.g., warfarin, ACE, antibiotics)...",
+            searchIcon: "🤰",
+            emptyStateMessage: "No drugs match your safety criteria",
+            filterOptions: [
+                { value: 'all', label: 'All Categories' },
+                { value: 'contraindicated', label: 'Contraindicated' },
+                { value: 'cautionRequired', label: 'Caution Required' },
+                { value: 'generallyNot', label: 'Generally Not Used' },
+                { value: 'safeLimited', label: 'Safe with Limited Data' },
+                { value: 'safeExtensive', label: 'Safe with Extensive Data' },
+                { value: 'cardiovascular', label: 'Cardiovascular' },
+                { value: 'antibiotics', label: 'Antibiotics' },
+                { value: 'analgesics', label: 'Analgesics' },
+                { value: 'psychiatric', label: 'Psychiatric' },
+                { value: 'endocrine', label: 'Endocrine' }
+            ],
+            onSearch: (searchTerm, filter) => this.handleSearch(searchTerm, filter),
+            onFilter: (filter, searchTerm) => this.handleFilter(filter, searchTerm),
+            onClear: () => this.handleClear()
+        });
+
+        this.currentSearchTerm = '';
+        this.currentFilter = 'all';
     }
 
     async initialize() {
@@ -1657,6 +1684,45 @@ export class PregnancyDrugsManager {
             version: this.version,
             lastUpdated: this.lastUpdated
         };
+    }
+
+    /**
+     * Handle search from StandardizedSearchComponent
+     */
+    handleSearch(searchTerm, filter) {
+        this.currentSearchTerm = searchTerm;
+        this.currentFilter = filter;
+        this.searchTerm = searchTerm.toLowerCase();
+        if (this.container) {
+            this.updateSearchResults();
+        }
+        console.log(`Pregnancy drugs search: "${searchTerm}" with filter: "${filter}"`);
+    }
+
+    /**
+     * Handle filter change from StandardizedSearchComponent
+     */
+    handleFilter(filter, searchTerm) {
+        this.currentFilter = filter;
+        this.currentSearchTerm = searchTerm;
+        this.searchTerm = searchTerm.toLowerCase();
+        if (this.container) {
+            this.updateSearchResults();
+        }
+        console.log(`Pregnancy drugs filter changed: "${filter}" with search: "${searchTerm}"`);
+    }
+
+    /**
+     * Handle clear from StandardizedSearchComponent
+     */
+    handleClear() {
+        this.currentSearchTerm = '';
+        this.currentFilter = 'all';
+        this.searchTerm = '';
+        if (this.container) {
+            this.updateSearchResults();
+        }
+        console.log('Pregnancy drugs search cleared');
     }
 }
 

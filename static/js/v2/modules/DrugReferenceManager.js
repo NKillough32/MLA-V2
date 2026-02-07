@@ -5,6 +5,7 @@
 
 import { eventBus } from './EventBus.js';
 import { storage } from './StorageManager.js';
+import StandardizedSearchComponent from './StandardizedSearchComponent.js';
 
 export class DrugReferenceManager {
     constructor() {
@@ -18,6 +19,20 @@ export class DrugReferenceManager {
         this.bnfValidationCache = new Map();
         this.enableBnfValidation = false;
         this.hasLoggedValidationSkip = false;
+        
+        // Initialize standardized search component
+        this.searchComponent = new StandardizedSearchComponent({
+            placeholder: 'Search drugs by name, class, or indication...',
+            highlightClass: 'drugs-highlight',
+            callbacks: {
+                onSearch: (searchTerm, filter) => this.handleSearch(searchTerm, filter),
+                onFilter: (filter, searchTerm) => this.handleFilter(filter, searchTerm),
+                onClear: () => this.handleClear()
+            }
+        });
+        
+        this.currentSearchTerm = '';
+        this.currentFilter = 'all';
     }
 
     normalizeDrugNameForLink(drugName) {
@@ -429,6 +444,35 @@ export class DrugReferenceManager {
         );
 
         return drugsWithLinks.filter(drug => drug !== null);
+    }
+
+    /**
+     * Handle search from StandardizedSearchComponent
+     */
+    handleSearch(searchTerm, filter) {
+        this.currentSearchTerm = searchTerm;
+        this.currentFilter = filter;
+        // Trigger the existing search functionality
+        // This would typically be connected to the UI's search display
+        console.log(`Drug search: "${searchTerm}" with filter: "${filter}"`);
+    }
+
+    /**
+     * Handle filter change from StandardizedSearchComponent
+     */
+    handleFilter(filter, searchTerm) {
+        this.currentFilter = filter;
+        this.currentSearchTerm = searchTerm;
+        console.log(`Drug filter changed: "${filter}" with search: "${searchTerm}"`);
+    }
+
+    /**
+     * Handle clear from StandardizedSearchComponent
+     */
+    handleClear() {
+        this.currentSearchTerm = '';
+        this.currentFilter = 'all';
+        console.log('Drug search cleared');
     }
 
     /**

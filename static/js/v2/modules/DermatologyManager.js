@@ -6,6 +6,7 @@
 import { eventBus } from './EventBus.js';
 import { storage } from './StorageManager.js';
 import { analytics } from './AnalyticsManager.js';
+import { StandardizedSearchComponent } from '../components/StandardizedSearchComponent.js';
 
 export class DermatologyManager {
     constructor() {
@@ -28,6 +29,32 @@ export class DermatologyManager {
             { id: 'nail-disorders', name: 'Nail Disorders', icon: '💅' },
             { id: 'pigmentation', name: 'Pigmentation Disorders', icon: '🎨' }
         ];
+        
+        // Initialize search component with dermatology-specific filters
+        this.searchComponent = new StandardizedSearchComponent({
+            placeholder: "Search conditions, symptoms, treatments...",
+            searchIcon: "🔍",
+            emptyStateMessage: "No dermatological conditions match your search",
+            filterOptions: [
+                { value: 'all', label: 'All Conditions' },
+                { value: 'inflammatory-eczema', label: 'Eczema & Dermatitis' },
+                { value: 'inflammatory-psoriasis', label: 'Psoriasis' },
+                { value: 'acne-rosacea', label: 'Acne & Rosacea' },
+                { value: 'infection-bacterial', label: 'Bacterial Infections' },
+                { value: 'infection-viral', label: 'Viral Infections' },
+                { value: 'infection-fungal', label: 'Fungal Infections' },
+                { value: 'skin-cancer', label: 'Skin Cancers' },
+                { value: 'hair-disorders', label: 'Hair Disorders' },
+                { value: 'nail-disorders', label: 'Nail Disorders' },
+                { value: 'pigmentation', label: 'Pigmentation Disorders' }
+            ],
+            onSearch: (searchTerm, filter) => this.handleSearch(searchTerm, filter),
+            onFilter: (filter, searchTerm) => this.handleFilter(filter, searchTerm),
+            onClear: () => this.handleClear()
+        });
+
+        this.currentSearchTerm = '';
+        this.currentFilter = 'all';
     }
 
     /**
@@ -719,6 +746,39 @@ export class DermatologyManager {
                 }
             });
         });
+    }
+
+    /**
+     * Handle search from StandardizedSearchComponent
+     */
+    handleSearch(searchTerm, filter) {
+        this.currentSearchTerm = searchTerm;
+        this.currentFilter = filter;
+        this.searchQuery = searchTerm;
+        this.currentCategory = filter;
+        console.log(`Dermatology search: "${searchTerm}" with filter: "${filter}"`);
+    }
+
+    /**
+     * Handle filter change from StandardizedSearchComponent
+     */
+    handleFilter(filter, searchTerm) {
+        this.currentFilter = filter;
+        this.currentSearchTerm = searchTerm;
+        this.currentCategory = filter;
+        this.searchQuery = searchTerm;
+        console.log(`Dermatology filter changed: "${filter}" with search: "${searchTerm}"`);
+    }
+
+    /**
+     * Handle clear from StandardizedSearchComponent
+     */
+    handleClear() {
+        this.currentSearchTerm = '';
+        this.currentFilter = 'all';
+        this.searchQuery = '';
+        this.currentCategory = 'all';
+        console.log('Dermatology search cleared');
     }
 
     /**

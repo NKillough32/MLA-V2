@@ -5,6 +5,7 @@
 
 import { eventBus } from './EventBus.js';
 import { storage } from './StorageManager.js';
+import StandardizedSearchComponent from './StandardizedSearchComponent.js';
 
 export class LabValuesManager {
     constructor() {
@@ -14,6 +15,20 @@ export class LabValuesManager {
         this.recentLabs = [];
         this.initialized = false;
         this.dataLoaded = false;
+        
+        // Initialize standardized search component
+        this.searchComponent = new StandardizedSearchComponent({
+            placeholder: 'Search lab tests, panels, or reference ranges...',
+            highlightClass: 'labs-highlight',
+            callbacks: {
+                onSearch: (searchTerm, filter) => this.handleSearch(searchTerm, filter),
+                onFilter: (filter, searchTerm) => this.handleFilter(filter, searchTerm),
+                onClear: () => this.handleClear()
+            }
+        });
+        
+        this.currentSearchTerm = '';
+        this.currentFilter = 'all';
     }
 
     /**
@@ -127,6 +142,34 @@ export class LabValuesManager {
         this.eventBus.emit('LAB_SEARCHED', { query, resultCount: matches.length });
         
         return matches;
+    }
+
+    /**
+     * Handle search from StandardizedSearchComponent
+     */
+    handleSearch(searchTerm, filter) {
+        this.currentSearchTerm = searchTerm;
+        this.currentFilter = filter;
+        // Trigger the existing search functionality
+        console.log(`Lab search: "${searchTerm}" with filter: "${filter}"`);
+    }
+
+    /**
+     * Handle filter change from StandardizedSearchComponent
+     */
+    handleFilter(filter, searchTerm) {
+        this.currentFilter = filter;
+        this.currentSearchTerm = searchTerm;
+        console.log(`Lab filter changed: "${filter}" with search: "${searchTerm}"`);
+    }
+
+    /**
+     * Handle clear from StandardizedSearchComponent
+     */
+    handleClear() {
+        this.currentSearchTerm = '';
+        this.currentFilter = 'all';
+        console.log('Lab search cleared');
     }
 
     /**

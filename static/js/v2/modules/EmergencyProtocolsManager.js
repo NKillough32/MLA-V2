@@ -7,6 +7,7 @@ import { eventBus } from './EventBus.js';
 import { storage } from './StorageManager.js';
 import { EVENTS } from './Constants.js';
 import { emergencyProtocols } from '../../data/emergencyProtocols.js';
+import { StandardizedSearchComponent } from '../components/StandardizedSearchComponent.js';
 
 export class EmergencyProtocolsManager {
     constructor() {
@@ -14,6 +15,31 @@ export class EmergencyProtocolsManager {
         this.initialized = false;
         this.recentProtocols = [];
         this.searchCache = new Map();
+        
+        // Initialize search component with emergency protocol-specific filters
+        this.searchComponent = new StandardizedSearchComponent({
+            placeholder: "Search emergency protocols, algorithms, procedures...",
+            searchIcon: "🚨",
+            emptyStateMessage: "No emergency protocols match your search criteria",
+            filterOptions: [
+                { value: 'all', label: 'All Protocols' },
+                { value: 'resuscitation', label: 'Resuscitation' },
+                { value: 'cardiac', label: 'Cardiac Emergencies' },
+                { value: 'respiratory', label: 'Respiratory Emergencies' },
+                { value: 'trauma', label: 'Trauma' },
+                { value: 'toxicology', label: 'Toxicology' },
+                { value: 'pediatric', label: 'Pediatric Emergencies' },
+                { value: 'obstetric', label: 'Obstetric Emergencies' },
+                { value: 'neurological', label: 'Neurological Emergencies' },
+                { value: 'procedures', label: 'Emergency Procedures' }
+            ],
+            onSearch: (searchTerm, filter) => this.handleSearch(searchTerm, filter),
+            onFilter: (filter, searchTerm) => this.handleFilter(filter, searchTerm),
+            onClear: () => this.handleClear()
+        });
+
+        this.currentSearchTerm = '';
+        this.currentFilter = 'all';
     }
 
     /**
@@ -532,6 +558,37 @@ export class EmergencyProtocolsManager {
             categories,
             recentCount: this.recentProtocols.length
         };
+    }
+
+    /**
+     * Handle search from StandardizedSearchComponent
+     */
+    handleSearch(searchTerm, filter) {
+        this.currentSearchTerm = searchTerm;
+        this.currentFilter = filter;
+        // Trigger existing search functionality
+        this.handleProtocolSearch();
+        console.log(`Emergency protocols search: "${searchTerm}" with filter: "${filter}"`);
+    }
+
+    /**
+     * Handle filter change from StandardizedSearchComponent
+     */
+    handleFilter(filter, searchTerm) {
+        this.currentFilter = filter;
+        this.currentSearchTerm = searchTerm;
+        this.handleProtocolSearch();
+        console.log(`Emergency protocols filter changed: "${filter}" with search: "${searchTerm}"`);
+    }
+
+    /**
+     * Handle clear from StandardizedSearchComponent
+     */
+    handleClear() {
+        this.currentSearchTerm = '';
+        this.currentFilter = 'all';
+        this.handleProtocolSearch();
+        console.log('Emergency protocols search cleared');
     }
 
     /**

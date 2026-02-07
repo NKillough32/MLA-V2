@@ -3,9 +3,37 @@
  * across specialties. Splitting from MedStatsEthicsManager keeps statistics content
  * lean while providing a focused clinical reference deck.
  */
+import { StandardizedSearchComponent } from '../components/StandardizedSearchComponent.js';
+
 class ClinicalPearlsManager {
     constructor() {
         this.sections = this.buildSections();
+        
+        // Initialize search component with clinical pearls-specific filters
+        this.searchComponent = new StandardizedSearchComponent({
+            placeholder: "Search clinical pearls (DKA fluids, aortic dissection, procedures)...",
+            searchIcon: "💎",
+            emptyStateMessage: "No clinical pearls match your search criteria",
+            filterOptions: [
+                { value: 'all', label: 'All Pearls' },
+                { value: 'emergency', label: 'Emergency Medicine' },
+                { value: 'cardiology', label: 'Cardiology' },
+                { value: 'pulmonology', label: 'Pulmonology' },
+                { value: 'nephrology', label: 'Nephrology' },
+                { value: 'endocrinology', label: 'Endocrinology' },
+                { value: 'neurology', label: 'Neurology' },
+                { value: 'gastroenterology', label: 'Gastroenterology' },
+                { value: 'hematology', label: 'Hematology' },
+                { value: 'obstetrics', label: 'Obstetrics/Gynecology' },
+                { value: 'procedures', label: 'Procedures' }
+            ],
+            onSearch: (searchTerm, filter) => this.handleSearch(searchTerm, filter),
+            onFilter: (filter, searchTerm) => this.handleFilter(filter, searchTerm),
+            onClear: () => this.handleClear()
+        });
+
+        this.currentSearchTerm = '';
+        this.currentFilter = 'all';
     }
 
     async initialize() {
@@ -961,6 +989,34 @@ class ClinicalPearlsManager {
         });
 
         applyFilters();
+    }
+
+    /**
+     * Handle search from StandardizedSearchComponent
+     */
+    handleSearch(searchTerm, filter) {
+        this.currentSearchTerm = searchTerm;
+        this.currentFilter = filter;
+        // Trigger existing search functionality if render has been called
+        console.log(`Clinical pearls search: "${searchTerm}" with filter: "${filter}"`);
+    }
+
+    /**
+     * Handle filter change from StandardizedSearchComponent
+     */
+    handleFilter(filter, searchTerm) {
+        this.currentFilter = filter;
+        this.currentSearchTerm = searchTerm;
+        console.log(`Clinical pearls filter changed: "${filter}" with search: "${searchTerm}"`);
+    }
+
+    /**
+     * Handle clear from StandardizedSearchComponent
+     */
+    handleClear() {
+        this.currentSearchTerm = '';
+        this.currentFilter = 'all';
+        console.log('Clinical pearls search cleared');
     }
 }
 

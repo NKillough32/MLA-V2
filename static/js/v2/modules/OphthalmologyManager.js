@@ -4,6 +4,8 @@
  * diagnostics, and management pathways. Provides rapid reference content for
  * the medical tools panel without needing separate PDF assets.
  */
+import { StandardizedSearchComponent } from '../components/StandardizedSearchComponent.js';
+
 class OphthalmologyManager {
     constructor() {
         this.sections = this.buildSections();
@@ -12,6 +14,30 @@ class OphthalmologyManager {
         this.placeholderImage = 'data:image/svg+xml;base64,' + btoa('<svg xmlns="http://www.w3.org/2000/svg" width="400" height="240" viewBox="0 0 400 240"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#bfdbfe" offset="0"/><stop stop-color="#93c5fd" offset="1"/></linearGradient></defs><rect width="400" height="240" fill="url(#g)"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#1d4ed8" font-family="Arial, sans-serif" font-size="18">Image not available</text></svg>');
         this.searchTerm = '';
         this.container = null;
+        
+        // Initialize search component with ophthalmology-specific filters
+        this.searchComponent = new StandardizedSearchComponent({
+            placeholder: "Search eye conditions, symptoms, treatments...",
+            searchIcon: "👁️",
+            emptyStateMessage: "No ophthalmological conditions match your search",
+            filterOptions: [
+                { value: 'all', label: 'All Conditions' },
+                { value: 'anterior-segment', label: 'Anterior Segment' },
+                { value: 'posterior-segment', label: 'Posterior Segment' },
+                { value: 'glaucoma', label: 'Glaucoma' },
+                { value: 'retinal', label: 'Retinal Disorders' },
+                { value: 'corneal', label: 'Corneal Disorders' },
+                { value: 'inflammatory', label: 'Inflammatory' },
+                { value: 'trauma', label: 'Trauma & Emergency' },
+                { value: 'pediatric', label: 'Pediatric Ophthalmology' }
+            ],
+            onSearch: (searchTerm, filter) => this.handleSearch(searchTerm, filter),
+            onFilter: (filter, searchTerm) => this.handleFilter(filter, searchTerm),
+            onClear: () => this.handleClear()
+        });
+
+        this.currentSearchTerm = '';
+        this.currentFilter = 'all';
     }
 
     async initialize() {
@@ -26,6 +52,36 @@ class OphthalmologyManager {
             totalImages: this.localImages.length,
             totalConditions
         };
+    }
+
+    /**
+     * Handle search from StandardizedSearchComponent
+     */
+    handleSearch(searchTerm, filter) {
+        this.currentSearchTerm = searchTerm;
+        this.currentFilter = filter;
+        this.filterConditions(searchTerm);
+        console.log(`Ophthalmology search: "${searchTerm}" with filter: "${filter}"`);
+    }
+
+    /**
+     * Handle filter change from StandardizedSearchComponent
+     */
+    handleFilter(filter, searchTerm) {
+        this.currentFilter = filter;
+        this.currentSearchTerm = searchTerm;
+        this.filterConditions(searchTerm);
+        console.log(`Ophthalmology filter changed: "${filter}" with search: "${searchTerm}"`);
+    }
+
+    /**
+     * Handle clear from StandardizedSearchComponent
+     */
+    handleClear() {
+        this.currentSearchTerm = '';
+        this.currentFilter = 'all';
+        this.filterConditions('');
+        console.log('Ophthalmology search cleared');
     }
 
     buildLocalImages() {

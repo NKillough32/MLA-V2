@@ -5,6 +5,7 @@
 
 import { eventBus } from './EventBus.js';
 import { storage } from './StorageManager.js';
+import { StandardizedSearchComponent } from '../components/StandardizedSearchComponent.js';
 
 export class GuidelinesManager {
     constructor() {
@@ -13,6 +14,33 @@ export class GuidelinesManager {
         this.maxRecent = 10;
         this.initialized = false;
         this.dataLoaded = false;
+        
+        // Initialize search component with guideline-specific filters
+        this.searchComponent = new StandardizedSearchComponent({
+            placeholder: "Search guidelines by title, category, or organization...",
+            searchIcon: "📋",
+            emptyStateMessage: "No guidelines match your search criteria",
+            filterOptions: [
+                { value: 'all', label: 'All Guidelines' },
+                { value: 'cardiovascular', label: 'Cardiovascular' },
+                { value: 'pulmonary', label: 'Pulmonary' },
+                { value: 'endocrine', label: 'Endocrine' },
+                { value: 'renal', label: 'Renal' },
+                { value: 'rheumatologic', label: 'Rheumatology' },
+                { value: 'hematologic', label: 'Haematology' },
+                { value: 'emergency', label: 'Emergency' },
+                { value: 'obstetrics', label: 'Obstetrics' },
+                { value: 'mental-health', label: 'Mental Health' },
+                { value: 'neurological', label: 'Neurological' },
+                { value: 'infectious-diseases', label: 'Infectious Diseases' }
+            ],
+            onSearch: (searchTerm, filter) => this.handleSearch(searchTerm, filter),
+            onFilter: (filter, searchTerm) => this.handleFilter(filter, searchTerm),
+            onClear: () => this.handleClear()
+        });
+
+        this.currentSearchTerm = '';
+        this.currentFilter = 'all';
     }
 
     /**
@@ -110,6 +138,34 @@ export class GuidelinesManager {
         });
 
         return results;
+    }
+
+    /**
+     * Handle search from StandardizedSearchComponent
+     */
+    handleSearch(searchTerm, filter) {
+        this.currentSearchTerm = searchTerm;
+        this.currentFilter = filter;
+        // Trigger the existing search functionality
+        console.log(`Guidelines search: "${searchTerm}" with filter: "${filter}"`);
+    }
+
+    /**
+     * Handle filter change from StandardizedSearchComponent
+     */
+    handleFilter(filter, searchTerm) {
+        this.currentFilter = filter;
+        this.currentSearchTerm = searchTerm;
+        console.log(`Guidelines filter changed: "${filter}" with search: "${searchTerm}"`);
+    }
+
+    /**
+     * Handle clear from StandardizedSearchComponent
+     */
+    handleClear() {
+        this.currentSearchTerm = '';
+        this.currentFilter = 'all';
+        console.log('Guidelines search cleared');
     }
 
     /**

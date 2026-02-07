@@ -6,6 +6,7 @@ import { eventBus } from './EventBus.js';
 import { analytics } from './AnalyticsManager.js';
 import UIHelpers from './UIHelpers.js';
 import { EVENTS, ANATOMY_CONFIG, API_ENDPOINTS } from './Constants.js';
+import { StandardizedSearchComponent } from '../components/StandardizedSearchComponent.js';
 
 export class AnatomyManager {
     constructor() {
@@ -13,6 +14,27 @@ export class AnatomyManager {
         this.anatomyLayer = ANATOMY_CONFIG.DEFAULT_LAYER;
         this.anatomyView = ANATOMY_CONFIG.DEFAULT_VIEW;
         this.anatomyInitialized = false;
+        
+        // Initialize search component with anatomy-specific filters
+        this.searchComponent = new StandardizedSearchComponent({
+            placeholder: "Search anatomy structures (bones, muscles, organs)...",
+            searchIcon: "🦴",
+            emptyStateMessage: "No anatomical structures match your search",
+            filterOptions: [
+                { value: 'all', label: 'All Structures' },
+                { value: 'bones', label: 'Bones' },
+                { value: 'muscles', label: 'Muscles' },
+                { value: 'organs', label: 'Organs' },
+                { value: 'nerves', label: 'Nerves' },
+                { value: 'vessels', label: 'Blood Vessels' }
+            ],
+            onSearch: (searchTerm, filter) => this.handleSearch(searchTerm, filter),
+            onFilter: (filter, searchTerm) => this.handleFilter(filter, searchTerm),
+            onClear: () => this.handleClear()
+        });
+
+        this.currentSearchTerm = '';
+        this.currentFilter = 'all';
     }
 
     /**
@@ -640,6 +662,46 @@ export class AnatomyManager {
         const first = matches[0];
         const name = first.getAttribute('data-structure') || first.textContent || query;
         this.showStructureInfo(name, `Search result for "${query}"`);
+    }
+
+    /**
+     * Handle search from StandardizedSearchComponent
+     */
+    handleSearch(searchTerm, filter) {
+        this.currentSearchTerm = searchTerm;
+        this.currentFilter = filter;
+        // Use existing anatomy search functionality
+        this.searchAnatomy(searchTerm);
+        console.log(`Anatomy search: "${searchTerm}" with filter: "${filter}"`);
+    }
+
+    /**
+     * Handle filter change from StandardizedSearchComponent
+     */
+    handleFilter(filter, searchTerm) {
+        this.currentFilter = filter;
+        this.currentSearchTerm = searchTerm;
+        // Update the anatomy layer if filter matches a layer type
+        if (['bones', 'muscles'].includes(filter)) {
+            this.anatomyLayer = filter;
+            this.loadAnatomyMap(this.anatomyLayer, this.anatomyView);
+        }
+        // Re-run search with current term
+        if (searchTerm) {
+            this.searchAnatomy(searchTerm);
+        }
+        console.log(`Anatomy filter changed: "${filter}" with search: "${searchTerm}"`);
+    }
+
+    /**
+     * Handle clear from StandardizedSearchComponent
+     */
+    handleClear() {
+        this.currentSearchTerm = '';
+        this.currentFilter = 'all';
+        // Clear any highlights
+        this.searchAnatomy('');
+        console.log('Anatomy search cleared');
     }
 
     /**

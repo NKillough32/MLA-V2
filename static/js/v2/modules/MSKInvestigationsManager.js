@@ -1,9 +1,22 @@
+import StandardizedSearchComponent from './StandardizedSearchComponent.js';
+
 class MSKInvestigationsManager {
     constructor() {
         this.currentFilter = 'all';
         this.searchTerm = '';
         this.favoriteKey = 'msk_favorites';
         this.favorites = this.loadFavorites();
+        
+        // Initialize standardized search component
+        this.searchComponent = new StandardizedSearchComponent({
+            placeholder: 'Search MSK investigations, findings, or treatments...',
+            highlightClass: 'msk-highlight',
+            callbacks: {
+                onSearch: (searchTerm, filter) => this.handleSearch(searchTerm, filter),
+                onFilter: (filter, searchTerm) => this.handleFilter(filter, searchTerm),
+                onClear: () => this.handleClear()
+            }
+        });
         
         this.investigations = this.buildInvestigations();
         this.init();
@@ -1590,6 +1603,20 @@ class MSKInvestigationsManager {
                 color: #f1f5f9;
             }
 
+            /* Highlight styles for search terms */
+            .msk-highlight {
+                background-color: #ffeb3b;
+                color: #000;
+                padding: 1px 2px;
+                border-radius: 2px;
+                font-weight: 500;
+            }
+
+            body.dark-mode .msk-highlight {
+                background-color: #fdd835;
+                color: #000;
+            }
+
             body.dark-mode .msk-category {
                 background: #1e293b;
                 border-color: rgba(148,163,184,0.2);
@@ -1727,23 +1754,16 @@ class MSKInvestigationsManager {
             return;
         }
         
+        // Define filters for the search component
+        const searchFilters = [
+            { value: 'imaging', label: 'Imaging' },
+            { value: 'laboratory', label: 'Laboratory' },
+            { value: 'urgent', label: 'Urgent/Red Flags' }
+        ];
+        
         const html = `
             <div class="msk-investigations-container">
-                <div class="msk-search-container">
-                    <input 
-                        type="text" 
-                        class="msk-search-input" 
-                        placeholder="Search MSK investigations, findings, or treatments..."
-                        id="mskSearchInput"
-                    >
-                </div>
-                
-                <div class="msk-filters">
-                    <button class="msk-filter-btn active" data-filter="all">All Investigations</button>
-                    <button class="msk-filter-btn" data-filter="imaging">Imaging</button>
-                    <button class="msk-filter-btn" data-filter="laboratory">Laboratory</button>
-                    <button class="msk-filter-btn" data-filter="urgent">Urgent/Red Flags</button>
-                </div>
+                ${this.searchComponent.generateHTML(searchFilters)}
 
                 <div id="mskInvestigationsList">
                     ${this.renderInvestigations()}
@@ -1752,6 +1772,12 @@ class MSKInvestigationsManager {
         `;
         
         container.innerHTML = html;
+        
+        // Initialize the search component
+        const searchContainer = container.querySelector('[data-component="standardized-search"]');
+        if (searchContainer) {
+            this.searchComponent.initialize(searchContainer);
+        }
     }
 
     renderInvestigations() {
@@ -1850,36 +1876,50 @@ class MSKInvestigationsManager {
     }
 
     setupEventListeners() {
-        const searchInput = document.getElementById('mskSearchInput');
-        const filterBtns = document.querySelectorAll('.msk-filter-btn');
-        
-        if (searchInput) {
-            searchInput.addEventListener('input', (e) => {
-                this.searchTerm = e.target.value.toLowerCase();
-                this.filterContent();
-            });
-        }
-        
-        filterBtns.forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                filterBtns.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                this.currentFilter = btn.dataset.filter;
-                this.filterContent();
-            });
-        });
+        // Event listeners are now handled by StandardizedSearchComponent
+        // Additional custom event listeners can be added here if needed
+    }
+
+    handleSearch(searchTerm, filter) {
+        this.searchTerm = searchTerm.toLowerCase();
+        this.currentFilter = filter;
+        this.filterContent();
+    }
+
+    handleFilter(filter, searchTerm) {
+        this.currentFilter = filter;
+        this.searchTerm = searchTerm.toLowerCase();
+        this.filterContent();
+    }
+
+    handleClear() {
+        this.searchTerm = '';
+        this.filterContent();
     }
 
     filterContent() {
         const investigations = document.querySelectorAll('.msk-investigation');
+        let visibleCount = 0;
         
         investigations.forEach(inv => {
             const text = inv.textContent.toLowerCase();
             const matchesSearch = !this.searchTerm || text.includes(this.searchTerm);
             const matchesFilter = this.currentFilter === 'all' || this.matchesFilter(inv);
             
-            inv.style.display = matchesSearch && matchesFilter ? 'block' : 'none';
+            if (matchesSearch && matchesFilter) {
+                inv.style.display = 'block';
+                visibleCount++;
+            } else {
+                inv.style.display = 'none';
+            }
         });
+        
+        // Apply highlighting using the search component
+        const container = document.getElementById('mskInvestigationsList');
+        if (container && this.searchComponent) {
+            this.searchComponent.applyHighlighting(container);
+            this.searchComponent.updateResultsCount(visibleCount);
+        }
         
         // Hide empty categories
         const categories = document.querySelectorAll('.msk-category');
@@ -1905,6 +1945,59 @@ class MSKInvestigationsManager {
             default:
                 return true;
         }
+    }
+
+    highlightText(element, searchTerm) {
+        if (!searchTerm || searchTerm.length < 2) return; // Don't highlight single characters
+        
+        const walker = document.createTreeWalker(
+            element,
+            NodeFilter.SHOW_TEXT,
+            null,
+            false
+        );
+        
+        const textNodes = [];
+        let node;
+        
+        // Collect all text nodes
+        while (node = walker.nextNode()) {
+            textNodes.push(node);
+        }
+        
+        // Process each text node
+        textNodes.forEach(textNode => {
+            const text = textNode.textContent;
+            const regex = new RegExp(`(${this.escapeRegExp(searchTerm)})`, 'gi');
+            
+            if (regex.test(text)) {
+                const highlightedHTML = text.replace(regex, '<span class="msk-highlight">$1</span>');
+                
+                // Create a temporary element to hold the highlighted content
+                const temp = document.createElement('div');
+                temp.innerHTML = highlightedHTML;
+                
+                // Replace the text node with the highlighted content
+                const parent = textNode.parentNode;
+                while (temp.firstChild) {
+                    parent.insertBefore(temp.firstChild, textNode);
+                }
+                parent.removeChild(textNode);
+            }
+        });
+    }
+
+    clearHighlights(element) {
+        const highlights = element.querySelectorAll('.msk-highlight');
+        highlights.forEach(highlight => {
+            const parent = highlight.parentNode;
+            parent.replaceChild(document.createTextNode(highlight.textContent), highlight);
+            parent.normalize(); // Merge adjacent text nodes
+        });
+    }
+
+    escapeRegExp(string) {
+        return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     }
 
     loadFavorites() {

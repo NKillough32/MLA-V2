@@ -7,6 +7,7 @@ import { eventBus } from './EventBus.js';
 import { storage } from './StorageManager.js';
 import { EVENTS } from './Constants.js';
 import { differentialDatabase } from '../../data/differentials.js';
+import StandardizedSearchComponent from './StandardizedSearchComponent.js';
 
 export class DifferentialDxManager {
     constructor() {
@@ -14,6 +15,18 @@ export class DifferentialDxManager {
         this.initialized = false;
         this.recentDifferentials = [];
         this.searchCache = new Map();
+        this.currentSearchTerm = ''; // Track current search term for highlighting
+        
+        // Initialize standardized search component
+        this.searchComponent = new StandardizedSearchComponent({
+            placeholder: 'Search by presentation, condition, or features...',
+            highlightClass: 'differential-highlight',
+            callbacks: {
+                onSearch: (searchTerm, filter) => this.handleSearch(searchTerm, filter),
+                onFilter: (filter, searchTerm) => this.handleFilter(filter, searchTerm),
+                onClear: () => this.handleClear()
+            }
+        });
     }
 
     /**
@@ -55,6 +68,7 @@ export class DifferentialDxManager {
         }
 
         const stats = this.getStatistics();
+        const categories = this.getCategories().map(cat => ({ value: cat, label: cat }));
         
         container.innerHTML = `
             <div class="differential-interface">
@@ -68,23 +82,22 @@ export class DifferentialDxManager {
                     </div>
                 </div>
 
-                <div class="differential-controls">
-                    <div class="search-section">
-                        <input type="text" id="differentialSearch" placeholder="Search by presentation, condition, or features..." class="search-input">
-                        <button id="clearDifferentialSearch" class="btn-secondary">Clear</button>
-                    </div>
-                    
-                    <div class="filter-section">
-                        <select id="differentialCategoryFilter" class="filter-select">
-                            <option value="">All Categories</option>
-                            ${this.getCategories().map(cat => 
-                                `<option value="${cat}">${cat}</option>`
-                            ).join('')}
-                        </select>
-                    </div>
-                </div>
+                ${this.searchComponent.generateHTML(categories)}
 
                 <div id="differentialResults" class="differential-results">
+                    ${this.generateDifferentialGrid()}
+                </div>
+            </div>
+        `;
+        
+        // Initialize the search component
+        const searchContainer = container.querySelector('[data-component="standardized-search"]');
+        if (searchContainer) {
+            this.searchComponent.initialize(searchContainer);
+        }
+        
+        this.bindDifferentialEvents();
+    }
                     ${this.generateDifferentialGrid()}
                 </div>
             </div>
@@ -128,27 +141,9 @@ export class DifferentialDxManager {
      * Bind differential diagnosis interface events
      */
     bindDifferentialEvents() {
-        // Search functionality
-        const searchInput = document.getElementById('differentialSearch');
-        const categoryFilter = document.getElementById('differentialCategoryFilter');
-        const clearSearch = document.getElementById('clearDifferentialSearch');
-
-        if (searchInput) {
-            searchInput.addEventListener('input', () => this.handleDifferentialSearch());
-        }
-
-        if (categoryFilter) {
-            categoryFilter.addEventListener('change', () => this.handleDifferentialSearch());
-        }
-
-        if (clearSearch) {
-            clearSearch.addEventListener('click', () => {
-                searchInput.value = '';
-                categoryFilter.value = '';
-                this.handleDifferentialSearch();
-            });
-        }
-
+        // Search functionality is now handled by StandardizedSearchComponent
+        // Only bind non-search related events here
+        
         // View differential buttons
         document.querySelectorAll('.view-differential').forEach(btn => {
             btn.addEventListener('click', (e) => {
@@ -159,31 +154,43 @@ export class DifferentialDxManager {
         });
     }
 
+    handleSearch(searchTerm, filter) {
+        this.currentSearchTerm = searchTerm.toLowerCase();
+        this.handleDifferentialSearch(filter || '');
+    }
+
+    handleFilter(filter, searchTerm) {
+        this.currentSearchTerm = searchTerm.toLowerCase();
+        this.handleDifferentialSearch(filter);
+    }
+
+    handleClear() {
+        this.currentSearchTerm = '';
+        this.handleDifferentialSearch('');
+    }
+
     /**
      * Handle search and filtering
      */
-    handleDifferentialSearch() {
-        const searchTerm = document.getElementById('differentialSearch')?.value.toLowerCase() || '';
-        const categoryFilter = document.getElementById('differentialCategoryFilter')?.value || '';
-
+    handleDifferentialSearch(categoryFilter = '') {
         let results = Object.entries(this.differentialDatabase);
 
         // Apply search filter
-        if (searchTerm) {
+        if (this.currentSearchTerm) {
             results = results.filter(([key, presentation]) => 
-                presentation.title.toLowerCase().includes(searchTerm) ||
-                presentation.category.toLowerCase().includes(searchTerm) ||
+                presentation.title.toLowerCase().includes(this.currentSearchTerm) ||
+                presentation.category.toLowerCase().includes(this.currentSearchTerm) ||
                 Object.keys(presentation.presentations || {}).some(condition => 
-                    condition.toLowerCase().includes(searchTerm)
+                    condition.toLowerCase().includes(this.currentSearchTerm)
                 ) ||
                 Object.values(presentation.presentations || {}).some(condition =>
-                    condition.features?.toLowerCase().includes(searchTerm) ||
-                    condition.differentiatingFeatures?.toLowerCase().includes(searchTerm)
+                    condition.features?.toLowerCase().includes(this.currentSearchTerm) ||
+                    condition.differentiatingFeatures?.toLowerCase().includes(this.currentSearchTerm)
                 )
             );
         }
 
-        // Apply category filter
+        // Apply category filter  
         if (categoryFilter) {
             results = results.filter(([key, presentation]) => presentation.category === categoryFilter);
         }
@@ -192,8 +199,39 @@ export class DifferentialDxManager {
         const resultsContainer = document.getElementById('differentialResults');
         if (resultsContainer) {
             resultsContainer.innerHTML = this.generateDifferentialGrid(results);
+            
+            // Apply highlighting and update count
+            if (this.searchComponent) {
+                this.searchComponent.applyHighlighting(resultsContainer);
+                this.searchComponent.updateResultsCount(results.length);
+            }
+            
             this.bindDifferentialEvents(); // Rebind events for new elements
         }
+    }
+
+    /**
+     * Apply highlighting to search results
+     */
+    applyHighlightingToResults(container) {
+        const cards = container.querySelectorAll('.differential-card');
+        cards.forEach(card => {
+            // Clear previous highlights
+            this.clearHighlights(card, 'differential-highlight');
+            
+            // Apply new highlights
+            if (this.currentSearchTerm) {
+                this.highlightText(card, this.currentSearchTerm, 'differential-highlight');
+            }
+        });
+    }
+
+    /**
+     * Show detailed view of differential diagnoses
+            if (this.currentSearchTerm) {
+                this.highlightText(card, this.currentSearchTerm, 'differential-highlight');
+            }
+        });
     }
 
     /**

@@ -6,6 +6,7 @@
 import { eventBus } from './EventBus.js';
 import { storage } from './StorageManager.js';
 import { analytics } from './AnalyticsManager.js';
+import { StandardizedSearchComponent } from '../components/StandardizedSearchComponent.js';
 
 export class HematologyManager {
     constructor() {
@@ -27,6 +28,31 @@ export class HematologyManager {
             { id: 'lymphoma', name: 'Lymphomas', icon: '🔬' },
             { id: 'plasma-cell', name: 'Plasma Cell Disorders', icon: '🧬' }
         ];
+        
+        // Initialize search component with hematology-specific filters
+        this.searchComponent = new StandardizedSearchComponent({
+            placeholder: "Search blood disorders, findings, symptoms...",
+            searchIcon: "🩸",
+            emptyStateMessage: "No hematological conditions match your search",
+            filterOptions: [
+                { value: 'all', label: 'All Conditions' },
+                { value: 'anaemia-microcytic', label: 'Microcytic Anaemia' },
+                { value: 'anaemia-macrocytic', label: 'Macrocytic Anaemia' },
+                { value: 'anaemia-normocytic', label: 'Normocytic Anaemia' },
+                { value: 'anaemia-haemolytic', label: 'Haemolytic Anaemia' },
+                { value: 'leukaemia', label: 'Leukaemias' },
+                { value: 'myeloproliferative', label: 'Myeloproliferative' },
+                { value: 'coagulation', label: 'Coagulation Disorders' },
+                { value: 'lymphoma', label: 'Lymphomas' },
+                { value: 'plasma-cell', label: 'Plasma Cell Disorders' }
+            ],
+            onSearch: (searchTerm, filter) => this.handleSearch(searchTerm, filter),
+            onFilter: (filter, searchTerm) => this.handleFilter(filter, searchTerm),
+            onClear: () => this.handleClear()
+        });
+
+        this.currentSearchTerm = '';
+        this.currentFilter = 'all';
     }
 
     /**
@@ -764,6 +790,39 @@ export class HematologyManager {
             // Re-attach event listeners
             this.attachEventListeners();
         }
+    }
+
+    /**
+     * Handle search from StandardizedSearchComponent
+     */
+    handleSearch(searchTerm, filter) {
+        this.currentSearchTerm = searchTerm;
+        this.currentFilter = filter;
+        this.searchQuery = searchTerm;
+        this.currentCategory = filter;
+        console.log(`Hematology search: "${searchTerm}" with filter: "${filter}"`);
+    }
+
+    /**
+     * Handle filter change from StandardizedSearchComponent
+     */
+    handleFilter(filter, searchTerm) {
+        this.currentFilter = filter;
+        this.currentSearchTerm = searchTerm;
+        this.currentCategory = filter;
+        this.searchQuery = searchTerm;
+        console.log(`Hematology filter changed: "${filter}" with search: "${searchTerm}"`);
+    }
+
+    /**
+     * Handle clear from StandardizedSearchComponent
+     */
+    handleClear() {
+        this.currentSearchTerm = '';
+        this.currentFilter = 'all';
+        this.searchQuery = '';
+        this.currentCategory = 'all';
+        console.log('Hematology search cleared');
     }
 }
 
