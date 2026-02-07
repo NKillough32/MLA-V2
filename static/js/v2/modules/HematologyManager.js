@@ -1086,55 +1086,222 @@ export class HematologyManager {
 
             /* Dark theme support */
             [data-theme="dark"] .hematology-container {
-                color: #e5e7eb;
+                color: #f3f4f6;
+                background: var(--v2-bg-secondary, #0f172a);
             }
 
             [data-theme="dark"] .hematology-header {
-                background: linear-gradient(135deg, #b91c1c 0%, #991b1b 100%);
+                background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+                border: 1px solid #374151;
             }
 
             [data-theme="dark"] .hematology-category-filter,
             [data-theme="dark"] .hematology-stats {
-                background: #1f2937;
-                border-color: #374151;
+                background: #1e293b;
+                border-color: #475569;
+                color: #f1f5f9;
             }
 
             [data-theme="dark"] .hematology-category-btn {
-                background: #374151;
-                border-color: #4b5563;
-                color: #d1d5db;
+                background: #334155;
+                border-color: #475569;
+                color: #e2e8f0;
             }
 
             [data-theme="dark"] .hematology-category-btn:hover {
-                background: #4b5563;
+                background: #475569;
+                border-color: #64748b;
+                color: #f8fafc;
             }
 
             [data-theme="dark"] .hematology-category-btn.active {
                 background: #dc2626;
-                color: white;
+                color: #ffffff;
+                border-color: #dc2626;
+            }
+
+            [data-theme="dark"] .hematology-stats .stat-value {
+                color: #f87171;
+            }
+
+            [data-theme="dark"] .hematology-stats .stat-label {
+                color: #94a3b8;
             }
 
             [data-theme="dark"] .hematology-condition-card {
-                background: #1f2937;
-                border-color: #374151;
-                color: #e5e7eb;
+                background: #1e293b;
+                border-color: #475569;
+                color: #f1f5f9;
             }
 
             [data-theme="dark"] .hematology-condition-card:hover {
                 border-color: #dc2626;
-                box-shadow: 0 4px 12px rgba(220, 38, 38, 0.2);
+                box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
+                background: #2d3748;
             }
 
             [data-theme="dark"] .hematology-condition-header h4 {
-                color: #f3f4f6;
+                color: #f8fafc;
             }
 
-            [data-theme="dark"] .hematology-card-section li {
-                color: #d1d5db;
+            [data-theme="dark"] .hematology-card-category {
+                background: rgba(220, 38, 38, 0.2);
+                color: #fca5a5;
+                border: 1px solid rgba(220, 38, 38, 0.3);
             }
 
             [data-theme="dark"] .hematology-section-title {
-                color: #f9fafb;
+                color: #e2e8f0;
+            }
+
+            [data-theme="dark"] .hematology-card-section li {
+                color: #cbd5e1;
+            }
+
+            [data-theme="dark"] .hematology-view-btn {
+                background: #dc2626;
+                color: #ffffff;
+                border: 1px solid #dc2626;
+            }
+
+            [data-theme="dark"] .hematology-view-btn:hover {
+                background: #b91c1c;
+                border-color: #b91c1c;
+            }
+
+            [data-theme="dark"] .hematology-empty-state {
+                color: #94a3b8;
+            }
+
+            [data-theme="dark"] .hematology-empty-state h4 {
+                color: #e2e8f0;
+            }
+
+            [data-theme="dark"] .hematology-detail-view {
+                background: #1e293b;
+                border: 1px solid #475569;
+                color: #f1f5f9;
+            }
+
+            [data-theme="dark"] .hematology-back-btn {
+                background: #334155;
+                border-color: #475569;
+                color: #e2e8f0;
+            }
+
+            [data-theme="dark"] .hematology-back-btn:hover {
+                background: #475569;
+                color: #f8fafc;
+            }
+
+            /* Additional dark mode refinements */
+            body.dark-mode .hematology-container {
+                color: #f3f4f6;
+                background: var(--v2-bg-secondary, #0f172a);
+            }
+
+            body.dark-mode .hematology-header {
+                background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+                border: 1px solid #374151;
+            }
+
+            body.dark-mode .hematology-category-filter,
+            body.dark-mode .hematology-stats {
+                background: #1e293b;
+                border-color: #475569;
+                color: #f1f5f9;
+            }
+
+            body.dark-mode .hematology-category-btn {
+                background: #334155;
+                border-color: #475569;
+                color: #e2e8f0;
+            }
+
+            body.dark-mode .hematology-category-btn:hover {
+                background: #475569;
+                border-color: #64748b;
+                color: #f8fafc;
+            }
+
+            body.dark-mode .hematology-category-btn.active {
+                background: #dc2626;
+                color: #ffffff;
+                border-color: #dc2626;
+            }
+
+            body.dark-mode .hematology-stats .stat-value {
+                color: #f87171;
+            }
+
+            body.dark-mode .hematology-stats .stat-label {
+                color: #94a3b8;
+            }
+
+            body.dark-mode .hematology-condition-card {
+                background: #1e293b;
+                border-color: #475569;
+                color: #f1f5f9;
+            }
+
+            body.dark-mode .hematology-condition-card:hover {
+                border-color: #dc2626;
+                box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
+                background: #2d3748;
+            }
+
+            body.dark-mode .hematology-condition-header h4 {
+                color: #f8fafc;
+            }
+
+            body.dark-mode .hematology-card-category {
+                background: rgba(220, 38, 38, 0.2);
+                color: #fca5a5;
+                border: 1px solid rgba(220, 38, 38, 0.3);
+            }
+
+            body.dark-mode .hematology-section-title {
+                color: #e2e8f0;
+            }
+
+            body.dark-mode .hematology-card-section li {
+                color: #cbd5e1;
+            }
+
+            body.dark-mode .hematology-view-btn {
+                background: #dc2626;
+                color: #ffffff;
+                border: 1px solid #dc2626;
+            }
+
+            body.dark-mode .hematology-view-btn:hover {
+                background: #b91c1c;
+                border-color: #b91c1c;
+            }
+
+            body.dark-mode .hematology-empty-state {
+                color: #94a3b8;
+            }
+
+            body.dark-mode .hematology-empty-state h4 {
+                color: #e2e8f0;
+            }
+
+            body.dark-mode .hematology-detail-view {
+                background: #1e293b;
+                border: 1px solid #475569;
+                color: #f1f5f9;
+            }
+
+            body.dark-mode .hematology-back-btn {
+                background: #334155;
+                border-color: #475569;
+                color: #e2e8f0;
+            }
+
+            body.dark-mode .hematology-back-btn:hover {
+                background: #475569;
+                color: #f8fafc;
             }
         `;
 
