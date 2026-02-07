@@ -1,4 +1,4 @@
-import StandardizedSearchComponent from './StandardizedSearchComponent.js';
+import { StandardizedSearchComponent } from './StandardizedSearchComponent.js';
 
 class MSKInvestigationsManager {
     constructor() {

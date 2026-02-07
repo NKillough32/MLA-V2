@@ -7,7 +7,7 @@ import { eventBus } from './EventBus.js';
 import { storage } from './StorageManager.js';
 import { EVENTS } from './Constants.js';
 import { differentialDatabase } from '../../data/differentials.js';
-import StandardizedSearchComponent from './StandardizedSearchComponent.js';
+import { StandardizedSearchComponent } from './StandardizedSearchComponent.js';
 
 export class DifferentialDxManager {
     constructor() {

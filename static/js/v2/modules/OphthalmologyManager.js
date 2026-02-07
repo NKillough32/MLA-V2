@@ -4,7 +4,7 @@
  * diagnostics, and management pathways. Provides rapid reference content for
  * the medical tools panel without needing separate PDF assets.
  */
-import { StandardizedSearchComponent } from '../components/StandardizedSearchComponent.js';
+import { StandardizedSearchComponent } from './StandardizedSearchComponent.js';
 
 class OphthalmologyManager {
     constructor() {

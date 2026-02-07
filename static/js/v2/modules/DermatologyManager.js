@@ -6,7 +6,7 @@
 import { eventBus } from './EventBus.js';
 import { storage } from './StorageManager.js';
 import { analytics } from './AnalyticsManager.js';
-import { StandardizedSearchComponent } from '../components/StandardizedSearchComponent.js';
+import { StandardizedSearchComponent } from './StandardizedSearchComponent.js';
 
 export class DermatologyManager {
     constructor() {

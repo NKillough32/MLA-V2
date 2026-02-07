@@ -5,7 +5,7 @@
 
 import { eventBus } from './EventBus.js';
 import { storage } from './StorageManager.js';
-import { StandardizedSearchComponent } from '../components/StandardizedSearchComponent.js';
+import { StandardizedSearchComponent } from './StandardizedSearchComponent.js';
 
 export class GuidelinesManager {
     constructor() {

@@ -6,7 +6,7 @@ import { eventBus } from './EventBus.js';
 import { analytics } from './AnalyticsManager.js';
 import UIHelpers from './UIHelpers.js';
 import { EVENTS, ANATOMY_CONFIG, API_ENDPOINTS } from './Constants.js';
-import { StandardizedSearchComponent } from '../components/StandardizedSearchComponent.js';
+import { StandardizedSearchComponent } from './StandardizedSearchComponent.js';
 
 export class AnatomyManager {
     constructor() {

@@ -7,7 +7,7 @@ import { eventBus } from './EventBus.js';
 import { storage } from './StorageManager.js';
 import { EVENTS } from './Constants.js';
 import { emergencyProtocols } from '../../data/emergencyProtocols.js';
-import { StandardizedSearchComponent } from '../components/StandardizedSearchComponent.js';
+import { StandardizedSearchComponent } from './StandardizedSearchComponent.js';
 
 export class EmergencyProtocolsManager {
     constructor() {

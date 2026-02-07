@@ -3,7 +3,7 @@
  * across specialties. Splitting from MedStatsEthicsManager keeps statistics content
  * lean while providing a focused clinical reference deck.
  */
-import { StandardizedSearchComponent } from '../components/StandardizedSearchComponent.js';
+import { StandardizedSearchComponent } from './StandardizedSearchComponent.js';
 
 class ClinicalPearlsManager {
     constructor() {
