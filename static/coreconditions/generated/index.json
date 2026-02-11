@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-02-04T13:14:46.633097",
-  "totalConditions": 563,
-  "processedCount": 563,
-  "model": "gpt-4o-mini",
+  "generatedAt": "2026-02-11T13:15:35.717666",
+  "totalConditions": 570,
+  "processedCount": 570,
+  "model": "gpt-5.2-codex",
   "conditions": [
     {
       "id": "achilles_tendon_rupture",
@@ -1541,15 +1541,6 @@
       "processed": true
     },
     {
-      "id": "elbow_dislocation",
-      "name": "Elbow dislocation",
-      "domains": [
-        "Trauma and Orthopaedics"
-      ],
-      "filename": "elbow_dislocation.json",
-      "processed": true
-    },
-    {
       "id": "elbow_olecranon_bursitis",
       "name": "Elbow - Olecranon bursitis",
       "domains": [
@@ -1565,6 +1556,15 @@
         "Trauma and Orthopaedics"
       ],
       "filename": "elbow_ulnar_nerve_entrapment_cubital_tunnel_syndrome.json",
+      "processed": true
+    },
+    {
+      "id": "elbow_dislocation",
+      "name": "Elbow dislocation",
+      "domains": [
+        "Trauma and Orthopaedics"
+      ],
+      "filename": "elbow_dislocation.json",
       "processed": true
     },
     {
@@ -2994,15 +2994,6 @@
       "processed": true
     },
     {
-      "id": "medication_considerations_patient_on_antiplatelet_therapy",
-      "name": "Medication considerations- Patient on antiplatelet therapy",
-      "domains": [
-        "Pre-operative Care"
-      ],
-      "filename": "medication_considerations_patient_on_antiplatelet_therapy.json",
-      "processed": true
-    },
-    {
       "id": "medication_considerations_patient_on_oral_contraceptive_pill",
       "name": "Medication considerations - Patient on oral contraceptive pill",
       "domains": [
@@ -3021,6 +3012,15 @@
       "processed": true
     },
     {
+      "id": "medication_considerations_patient_on_antiplatelet_therapy",
+      "name": "Medication considerations- Patient on antiplatelet therapy",
+      "domains": [
+        "Pre-operative Care"
+      ],
+      "filename": "medication_considerations_patient_on_antiplatelet_therapy.json",
+      "processed": true
+    },
+    {
       "id": "melanocytic_naevi",
       "name": "Melanocytic naevi",
       "domains": [
@@ -3036,15 +3036,6 @@
         "Dermatology"
       ],
       "filename": "melanoma.json",
-      "processed": true
-    },
-    {
-      "id": "menieres_disease",
-      "name": "M\u00e9ni\u00e8re's disease",
-      "domains": [
-        "ENT"
-      ],
-      "filename": "menieres_disease.json",
       "processed": true
     },
     {
@@ -3264,6 +3255,15 @@
         "Endocrine"
       ],
       "filename": "myxoedema_coma.json",
+      "processed": true
+    },
+    {
+      "id": "menieres_disease",
+      "name": "Ménière's disease",
+      "domains": [
+        "ENT"
+      ],
+      "filename": "menieres_disease.json",
       "processed": true
     },
     {
@@ -3900,6 +3900,15 @@
       "processed": true
     },
     {
+      "id": "post_traumatic_stress_disorder",
+      "name": "Post Traumatic Stress Disorder",
+      "domains": [
+        "Psychiatry"
+      ],
+      "filename": "post_traumatic_stress_disorder.json",
+      "processed": true
+    },
+    {
       "id": "post_natal_mental_health",
       "name": "Post-natal mental health",
       "domains": [
@@ -3924,15 +3933,6 @@
         "Obstetrics"
       ],
       "filename": "post_partum_haemorrhage.json",
-      "processed": true
-    },
-    {
-      "id": "post_traumatic_stress_disorder",
-      "name": "Post Traumatic Stress Disorder",
-      "domains": [
-        "Psychiatry"
-      ],
-      "filename": "post_traumatic_stress_disorder.json",
       "processed": true
     },
     {
@@ -4380,6 +4380,15 @@
       "processed": true
     },
     {
+      "id": "shoulder_impingement_syndromesubacromial_bursitis",
+      "name": "Shoulder - Impingement syndrome/Subacromial bursitis",
+      "domains": [
+        "Trauma and Orthopaedics"
+      ],
+      "filename": "shoulder_impingement_syndromesubacromial_bursitis.json",
+      "processed": true
+    },
+    {
       "id": "shoulder_dislocation",
       "name": "Shoulder dislocation",
       "domains": [
@@ -4395,15 +4404,6 @@
         "Obstetrics"
       ],
       "filename": "shoulder_dystocia.json",
-      "processed": true
-    },
-    {
-      "id": "shoulder_impingement_syndromesubacromial_bursitis",
-      "name": "Shoulder - Impingement syndrome/Subacromial bursitis",
-      "domains": [
-        "Trauma and Orthopaedics"
-      ],
-      "filename": "shoulder_impingement_syndromesubacromial_bursitis.json",
       "processed": true
     },
     {
@@ -4860,12 +4860,30 @@
       "processed": true
     },
     {
+      "id": "unstable_angina",
+      "name": "Unstable angina",
+      "domains": [
+        "Cardiology"
+      ],
+      "filename": "unstable_angina.json",
+      "processed": true
+    },
+    {
       "id": "unwanted_pregnancy_and_termination",
       "name": "Unwanted pregnancy and termination",
       "domains": [
         "Gynaecology"
       ],
       "filename": "unwanted_pregnancy_and_termination.json",
+      "processed": true
+    },
+    {
+      "id": "upper_limb_fractures",
+      "name": "Upper limb fractures",
+      "domains": [
+        "Trauma and Orthopaedics"
+      ],
+      "filename": "upper_limb_fractures.json",
       "processed": true
     },
     {
@@ -5038,6 +5056,15 @@
       "processed": true
     },
     {
+      "id": "vasovagal_syncope",
+      "name": "Vasovagal syncope",
+      "domains": [
+        "Cardiology"
+      ],
+      "filename": "vasovagal_syncope.json",
+      "processed": true
+    },
+    {
       "id": "venous_ulcer",
       "name": "Venous ulcer",
       "domains": [
@@ -5112,6 +5139,15 @@
       "processed": true
     },
     {
+      "id": "viral_hepatitides",
+      "name": "Viral hepatitides",
+      "domains": [
+        "Gastroenterology"
+      ],
+      "filename": "viral_hepatitides.json",
+      "processed": true
+    },
+    {
       "id": "viral_hepatitis",
       "name": "Viral hepatitis",
       "domains": [
@@ -5149,6 +5185,15 @@
       "processed": true
     },
     {
+      "id": "vitamin_b12_and_or_folate_deficiency",
+      "name": "Vitamin B12 and/or folate deficiency",
+      "domains": [
+        "Haematology"
+      ],
+      "filename": "vitamin_b12_and_or_folate_deficiency.json",
+      "processed": true
+    },
+    {
       "id": "vitreous_haemorrhage",
       "name": "Vitreous haemorrhage",
       "domains": [
@@ -5177,6 +5222,15 @@
       "processed": true
     },
     {
+      "id": "vte_in_pregnancy_and_puerperium",
+      "name": "VTE in pregnancy and puerperium",
+      "domains": [
+        "Obstetrics and Gynaecology"
+      ],
+      "filename": "vte_in_pregnancy_and_puerperium.json",
+      "processed": true
+    },
+    {
       "id": "vulval_and_vaginal_cancer",
       "name": "Vulval and vaginal cancer",
       "domains": [
@@ -5193,6 +5247,15 @@
         "Psychiatry"
       ],
       "filename": "wernickes_encephalopathy.json",
+      "processed": true
+    },
+    {
+      "id": "whooping_cough",
+      "name": "Whooping cough",
+      "domains": [
+        "Respiratory Medicine"
+      ],
+      "filename": "whooping_cough.json",
       "processed": true
     }
   ]

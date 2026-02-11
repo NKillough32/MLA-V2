@@ -1,0 +1,91 @@
+{
+  "id": "vasovagal_syncope",
+  "name": "Vasovagal syncope",
+  "domains": [
+    "Cardiology"
+  ],
+  "generatedAt": "2026-02-11T13:15:35.717666",
+  "model": "gpt-5.2-codex",
+  "rawContent": "# Vasovagal syncope: Core Condition Reference\n\n## Overview\nVasovagal syncope is transient loss of consciousness from reflex hypotension/bradycardia with rapid spontaneous recovery.",
+  "content": {
+    "synonyms": [
+      "Reflex syncope",
+      "Neurally mediated syncope"
+    ],
+    "overview": {
+      "definition": "Vasovagal syncope is transient loss of consciousness from reflex hypotension/bradycardia with rapid spontaneous recovery.",
+      "epidemiology": "Common and usually benign, especially in younger people.",
+      "pathophysiology": "Autonomic reflex causes peripheral vasodilation and/or bradycardia leading to transient cerebral hypoperfusion."
+    },
+    "recognition": {
+      "symptoms": [
+        "Transient faint with prodrome (nausea, warmth, visual dimming)",
+        "Trigger: prolonged standing, pain, fear",
+        "Rapid recovery without focal deficit"
+      ],
+      "signs": [
+        "Normal exam between episodes",
+        "Possible pallor/sweating during episode"
+      ],
+      "atypicalPresentations": [
+        "Convulsive movements can occur briefly during syncope"
+      ],
+      "redFlags": [
+        "Syncope during exertion",
+        "No prodrome with injury",
+        "Family history sudden cardiac death",
+        "Abnormal ECG or persistent hypotension"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "ECG for all syncope presentations",
+        "Orthostatic observations",
+        "Glucose and focused blood tests if indicated"
+      ],
+      "secondLine": [
+        "Ambulatory monitoring/echo when cardiac cause suspected"
+      ],
+      "specialistTests": [
+        "Tilt-table testing in selected recurrent unexplained cases"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Typical trigger/prodrome with benign examination and normal baseline ECG after exclusion of dangerous causes.",
+      "differentials": [
+        "Arrhythmia",
+        "Orthostatic hypotension",
+        "Seizure",
+        "PE/aortic stenosis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Position supine with leg elevation",
+          "Treat injuries and observe until baseline recovered",
+          "Hydration and trigger avoidance advice"
+        ],
+        "secondLine": [
+          "Senior review if red flags or uncertainty"
+        ],
+        "procedures": []
+      },
+      "chronic": {
+        "monitoring": [
+          "Education on counter-pressure manoeuvres and hydration/salt optimisation where appropriate"
+        ]
+      },
+      "drugs": [],
+      "procedures": []
+    },
+    "prognosis": "Generally excellent when cardiac causes are excluded.",
+    "complications": [
+      "Traumatic injury from falls",
+      "Anxiety/recurrent presentation burden"
+    ],
+    "foundationDoctorRole": "Differentiate benign reflex syncope from high-risk causes using history, ECG and red-flag screening.",
+    "escalation": "Escalate for abnormal ECG, exertional syncope, chest pain, dyspnoea, persistent altered state, or recurrent unexplained episodes.",
+    "keySafetyConsiderations": "Never label as vasovagal until serious cardiac/neurological causes are considered."
+  }
+}

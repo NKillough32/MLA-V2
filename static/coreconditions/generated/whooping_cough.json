@@ -1,0 +1,103 @@
+{
+  "id": "whooping_cough",
+  "name": "Whooping cough",
+  "domains": [
+    "Respiratory Medicine"
+  ],
+  "generatedAt": "2026-02-11T13:15:35.717666",
+  "model": "gpt-5.2-codex",
+  "rawContent": "# Whooping cough: Core Condition Reference\n\n## Overview\nWhooping cough (pertussis) is an acute, highly contagious respiratory infection caused by Bordetella pertussis, classically presenting with paroxysmal cough and inspiratory whoop.",
+  "content": {
+    "synonyms": [
+      "Pertussis"
+    ],
+    "overview": {
+      "definition": "Whooping cough (pertussis) is an acute, highly contagious respiratory infection caused by Bordetella pertussis, classically presenting with paroxysmal cough and inspiratory whoop.",
+      "epidemiology": "Most severe disease occurs in unvaccinated infants and pregnant/postpartum transmission chains.",
+      "pathophysiology": "Toxin-mediated airway inflammation causes prolonged cough and post-tussive vomiting."
+    },
+    "recognition": {
+      "symptoms": [
+        "Paroxysmal cough",
+        "Inspiratory whoop",
+        "Post-tussive vomiting",
+        "Apnoea in infants"
+      ],
+      "signs": [
+        "Coughing fits",
+        "Cyanosis/apnoea in infants",
+        "Minimal chest signs early"
+      ],
+      "atypicalPresentations": [
+        "Afebrile prolonged cough in vaccinated adults"
+      ],
+      "redFlags": [
+        "Apnoea, cyanosis or exhaustion",
+        "Infant age <3 months",
+        "Respiratory distress or dehydration"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Nasopharyngeal PCR for Bordetella pertussis",
+        "FBC and CRP if unwell",
+        "Pulse oximetry"
+      ],
+      "secondLine": [
+        "Chest X-ray if pneumonia suspected"
+      ],
+      "specialistTests": [
+        "Public health notification and contact tracing pathway"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Clinical suspicion with compatible prolonged/paroxysmal cough, supported by PCR positivity.",
+      "differentials": [
+        "Viral URTI",
+        "Bronchiolitis",
+        "Asthma exacerbation",
+        "Atypical pneumonia"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Macrolide antibiotics (e.g. azithromycin) early in disease/course per local guidance",
+          "Supportive care: hydration, suctioning, oxygen if hypoxic",
+          "Infection control and droplet precautions"
+        ],
+        "secondLine": [
+          "Senior review for infants or severe disease"
+        ],
+        "procedures": [
+          "Escalate for ventilatory support if apnoeic/respiratory failure"
+        ]
+      },
+      "chronic": {
+        "monitoring": [
+          "Safety-net for prolonged cough and transmission risk"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Azithromycin",
+          "mechanism": "Macrolide inhibiting bacterial protein synthesis.",
+          "dosing": "Per local age/weight regimen.",
+          "sideEffects": "GI upset, QT prolongation risk.",
+          "notes": "Most useful early and for reducing transmission."
+        }
+      ],
+      "procedures": []
+    },
+    "prognosis": "Most recover, but infants are at risk of severe complications.",
+    "complications": [
+      "Apnoea",
+      "Pneumonia",
+      "Seizures (rare)",
+      "Weight loss/dehydration"
+    ],
+    "foundationDoctorRole": "Recognize prolonged paroxysmal cough patterns, start initial treatment, isolate appropriately, and involve paediatrics/public health early.",
+    "escalation": "Escalate urgently for infant cases, apnoea, hypoxia, or poor oral intake.",
+    "keySafetyConsiderations": "Protect vulnerable contacts (especially infants and pregnant women), ensure notification as per local policy."
+  }
+}

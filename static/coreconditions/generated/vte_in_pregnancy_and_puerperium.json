@@ -1,0 +1,101 @@
+{
+  "id": "vte_in_pregnancy_and_puerperium",
+  "name": "VTE in pregnancy and puerperium",
+  "domains": [
+    "Obstetrics and Gynaecology"
+  ],
+  "generatedAt": "2026-02-11T13:15:35.717666",
+  "model": "gpt-5.2-codex",
+  "rawContent": "# VTE in pregnancy and puerperium: Core Condition Reference\n\n## Overview\nVTE in pregnancy/puerperium includes DVT and PE occurring during gestation or postpartum, with major maternal morbidity/mortality implications.",
+  "content": {
+    "synonyms": [
+      "Pregnancy-associated venous thromboembolism"
+    ],
+    "overview": {
+      "definition": "VTE in pregnancy/puerperium includes DVT and PE occurring during gestation or postpartum, with major maternal morbidity/mortality implications.",
+      "epidemiology": "Risk increases across pregnancy and peaks in the postpartum period.",
+      "pathophysiology": "Pregnancy-related hypercoagulability, venous stasis and endothelial changes increase thrombosis risk."
+    },
+    "recognition": {
+      "symptoms": [
+        "Unilateral leg swelling/pain (DVT)",
+        "Pleuritic chest pain/dyspnoea (PE)",
+        "Tachycardia/syncope in severe PE"
+      ],
+      "signs": [
+        "Asymmetric calf swelling/tenderness",
+        "Hypoxia/tachypnoea",
+        "Haemodynamic instability in massive PE"
+      ],
+      "atypicalPresentations": [
+        "Nonspecific dyspnoea/anxiety in PE"
+      ],
+      "redFlags": [
+        "Hypotension/shock",
+        "Persistent hypoxia",
+        "Postpartum heavy bleeding with anticoagulation decisions needed"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Urgent senior obstetric/medical review",
+        "Compression ultrasound for suspected DVT",
+        "CXR and PE imaging pathway (V/Q or CTPA per protocol)",
+        "Baseline FBC/U&E/LFT/coagulation"
+      ],
+      "secondLine": [
+        "Echocardiography if unstable PE suspected"
+      ],
+      "specialistTests": [
+        "Thrombophilia testing deferred to specialist outpatient context when indicated"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Imaging-confirmed DVT/PE in pregnant or puerperal patient with compatible symptoms.",
+      "differentials": [
+        "Physiological pregnancy oedema/dyspnoea",
+        "Pneumonia",
+        "Peripartum cardiomyopathy",
+        "Musculoskeletal pain"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Start therapeutic LMWH when clinical suspicion high unless contraindicated",
+          "Maternal stabilisation: oxygen, monitoring, analgesia",
+          "Multidisciplinary obstetric/haematology input"
+        ],
+        "secondLine": [
+          "Thrombolysis or advanced PE interventions for life-threatening PE with specialist input"
+        ],
+        "procedures": []
+      },
+      "chronic": {
+        "monitoring": [
+          "Continue anticoagulation for recommended duration; delivery and postpartum anticoagulation planning"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Low molecular weight heparin",
+          "mechanism": "Potentiates antithrombin, inhibiting factor Xa (±IIa).",
+          "dosing": "Weight-adjusted therapeutic dosing per local obstetric protocol.",
+          "sideEffects": "Bleeding, heparin-induced thrombocytopenia (rare).",
+          "notes": "Preferred first-line anticoagulant in pregnancy."
+        }
+      ],
+      "procedures": []
+    },
+    "prognosis": "Good with prompt diagnosis/treatment, but delayed treatment increases maternal and fetal risk.",
+    "complications": [
+      "Massive PE and maternal death",
+      "Recurrent VTE",
+      "Post-thrombotic syndrome",
+      "Bleeding complications"
+    ],
+    "foundationDoctorRole": "Recognize symptoms quickly, initiate urgent pathway and anticoagulation under senior guidance, and coordinate multidisciplinary care.",
+    "escalation": "Immediate escalation for suspected PE with instability, hypoxia, or diagnostic delay in high-risk patients.",
+    "keySafetyConsiderations": "Balance thrombosis vs bleeding risk around delivery; involve obstetrics early for procedural timing and neuraxial planning."
+  }
+}
