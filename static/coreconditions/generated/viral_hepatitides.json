@@ -1,0 +1,92 @@
+{
+  "id": "viral_hepatitides",
+  "name": "Viral hepatitides",
+  "domains": [
+    "Gastroenterology"
+  ],
+  "generatedAt": "2026-02-11T13:15:35.717666",
+  "model": "gpt-5.2-codex",
+  "rawContent": "# Viral hepatitides: Core Condition Reference\n\n## Overview\nViral hepatitides are liver inflammations caused by hepatotropic viruses (A, B, C, D, E) with acute and/or chronic disease patterns.",
+  "content": {
+    "synonyms": [
+      "Viral hepatitis (A-E)"
+    ],
+    "overview": {
+      "definition": "Viral hepatitides are liver inflammations caused by hepatotropic viruses (A, B, C, D, E) with acute and/or chronic disease patterns.",
+      "epidemiology": "Global burden significant; transmission differs by virus type.",
+      "pathophysiology": "Viral replication and immune-mediated hepatocyte injury cause transaminitis and jaundice."
+    },
+    "recognition": {
+      "symptoms": [
+        "Malaise, anorexia, nausea",
+        "Jaundice, dark urine, pale stools",
+        "RUQ discomfort/pruritus"
+      ],
+      "signs": [
+        "Jaundice",
+        "Hepatomegaly/tender RUQ",
+        "Stigmata of chronic liver disease in chronic infection"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic transaminitis found incidentally"
+      ],
+      "redFlags": [
+        "Encephalopathy/coagulopathy (acute liver failure signs)",
+        "GI bleeding",
+        "Pregnancy with suspected hepatitis E"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "LFTs, clotting (INR), U&E, FBC",
+        "Viral serology/PCR panel based on risk factors",
+        "Abdominal ultrasound if cholestatic/structural concern"
+      ],
+      "secondLine": [
+        "Autoimmune/metabolic screen if diagnosis unclear"
+      ],
+      "specialistTests": [
+        "Hepatology assessment and fibrosis staging for chronic HBV/HCV"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Compatible clinical syndrome with specific viral serology/PCR confirmation.",
+      "differentials": [
+        "Drug-induced liver injury",
+        "Alcoholic hepatitis",
+        "Autoimmune hepatitis",
+        "Biliary obstruction"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care and liver-safe prescribing",
+          "Infection prevention counselling and contact/public health actions",
+          "Monitor INR/mental state for liver failure"
+        ],
+        "secondLine": [
+          "Antivirals for selected indications (virus-specific) after specialist input"
+        ],
+        "procedures": []
+      },
+      "chronic": {
+        "monitoring": [
+          "Long-term antiviral care pathways for chronic HBV/HCV and cirrhosis/HCC surveillance where indicated"
+        ]
+      },
+      "drugs": [],
+      "procedures": []
+    },
+    "prognosis": "Depends on virus and chronicity; HAV/HEV often self-limiting, HBV/HCV may progress to cirrhosis/HCC.",
+    "complications": [
+      "Acute liver failure",
+      "Chronic hepatitis/cirrhosis",
+      "Portal hypertension",
+      "Hepatocellular carcinoma"
+    ],
+    "foundationDoctorRole": "Identify likely viral patterns, arrange initial workup, provide safety-netting, and involve hepatology/public health appropriately.",
+    "escalation": "Urgent escalation for rising INR, encephalopathy, hypoglycaemia, severe jaundice, or haemodynamic instability.",
+    "keySafetyConsiderations": "Check pregnancy status and occupational/public-health implications; avoid hepatotoxic medications."
+  }
+}

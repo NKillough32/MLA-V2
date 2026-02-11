@@ -1,0 +1,105 @@
+{
+  "id": "unstable_angina",
+  "name": "Unstable angina",
+  "domains": [
+    "Cardiology"
+  ],
+  "generatedAt": "2026-02-11T13:15:35.717666",
+  "model": "gpt-5.2-codex",
+  "rawContent": "# Unstable angina: Core Condition Reference\n\n## Overview\nUnstable angina is myocardial ischaemia at rest or with minimal exertion without persistent troponin elevation, and is part of acute coronary syndrome (ACS).",
+  "content": {
+    "synonyms": [
+      "UA",
+      "NSTE-ACS without biomarker rise"
+    ],
+    "overview": {
+      "definition": "Unstable angina is myocardial ischaemia at rest or with minimal exertion without persistent troponin elevation, and is part of acute coronary syndrome (ACS).",
+      "epidemiology": "Common emergency presentation in adults with cardiovascular risk factors.",
+      "pathophysiology": "Usually due to plaque disruption with non-occlusive thrombus causing dynamic coronary obstruction."
+    },
+    "recognition": {
+      "symptoms": [
+        "Chest pain at rest or crescendo pattern",
+        "Radiation to arm/jaw",
+        "Dyspnoea, nausea, diaphoresis"
+      ],
+      "signs": [
+        "May have normal examination",
+        "Autonomic signs (sweating, tachycardia)",
+        "Haemodynamic instability in high-risk patients"
+      ],
+      "atypicalPresentations": [
+        "Epigastric discomfort, dyspnoea alone, especially in older people/diabetes"
+      ],
+      "redFlags": [
+        "Ongoing/recurrent pain",
+        "Dynamic ECG changes",
+        "Haemodynamic compromise or arrhythmia"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "12-lead ECG (repeat if ongoing pain)",
+        "Serial troponins",
+        "FBC/U&E/CRP/glucose/lipids",
+        "CXR if alternative diagnosis suspected"
+      ],
+      "secondLine": [
+        "Risk stratification (e.g. GRACE) and early cardiology review"
+      ],
+      "specialistTests": [
+        "Invasive coronary angiography as indicated"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Clinical ACS symptoms with no persistent biomarker rise, after excluding STEMI/NSTEMI and non-cardiac causes.",
+      "differentials": [
+        "NSTEMI",
+        "STEMI",
+        "Aortic dissection",
+        "Pulmonary embolism",
+        "GORD/musculoskeletal pain"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Treat as ACS pathway: aspirin loading unless contraindicated",
+          "Anti-ischaemic therapy (GTN, analgesia)",
+          "Continuous monitoring and repeat ECG/troponin"
+        ],
+        "secondLine": [
+          "Second antiplatelet and anticoagulation per local protocol/senior plan"
+        ],
+        "procedures": [
+          "Urgent cardiology input for early invasive strategy in high-risk patients"
+        ]
+      },
+      "chronic": {
+        "monitoring": [
+          "Secondary prevention: statin, BP/lipid/diabetes control, smoking cessation, cardiac rehab"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Aspirin",
+          "mechanism": "Antiplatelet (COX inhibition).",
+          "dosing": "Loading then maintenance as per ACS protocol.",
+          "sideEffects": "Bleeding, dyspepsia.",
+          "notes": "Give promptly unless contraindicated."
+        }
+      ],
+      "procedures": []
+    },
+    "prognosis": "Higher short-term risk of MI compared with stable angina; prognosis improves with rapid ACS management.",
+    "complications": [
+      "Myocardial infarction",
+      "Arrhythmia",
+      "Heart failure",
+      "Death"
+    ],
+    "foundationDoctorRole": "Initiate ACS bundle promptly, obtain serial ECG/troponin, and escalate to seniors/cardiology early.",
+    "escalation": "Immediate escalation for persistent pain, ECG changes, hypotension, arrhythmia, or rising biomarkers.",
+    "keySafetyConsiderations": "Do not miss STEMI/NSTEMI progression; reassess frequently and document timing of pain/ECGs/troponins."
+  }
+}

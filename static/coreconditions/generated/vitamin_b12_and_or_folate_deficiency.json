@@ -1,0 +1,106 @@
+{
+  "id": "vitamin_b12_and_or_folate_deficiency",
+  "name": "Vitamin B12 and/or folate deficiency",
+  "domains": [
+    "Haematology"
+  ],
+  "generatedAt": "2026-02-11T13:15:35.717666",
+  "model": "gpt-5.2-codex",
+  "rawContent": "# Vitamin B12 and/or folate deficiency: Core Condition Reference\n\n## Overview\nDeficiency of vitamin B12 and/or folate causes impaired DNA synthesis leading to megaloblastic anaemia; B12 deficiency may also cause neurological dysfunction.",
+  "content": {
+    "synonyms": [
+      "Megaloblastic anaemia"
+    ],
+    "overview": {
+      "definition": "Deficiency of vitamin B12 and/or folate causes impaired DNA synthesis leading to megaloblastic anaemia; B12 deficiency may also cause neurological dysfunction.",
+      "epidemiology": "Common in malnutrition, malabsorption, pernicious anaemia, and certain medications.",
+      "pathophysiology": "Deficient cofactors impair erythropoiesis causing macrocytosis and ineffective haematopoiesis."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fatigue and exertional dyspnoea",
+        "Glossitis",
+        "Neuropathy/cognitive symptoms (B12)"
+      ],
+      "signs": [
+        "Pallor",
+        "Macrocytosis on FBC",
+        "Reduced vibration/proprioception in B12 deficiency"
+      ],
+      "atypicalPresentations": [
+        "Isolated neuropsychiatric symptoms with minimal anaemia"
+      ],
+      "redFlags": [
+        "Subacute combined degeneration signs",
+        "Severe symptomatic anaemia",
+        "Pancytopenia"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "FBC, blood film, reticulocyte count",
+        "Serum B12 and folate",
+        "Ferritin and haemolysis screen if mixed picture"
+      ],
+      "secondLine": [
+        "Intrinsic factor/parietal cell antibodies for pernicious anaemia"
+      ],
+      "specialistTests": [
+        "MMA/homocysteine if diagnostic uncertainty"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Biochemical deficiency with compatible blood count/clinical features and exclusion of alternative causes.",
+      "differentials": [
+        "Myelodysplasia",
+        "Hypothyroidism",
+        "Liver disease/alcohol-related macrocytosis",
+        "Iron deficiency with mixed indices"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Replace B12 promptly when deficient (especially if neurological signs)",
+          "Folate replacement once B12 status addressed",
+          "Treat underlying cause and counsel on diet/medications"
+        ],
+        "secondLine": [
+          "Transfusion only if severe symptomatic anaemia per senior plan"
+        ],
+        "procedures": []
+      },
+      "chronic": {
+        "monitoring": [
+          "Repeat FBC and symptom review; lifelong B12 replacement in pernicious anaemia"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Hydroxocobalamin",
+          "mechanism": "Replaces vitamin B12 cofactor stores.",
+          "dosing": "Per local loading and maintenance schedule.",
+          "sideEffects": "Injection-site discomfort, rare allergy.",
+          "notes": "Give B12 before isolated folate if both possible."
+        },
+        {
+          "name": "Folic acid",
+          "mechanism": "Replaces folate needed for DNA synthesis.",
+          "dosing": "Typically daily oral replacement per cause/severity.",
+          "sideEffects": "Generally well tolerated.",
+          "notes": "Do not treat isolated macrocytosis with folate alone if B12 deficiency not excluded."
+        }
+      ],
+      "procedures": []
+    },
+    "prognosis": "Haematological response is usually good with treatment; delayed B12 neuropathy may be incompletely reversible.",
+    "complications": [
+      "Irreversible neurological deficit (untreated B12)",
+      "Recurrent anaemia",
+      "Thrombotic risk with severe hyperhomocysteinaemia"
+    ],
+    "foundationDoctorRole": "Recognize macrocytic patterns, start safe replacement strategy, and ensure follow-up for cause and response.",
+    "escalation": "Escalate if severe anaemia, neurological deficits, pancytopenia, or diagnostic uncertainty.",
+    "keySafetyConsiderations": "Never start folate alone when B12 deficiency is possible."
+  }
+}

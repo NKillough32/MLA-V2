@@ -1,0 +1,94 @@
+{
+  "id": "upper_limb_fractures",
+  "name": "Upper limb fractures",
+  "domains": [
+    "Trauma and Orthopaedics"
+  ],
+  "generatedAt": "2026-02-11T13:15:35.717666",
+  "model": "gpt-5.2-codex",
+  "rawContent": "# Upper limb fractures: Core Condition Reference\n\n## Overview\nUpper limb fractures include bony injuries from clavicle to phalanges, commonly following falls or direct trauma.",
+  "content": {
+    "synonyms": [
+      "Fractures of clavicle/humerus/radius/ulna/hand"
+    ],
+    "overview": {
+      "definition": "Upper limb fractures include bony injuries from clavicle to phalanges, commonly following falls or direct trauma.",
+      "epidemiology": "Common in ED across all ages; mechanism and fracture pattern vary by age.",
+      "pathophysiology": "Trauma causes cortical disruption with variable displacement and neurovascular risk."
+    },
+    "recognition": {
+      "symptoms": [
+        "Pain, swelling, deformity",
+        "Reduced range of motion",
+        "Inability to use limb"
+      ],
+      "signs": [
+        "Point tenderness/crepitus",
+        "Visible deformity or bruising",
+        "Neurovascular compromise signs"
+      ],
+      "atypicalPresentations": [
+        "Occult fractures with minimal deformity"
+      ],
+      "redFlags": [
+        "Open fracture",
+        "Neurovascular deficit",
+        "Compartment syndrome features",
+        "Associated dislocation"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Analgesia and limb immobilisation first",
+        "X-rays including joint above and below",
+        "Document neurovascular status pre/post splint"
+      ],
+      "secondLine": [
+        "CT for complex intra-articular injuries"
+      ],
+      "specialistTests": [
+        "Orthopaedic specialist imaging planning"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Confirmed radiologically with clinical correlation and neurovascular assessment.",
+      "differentials": [
+        "Severe sprain/ligament injury",
+        "Dislocation without fracture",
+        "Soft tissue injury"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Analgesia, splintage, elevation",
+          "Open fracture protocol (IV antibiotics/tetanus per policy)",
+          "Early orthopaedic discussion for displaced/unstable injuries"
+        ],
+        "secondLine": [
+          "Manipulation/reduction under appropriate analgesia/sedation if indicated"
+        ],
+        "procedures": [
+          "Operative fixation for unstable, displaced, intra-articular, or open fractures"
+        ]
+      },
+      "chronic": {
+        "monitoring": [
+          "Fracture clinic follow-up, repeat imaging, physiotherapy and functional rehabilitation"
+        ]
+      },
+      "drugs": [],
+      "procedures": []
+    },
+    "prognosis": "Most heal with appropriate immobilisation or fixation, though stiffness and functional deficits may persist.",
+    "complications": [
+      "Malunion/nonunion",
+      "Neurovascular injury",
+      "Compartment syndrome",
+      "Joint stiffness/CRPS"
+    ],
+    "foundationDoctorRole": "Provide initial trauma assessment, analgesia, immobilisation, and clear neurovascular documentation.",
+    "escalation": "Escalate immediately for open injury, absent pulses, progressive pain, paraesthesia, or threatened skin.",
+    "keySafetyConsiderations": "Repeat neurovascular exams after any manipulation/splinting and before discharge."
+  }
+}
