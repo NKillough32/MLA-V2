@@ -105,6 +105,9 @@ export class QuizManager {
 
         // Upload status element id (used to show V1-style persistent messages during file processing)
         this.uploadStatusId = 'upload-status';
+
+        // Auto-save timer for quiz progress
+        this.autoSaveTimer = null;
     }
 
     /**
@@ -342,6 +345,7 @@ export class QuizManager {
         }
 
         // Reset quiz state before starting (clear previous answers, etc.)
+        await this.clearProgress(this.quizName);
         this.resetQuiz();
 
         // Randomly select questions if needed
@@ -467,6 +471,8 @@ export class QuizManager {
             timeSpent: this.questionTimes[questionIndex]
         });
 
+        this.queueAutoSave();
+
         return { isCorrect, correctAnswer: correctAnswerIdx };
     }
 
@@ -479,6 +485,7 @@ export class QuizManager {
             this.renderQuestion();
             this.scrollToTop();
             analytics.vibrateClick();
+            this.queueAutoSave();
             return true;
         }
         return false;
@@ -832,6 +839,7 @@ export class QuizManager {
             this.renderQuestion();
             this.scrollToTop();
             analytics.vibrateClick();
+            this.queueAutoSave();
             return true;
         }
         return false;
@@ -846,6 +854,7 @@ export class QuizManager {
             this.renderQuestion();
             this.scrollToTop();
             analytics.vibrateClick();
+            this.queueAutoSave();
             return true;
         }
         return false;
@@ -911,6 +920,7 @@ export class QuizManager {
         
         // Re-render to update flag button
         this.renderQuestion();
+        this.queueAutoSave();
         
         return this.flaggedQuestions.has(index);
     }
@@ -929,6 +939,7 @@ export class QuizManager {
         
         // Re-render to show selection
         this.renderQuestion();
+        this.queueAutoSave();
     }
 
     /**
@@ -958,6 +969,7 @@ export class QuizManager {
         
         // Re-render to show ruled out state
         this.renderQuestion();
+        this.queueAutoSave();
         
         return ruledOut.includes(optionIndex);
     }
@@ -1132,6 +1144,7 @@ export class QuizManager {
 
         // Save results
         await storage.setItem(STORAGE_KEYS.LAST_QUIZ, results);
+        await this.clearProgress(this.quizName);
         
         // Update session stats
         const sessionStats = await storage.getItem(STORAGE_KEYS.SESSION_STATS, {
@@ -1173,6 +1186,11 @@ export class QuizManager {
         this.quizStartTime = null;
         this.questionStartTime = null;
         this.isReviewMode = false;
+
+        if (this.autoSaveTimer) {
+            clearTimeout(this.autoSaveTimer);
+            this.autoSaveTimer = null;
+        }
         
         console.log('🔄 Quiz reset');
     }
@@ -1278,8 +1296,14 @@ export class QuizManager {
      * Save progress (for resuming later)
      */
     async saveProgress() {
+        if (!this.quizName || !this.questions.length || !this.hasUnsavedProgress()) {
+            return null;
+        }
+
         const progress = {
             quizName: this.quizName,
+            isUploaded: !!this.currentQuiz?.isUploaded,
+            questions: this.questions,
             currentQuestionIndex: this.currentQuestionIndex,
             answers: this.answers,
             submittedAnswers: this.submittedAnswers,
@@ -1290,7 +1314,13 @@ export class QuizManager {
             savedAt: Date.now()
         };
 
-        await storage.setItem(`${STORAGE_KEYS.QUIZ_PROGRESS}_${this.quizName}`, progress);
+        const progressKey = `${STORAGE_KEYS.QUIZ_PROGRESS}_${this.quizName}`;
+        await storage.setItem(progressKey, progress);
+        await storage.setItem(STORAGE_KEYS.QUIZ_PROGRESS, {
+            quizName: this.quizName,
+            progressKey,
+            savedAt: progress.savedAt
+        });
         console.log('💾 Quiz progress saved');
         
         return progress;
@@ -1299,8 +1329,19 @@ export class QuizManager {
     /**
      * Load progress (to resume quiz)
      */
-    async loadProgress(quizName) {
-        const progress = await storage.getItem(`${STORAGE_KEYS.QUIZ_PROGRESS}_${quizName}`);
+    async loadProgress(quizName = null) {
+        let progressKey = quizName ? `${STORAGE_KEYS.QUIZ_PROGRESS}_${quizName}` : null;
+
+        if (!progressKey) {
+            const latestProgressMeta = await storage.getItem(STORAGE_KEYS.QUIZ_PROGRESS);
+            progressKey = latestProgressMeta?.progressKey || null;
+        }
+
+        if (!progressKey) {
+            return null;
+        }
+
+        const progress = await storage.getItem(progressKey);
         
         if (progress) {
             this.currentQuestionIndex = progress.currentQuestionIndex || 0;
@@ -1313,18 +1354,72 @@ export class QuizManager {
             this.quizEndTime = null;
             
             console.log('📂 Quiz progress loaded');
-            return true;
+            return progress;
         }
         
-        return false;
+        return null;
+    }
+
+
+    /**
+     * Apply saved quiz progress after loading a quiz
+     */
+    applySavedProgress(progress) {
+        if (!progress || !progress.quizName) {
+            return false;
+        }
+
+        if (Array.isArray(progress.questions) && progress.questions.length > 0) {
+            this.questions = progress.questions;
+        }
+
+        this.currentQuestionIndex = Math.min(
+            Math.max(progress.currentQuestionIndex || 0, 0),
+            Math.max(this.questions.length - 1, 0)
+        );
+        this.answers = progress.answers || {};
+        this.submittedAnswers = progress.submittedAnswers || {};
+        this.ruledOutAnswers = progress.ruledOutAnswers || {};
+        this.flaggedQuestions = new Set(progress.flaggedQuestions || []);
+        this.questionTimes = progress.questionTimes || {};
+        this.quizStartTime = progress.quizStartTime || Date.now();
+        this.quizEndTime = null;
+
+        this.renderQuestion();
+        eventBus.emit(EVENTS.QUIZ_STARTED, {
+            name: this.quizName,
+            questionCount: this.questions.length,
+            resumed: true
+        });
+
+        console.log('✅ Restored quiz progress session');
+        return true;
     }
 
     /**
      * Clear saved progress
      */
     async clearProgress(quizName = this.quizName) {
-        await storage.removeItem(`${STORAGE_KEYS.QUIZ_PROGRESS}_${quizName}`);
+        const progressMeta = await storage.getItem(STORAGE_KEYS.QUIZ_PROGRESS);
+        const progressKey = `${STORAGE_KEYS.QUIZ_PROGRESS}_${quizName}`;
+
+        await storage.removeItem(progressKey);
+
+        if (progressMeta?.progressKey === progressKey) {
+            await storage.removeItem(STORAGE_KEYS.QUIZ_PROGRESS);
+        }
+
         console.log('🗑️ Quiz progress cleared');
+    }
+
+    queueAutoSave() {
+        if (this.autoSaveTimer) {
+            clearTimeout(this.autoSaveTimer);
+        }
+
+        this.autoSaveTimer = setTimeout(() => {
+            this.saveProgress();
+        }, 400);
     }
 
     /**
