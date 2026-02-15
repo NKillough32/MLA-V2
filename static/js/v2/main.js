@@ -714,6 +714,23 @@ class MLAQuizApp {
             this.updateProgressBar(data);
         });
 
+        // Resume requested → restore specific quiz state
+        eventBus.on(EVENTS.QUIZ_RESUME_REQUESTED, async (progress) => {
+            if (!progress?.quizName) {
+                return;
+            }
+
+            const loaded = await quizManager.loadQuiz(progress.quizName, !!progress.isUploaded);
+            if (!loaded) {
+                uiManager.showToast('Could not resume previous quiz session.', 'warning');
+                return;
+            }
+
+            quizManager.applySavedProgress(progress);
+            this.showScreen('quizScreen');
+            uiManager.showToast(`Resumed ${progress.quizName}`, 'success');
+        });
+
         // Quiz answer → Feedback
         eventBus.on(EVENTS.QUESTION_ANSWERED, (data) => {
             if (data.isCorrect) {
@@ -1038,6 +1055,7 @@ class MLAQuizApp {
         };
 
         storage.setItem(STORAGE_KEYS.APP_STATE, state);
+        quizManager.saveProgress();
     }
 
     /**
@@ -1054,14 +1072,15 @@ class MLAQuizApp {
 
         // Check for saved quiz progress
         const quizProgress = await quizManager.loadProgress();
-        if (quizProgress) {
+        if (quizProgress?.quizName) {
             const resume = await uiManager.confirm(
-                'You have an unfinished quiz. Would you like to resume?'
+                `You have an unfinished quiz (${quizProgress.quizName}). Would you like to resume?`
             );
-            
+
             if (resume) {
-                // Emit event to show quiz view
                 eventBus.emit(EVENTS.QUIZ_RESUME_REQUESTED, quizProgress);
+            } else {
+                await quizManager.clearProgress(quizProgress.quizName);
             }
         }
     }
