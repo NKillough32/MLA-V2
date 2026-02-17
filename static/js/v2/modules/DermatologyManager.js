@@ -7,6 +7,8 @@ import { eventBus } from './EventBus.js';
 import { storage } from './StorageManager.js';
 import { analytics } from './AnalyticsManager.js';
 import { StandardizedSearchComponent } from './StandardizedSearchComponent.js';
+import { SecurityUtils } from './SecurityUtils.js';
+import { ErrorHandler } from './ErrorHandler.js';
 
 export class DermatologyManager {
     constructor() {
@@ -93,38 +95,44 @@ export class DermatologyManager {
      * Load dermatology data from module
      */
     async loadDermatologyData() {
-        try {
+        return await ErrorHandler.safeExecute(async () => {
             const module = await import('/static/dermatology/dermatology_data.js');
             this.dermatologyData = module.dermatologyDatabase;
             console.log('📚 Loaded dermatology data:', Object.keys(this.dermatologyData).length, 'conditions');
             return this.dermatologyData;
-        } catch (error) {
-            console.error('❌ Failed to load dermatology data:', error);
-            throw error;
-        }
+        }, {
+            context: 'Load Dermatology Data',
+            retryCount: 2,
+            showToast: true
+        });
     }
 
     /**
      * Load favorite conditions from storage
      */
     async loadFavorites() {
-        try {
-            const favorites = await storage.getItem('dermatology-favorites');
-            if (favorites) {
-                this.favoriteConditions = new Set(JSON.parse(favorites));
+        const favorites = await ErrorHandler.safeExecute(async () => {
+            const data = await storage.getItem('dermatology-favorites');
+            if (data) {
+                this.favoriteConditions = new Set(ErrorHandler.safeJsonParse(data, []));
             }
-        } catch (error) {
-            console.error('Failed to load favorites:', error);
-        }
+        }, {
+            context: 'Load Dermatology Favorites',
+            showToast: false
+        });
     }
 
     /**
      * Save favorite conditions to storage
      */
     async saveFavorites() {
-        try {
+        await ErrorHandler.safeExecute(async () => {
             await storage.setItem('dermatology-favorites', JSON.stringify(Array.from(this.favoriteConditions)));
-        } catch (error) {
+        }, {
+            context: 'Save Dermatology Favorites',
+            showToast: false
+        });
+    }
             console.error('Failed to save favorites:', error);
         }
     }
@@ -282,10 +290,10 @@ export class DermatologyManager {
                         ${this.categories.map(cat => `
                             <button 
                                 class="dermatology-category-btn ${this.currentCategory === cat.id ? 'active' : ''}"
-                                data-category="${cat.id}"
+                                data-category="${SecurityUtils.escapeHtml(cat.id)}"
                             >
-                                <span class="cat-icon">${cat.icon}</span>
-                                <span class="cat-name">${cat.name}</span>
+                                <span class="cat-icon">${SecurityUtils.escapeHtml(cat.icon)}</span>
+                                <span class="cat-name">${SecurityUtils.escapeHtml(cat.name)}</span>
                                 ${cat.id !== 'all' ? `<span class="cat-count">${stats.categoryCounts[cat.id] || 0}</span>` : ''}
                             </button>
                         `).join('')}
@@ -341,22 +349,22 @@ export class DermatologyManager {
         };
 
         return `
-            <div class="dermatology-condition-card" data-condition-id="${condition.id}">
+            <div class="dermatology-condition-card" data-condition-id="${SecurityUtils.escapeHtml(condition.id)}">
                 <div class="condition-header">
                     <div class="condition-title-row">
-                        <h4 class="condition-title">${condition.title}</h4>
-                        <button class="favorite-btn ${isFav ? 'favorited' : ''}" data-condition-id="${condition.id}">
+                        <h4 class="condition-title">${SecurityUtils.escapeHtml(condition.title)}</h4>
+                        <button class="favorite-btn ${isFav ? 'favorited' : ''}" data-condition-id="${SecurityUtils.escapeHtml(condition.id)}">
                             ${isFav ? '⭐' : '☆'}
                         </button>
                     </div>
-                    <span class="condition-category">${categoryInfo?.icon || '🩺'} ${categoryName}</span>
+                    <span class="condition-category">${SecurityUtils.escapeHtml(categoryInfo?.icon || '🩺')} ${SecurityUtils.escapeHtml(categoryName)}</span>
                 </div>
 
                 <div class="condition-content">
                     ${condition.clinicalPresentation?.description ? `
                         <div class="condition-section">
                             <strong class="condition-section-title">Clinical Presentation</strong>
-                            <p class="condition-section-text">${condition.clinicalPresentation.description}</p>
+                            <p class="condition-section-text">${SecurityUtils.escapeHtml(condition.clinicalPresentation.description)}</p>
                         </div>
                     ` : ''}
 
@@ -364,7 +372,7 @@ export class DermatologyManager {
                         <div class="condition-section">
                             <strong class="condition-section-title">Diagnosis</strong>
                             <ul class="condition-section-list">
-                                ${condition.diagnosis.slice(0, 3).map(item => `<li>${formatListItem(item)}</li>`).join('')}
+                                ${condition.diagnosis.slice(0, 3).map(item => `<li>${SecurityUtils.escapeHtml(formatListItem(item))}</li>`).join('')}
                                 ${condition.diagnosis.length > 3 ? `<li class="more-indicator">+${condition.diagnosis.length - 3} more...</li>` : ''}
                             </ul>
                         </div>
@@ -374,14 +382,14 @@ export class DermatologyManager {
                         <div class="condition-section">
                             <strong class="condition-section-title">Management</strong>
                             <ul class="condition-section-list">
-                                ${condition.management.slice(0, 3).map(item => `<li>${formatListItem(item)}</li>`).join('')}
+                                ${condition.management.slice(0, 3).map(item => `<li>${SecurityUtils.escapeHtml(formatListItem(item))}</li>`).join('')}
                                 ${condition.management.length > 3 ? `<li class="more-indicator">+${condition.management.length - 3} more...</li>` : ''}
                             </ul>
                         </div>
                     ` : ''}
                 </div>
 
-                <button class="view-details-btn" data-condition-id="${condition.id}">
+                <button class="view-details-btn" data-condition-id="${SecurityUtils.escapeHtml(condition.id)}">
                     View Full Details →
                 </button>
             </div>
@@ -397,7 +405,7 @@ export class DermatologyManager {
         modal.innerHTML = `
             <div class="dermatology-modal">
                 <div class="modal-header">
-                    <h2>${condition.title}</h2>
+                    <h2>${SecurityUtils.escapeHtml(condition.title)}</h2>
                     <button class="modal-close-btn">✕</button>
                 </div>
                 <div class="modal-content">
@@ -449,7 +457,7 @@ export class DermatologyManager {
                     <div class="derm-pearl-subsection">
                         <h4 class="derm-pearl-subtitle">🚨 Red Flags - Don't Miss</h4>
                         <ul class="derm-red-flag-list">
-                            ${condition.redFlags.map(item => `<li class="derm-red-flag-item">${item}</li>`).join('')}
+                            ${condition.redFlags.map(item => `<li class="derm-red-flag-item">${SecurityUtils.escapeHtml(item)}</li>`).join('')}
                         </ul>
                     </div>
                     ` : ''}
@@ -458,7 +466,7 @@ export class DermatologyManager {
                     <div class="derm-pearl-subsection">
                         <h4 class="derm-pearl-subtitle">⚡ Key Triggers to Ask About</h4>
                         <ul class="derm-trigger-list">
-                            ${condition.triggers.slice(0, 4).map(item => `<li>${formatListItem(item)}</li>`).join('')}
+                            ${condition.triggers.slice(0, 4).map(item => `<li>${SecurityUtils.escapeHtml(formatListItem(item))}</li>`).join('')}
                         </ul>
                     </div>
                     ` : ''}
@@ -467,7 +475,7 @@ export class DermatologyManager {
                     <div class="derm-pearl-subsection">
                         <h4 class="derm-pearl-subtitle">📋 Quick Diagnostic Approach</h4>
                         <div class="derm-diagnosis-box">
-                            ${condition.diagnosis.slice(0, 3).map(item => `<div>${formatListItem(item)}</div>`).join('')}
+                            ${condition.diagnosis.slice(0, 3).map(item => `<div>${SecurityUtils.escapeHtml(formatListItem(item))}</div>`).join('')}
                         </div>
                     </div>
                     ` : ''}
@@ -478,7 +486,7 @@ export class DermatologyManager {
                         <div class="derm-mgmt-quick">
                             ${condition.management.slice(0, 4).map(item => {
                                 const clean = formatListItem(item).replace(/<strong>|<\/strong>/g, '');
-                                return `<div class="derm-mgmt-item">${clean}</div>`;
+                                return `<div class="derm-mgmt-item">${SecurityUtils.escapeHtml(clean)}</div>`;
                             }).join('')}
                         </div>
                     </div>
@@ -488,7 +496,7 @@ export class DermatologyManager {
                     <div class="derm-pearl-subsection">
                         <h4 class="derm-pearl-subtitle">⚠️ Watch For Complications</h4>
                         <ul class="derm-complication-list">
-                            ${condition.complications.slice(0, 4).map(item => `<li>${formatListItem(item)}</li>`).join('')}
+                            ${condition.complications.slice(0, 4).map(item => `<li>${SecurityUtils.escapeHtml(formatListItem(item))}</li>`).join('')}
                         </ul>
                     </div>
                     ` : ''}
@@ -503,8 +511,8 @@ export class DermatologyManager {
                     <h4>Clinical Images</h4>
                     <div class="image-gallery-grid">
                         ${condition.clinicalPresentation.images.map(img => `
-                            <img src="static/assets/dermatology/${img}" 
-                                 alt="${condition.title}" 
+                            <img src="static/assets/dermatology/${SecurityUtils.escapeHtml(img)}" 
+                                 alt="${SecurityUtils.escapeHtml(condition.title)}" 
                                  class="condition-image"
                                  onclick="window.open(this.src, '_blank')"
                                  title="Click to view full size">
@@ -520,14 +528,14 @@ export class DermatologyManager {
             if (Array.isArray(content)) {
                 return `
                     <div class="detail-section">
-                        <h4>${title}</h4>
+                        <h4>${SecurityUtils.escapeHtml(title)}</h4>
                         <ul>
-                            ${content.map(item => `<li>${formatListItem(item)}</li>`).join('')}
+                            ${content.map(item => `<li>${SecurityUtils.escapeHtml(formatListItem(item))}</li>`).join('')}
                         </ul>
                     </div>
                 `;
             } else if (typeof content === 'object') {
-                let objHtml = `<div class="detail-section"><h4>${title}</h4>`;
+                let objHtml = `<div class="detail-section"><h4>${SecurityUtils.escapeHtml(title)}</h4>`;
                 for (const [key, value] of Object.entries(content)) {
                     // Skip images array (already rendered)
                     if (key === 'images') continue;
@@ -536,15 +544,15 @@ export class DermatologyManager {
                         const label = key.charAt(0).toUpperCase() + key.slice(1);
                         objHtml += `
                             <div class="subsection">
-                                <div class="subsection-label">${label}</div>
+                                <div class="subsection-label">${SecurityUtils.escapeHtml(label)}</div>
                                 <ul class="subsection-list">
-                                    ${value.map(item => `<li>${formatListItem(item)}</li>`).join('')}
+                                    ${value.map(item => `<li>${SecurityUtils.escapeHtml(formatListItem(item))}</li>`).join('')}
                                 </ul>
                             </div>
                         `;
                     } else if (typeof value === 'string') {
                         const label = key.charAt(0).toUpperCase() + key.slice(1);
-                        objHtml += `<div class="subsection"><div class="subsection-label">${label}</div><p class="subsection-text">${value}</p></div>`;
+                        objHtml += `<div class="subsection"><div class="subsection-label">${SecurityUtils.escapeHtml(label)}</div><p class="subsection-text">${SecurityUtils.escapeHtml(value)}</p></div>`;
                     }
                 }
                 objHtml += '</div>';
@@ -552,8 +560,8 @@ export class DermatologyManager {
             } else {
                 return `
                     <div class="detail-section">
-                        <h4>${title}</h4>
-                        <p>${content}</p>
+                        <h4>${SecurityUtils.escapeHtml(title)}</h4>
+                        <p>${SecurityUtils.escapeHtml(content)}</p>
                     </div>
                 `;
             }
@@ -575,9 +583,9 @@ export class DermatologyManager {
                     if (currentGroup && groupItems.length > 0) {
                         html += `
                             <div class="management-group">
-                                <div class="management-group-title">${currentGroup}</div>
+                                <div class="management-group-title">${SecurityUtils.escapeHtml(currentGroup)}</div>
                                 <ul class="management-group-list">
-                                    ${groupItems.map(gi => `<li>${formatListItem(gi)}</li>`).join('')}
+                                    ${groupItems.map(gi => `<li>${SecurityUtils.escapeHtml(formatListItem(gi))}</li>`).join('')}
                                 </ul>
                             </div>
                         `;
@@ -589,7 +597,7 @@ export class DermatologyManager {
                     groupItems.push(item);
                 } else {
                     // Standalone item without header
-                    html += `<ul><li>${formatListItem(item)}</li></ul>`;
+                    html += `<ul><li>${SecurityUtils.escapeHtml(formatListItem(item))}</li></ul>`;
                 }
             });
 
@@ -597,9 +605,9 @@ export class DermatologyManager {
             if (currentGroup && groupItems.length > 0) {
                 html += `
                     <div class="management-group">
-                        <div class="management-group-title">${currentGroup}</div>
+                        <div class="management-group-title">${SecurityUtils.escapeHtml(currentGroup)}</div>
                         <ul class="management-group-list">
-                            ${groupItems.map(gi => `<li>${formatListItem(gi)}</li>`).join('')}
+                            ${groupItems.map(gi => `<li>${SecurityUtils.escapeHtml(formatListItem(gi))}</li>`).join('')}
                         </ul>
                     </div>
                 `;
@@ -668,7 +676,7 @@ export class DermatologyManager {
                 <div class="detail-section red-flags">
                     <h4>⚠️ Red Flags</h4>
                     <ul>
-                        ${condition.redFlags.map(item => `<li>${item}</li>`).join('')}
+                        ${condition.redFlags.map(item => `<li>${SecurityUtils.escapeHtml(item)}</li>`).join('')}
                     </ul>
                 </div>
             `;

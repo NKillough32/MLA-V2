@@ -8,6 +8,7 @@ import { eventBus } from './EventBus.js';
 import { storage } from './StorageManager.js';
 import { analytics } from './AnalyticsManager.js';
 import { StandardizedSearchComponent } from './StandardizedSearchComponent.js';
+import { SecurityUtils } from './SecurityUtils.js';
 
 export class PregnancyDrugsManager {
     constructor() {
@@ -1460,7 +1461,8 @@ export class PregnancyDrugsManager {
             </div>
         `;
 
-        container.innerHTML = searchHtml + sectionHtml + clinicalPearlsHtml + resourcesHtml;
+        const fullHtml = searchHtml + sectionHtml + clinicalPearlsHtml + resourcesHtml;
+        SecurityUtils.setInnerHTML(container, fullHtml);
         this.setupEventListeners();
     }
 

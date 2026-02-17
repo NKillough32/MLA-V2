@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-02-11T13:15:35.717666",
-  "totalConditions": 570,
-  "processedCount": 570,
+  "generatedAt": "2026-02-17T00:00:00.000000",
+  "totalConditions": 566,
+  "processedCount": 566,
   "model": "gpt-5.2-codex",
   "conditions": [
     {
@@ -438,15 +438,6 @@
         "Pre-operative Care"
       ],
       "filename": "arrhythmias.json",
-      "processed": true
-    },
-    {
-      "id": "arterial_ulcer",
-      "name": "Arterial ulcer",
-      "domains": [
-        "Plastics"
-      ],
-      "filename": "arterial_ulcer.json",
       "processed": true
     },
     {
@@ -3321,15 +3312,6 @@
       "processed": true
     },
     {
-      "id": "neutropaenic_sepsis",
-      "name": "Neutropaenic sepsis",
-      "domains": [
-        "Oncology"
-      ],
-      "filename": "neutropaenic_sepsis.json",
-      "processed": true
-    },
-    {
       "id": "neutropenia",
       "name": "Neutropenia",
       "domains": [
@@ -4036,12 +4018,12 @@
       "processed": true
     },
     {
-      "id": "psoroasis",
-      "name": "Psoroasis",
+      "id": "psoriasis",
+      "name": "Psoriasis",
       "domains": [
         "Dermatology"
       ],
-      "filename": "psoroasis.json",
+      "filename": "psoriasis.json",
       "processed": true
     },
     {
@@ -5065,15 +5047,6 @@
       "processed": true
     },
     {
-      "id": "venous_ulcer",
-      "name": "Venous ulcer",
-      "domains": [
-        "Plastics"
-      ],
-      "filename": "venous_ulcer.json",
-      "processed": true
-    },
-    {
       "id": "venous_ulcers",
       "name": "Venous ulcers",
       "domains": [
@@ -5103,12 +5076,12 @@
       "processed": true
     },
     {
-      "id": "vestibular_migrain",
-      "name": "Vestibular migrain",
+      "id": "vestibular_migraine",
+      "name": "Vestibular migraine",
       "domains": [
         "Neurology"
       ],
-      "filename": "vestibular_migrain.json",
+      "filename": "vestibular_migraine.json",
       "processed": true
     },
     {

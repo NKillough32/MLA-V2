@@ -5,6 +5,7 @@
  */
 
 import { TOOL_CATEGORIES } from './Constants.js';
+import { SecurityUtils } from './SecurityUtils.js';
 
 /**
  * Calculator implementations organized by category
@@ -210,8 +211,8 @@ class V2Calculators {
             
             waistAssessment = `
                 <div style="margin-top: 8px; padding: 6px; background: #f5f5f5; border-radius: 4px;">
-                    <strong>Waist Circumference:</strong> ${waist} cm<br>
-                    <span style="color: ${waistColor}; font-weight: bold;">${waistRisk}</span> for metabolic complications
+                    <strong>Waist Circumference:</strong> ${SecurityUtils.escapeHtml(waist)} cm<br>
+                    <span style="color: ${SecurityUtils.escapeHtml(waistColor)}; font-weight: bold;">${SecurityUtils.escapeHtml(waistRisk)}</span> for metabolic complications
                 </div>
             `;
         }
@@ -227,18 +228,18 @@ class V2Calculators {
         
         document.getElementById('bmi-result').innerHTML = `
             <div class="bmi-result-display">
-                <div class="bmi-value" style="color: ${color}; font-size: 1.2em;">
-                    <strong>BMI: ${result.bmi} kg/m²</strong>
+                <div class="bmi-value" style="color: ${SecurityUtils.escapeHtml(color)}; font-size: 1.2em;">
+                    <strong>BMI: ${SecurityUtils.escapeHtml(result.bmi)} kg/m²</strong>
                 </div>
-                <div class="bmi-category" style="color: ${color}; font-weight: bold; margin: 4px 0;">
-                    ${category}
+                <div class="bmi-category" style="color: ${SecurityUtils.escapeHtml(color)}; font-weight: bold; margin: 4px 0;">
+                    ${SecurityUtils.escapeHtml(category)}
                 </div>
                 <div style="margin-top: 8px; font-size: 0.9em; color: #666;">
-                    ${healthRisk}
+                    ${SecurityUtils.escapeHtml(healthRisk)}
                 </div>
                 ${waistAssessment}
                 <div style="margin-top: 8px; font-size: 0.8em; color: #666;">
-                    ${ethnicity === 'asian' ? 'Using Asian-specific BMI thresholds' : 'Using WHO BMI thresholds'}
+                    ${SecurityUtils.escapeHtml(ethnicity === 'asian' ? 'Using Asian-specific BMI thresholds' : 'Using WHO BMI thresholds')}
                 </div>
             </div>
         `;
@@ -350,16 +351,16 @@ class V2Calculators {
 
         document.getElementById('chads-result').innerHTML = `
             <div class="score-result">
-                <div class="score-value" style="color: ${color}">
-                    Score: <strong>${score}</strong>
-                    ${isFemale ? `<span style="font-size: 0.8em; color: #555;">(Non-sex factors: ${baseScore}, Female point: ${femalePoint})</span>` : ''}
+                <div class="score-value" style="color: ${SecurityUtils.escapeHtml(color)}">
+                    Score: <strong>${SecurityUtils.escapeHtml(score)}</strong>
+                    ${isFemale ? `<span style="font-size: 0.8em; color: #555;">(Non-sex factors: ${SecurityUtils.escapeHtml(baseScore)}, Female point: ${SecurityUtils.escapeHtml(femalePoint)})</span>` : ''}
                 </div>
-                <div class="score-risk">${risk}</div>
-                <div class="score-recommendation" style="color: ${color}">
-                    <strong>${recommendation}</strong>
+                <div class="score-risk">${SecurityUtils.escapeHtml(risk)}</div>
+                <div class="score-recommendation" style="color: ${SecurityUtils.escapeHtml(color)}">
+                    <strong>${SecurityUtils.escapeHtml(recommendation)}</strong>
                 </div>
                 <div style="margin-top: 8px; font-size: 0.8em; color: #666;">
-                    ${femaleExplanation}<br>
+                    ${SecurityUtils.escapeHtml(femaleExplanation)}<br>
                     Based on ESC/ACC guidelines. Consider individual bleeding risk (HAS-BLED).
                 </div>
             </div>
@@ -439,14 +440,14 @@ class V2Calculators {
         
         document.getElementById('hasbled-result').innerHTML = `
             <div class="score-result">
-                <div class="score-value" style="color: ${color}">
-                    HAS-BLED Score: <strong>${score}/9</strong>
+                <div class="score-value" style="color: ${SecurityUtils.escapeHtml(color)}">
+                    HAS-BLED Score: <strong>${SecurityUtils.escapeHtml(score)}/9</strong>
                 </div>
-                <div class="score-risk" style="color: ${color}; font-weight: bold;">
-                    ${risk} (${bleedingRate})
+                <div class="score-risk" style="color: ${SecurityUtils.escapeHtml(color)}; font-weight: bold;">
+                    ${SecurityUtils.escapeHtml(risk)} (${SecurityUtils.escapeHtml(bleedingRate)})
                 </div>
                 <div class="score-recommendation" style="margin-top: 8px;">
-                    <strong>Recommendation:</strong> ${recommendation}
+                    <strong>Recommendation:</strong> ${SecurityUtils.escapeHtml(recommendation)}
                 </div>
                 <div style="margin-top: 8px; font-size: 0.8em; color: #666;">
                     Note: HAS-BLED should not be used alone to exclude anticoagulation but to identify patients requiring closer monitoring
@@ -554,13 +555,13 @@ class V2Calculators {
         document.getElementById('gcs-result').innerHTML = `
             <div class="gcs-result-display">
                 <div class="gcs-breakdown">
-                    Eye: ${eye} + Verbal: ${verbal} + Motor: ${motor}
+                    Eye: ${SecurityUtils.escapeHtml(eye)} + Verbal: ${SecurityUtils.escapeHtml(verbal)} + Motor: ${SecurityUtils.escapeHtml(motor)}
                 </div>
-                <div class="gcs-total" style="color: ${color}">
-                    Total GCS: <strong>${total}/15</strong>
+                <div class="gcs-total" style="color: ${SecurityUtils.escapeHtml(color)}">
+                    Total GCS: <strong>${SecurityUtils.escapeHtml(total)}/15</strong>
                 </div>
-                <div class="gcs-severity" style="color: ${color}">
-                    ${severity}
+                <div class="gcs-severity" style="color: ${SecurityUtils.escapeHtml(color)}">
+                    ${SecurityUtils.escapeHtml(severity)}
                 </div>
             </div>
         `;
@@ -650,12 +651,12 @@ class V2Calculators {
 
         document.getElementById('wells-result').innerHTML = `
             <div class="score-result">
-                <div class="score-value" style="color: ${color};">
-                    Wells score: <strong>${score.toFixed(1)}</strong>
+                <div class="score-value" style="color: ${SecurityUtils.escapeHtml(color)};">
+                    Wells score: <strong>${SecurityUtils.escapeHtml(score.toFixed(1))}</strong>
                 </div>
-                <div class="score-risk">${category} (${probability})</div>
-                <div class="score-recommendation" style="color: ${color};">
-                    ${recommendation}
+                <div class="score-risk">${SecurityUtils.escapeHtml(category)} (${SecurityUtils.escapeHtml(probability)})</div>
+                <div class="score-recommendation" style="color: ${SecurityUtils.escapeHtml(color)};">
+                    ${SecurityUtils.escapeHtml(recommendation)}
                 </div>
             </div>
         `;
@@ -753,11 +754,11 @@ class V2Calculators {
 
         document.getElementById('mews-result').innerHTML = `
             <div class="score-result">
-                <div class="score-value" style="color: ${color};">MEWS: <strong>${total}</strong></div>
-                <div class="score-risk">${riskLevel}</div>
-                <div class="score-recommendation" style="color: ${color};">${action}</div>
+                <div class="score-value" style="color: ${SecurityUtils.escapeHtml(color)};">MEWS: <strong>${SecurityUtils.escapeHtml(total)}</strong></div>
+                <div class="score-risk">${SecurityUtils.escapeHtml(riskLevel)}</div>
+                <div class="score-recommendation" style="color: ${SecurityUtils.escapeHtml(color)};">${SecurityUtils.escapeHtml(action)}</div>
                 <div style="margin-top: 8px; font-size: 0.8em; color: #666;">
-                    RR ${rrScore} | HR ${hrScore} | SBP ${sbpScore} | Temp ${tempScore} | AVPU ${neuroScore}
+                    RR ${SecurityUtils.escapeHtml(rrScore)} | HR ${SecurityUtils.escapeHtml(hrScore)} | SBP ${SecurityUtils.escapeHtml(sbpScore)} | Temp ${SecurityUtils.escapeHtml(tempScore)} | AVPU ${SecurityUtils.escapeHtml(neuroScore)}
                 </div>
             </div>
         `;
@@ -853,10 +854,10 @@ class V2Calculators {
 
         document.getElementById('cg-result').innerHTML = `
             <div class="score-result">
-                <div class="score-value" style="color: ${color};">
-                    Creatinine clearance: <strong>${crcl.toFixed(1)} mL/min</strong>
+                <div class="score-value" style="color: ${SecurityUtils.escapeHtml(color)};">
+                    Creatinine clearance: <strong>${SecurityUtils.escapeHtml(crcl.toFixed(1))} mL/min</strong>
                 </div>
-                <div class="score-risk">${stage}</div>
+                <div class="score-risk">${SecurityUtils.escapeHtml(stage)}</div>
                 <div style="margin-top: 8px; font-size: 0.8em; color: #666;">
                     Based on Cockcroft-Gault equation; adjust for drug dosing per product information.
                 </div>
@@ -964,10 +965,10 @@ class V2Calculators {
 
         document.getElementById('child-result').innerHTML = `
             <div class="score-result">
-                <div class="score-value" style="color: ${color};">Child-Pugh: <strong>${total}</strong> (${classification})</div>
-                <div class="score-risk">${prognosis}</div>
+                <div class="score-value" style="color: ${SecurityUtils.escapeHtml(color)};">Child-Pugh: <strong>${SecurityUtils.escapeHtml(total)}</strong> (${SecurityUtils.escapeHtml(classification)})</div>
+                <div class="score-risk">${SecurityUtils.escapeHtml(prognosis)}</div>
                 <div style="margin-top: 8px; font-size: 0.8em; color: #666;">
-                    Bili ${bilirubinScore} | Alb ${albuminScore} | INR ${inrScore} | Ascites ${ascitesScore} | Encephalopathy ${encephalopathyScore}
+                    Bili ${SecurityUtils.escapeHtml(bilirubinScore)} | Alb ${SecurityUtils.escapeHtml(albuminScore)} | INR ${SecurityUtils.escapeHtml(inrScore)} | Ascites ${SecurityUtils.escapeHtml(ascitesScore)} | Encephalopathy ${SecurityUtils.escapeHtml(encephalopathyScore)}
                 </div>
             </div>
         `;
@@ -1061,9 +1062,9 @@ class V2Calculators {
 
         document.getElementById('centor-result').innerHTML = `
             <div class="score-result">
-                <div class="score-value" style="color: ${color};">Centor score: <strong>${score}</strong></div>
-                <div class="score-risk">${risk} (${probability})</div>
-                <div class="score-recommendation" style="color: ${color};">${recommendation}</div>
+                <div class="score-value" style="color: ${SecurityUtils.escapeHtml(color)};">Centor score: <strong>${SecurityUtils.escapeHtml(score)}</strong></div>
+                <div class="score-risk">${SecurityUtils.escapeHtml(risk)} (${SecurityUtils.escapeHtml(probability)})</div>
+                <div class="score-recommendation" style="color: ${SecurityUtils.escapeHtml(color)};">${SecurityUtils.escapeHtml(recommendation)}</div>
             </div>
         `;
 
@@ -1131,9 +1132,9 @@ class V2Calculators {
 
         document.getElementById('tug-result').innerHTML = `
             <div class="score-result">
-                <div class="score-value" style="color: ${color};">${time.toFixed(1)} seconds</div>
-                <div class="score-risk">${category}</div>
-                <div class="score-recommendation" style="color: ${color};">${interpretation}</div>
+                <div class="score-value" style="color: ${SecurityUtils.escapeHtml(color)};">${SecurityUtils.escapeHtml(time.toFixed(1))} seconds</div>
+                <div class="score-risk">${SecurityUtils.escapeHtml(category)}</div>
+                <div class="score-recommendation" style="color: ${SecurityUtils.escapeHtml(color)};">${SecurityUtils.escapeHtml(interpretation)}</div>
             </div>
         `;
 
@@ -1163,7 +1164,7 @@ class V2Calculators {
             { value: 9, label: '9 – Terminally Ill (life expectancy <6 months)' }
         ];
 
-        const optionsHtml = options.map(opt => `<option value="${opt.value}">${opt.label}</option>`).join('');
+        const optionsHtml = options.map(opt => `<option value="${SecurityUtils.escapeHtml(opt.value)}">${SecurityUtils.escapeHtml(opt.label)}</option>`).join('');
 
         return `
             <div class="calculator-form">
@@ -1206,9 +1207,9 @@ class V2Calculators {
 
         document.getElementById('cfs-result').innerHTML = `
             <div class="score-result">
-                <div class="score-value" style="color: ${color};">CFS ${value}</div>
-                <div class="score-risk">${interpretation.risk}</div>
-                <div class="score-recommendation" style="color: ${color};">${interpretation.advice}</div>
+                <div class="score-value" style="color: ${SecurityUtils.escapeHtml(color)};">CFS ${SecurityUtils.escapeHtml(value)}</div>
+                <div class="score-risk">${SecurityUtils.escapeHtml(interpretation.risk)}</div>
+                <div class="score-recommendation" style="color: ${SecurityUtils.escapeHtml(color)};">${SecurityUtils.escapeHtml(interpretation.advice)}</div>
             </div>
         `;
 
@@ -1243,7 +1244,7 @@ class V2Calculators {
                 <div class="calc-checkbox-group">
                     ${questions.map(q => `
                         <label>
-                            <input type="checkbox" id="prisma-${q.id}" value="1"> ${q.text}
+                            <input type="checkbox" id="prisma-${SecurityUtils.escapeHtml(q.id)}" value="1"> ${SecurityUtils.escapeHtml(q.text)}
                         </label>
                     `).join('')}
                 </div>
@@ -1270,9 +1271,9 @@ class V2Calculators {
 
         document.getElementById('prisma-result').innerHTML = `
             <div class="score-result">
-                <div class="score-value" style="color: ${color};">Score ${score}/7</div>
-                <div class="score-risk">${score >= 3 ? 'High risk' : score === 2 ? 'Intermediate risk' : 'Low risk'}</div>
-                <div class="score-recommendation" style="color: ${color};">${interpretation}</div>
+                <div class="score-value" style="color: ${SecurityUtils.escapeHtml(color)};">Score ${SecurityUtils.escapeHtml(score)}/7</div>
+                <div class="score-risk">${SecurityUtils.escapeHtml(score >= 3 ? 'High risk' : score === 2 ? 'Intermediate risk' : 'Low risk')}</div>
+                <div class="score-recommendation" style="color: ${SecurityUtils.escapeHtml(color)};">${SecurityUtils.escapeHtml(interpretation)}</div>
             </div>
         `;
 
@@ -1358,9 +1359,9 @@ class V2Calculators {
 
         document.getElementById('fourat-result').innerHTML = `
             <div class="score-result">
-                <div class="score-value" style="color: ${color};">Total ${total}</div>
-                <div class="score-risk">${risk}</div>
-                <div class="score-recommendation" style="color: ${color};">${interpretation}</div>
+                <div class="score-value" style="color: ${SecurityUtils.escapeHtml(color)};">Total ${SecurityUtils.escapeHtml(total)}</div>
+                <div class="score-risk">${SecurityUtils.escapeHtml(risk)}</div>
+                <div class="score-recommendation" style="color: ${SecurityUtils.escapeHtml(color)};">${SecurityUtils.escapeHtml(interpretation)}</div>
             </div>
         `;
 
@@ -1459,10 +1460,10 @@ class V2Calculators {
 
         document.getElementById('phq-result').innerHTML = `
             <div class="score-result">
-                <div class="score-value" style="color: ${color};">PHQ-9 total: <strong>${total}</strong></div>
-                <div class="score-risk">${severity}</div>
-                <div class="score-recommendation" style="color: ${color};">${recommendation}</div>
-                <div style="margin-top: 8px; font-size: 0.8em; color: #666;">Patient reports ${difficultyText} in daily functioning.</div>
+                <div class="score-value" style="color: ${SecurityUtils.escapeHtml(color)};">PHQ-9 total: <strong>${SecurityUtils.escapeHtml(total)}</strong></div>
+                <div class="score-risk">${SecurityUtils.escapeHtml(severity)}</div>
+                <div class="score-recommendation" style="color: ${SecurityUtils.escapeHtml(color)};">${SecurityUtils.escapeHtml(recommendation)}</div>
+                <div style="margin-top: 8px; font-size: 0.8em; color: #666;">Patient reports ${SecurityUtils.escapeHtml(difficultyText)} in daily functioning.</div>
             </div>
         `;
 
@@ -1507,7 +1508,7 @@ class V2Calculators {
             { id: 'epds-q10', text: 'The thought of harming myself has occurred to me', options: reverseOptions }
         ];
 
-        const renderOptions = (opts) => opts.map((opt) => `<option value="${opt.value}">${opt.label}</option>`).join('');
+        const renderOptions = (opts) => opts.map((opt) => `<option value="${SecurityUtils.escapeHtml(opt.value)}">${SecurityUtils.escapeHtml(opt.label)}</option>`).join('');
 
         return `
             <div class="calculator-form">
@@ -1515,8 +1516,8 @@ class V2Calculators {
                 <p><small>Reflect on how you have felt <strong>in the past 7 days</strong>.</small></p>
                 ${questions.map((question) => `
                     <div class="calc-select-group">
-                        <label>${question.text}</label>
-                        <select id="${question.id}">
+                        <label>${SecurityUtils.escapeHtml(question.text)}</label>
+                        <select id="${SecurityUtils.escapeHtml(question.id)}">
                             ${renderOptions(question.options)}
                         </select>
                     </div>
@@ -1578,11 +1579,11 @@ class V2Calculators {
 
         document.getElementById('epds-result').innerHTML = `
             <div class="score-result">
-                <div class="score-value" style="color: ${color};">EPDS total: <strong>${total}</strong> / 30</div>
-                <div class="score-risk">${severity}</div>
-                <div class="score-recommendation" style="color: ${color};">${recommendation}</div>
+                <div class="score-value" style="color: ${SecurityUtils.escapeHtml(color)};">EPDS total: <strong>${SecurityUtils.escapeHtml(total)}</strong> / 30</div>
+                <div class="score-risk">${SecurityUtils.escapeHtml(severity)}</div>
+                <div class="score-recommendation" style="color: ${SecurityUtils.escapeHtml(color)};">${SecurityUtils.escapeHtml(recommendation)}</div>
                 <div style="margin-top: 8px; font-size: 0.8em; color: #666;">
-                    ${selfHarmRisk ? 'Immediate action required due to self-harm thoughts.' : 'Monitor for anxiety, sleep disturbance, and functional impact when planning follow-up.'}
+                    ${SecurityUtils.escapeHtml(selfHarmRisk ? 'Immediate action required due to self-harm thoughts.' : 'Monitor for anxiety, sleep disturbance, and functional impact when planning follow-up.')}
                 </div>
             </div>
         `;
@@ -1640,7 +1641,7 @@ class V2Calculators {
 
         document.getElementById('hba1c-result').innerHTML = `
             <div class="score-result">
-                <div class="score-value">Estimated average glucose: <strong>${unit === 'mmol' ? eag.toFixed(1) + ' mmol/L' : eag.toFixed(0) + ' mg/dL'}</strong></div>
+                <div class="score-value">Estimated average glucose: <strong>${SecurityUtils.escapeHtml(unit === 'mmol' ? eag.toFixed(1) + ' mmol/L' : eag.toFixed(0) + ' mg/dL')}</strong></div>
                 <div class="score-risk">Every 1% change in HbA1c ≈ 29 mg/dL (1.6 mmol/L) change in eAG.</div>
             </div>
         `;
@@ -1722,8 +1723,8 @@ class V2Calculators {
 
         document.getElementById('anion-result').innerHTML = `
             <div class="score-result">
-                <div class="score-value" style="color: ${color};">Anion gap: <strong>${ag.toFixed(1)} mmol/L</strong></div>
-                <div class="score-recommendation" style="color: ${color};">${interpretation}</div>
+                <div class="score-value" style="color: ${SecurityUtils.escapeHtml(color)};">Anion gap: <strong>${SecurityUtils.escapeHtml(ag.toFixed(1))} mmol/L</strong></div>
+                <div class="score-recommendation" style="color: ${SecurityUtils.escapeHtml(color)};">${SecurityUtils.escapeHtml(interpretation)}</div>
             </div>
         `;
 
@@ -1823,8 +1824,8 @@ class V2Calculators {
 
         document.getElementById('bishop-result').innerHTML = `
             <div class="score-result">
-                <div class="score-value" style="color: ${color};">Bishop score: <strong>${total}</strong></div>
-                <div class="score-recommendation" style="color: ${color};">${interpretation}</div>
+                <div class="score-value" style="color: ${SecurityUtils.escapeHtml(color)};">Bishop score: <strong>${SecurityUtils.escapeHtml(total)}</strong></div>
+                <div class="score-recommendation" style="color: ${SecurityUtils.escapeHtml(color)};">${SecurityUtils.escapeHtml(interpretation)}</div>
             </div>
         `;
 
@@ -2009,13 +2010,13 @@ class V2Calculators {
 
         document.getElementById('meows-result').innerHTML = `
             <div class="score-result">
-                <div class="score-value" style="color: ${color};">Total MEOWS: <strong>${total}</strong></div>
-                <div class="score-risk">${priority}</div>
-                <div class="score-recommendation" style="color: ${color};">${recommendation}</div>
+                <div class="score-value" style="color: ${SecurityUtils.escapeHtml(color)};">Total MEOWS: <strong>${SecurityUtils.escapeHtml(total)}</strong></div>
+                <div class="score-risk">${SecurityUtils.escapeHtml(priority)}</div>
+                <div class="score-recommendation" style="color: ${SecurityUtils.escapeHtml(color)};">${SecurityUtils.escapeHtml(recommendation)}</div>
             </div>
             <div class="score-breakdown">
                 <ul>
-                    ${breakdown.map(item => `<li>${item.label}: ${item.value} (score ${item.score})</li>`).join('')}
+                    ${breakdown.map(item => `<li>${SecurityUtils.escapeHtml(item.label)}: ${SecurityUtils.escapeHtml(item.value)} (score ${SecurityUtils.escapeHtml(item.score)})</li>`).join('')}
                 </ul>
             </div>
         `;
@@ -2090,9 +2091,9 @@ class V2Calculators {
 
         document.getElementById('qtc-result').innerHTML = `
             <div class="score-result">
-                <div class="score-value" style="color: ${color};">QTc: <strong>${qtc.toFixed(0)} ms</strong></div>
-                <div class="score-risk">${interpretation}</div>
-                <div style="margin-top: 8px; font-size: 0.8em; color: #666;">RR interval: ${rr.toFixed(2)} s${sex ? ` | Sex: ${sex}` : ''}</div>
+                <div class="score-value" style="color: ${SecurityUtils.escapeHtml(color)};">QTc: <strong>${SecurityUtils.escapeHtml(qtc.toFixed(0))} ms</strong></div>
+                <div class="score-risk">${SecurityUtils.escapeHtml(interpretation)}</div>
+                <div style="margin-top: 8px; font-size: 0.8em; color: #666;">RR interval: ${SecurityUtils.escapeHtml(rr.toFixed(2))} s${sex ? ` | Sex: ${SecurityUtils.escapeHtml(sex)}` : ''}</div>
             </div>
         `;
 
@@ -2368,11 +2369,11 @@ class V2Calculators {
         document.getElementById('bsa-result').innerHTML = `
             <div class="score-result">
                 <div class="score-value">
-                    Estimated BSA: <strong>${bsaRounded.toFixed(2)} m²</strong>
+                    Estimated BSA: <strong>${SecurityUtils.escapeHtml(bsaRounded.toFixed(2))} m²</strong>
                 </div>
                 <div class="score-risk" style="font-size: 0.9em; color: #555;">
-                    Formula: ${formulaName}<br>
-                    <span style="font-family: monospace;">${formulaExpression}</span>
+                    Formula: ${SecurityUtils.escapeHtml(formulaName)}<br>
+                    <span style="font-family: monospace;">${SecurityUtils.escapeHtml(formulaExpression)}</span>
                 </div>
                 <div style="margin-top: 8px; font-size: 0.8em; color: #666;">
                     Consider indexing drug doses and physiologic measurements (e.g., cardiac output) to patient-specific BSA.
@@ -2485,14 +2486,14 @@ class V2Calculators {
 
         document.getElementById('fluid-result').innerHTML = `
             <div class="score-result">
-                <div>Total intake: <strong>${totalIntake.toFixed(0)} mL</strong></div>
-                <div>Total output: <strong>${totalOutput.toFixed(0)} mL</strong></div>
-                <div class="score-value" style="color: ${color}; margin-top: 8px;">
-                    Net balance (${window}-hour): <strong>${net >= 0 ? '+' : ''}${net.toFixed(0)} mL</strong>
+                <div>Total intake: <strong>${SecurityUtils.escapeHtml(totalIntake.toFixed(0))} mL</strong></div>
+                <div>Total output: <strong>${SecurityUtils.escapeHtml(totalOutput.toFixed(0))} mL</strong></div>
+                <div class="score-value" style="color: ${SecurityUtils.escapeHtml(color)}; margin-top: 8px;">
+                    Net balance (${SecurityUtils.escapeHtml(window)}-hour): <strong>${SecurityUtils.escapeHtml(net >= 0 ? '+' : '')}${SecurityUtils.escapeHtml(net.toFixed(0))} mL</strong>
                 </div>
-                <div style="font-size: 0.85em; color: #555;">Average net: ${net >= 0 ? '+' : ''}${hourly.toFixed(1)} mL/hour</div>
-                <div class="score-recommendation" style="color: ${color}; margin-top: 8px;">
-                    ${status}
+                <div style="font-size: 0.85em; color: #555;">Average net: ${SecurityUtils.escapeHtml(net >= 0 ? '+' : '')}${SecurityUtils.escapeHtml(hourly.toFixed(1))} mL/hour</div>
+                <div class="score-recommendation" style="color: ${SecurityUtils.escapeHtml(color)}; margin-top: 8px;">
+                    ${SecurityUtils.escapeHtml(status)}
                 </div>
             </div>
         `;

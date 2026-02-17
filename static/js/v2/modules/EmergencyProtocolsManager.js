@@ -8,6 +8,8 @@ import { storage } from './StorageManager.js';
 import { EVENTS } from './Constants.js';
 import { emergencyProtocols } from '../../data/emergencyProtocols.js';
 import { StandardizedSearchComponent } from './StandardizedSearchComponent.js';
+import { SecurityUtils } from './SecurityUtils.js';
+import { ErrorHandler } from './ErrorHandler.js';
 
 export class EmergencyProtocolsManager {
     constructor() {
@@ -135,12 +137,12 @@ export class EmergencyProtocolsManager {
         }
 
         return protocolsList.map(([key, protocol]) => `
-            <div class="protocol-card emergency-card" data-key="${key}">
+            <div class="protocol-card emergency-card" data-key="${SecurityUtils.sanitizeAttribute(key)}">
                 <div class="protocol-header">
-                    <h3>${protocol.name}</h3>
+                    <h3>${SecurityUtils.escapeHtml(protocol.name)}</h3>
                     <div class="protocol-badges">
-                        <span class="category-tag">${protocol.category}</span>
-                        <span class="urgency-badge urgency-${protocol.urgency || 'standard'}">${(protocol.urgency || 'standard').toUpperCase()}</span>
+                        <span class="category-tag">${SecurityUtils.escapeHtml(protocol.category)}</span>
+                        <span class="urgency-badge urgency-${SecurityUtils.sanitizeAttribute(protocol.urgency || 'standard')}">${SecurityUtils.escapeHtml((protocol.urgency || 'standard').toUpperCase())}</span>
                     </div>
                 </div>
                 <div class="protocol-summary">
@@ -150,11 +152,11 @@ export class EmergencyProtocolsManager {
                         <strong>${protocol.criticalActions.length} critical actions</strong>
                     </div>
                     <div class="protocol-guideline">
-                        <strong>Guideline:</strong> ${protocol.ukGuideline}
+                        <strong>Guideline:</strong> ${SecurityUtils.escapeHtml(protocol.ukGuideline)}
                     </div>
                 </div>
                 <div class="protocol-actions">
-                    <button class="btn-primary view-protocol" data-key="${key}">View Protocol</button>
+                    <button class="btn-primary view-protocol" data-key="${SecurityUtils.sanitizeAttribute(key)}">View Protocol</button>
                 </div>
             </div>
         `).join('');
@@ -257,9 +259,9 @@ export class EmergencyProtocolsManager {
             if (!list.length) return '';
             return `
                 <div class="protocol-section">
-                    <h3>${icon} ${title}</h3>
+                    <h3>${SecurityUtils.escapeHtml(icon)} ${SecurityUtils.escapeHtml(title)}</h3>
                     <ul class="critical-actions">
-                        ${list.map(entry => `<li class="critical-action">${entry}</li>`).join('')}
+                        ${list.map(entry => `<li class="critical-action">${SecurityUtils.escapeHtml(entry)}</li>`).join('')}
                     </ul>
                 </div>
             `;
@@ -268,13 +270,13 @@ export class EmergencyProtocolsManager {
         const renderImageSection = (image) => {
             if (!image?.src) return '';
             const caption = image.caption
-                ? `<figcaption class="protocol-image-caption" style="margin-top: 0.75rem; color: #475569; font-size: 0.95rem;">${image.caption}</figcaption>`
+                ? `<figcaption class="protocol-image-caption" style="margin-top: 0.75rem; color: #475569; font-size: 0.95rem;">${SecurityUtils.escapeHtml(image.caption)}</figcaption>`
                 : '';
             return `
                 <div class="protocol-section">
                     <h3>🖼️ Pathway Diagram</h3>
                     <figure class="protocol-image">
-                        <img src="${image.src}" alt="${image.alt || ''}" loading="lazy" style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 8px 20px rgba(15, 23, 42, 0.12);" />
+                        <img src="${SecurityUtils.sanitizeAttribute(image.src)}" alt="${SecurityUtils.sanitizeAttribute(image.alt || '')}" loading="lazy" style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 8px 20px rgba(15, 23, 42, 0.12);" />
                         ${caption}
                     </figure>
                 </div>
@@ -287,15 +289,15 @@ export class EmergencyProtocolsManager {
         modal.innerHTML = `
             <div class="protocol-modal emergency-modal">
                 <div class="modal-header">
-                    <h2>${protocol.name}</h2>
+                    <h2>${SecurityUtils.escapeHtml(protocol.name)}</h2>
                     <button class="modal-close">×</button>
                 </div>
                 <div class="modal-content">
                     <div class="protocol-overview">
                         <div class="protocol-meta">
-                            <span class="category-tag">${protocol.category}</span>
-                            <span class="urgency-badge urgency-${protocol.urgency || 'standard'}">${(protocol.urgency || 'standard').toUpperCase()}</span>
-                            <span class="guideline-badge">${protocol.ukGuideline}</span>
+                            <span class="category-tag">${SecurityUtils.escapeHtml(protocol.category)}</span>
+                            <span class="urgency-badge urgency-${SecurityUtils.sanitizeAttribute(protocol.urgency || 'standard')}">${SecurityUtils.escapeHtml((protocol.urgency || 'standard').toUpperCase())}</span>
+                            <span class="guideline-badge">${SecurityUtils.escapeHtml(protocol.ukGuideline)}</span>
                         </div>
                     </div>
 
@@ -310,7 +312,7 @@ export class EmergencyProtocolsManager {
                                 ${protocol.steps.map((step, index) => `
                                     <li class="protocol-step">
                                         <span class="step-number">${index + 1}</span>
-                                        <span class="step-text">${step}</span>
+                                        <span class="step-text">${SecurityUtils.escapeHtml(step)}</span>
                                     </li>
                                 `).join('')}
                             </ol>
@@ -320,7 +322,7 @@ export class EmergencyProtocolsManager {
                             <h3>💊 Medications</h3>
                             <ul class="protocol-drugs">
                                 ${protocol.drugs.map(drug => `
-                                    <li class="drug-item">${drug}</li>
+                                    <li class="drug-item">${SecurityUtils.escapeHtml(drug)}</li>
                                 `).join('')}
                             </ul>
                         </div>
@@ -329,14 +331,14 @@ export class EmergencyProtocolsManager {
                             <h3>🚨 Critical Actions</h3>
                             <ul class="critical-actions">
                                 ${protocol.criticalActions.map(action => `
-                                    <li class="critical-action">${action}</li>
+                                    <li class="critical-action">${SecurityUtils.escapeHtml(action)}</li>
                                 `).join('')}
                             </ul>
                         </div>
                         
                         <div class="protocol-section guideline-section">
                             <h3>📖 UK Guideline</h3>
-                            <p class="guideline-reference">${protocol.ukGuideline}</p>
+                            <p class="guideline-reference">${SecurityUtils.escapeHtml(protocol.ukGuideline)}</p>
                         </div>
 
                         ${renderExtraSection(protocol.management, 'Treatment & Management', '💊')}

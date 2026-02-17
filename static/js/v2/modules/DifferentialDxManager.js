@@ -8,6 +8,7 @@ import { storage } from './StorageManager.js';
 import { EVENTS } from './Constants.js';
 import { differentialDatabase } from '../../data/differentials.js';
 import { StandardizedSearchComponent } from './StandardizedSearchComponent.js';
+import { SecurityUtils } from './SecurityUtils.js';
 
 export class DifferentialDxManager {
     constructor() {
@@ -110,21 +111,21 @@ export class DifferentialDxManager {
         }
 
         return presentationsList.map(([key, presentation]) => `
-            <div class="differential-card" data-key="${key}">
+            <div class="differential-card" data-key="${SecurityUtils.sanitizeAttribute(key)}">
                 <div class="differential-header">
-                    <h3>${presentation.title}</h3>
-                    <span class="category-tag">${presentation.category}</span>
+                    <h3>${SecurityUtils.escapeHtml(presentation.title)}</h3>
+                    <span class="category-tag">${SecurityUtils.escapeHtml(presentation.category)}</span>
                 </div>
                 ${presentation.redFlags ? `
                     <div class="red-flags">
-                        ${presentation.redFlags}
+                        ${SecurityUtils.escapeHtml(presentation.redFlags)}
                     </div>
                 ` : ''}
                 <div class="presentation-count">
                     <strong>${Object.keys(presentation.presentations || {}).length} conditions</strong> to consider
                 </div>
                 <div class="differential-actions">
-                    <button class="btn-primary view-differential" data-key="${key}">View Differentials</button>
+                    <button class="btn-primary view-differential" data-key="${SecurityUtils.sanitizeAttribute(key)}">View Differentials</button>
                 </div>
             </div>
         `).join('');
@@ -240,14 +241,14 @@ export class DifferentialDxManager {
         modal.innerHTML = `
             <div class="differential-modal">
                 <div class="modal-header">
-                    <h2>${presentation.title}</h2>
+                    <h2>${SecurityUtils.escapeHtml(presentation.title)}</h2>
                     <button class="modal-close">×</button>
                 </div>
                 <div class="modal-content">
                     ${presentation.redFlags ? `
                         <div class="red-flags-section">
                             <h3>🚩 Red Flags</h3>
-                            <p>${presentation.redFlags}</p>
+                            <p>${SecurityUtils.escapeHtml(presentation.redFlags)}</p>
                         </div>
                     ` : ''}
                     
@@ -256,36 +257,36 @@ export class DifferentialDxManager {
                         <div class="differentials-list">
                             ${Object.entries(presentation.presentations || {}).map(([condition, details]) => `
                                 <div class="differential-item">
-                                    <h4>${condition}</h4>
+                                    <h4>${SecurityUtils.escapeHtml(condition)}</h4>
                                     <div class="differential-details">
                                         <div class="detail-row">
-                                            <strong>Features:</strong> ${details.features || 'Not specified'}
+                                            <strong>Features:</strong> ${SecurityUtils.escapeHtml(details.features || 'Not specified')}
                                         </div>
                                         <div class="detail-row">
-                                            <strong>Tests:</strong> ${details.tests || 'Not specified'}
+                                            <strong>Tests:</strong> ${SecurityUtils.escapeHtml(details.tests || 'Not specified')}
                                         </div>
                                         <div class="detail-row">
                                             <strong>Urgency:</strong> 
-                                            <span class="urgency-badge urgency-${details.urgency?.toLowerCase() || 'standard'}">${details.urgency || 'Standard'}</span>
+                                            <span class="urgency-badge urgency-${SecurityUtils.sanitizeAttribute(details.urgency?.toLowerCase() || 'standard')}">${SecurityUtils.escapeHtml(details.urgency || 'Standard')}</span>
                                         </div>
                                         ${details.timeToTreat ? `
                                             <div class="detail-row">
-                                                <strong>Time to Treat:</strong> ${details.timeToTreat}
+                                                <strong>Time to Treat:</strong> ${SecurityUtils.escapeHtml(details.timeToTreat)}
                                             </div>
                                         ` : ''}
                                         ${details.clinicalPearls ? `
                                             <div class="detail-row">
-                                                <strong>Clinical Pearls:</strong> ${details.clinicalPearls}
+                                                <strong>Clinical Pearls:</strong> ${SecurityUtils.escapeHtml(details.clinicalPearls)}
                                             </div>
                                         ` : ''}
                                         ${details.howToPerform ? `
                                             <div class="detail-row">
-                                                <strong>How to Perform:</strong> ${details.howToPerform}
+                                                <strong>How to Perform:</strong> ${SecurityUtils.escapeHtml(details.howToPerform)}
                                             </div>
                                         ` : ''}
                                         ${details.differentiatingFeatures ? `
                                             <div class="detail-row">
-                                                <strong>Differentiating Features:</strong> ${details.differentiatingFeatures}
+                                                <strong>Differentiating Features:</strong> ${SecurityUtils.escapeHtml(details.differentiatingFeatures)}
                                             </div>
                                         ` : ''}
                                     </div>
@@ -295,7 +296,7 @@ export class DifferentialDxManager {
                     </div>
                     
                     <div class="detail-meta">
-                        <span class="category-tag">${presentation.category}</span>
+                        <span class="category-tag">${SecurityUtils.escapeHtml(presentation.category)}</span>
                     </div>
                 </div>
             </div>

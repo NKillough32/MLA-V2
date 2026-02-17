@@ -4,6 +4,7 @@
  * lean while providing a focused clinical reference deck.
  */
 import { StandardizedSearchComponent } from './StandardizedSearchComponent.js';
+import { SecurityUtils } from './SecurityUtils.js';
 
 class ClinicalPearlsManager {
     constructor() {
@@ -803,24 +804,24 @@ class ClinicalPearlsManager {
         const cardsHtml = this.sections.map(section => {
             const subsectionsHtml = (section.subsections || []).map(subsection => {
                 const itemsHtml = (subsection.items || []).map(item => {
-                    const safeItem = this.escapeHtml(item);
+                    const safeItem = SecurityUtils.escapeHtml(item);
                     return `<li data-pearl="${safeItem}">${safeItem}</li>`;
                 }).join('');
                 return `
                     <details class="med-knowledge-subsection" style="border-color:${theme.subsectionBorder};background:${theme.subsectionBg};color:${theme.subtext};">
                         <summary style="color:${theme.summaryColor};">
                             <span class="chevron">›</span>
-                            ${subsection.heading}
+                            ${SecurityUtils.escapeHtml(subsection.heading)}
                         </summary>
                         <ul>${itemsHtml}</ul>
                     </details>
                 `;
             }).join('');
 
-            const noteHtml = section.note ? `<div class="med-knowledge-subnote" style="color:${theme.subnoteColor};">${section.note}</div>` : '';
-            const summaryHtml = section.summary ? `<div class="card-summary">${section.summary}</div>` : '';
+            const noteHtml = section.note ? `<div class="med-knowledge-subnote" style="color:${theme.subnoteColor};">${SecurityUtils.escapeHtml(section.note)}</div>` : '';
+            const summaryHtml = section.summary ? `<div class="card-summary">${SecurityUtils.escapeHtml(section.summary)}</div>` : '';
             const tagsHtml = Array.isArray(section.tags) && section.tags.length
-                ? `<div class="section-tags">${section.tags.map(tag => `<span class="section-tag">${tag}</span>`).join('')}</div>`
+                ? `<div class="section-tags">${section.tags.map(tag => `<span class="section-tag">${SecurityUtils.escapeHtml(tag)}</span>`).join('')}</div>`
                 : '';
             const stats = this.getStatistics();
             const metaHtml = `
@@ -832,10 +833,10 @@ class ClinicalPearlsManager {
             `;
 
             return `
-                <section class="knowledge-card" data-section="${this.escapeHtml(section.title)}">
+                <section class="knowledge-card" data-section="${SecurityUtils.escapeHtml(section.title)}">
                     <div class="knowledge-card-header">
-                        <span class="badge" style="background:${theme.badgeBg};color:${theme.badgeColor};">${section.badge}</span>
-                        <h3>${section.title}</h3>
+                        <span class="badge" style="background:${theme.badgeBg};color:${theme.badgeColor};">${SecurityUtils.escapeHtml(section.badge)}</span>
+                        <h3>${SecurityUtils.escapeHtml(section.title)}</h3>
                     </div>
                     <div class="knowledge-card-body">
                         ${summaryHtml}
@@ -851,7 +852,7 @@ class ClinicalPearlsManager {
         const stats = this.getStatistics();
         const filterButtons = [
             `<button class="filter-pill active" type="button" data-filter="all">All pearls</button>`,
-            ...this.sections.map(section => `<button class="filter-pill" type="button" data-filter="${this.escapeHtml(section.title)}">${section.title}</button>`)
+            ...this.sections.map(section => `<button class="filter-pill" type="button" data-filter="${SecurityUtils.escapeHtml(section.title)}">${SecurityUtils.escapeHtml(section.title)}</button>`)
         ].join('');
 
         container.innerHTML = `
@@ -911,11 +912,13 @@ class ClinicalPearlsManager {
         const updateHighlights = (li, query) => {
             const baseText = li.dataset.pearl || li.textContent;
             if (!query) {
-                li.innerHTML = baseText;
+                li.innerHTML = SecurityUtils.escapeHtml(baseText);
                 return;
             }
-            const regex = new RegExp(`(${escapeRegExp(query)})`, 'gi');
-            li.innerHTML = baseText.replace(regex, '<mark class="pearl-highlight">$1</mark>');
+            const escapedBaseText = SecurityUtils.escapeHtml(baseText);
+            const escapedQuery = SecurityUtils.escapeHtml(query);
+            const regex = new RegExp(`(${escapeRegExp(escapedQuery)})`, 'gi');
+            li.innerHTML = escapedBaseText.replace(regex, '<mark class="pearl-highlight">$1</mark>');
         };
 
         const applyFilters = () => {

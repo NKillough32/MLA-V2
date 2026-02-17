@@ -5,6 +5,8 @@
 
 import { eventBus } from './EventBus.js';
 import { storage } from './StorageManager.js';
+import { SecurityUtils } from './SecurityUtils.js';
+import { ErrorHandler } from './ErrorHandler.js';
 
 const normalizePdfTitleKey = (value) => (value || '')
     .toString()
@@ -275,14 +277,10 @@ export class PDFLibraryManager {
                 this.recentPDFs = Object.values(stored);
             } else if (typeof stored === 'string') {
                 // Handle legacy stringified arrays or comma-separated values
-                try {
-                    const parsed = JSON.parse(stored);
-                    if (Array.isArray(parsed)) {
-                        this.recentPDFs = parsed;
-                    } else {
-                        this.recentPDFs = [];
-                    }
-                } catch (e) {
+                const parsed = ErrorHandler.safeJsonParse(stored, null);
+                if (Array.isArray(parsed)) {
+                    this.recentPDFs = parsed;
+                } else {
                     // Fallback: treat comma-separated string as list
                     this.recentPDFs = stored.split(',').map(s => s.trim()).filter(Boolean);
                 }
@@ -1168,7 +1166,7 @@ export class PDFLibraryManager {
 
 
         // Add loading state
-        container.innerHTML = `
+        const loadingHtml = `
             <div class="loading-state" style="text-align: center; padding: 40px;">
                 <div style="font-size: 2em; margin-bottom: 20px;">📚</div>
                 <h3>Loading ${safeTitle}...</h3>
@@ -1181,19 +1179,29 @@ export class PDFLibraryManager {
                 }
             </style>
         `;
+        SecurityUtils.setInnerHTML(container, loadingHtml);
 
         try {
             const html = await this.renderPDFToHTML(filename);
 
             // Add back button and content
-            container.innerHTML = `
-                <button type="button" class="pdf-back-btn" onclick="window.quizApp.loadPDFLibraryContent(document.getElementById('pdf-library-panel'));">
+            const contentHtml = `
+                <button type="button" class="pdf-back-btn" data-action="back-to-library">
                     ← Back to PDF Library
                 </button>
                 <div class="pdf-content-container">
                     ${html}
                 </div>
             `;
+            SecurityUtils.setInnerHTML(container, contentHtml);
+
+            // Add event listener for back button
+            const backButton = container.querySelector('.pdf-back-btn');
+            if (backButton) {
+                backButton.addEventListener('click', () => {
+                    window.quizApp.loadPDFLibraryContent(document.getElementById('pdf-library-panel'));
+                });
+            }
 
             // Add to recent PDFs
             this.addToRecent(filename, displayTitle);
@@ -1208,20 +1216,38 @@ export class PDFLibraryManager {
             }
 
         } catch (error) {
-            const safeErrorMessage = this.escapeHtml(error.message || '');
-            container.innerHTML = `
-                <button type="button" class="pdf-back-btn" onclick="window.quizApp.loadPDFLibraryContent(document.getElementById('pdf-library-panel'));">
+            const safeErrorMessage = SecurityUtils.escapeHtml(error.message || '');
+            const errorHtml = `
+                <button type="button" class="pdf-back-btn" data-action="back-to-library">
                     ← Back to PDF Library
                 </button>
                 <div class="error-state" style="text-align: center; padding: 40px;">
                     <div style="font-size: 2em; margin-bottom: 20px;">❌</div>
                     <h3>Error Loading PDF</h3>
                     <p>${safeErrorMessage}</p>
-                    <button onclick="window.pdfLibraryManager.showPDF('${safeFilenameAttr}')" class="btn" style="margin-top: 20px;">
+                    <button type="button" class="retry-btn btn" style="margin-top: 20px;" data-filename="${SecurityUtils.escapeHtml(filename)}">
                         🔄 Try Again
                     </button>
                 </div>
             `;
+            SecurityUtils.setInnerHTML(container, errorHtml);
+
+            // Add event listeners for buttons
+            const backButton = container.querySelector('.pdf-back-btn');
+            const retryButton = container.querySelector('.retry-btn');
+            
+            if (backButton) {
+                backButton.addEventListener('click', () => {
+                    window.quizApp.loadPDFLibraryContent(document.getElementById('pdf-library-panel'));
+                });
+            }
+            
+            if (retryButton) {
+                retryButton.addEventListener('click', () => {
+                    const filenameToRetry = retryButton.getAttribute('data-filename');
+                    window.pdfLibraryManager.showPDF(filenameToRetry);
+                });
+            }
         }
     }
 
@@ -1237,7 +1263,7 @@ export class PDFLibraryManager {
         }
 
         // Create search and category interface
-        container.innerHTML = `
+        const interfaceHtml = `
             <div class="search-container">
                 <input type="text" id="pdf-search" placeholder="Search PDFs..." class="tool-search" aria-label="Search PDFs">
                 <button id="pdf-search-btn" class="btn pdf-search-btn" type="button" aria-label="Search PDFs">🔍</button>
@@ -1259,6 +1285,7 @@ export class PDFLibraryManager {
             </div>
             <div id="pdf-list" class="tool-results"></div>
         `;
+        SecurityUtils.setInnerHTML(container, interfaceHtml);
 
         // Setup search functionality
         const searchInput = document.getElementById('pdf-search');
@@ -1330,11 +1357,13 @@ export class PDFLibraryManager {
         // Prepend a back link to the top of the list container
         const listContainer = document.getElementById('pdf-list');
         if (!listContainer) return;
-        listContainer.innerHTML = `
+        
+        const backLinkHtml = `
             <div style="margin-bottom:12px;">
                 <a href="#" id="pdf-revision-back" style="text-decoration:none;">← Back to All Documents</a>
             </div>
         `;
+        SecurityUtils.setInnerHTML(listContainer, backLinkHtml);
 
         // Render the revision PDFs
         this.displayPDFs(pdfs);
@@ -1359,50 +1388,51 @@ export class PDFLibraryManager {
         if (!listContainer) return;
 
         if (pdfs.length === 0) {
-            listContainer.innerHTML = `
+            const noResultsHtml = `
                 <div class="no-results" style="text-align: center; padding: 40px; color: var(--text-secondary);">
                     <div style="font-size: 3em; margin-bottom: 20px;">📚</div>
                     <h3>No PDFs found</h3>
                     <p>Try adjusting your search or category filter.</p>
                 </div>
             `;
+            SecurityUtils.setInnerHTML(listContainer, noResultsHtml);
             return;
         }
 
         // Sort PDFs alphabetically
         pdfs.sort((a, b) => a.title.localeCompare(b.title));
 
-        listContainer.innerHTML = pdfs.map(pdf => {
-            const safeFilename = this.escapeHtmlAttribute(pdf.filename);
-            const safeTitle = this.escapeHtml(pdf.title);
+        const pdfListHtml = pdfs.map(pdf => {
+            const safeFilename = SecurityUtils.escapeHtml(pdf.filename);
+            const safeTitle = SecurityUtils.escapeHtml(pdf.title);
 
             // Revision-specific UI: show an icon and speciality-only title
             let iconHtml = '';
             if (pdf.category === 'revision') {
                 const icon = getRevisionIconForTitle(pdf.title);
-                iconHtml = `<div class="pdf-icon" style="font-size:1.6em; margin-right:8px; line-height:1;">${this.escapeHtml(icon)}</div>`;
+                iconHtml = `<div class="pdf-icon" style="font-size:1.6em; margin-right:8px; line-height:1;">${SecurityUtils.escapeHtml(icon)}</div>`;
             }
 
             // Try to enrich with metadata for tagline; fall back silently
             const meta = this.getMetadataForFilename(pdf.filename);
             const taglineRaw = meta && (meta.displayTagline || meta.subjectTagline) ? (meta.displayTagline || meta.subjectTagline) : '';
-            const tagline = taglineRaw ? this.escapeHtml(taglineRaw) : '';
+            const tagline = taglineRaw ? SecurityUtils.escapeHtml(taglineRaw) : '';
 
             // For Revision items we prefer not to show a category label; for others keep previous behavior
             let categoryLabel = '';
             if (pdf.category !== 'revision') {
                 if (meta && meta.keywordSummary) {
-                    categoryLabel = this.escapeHtml(meta.keywordSummary);
+                    categoryLabel = SecurityUtils.escapeHtml(meta.keywordSummary);
                 } else if (meta && Array.isArray(meta.keywords) && meta.keywords.length) {
-                    const kws = meta.keywords.slice(0, 3).map(k => this.escapeHtml(this.titleCaseWord(String(k))));
+                    const kws = meta.keywords.slice(0, 3).map(k => SecurityUtils.escapeHtml(this.titleCaseWord(String(k))));
                     categoryLabel = kws.join(' • ');
                 } else {
-                    categoryLabel = this.escapeHtml(this.getCategoryName(pdf.category));
+                    categoryLabel = SecurityUtils.escapeHtml(this.getCategoryName(pdf.category));
                 }
             }
 
             return `
-                <div class="card pdf-card" onclick="window.pdfLibraryManager.showPDF('${safeFilename}');">
+                <div class="card pdf-card" data-pdf-filename="${safeFilename}">
                     <div class="card-body">
                         <div class="pdf-card-row">
                             <div style="display:flex; align-items:center; gap:12px;">
@@ -1418,6 +1448,19 @@ export class PDFLibraryManager {
                 </div>
             `;
         }).join('');
+        
+        SecurityUtils.setInnerHTML(listContainer, pdfListHtml);
+        
+        // Add click event listeners to all PDF cards
+        const pdfCards = listContainer.querySelectorAll('.pdf-card[data-pdf-filename]');
+        pdfCards.forEach(card => {
+            card.addEventListener('click', () => {
+                const filename = card.getAttribute('data-pdf-filename');
+                if (filename) {
+                    window.pdfLibraryManager.showPDF(filename);
+                }
+            });
+        });
     }
 
     /**
