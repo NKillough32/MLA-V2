@@ -133,9 +133,6 @@ export class DermatologyManager {
             showToast: false
         });
     }
-            console.error('Failed to save favorites:', error);
-        }
-    }
 
     /**
      * Toggle favorite status of a condition
