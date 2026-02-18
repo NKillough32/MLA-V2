@@ -1179,7 +1179,7 @@ export class PDFLibraryManager {
                 }
             </style>
         `;
-        SecurityUtils.setInnerHTML(container, loadingHtml);
+        SecurityUtils.setInnerHTML(container, loadingHtml, true);
 
         try {
             const html = await this.renderPDFToHTML(filename);
@@ -1193,7 +1193,7 @@ export class PDFLibraryManager {
                     ${html}
                 </div>
             `;
-            SecurityUtils.setInnerHTML(container, contentHtml);
+            SecurityUtils.setInnerHTML(container, contentHtml, true);
 
             // Add event listener for back button
             const backButton = container.querySelector('.pdf-back-btn');
@@ -1230,7 +1230,7 @@ export class PDFLibraryManager {
                     </button>
                 </div>
             `;
-            SecurityUtils.setInnerHTML(container, errorHtml);
+            SecurityUtils.setInnerHTML(container, errorHtml, true);
 
             // Add event listeners for buttons
             const backButton = container.querySelector('.pdf-back-btn');
@@ -1285,7 +1285,7 @@ export class PDFLibraryManager {
             </div>
             <div id="pdf-list" class="tool-results"></div>
         `;
-        SecurityUtils.setInnerHTML(container, interfaceHtml);
+        SecurityUtils.setInnerHTML(container, interfaceHtml, true);
 
         // Setup search functionality
         const searchInput = document.getElementById('pdf-search');
@@ -1363,7 +1363,7 @@ export class PDFLibraryManager {
                 <a href="#" id="pdf-revision-back" style="text-decoration:none;">← Back to All Documents</a>
             </div>
         `;
-        SecurityUtils.setInnerHTML(listContainer, backLinkHtml);
+        SecurityUtils.setInnerHTML(listContainer, backLinkHtml, true);
 
         // Render the revision PDFs
         this.displayPDFs(pdfs);
@@ -1395,7 +1395,7 @@ export class PDFLibraryManager {
                     <p>Try adjusting your search or category filter.</p>
                 </div>
             `;
-            SecurityUtils.setInnerHTML(listContainer, noResultsHtml);
+            SecurityUtils.setInnerHTML(listContainer, noResultsHtml, true);
             return;
         }
 
@@ -1449,7 +1449,7 @@ export class PDFLibraryManager {
             `;
         }).join('');
         
-        SecurityUtils.setInnerHTML(listContainer, pdfListHtml);
+        SecurityUtils.setInnerHTML(listContainer, pdfListHtml, true);
         
         // Add click event listeners to all PDF cards
         const pdfCards = listContainer.querySelectorAll('.pdf-card[data-pdf-filename]');
