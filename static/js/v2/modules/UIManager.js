@@ -443,11 +443,11 @@ export class UIManager {
             const dialog = document.createElement('div');
             dialog.id = 'confirm-dialog';
             dialog.innerHTML = `
-                <div style="background:white;padding:24px;border-radius:12px;max-width:400px;box-shadow:0 8px 32px rgba(0,0,0,0.3);">
-                    <h3 style="margin:0 0 16px 0;color:#333;">${title}</h3>
-                    <p style="margin:0 0 24px 0;color:#666;">${message}</p>
+                <div style="background:#ffffff;padding:24px;border-radius:12px;max-width:400px;box-shadow:0 8px 32px rgba(0,0,0,0.3);color:#1f2937 !important;">
+                    <h3 style="margin:0 0 16px 0;color:#1f2937 !important;">${title}</h3>
+                    <p style="margin:0 0 24px 0;color:#4b5563 !important;">${message}</p>
                     <div style="display:flex;gap:12px;justify-content:flex-end;">
-                        <button id="confirm-no" style="padding:8px 20px;border:1px solid #ccc;background:white;color:#333;border-radius:6px;cursor:pointer;">Cancel</button>
+                        <button id="confirm-no" style="padding:8px 20px;border:1px solid #ccc;background:white;color:#333 !important;border-radius:6px;cursor:pointer;">Cancel</button>
                         <button id="confirm-yes" style="padding:8px 20px;border:none;background:#1976d2;color:white;border-radius:6px;cursor:pointer;">Confirm</button>
                     </div>
                 </div>
