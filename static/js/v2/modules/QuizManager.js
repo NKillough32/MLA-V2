@@ -1750,13 +1750,16 @@ export class QuizManager {
 
             for (let file of files) {
                 console.log('📄 Processing file:', file.name, 'Size:', file.size, 'bytes');
+                const lowerFileName = (file.name || '').toLowerCase();
+                const isMarkdownFile = lowerFileName.endsWith('.md');
+                const isZipFile = lowerFileName.endsWith('.zip');
                 // Show a persistent status message for the current file (V1-style feedback)
                 this.setUploadStatus(`Reading file: ${file.name}`);
 
                 try {
                     // Client-side size limits: keep small limit for markdown files but
                     // allow larger ZIP uploads (images inside zips commonly exceed 5MB)
-                    if (file.name.endsWith('.md')) {
+                    if (isMarkdownFile) {
                         if (file.size > 5 * 1024 * 1024) { // 5MB limit for .md
                             uploadResults.push({
                                 filename: file.name,
@@ -1765,7 +1768,7 @@ export class QuizManager {
                             });
                             continue;
                         }
-                    } else if (file.name.endsWith('.zip')) {
+                    } else if (isZipFile) {
                         // Allow larger zip uploads but enforce a reasonable cap client-side
                         // to avoid accidental huge uploads from mobile devices. Server still
                         // validates size and will reject if too large.
@@ -1790,10 +1793,10 @@ export class QuizManager {
                         }
                     }
 
-                    if (file.name.endsWith('.md')) {
+                    if (isMarkdownFile) {
                         const result = await this.processMarkdownFile(file);
                         uploadResults.push(result);
-                    } else if (file.name.endsWith('.zip')) {
+                    } else if (isZipFile) {
                         const result = await this.processZipFile(file);
                         uploadResults.push(result);
                     } else {
@@ -1831,12 +1834,13 @@ export class QuizManager {
             // NOTE: ZIP files are already uploaded to server in processZipFile()
             // Only upload markdown files here (they are parsed client-side but may need server backup)
             for (let file of files) {
+                const lowerFileName = (file.name || '').toLowerCase();
                 // Skip ZIP files - already handled by processZipFile()
-                if (file.name.endsWith('.zip')) {
+                if (lowerFileName.endsWith('.zip')) {
                     continue;
                 }
                 
-                if (file.name.endsWith('.md')) {
+                if (lowerFileName.endsWith('.md')) {
                     console.log('📄 Uploading markdown file to server:', file.name);
 
                     const formData = new FormData();
@@ -2015,10 +2019,10 @@ export class QuizManager {
             const formData = new FormData();
             formData.append('quiz_file', file);
             
-            const response = await fetch('/api/upload-quiz', {
+            const response = await this.fetchWithTimeout('/api/upload-quiz', {
                 method: 'POST',
                 body: formData
-            });
+            }, 120000);
             
             if (!response.ok) {
                 throw new Error(`Upload failed: ${response.status}`);
@@ -2053,6 +2057,25 @@ export class QuizManager {
                 error: error.message,
                 uploadTimestamp: Date.now()
             };
+        }
+    }
+
+    async fetchWithTimeout(url, options = {}, timeoutMs = 120000) {
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+
+        try {
+            return await fetch(url, {
+                ...options,
+                signal: controller.signal
+            });
+        } catch (error) {
+            if (error?.name === 'AbortError') {
+                throw new Error('Upload timed out. Please try a smaller ZIP or a stronger connection.');
+            }
+            throw error;
+        } finally {
+            clearTimeout(timeoutId);
         }
     }
 
