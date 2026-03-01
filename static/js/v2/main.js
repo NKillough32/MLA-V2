@@ -7380,6 +7380,36 @@ function initPinchZoom(img, container) {
     let startX = 0, startY = 0;
     let translateX = 0, translateY = 0;
     let startTranslateX = 0, startTranslateY = 0;
+    let isPointerDragging = false;
+
+    const maxScale = 4;
+    const minScale = 1;
+
+    function applyTransform() {
+        img.style.transform = `scale(${scale}) translate(${translateX}px, ${translateY}px)`;
+    }
+
+    function resetTransform() {
+        scale = 1;
+        translateX = 0;
+        translateY = 0;
+        applyTransform();
+    }
+
+    function clampTranslation() {
+        if (scale <= 1) {
+            translateX = 0;
+            translateY = 0;
+            return;
+        }
+
+        // Keep panning constrained so the image doesn't get lost off-screen.
+        const maxTranslateX = ((scale - 1) * container.clientWidth) / (2 * scale);
+        const maxTranslateY = ((scale - 1) * container.clientHeight) / (2 * scale);
+
+        translateX = Math.min(Math.max(translateX, -maxTranslateX), maxTranslateX);
+        translateY = Math.min(Math.max(translateY, -maxTranslateY), maxTranslateY);
+    }
 
     img.style.transition = 'transform 0.1s ease-out';
     
@@ -7427,9 +7457,9 @@ function initPinchZoom(img, container) {
                 touch2.clientY - touch1.clientY
             );
             
-            scale = Math.min(Math.max(0.5, startScale * (distance / startDistance)), 4);
-            
-            img.style.transform = `scale(${scale}) translate(${translateX}px, ${translateY}px)`;
+            scale = Math.min(Math.max(minScale, startScale * (distance / startDistance)), maxScale);
+            clampTranslation();
+            applyTransform();
         } else if (e.touches.length === 1 && scale > 1) {
             e.preventDefault();
             
@@ -7440,8 +7470,8 @@ function initPinchZoom(img, container) {
             
             translateX = startTranslateX + deltaX / scale;
             translateY = startTranslateY + deltaY / scale;
-            
-            img.style.transform = `scale(${scale}) translate(${translateX}px, ${translateY}px)`;
+            clampTranslation();
+            applyTransform();
         }
     });
 
@@ -7451,10 +7481,7 @@ function initPinchZoom(img, container) {
             
             // Reset if zoomed out too much
             if (scale < 1) {
-                scale = 1;
-                translateX = 0;
-                translateY = 0;
-                img.style.transform = 'scale(1) translate(0px, 0px)';
+                resetTransform();
             }
         }
     });
@@ -7468,25 +7495,64 @@ function initPinchZoom(img, container) {
         const mouseY = e.clientY - rect.top;
         
         const zoom = e.deltaY < 0 ? 1.1 : 0.9;
-        const newScale = Math.min(Math.max(0.5, scale * zoom), 4);
+        const newScale = Math.min(Math.max(minScale, scale * zoom), maxScale);
         
         if (newScale !== scale) {
             const scaleChange = newScale / scale;
             translateX = (translateX - mouseX / scale) * scaleChange + mouseX / newScale;
             translateY = (translateY - mouseY / scale) * scaleChange + mouseY / newScale;
             scale = newScale;
-            
-            img.style.transform = `scale(${scale}) translate(${translateX}px, ${translateY}px)`;
+            clampTranslation();
+            applyTransform();
             
             // Reset if zoomed out to normal
             if (scale <= 1) {
-                scale = 1;
-                translateX = 0;
-                translateY = 0;
-                img.style.transform = 'scale(1) translate(0px, 0px)';
+                resetTransform();
             }
         }
     });
+
+    // Pointer drag panning for desktop and touch devices.
+    container.addEventListener('pointerdown', (e) => {
+        if (scale <= 1) {
+            return;
+        }
+
+        isPointerDragging = true;
+        img.style.transition = 'none';
+        startX = e.clientX;
+        startY = e.clientY;
+        startTranslateX = translateX;
+        startTranslateY = translateY;
+        container.setPointerCapture?.(e.pointerId);
+    });
+
+    container.addEventListener('pointermove', (e) => {
+        if (!isPointerDragging || scale <= 1) {
+            return;
+        }
+
+        const deltaX = e.clientX - startX;
+        const deltaY = e.clientY - startY;
+
+        translateX = startTranslateX + deltaX / scale;
+        translateY = startTranslateY + deltaY / scale;
+        clampTranslation();
+        applyTransform();
+    });
+
+    function endPointerDrag(e) {
+        if (!isPointerDragging) {
+            return;
+        }
+
+        isPointerDragging = false;
+        img.style.transition = 'transform 0.1s ease-out';
+        container.releasePointerCapture?.(e.pointerId);
+    }
+
+    container.addEventListener('pointerup', endPointerDrag);
+    container.addEventListener('pointercancel', endPointerDrag);
 
     // Double tap to zoom
     let lastTap = 0;
@@ -7499,12 +7565,9 @@ function initPinchZoom(img, container) {
             
             if (scale === 1) {
                 scale = 2;
-                img.style.transform = `scale(${scale}) translate(${translateX}px, ${translateY}px)`;
+                applyTransform();
             } else {
-                scale = 1;
-                translateX = 0;
-                translateY = 0;
-                img.style.transform = 'scale(1) translate(0px, 0px)';
+                resetTransform();
             }
         }
         
