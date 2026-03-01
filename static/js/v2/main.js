@@ -5408,14 +5408,19 @@ class MLAQuizApp {
             // Touch events for long-press (mobile) - always bind, check state on execution
             let pressTimer = null;
             let startPos = null;
+            let movedDuringTouch = false;
+            let longPressTriggered = false;
             
             option.addEventListener('touchstart', (e) => {
                 if (quizManager.isAnswerSubmitted()) return;
                 
                 const touch = e.touches[0];
                 startPos = { x: touch.clientX, y: touch.clientY };
+                movedDuringTouch = false;
+                longPressTriggered = false;
                 
                 pressTimer = setTimeout(() => {
+                    longPressTriggered = true;
                     quizManager.toggleRuleOut(optionIdx);
                     analytics.vibrateClick();
                     pressTimer = null;
@@ -5429,6 +5434,7 @@ class MLAQuizApp {
                     const deltaY = Math.abs(touch.clientY - startPos.y);
                     
                     if (deltaX > 15 || deltaY > 15) {
+                        movedDuringTouch = true;
                         clearTimeout(pressTimer);
                         pressTimer = null;
                     }
@@ -5436,11 +5442,19 @@ class MLAQuizApp {
             }, { passive: true });
             
             option.addEventListener('touchend', () => {
+                // Safari can skip synthetic click events on custom elements after touch.
+                // Explicitly select on touchend when this was a tap (not long-press/drag).
+                if (!quizManager.isAnswerSubmitted() && !movedDuringTouch && !longPressTriggered) {
+                    quizManager.selectAnswer(optionIdx);
+                }
+
                 if (pressTimer) {
                     clearTimeout(pressTimer);
                     pressTimer = null;
                 }
                 startPos = null;
+                movedDuringTouch = false;
+                longPressTriggered = false;
             }, { passive: true });
             
             option.addEventListener('touchcancel', () => {
@@ -5449,6 +5463,8 @@ class MLAQuizApp {
                     pressTimer = null;
                 }
                 startPos = null;
+                movedDuringTouch = false;
+                longPressTriggered = false;
             }, { passive: true });
         });
 
