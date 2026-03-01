@@ -445,6 +445,8 @@ class MLAQuizApp {
                     await quizManager.handleFileUpload(e.target.files);
                     // Reload quiz list
                     this.loadQuizList();
+                    // Allow re-selecting the same file (notably needed on iOS Safari)
+                    e.target.value = '';
                 }
             });
         }
