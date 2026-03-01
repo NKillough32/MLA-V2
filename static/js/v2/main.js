@@ -5088,7 +5088,31 @@ class MLAQuizApp {
             }
         });
 
+        this.updateFloatingActionButtonsVisibility(screenId);
         this.updateBackButtonVisibility();
+    }
+
+    /**
+     * Keep floating controls off the quiz selection screen so they do not
+     * overlap uploaded quiz entries on smaller/mobile viewports (notably iOS Safari).
+     */
+    updateFloatingActionButtonsVisibility(activeScreenId = null) {
+        const screenId = activeScreenId || this.getActiveScreenId();
+        const shouldHide = screenId === 'quizSelection';
+
+        const floatingElements = [
+            document.getElementById('floating-pdf-btn'),
+            document.getElementById('floating-library-btn'),
+            document.getElementById('medical-tools-toggle')
+        ];
+
+        floatingElements.forEach((element) => {
+            if (!element) {
+                return;
+            }
+
+            element.style.display = shouldHide ? 'none' : '';
+        });
     }
 
     /**
@@ -5099,6 +5123,7 @@ class MLAQuizApp {
         if (activeScreen) {
             this.currentScreen = activeScreen;
         }
+        this.updateFloatingActionButtonsVisibility(this.currentScreen);
         this.updateBackButtonVisibility();
     }
 
