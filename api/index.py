@@ -1289,7 +1289,15 @@ def upload_quiz():
                 'error': 'No file selected'
             }), 400
 
-        max_bytes = int(4.5 * 1024 * 1024)
+        filename_lower = (file.filename or '').lower()
+        max_bytes_by_type = {
+            '.md': 5 * 1024 * 1024,
+            '.zip': 50 * 1024 * 1024,
+        }
+        default_max_bytes = 50 * 1024 * 1024
+
+        file_ext = Path(filename_lower).suffix
+        max_bytes = max_bytes_by_type.get(file_ext, default_max_bytes)
 
         try:
             try:
@@ -1299,9 +1307,10 @@ def upload_quiz():
 
             raw_bytes = file.stream.read(max_bytes + 1)
             if len(raw_bytes) > max_bytes:
+                max_mb = round(max_bytes / (1024 * 1024), 1)
                 return jsonify({
                     'success': False,
-                    'error': 'File too large. Maximum size is 4.5MB.'
+                    'error': f'File too large. Maximum size is {max_mb}MB for {file_ext or "this file type"} uploads.'
                 }), 400
 
             if not raw_bytes:
