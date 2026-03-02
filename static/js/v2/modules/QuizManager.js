@@ -154,7 +154,7 @@ export class QuizManager {
                     console.log('🔍 Reconstructing split storage quiz');
                     try {
                         const storageKey = quiz.storageKey || `quiz_${this.sanitizeStorageKey(quiz.name)}`;
-                        const quizStoredData = JSON.parse(localStorage.getItem(storageKey) || '{}');
+                        const quizStoredData = await this.getStorageValueWithFallback(storageKey, {});
                         if (quizStoredData.questions && quizStoredData.questions.length > 0) {
                             quiz.questions = quizStoredData.questions;
                             quiz.images = quizStoredData.images || {};
@@ -223,7 +223,7 @@ export class QuizManager {
         console.log('🔍 Retrieving uploaded quizzes');
         
         // Get quizzes from localStorage
-        let quizzes = await storage.getItem(STORAGE_KEYS.UPLOADED_QUIZZES, []);
+        let quizzes = await this.getStorageValueWithFallback(STORAGE_KEYS.UPLOADED_QUIZZES, []);
         
         // Ensure quizzes is always an array (handle corrupted storage data)
         if (!Array.isArray(quizzes)) {
@@ -262,7 +262,7 @@ export class QuizManager {
             if (quiz.dataStored === 'split') {
                 console.log('🔍 Reconstructing split storage quiz:', quiz.name);
                 try {
-                    const quizData = JSON.parse(localStorage.getItem(storageKey) || '{}');
+                    const quizData = await this.getStorageValueWithFallback(storageKey, {});
                     reconstructedQuizzes.push({
                         ...quiz,
                         storageKey,
@@ -276,7 +276,7 @@ export class QuizManager {
             } else {
                 // For normally stored quizzes, try to read the full object
                 try {
-                    const stored = JSON.parse(localStorage.getItem(storageKey) || 'null');
+                    const stored = await this.getStorageValueWithFallback(storageKey, null);
                     if (stored) {
                         reconstructedQuizzes.push(stored);
                     } else {
@@ -291,6 +291,29 @@ export class QuizManager {
         
         console.log(`📦 Retrieved ${reconstructedQuizzes.length} uploaded quizzes`);
         return reconstructedQuizzes;
+    }
+
+    /**
+     * Read storage values with IndexedDB fallback for iOS/Safari localStorage limits.
+     */
+    async getStorageValueWithFallback(key, defaultValue = null) {
+        const value = await storage.getItem(key, defaultValue);
+        if (value !== defaultValue) {
+            return value;
+        }
+
+        if (typeof storage.getItemFromDB === 'function') {
+            try {
+                const dbValue = await storage.getItemFromDB(key);
+                if (dbValue !== null && dbValue !== undefined) {
+                    return dbValue;
+                }
+            } catch (error) {
+                console.debug(`Failed to read ${key} from IndexedDB fallback:`, error);
+            }
+        }
+
+        return defaultValue;
     }
 
     /**
