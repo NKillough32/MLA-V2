@@ -1750,9 +1750,9 @@ export class QuizManager {
 
             for (let file of files) {
                 console.log('📄 Processing file:', file.name, 'Size:', file.size, 'bytes');
-                const lowerFileName = (file.name || '').toLowerCase();
-                const isMarkdownFile = lowerFileName.endsWith('.md');
-                const isZipFile = lowerFileName.endsWith('.zip');
+                const detectedType = await this.detectQuizFileType(file);
+                const isMarkdownFile = detectedType === 'md';
+                const isZipFile = detectedType === 'zip';
                 // Show a persistent status message for the current file (V1-style feedback)
                 this.setUploadStatus(`Reading file: ${file.name}`);
 
@@ -1834,13 +1834,13 @@ export class QuizManager {
             // NOTE: ZIP files are already uploaded to server in processZipFile()
             // Only upload markdown files here (they are parsed client-side but may need server backup)
             for (let file of files) {
-                const lowerFileName = (file.name || '').toLowerCase();
+                const detectedType = await this.detectQuizFileType(file);
                 // Skip ZIP files - already handled by processZipFile()
-                if (lowerFileName.endsWith('.zip')) {
+                if (detectedType === 'zip') {
                     continue;
                 }
                 
-                if (lowerFileName.endsWith('.md')) {
+                if (detectedType === 'md') {
                     console.log('📄 Uploading markdown file to server:', file.name);
 
                     const formData = new FormData();
@@ -1903,6 +1903,38 @@ export class QuizManager {
             UIHelpers.showToast(`❌ Upload failed: ${error.message}`, 'error');
             this.setUploadStatus(`Upload failed: ${error.message}`, 'error', 4000);
         }
+    }
+
+    async detectQuizFileType(file) {
+        const lowerFileName = (file?.name || '').toLowerCase();
+        const mimeType = (file?.type || '').toLowerCase();
+
+        if (lowerFileName.endsWith('.zip')) {
+            return 'zip';
+        }
+
+        if (lowerFileName.endsWith('.md')) {
+            return 'md';
+        }
+
+        if (mimeType.includes('zip')) {
+            return 'zip';
+        }
+
+        if (mimeType.includes('markdown') || mimeType.startsWith('text/')) {
+            return 'md';
+        }
+
+        try {
+            const header = new Uint8Array(await file.slice(0, 4).arrayBuffer());
+            if (header.length >= 4 && header[0] === 0x50 && header[1] === 0x4b) {
+                return 'zip';
+            }
+        } catch (error) {
+            console.debug('Unable to inspect file header for type detection:', error);
+        }
+
+        return 'unknown';
     }
 
     /**

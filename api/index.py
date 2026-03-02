@@ -1290,6 +1290,7 @@ def upload_quiz():
             }), 400
 
         filename_lower = (file.filename or '').lower()
+        content_type_lower = (file.content_type or '').lower()
         max_bytes_by_type = {
             '.md': 5 * 1024 * 1024,
             '.zip': 50 * 1024 * 1024,
@@ -1320,9 +1321,23 @@ def upload_quiz():
                 }), 400
 
             logger.info(f"File size: {len(raw_bytes)} bytes")
+            is_zip_upload = filename_lower.endswith('.zip') or (
+                content_type_lower in {
+                    'application/zip',
+                    'application/x-zip-compressed',
+                    'multipart/x-zip',
+                    'application/octet-stream'
+                } and raw_bytes[:2] == b'PK'
+            )
+            is_markdown_upload = filename_lower.endswith('.md') or content_type_lower in {
+                'text/markdown',
+                'text/x-markdown',
+                'text/plain'
+            }
+
             upload_buffer = BytesIO(raw_bytes)
 
-            if file.filename.lower().endswith('.zip'):
+            if is_zip_upload:
                 logger.info("Processing ZIP file")
 
                 try:
@@ -1498,7 +1513,7 @@ def upload_quiz():
                     'images': image_data
                 })
 
-            elif file.filename.lower().endswith('.md'):
+            elif is_markdown_upload:
                 logger.info("Processing MD file")
                 try:
                     upload_buffer.seek(0)
