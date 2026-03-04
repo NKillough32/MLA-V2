@@ -7349,6 +7349,7 @@
             overflow-wrap: anywhere;
             color: var(--v2-text-primary);
             font-weight: 500;
+            flex: 1;
         }
         .new-option .badge {
             font-weight: 700;
@@ -7360,6 +7361,43 @@
             min-width: 24px;
             text-align: center;
             font-size: 14px;
+        }
+
+        .option-ruleout-btn {
+            margin-left: auto;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            border: 1px solid var(--v2-border);
+            background: var(--v2-bg-main);
+            color: var(--v2-text-secondary);
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 1;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all var(--v2-transition-fast);
+            flex-shrink: 0;
+        }
+
+        .option-ruleout-btn:hover {
+            border-color: var(--v2-error);
+            color: var(--v2-error);
+            background: rgba(239, 68, 68, 0.08);
+        }
+
+        .new-option.ruled-out .option-ruleout-btn {
+            border-color: #EF4444;
+            color: #EF4444;
+            background: rgba(239, 68, 68, 0.12);
+            opacity: 1;
+        }
+
+        .option-ruleout-btn:disabled {
+            opacity: 0;
+            pointer-events: none;
         }
 
         /* Progress rail - V2 Style */
@@ -14806,7 +14844,7 @@
                         </div>
                         <div id="uploadStatus" style="font-size: 14px; color: #8e8e93; margin-top: 8px;"></div>
                         <div style="font-size: 12px; color: #8e8e93; margin-top: 8px; font-style: italic;">
-                            💡 Tip: Right-click (or long-press on mobile) answer options to rule them out with a strikethrough
+                            💡 Tip: Click the ✕ button on the right side of an option to rule it out with a strikethrough
                         </div>
                     </div>
                 </div>
