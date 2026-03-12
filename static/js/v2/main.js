@@ -3287,6 +3287,36 @@ class MLAQuizApp {
                 </div>
             </div>
             <div class="med-knowledge-card" style="margin-top: 12px;">
+                <h3>📋 Core Prescribing Safety Checklist</h3>
+                <div class="med-knowledge-card-content">
+                    <div class="med-knowledge-subsection"><strong>Before prescribing</strong>: Confirm patient ID, allergies, weight, pregnancy status, renal/hepatic function, and an accurate medicines reconciliation (including OTC/herbals).</div>
+                    <div class="med-knowledge-subsection"><strong>Prescription quality</strong>: Use generic names, include indication when useful, avoid dangerous abbreviations, and set clear stop/review dates for antimicrobials, steroids, opioids and oxygen.</div>
+                    <div class="med-knowledge-subsection"><strong>Interaction and contraindication screen</strong>: Check QT prolongation risk, serotonergic burden, CNS depressant combinations, anticoagulant interactions, and duplicate therapeutic classes.</div>
+                    <div class="med-knowledge-subsection"><strong>Monitoring and follow-up</strong>: Document baseline bloods/ECG where required, expected response timeline, toxicity red flags, and exact review owner/timeframe.</div>
+                    <div class="med-knowledge-subsection"><strong>Communication</strong>: Explain purpose, dose schedule, common/serious adverse effects, driving/alcohol advice, and when to seek urgent care.</div>
+                </div>
+            </div>
+            <div class="med-knowledge-card" style="margin-top: 12px;">
+                <h3>⚠️ High-Risk Drug Groups: What to Always Check</h3>
+                <div class="med-knowledge-card-content">
+                    <div class="med-knowledge-subsection"><strong>Anticoagulants (warfarin/DOACs/heparins)</strong>: indication, bleeding risk, renal dose adjustments, peri-procedural plans, interacting drugs, and latest coagulation/renal profile.</div>
+                    <div class="med-knowledge-subsection"><strong>Insulin and hypoglycaemics</strong>: product strength, delivery device, meal timing, hypoglycaemia plan, and sick-day rules.</div>
+                    <div class="med-knowledge-subsection"><strong>Opioids and sedatives</strong>: opioid-naive vs tolerant status, equianalgesic conversions, bowel regimen, sedation/respiratory monitoring, and co-prescribed benzodiazepine risk.</div>
+                    <div class="med-knowledge-subsection"><strong>Antimicrobials</strong>: source control, culture timing, allergy severity, local guidance choice, renal dosing, and documented review/de-escalation at 48-72 hours.</div>
+                    <div class="med-knowledge-subsection"><strong>Nephrotoxic/monitoring-heavy drugs</strong>: ACEi/ARB/diuretics, lithium, methotrexate, digoxin, and aminoglycosides need explicit biochemical and toxicity surveillance plans.</div>
+                </div>
+            </div>
+            <div class="med-knowledge-card" style="margin-top: 12px;">
+                <h3>🚩 Common PSA Pitfalls</h3>
+                <div class="med-knowledge-card-content">
+                    <div class="med-knowledge-subsection">Omitting units or using unsafe notation (e.g. trailing zeros, missing leading zeros).</div>
+                    <div class="med-knowledge-subsection">Failing to adjust doses in AKI/CKD or frailty.</div>
+                    <div class="med-knowledge-subsection">Prescribing despite documented allergy/intolerance mismatch.</div>
+                    <div class="med-knowledge-subsection">Missing VTE prophylaxis, laxatives with opioids, gastroprotection for high GI-risk NSAID users, or steroid bone protection when indicated.</div>
+                    <div class="med-knowledge-subsection">Not documenting indication, treatment duration, and follow-up action after handover/discharge.</div>
+                </div>
+            </div>
+            <div class="med-knowledge-card" style="margin-top: 12px;">
                 <h3>🎯 Drug-linked Prescribing Safety Quiz</h3>
                 <p style="margin-top: 6px; color: var(--text-secondary);">Questions are built from drugs in the Drug Reference dataset (e.g. monitoring, contraindications, side effects, counselling points).</p>
                 <div id="prescribing-safety-quiz-area"><div class="loading-message">Generating quiz...</div></div>
