@@ -11,12 +11,14 @@
  *
  * Sub-tabs
  * ─────────
- *  1. Prescription Simulator   – scenario-based prescribing with instant feedback
- *  2. Drug Interaction Checker – 20 high-yield pairs; live lookup
- *  3. Renal & Hepatic Dosing   – eGFR / Child-Pugh dose tables for 12 drugs
- *  4. Prescribing Error Cases  – 10 MCQ cases with score tracking
+ *  1. Prescription Simulator   – 33 scenario-based prescribing cases with instant feedback
+ *  2. Drug Interaction Checker – 73 high-yield interaction pairs; live lookup
+ *  3. Renal & Hepatic Dosing   – eGFR / Child-Pugh dose tables for 32 drugs
+ *  4. Prescribing Error Cases  – 30 MCQ cases with score tracking
  *  5. Controlled Drug Rules    – static reference (HTML, no JS needed)
- *  6. Antibiotic Stewardship   – empirical regimens + IV-to-oral switch
+ *  6. Antibiotic Stewardship   – 23 empirical regimens + IV-to-oral switch
+ *  7. Drug Quiz                – 105 hardcoded Qs + dynamic generation from 60 drug JSONs;
+ *                                per-category score breakdown on completion
  */
 
 class PrescribingManager {
@@ -24,7 +26,7 @@ class PrescribingManager {
     constructor() {
         this._caseAnswers      = {};
         this._initialized      = false;
-        this._quiz             = { questions: [], current: 0, score: 0, answered: false, active: false };
+        this._quiz             = { questions: [], current: 0, score: 0, answered: false, active: false, results: [] };
         this._drugDataCache    = null;   // fetched drug JSON array
         this._dynamicQCache    = null;   // generate MCQ objects
         this._dynamicQCount    = 0;
@@ -54,7 +56,7 @@ class PrescribingManager {
             doseEntries:  DOSE_TABLE.length,
             cases:        CASES.length,
             abxConditions: ABX_DATA.length,
-            quizQuestions: (typeof DRUG_QUIZ_Q !== 'undefined' ? DRUG_QUIZ_Q.length : 0)
+            quizQuestions: (typeof DRUG_QUIZ_Q !== 'undefined' ? DRUG_QUIZ_Q.length : 0) + (this._dynamicQCount || 0)
         };
     }
 
@@ -416,6 +418,8 @@ class PrescribingManager {
         const correct = qObj.ans;
         const isRight = optIdx === correct;
         if (isRight) this._quiz.score++;
+        // Track per-question result for category breakdown
+        this._quiz.results.push({ cat: qObj.cat, correct: isRight });
 
         // Style options
         qObj.opts.forEach((_, i) => {
@@ -461,27 +465,64 @@ class PrescribingManager {
                     : pct >= 60 ? { label: 'Good', colour: '#f59e0b', emoji: '👍' }
                     :             { label: 'Keep Practising', colour: '#ef4444', emoji: '📚' };
 
-        // Category breakdown
+        // Per-category scores from tracked results array
         const catCounts = {};
-        q.questions.forEach((qObj, i) => {
-            if (!catCounts[qObj.cat]) catCounts[qObj.cat] = { total: 0, correct: 0 };
-            catCounts[qObj.cat].total++;
+        q.results.forEach(r => {
+            if (!catCounts[r.cat]) catCounts[r.cat] = { total: 0, correct: 0 };
+            catCounts[r.cat].total++;
+            if (r.correct) catCounts[r.cat].correct++;
         });
-        // Re-score by category (need to track per-question results)
-        // Simple: use the score we tracked
+
+        // Category breakdown rows
+        const catRows = Object.entries(catCounts).map(([cat, data]) => {
+            const catPct = Math.round((data.correct / data.total) * 100);
+            const colour = catPct >= 80 ? '#22c55e' : catPct >= 60 ? '#f59e0b' : '#ef4444';
+            const icon   = catPct >= 80 ? '✅' : catPct >= 60 ? '⚠️' : '❌';
+            return `
+                <div style="display:flex;align-items:center;gap:10px;padding:8px 12px;background:var(--v2-bg-card);border-radius:8px;margin-bottom:6px;">
+                    <span style="font-size:1rem;min-width:20px;">${icon}</span>
+                    <span style="flex:1;font-size:13px;color:var(--v2-text-primary);font-weight:500;">${catLabels[cat] || cat}</span>
+                    <span style="font-size:13px;color:${colour};font-weight:700;min-width:40px;text-align:right;">${data.correct}/${data.total}</span>
+                    <div style="width:72px;height:6px;background:var(--v2-bg-elevated);border-radius:4px;overflow:hidden;">
+                        <div style="width:${catPct}%;height:100%;background:${colour};border-radius:4px;"></div>
+                    </div>
+                </div>`;
+        }).join('');
+
+        // Weak areas callout (categories below 60%)
+        const weak = Object.entries(catCounts)
+            .filter(([, d]) => Math.round((d.correct / d.total) * 100) < 60)
+            .map(([cat]) => catLabels[cat] || cat);
+        const weakHtml = weak.length
+            ? `<div style="background:#ef444420;border:1px solid #ef444460;border-radius:8px;padding:10px 14px;margin-top:10px;text-align:left;">
+                   <strong style="color:#ef4444;font-size:13px;">📌 Focus on:</strong>
+                   <span style="color:var(--v2-text-secondary);font-size:13px;"> ${weak.join(' · ')}</span>
+               </div>`
+            : '';
+
+        const showBreakdown = Object.keys(catCounts).length > 1;
+
         document.getElementById('prxQuizPlay').style.display    = 'none';
         document.getElementById('prxQuizSummary').style.display = 'block';
 
         document.getElementById('prxQuizSummary').innerHTML = `
-            <div style="text-align:center;padding:28px 16px;">
-                <div style="font-size:3rem;margin-bottom:8px;">${grade.emoji}</div>
-                <h3 style="margin:0 0 6px;font-size:1.4rem;color:var(--v2-text-primary);">${grade.label}</h3>
-                <div style="font-size:2rem;font-weight:700;color:${grade.colour};margin-bottom:4px;">${q.score} / ${total}</div>
-                <div style="font-size:1rem;color:var(--v2-text-secondary);margin-bottom:24px;">${pct}% correct</div>
-                <div style="background:var(--v2-bg-elevated);border-radius:12px;overflow:hidden;height:10px;margin:0 auto 24px;max-width:300px;">
-                    <div style="width:${pct}%;height:100%;background:${grade.colour};border-radius:12px;transition:width 0.8s ease;"></div>
+            <div style="padding:24px 16px;">
+                <div style="text-align:center;margin-bottom:${showBreakdown ? 20 : 24}px;">
+                    <div style="font-size:3rem;margin-bottom:8px;">${grade.emoji}</div>
+                    <h3 style="margin:0 0 6px;font-size:1.4rem;color:var(--v2-text-primary);">${grade.label}</h3>
+                    <div style="font-size:2rem;font-weight:700;color:${grade.colour};margin-bottom:4px;">${q.score} / ${total}</div>
+                    <div style="font-size:1rem;color:var(--v2-text-secondary);margin-bottom:16px;">${pct}% correct</div>
+                    <div style="background:var(--v2-bg-elevated);border-radius:12px;overflow:hidden;height:10px;margin:0 auto;max-width:300px;">
+                        <div style="width:${pct}%;height:100%;background:${grade.colour};border-radius:12px;transition:width 0.8s ease;"></div>
+                    </div>
                 </div>
-                <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
+                ${showBreakdown ? `
+                <div style="margin-bottom:8px;">
+                    <h4 style="margin:0 0 10px;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--v2-text-secondary);">Category Breakdown</h4>
+                    ${catRows}
+                    ${weakHtml}
+                </div>` : ''}
+                <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:20px;">
                     <button class="prx-btn" onclick="window.prxStartQuiz()">🔄 Retry Same Settings</button>
                     <button class="prx-btn secondary" onclick="window.prxResetQuiz()">⚙️ Change Settings</button>
                 </div>
@@ -490,7 +531,7 @@ class PrescribingManager {
     }
 
     resetQuiz() {
-        this._quiz = { questions: [], current: 0, score: 0, answered: false, active: false };
+        this._quiz = { questions: [], current: 0, score: 0, answered: false, active: false, results: [] };
         document.getElementById('prxQuizSetup').style.display   = 'block';
         document.getElementById('prxQuizPlay').style.display    = 'none';
         document.getElementById('prxQuizSummary').style.display = 'none';
