@@ -9696,11 +9696,51 @@
             margin-top: 10px;
         }
         [data-theme="dark"] .abx-switch-criteria { background: rgba(253,224,71,0.1); border-color: rgba(253,224,71,0.3); color: #fcd34d; }
-        [data-theme="dark"] .abx-card { background: var(--bg-secondary); }
-        [data-theme="dark"] .prx-card { background: var(--bg-secondary); }
-        [data-theme="dark"] .prx-sim-form, [data-theme="dark"] .prx-result-box, [data-theme="dark"] .prx-case-card, [data-theme="dark"] .prx-dose-card { background: var(--bg-secondary); border-color: var(--border-color); }
-        [data-theme="dark"] .prx-field select, [data-theme="dark"] .prx-field input, [data-theme="dark"] .prx-interact-row input { background: var(--bg-tertiary); border-color: var(--border-color); color: var(--text-primary); }
-        [data-theme="dark"] .prx-case-opt { background: var(--bg-secondary); border-color: var(--border-color); color: var(--text-primary); }
+
+        /* Fixed variable names — use v2 design tokens */
+        [data-theme="dark"] .abx-card  { background: var(--v2-bg-card); border-color: var(--v2-border); }
+        [data-theme="dark"] .prx-card  { background: var(--v2-bg-card); border-color: var(--v2-border); }
+        [data-theme="dark"] .prx-sim-form,
+        [data-theme="dark"] .prx-result-box,
+        [data-theme="dark"] .prx-case-card,
+        [data-theme="dark"] .prx-dose-card  { background: var(--v2-bg-card); border-color: var(--v2-border); }
+        [data-theme="dark"] .prx-field select,
+        [data-theme="dark"] .prx-field input,
+        [data-theme="dark"] .prx-interact-row input { background: var(--v2-bg-main); border-color: var(--v2-border); color: var(--v2-text-primary); }
+        [data-theme="dark"] .prx-case-opt  { background: var(--v2-bg-card); border-color: var(--v2-border); color: var(--v2-text-primary); }
+        [data-theme="dark"] .prx-subnav    { border-color: var(--v2-border); }
+        [data-theme="dark"] .prx-tab-btn   { background: var(--v2-bg-card); border-color: var(--v2-border); color: var(--v2-text-secondary); }
+
+        /* Case option correct/incorrect states in dark mode */
+        [data-theme="dark"] .prx-case-opt.correct   { background: rgba(5,150,105,0.2);  border-color: #059669; color: #6ee7b7; }
+        [data-theme="dark"] .prx-case-opt.incorrect { background: rgba(220,38,38,0.2);  border-color: #dc2626; color: #fca5a5; }
+
+        /* Case vignette background in dark mode */
+        [data-theme="dark"] .prx-case-card .case-vignette { background: var(--v2-bg-main); color: var(--v2-text-primary); }
+
+        /* ABX route badges in dark mode */
+        [data-theme="dark"] .abx-iv-oral.iv   { background: rgba(220,38,38,0.2);  color: #fca5a5; }
+        [data-theme="dark"] .abx-iv-oral.oral { background: rgba(5,150,105,0.2);  color: #6ee7b7; }
+        [data-theme="dark"] .abx-iv-oral.both { background: rgba(37,99,235,0.2);  color: #93c5fd; }
+
+        /* Dose flag colours in dark mode */
+        [data-theme="dark"] .prx-dose-card .dose-row span.flag-red   { color: #fca5a5; }
+        [data-theme="dark"] .prx-dose-card .dose-row span.flag-amber { color: #fcd34d; }
+        [data-theme="dark"] .prx-dose-card .dose-row span.flag-green { color: #6ee7b7; }
+        [data-theme="dark"] .prx-dose-card .drug-name { color: var(--v2-text-primary); }
+        [data-theme="dark"] .prx-dose-card .dose-row  { color: var(--v2-text-secondary); }
+
+        /* ABX tab info banners — override hardcoded inline light colours */
+        [data-theme="dark"] .prx-abx-iv-banner  { background: rgba(110,231,183,0.1) !important; border-color: rgba(110,231,183,0.3) !important; }
+        [data-theme="dark"] .prx-abx-iv-banner h4,
+        [data-theme="dark"] .prx-abx-iv-banner ul  { color: #6ee7b7 !important; }
+        [data-theme="dark"] .prx-abx-stop-banner { background: rgba(251,191,36,0.1) !important; border-color: rgba(251,191,36,0.3) !important; }
+        [data-theme="dark"] .prx-abx-stop-banner h4,
+        [data-theme="dark"] .prx-abx-stop-banner ul { color: #fcd34d !important; }
+
+        /* Scenario info box in dark mode */
+        [data-theme="dark"] #prxScenarioBox { background: rgba(124,58,237,0.15) !important; border-color: rgba(196,181,253,0.4) !important; }
+        [data-theme="dark"] #prxScenarioText { color: #e2e8f0 !important; }
 
         /* ---- CD Rules ---- */
         .cd-table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 10px; }
@@ -15965,7 +16005,7 @@
                     </div>
 
                     <!-- IV-to-oral switch box -->
-                    <div style="background:linear-gradient(135deg,#d1fae5,#a7f3d0);border:1.5px solid #6ee7b7;border-radius:14px;padding:16px;margin-bottom:18px;">
+                    <div class="prx-abx-iv-banner" style="background:linear-gradient(135deg,#d1fae5,#a7f3d0);border:1.5px solid #6ee7b7;border-radius:14px;padding:16px;margin-bottom:18px;">
                         <h4 style="margin:0 0 8px;color:#065f46;font-size:14px;">✅ IV-to-Oral Switch Criteria (any ONE met = consider switch)</h4>
                         <ul style="margin:0;padding-left:18px;font-size:13px;color:#065f46;line-height:1.7;">
                             <li>Apyrexial for <strong>≥24 hours</strong></li>
@@ -15978,7 +16018,7 @@
                     </div>
 
                     <!-- Stop / review reminder -->
-                    <div style="background:linear-gradient(135deg,#fef3c7,#fde68a);border:1.5px solid #fbbf24;border-radius:14px;padding:16px;margin-bottom:18px;">
+                    <div class="prx-abx-stop-banner" style="background:linear-gradient(135deg,#fef3c7,#fde68a);border:1.5px solid #fbbf24;border-radius:14px;padding:16px;margin-bottom:18px;">
                         <h4 style="margin:0 0 8px;color:#78350f;font-size:14px;">⏰ Stop / Review Date Reminders</h4>
                         <ul style="margin:0;padding-left:18px;font-size:13px;color:#78350f;line-height:1.7;">
                             <li>Always prescribe with a <strong>review/stop date</strong> — typically 5–7 days for community infections</li>
