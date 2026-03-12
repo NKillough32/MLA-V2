@@ -1154,6 +1154,20 @@ const INTERACTIONS = [
     { drugs: ['haloperidol','amiodarone'],      severity:'severe',   mechanism:'Both prolong cardiac QTc through potassium channel (IKr) blockade — additive.',                     effect:'↑ risk of Torsades de Pointes (TdP) and ventricular fibrillation.',              advice:'Avoid QT-prolonging drug combinations. Check QTc before prescribing. Correct K⁺ and Mg²⁺. ECG monitoring mandatory if unavoidable.' },
     { drugs: ['furosemide','gentamicin'],       severity:'moderate', mechanism:'Furosemide causes ↓ K⁺/Mg²⁺ electrolyte disturbance and has direct cochlear toxicity; gentamicin is independently ototoxic.', effect:'Synergistic irreversible ototoxicity (hearing loss, vestibular damage).', advice:'Avoid concurrent use where possible. If necessary: TDM for gentamicin, correct electrolytes, monitor renal function and consider audiometry.' },
     { drugs: ['methotrexate','penicillin'],     severity:'moderate', mechanism:'Some penicillins (e.g. piperacillin) compete with methotrexate for renal tubular secretion.',          effect:'↑ methotrexate levels → toxicity (myelosuppression, mucositis, nephrotoxicity).', advice:'Monitor methotrexate levels and FBC closely. Ensure weekly dosing only — daily methotrexate is a never-event.' },
+    { drugs: ['ssri','triptan'],                 severity:'moderate', mechanism:'Additive serotonergic stimulation: SSRIs inhibit reuptake; triptans are direct 5-HT1B/1D agonists.',    effect:'Serotonin syndrome (agitation, tremor, hyperreflexia, clonus, hyperthermia).',      advice:'Generally avoid co-prescription. If essential (rare intractable migraine + depression): lowest effective doses; educate patient; monitor closely.' },
+    { drugs: ['methotrexate','trimethoprim'],    severity:'severe',   mechanism:'Both inhibit dihydrofolate reductase additively → folate depletion; trimethoprim also ↓ methotrexate renal tubular elimination.', effect:'Life-threatening pancytopenia, mucositis, and severe folate-deficiency effects.', advice:'Combination is effectively a never-event outside oncology. Use nitrofurantoin or cefalexin for UTI in methotrexate patients. If unavoidable: withhold methotrexate course; give folinic acid; FBC urgently.' },
+    { drugs: ['clarithromycin','statin'],        severity:'severe',   mechanism:'Clarithromycin potently inhibits CYP3A4 → ↓ simvastatin and atorvastatin metabolism → 10–15× drug concentration increase.', effect:'Rhabdomyolysis → acute kidney injury and hyperkalemia.', advice:'Withhold simvastatin/atorvastatin during clarithromycin courses. Pravastatin or rosuvastatin (not CYP3A4-dependent) are safer alternatives if statin is essential.' },
+    { drugs: ['clozapine','ciprofloxacin'],      severity:'severe',   mechanism:'Ciprofloxacin inhibits CYP1A2 (primary clozapine metabolising enzyme) → ↑ clozapine levels 50–100%.', effect:'Clozapine toxicity: sedation, hypotension, seizures, agranulocytosis.',            advice:'Avoid ciprofloxacin in patients on clozapine — choose alternative antibiotics (e.g. co-amoxiclav). If unavoidable: reduce clozapine dose and monitor levels and WBC daily.' },
+    { drugs: ['phenytoin','ocp'],                severity:'moderate', mechanism:'Phenytoin is a potent CYP3A4/CYP2C19 inducer → greatly accelerated oestrogen/progestogen metabolism.', effect:'Contraceptive failure (unintended pregnancy).',                                   advice:'Advise additional contraception (copper IUD preferred). Even high-dose OCP pills may be unreliable. Consider alternative AED (levetiracetam) under specialist review.' },
+    { drugs: ['tamoxifen','ssri'],               severity:'moderate', mechanism:'SSRIs (especially fluoxetine, paroxetine) inhibit CYP2D6 — which converts tamoxifen to its active metabolite (endoxifen).', effect:'↓ tamoxifen efficacy → ↑ breast cancer recurrence risk.',                       advice:'Use CYP2D6-sparing antidepressants (venlafaxine, escitalopram, citalopram) in tamoxifen-treated breast cancer patients. Avoid fluoxetine and paroxetine.' },
+    { drugs: ['rifampicin','doac'],              severity:'severe',   mechanism:'Rifampicin induces P-glycoprotein and CYP3A4 → dramatically ↑ DOAC clearance (70–90% reduction in plasma levels).', effect:'Loss of anticoagulant effect → thromboembolism.',                                advice:'Avoid co-prescription. If anticoagulation essential during rifampicin course, switch to warfarin (INR-guided) or LMWH — both are rifampicin-sparing strategies.' },
+    { drugs: ['carbamazepine','warfarin'],       severity:'moderate', mechanism:'Carbamazepine is a potent enzyme inducer (CYP2C9, CYP3A4) → greatly ↑ warfarin metabolism → ↓ INR.', effect:'Subtherapeutic anticoagulation → thromboembolism risk.',                           advice:'Requires large warfarin dose increases (often 40–60%). Weekly INR monitoring until stable. Equivalent problem on stopping carbamazepine — INR rises rapidly. Consider DOAC if feasible under haematology input.' },
+    { drugs: ['ssri','maoi'],                   severity:'severe',   mechanism:'Both increase synaptic serotonin; combined effect causes extreme serotonergic stimulation.',                effect:'Serotonin syndrome — can be fatal (hyperthermia, rigidity, rhabdomyolysis, DIC).', advice:'Absolute contraindication. Must wait ≥14 days after stopping MAOI before starting SSRI; ≥5 weeks after stopping fluoxetine (long half-life) before starting MAOI.' },
+    { drugs: ['ace inhibitor','potassium'],      severity:'moderate', mechanism:'ACEi block aldosterone-mediated urinary K⁺ excretion; supplemental K⁺ adds further load.',                effect:'Hyperkalaemia (K⁺ >6 → ECG changes, VF risk).',                                   advice:'Check U&E before starting ACEi; repeat 1–2 weeks later. Avoid routine K⁺ supplementation when on ACEi. If K⁺ rises >5.5, withhold ACEi and reassess.' },
+    { drugs: ['lithium','diuretic'],             severity:'severe',   mechanism:'Thiazide diuretics ↑ renal proximal tubular Na⁺ (and Li⁺) reabsorption — compensatory mechanism → Li⁺ retention.', effect:'Lithium toxicity (tremor, confusion, AKI, cardiac arrhythmias, coma).',             advice:'Avoid thiazides in lithium patients — use alternatives for BP/oedema. Loop diuretics are safer (different mechanism) but still require monitoring. Check Li⁺ levels within 1 week if diuretic change made.' },
+    { drugs: ['metformin','iv contrast'],       severity:'moderate', mechanism:'IV contrast causes transient reduction in GFR; metformin accumulated in setting of AKI raises lactic acidosis risk.', effect:'Lactic acidosis (rare but potentially fatal).',                                  advice:'Withhold metformin from night before procedure; do not restart for 48h post-contrast; ensure creatinine remains stable. Many centres now risk-stratify by eGFR (safe if eGFR >45 and no other risks).' },
+    { drugs: ['warfarin','fluconazole'],         severity:'severe',   mechanism:'Fluconazole potently inhibits CYP2C9 (primary warfarin S-enantiomer metabolism enzyme) → 50–200% INR increase.', effect:'Major bleeding (INR may rise above 10).',                                          advice:'Expect significant INR increase after 3–5 days of fluconazole. Reduce warfarin dose empirically by 25–50%; check INR every 2 days during course. Consider alternatives for thrush (topical clotrimazole).' },
+    { drugs: ['antipsychotic','anticholinergic'], severity:'moderate', mechanism:'Additive antimuscarinic effects: many antipsychotics (especially olanzapine) have inherent anticholinergic properties compounded by additional anticholinergics.', effect:'Anticholinergic burden: constipation, urinary retention, confusion (especially elderly), ↑ QTc.', advice:'Minimise anticholinergic co-prescribing especially in elderly. Use the Anticholinergic Burden (ACB) calculator. Prefer lower-burden alternatives (bladder: mirabegron vs oxybutynin).' },
 ];
 
 const QUICK_PAIRS = [
@@ -1177,6 +1191,20 @@ const QUICK_PAIRS = [
     { pair:'Colchicine + Clarithromycin',       badge:'danger',  note:'Colchicine toxicity — multi-organ failure' },
     { pair:'Carbamazepine + OCP',               badge:'danger',  note:'Contraceptive failure — use copper IUD' },
     { pair:'Furosemide + Gentamicin',           badge:'warning', note:'Synergistic irreversible ototoxicity' },
+    { pair:'SSRI + Tramadol',                    badge:'danger',  note:'Serotonin syndrome — both serotonergic' },
+    { pair:'SSRI + Triptan',                     badge:'warning', note:'Serotonin syndrome risk — generally avoid' },
+    { pair:'Methotrexate + Trimethoprim',        badge:'danger',  note:'Fatal pancytopenia — never-event' },
+    { pair:'Clarithromycin + Simvastatin',       badge:'danger',  note:'Rhabdomyolysis — withhold statin' },
+    { pair:'Clozapine + Ciprofloxacin',          badge:'danger',  note:'CYP1A2 inhibition → clozapine toxicity' },
+    { pair:'Phenytoin + OCP',                    badge:'danger',  note:'Contraceptive failure — use IUD' },
+    { pair:'Tamoxifen + Fluoxetine/Paroxetine',  badge:'warning', note:'↓ tamoxifen efficacy via CYP2D6' },
+    { pair:'Rifampicin + DOACs',                 badge:'danger',  note:'Near-complete loss of anticoagulation' },
+    { pair:'SSRI + MAOI',                        badge:'danger',  note:'Fatal serotonin syndrome — absolute CI' },
+    { pair:'Warfarin + Fluconazole',             badge:'danger',  note:'CYP2C9 inhibition → INR >10 possible' },
+    { pair:'Lithium + Thiazide Diuretic',        badge:'danger',  note:'Li⁺ retention → toxicity/coma' },
+    { pair:'Antipsychotic + Anticholinergic',    badge:'warning', note:'High anticholinergic burden — delirium risk' },
+    { pair:'ACEi + K⁺ supplement',              badge:'warning', note:'Hyperkalaemia — monitor K⁺' },
+    { pair:'Carbamazepine + Warfarin',           badge:'warning', note:'Enzyme induction — ↓ INR / clot risk' },
 ];
 
 /* ── Renal / Hepatic Dose Table ─────────────────────────────────── */
@@ -1341,6 +1369,63 @@ const DOSE_TABLE = [
         { min:30, max:130, dose:'Standard dose',                                                                   flag:'green' },
         { min:0,  max:29,  dose:'No formal dose reduction but monitor carefully; auto-induction makes pharmacokinetics complex', flag:'amber' },
       ], hepatic:{ A:'Normal', B:'Reduce dose; risk of accumulation; monitor levels closely', C:'Avoid — carbamazepine is itself hepatotoxic and hepatically metabolised; ↑ encephalopathy risk' } },
+
+    { drug:'Dabigatran', normal:'150 mg BD (AF); 220 mg OD (VTE prophylaxis after hip/knee replacement)',
+      renal:[
+        { min:50, max:130, dose:'Standard dose',                                                             flag:'green' },
+        { min:30, max:49,  dose:'AF: reduce to 110 mg BD; assess bleeding/thrombosis balance',               flag:'amber' },
+        { min:0,  max:29,  dose:'Contraindicated — dabigatran is 80% renally cleared; accumulation → major bleeding', flag:'red' },
+      ], hepatic:{ A:'Normal — renally excreted', B:'No dose adjustment but caution in hepatic impairment', C:'Avoid — limited data; risk of coagulopathy compounded' } },
+
+    { drug:'Levetiracetam', normal:'250–500 mg BD, titrate to max 3 g/day',
+      renal:[
+        { min:80, max:130, dose:'Standard dose',               flag:'green' },
+        { min:50, max:79,  dose:'500 mg–1 g BD',               flag:'green' },
+        { min:30, max:49,  dose:'250–750 mg BD (max 1.5 g/day)', flag:'amber' },
+        { min:0,  max:29,  dose:'250–500 mg BD; supplement after haemodialysis', flag:'red' },
+      ], hepatic:{ A:'Normal', B:'Normal (not hepatically metabolised)', C:'Supplementary dose after dialysis if ESRD' } },
+
+    { drug:'Pregabalin', normal:'75–300 mg BD (neuropathic pain); 150–600 mg/day (epilepsy)',
+      renal:[
+        { min:60, max:130, dose:'Standard',                  flag:'green' },
+        { min:30, max:59,  dose:'Max 150 mg BD',             flag:'amber' },
+        { min:15, max:29,  dose:'Max 75 mg BD',              flag:'amber' },
+        { min:0,  max:14,  dose:'Max 75 mg OD (25–75 mg/day)', flag:'red' },
+      ], hepatic:{ A:'Normal', B:'Normal (not hepatically metabolised)', C:'Normal' } },
+
+    { drug:'Allopurinol', normal:'100–300 mg OD (gout prevention); start 100 mg with urate-lowering titration',
+      renal:[
+        { min:60, max:130, dose:'Standard; titrate to serum urate <360 µmol/L',            flag:'green' },
+        { min:30, max:59,  dose:'Max 100 mg OD; reduce dose to avoid accumulation and oxypurinol toxicity', flag:'amber' },
+        { min:0,  max:29,  dose:'50 mg OD or 100 mg every 2–3 days; supplementary dose after dialysis', flag:'red' },
+      ], hepatic:{ A:'Normal', B:'Normal', C:'Use with caution; monitor LFTs' } },
+
+    { drug:'Aciclovir (IV — HSV/VZV)',  normal:'5–10 mg/kg TDS IV (herpes encephalitis 10 mg/kg TDS)',
+      renal:[
+        { min:50, max:130, dose:'Standard dose (5–10 mg/kg TDS)',                          flag:'green' },
+        { min:25, max:49,  dose:'5–10 mg/kg BD (reduce frequency)',                        flag:'amber' },
+        { min:10, max:24,  dose:'5–10 mg/kg OD',                                           flag:'amber' },
+        { min:0,  max:9,   dose:'2.5–5 mg/kg OD',                                          flag:'red'   },
+      ], hepatic:{ A:'Normal — renally excreted', B:'Normal — renally excreted', C:'Normal — renally excreted' } },
+
+    { drug:'Spironolactone', normal:'25–50 mg OD (heart failure/ascites); 100–200 mg OD (primary hyperaldosteronism)',
+      renal:[
+        { min:45, max:130, dose:'Standard; monitor U&E closely (K⁺ and creatinine)',        flag:'green' },
+        { min:30, max:44,  dose:'Use with extreme caution — high hyperkalaemia risk; consider dose reduction', flag:'amber' },
+        { min:0,  max:29,  dose:'Contraindicated — risk of life-threatening hyperkalaemia', flag:'red'   },
+      ], hepatic:{ A:'Normal', B:'Can precipitate encephalopathy with over-diuresis; use cautiously', C:'High risk of encephalopathy; avoid aggressive diuresis' } },
+
+    { drug:'Levothyroxine', normal:'1.6 mcg/kg/day (adults); start 25–50 mcg OD and titrate 6-weekly',
+      renal:[
+        { min:0, max:130, dose:'Standard dose — not renally cleared. Monitor TSH 6–8 weekly until stable.', flag:'green' },
+      ], hepatic:{ A:'Normal', B:'Monitor TFTs more frequently — reduced T4-T3 conversion', C:'Dose requirement may fall with severe liver disease; monitor TSH 4-weekly' } },
+
+    { drug:'Metoclopramide', normal:'10 mg TDS PO/IM/IV (max 5 days for most indications)',
+      renal:[
+        { min:40, max:130, dose:'Standard dose',                                                flag:'green' },
+        { min:15, max:39,  dose:'Reduce to 5 mg TDS — increased risk of extrapyramidal effects', flag:'amber' },
+        { min:0,  max:14,  dose:'Avoid — use alternative antiemetic (ondansetron, cyclizine)',  flag:'red'   },
+      ], hepatic:{ A:'Normal', B:'Reduce dose by 50%; ↑ plasma levels due to ↓ first-pass metabolism', C:'Avoid — may worsen hepatic encephalopathy; use cyclizine or ondansetron' } },
 ];
 
 /* ── Prescribing Error Cases ────────────────────────────────────── */
@@ -1464,6 +1549,66 @@ const CASES = [
       options:['Furosemide directly potentiates naproxen nephrotoxicity','ACEi (↓ efferent tone) + diuretic (volume depletion) + NSAID (↓ prostaglandin-mediated afferent dilation) = "triple whammy" — critically reduces glomerular filtration pressure → AKI','Naproxen is directly tubulotoxic at this dose','This is coincidental — unrelated to the drug combination'],
       correct:1,
       explanation:'The "triple whammy" (ACEi/ARB + loop/thiazide diuretic + NSAID) is a well-documented cause of AKI, especially in older patients with heart failure or CKD. ACEi dilates the efferent arteriole (normally compensatory when GFR falls). Diuretics reduce circulating volume. NSAIDs block prostaglandin-mediated afferent arteriolar dilation — critically reducing glomerular perfusion pressure. NSAIDs should be avoided (or substituted with paracetamol) in patients on ACEi + diuretic.' },
+
+    { id:21, title:'Digoxin toxicity — electrolyte interaction',
+      vignette:'A 78-year-old woman on digoxin 125 mcg OD for AF and furosemide 80 mg OD for heart failure presents with nausea, xanthopsia, and bradycardia. Digoxin level: 1.9 ng/mL (within range). K⁺: 2.8 mmol/L. What best explains her toxicity despite a "normal" digoxin level?',
+      options:['Digoxin level is actually too low','Hypokalaemia sensitises cardiac cells to digoxin toxicity — clinical toxicity can occur at normal serum levels','Furosemide is directly cardiotoxic','She needs a higher digoxin dose to restore sinus rhythm'],
+      correct:1,
+      explanation:'Hypokalaemia (often caused by loop diuretics) dramatically sensitises myocardial Na⁺/K⁺-ATPase to digoxin — clinical toxicity can occur at subtherapeutic or therapeutic serum levels. Always check K⁺ in digoxin patients! Treat hypokalaemia first. Xanthopsia (yellow-green visual halos) is a classic digoxin toxicity sign. Digoxin toxic levels: >2 ng/mL; but context matters.' },
+
+    { id:22, title:'Serotonin syndrome — drug combination',
+      vignette:'A 45-year-old man on sertraline 100 mg OD is admitted with a severe headache. The on-call doctor prescribes sumatriptan 100 mg. Six hours later he has agitation, tremor, diarrhoea, bilateral lower limb clonus, and a temperature of 38.4°C. The most likely diagnosis is:',
+      options:['Neuroleptic malignant syndrome','Meningitis','Serotonin syndrome due to SSRI + triptan combination','Opiate withdrawal'],
+      correct:2,
+      explanation:'Serotonin syndrome is characterised by the Hunter Criteria triad: clonus (spontaneous, inducible, or ocular), agitation, tremor, and autonomic instability (fever, tachycardia, diarrhoea). SSRIs inhibit serotonin reuptake; triptans are direct 5-HT1B/D agonists — additive serotonergic effect. Treat by stopping both drugs; cyproheptadine (5-HT antagonist); supportive care including benzodiazepines for agitation. NMS differs: onset slower (days), no clonus, lead-pipe rigidity, elevated CK.' },
+
+    { id:23, title:'Clozapine — monitoring failure',
+      vignette:'A 32-year-old man with treatment-resistant schizophrenia on clozapine 400 mg/day misses two consecutive blood monitoring appointments. He then presents with a 4-day history of sore throat, fever, and rigors. WBC: 1.2×10⁹/L, neutrophils: 0.4×10⁹/L. The MOST important immediate action is:',
+      options:['Continue clozapine and treat the infection with antibiotics','STOP clozapine immediately and admit for IV antibiotics and haematology review — this is agranulocytosis until proven otherwise','Reduce the clozapine dose and monitor blood count weekly','Reassure and book an outpatient haematology appointment'],
+      correct:1,
+      explanation:'Clozapine causes life-threatening agranulocytosis in 1–2% of patients. Mandatory blood monitoring (CPMS system: weekly for first 18 weeks, fortnightly to 1 year, then monthly) exists specifically to detect this. Neutrophil count <0.5×10⁹/L = red alert → STOP clozapine immediately; isolate the patient; urgent haematology; IV broad-spectrum antibiotics. Clozapine must NEVER be restarted after agranulocytosis.' },
+
+    { id:24, title:'Warfarin reversal — acute major bleed',
+      vignette:'A 67-year-old man on warfarin for a mechanical mitral valve presents with haematemesis. INR: 8.7. He is haemodynamically stable but haemoglobin has dropped to 78 g/L. What is the CORRECT immediate pharmacological management?',
+      options:['Vitamin K 5 mg IV alone','Stop warfarin; 4-factor PCC (Octaplex/Beriplex) IV STAT + vitamin K 5 mg IV','FFP 2 units transfusion alone','Warfarin should not be reversed in a mechanical valve patient'],
+      correct:1,
+      explanation:'In major bleeding on warfarin: give 4-factor prothrombin complex concentrate (PCC: Octaplex/Beriplex IV) for immediate reversal — onset within 15–30 minutes. Also give vitamin K 5 mg IV (to sustain reversal). FFP alone is insufficient (large volumes required, slow onset). Even in mechanical valve patients, reversal is warranted for major haemorrhage — the short period off anticoagulation is less dangerous than exsanguination. Restart warfarin when source controlled and haemostasis achieved.' },
+
+    { id:25, title:'Drug-induced QT prolongation',
+      vignette:'A patient with schizophrenia on haloperidol 10 mg/day develops palpitations. ECG shows QTc 530 ms. Which combination most likely contributed?',
+      options:['Haloperidol + metformin','Haloperidol + ciprofloxacin (prescribed the previous week for UTI)','Haloperidol + ramipril','Haloperidol + paracetamol'],
+      correct:1,
+      explanation:'Both haloperidol and fluoroquinolones (ciprofloxacin, levofloxacin) independently prolong cardiac QTc via hERG (IKr) potassium channel blockade — additive when combined. QTc >500 ms is dangerous (TdP risk). Management: identify and remove causative agents; correct electrolytes (K⁺, Mg²⁺); cardiac monitoring. Use CredibleMeds resource to check QT risk before any combination.' },
+
+    { id:26, title:'Inappropriate prescribing in the elderly — Beers Criteria',
+      vignette:'An 84-year-old nursing home resident with mild dementia is prescribed diphenhydramine (PM) for insomnia, oxybutynin for urinary incontinence, and amitriptyline for neuropathic pain. She is admitted confused. The MAIN prescribing concern is:',
+      options:['The doses are all too low for an elderly person','All three drugs have high anticholinergic burden and are inappropriate in elderly patients — combine to cause delirium','These are all evidence-based treatments for her conditions','She needs a benzodiazepine added for agitation'],
+      correct:1,
+      explanation:'Diphenhydramine, oxybutynin, and amitriptyline are all on the Beers/STOPP criteria as potentially inappropriate in older adults — all have high anticholinergic burden (ACB scores 3, 3, 3 respectively). Combined anticholinergic burden causes: delirium, falls, constipation, urinary retention, and ↑ dementia progression. Substitute: melatonin (insomnia), mirabegron (OAB), duloxetine/gabapentin (neuropathic pain). Conduct a full medication review.' },
+
+    { id:27, title:'Spironolactone + ACEi + poor monitoring',
+      vignette:'A 58-year-old man with heart failure on ramipril 5 mg OD is started on spironolactone 25 mg OD without bloods being checked. Two weeks later his K⁺ is 6.4 mmol/L and his ECG shows peaked T-waves. What is the correct management sequence?',
+      options:['Increase spironolactone — needed for heart failure benefit','Withhold both spironolactone and ramipril; start calcium gluconate 10 mL 10% IV immediately given ECG changes; then insulin-dextrose; recheck K⁺ urgently; reassess benefits vs risks before restarting', 'Just reduce the spironolactone dose to 12.5 mg and recheck in 4 weeks','Give kayexalate and continue both medications'],
+      correct:1,
+      explanation:'K⁺ 6.4 with ECG changes (peaked T-waves = cardiac membrane effect) is an emergency. Immediate sequence: calcium gluconate IV (membrane stabilisation — does NOT lower K⁺) → insulin-dextrose IV (shifts K⁺ intracellularly) → consider patiromer/sodium zirconium cyclosilicate (binds K⁺ in gut) → identify precipitant (spironolactone + ACEi dual K⁺ retention). U&E must be checked within 1–2 weeks of adding spironolactone to an ACEi.' },
+
+    { id:28, title:'Contrast nephropathy prevention',
+      vignette:'A 64-year-old man (eGFR 38 mL/min) with NSTEMI requires emergency PCI with IV contrast. His regular medications include metformin, ramipril, and furosemide. Which pre-procedure preparation is MOST important?',
+      options:['Double his furosemide dose to improve renal blood flow','Withhold metformin; hold ramipril and furosemide on morning of procedure; pre-hydrate with IV 0.9% NaCl 1 mL/kg/h for 12h before and 6h after; use minimum contrast volume','Pre-treat with N-acetylcysteine 600 mg BD — this is well-evidenced','Continue all medications unchanged — eGFR 38 is acceptable'],
+      correct:1,
+      explanation:'Contrast nephropathy prevention in CKD: (1) IV normal saline pre- and post-hydration (1 mL/kg/h) — best evidence; (2) withhold metformin (lactic acidosis risk) from night before, restart after 48h if creatinine stable; (3) withhold ACEi and diuretics morning of procedure (reduce pre-renal complications); (4) minimum contrast volume; (5) use iso-osmolar contrast if possible. N-acetylcysteine has weak/conflicting evidence (not routinely recommended).' },
+
+    { id:29, title:'Opioid rotation — equianalgesic dosing',
+      vignette:'A patient with cancer pain is on oral morphine 60 mg modified-release BD (total 120 mg/day oral morphine) but is experiencing significant nausea. The palliative care team decide to switch to a fentanyl patch. What is the approximate equivalent fentanyl patch dose?',
+      options:['12 mcg/h patch','25 mcg/h patch','50 mcg/h patch','100 mcg/h patch'],
+      correct:1,
+      explanation:'Opioid conversion: oral morphine 90–134 mg/day ≈ fentanyl 25 mcg/h patch. The conversion factor is approximately 100 mg oral morphine = 25 mcg/h transdermal fentanyl. For 120 mg/day oral morphine → 25 mcg/h patch is the appropriate starting dose. Allow 12–24h crossover period; provide PRN oral morphine during patch establishment. Always use a validated conversion tool and cross-check with pharmacy/palliative care.' },
+
+    { id:30, title:'Prescribing in acute porphyria',
+      vignette:'A 24-year-old woman with known acute intermittent porphyria (AIP) is admitted with an acute neuropsychiatric episode. Which of the following should be AVOIDED?',
+      options:['Morphine for pain','Ondansetron for nausea','Propofol for sedation if ITU required','All the above are safe; avoid phenytoin, sodium valproate, and diazepam'],
+      correct:3,
+      explanation:'In acute porphyria, many commonly used drugs are porphyrinogenic (induce ALA synthase, triggering attacks). Unsafe drugs include: phenytoin, valproate, carbamazepine, barbiturates, diazepam, sulphonamides, rifampicin, many anaesthetic agents, progestogens, griseofulvin, and others. Safe options: morphine (analgesia), ondansetron (antiemetic), propofol (anaesthesia), levetiracetam (seizures), gabapentin. Always check the NAPOS (National Acute Porphyria Service) or EPNET drug safety database before prescribing.' },
 ];
 
 /* ── Antibiotic Stewardship ─────────────────────────────────────── */
@@ -1579,6 +1724,55 @@ const ABX_DATA = [
       severe:'Lyme carditis / neuroborreliosis (facial palsy, meningism, AV block): ceftriaxone 2 g OD IV × 14–21 days',
       route:'oral', review:'ELISA + Western blot serology — do not delay treatment awaiting results. PHE guidance for endemic tick exposure areas.',
       notes:'Prophylaxis after tick bite in endemic areas: doxycycline 200 mg single dose within 72h of attachment. Avoid doxycycline in pregnancy and children <12 — use amoxicillin. Serological "cure" not required — treat based on symptom resolution.' },
+
+    { condition:'🦶 Diabetic Foot Infection', severity:'Mild-moderate (cellulitis ≤2 cm, no systemic sepsis)',
+      firstLine:'Co-amoxiclav 625 mg TDS PO × 7–14 days (covers S. aureus, streptococci, anaerobes)',
+      ifAllergy:'Clindamycin 300–450 mg QDS PO + ciprofloxacin 500 mg BD PO if Gram-negative risk',
+      severe:'Moderate/severe (deep infection, osteomyelitis, systemic sepsis): piperacillin-tazobactam 4.5 g TDS IV ± vancomycin (MRSA risk)',
+      route:'both', review:'Podiatry and vascular surgery urgent review. X-ray foot (osteomyelitis). MRI if osteomyelitis suspected. Wound swab and blood cultures. Ensure glycaemic control.',
+      notes:'MRSA risk factors: prior MRSA, nursing home, previous antibiotics. Osteomyelitis may require 6+ weeks of antibiotics and surgical debridement. Multidisciplinary diabetic foot team referral for all moderate/severe cases.' },
+
+    { condition:'🫁 PCP Prophylaxis (Pneumocystis jirovecii)', severity:'Immunocompromised (HIV CD4 <200, steroids, transplant)',
+      firstLine:'Co-trimoxazole 960 mg OD (or 480 mg OD if tolerability issues)',
+      ifAllergy:'Dapsone 100 mg OD (check G6PD status first) OR pentamidine 300 mg nebulised monthly',
+      severe:'Active PCP treatment: co-trimoxazole high-dose 120 mg/kg/day IV in 2–4 divided doses × 21 days + prednisolone 40 mg BD if PaO₂ <9.3 kPa',
+      route:'oral', review:'HIV specialist review essential. Prophylaxis continued until CD4 >200 cells/µL for ≥3 months. Monitor FBC and LFTs on co-trimoxazole.',
+      notes:'PCP is the most common AIDS-defining illness in patients not on HAART. Co-trimoxazole also provides toxoplasma prophylaxis. Start prophylaxis when CD4 <200 or CD4% <14%. Steroids in active PCP reduce mortality if hypoxia present — landmark RCT evidence.' },
+
+    { condition:'🦷 Human/Animal Bite Infection', severity:'Bite wound with signs of infection',
+      firstLine:'Co-amoxiclav 625 mg TDS PO × 5–7 days (covers Pasteurella, streptococci, anaerobes)',
+      ifAllergy:'Doxycycline 100 mg BD + metronidazole 400 mg TDS PO',
+      severe:'Deep infection, tendon/bone involvement, or sepsis: co-amoxiclav 1.2 g TDS IV or piperacillin-tazobactam 4.5 g TDS IV',
+      route:'oral', review:'Wound irrigation + debridement essential. Assess tetanus immunisation status (give booster if required). Cat bites: high Pasteurella multocida risk — prophylactic antibiotics recommended even without infection. Human bites: consider hepatitis B/HIV/HCV exposure risk assessment.',
+      notes:'Dog bites: ~10–15% infection rate. Cat bites: ~50% infection rate (deep puncture wounds). Human bites: beware Eikenella corrodens. NEVER close bite wounds primarily if >6h old or involving hand/face. Refer hand bites promptly to plastics.' },
+
+    { condition:'🏥 Surgical Antibiotic Prophylaxis', severity:'Pre-operative (within 60 min of incision)',
+      firstLine:'Cefuroxime 1.5 g IV STAT (most general / orthopaedic surgery)',
+      ifAllergy:'Teicoplanin 400 mg IV + gentamicin 1.5 mg/kg IV (penicillin allergy)',
+      severe:'Colorectal: add metronidazole 500 mg IV. Contaminated wounds: individualise based on microbiology.',
+      route:'iv', review:'Give within 30–60 min of incision (120 min for vancomycin). Repeat dose if surgery >3–4h or major blood loss. No evidence for prophylaxis >24h post-operatively — continuing is not indicated.',
+      notes:'NICE NG125: routine prophylaxis for all hip/knee arthroplasty, bowel surgery, cardiac surgery, and most elective procedures. Duration: single dose (or max 24h). Stop at 24h — prolonged prophylaxis drives resistance without added benefit. Document allergy status clearly pre-operatively.' },
+
+    { condition:'🧫 Acute Epididymo-orchitis', severity:'Sexually active men <35 yrs (STI likely)',
+      firstLine:'Ceftriaxone 500 mg IM STAT (gonorrhoea cover) + doxycycline 100 mg BD PO × 14 days (chlamydia cover)',
+      ifAllergy:'Ofloxacin 200 mg BD PO × 14 days (gonorrhoea + chlamydia cover if low local resistance)',
+      severe:'Men >35 (enteric organisms likely): ciprofloxacin 500 mg BD PO × 10–14 days OR co-trimoxazole; MSU mandatory before starting',
+      route:'both', review:'Urine NAAT for chlamydia and gonorrhoea (before antibiotics). Refer to GUM clinic. Scrotal ultrasound if abscess or torsion suspected.',
+      notes:'Testicular torsion MUST be excluded urgently — surgical emergency. Contact tracing for STI if confirmed. Sexual abstinence until treatment completed and partner treated. Scrotal support, analgesia, avoid tight clothing. Orchitis with parotitis → consider mumps (notifiable).' },
+
+    { condition:'🫀 Prosthetic Joint Infection (PJI)', severity:'Early (within 3 months of surgery)',
+      firstLine:'Flucloxacillin 2 g QDS IV + rifampicin 600 mg OD PO (biofilm penetration, after organism confirmation)',
+      ifAllergy:'Vancomycin 15–20 mg/kg BD IV + rifampicin 600 mg OD PO',
+      severe:'MRSA or late prosthetic infection: vancomycin ± rifampicin. Duration: 6 weeks IV then switch to oral (depending on organism and surgical plan). Orthopaedics + ID co-management essential.',
+      route:'iv', review:'Three sets of intraoperative tissue samples (NOT swabs) essential before antibiotics. ESR, CRP, WBC. PJI criteria: 2× positive cultures same organism, or 1 positive + elevated synovial fluid WBC. Orthopaedic surgical decision: debridement and retention vs one- or two-stage revision.',
+      notes:'Rifampicin is crucial for biofilm-dwelling organisms (especially S. epidermidis) — never give as monotherapy (rapid resistance). Oral switch (e.g. flucloxacillin + rifampicin or co-trimoxazole + rifampicin) can complete treatment with equivalent outcomes for sensitive organisms under ID guidance.' },
+
+    { condition:'🫁 TB — Standard Treatment (Drug-Sensitive)', severity:'New pulmonary TB, culture pending or confirmed sensitive',
+      firstLine:'2HRZE then 4HR: isoniazid (H) + rifampicin (R) + pyrazinamide (Z) + ethambutol (E) × 2 months, then isoniazid + rifampicin × 4 months',
+      ifAllergy:'Allergy or intolerance: specialist TB service modification — may substitute streptomycin, moxifloxacin',
+      severe:'MDR-TB (resistant to H+R): specialist centre management — prolonged regimens (18–24+ months) with second-line agents (bedaquiline, delamanid, linezolid)',
+      route:'oral', review:'Notify PHE (notifiable disease). DOTT (directly observed therapy) for complex cases. LFTs, U&E, vision before and during treatment. Contact tracing mandatory. Check HIV status in all TB patients.',
+      notes:'Key interactions: rifampicin is a MAJOR enzyme inducer — reduces efficacy of warfarin, DOACs, OCP, phenytoin, many others. Pyrazinamide causes hyperuricaemia (can precipitate gout). Ethambutol → optic neuritis (check monthly visual acuity). Add pyridoxine 10 mg OD (prevention of isoniazid-induced peripheral neuropathy).' },
 ];
 
 /* ── Drug Quiz Question Bank ────────────────────────────────────── */
