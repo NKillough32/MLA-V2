@@ -551,7 +551,10 @@ class PrescribingManager {
     }
 
     _shuffleOpts(correct, distractors) {
-        const options = [correct, ...distractors.slice(0, 3)];
+        // Guard: remove any distractor that equals the correct answer (prevents ambiguous questions)
+        const filtered = distractors.filter(d => d !== correct);
+        const options  = [correct, ...filtered.slice(0, 3)];
+        if (options.length < 4) return { options: null, correctIdx: -1 }; // not enough unique distractors
         for (let i = options.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
             [options[i], options[j]] = [options[j], options[i]];
@@ -578,23 +581,28 @@ class PrescribingManager {
                 const dist    = pool('class', drug);
                 if (dist.length >= 3) {
                     const so = this._shuffleOpts(correct, dist);
-                    q.push({ cat: 'mechanism', dynamic: true,
+                    if (so.options) q.push({ cat: 'mechanism', dynamic: true,
                         q:    `Which drug class does ${drug.name} belong to?`,
                         opts: so.options, ans: so.correctIdx,
                         exp:  drug.mechanism ? `${drug.name}: ${tr(drug.mechanism, 220)}` : `${drug.name} belongs to the ${drug.class} group.` });
                 }
             }
 
-            // T2 – Indication → drug name
+            // T2 – Drug name → correct indication (safe direction: distractors are other drugs' indications)
             if (drug.indication) {
-                const indStr = tr(fi(drug.indication), 65);
-                const dist   = drugs.filter(d => d !== drug && d.name).map(d => d.name).slice(0, 3);
-                if (indStr && dist.length >= 3) {
-                    const so = this._shuffleOpts(drug.name, dist);
-                    q.push({ cat: 'dosing', dynamic: true,
-                        q:    `Which drug is indicated for: "${indStr}"?`,
+                const correct = tr(fi(drug.indication), 75);
+                // Distractors: first indication of OTHER drugs in clearly different therapeutic classes
+                const dist = drugs
+                    .filter(d => d !== drug && d.indication && d.class !== drug.class)
+                    .map(d => tr(fi(d.indication), 75))
+                    .filter((v, i, a) => v && v.length < 85 && v !== correct && a.indexOf(v) === i)
+                    .slice(0, 3);
+                if (correct && dist.length >= 3) {
+                    const so = this._shuffleOpts(correct, dist);
+                    if (so.options) q.push({ cat: 'dosing', dynamic: true,
+                        q:    `Which of the following is a primary indication for ${drug.name}?`,
                         opts: so.options, ans: so.correctIdx,
-                        exp:  drug.clinicalPearls || `${drug.name}: ${drug.indication}` });
+                        exp:  (drug.clinicalPearls ? `${drug.clinicalPearls} — ` : '') + `Indication: ${drug.indication}` });
                 }
             }
 
@@ -604,7 +612,7 @@ class PrescribingManager {
                 const dist    = pool('contraindications', drug);
                 if (correct && correct.length < 90 && dist.length >= 3) {
                     const so = this._shuffleOpts(correct, dist);
-                    q.push({ cat: 'contraindications', dynamic: true,
+                    if (so.options) q.push({ cat: 'contraindications', dynamic: true,
                         q:    `Which is a key contraindication to ${drug.name}?`,
                         opts: so.options, ans: so.correctIdx,
                         exp:  `${drug.name} \u2014 contraindications: ${drug.contraindications}` });
@@ -617,7 +625,7 @@ class PrescribingManager {
                 const dist    = pool('sideEffects', drug);
                 if (correct && correct.length < 90 && dist.length >= 3) {
                     const so = this._shuffleOpts(correct, dist);
-                    q.push({ cat: 'sideeffects', dynamic: true,
+                    if (so.options) q.push({ cat: 'sideeffects', dynamic: true,
                         q:    `Which side effect is most associated with ${drug.name}?`,
                         opts: so.options, ans: so.correctIdx,
                         exp:  `${drug.name} \u2014 side effects: ${drug.sideEffects}` });
@@ -630,7 +638,7 @@ class PrescribingManager {
                 const dist    = pool('monitoring', drug).map(v => tr(v, 80));
                 if (correct && dist.length >= 3) {
                     const so = this._shuffleOpts(correct, dist);
-                    q.push({ cat: 'monitoring', dynamic: true,
+                    if (so.options) q.push({ cat: 'monitoring', dynamic: true,
                         q:    `What is the primary monitoring requirement for ${drug.name}?`,
                         opts: so.options, ans: so.correctIdx,
                         exp:  `${drug.name} \u2014 monitoring: ${drug.monitoring}` });
@@ -643,7 +651,7 @@ class PrescribingManager {
                 const dist    = pool('interactions', drug).map(v => tr(v, 80));
                 if (correct && dist.length >= 3) {
                     const so = this._shuffleOpts(correct, dist);
-                    q.push({ cat: 'interactions', dynamic: true,
+                    if (so.options) q.push({ cat: 'interactions', dynamic: true,
                         q:    `Which is a key interaction to be aware of with ${drug.name}?`,
                         opts: so.options, ans: so.correctIdx,
                         exp:  `${drug.name} \u2014 interactions: ${drug.interactions}` });
