@@ -22,9 +22,13 @@
 class PrescribingManager {
 
     constructor() {
-        this._caseAnswers = {};
-        this._initialized = false;
-        this._quiz = { questions: [], current: 0, score: 0, answered: false, active: false };
+        this._caseAnswers      = {};
+        this._initialized      = false;
+        this._quiz             = { questions: [], current: 0, score: 0, answered: false, active: false };
+        this._drugDataCache    = null;   // fetched drug JSON array
+        this._dynamicQCache    = null;   // generate MCQ objects
+        this._dynamicQCount    = 0;
+        this._quizListenersSet = false;
     }
 
     /* ═══════════════════════════════════════════════════════════════
@@ -319,26 +323,47 @@ class PrescribingManager {
        ═══════════════════════════════════════════════════════════════ */
 
     _initDrugQuiz() {
-        const catSel   = document.getElementById('prxQuizCat');
-        const countSel = document.getElementById('prxQuizCount');
-        const preview  = document.getElementById('prxQuizPreview');
-        if (!catSel || !preview) return;
-        const update = () => {
-            const cat = catSel.value;
-            const pool = cat === 'random' ? DRUG_QUIZ_Q : DRUG_QUIZ_Q.filter(q => q.cat === cat);
-            const maxN = parseInt(countSel.value) || pool.length;
-            const n = Math.min(pool.length, maxN);
-            preview.textContent = `${n} question${n !== 1 ? 's' : ''} available`;
-        };
-        catSel.addEventListener('change', update);
-        countSel.addEventListener('change', update);
-        update();
+        const catSel = document.getElementById('prxQuizCat');
+        if (!catSel) return;
+        // Attach listeners only once — method may be re-called from resetQuiz()
+        if (!this._quizListenersSet) {
+            this._quizListenersSet = true;
+            catSel.addEventListener('change',   () => this._updateQuizPreview());
+            document.getElementById('prxQuizCount').addEventListener('change', () => this._updateQuizPreview());
+        }
+        this._updateQuizPreview();
+        // Eagerly fetch drug data in background so preview updates before Start is clicked
+        if (!this._drugDataCache) {
+            this._fetchDrugData().then(drugs => {
+                this._dynamicQCache = this._generateDynamicQuestions(drugs);
+                this._dynamicQCount = this._dynamicQCache.length;
+                this._updateQuizPreview();
+            }).catch(() => {});
+        }
     }
 
-    startQuiz() {
+    async startQuiz() {
         const cat   = document.getElementById('prxQuizCat').value;
         const count = parseInt(document.getElementById('prxQuizCount').value) || 999;
-        let pool = cat === 'random' ? [...DRUG_QUIZ_Q] : DRUG_QUIZ_Q.filter(q => q.cat === cat);
+
+        // Use cached dynamic questions; if not ready yet, fetch on demand
+        let dynamicQs = this._dynamicQCache;
+        if (!dynamicQs) {
+            const startBtn = document.querySelector('.prx-quiz-start-btn');
+            if (startBtn) { startBtn.disabled = true; startBtn.textContent = '⏳ Loading drug data…'; }
+            try {
+                const drugs  = await this._fetchDrugData();
+                dynamicQs    = this._dynamicQCache = this._generateDynamicQuestions(drugs);
+                this._dynamicQCount = dynamicQs.length;
+            } catch(e) { dynamicQs = []; }
+            const startBtn2 = document.querySelector('.prx-quiz-start-btn');
+            if (startBtn2) { startBtn2.disabled = false; startBtn2.textContent = '▶ Start Quiz'; }
+        }
+
+        // Combine hardcoded + dynamically generated questions, filter by category
+        const allQ = [...DRUG_QUIZ_Q, ...dynamicQs];
+        let pool   = cat === 'random' ? [...allQ] : allQ.filter(q => q.cat === cat);
+
         // Fisher–Yates shuffle
         for (let i = pool.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
@@ -363,7 +388,7 @@ class PrescribingManager {
         document.getElementById('prxQProgress').textContent    = `Question ${q.current + 1} of ${total}`;
         document.getElementById('prxQScoreLive').textContent   = `Score: ${q.score}/${q.current}`;
         document.getElementById('prxQProgressBar').style.width = `${pct}%`;
-        document.getElementById('prxQCatBadge').textContent    = catLabels[qObj.cat] || '🎲 Random';
+        document.getElementById('prxQCatBadge').textContent    = (catLabels[qObj.cat] || '🎲 Random') + (qObj.dynamic ? ' · 🔬 drug DB' : '');
 
         // Question text
         document.getElementById('prxQText').textContent = qObj.q;
@@ -470,6 +495,163 @@ class PrescribingManager {
         document.getElementById('prxQuizPlay').style.display    = 'none';
         document.getElementById('prxQuizSummary').style.display = 'none';
         this._initDrugQuiz();
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       8. DYNAMIC QUESTION GENERATION FROM DRUG JSON FILES
+       ═══════════════════════════════════════════════════════════════ */
+
+    _updateQuizPreview() {
+        const catSel   = document.getElementById('prxQuizCat');
+        const countSel = document.getElementById('prxQuizCount');
+        const preview  = document.getElementById('prxQuizPreview');
+        if (!catSel || !preview) return;
+        const cat  = catSel.value;
+        const allQ = [...DRUG_QUIZ_Q, ...(this._dynamicQCache || [])];
+        const pool = cat === 'random' ? allQ : allQ.filter(q => q.cat === cat);
+        const maxN = parseInt(countSel.value) || pool.length;
+        const n    = Math.min(pool.length, maxN);
+        const extra = this._dynamicQCount
+            ? ` · ${this._dynamicQCount} generated from drug database`
+            : (this._drugDataCache ? '' : ' · drug database loading\u2026');
+        preview.textContent = `${n} question${n !== 1 ? 's' : ''} available${extra}`;
+    }
+
+    async _fetchDrugData() {
+        if (this._drugDataCache) return this._drugDataCache;
+        const results = await Promise.allSettled(
+            HIGH_YIELD_DRUG_IDS.map(id =>
+                fetch(`/static/drugs/${id}.json`)
+                    .then(r => r.ok ? r.json() : null)
+                    .catch(() => null)
+            )
+        );
+        this._drugDataCache = results
+            .map(r => r.status === 'fulfilled' ? r.value : null)
+            .filter(Boolean);
+        return this._drugDataCache;
+    }
+
+    _firstItem(s) {
+        if (!s) return null;
+        let depth = 0;
+        for (let i = 0; i < s.length; i++) {
+            if      (s[i] === '(') depth++;
+            else if (s[i] === ')') depth--;
+            else if (s[i] === ',' && depth === 0) return s.slice(0, i).trim();
+        }
+        return s.trim();
+    }
+
+    _truncate(s, n = 78) {
+        if (!s || s.length <= n) return s;
+        const cut = s.slice(0, n);
+        const sp  = cut.lastIndexOf(' ');
+        return (sp > 30 ? cut.slice(0, sp) : cut) + '\u2026';
+    }
+
+    _shuffleOpts(correct, distractors) {
+        const options = [correct, ...distractors.slice(0, 3)];
+        for (let i = options.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [options[i], options[j]] = [options[j], options[i]];
+        }
+        return { options, correctIdx: options.indexOf(correct) };
+    }
+
+    _generateDynamicQuestions(drugs) {
+        const q   = [];
+        const fi  = s => this._firstItem(s);
+        const tr  = (s, n) => this._truncate(s, n);
+        const pool = (field, drug, limit = 12) =>
+            drugs.filter(d => d !== drug && d[field])
+                 .map(d => tr(fi(d[field])))
+                 .filter((v, i, a) => v && v.length < 90 && a.indexOf(v) === i)
+                 .slice(0, limit);
+
+        drugs.forEach(drug => {
+            if (!drug || !drug.name) return;
+
+            // T1 – Drug class
+            if (drug.class) {
+                const correct = tr(drug.class);
+                const dist    = pool('class', drug);
+                if (dist.length >= 3) {
+                    const so = this._shuffleOpts(correct, dist);
+                    q.push({ cat: 'mechanism', dynamic: true,
+                        q:    `Which drug class does ${drug.name} belong to?`,
+                        opts: so.options, ans: so.correctIdx,
+                        exp:  drug.mechanism ? `${drug.name}: ${tr(drug.mechanism, 220)}` : `${drug.name} belongs to the ${drug.class} group.` });
+                }
+            }
+
+            // T2 – Indication → drug name
+            if (drug.indication) {
+                const indStr = tr(fi(drug.indication), 65);
+                const dist   = drugs.filter(d => d !== drug && d.name).map(d => d.name).slice(0, 3);
+                if (indStr && dist.length >= 3) {
+                    const so = this._shuffleOpts(drug.name, dist);
+                    q.push({ cat: 'dosing', dynamic: true,
+                        q:    `Which drug is indicated for: "${indStr}"?`,
+                        opts: so.options, ans: so.correctIdx,
+                        exp:  drug.clinicalPearls || `${drug.name}: ${drug.indication}` });
+                }
+            }
+
+            // T3 – Contraindication
+            if (drug.contraindications) {
+                const correct = tr(fi(drug.contraindications));
+                const dist    = pool('contraindications', drug);
+                if (correct && correct.length < 90 && dist.length >= 3) {
+                    const so = this._shuffleOpts(correct, dist);
+                    q.push({ cat: 'contraindications', dynamic: true,
+                        q:    `Which is a key contraindication to ${drug.name}?`,
+                        opts: so.options, ans: so.correctIdx,
+                        exp:  `${drug.name} \u2014 contraindications: ${drug.contraindications}` });
+                }
+            }
+
+            // T4 – Side effect
+            if (drug.sideEffects) {
+                const correct = tr(fi(drug.sideEffects));
+                const dist    = pool('sideEffects', drug);
+                if (correct && correct.length < 90 && dist.length >= 3) {
+                    const so = this._shuffleOpts(correct, dist);
+                    q.push({ cat: 'sideeffects', dynamic: true,
+                        q:    `Which side effect is most associated with ${drug.name}?`,
+                        opts: so.options, ans: so.correctIdx,
+                        exp:  `${drug.name} \u2014 side effects: ${drug.sideEffects}` });
+                }
+            }
+
+            // T5 – Monitoring
+            if (drug.monitoring) {
+                const correct = tr(fi(drug.monitoring), 80);
+                const dist    = pool('monitoring', drug).map(v => tr(v, 80));
+                if (correct && dist.length >= 3) {
+                    const so = this._shuffleOpts(correct, dist);
+                    q.push({ cat: 'monitoring', dynamic: true,
+                        q:    `What is the primary monitoring requirement for ${drug.name}?`,
+                        opts: so.options, ans: so.correctIdx,
+                        exp:  `${drug.name} \u2014 monitoring: ${drug.monitoring}` });
+                }
+            }
+
+            // T6 – Drug interaction
+            if (drug.interactions) {
+                const correct = tr(fi(drug.interactions), 80);
+                const dist    = pool('interactions', drug).map(v => tr(v, 80));
+                if (correct && dist.length >= 3) {
+                    const so = this._shuffleOpts(correct, dist);
+                    q.push({ cat: 'interactions', dynamic: true,
+                        q:    `Which is a key interaction to be aware of with ${drug.name}?`,
+                        opts: so.options, ans: so.correctIdx,
+                        exp:  `${drug.name} \u2014 interactions: ${drug.interactions}` });
+                }
+            }
+        });
+
+        return q;
     }
 
     /* ═══════════════════════════════════════════════════════════════
@@ -1820,6 +2002,38 @@ const DRUG_QUIZ_Q = [
     { cat:'monitoring', q:'Methotrexate: how often should FBC, LFTs and U&E be checked once stable on maintenance therapy?',
       opts:['Weekly indefinitely','Every 2 weeks for 3 months, then every 3 months','Annually only','Every 6 months'], ans:1,
       exp:'Methotrexate monitoring frequency: every 2 weeks for first 3 months (highest risk period), then every 3 months when stable. More frequently if dose changed or if blood results abnormal. Prescriber must record monitoring before issuing prescription.' },
+];
+
+/* ── High-yield drug IDs loaded at quiz start ───────────────────── */
+const HIGH_YIELD_DRUG_IDS = [
+    /* Cardiovascular + rate control */
+    'ramipril','lisinopril','enalapril','losartan','candesartan',
+    'bisoprolol','atenolol','carvedilol',
+    'amlodipine','diltiazem','verapamil',
+    'furosemide','spironolactone','bendroflumethiazide',
+    'digoxin','amiodarone',
+    /* Anticoagulation + antiplatelet */
+    'warfarin','apixaban','rivaroxaban','enoxaparin',
+    'clopidogrel','ticagrelor','aspirin',
+    /* Diabetes & metabolism */
+    'metformin','gliclazide','sitagliptin','empagliflozin','dapagliflozin','semaglutide',
+    /* Antibiotics */
+    'amoxicillin','flucloxacillin','trimethoprim','nitrofurantoin',
+    'co-amoxiclav','doxycycline','metronidazole','ciprofloxacin',
+    /* Statins & GI */
+    'atorvastatin','simvastatin','omeprazole','lansoprazole',
+    /* Thyroid, steroids, bone */
+    'levothyroxine','carbimazole','prednisolone','dexamethasone','hydrocortisone',
+    /* Analgesia */
+    'morphine','paracetamol','ibuprofen','naproxen',
+    /* CNS & psychiatry */
+    'lithium','clozapine',
+    'sodium-valproate','carbamazepine','levetiracetam','lamotrigine','phenytoin',
+    'lorazepam','naloxone',
+    /* Respiratory */
+    'salbutamol','theophylline',
+    /* Specialist / monitoring-heavy */
+    'methotrexate','azathioprine','gentamicin','vancomycin',
 ];
 
 /* ── Singleton export ─────────────────────────────────────────────── */
