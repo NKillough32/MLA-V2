@@ -90,6 +90,7 @@ class MLAQuizApp {
         this.questionHighlights = {};
         this.screenHistory = [];
         this.currentScreen = null;
+        this.prescribingSafetyQuiz = { questions: [], currentIndex: 0, score: 0, answered: false };
         this.setupEventListeners();
     }
 
@@ -1135,6 +1136,7 @@ class MLAQuizApp {
             'pdf-library': 'pdf-library-panel',
             'contraception-hrt': 'contraception-hrt-panel',
             'med-stats-ethics': 'med-stats-ethics-panel',
+            'prescribing-safety': 'prescribing-safety-panel',
             'clinical-pearls': 'clinical-pearls-panel',
             'psychiatry': 'psychiatry-panel',
             'ophthalmology': 'ophthalmology-panel'
@@ -1223,6 +1225,9 @@ class MLAQuizApp {
                 break;
             case 'med-stats-ethics':
                 this.loadMedStatsEthicsContent(panel);
+                break;
+            case 'prescribing-safety':
+                this.loadPrescribingSafetyContent(panel);
                 break;
             case 'clinical-pearls':
                 this.loadClinicalPearlsContent(panel);
@@ -3247,6 +3252,195 @@ class MLAQuizApp {
             this.medStatsEthicsManager.render(panel);
         } else {
             container.innerHTML = '<div class="no-content">Medical statistics module unavailable</div>';
+        }
+    }
+
+
+    /**
+     * Standalone prescribing safety section with lightweight drug-powered quiz
+     */
+    async loadPrescribingSafetyContent(panel) {
+        if (!panel) {
+            console.error('loadPrescribingSafetyContent: panel is null');
+            return;
+        }
+
+        const container = panel.querySelector('#prescribing-safety-container') || panel;
+        if (!container) {
+            console.error('loadPrescribingSafetyContent: container not found');
+            return;
+        }
+
+        container.innerHTML = `
+            <div class="med-knowledge-card">
+                <h3>🛡️ Prescribing Safety Assessment (PSA)</h3>
+                <p style="margin-top: 6px; color: var(--text-secondary);">Standalone PSA revision hub + quiz items generated from the live drug database.</p>
+                <div class="med-knowledge-card-content">
+                    <div class="med-knowledge-subsection"><strong>PWS</strong>: Write complete, safe prescriptions (dose/route/frequency/documentation).</div>
+                    <div class="med-knowledge-subsection"><strong>REV</strong>: Detect chart errors (dose, interactions, contraindications, omissions).</div>
+                    <div class="med-knowledge-subsection"><strong>MAN</strong>: Choose evidence-based therapy and review/escalation plans.</div>
+                    <div class="med-knowledge-subsection"><strong>COM</strong>: Counsel clearly on benefits, side effects, and safety-netting.</div>
+                    <div class="med-knowledge-subsection"><strong>CAL</strong>: Perform accurate dosage and infusion calculations with unit checks.</div>
+                    <div class="med-knowledge-subsection"><strong>ADR</strong>: Recognise culprit drugs and manage adverse reactions promptly.</div>
+                    <div class="med-knowledge-subsection"><strong>TDM</strong>: Select baseline/follow-up labs and therapeutic monitoring thresholds.</div>
+                    <div class="med-knowledge-subsection"><strong>DAT</strong>: Convert clinical data into clear medication actions.</div>
+                </div>
+            </div>
+            <div class="med-knowledge-card" style="margin-top: 12px;">
+                <h3>🎯 Drug-linked Prescribing Safety Quiz</h3>
+                <p style="margin-top: 6px; color: var(--text-secondary);">Questions are built from drugs in the Drug Reference dataset (e.g. monitoring, contraindications, side effects, counselling points).</p>
+                <div id="prescribing-safety-quiz-area"><div class="loading-message">Generating quiz...</div></div>
+            </div>
+        `;
+
+        const quizArea = container.querySelector('#prescribing-safety-quiz-area');
+        try {
+            const drugs = await this.drugManager.getDrugsByCategory('alphabetical');
+            this.prescribingSafetyQuiz.questions = this.buildPrescribingSafetyQuestions(drugs).slice(0, 8);
+            this.prescribingSafetyQuiz.currentIndex = 0;
+            this.prescribingSafetyQuiz.score = 0;
+            this.prescribingSafetyQuiz.answered = false;
+            this.renderPrescribingSafetyQuestion(quizArea);
+        } catch (error) {
+            console.error('Failed to generate prescribing safety quiz', error);
+            if (quizArea) {
+                quizArea.innerHTML = '<div class="no-content">Unable to build quiz from drug data. Please retry.</div>';
+            }
+        }
+    }
+
+    buildPrescribingSafetyQuestions(drugs = []) {
+        const prompts = [
+            { field: 'contraindications', label: 'contraindication' },
+            { field: 'sideEffects', label: 'common adverse effect' },
+            { field: 'monitoring', label: 'monitoring requirement' },
+            { field: 'therapeuticDrugMonitoring', label: 'therapeutic drug monitoring point' },
+            { field: 'patientAdvice', label: 'patient counselling point' }
+        ];
+
+        const getSnippet = (drug, field) => {
+            const raw = (drug && drug[field]) ? String(drug[field]) : '';
+            if (!raw.trim()) return '';
+            return raw.replace(/\s+/g, ' ').split(/[.;\n]/)[0].trim();
+        };
+
+        const candidates = drugs.filter(drug => prompts.some(p => getSnippet(drug, p.field).length > 15));
+        const questions = [];
+
+        for (const drug of candidates) {
+            const availablePrompts = prompts.filter(p => getSnippet(drug, p.field).length > 15);
+            if (!availablePrompts.length) continue;
+            const prompt = availablePrompts[Math.floor(Math.random() * availablePrompts.length)];
+            const correct = getSnippet(drug, prompt.field);
+            if (!correct) continue;
+
+            const distractors = candidates
+                .filter(d => d.name !== drug.name)
+                .map(d => getSnippet(d, prompt.field))
+                .filter(x => x && x !== correct)
+                .slice(0, 30);
+
+            if (distractors.length < 3) continue;
+
+            const options = [correct];
+            while (options.length < 4 && distractors.length) {
+                const idx = Math.floor(Math.random() * distractors.length);
+                const choice = distractors.splice(idx, 1)[0];
+                if (!options.includes(choice)) options.push(choice);
+            }
+            if (options.length < 4) continue;
+
+            options.sort(() => Math.random() - 0.5);
+            questions.push({
+                stem: `For ${drug.name}, which option best matches a key ${prompt.label}?`,
+                options,
+                answer: correct,
+                explanation: `${drug.name}: ${correct}`
+            });
+        }
+
+        return questions.sort(() => Math.random() - 0.5);
+    }
+
+    renderPrescribingSafetyQuestion(quizArea) {
+        if (!quizArea) return;
+        const quiz = this.prescribingSafetyQuiz;
+
+        if (!quiz.questions.length) {
+            quizArea.innerHTML = '<div class="no-content">Not enough drug metadata to generate quiz questions yet.</div>';
+            return;
+        }
+
+        if (quiz.currentIndex >= quiz.questions.length) {
+            quizArea.innerHTML = `
+                <div class="med-knowledge-subsection">
+                    <h4 style="margin: 0 0 8px 0;">✅ Quiz complete</h4>
+                    <p style="margin: 0 0 10px 0;">Score: <strong>${quiz.score}/${quiz.questions.length}</strong></p>
+                    <button class="btn btn-secondary" id="restart-prescribing-safety-quiz">Restart quiz</button>
+                </div>
+            `;
+            const restartBtn = quizArea.querySelector('#restart-prescribing-safety-quiz');
+            if (restartBtn) {
+                restartBtn.addEventListener('click', () => {
+                    quiz.currentIndex = 0;
+                    quiz.score = 0;
+                    quiz.answered = false;
+                    quiz.questions.sort(() => Math.random() - 0.5);
+                    this.renderPrescribingSafetyQuestion(quizArea);
+                });
+            }
+            return;
+        }
+
+        const q = quiz.questions[quiz.currentIndex];
+        quiz.answered = false;
+
+        quizArea.innerHTML = `
+            <div class="med-knowledge-subsection">
+                <p style="margin: 0 0 8px 0; color: var(--text-secondary);">Question ${quiz.currentIndex + 1} of ${quiz.questions.length}</p>
+                <h4 style="margin: 0 0 10px 0;">${q.stem}</h4>
+                <div id="prescribing-safety-options" style="display: grid; gap: 8px;">
+                    ${q.options.map((opt, index) => `<button class="btn btn-secondary psa-option" data-index="${index}" style="text-align: left;">${opt}</button>`).join('')}
+                </div>
+                <div id="prescribing-safety-feedback" style="margin-top: 10px;"></div>
+                <button id="prescribing-safety-next" class="btn" style="margin-top: 10px; display: none;">Next</button>
+            </div>
+        `;
+
+        const optionButtons = quizArea.querySelectorAll('.psa-option');
+        const feedback = quizArea.querySelector('#prescribing-safety-feedback');
+        const nextBtn = quizArea.querySelector('#prescribing-safety-next');
+
+        optionButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                if (quiz.answered) return;
+                quiz.answered = true;
+                const selected = q.options[Number(btn.dataset.index)];
+                const correct = selected === q.answer;
+                if (correct) quiz.score += 1;
+
+                optionButtons.forEach(ob => {
+                    const text = q.options[Number(ob.dataset.index)];
+                    ob.disabled = true;
+                    if (text === q.answer) {
+                        ob.style.border = '2px solid #22c55e';
+                    } else if (ob === btn) {
+                        ob.style.border = '2px solid #ef4444';
+                    }
+                });
+
+                if (feedback) {
+                    feedback.innerHTML = `<p style="margin: 0; color: ${correct ? '#16a34a' : '#dc2626'};">${correct ? 'Correct' : 'Not quite'}.</p><p style="margin: 6px 0 0 0; color: var(--text-secondary);">${q.explanation}</p>`;
+                }
+                if (nextBtn) nextBtn.style.display = 'inline-flex';
+            });
+        });
+
+        if (nextBtn) {
+            nextBtn.addEventListener('click', () => {
+                quiz.currentIndex += 1;
+                this.renderPrescribingSafetyQuestion(quizArea);
+            });
         }
     }
 
