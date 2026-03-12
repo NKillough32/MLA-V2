@@ -1462,7 +1462,8 @@ export class PregnancyDrugsManager {
         `;
 
         const fullHtml = searchHtml + sectionHtml + clinicalPearlsHtml + resourcesHtml;
-        SecurityUtils.setInnerHTML(container, fullHtml);
+        // Content here is authored in-code and does not include user-provided HTML.
+        SecurityUtils.setInnerHTML(container, fullHtml, true);
         this.setupEventListeners();
     }
 
