@@ -3274,7 +3274,7 @@ class MLAQuizApp {
         container.innerHTML = `
             <div class="med-knowledge-card">
                 <h3>🛡️ Prescribing Safety Assessment (PSA)</h3>
-                <p style="margin-top: 6px; color: var(--text-secondary);">Standalone PSA revision hub + quiz items generated from the live drug database.</p>
+                <p style="margin-top: 6px; color: var(--text-secondary);">Guide to the PSA and preparation resources (SGUL academic teaching summary) + quiz items generated from the live drug database.</p>
                 <div class="med-knowledge-card-content">
                     <div class="med-knowledge-subsection"><strong>PWS</strong>: Write complete, safe prescriptions (dose/route/frequency/documentation).</div>
                     <div class="med-knowledge-subsection"><strong>REV</strong>: Detect chart errors (dose, interactions, contraindications, omissions).</div>
@@ -3287,6 +3287,26 @@ class MLAQuizApp {
                 </div>
             </div>
             <div class="med-knowledge-card" style="margin-top: 12px;">
+                <h3>⏱️ Exam Strategy: Time Pressure, Priorities, and Flow</h3>
+                <div class="med-knowledge-card-content">
+                    <div class="med-knowledge-subsection"><strong>Time pressure is central:</strong> Plan your paper strategy before the exam and practise platform navigation so every click is deliberate.</div>
+                    <div class="med-knowledge-subsection"><strong>Use the BNF selectively:</strong> There is not enough time to look up every item. Reserve BNF checks for high-impact uncertainty, contraindications, or close differentials.</div>
+                    <div class="med-knowledge-subsection"><strong>Protect PWS marks first:</strong> PWS questions are the largest mark source and high-stakes per item, so prioritise them early and avoid avoidable drug-choice errors.</div>
+                    <div class="med-knowledge-subsection"><strong>Avoid diminishing returns:</strong> In lower-value items, set a mental time limit and move on when additional searching is unlikely to change your answer.</div>
+                </div>
+            </div>
+            <div class="med-knowledge-card" style="margin-top: 12px;">
+                <h3>🧩 SGUL PWS Framework (6-Step Approach)</h3>
+                <div class="med-knowledge-card-content">
+                    <div class="med-knowledge-subsection"><strong>1) Distil the task:</strong> Reduce the prescribing request to a simple, explicit objective.</div>
+                    <div class="med-knowledge-subsection"><strong>2) Identify guidance sources:</strong> Use BNF in-exam; use local/national guidance for preparation outside the exam.</div>
+                    <div class="med-knowledge-subsection"><strong>3) Define constraints:</strong> Severity, renal/hepatic function, age/weight extremes, pregnancy/breastfeeding, and comorbidity.</div>
+                    <div class="med-knowledge-subsection"><strong>4) Choose best drug + formulation:</strong> Generate candidates, then pick the safest/effective option for this patient.</div>
+                    <div class="med-knowledge-subsection"><strong>5) Set dose + route:</strong> Match dose, route, and frequency to indication and patient factors.</div>
+                    <div class="med-knowledge-subsection"><strong>6) Final compatibility check:</strong> Confirm formulation strength is compatible with your chosen dose/route and complete all prescription fields.</div>
+                </div>
+            </div>
+            <div class="med-knowledge-card" style="margin-top: 12px;">
                 <h3>📋 Core Prescribing Safety Checklist</h3>
                 <div class="med-knowledge-card-content">
                     <div class="med-knowledge-subsection"><strong>Before prescribing</strong>: Confirm patient ID, allergies, weight, pregnancy status, renal/hepatic function, and an accurate medicines reconciliation (including OTC/herbals).</div>
@@ -3294,6 +3314,26 @@ class MLAQuizApp {
                     <div class="med-knowledge-subsection"><strong>Interaction and contraindication screen</strong>: Check QT prolongation risk, serotonergic burden, CNS depressant combinations, anticoagulant interactions, and duplicate therapeutic classes.</div>
                     <div class="med-knowledge-subsection"><strong>Monitoring and follow-up</strong>: Document baseline bloods/ECG where required, expected response timeline, toxicity red flags, and exact review owner/timeframe.</div>
                     <div class="med-knowledge-subsection"><strong>Communication</strong>: Explain purpose, dose schedule, common/serious adverse effects, driving/alcohol advice, and when to seek urgent care.</div>
+                </div>
+            </div>
+            <div class="med-knowledge-card" style="margin-top: 12px;">
+                <h3>🔎 Section-Specific PSA Tips</h3>
+                <div class="med-knowledge-card-content">
+                    <div class="med-knowledge-subsection"><strong>REV:</strong> Prioritise dose errors, interactions, and contraindications (especially renal/liver impairment, pregnancy, seizures, Parkinson's).</div>
+                    <div class="med-knowledge-subsection"><strong>MAN:</strong> Pick the best overall strategy for this patient; non-drug options can be correct.</div>
+                    <div class="med-knowledge-subsection"><strong>ADR:</strong> Focus on high-risk areas (anticoagulants, antibiotics, opioids, infusions, insulin) and use BNF frequency bands strategically.</div>
+                    <div class="med-knowledge-subsection"><strong>CAL:</strong> Most items are multi-step but self-contained; if you are searching BNF for CAL, you are usually on the wrong path.</div>
+                    <div class="med-knowledge-subsection"><strong>TDM/DAT:</strong> Identify the monitoring purpose and timeframe, then map data to a clear action (start/stop/increase/decrease/maintain).</div>
+                    <div class="med-knowledge-subsection"><strong>COM:</strong> Choose the most important counselling point for safety and outcomes, not just a statement that is technically true.</div>
+                </div>
+            </div>
+            <div class="med-knowledge-card" style="margin-top: 12px;">
+                <h3>📚 Suggested Resources for Preparation</h3>
+                <div class="med-knowledge-card-content">
+                    <div class="med-knowledge-subsection">PSA official website and candidate guidance for format, rules, and platform familiarisation.</div>
+                    <div class="med-knowledge-subsection">BNF treatment summaries and key monographs for high-risk drugs, interactions, contraindications, and monitoring.</div>
+                    <div class="med-knowledge-subsection">SGUL teaching materials and local prescribing guidance for targeted pre-exam practice in PWS/CAL/ADR domains.</div>
+                    <div class="med-knowledge-subsection">Timed practice sets to rehearse triage decisions, BNF selectivity, and rapid navigation under realistic exam constraints.</div>
                 </div>
             </div>
             <div class="med-knowledge-card" style="margin-top: 12px;">
