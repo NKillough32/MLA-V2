@@ -372,7 +372,7 @@ class PrescribingManager {
             [pool[i], pool[j]] = [pool[j], pool[i]];
         }
         pool = pool.slice(0, Math.min(pool.length, count));
-        this._quiz = { questions: pool, current: 0, score: 0, answered: false, active: true };
+        this._quiz = { questions: pool, current: 0, score: 0, answered: false, active: true, results: [] };
         document.getElementById('prxQuizSetup').style.display   = 'none';
         document.getElementById('prxQuizPlay').style.display    = 'block';
         document.getElementById('prxQuizSummary').style.display = 'none';
