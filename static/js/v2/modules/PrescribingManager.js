@@ -40,6 +40,7 @@ class PrescribingManager {
     async initialize() {
         if (this._initialized) return;
         this._initSubNavTabs();
+        this._initDrugAutocomplete();
         this._renderCases();
         this._buildQuickCards();
         this._buildAbxGrid();
@@ -75,6 +76,53 @@ class PrescribingManager {
                 if (target) target.classList.add('active');
             });
         });
+    }
+
+    _initDrugAutocomplete() {
+        const seeds = [
+            'aspirin', 'furosemide', 'amoxicillin', 'trimethoprim', 'nitrofurantoin', 'bisoprolol',
+            'apixaban', 'rivaroxaban', 'ibuprofen', 'adrenaline', 'lorazepam', 'insulin',
+            'sodium chloride 0.9%', 'glyceryl trinitrate', 'salbutamol', 'prednisolone',
+            'ceftriaxone', 'flucloxacillin', 'vancomycin', 'gentamicin', 'metformin', 'warfarin'
+        ];
+
+        const knownDrugs = [
+            ...seeds,
+            ...INTERACTIONS.flatMap(int => int.drugs || []),
+            ...DOSE_TABLE.map(d => d.drug),
+            ...ABX_DATA.flatMap(item => (item.regimens || []).flatMap(reg => reg.drugs || []))
+        ];
+
+        const uniqueSorted = [...new Set(
+            knownDrugs
+                .flatMap(d => String(d || '').split('/'))
+                .map(d => d.trim())
+                .filter(Boolean)
+        )].sort((a, b) => a.localeCompare(b));
+
+        this._bindDrugDatalist('prxDrug', 'prxDrugList', uniqueSorted);
+        this._bindDrugDatalist('prxIntDrugA', 'prxIntListA', uniqueSorted);
+        this._bindDrugDatalist('prxIntDrugB', 'prxIntListB', uniqueSorted);
+        this._bindDrugDatalist('prxIntDrugC', 'prxIntListC', uniqueSorted);
+    }
+
+    _bindDrugDatalist(inputId, listId, drugs) {
+        const input = document.getElementById(inputId);
+        const list = document.getElementById(listId);
+        if (!input || !list || !Array.isArray(drugs) || !drugs.length) return;
+
+        const render = (query = '') => {
+            const term = query.trim().toLowerCase();
+            const matches = drugs
+                .filter(drug => !term || drug.toLowerCase().includes(term))
+                .slice(0, 12);
+
+            list.innerHTML = matches.map(drug => `<option value="${drug}"></option>`).join('');
+        };
+
+        input.addEventListener('focus', () => render(input.value));
+        input.addEventListener('input', () => render(input.value));
+        render('');
     }
 
     /* ═══════════════════════════════════════════════════════════════
