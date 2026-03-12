@@ -5095,12 +5095,15 @@ class MLAQuizApp {
     }
 
     /**
-     * Keep floating controls off the quiz selection screen so they do not
-     * overlap uploaded quiz entries on smaller/mobile viewports (notably iOS Safari).
+     * Control floating tools visibility by screen.
+     *
+     * These actions should remain available on app start (quiz selection),
+     * so we only hide them on explicitly blocked screens.
      */
     updateFloatingActionButtonsVisibility(activeScreenId = null) {
         const screenId = activeScreenId || this.getActiveScreenId();
-        const shouldHide = screenId === 'quizSelection';
+        const screensThatHideFloatingTools = new Set([]);
+        const shouldHide = screensThatHideFloatingTools.has(screenId);
 
         const floatingElements = [
             document.getElementById('floating-pdf-btn'),
