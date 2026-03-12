@@ -3276,6 +3276,15 @@ class MLAQuizApp {
             return;
         }
 
+        // If the panel already contains PrescribingManager content (prx-subnav),
+        // delegate to the module and return — do not overwrite with the old quiz.
+        if (panel.querySelector('.prx-subnav')) {
+            if (this.prescribingManager) {
+                await this.prescribingManager.initialize();
+            }
+            return;
+        }
+
         const container = panel.querySelector('#prescribing-safety-container') || panel;
         if (!container) {
             console.error('loadPrescribingSafetyContent: container not found');
