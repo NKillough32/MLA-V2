@@ -551,6 +551,214 @@ const SIM_SCENARIOS = {
             { test: (d, dose, route, freq) => /stat|once/i.test(freq),
               fail: 'STAT dose; repeat in 5 min if ECG persists. Then give insulin-dextrose (10 units actrapid + 50 mL 50% glucose IV) to shift K⁺ intracellularly.', type: 'warn' },
         ]
+    },
+    opioid_toxicity: {
+        text: '34-year-old man, found unresponsive at home. RR 4/min, pinpoint pupils, cyanotic, SpO₂ 74% on air. Empty heroin packaging nearby. GCS 4.',
+        checks: [
+            { test: d => /naloxone|narcan/i.test(d),
+              fail: 'Naloxone is the specific opioid reversal agent. Give IM/IV/intranasal immediately for suspected opioid toxicity — airway and breathing take priority first.', type: 'error' },
+            { test: (d, dose) => parseFloat(dose) === 400 || parseFloat(dose) === 0.4,
+              fail: 'Standard adult naloxone dose: 400 micrograms (0.4 mg) IV or IM. Can repeat every 2–3 min up to 10 mg. Intranasal: 2 mg per nostril if no IV access.', type: 'error' },
+            { test: (d, dose, route) => /iv|im|intramuscular|intravenous|intranasal/i.test(route),
+              fail: 'IV is fastest onset. IM acceptable if no IV access. Intranasal is an alternative for community use. Do not use oral route in emergency.', type: 'error' },
+            { test: (d, dose, route, freq) => /stat|once/i.test(freq),
+              fail: 'STAT — repeated every 2–3 min until RR >12 and SpO₂ improving. Half-life of naloxone is shorter than most opioids: patient may re-narcotise after 30–90 min — continuous monitoring essential.', type: 'warn' },
+        ]
+    },
+    svt: {
+        text: '26-year-old woman, palpitations 45 min, HR 188 bpm on ECG showing regular narrow-complex tachycardia consistent with SVT. BP 118/76. Vagal manoeuvres attempted twice — no response.',
+        checks: [
+            { test: d => /adenosine/i.test(d),
+              fail: 'Adenosine is first-line pharmacological treatment for SVT after failed vagal manoeuvres. Given as rapid IV bolus into a large peripheral vein (antecubital fossa).', type: 'error' },
+            { test: (d, dose) => parseFloat(dose) === 6,
+              fail: 'Adenosine: 6 mg IV rapid bolus, followed by fast 20 mL saline flush. If unsuccessful after 1–2 min: repeat 12 mg IV. Can repeat 12 mg a second time if SVT persists.', type: 'error' },
+            { test: (d, dose, route) => /iv|intravenous/i.test(route),
+              fail: 'Must be given IV as a RAPID bolus — followed immediately by 20 mL fast saline flush. Slow administration renders it ineffective as it is metabolised before reaching the heart.', type: 'error' },
+            { test: d => !/verapamil/i.test(d),
+              fail: 'Verapamil IV should NOT be given to a patient who has received IV beta-blockers (risk of complete heart block). Also contraindicated in known WPW syndrome — choose adenosine for broad safety.', type: 'warn' },
+        ]
+    },
+    hypoglycaemia: {
+        text: '67-year-old man with T2DM on insulin glargine + metformin. Found confused with BM 1.8 mmol/L. Unable to swallow safely. IV access obtained.',
+        checks: [
+            { test: d => /glucose|dextrose/i.test(d),
+              fail: 'IV glucose (10% glucose 200 mL over 15 min, or 50 mL of 50% glucose) is first-line when the patient cannot swallow. 10% glucose is preferred over 50% glucose to reduce vein damage.', type: 'error' },
+            { test: (d, dose) => {
+                if (/50.*glucose|glucose.*50/i.test(d) || parseFloat(dose) === 50) return parseFloat(dose) <= 50;
+                if (/10.*glucose|glucose.*10/i.test(d) || parseFloat(dose) === 200) return true;
+                return parseFloat(dose) >= 50 && parseFloat(dose) <= 200;
+              }, fail: 'IV glucose: 150–200 mL of 10% glucose IV OR 50 mL of 50% dextrose IV (50% is hypertonic — flush line, use large vein). Recheck BM at 10–15 min.', type: 'warn' },
+            { test: (d, dose, route) => /iv|intravenous/i.test(route),
+              fail: 'Patient cannot swallow safely — IV route required. If no IV access: glucagon 1 mg IM (raises BG within 10 min; less reliable if glycogen stores depleted, e.g. alcohol excess).', type: 'error' },
+            { test: d => !/insulin/i.test(d),
+              fail: 'Do NOT give further insulin while the patient is hypoglycaemic. Review and adjust the insulin regimen to prevent recurrence once BG is corrected.', type: 'warn' },
+        ]
+    },
+    addisonian_crisis: {
+        text: '41-year-old woman with known Addison\'s disease, N&V for 3 days unable to take oral prednisolone, now drowsy, BP 72/44, Na⁺ 128, K⁺ 5.6, glucose 2.9. This is an adrenal crisis.',
+        checks: [
+            { test: d => /hydrocortisone/i.test(d),
+              fail: 'Hydrocortisone 100 mg IV/IM STAT is the life-saving treatment for adrenal crisis. Must be given before any investigation delays — do not wait for serum cortisol results if clinical diagnosis is made.', type: 'error' },
+            { test: (d, dose) => parseFloat(dose) === 100,
+              fail: 'Hydrocortisone 100 mg IV or IM STAT, then 50–100 mg QDS or as continuous infusion for 24h. Oral replacement only when patient is eating, drinking, and clinically stable.', type: 'error' },
+            { test: (d, dose, route) => /iv|im|intravenous|intramuscular/i.test(route),
+              fail: 'IV or IM route essential — patient is vomiting and haemodynamically compromised. Oral hydrocortisone absorption is too slow and unreliable in crisis.', type: 'error' },
+            { test: d => /sodium.chloride|0\.9.*nacl|normal.saline|saline/i.test(d),
+              fail: 'Simultaneous IV fluid resuscitation with 0.9% sodium chloride is essential — typically 1L over 30–60 min initially. The patient has hyponatraemia, hypotension, and volume depletion.', type: 'warn' },
+        ]
+    },
+    eclampsia: {
+        text: '32-year-old woman, 36 weeks pregnant, generalised tonic-clonic seizure now controlled. BP 178/116 mmHg. Proteinuria +++. No prior history of epilepsy. Diagnosis: eclampsia.',
+        checks: [
+            { test: d => /magnesium.sulphate|magnesium.sulfate|magnesium/i.test(d),
+              fail: 'Magnesium sulphate is the drug of choice for seizure prevention and treatment in eclampsia — superior to diazepam or phenytoin. Loading dose: 4 g IV over 5–10 min.', type: 'error' },
+            { test: (d, dose) => parseFloat(dose) === 4,
+              fail: 'MgSO4 loading dose: 4 g IV over 5–10 min, then maintenance infusion 1 g/h for 24h. Monitor reflexes (loss of patellar reflex = early toxicity), RR>16, UO >25 mL/h. Antidote: calcium gluconate 10 mL 10% IV.', type: 'error' },
+            { test: (d, dose, route) => /iv/i.test(route),
+              fail: 'IV route required for magnesium sulphate loading dose. Maintenance is IV infusion. Ensure hourly monitoring of reflexes and respiratory rate during infusion.', type: 'error' },
+            { test: d => /labetalol|hydralazine|nifedipine/i.test(d),
+              fail: 'Antihypertensive treatment is also required: IV labetalol or hydralazine (oral nifedipine modified-release is an alternative) to maintain BP <150/100 mmHg and reduce stroke risk. Urgent obstetric review for delivery planning.', type: 'warn' },
+        ]
+    },
+    delirium_tremens: {
+        text: '48-year-old man, admitted 48h ago for surgery, now agitated, tremulous, diaphoretic, hallucinating. Drinks 30 units/week. HR 118, BP 168/102, T 37.9°C. Alcohol withdrawal score elevated.',
+        checks: [
+            { test: d => /chlordiazepoxide|lorazepam|diazepam|oxazepam/i.test(d),
+              fail: 'Benzodiazepines are first-line for alcohol withdrawal/delirium tremens. Chlordiazepoxide 25–50 mg QDS (fixed-dose reducing regimen) is standard for inpatients. Lorazepam IV if actively seizing or unable to take oral.', type: 'error' },
+            { test: (d, dose) => {
+                if (/chlordiazepoxide/i.test(d)) return parseFloat(dose) >= 25 && parseFloat(dose) <= 50;
+                if (/lorazepam/i.test(d)) return parseFloat(dose) >= 1 && parseFloat(dose) <= 4;
+                if (/diazepam/i.test(d)) return parseFloat(dose) >= 10 && parseFloat(dose) <= 20;
+                return true;
+              }, fail: 'Chlordiazepoxide: 25–50 mg QDS with PRN doses, reducing over 5–7 days. Lorazepam: 1–4 mg IV/IM if severe. Also prescribe thiamine (Pabrinex IV) to prevent Wernicke encephalopathy.', type: 'warn' },
+            { test: d => !/haloperidol|olanzapine/i.test(d),
+              fail: 'Antipsychotics (haloperidol, olanzapine) LOWER seizure threshold — do not use as sole or primary treatment for alcohol withdrawal. They can be added cautiously for refractory hallucinations only under specialist guidance.', type: 'warn' },
+        ]
+    },
+    acute_gout: {
+        text: '52-year-old man, first gout attack, severe right first MTP joint pain and swelling for 18h. eGFR 78. Not taking allopurinol. Not on warfarin. No peptic ulcer history.',
+        checks: [
+            { test: d => /naproxen|indomethacin|ibuprofen|diclofenac|nsaid/i.test(d),
+              fail: 'NSAIDs (e.g. naproxen 500 mg BD or indomethacin 50 mg TDS) are first-line for acute gout in patients without contraindications. Add a PPI if GI risk factors present.', type: 'error' },
+            { test: (d, dose) => {
+                if (/naproxen/i.test(d)) return parseFloat(dose) === 500;
+                if (/indomethacin/i.test(d)) return parseFloat(dose) === 50;
+                if (/ibuprofen/i.test(d)) return parseFloat(dose) === 400;
+                return true;
+              }, fail: 'Naproxen 500 mg BD, or indomethacin 50 mg TDS, or ibuprofen 400–800 mg TDS — all for 5–7 days. Continue until joint is fully settled.', type: 'warn' },
+            { test: d => !/allopurinol/i.test(d),
+              fail: 'NEVER start allopurinol during an acute attack — it prolongs and worsens the flare. Initiate urate-lowering therapy (allopurinol) 2–4 weeks after full resolution of the acute episode.', type: 'error' },
+            { test: (d, dose, route) => /oral|po/i.test(route),
+              fail: 'Oral route is standard for acute gout treatment in non-hospitalised patients.', type: 'warn' },
+        ]
+    },
+    af_anticoagulation: {
+        text: '71-year-old woman with newly diagnosed non-valvular AF. CHA₂DS₂-VASc score = 4 (age, hypertension, diabetes). eGFR 62. No bleeding history. No renal/hepatic impairment precluding DOACs.',
+        checks: [
+            { test: d => /apixaban|rivaroxaban|dabigatran|edoxaban/i.test(d),
+              fail: 'DOACs are first-line for stroke prevention in non-valvular AF (preferred over warfarin in most patients). Apixaban (preferred in older/renal impaired patients) or rivaroxaban are commonly chosen.', type: 'error' },
+            { test: (d, dose) => {
+                if (/apixaban/i.test(d)) return parseFloat(dose) === 5 || parseFloat(dose) === 2.5;
+                if (/rivaroxaban/i.test(d)) return parseFloat(dose) === 20;
+                if (/edoxaban/i.test(d)) return parseFloat(dose) === 60;
+                return true;
+              }, fail: 'Apixaban: 5 mg BD (reduce to 2.5 mg BD if ≥2 of: age ≥80, weight ≤60 kg, creatinine ≥133). Rivaroxaban 20 mg OD with food. Edoxaban 60 mg OD (use 30 mg OD if eGFR 15–50).', type: 'warn' },
+            { test: (d, dose, route) => /oral|po/i.test(route),
+              fail: 'All DOACs are oral drugs.', type: 'error' },
+            { test: d => !/aspirin/i.test(d),
+              fail: 'Aspirin alone is NOT an alternative to anticoagulation for AF stroke prevention — it provides inadequate protection and adds bleeding risk without sufficient benefit. Only use if specific indication for antiplatelet therapy exists alongside anticoagulation.', type: 'warn' },
+        ]
+    },
+    thyroid_storm: {
+        text: '38-year-old woman, known Graves\' disease. Presents with fever 39.8°C, HR 152 (AF), agitation, vomiting, and lid lag. Burch-Wartofsky score >45. Diagnosis: thyroid storm.',
+        checks: [
+            { test: d => /propylthiouracil|propranolol|carbimazole|methimazole/i.test(d),
+              fail: 'Thyroid storm requires urgent multi-drug treatment: (1) Propylthiouracil (PTU) 200 mg QDS or carbimazole 40 mg loading — to block new hormone synthesis. (2) Propranolol 40–80 mg TDS — to control sympathetic effects.', type: 'error' },
+            { test: (d, dose) => {
+                if (/propylthiouracil|ptu/i.test(d)) return parseFloat(dose) === 200;
+                if (/carbimazole/i.test(d)) return parseFloat(dose) >= 20 && parseFloat(dose) <= 40;
+                if (/propranolol/i.test(d)) return parseFloat(dose) >= 40 && parseFloat(dose) <= 80;
+                return true;
+              }, fail: 'PTU 200 mg QDS (preferred in storm — blocks T4→T3 conversion); OR carbimazole 40 mg loading. Add propranolol 40–80 mg TDS for rate control and symptom relief. Also: Lugol\'s iodine 1h after PTU/carbimazole, hydrocortisone 100 mg TDS IV, and active cooling.', type: 'warn' },
+            { test: (d, dose, route) => /oral|iv|po/i.test(route),
+              fail: 'Oral route for antithyroid drugs. IV hydrocortisone and IV fluids are essential adjuncts — admit to HDU/ITU.', type: 'warn' },
+        ]
+    },
+    migraine_acute: {
+        text: '29-year-old woman, severe unilateral throbbing headache 3h with photophobia and nausea. Known migraine — similar to previous episodes. Neurological exam normal. No aura.',
+        checks: [
+            { test: d => /sumatriptan|naratriptan|rizatriptan|zolmitriptan|triptan|aspirin|paracetamol|ibuprofen|metoclopramide|domperidone/i.test(d),
+              fail: 'Acute migraine: NSAID (ibuprofen 400 mg PO) OR aspirin 900 mg PO + antiemetic (metoclopramide 10 mg PO or domperidone 10 mg PO) are first-line. Add a triptan (e.g. sumatriptan 50–100 mg PO) if moderate-severe or NSAID-insufficient.', type: 'error' },
+            { test: (d, dose) => {
+                if (/sumatriptan/i.test(d)) return parseFloat(dose) >= 50 && parseFloat(dose) <= 100;
+                if (/aspirin/i.test(d)) return parseFloat(dose) === 900;
+                if (/ibuprofen/i.test(d)) return parseFloat(dose) === 400;
+                if (/metoclopramide/i.test(d)) return parseFloat(dose) === 10;
+                return true;
+              }, fail: 'Sumatriptan: 50–100 mg PO (repeat after 2h if recurrence; max 300 mg/24h). Aspirin 900 mg PO + metoclopramide 10 mg PO is an effective and cheaper alternative.', type: 'warn' },
+            { test: (d, dose, route) => /oral|po/i.test(route),
+              fail: 'Oral route for most acute migraine treatments. SC or nasal sumatriptan for vomiting or if oral is ineffective. Avoid antiemetics rectally unless vomiting precludes oral.', type: 'warn' },
+            { test: d => !/codeine|tramadol/i.test(d),
+              fail: 'Opioids (codeine, tramadol) are NOT recommended for migraine — they provide inadequate relief and are a major risk factor for medication-overuse headache (codeine is particularly problematic). Avoid.', type: 'warn' },
+        ]
+    },
+    rapid_tranquillisation: {
+        text: '27-year-old man, acute psychosis in A&E, aggressive and threatening, posing immediate risk to staff. Verbal de-escalation failed. Oral medication refused. IM route planned.',
+        checks: [
+            { test: d => /lorazepam|haloperidol|olanzapine|midazolam/i.test(d),
+              fail: 'Rapid tranquillisation (RT): IM lorazepam 1–2 mg is first-line (safest, predictable). Alternatives: IM haloperidol 5 mg or IM olanzapine 10 mg. Do NOT combine IM olanzapine + IM lorazepam (respiratory depression risk).', type: 'error' },
+            { test: (d, dose) => {
+                if (/lorazepam/i.test(d)) return parseFloat(dose) >= 1 && parseFloat(dose) <= 2;
+                if (/haloperidol/i.test(d)) return parseFloat(dose) >= 5 && parseFloat(dose) <= 10;
+                if (/olanzapine/i.test(d)) return parseFloat(dose) === 10;
+                return true;
+              }, fail: 'Lorazepam: 1–2 mg IM. Haloperidol: 5–10 mg IM. Olanzapine: 10 mg IM. Monitor BP, HR, RR, and SpO₂ every 5–10 min post-injection. Resuscitation facilities must be available.', type: 'warn' },
+            { test: (d, dose, route) => /im|intramuscular/i.test(route),
+              fail: 'IM route is standard for RT when oral medication is refused. IV lorazepam can be used in resuscitation areas only with monitoring. Never use IV haloperidol or olanzapine for RT without specialist input.', type: 'error' },
+        ]
+    },
+    acute_severe_headache: {
+        text: '44-year-old man, sudden-onset "thunderclap" headache — worst he has ever had, maximal at onset 90 min ago. No focal neurology. BP 164/96. Neck stiffness present. CT head is NORMAL.',
+        checks: [
+            { test: d => !/morphine|opioid|paracetamol|ibuprofen|nsaid/i.test(d),
+              fail: 'In a thunderclap headache with normal CT but neck stiffness, the priority is LUMBAR PUNCTURE (12h after onset for xanthochromia) to exclude subarachnoid haemorrhage — NOT immediate analgesia prescription. Prescribe analgesia cautiously (paracetamol 1 g QDS is safest) but the diagnostic workup is the critical step.', type: 'warn' },
+            { test: d => !/nimodipine/i.test(d),
+              fail: 'If SAH is confirmed: nimodipine 60 mg PO every 4h (21 days) to reduce vasospasm-related cerebral ischaemia. Neurosurgical referral for coil/clip of the aneurysm.', type: 'warn' },
+            { test: d => /paracetamol/i.test(d),
+              fail: 'Paracetamol 1 g QDS is the safest initial analgesia while awaiting LP results. Avoid NSAIDs if SAH suspected (↑ bleeding risk).', type: 'ok' },
+        ]
+    },
+    heart_failure_initiation: {
+        text: '60-year-old man, new HFrEF (EF 35%), NYHA class II, BP 128/78, HR 74, eGFR 58, K⁺ 4.2, no current heart failure medications. Hospitalisation resolved. Ready to start standard therapy.',
+        checks: [
+            { test: d => /ramipril|enalapril|lisinopril|perindopril|ace|sacubitril/i.test(d),
+              fail: 'Start ACEi (e.g. ramipril 1.25–2.5 mg OD, titrate to target 10 mg OD) as first-line in HFrEF. If ACEi-intolerant (cough): switch to ARB (candesartan). Monitor U&E and BP at 1–2 weeks after each dose increase.', type: 'error' },
+            { test: (d, dose) => {
+                if (/ramipril/i.test(d)) return parseFloat(dose) >= 1.25 && parseFloat(dose) <= 2.5;
+                if (/lisinopril/i.test(d)) return parseFloat(dose) >= 2.5 && parseFloat(dose) <= 5;
+                return true;
+              }, fail: 'Start ACEi at low dose: ramipril 1.25–2.5 mg OD; lisinopril 2.5–5 mg OD. Titrate up slowly every 2 weeks to target dose. Do NOT start at full dose — risk of first-dose hypotension.', type: 'warn' },
+            { test: (d, dose, route) => /oral|po/i.test(route),
+              fail: 'All standard HFrEF drugs are oral.', type: 'error' },
+            { test: d => !/nsaid|ibuprofen|naproxen|diclofenac/i.test(d),
+              fail: 'NSAIDs are CONTRAINDICATED in heart failure — cause fluid retention, worsen renal function, and reduce the efficacy of ACEi and diuretics. Always review and stop NSAIDs in new HF.', type: 'warn' },
+        ]
+    },
+    osteoporosis_bisphosphonate: {
+        text: '68-year-old woman, fragility hip fracture managed surgically. DXA T-score −3.1 lumbar spine. No dental problems, no oesophageal disease. eGFR 52. Ready for osteoporosis therapy.',
+        checks: [
+            { test: d => /alendronate|alendronic.acid|risedronate|zoledronate|bisphosphonate/i.test(d),
+              fail: 'Bisphosphonates are first-line for osteoporosis after fragility fracture. Alendronate 70 mg once weekly PO is most commonly used. Risedronate 35 mg weekly is an alternative.', type: 'error' },
+            { test: (d, dose) => {
+                if (/alendronate|alendronic/i.test(d)) return parseFloat(dose) === 70;
+                if (/risedronate/i.test(d)) return parseFloat(dose) === 35;
+                return true;
+              }, fail: 'Alendronate 70 mg ONCE weekly PO (not daily). Must be taken on an empty stomach, sitting/standing upright, with full glass of water, 30 min before any food/drink/other medication. Remain upright 30 min after.', type: 'warn' },
+            { test: (d, dose, route) => /oral|po/i.test(route),
+              fail: 'Oral bisphosphonate (alendronate, risedronate). IV zoledronate 5 mg once yearly is an alternative if oral not tolerated.', type: 'error' },
+            { test: (d, dose, route, freq) => /weekly|once.a.week|once weekly/i.test(freq),
+              fail: 'MUST be prescribed as ONCE WEEKLY — not daily. Daily alendronate is incorrect for oral osteoporosis treatment and increases GI side-effect risk. Also co-prescribe calcium + vitamin D supplementation unless dietary intake is adequate.', type: 'error' },
+        ]
     }
 };
 
