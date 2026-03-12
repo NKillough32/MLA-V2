@@ -90,7 +90,15 @@ class MLAQuizApp {
         this.questionHighlights = {};
         this.screenHistory = [];
         this.currentScreen = null;
-        this.prescribingSafetyQuiz = { questions: [], currentIndex: 0, score: 0, answered: false };
+        this.prescribingSafetyQuiz = {
+            questions: [],
+            questionBank: [],
+            currentIndex: 0,
+            score: 0,
+            answered: false,
+            selectedCount: 8,
+            incorrectAnswers: []
+        };
         this.setupEventListeners();
     }
 
@@ -3359,24 +3367,60 @@ class MLAQuizApp {
             <div class="med-knowledge-card" style="margin-top: 12px;">
                 <h3>🎯 Drug-linked Prescribing Safety Quiz</h3>
                 <p style="margin-top: 6px; color: var(--text-secondary);">Questions are built from drugs in the Drug Reference dataset (e.g. monitoring, contraindications, side effects, counselling points).</p>
+                <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px; align-items: center;">
+                    <label for="prescribing-safety-count" style="font-weight: 600;">Quiz length</label>
+                    <select id="prescribing-safety-count" class="quiz-search-select" style="max-width: 180px;">
+                        <option value="5">5 questions</option>
+                        <option value="8" selected>8 questions</option>
+                        <option value="12">12 questions</option>
+                    </select>
+                    <button id="prescribing-safety-regenerate" class="btn btn-secondary" type="button">New quiz</button>
+                </div>
                 <div id="prescribing-safety-quiz-area"><div class="loading-message">Generating quiz...</div></div>
             </div>
         `;
 
         const quizArea = container.querySelector('#prescribing-safety-quiz-area');
+        const countSelect = container.querySelector('#prescribing-safety-count');
+        const regenerateBtn = container.querySelector('#prescribing-safety-regenerate');
         try {
             const drugs = await this.drugManager.getDrugsByCategory('alphabetical');
-            this.prescribingSafetyQuiz.questions = this.buildPrescribingSafetyQuestions(drugs).slice(0, 8);
-            this.prescribingSafetyQuiz.currentIndex = 0;
-            this.prescribingSafetyQuiz.score = 0;
-            this.prescribingSafetyQuiz.answered = false;
+            this.prescribingSafetyQuiz.questionBank = this.buildPrescribingSafetyQuestions(drugs);
+            this.prescribingSafetyQuiz.selectedCount = Number(countSelect?.value || 8);
+            this.resetPrescribingSafetyQuiz();
             this.renderPrescribingSafetyQuestion(quizArea);
+
+            if (countSelect) {
+                countSelect.addEventListener('change', () => {
+                    this.prescribingSafetyQuiz.selectedCount = Number(countSelect.value) || 8;
+                    this.resetPrescribingSafetyQuiz();
+                    this.renderPrescribingSafetyQuestion(quizArea);
+                });
+            }
+
+            if (regenerateBtn) {
+                regenerateBtn.addEventListener('click', () => {
+                    this.prescribingSafetyQuiz.questionBank.sort(() => Math.random() - 0.5);
+                    this.resetPrescribingSafetyQuiz();
+                    this.renderPrescribingSafetyQuestion(quizArea);
+                });
+            }
         } catch (error) {
             console.error('Failed to generate prescribing safety quiz', error);
             if (quizArea) {
                 quizArea.innerHTML = '<div class="no-content">Unable to build quiz from drug data. Please retry.</div>';
             }
         }
+    }
+
+    resetPrescribingSafetyQuiz() {
+        const quiz = this.prescribingSafetyQuiz;
+        const count = Math.max(1, Number(quiz.selectedCount) || 8);
+        quiz.questions = (quiz.questionBank || []).slice(0, count);
+        quiz.currentIndex = 0;
+        quiz.score = 0;
+        quiz.answered = false;
+        quiz.incorrectAnswers = [];
     }
 
     buildPrescribingSafetyQuestions(drugs = []) {
@@ -3442,20 +3486,32 @@ class MLAQuizApp {
         }
 
         if (quiz.currentIndex >= quiz.questions.length) {
+            const accuracy = Math.round((quiz.score / Math.max(quiz.questions.length, 1)) * 100);
+            const reviewHtml = quiz.incorrectAnswers.length
+                ? `
+                    <div style="margin-top: 12px;">
+                        <h5 style="margin: 0 0 8px 0;">🔎 Review incorrect questions</h5>
+                        <ul style="margin: 0; padding-left: 18px; display: grid; gap: 6px;">
+                            ${quiz.incorrectAnswers.map(item => `<li><strong>${item.stem}</strong><br><span style="color: var(--text-secondary);">Your answer: ${item.selected}</span><br><span style="color: #16a34a;">Correct: ${item.answer}</span></li>`).join('')}
+                        </ul>
+                    </div>
+                `
+                : '<p style="margin: 6px 0 0 0; color: #16a34a;">Excellent - all answers correct.</p>';
+
             quizArea.innerHTML = `
                 <div class="med-knowledge-subsection">
                     <h4 style="margin: 0 0 8px 0;">✅ Quiz complete</h4>
                     <p style="margin: 0 0 10px 0;">Score: <strong>${quiz.score}/${quiz.questions.length}</strong></p>
+                    <p style="margin: 0 0 10px 0; color: var(--text-secondary);">Accuracy: <strong>${accuracy}%</strong></p>
                     <button class="btn btn-secondary" id="restart-prescribing-safety-quiz">Restart quiz</button>
+                    ${reviewHtml}
                 </div>
             `;
             const restartBtn = quizArea.querySelector('#restart-prescribing-safety-quiz');
             if (restartBtn) {
                 restartBtn.addEventListener('click', () => {
-                    quiz.currentIndex = 0;
-                    quiz.score = 0;
-                    quiz.answered = false;
-                    quiz.questions.sort(() => Math.random() - 0.5);
+                    quiz.questionBank.sort(() => Math.random() - 0.5);
+                    this.resetPrescribingSafetyQuiz();
                     this.renderPrescribingSafetyQuestion(quizArea);
                 });
             }
@@ -3468,6 +3524,9 @@ class MLAQuizApp {
         quizArea.innerHTML = `
             <div class="med-knowledge-subsection">
                 <p style="margin: 0 0 8px 0; color: var(--text-secondary);">Question ${quiz.currentIndex + 1} of ${quiz.questions.length}</p>
+                <div style="height: 8px; background: var(--border-color); border-radius: 999px; overflow: hidden; margin: 0 0 10px 0;">
+                    <div style="height: 100%; width: ${((quiz.currentIndex) / quiz.questions.length) * 100}%; background: linear-gradient(90deg, #2563eb, #06b6d4);"></div>
+                </div>
                 <h4 style="margin: 0 0 10px 0;">${q.stem}</h4>
                 <div id="prescribing-safety-options" style="display: grid; gap: 8px;">
                     ${q.options.map((opt, index) => `<button class="btn btn-secondary psa-option" data-index="${index}" style="text-align: left;">${opt}</button>`).join('')}
@@ -3488,6 +3547,13 @@ class MLAQuizApp {
                 const selected = q.options[Number(btn.dataset.index)];
                 const correct = selected === q.answer;
                 if (correct) quiz.score += 1;
+                if (!correct) {
+                    quiz.incorrectAnswers.push({
+                        stem: q.stem,
+                        selected,
+                        answer: q.answer
+                    });
+                }
 
                 optionButtons.forEach(ob => {
                     const text = q.options[Number(ob.dataset.index)];
