@@ -79,7 +79,8 @@ export class CalculatorManager {
         this.registryMap = registry;
 
         if (!extractedCalculators) {
-            console.warn('⚠️ ExtractedCalculators not loaded - only native calculators will be available');
+            // Normal on first call — registry is rebuilt once calculators-loaded fires.
+            console.log('ℹ️ ExtractedCalculators not yet loaded; native calculators only (will rebuild on calculators-loaded).');
         }
 
         if (disableUnofficialQrisk) {

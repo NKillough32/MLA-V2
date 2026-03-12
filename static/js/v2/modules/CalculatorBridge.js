@@ -18,62 +18,52 @@ class CalculatorBridge {
         this.storageManager = storageManager;
         this.analyticsManager = analyticsManager;
         
-        // Bridge the ExtractedCalculators methods to work with our system
-        // This allows the extracted calculators (which use window.quizApp) to work in V2
+        // Bridge the ExtractedCalculators methods to work with our system.
+        // ExtractedCalculators loads asynchronously via calculatorLoader; use the
+        // 'calculators-loaded' event to avoid a blind polling retry loop.
         this.setupCalculatorBridge();
     }
 
     setupCalculatorBridge() {
-        if (window.ExtractedCalculators) {
-            console.log('🔗 Setting up calculator bridge...');
-            
-            // Get the main app (should already be window.quizApp)
-            const mainApp = window.quizApp || window.MLAQuizApp;
-            
-            if (!mainApp) {
-                console.warn('⚠️ Main app not ready yet, retrying...');
-                setTimeout(() => this.setupCalculatorBridge(), 100);
-                return;
-            }
-            
-            // Instead of replacing window.quizApp, extend it by adding calculator methods
-            // This preserves all the main app methods on the prototype chain
-            Object.keys(window.ExtractedCalculators).forEach(key => {
-                if (!mainApp[key]) {  // Only add if not already present
-                    mainApp[key] = window.ExtractedCalculators[key];
-                }
-            });
-            
-            // Add V2 bridge methods for compatibility if not present
-            if (!mainApp.trackToolUsage) {
-                mainApp.trackToolUsage = (type, name) => this.trackToolUsage(type, name);
-            }
-            if (!mainApp.switchMedicalTool) {
-                mainApp.switchMedicalTool = (name) => this.switchMedicalTool(name);
-            }
-            if (!mainApp.showToast) {
-                mainApp.showToast = (msg, type) => this.showToast(msg, type);
-            }
-            
-            console.log('✅ Calculator bridge established');
-            console.log(`   - Calculator functions added: ${Object.keys(window.ExtractedCalculators).filter(k => k.startsWith('calculate')).length}`);
-            console.log(`   - Calculator getters added: ${Object.keys(window.ExtractedCalculators).filter(k => k.startsWith('get') && k.includes('Calculator')).length}`);
-            
-            // Test key functions
-            const testFunctions = ['calculateBMI', 'calculateFrailty', 'calculateGCS', 'showDrugDetail', 'loadDrugReferenceContent', 'speakDrugName'];
-            testFunctions.forEach(funcName => {
-                if (typeof mainApp[funcName] === 'function') {
-                    console.log(`   ✓ ${funcName} available`);
-                } else {
-                    console.warn(`   ⚠ ${funcName} missing or not a function`);
-                }
-            });
-            
+        if (window.ExtractedCalculators && Object.keys(window.ExtractedCalculators).length > 0) {
+            // Already available — apply immediately
+            this._applyBridge();
         } else {
-            console.warn('⚠️ ExtractedCalculators not available - retrying...');
-            // Retry after a short delay in case the script is still loading
-            setTimeout(() => this.setupCalculatorBridge(), 100);
+            // Not ready yet — wait for the event fired by calculatorLoader
+            console.log('⏳ CalculatorBridge: waiting for calculators-loaded event...');
+            window.addEventListener('calculators-loaded', () => this._applyBridge(), { once: true });
         }
+    }
+
+    _applyBridge() {
+        const mainApp = window.quizApp || window.MLAQuizApp;
+        if (!mainApp) {
+            // quizApp might not be ready yet — wait a tick then retry once
+            setTimeout(() => this._applyBridge(), 50);
+            return;
+        }
+
+        const ec = window.ExtractedCalculators;
+        if (!ec || Object.keys(ec).length === 0) {
+            console.warn('⚠️ CalculatorBridge: ExtractedCalculators empty after calculators-loaded event.');
+            return;
+        }
+
+        console.log('🔗 Setting up calculator bridge...');
+
+        // Extend mainApp with calculator methods (preserve existing)
+        Object.keys(ec).forEach(key => {
+            if (!mainApp[key]) mainApp[key] = ec[key];
+        });
+
+        // Add V2 bridge compatibility stubs
+        if (!mainApp.trackToolUsage)   mainApp.trackToolUsage   = (type, name) => this.trackToolUsage(type, name);
+        if (!mainApp.switchMedicalTool) mainApp.switchMedicalTool = (name)       => this.switchMedicalTool(name);
+        if (!mainApp.showToast)        mainApp.showToast        = (msg, type)   => this.showToast(msg, type);
+
+        const calcFns   = Object.keys(ec).filter(k => k.startsWith('calculate')).length;
+        const getterFns = Object.keys(ec).filter(k => k.startsWith('get') && k.includes('Calculator')).length;
+        console.log(`✅ Calculator bridge established — ${calcFns} calculate + ${getterFns} getter functions`);
     }
 
     // Bridge method for trackToolUsage
