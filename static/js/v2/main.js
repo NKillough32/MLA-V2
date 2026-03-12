@@ -29,6 +29,7 @@ import { proceduresManager } from './modules/ProceduresManager.js';
 import { mnemonicsManager } from './modules/MnemonicsManager.js';
 import { interpretationToolsManager } from './modules/InterpretationToolsManager.js';
 import { medStatsEthicsManager } from './modules/MedStatsEthicsManager.js';
+import { prescribingManager } from './modules/PrescribingManager.js';
 import { clinicalPearlsManager } from './modules/ClinicalPearlsManager.js';
 import { coreConditionsManager } from './modules/CoreConditionsManager.js';
 import { ophthalmologyManager } from './modules/OphthalmologyManager.js';
@@ -65,6 +66,7 @@ class MLAQuizApp {
         this.mnemonicsManager = mnemonicsManager;
         this.interpretationToolsManager = interpretationToolsManager;
         this.medStatsEthicsManager = medStatsEthicsManager;
+        this.prescribingManager = prescribingManager;
         this.clinicalPearlsManager = clinicalPearlsManager;
         this.coreConditionsManager = coreConditionsManager;
         this.ophthalmologyManager = ophthalmologyManager;
@@ -157,6 +159,7 @@ class MLAQuizApp {
             this.mnemonicsManager.initialize(),
             this.interpretationToolsManager.initialize(),
             this.medStatsEthicsManager.initialize(),
+            this.prescribingManager.initialize(),
             this.clinicalPearlsManager.initialize(),
             this.coreConditionsManager.initialize(),
             this.ophthalmologyManager.initialize(),
