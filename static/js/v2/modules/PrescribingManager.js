@@ -24,6 +24,7 @@ class PrescribingManager {
     constructor() {
         this._caseAnswers = {};
         this._initialized = false;
+        this._quiz = { questions: [], current: 0, score: 0, answered: false, active: false };
     }
 
     /* ═══════════════════════════════════════════════════════════════
@@ -36,6 +37,7 @@ class PrescribingManager {
         this._renderCases();
         this._buildQuickCards();
         this._buildAbxGrid();
+        this._initDrugQuiz();
         this._exposeWindowHandlers();
         this._initialized = true;
     }
@@ -47,7 +49,8 @@ class PrescribingManager {
             interactions: INTERACTIONS.length,
             doseEntries:  DOSE_TABLE.length,
             cases:        CASES.length,
-            abxConditions: ABX_DATA.length
+            abxConditions: ABX_DATA.length,
+            quizQuestions: (typeof DRUG_QUIZ_Q !== 'undefined' ? DRUG_QUIZ_Q.length : 0)
         };
     }
 
@@ -312,6 +315,164 @@ class PrescribingManager {
     }
 
     /* ═══════════════════════════════════════════════════════════════
+       7. DRUG QUIZ
+       ═══════════════════════════════════════════════════════════════ */
+
+    _initDrugQuiz() {
+        const catSel   = document.getElementById('prxQuizCat');
+        const countSel = document.getElementById('prxQuizCount');
+        const preview  = document.getElementById('prxQuizPreview');
+        if (!catSel || !preview) return;
+        const update = () => {
+            const cat = catSel.value;
+            const pool = cat === 'random' ? DRUG_QUIZ_Q : DRUG_QUIZ_Q.filter(q => q.cat === cat);
+            const maxN = parseInt(countSel.value) || pool.length;
+            const n = Math.min(pool.length, maxN);
+            preview.textContent = `${n} question${n !== 1 ? 's' : ''} available`;
+        };
+        catSel.addEventListener('change', update);
+        countSel.addEventListener('change', update);
+        update();
+    }
+
+    startQuiz() {
+        const cat   = document.getElementById('prxQuizCat').value;
+        const count = parseInt(document.getElementById('prxQuizCount').value) || 999;
+        let pool = cat === 'random' ? [...DRUG_QUIZ_Q] : DRUG_QUIZ_Q.filter(q => q.cat === cat);
+        // Fisher–Yates shuffle
+        for (let i = pool.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [pool[i], pool[j]] = [pool[j], pool[i]];
+        }
+        pool = pool.slice(0, Math.min(pool.length, count));
+        this._quiz = { questions: pool, current: 0, score: 0, answered: false, active: true };
+        document.getElementById('prxQuizSetup').style.display   = 'none';
+        document.getElementById('prxQuizPlay').style.display    = 'block';
+        document.getElementById('prxQuizSummary').style.display = 'none';
+        this._renderQuizQuestion();
+    }
+
+    _renderQuizQuestion() {
+        const q   = this._quiz;
+        const qObj = q.questions[q.current];
+        const total = q.questions.length;
+        const pct  = Math.round((q.current / total) * 100);
+        const catLabels = { dosing: '💊 Dosing', contraindications: '🚫 Contraindications', interactions: '⚡ Interactions', sideeffects: '⚠️ Side Effects', mechanism: '🔬 Mechanism', monitoring: '👁️ Monitoring' };
+
+        // Progress
+        document.getElementById('prxQProgress').textContent    = `Question ${q.current + 1} of ${total}`;
+        document.getElementById('prxQScoreLive').textContent   = `Score: ${q.score}/${q.current}`;
+        document.getElementById('prxQProgressBar').style.width = `${pct}%`;
+        document.getElementById('prxQCatBadge').textContent    = catLabels[qObj.cat] || '🎲 Random';
+
+        // Question text
+        document.getElementById('prxQText').textContent = qObj.q;
+
+        // Options
+        const optsEl = document.getElementById('prxQOptions');
+        optsEl.innerHTML = qObj.opts.map((opt, i) => `
+            <button class="prx-quiz-opt" id="prxQOpt_${i}" onclick="window.prxAnswerQuiz(${i})">
+                <span class="prx-quiz-letter">${String.fromCharCode(65 + i)}</span>
+                <span class="prx-quiz-opt-text">${opt}</span>
+            </button>
+        `).join('');
+
+        // Clear feedback
+        document.getElementById('prxQFeedback').innerHTML = '';
+        document.getElementById('prxQFeedback').style.display = 'none';
+        document.getElementById('prxQNextBtn').style.display  = 'none';
+        this._quiz.answered = false;
+    }
+
+    answerQuiz(optIdx) {
+        if (this._quiz.answered) return;
+        this._quiz.answered = true;
+        const qObj   = this._quiz.questions[this._quiz.current];
+        const correct = qObj.ans;
+        const isRight = optIdx === correct;
+        if (isRight) this._quiz.score++;
+
+        // Style options
+        qObj.opts.forEach((_, i) => {
+            const btn = document.getElementById(`prxQOpt_${i}`);
+            if (!btn) return;
+            btn.disabled = true;
+            if (i === correct)  btn.classList.add('prx-quiz-opt-correct');
+            if (i === optIdx && !isRight) btn.classList.add('prx-quiz-opt-wrong');
+        });
+
+        // Feedback box
+        const fb = document.getElementById('prxQFeedback');
+        fb.style.display = 'block';
+        fb.className = isRight ? 'prx-quiz-feedback correct' : 'prx-quiz-feedback wrong';
+        fb.innerHTML = `<strong>${isRight ? '✅ Correct!' : '❌ Incorrect'}</strong> ${qObj.exp}`;
+
+        // Live score update
+        document.getElementById('prxQScoreLive').textContent = `Score: ${this._quiz.score}/${this._quiz.current + 1}`;
+
+        // Show next / finish button
+        const nextBtn = document.getElementById('prxQNextBtn');
+        const isLast  = this._quiz.current === this._quiz.questions.length - 1;
+        nextBtn.style.display  = 'inline-flex';
+        nextBtn.textContent    = isLast ? '🏁 See Results' : 'Next →';
+    }
+
+    nextQuizQ() {
+        const q = this._quiz;
+        if (q.current < q.questions.length - 1) {
+            q.current++;
+            this._renderQuizQuestion();
+        } else {
+            this._showQuizSummary();
+        }
+    }
+
+    _showQuizSummary() {
+        const q     = this._quiz;
+        const total = q.questions.length;
+        const pct   = Math.round((q.score / total) * 100);
+        const catLabels = { dosing: '💊 Dosing', contraindications: '🚫 Contraindications', interactions: '⚡ Interactions', sideeffects: '⚠️ Side Effects', mechanism: '🔬 Mechanism', monitoring: '👁️ Monitoring' };
+        const grade = pct >= 80 ? { label: 'Excellent', colour: '#22c55e', emoji: '🏆' }
+                    : pct >= 60 ? { label: 'Good', colour: '#f59e0b', emoji: '👍' }
+                    :             { label: 'Keep Practising', colour: '#ef4444', emoji: '📚' };
+
+        // Category breakdown
+        const catCounts = {};
+        q.questions.forEach((qObj, i) => {
+            if (!catCounts[qObj.cat]) catCounts[qObj.cat] = { total: 0, correct: 0 };
+            catCounts[qObj.cat].total++;
+        });
+        // Re-score by category (need to track per-question results)
+        // Simple: use the score we tracked
+        document.getElementById('prxQuizPlay').style.display    = 'none';
+        document.getElementById('prxQuizSummary').style.display = 'block';
+
+        document.getElementById('prxQuizSummary').innerHTML = `
+            <div style="text-align:center;padding:28px 16px;">
+                <div style="font-size:3rem;margin-bottom:8px;">${grade.emoji}</div>
+                <h3 style="margin:0 0 6px;font-size:1.4rem;color:var(--v2-text-primary);">${grade.label}</h3>
+                <div style="font-size:2rem;font-weight:700;color:${grade.colour};margin-bottom:4px;">${q.score} / ${total}</div>
+                <div style="font-size:1rem;color:var(--v2-text-secondary);margin-bottom:24px;">${pct}% correct</div>
+                <div style="background:var(--v2-bg-elevated);border-radius:12px;overflow:hidden;height:10px;margin:0 auto 24px;max-width:300px;">
+                    <div style="width:${pct}%;height:100%;background:${grade.colour};border-radius:12px;transition:width 0.8s ease;"></div>
+                </div>
+                <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
+                    <button class="prx-btn" onclick="window.prxStartQuiz()">🔄 Retry Same Settings</button>
+                    <button class="prx-btn secondary" onclick="window.prxResetQuiz()">⚙️ Change Settings</button>
+                </div>
+            </div>
+        `;
+    }
+
+    resetQuiz() {
+        this._quiz = { questions: [], current: 0, score: 0, answered: false, active: false };
+        document.getElementById('prxQuizSetup').style.display   = 'block';
+        document.getElementById('prxQuizPlay').style.display    = 'none';
+        document.getElementById('prxQuizSummary').style.display = 'none';
+        this._initDrugQuiz();
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
        WINDOW HANDLER BRIDGE
        Exposes methods that HTML onclick attributes call.
        ═══════════════════════════════════════════════════════════════ */
@@ -327,6 +488,10 @@ class PrescribingManager {
         window.prxShowDoseAdjust    = () => this.showDoseAdjust();
         window.prxAnswerCase        = (id, idx) => this.answerCase(id, idx);
         window.prxResetCases        = () => this.resetCases();
+        window.prxStartQuiz         = () => this.startQuiz();
+        window.prxAnswerQuiz        = (i)  => this.answerQuiz(i);
+        window.prxNextQuizQ         = ()   => this.nextQuizQ();
+        window.prxResetQuiz         = ()   => this.resetQuiz();
     }
 }
 
@@ -1224,6 +1389,437 @@ const ABX_DATA = [
       severe:'Lyme carditis / neuroborreliosis (facial palsy, meningism, AV block): ceftriaxone 2 g OD IV × 14–21 days',
       route:'oral', review:'ELISA + Western blot serology — do not delay treatment awaiting results. PHE guidance for endemic tick exposure areas.',
       notes:'Prophylaxis after tick bite in endemic areas: doxycycline 200 mg single dose within 72h of attachment. Avoid doxycycline in pregnancy and children <12 — use amoxicillin. Serological "cure" not required — treat based on symptom resolution.' },
+];
+
+/* ── Drug Quiz Question Bank ────────────────────────────────────── */
+/* cat: 'dosing' | 'contraindications' | 'interactions' | 'sideeffects' | 'mechanism' | 'monitoring' */
+const DRUG_QUIZ_Q = [
+
+    /* ── DOSING (23 questions) ── */
+    { cat:'dosing', q:'What is the correct loading dose of aspirin in STEMI?',
+      opts:['75 mg','150 mg','300 mg','600 mg'], ans:2,
+      exp:'300 mg PO STAT loading dose for ACS/STEMI; 75 mg OD is the maintenance dose used thereafter.' },
+
+    { cat:'dosing', q:'What is the standard dose of amoxicillin for mild community-acquired pneumonia (CURB-65 ≤1)?',
+      opts:['250 mg TDS','500 mg TDS','1 g TDS','500 mg BD'], ans:1,
+      exp:'Amoxicillin 500 mg TDS PO for 5 days is first-line for mild CAP. 1 g TDS is used for severe CAP.' },
+
+    { cat:'dosing', q:'What is the loading dose of apixaban in acute PE?',
+      opts:['5 mg BD','10 mg OD','10 mg BD for 7 days','15 mg OD for 21 days'], ans:2,
+      exp:'Apixaban for PE: 10 mg BD for 7 days, then 5 mg BD. Rivaroxaban is 15 mg BD × 21 days then 20 mg OD.' },
+
+    { cat:'dosing', q:'What is the starting dose of ramipril for newly diagnosed hypertension?',
+      opts:['5 mg OD','10 mg OD','1.25–2.5 mg OD','2.5 mg BD'], ans:2,
+      exp:'Ramipril starts at 1.25–2.5 mg OD, titrated slowly to max 10 mg OD. Start low to avoid first-dose hypotension and monitor U&E/creatinine.' },
+
+    { cat:'dosing', q:'Furosemide in acute cardiogenic pulmonary oedema — initial IV dose?',
+      opts:['10 mg IV','40–80 mg IV','120 mg IV','20 mg IV'], ans:1,
+      exp:'Furosemide 40 mg IV (dose-naive patient). If already on oral furosemide, give IV equivalent of daily oral dose. Onset within 30 min when given IV.' },
+
+    { cat:'dosing', q:'What is the first dose of adenosine for SVT termination?',
+      opts:['3 mg IV','6 mg IV','12 mg IV','9 mg IV'], ans:1,
+      exp:'Adenosine 6 mg rapid IV bolus followed by fast saline flush. If unsuccessful after 1–2 min: 12 mg IV. Can repeat 12 mg once more.' },
+
+    { cat:'dosing', q:'Alendronate dose for postmenopausal osteoporosis?',
+      opts:['35 mg daily','70 mg daily','70 mg weekly','35 mg weekly'], ans:2,
+      exp:'Alendronate 70 mg ONCE WEEKLY on an empty stomach — must remain upright 30 min after dose. 35 mg weekly is the risedronate dose.' },
+
+    { cat:'dosing', q:'What is the starting dose of metformin for T2DM?',
+      opts:['500 mg TDS','500 mg OD–BD','1 g BD','850 mg TDS'], ans:1,
+      exp:'Start metformin at 500 mg OD or BD with meals to minimise GI side effects. Titrate up over weeks to target dose (typically 500 mg–1 g BD/TDS).' },
+
+    { cat:'dosing', q:'Magnesium sulphate loading dose in eclampsia?',
+      opts:['2 g IV','4 g IV over 5–10 min','8 g IV','6 g IV'], ans:1,
+      exp:'MgSO4 4 g IV over 5–10 min (loading), then 1 g/h maintenance for 24h. Monitor reflexes, RR, UO. Antidote: 10 mL 10% calcium gluconate IV.' },
+
+    { cat:'dosing', q:'Naloxone dose for opioid overdose (IV, adult)?',
+      opts:['0.1 mg IV','0.4 mg IV','1 mg IV','2 mg IV'], ans:1,
+      exp:'Naloxone 400 micrograms (0.4 mg) IV/IM STAT; repeat every 2–3 min up to 10 mg. Half-life shorter than most opioids — monitor for re-narcotisation.' },
+
+    { cat:'dosing', q:'Hydrocortisone dose for acute adrenal crisis?',
+      opts:['50 mg IV','100 mg IV/IM STAT','200 mg IV','50 mg oral'], ans:1,
+      exp:'Hydrocortisone 100 mg IV or IM STAT is life-saving. Then 50–100 mg QDS or continuous infusion. Oral only when stable and able to eat.' },
+
+    { cat:'dosing', q:'PTU loading dose in thyroid storm?',
+      opts:['50 mg OD','100 mg TDS','200 mg QDS','500 mg stat then 250 mg QDS'], ans:2,
+      exp:'Propylthiouracil 200 mg QDS (preferred in storm — also blocks peripheral T4→T3 conversion). Carbimazole 40 mg loading is an alternative.' },
+
+    { cat:'dosing', q:'Chlordiazepoxide for inpatient alcohol withdrawal — typical starting dose?',
+      opts:['5 mg QDS','25–50 mg QDS (with PRN doses)','100 mg TDS','10 mg OD'], ans:1,
+      exp:'Chlordiazepoxide 25–50 mg QDS with PRN rescue doses, on a reducing regimen over 5–7 days. Also prescribe Pabrinex IV to prevent Wernicke encephalopathy.' },
+
+    { cat:'dosing', q:'Trimethoprim dose for uncomplicated lower UTI in a non-pregnant adult?',
+      opts:['100 mg BD','200 mg OD','200 mg BD for 3–7 days','400 mg BD'], ans:2,
+      exp:'Trimethoprim 200 mg BD for 3 days (NICE guideline) in healthy non-pregnant adults with uncomplicated UTI. Nitrofurantoin MR 100 mg BD for 3 days is an equivalent alternative.' },
+
+    { cat:'dosing', q:'Enoxaparin dose for VTE prophylaxis in surgical in-patient?',
+      opts:['20 mg SC OD','40 mg SC OD','60 mg SC OD','1 mg/kg SC BD'], ans:1,
+      exp:'Enoxaparin 40 mg SC OD for VTE prophylaxis. 1 mg/kg SC BD (or 1.5 mg/kg OD) is the treatment dose for established VTE.' },
+
+    { cat:'dosing', q:'Lorazepam dose for rapid tranquillisation via IM route?',
+      opts:['0.5 mg IM','1–2 mg IM','4 mg IM','5 mg IM'], ans:1,
+      exp:'Lorazepam 1–2 mg IM is first-line for IM rapid tranquillisation. Monitor BP, HR, RR, SpO2 every 5–10 min post-injection. Do not combine IM olanzapine with IM lorazepam.' },
+
+    { cat:'dosing', q:'Sumatriptan dose for acute moderate-severe migraine (oral)?',
+      opts:['25 mg','50–100 mg','200 mg','12.5 mg'], ans:1,
+      exp:'Sumatriptan 50–100 mg PO. Can repeat after 2h if migraine recurs (NOT if initial dose failed); max 300 mg/24h. SC sumatriptan 6 mg for faster onset if vomiting.' },
+
+    { cat:'dosing', q:'Prednisolone dose for acute severe asthma attack in adults?',
+      opts:['20 mg OD','30 mg OD','40 mg OD for 5 days','60 mg OD'], ans:2,
+      exp:'Prednisolone 40–50 mg OD PO for 5 days (or IV hydrocortisone 100 mg QDS if unable to swallow). No taper needed after short course.' },
+
+    { cat:'dosing', q:'What is the correct dose of co-amoxiclav for moderate CAP?',
+      opts:['375 mg TDS','625 mg TDS','1 g TDS','250 mg TDS'], ans:1,
+      exp:'Co-amoxiclav 625 mg TDS PO for 5 days is used for moderate-severe CAP as a broad-spectrum alternative. 375 mg TDS is an older/lower-dose formulation.' },
+
+    { cat:'dosing', q:'Digoxin: usual maintenance dose range for AF rate control?',
+      opts:['500–750 mcg OD','62.5–250 mcg OD','500 mcg BD','1 mg OD'], ans:1,
+      exp:'Digoxin 62.5–250 mcg OD (usually 125 mcg OD in elderly). Target serum level 0.5–0.9 ng/mL. Measure trough level ≥6h after dose — risk of toxicity is narrow.' },
+
+    { cat:'dosing', q:'Standard IV morphine dose for moderate-severe acute pain in a hospital setting?',
+      opts:['1 mg IV','2.5–5 mg IV titrated','10 mg IV single dose','0.5 mg IV'], ans:1,
+      exp:'Morphine 2.5–5 mg IV titrated to response (lower in elderly, opioid-naive). Reassess pain score every 5–10 min. Have naloxone available.' },
+
+    { cat:'dosing', q:'Atorvastatin dose for primary prevention of cardiovascular disease (high-intensity)?',
+      opts:['10 mg OD','20 mg OD','40–80 mg OD','5 mg OD'], ans:2,
+      exp:'Atorvastatin 40–80 mg OD is high-intensity statin therapy (≥40% LDL reduction). NICE recommends 20 mg OD for primary prevention with ≥10% 10-year CV risk.' },
+
+    { cat:'dosing', q:'Starting dose of levothyroxine in elderly patients with hypothyroidism?',
+      opts:['50–100 mcg OD','100 mcg OD','25 mcg OD, titrate slowly','150 mcg OD'], ans:2,
+      exp:'Start at 25 mcg OD in the elderly or those with cardiac disease — rapid increase risks arrhythmia and angina. Younger, healthy adults: 50–100 mcg OD starting dose.' },
+
+    /* ── CONTRAINDICATIONS (20 questions) ── */
+    { cat:'contraindications', q:'ACE inhibitors are ABSOLUTELY contraindicated in which condition?',
+      opts:['CKD stage 3','Bilateral renal artery stenosis','Controlled hypertension','Stable heart failure'], ans:1,
+      exp:'Bilateral renal artery stenosis: ACEi block angiotensin II-mediated efferent arteriolar constriction, which is the only mechanism sustaining GFR in this setting — causes acute kidney failure.' },
+
+    { cat:'contraindications', q:'Below which eGFR threshold should metformin be stopped (or not started)?',
+      opts:['eGFR <60','eGFR <45','eGFR <30','eGFR <15'], ans:2,
+      exp:'Metformin must be stopped when eGFR falls below 30 mL/min/1.73m² due to risk of lactic acidosis from metformin accumulation. Review dose when eGFR 30–45.' },
+
+    { cat:'contraindications', q:'NSAIDs are CONTRAINDICATED in aspirin-exacerbated respiratory disease (AERD). Why?',
+      opts:['Increase bronchospasm via COX-1 inhibition','Cause anaphylaxis via IgE','Increase sputum viscosity','Reduce inhaled steroid efficacy'], ans:0,
+      exp:'COX-1 inhibition shifts arachidonic acid metabolism towards leukotrienes (LTB4, LTC4, LTD4), causing bronchospasm. Aspirin-exacerbated respiratory disease affects ~10% of asthma patients.' },
+
+    { cat:'contraindications', q:'Which trimester of pregnancy is warfarin most teratogenic?',
+      opts:['First trimester','Second trimester','Third trimester','It is safe throughout'], ans:0,
+      exp:'Warfarin in weeks 6–12 causes warfarin embryopathy (nasal hypoplasia, stippled epiphyses). Near-term it risks fetal/neonatal haemorrhage. Use LMWH throughout pregnancy instead.' },
+
+    { cat:'contraindications', q:'ACE inhibitors are contraindicated throughout pregnancy. What is the main risk?',
+      opts:['Neural tube defects','Oligohydramnios, IUGR, neonatal renal dysgenesis','Cleft palate','Cardiac septal defects'], ans:1,
+      exp:'ACEi in pregnancy (especially 2nd/3rd trimester) cause oligohydramnios, neonatal renal failure, skull defects, pulmonary hypoplasia. Absolutely contraindicated.' },
+
+    { cat:'contraindications', q:'Amiodarone should be used with extreme caution (or avoided) in pre-existing:',
+      opts:['Hypertension','Ventricular arrhythmia','Thyroid disease (hypo or hyperthyroidism)','Heart failure'], ans:2,
+      exp:'Amiodarone is 37% iodine by weight. It causes thyroid dysfunction in up to 15% of patients — both hypothyroidism and hyperthyroidism. Baseline and 6-monthly TFTs are mandatory.' },
+
+    { cat:'contraindications', q:'Metoclopramide is contraindicated in which neurological condition?',
+      opts:['Epilepsy','Parkinson disease','Multiple sclerosis','Myasthenia gravis'], ans:1,
+      exp:'Metoclopramide is a dopamine D2 antagonist — it worsens Parkinson symptoms and risks acute oculogyric crises and tardive dyskinesia. Use domperidone cautiously, or ondansetron in Parkinson disease.' },
+
+    { cat:'contraindications', q:'Which is an ABSOLUTE contraindication to thrombolysis in ischaemic stroke?',
+      opts:['BP 150/90 at presentation','Haemorrhagic stroke 6 months ago','Age >80','NIHSS score >20'], ans:1,
+      exp:'Prior haemorrhagic stroke is an absolute contraindication. Recent surgery <3 months, active bleeding, and uncontrolled BP (>185/110 at time of treatment) are also contraindications.' },
+
+    { cat:'contraindications', q:'Sildenafil is ABSOLUTELY contraindicated with which drug class?',
+      opts:['Beta-blockers','Organic nitrates (e.g. GTN)','ACE inhibitors','Calcium channel blockers'], ans:1,
+      exp:'Sildenafil + nitrates causes profound hypotension (both reduce cGMP degradation/production). This combination can be fatal. Absolute contraindication regardless of dose or timing.' },
+
+    { cat:'contraindications', q:'Sodium valproate is subject to the Pregnancy Prevention Programme (PPP) because:',
+      opts:['It causes fetal bradycardia','It causes neural tube defects and neurodevelopmental disorders — risk ~10% if exposed in utero','It crosses into breastmilk in high concentrations','It causes neonatal hypoglycaemia'], ans:1,
+      exp:'Valproate carries a ~10% risk of congenital malformations and ~30–40% risk of neurodevelopmental disorders (autism, low IQ). All females of childbearing potential must be on effective contraception.' },
+
+    { cat:'contraindications', q:'Nitrofurantoin is contraindicated after 36 weeks of pregnancy. Why?',
+      opts:['Teratogenic at term','Risk of neonatal haemolytic anaemia (G6PD deficiency in neonatal red cells)','Crosses placenta and causes cardiac defects','Causes maternal hepatotoxicity'], ans:1,
+      exp:'Near-term, nitrofurantoin risks neonatal haemolytic anaemia because neonatal red cells are immature. Also contraindicated at any gestation if eGFR <45 (no longer effective as urinary levels insufficient).' },
+
+    { cat:'contraindications', q:'Domperidone is contraindicated with amiodarone due to:',
+      opts:['Increased domperidone metabolism','Additive QT prolongation — risk of Torsades de pointes','Reduced anti-nausea efficacy','Hyperkalaemia'], ans:1,
+      exp:'Both domperidone and amiodarone prolong the QT interval. Combining them significantly increases risk of Torsades de pointes (TdP) / VF. Avoid this combination.' },
+
+    { cat:'contraindications', q:'GLP-1 receptor agonists (e.g. semaglutide) are contraindicated in:',
+      opts:['Obesity without diabetes','Personal or family history of medullary thyroid carcinoma (MEN2)','eGFR 45–60','T2DM on oral therapy'], ans:1,
+      exp:'GLP-1 agonists activate GLP-1 receptors on thyroid C-cells, increasing calcitonin secretion — linked to medullary thyroid carcinoma in animal studies. Absolute contraindication in MEN2 or personal history of MTC.' },
+
+    { cat:'contraindications', q:'Beta-blockers are contraindicated in which form of heart failure?',
+      opts:['Stable, compensated HFrEF','NYHA class I HF','Acutely decompensated heart failure (wet/cold)','Hypertension with HF'], ans:2,
+      exp:'Beta-blockers should NOT be started in acute decompensated heart failure (wet/cold patient). In stable chronic HFrEF: bisoprolol, carvedilol, and nebivolol are evidence-based and recommended.' },
+
+    { cat:'contraindications', q:'Allopurinol should NEVER be started during:',
+      opts:['Chronic gout between attacks','Renal impairment','An acute gout flare','Asymptomatic hyperuricaemia'], ans:2,
+      exp:'Starting allopurinol during an acute flare mobilises urate crystals and worsens/prolongs the attack. Initiate 2–4 weeks after full resolution, with co-prescribing of colchicine or NSAID cover.' },
+
+    { cat:'contraindications', q:'Fluoroquinolones (e.g. ciprofloxacin) should be avoided in:',
+      opts:['UTI caused by Gram-negative organisms','Myasthenia gravis','Diabetic foot infections','Diverticulitis'], ans:1,
+      exp:'Fluoroquinolones impair neuromuscular transmission, causing potentially life-threatening exacerbations of myasthenia gravis. Also carry risk of tendon rupture and peripheral neuropathy.' },
+
+    { cat:'contraindications', q:'Tamsulosin should be flagged before which elective procedure?',
+      opts:['Total hip replacement','General anaesthesia','Cataract surgery (intraoperative floppy iris syndrome)','MRI'], ans:2,
+      exp:'Tamsulosin causes intraoperative floppy iris syndrome (IFIS) during phacoemulsification cataract surgery. Surgeons must be informed — drug does NOT need to be stopped but surgical technique must be modified.' },
+
+    { cat:'contraindications', q:'Carbamazepine is contraindicated (or requires extreme caution) in:',
+      opts:['Focal epilepsy','Bipolar disorder','Acute porphyria AND HLA-B*1502 carriers (risk of Stevens-Johnson syndrome)','Generalised tonic-clonic seizures'], ans:2,
+      exp:'Carbamazepine causes acute porphyric attacks. HLA-B*1502 (common in Han Chinese, South-East Asian populations) is strongly associated with SJS/TEN with carbamazepine. Screen before prescribing.' },
+
+    { cat:'contraindications', q:'Spironolactone is contraindicated if K⁺ exceeds:',
+      opts:['5.0 mmol/L','5.5 mmol/L','6.0 mmol/L','4.5 mmol/L'], ans:1,
+      exp:'Spironolactone is contraindicated if K⁺ >5.5 mmol/L or eGFR <30. It is a potassium-sparing diuretic — can cause dangerous hyperkalaemia, especially combined with ACEi or ARBs.' },
+
+    { cat:'contraindications', q:'Which antibiotic is contraindicated in the FIRST trimester of pregnancy due to folate antagonism?',
+      opts:['Amoxicillin','Trimethoprim (especially first trimester)','Nitrofurantoin','Cefalexin'], ans:1,
+      exp:'Trimethoprim inhibits dihydrofolate reductase — risk of neural tube defects in first trimester. Avoid in first trimester and supplement folate if inadvertently exposed. Cefalexin is considered safe in pregnancy.' },
+
+    /* ── INTERACTIONS (20 questions) ── */
+    { cat:'interactions', q:'Lithium + NSAIDs: what is the key risk?',
+      opts:['Reduced lithium level','Dangerously elevated lithium levels (lithium toxicity)','Renal failure only','QT prolongation'], ans:1,
+      exp:'NSAIDs reduce renal prostaglandin synthesis → reduced GFR → reduced lithium excretion → lithium toxicity (ataxia, tremor, confusion, cardiac arrhythmia). Common and serious interaction — avoid if possible.' },
+
+    { cat:'interactions', q:'Simvastatin + clarithromycin: main serious risk?',
+      opts:['Hepatitis','Rhabdomyolysis (myopathy)','Hypoglycaemia','Reduced statin efficacy'], ans:1,
+      exp:'Clarithromycin inhibits CYP3A4, dramatically increasing simvastatin plasma levels → myopathy and rhabdomyolysis. Use a statin not metabolised by CYP3A4 (e.g. rosuvastatin, pravastatin) or withhold simvastatin during clarithromycin.' },
+
+    { cat:'interactions', q:'Warfarin + fluconazole: what happens to the INR?',
+      opts:['INR falls (sub-therapeutic)','No significant effect','INR rises (risk of bleeding)','INR becomes unpredictable only'], ans:2,
+      exp:'Fluconazole inhibits CYP2C9, the main enzyme metabolising warfarin → warfarin accumulates → INR rises significantly. Monitor closely and reduce warfarin dose. All azole antifungals interact with warfarin.' },
+
+    { cat:'interactions', q:'ACE inhibitor + potassium-sparing diuretic (e.g. spironolactone): main risk?',
+      opts:['Hyponatraemia','Hypokalaemia','Hyperkalaemia','Metabolic alkalosis'], ans:2,
+      exp:'Both drugs reduce aldosterone-mediated potassium excretion. Combined use risks dangerous hyperkalaemia especially in CKD, elderly patients, or when combined with dietary potassium or potassium supplements.' },
+
+    { cat:'interactions', q:'SSRIs + triptans: what potentially serious syndrome can occur?',
+      opts:['Neuroleptic malignant syndrome','Serotonin syndrome','Agranulocytosis','QT prolongation'], ans:1,
+      exp:'Both SSRIs and triptans increase serotonergic activity. Combination risks serotonin syndrome: agitation, confusion, clonus, hyperthermia, tachycardia. Risk is low but clinically significant — monitor carefully.' },
+
+    { cat:'interactions', q:'Digoxin toxicity risk is enhanced by which electrolyte disturbance?',
+      opts:['Hyperkalaemia','Hypocalcaemia','Hypokalaemia','Hypernatraemia'], ans:2,
+      exp:'Hypokalaemia potentiates digoxin toxicity — both compete for the same Na/K-ATPase pump. Loop diuretics (commonly co-prescribed) cause hypokalaemia, increasing toxicity risk. Monitor K⁺ when adjusting diuretics.' },
+
+    { cat:'interactions', q:'Methotrexate toxicity is enhanced (potentially fatally) by:',
+      opts:['Folic acid supplementation','NSAIDs','Paracetamol','Amlodipine'], ans:1,
+      exp:'NSAIDs reduce renal tubular secretion and GFR → methotrexate accumulates → bone marrow suppression, mucositis, and hepatotoxicity. This is a major, potentially fatal drug interaction. Avoid NSAIDs in methotrexate patients.' },
+
+    { cat:'interactions', q:'Rifampicin + warfarin: what is the pharmacokinetic result?',
+      opts:['INR rises — risk of bleeding','INR falls — risk of thrombosis (CYP3A4/CYP2C9 induction)','INR unchanged','Rifampicin inhibits warfarin metabolism'], ans:1,
+      exp:'Rifampicin is a potent CYP enzyme inducer — it dramatically increases warfarin metabolism, reducing plasma warfarin levels and INR. Significant warfarin dose increase required during rifampicin therapy; INR must fall back on stopping.' },
+
+    { cat:'interactions', q:'Amiodarone + haloperidol: key risk?',
+      opts:['Hepatotoxicity','Nephrotoxicity','QT prolongation — risk of Torsades de pointes','Rhabdomyolysis'], ans:2,
+      exp:'Both amiodarone and haloperidol independently prolong the QT interval. Co-prescribing them significantly increases risk of Torsades de pointes and sudden cardiac death. Avoid combination.' },
+
+    { cat:'interactions', q:'Fluoxetine inhibits CYP2D6. What is the effect when combined with codeine?',
+      opts:['Increased codeine toxicity','Reduced analgesia — codeine cannot be converted to morphine','No clinically relevant effect','Serotonin syndrome'], ans:1,
+      exp:'Codeine is a prodrug converted to morphine by CYP2D6. Fluoxetine inhibits CYP2D6 → reduced morphine formation → inadequate analgesia. Additionally, some patients are CYP2D6 poor metabolisers regardless.' },
+
+    { cat:'interactions', q:'Allopurinol + azathioprine: why is azathioprine dose reduction mandatory?',
+      opts:['Allopurinol induces azathioprine metabolism','Allopurinol inhibits xanthine oxidase, blocking azathioprine breakdown → severe toxicity','Renal competition for excretion','QT prolongation'], ans:1,
+      exp:'Azathioprine is metabolised by xanthine oxidase to inactive metabolites. Allopurinol inhibits this enzyme → azathioprine accumulates → severe myelosuppression. If combination unavoidable, reduce azathioprine dose to 25% of normal.' },
+
+    { cat:'interactions', q:'Carbamazepine + combined oral contraceptive pill: effect?',
+      opts:['Increased OCP efficacy','No meaningful interaction','Reduced OCP efficacy — risk of unintended pregnancy (CYP induction)','VTE risk increased'], ans:2,
+      exp:'Carbamazepine induces CYP3A4 and other enzymes, increasing metabolism of oestrogen and progestogen → reduced OCP plasma levels → contraceptive failure. Use alternative contraception (e.g. intrauterine device, depot injection).' },
+
+    { cat:'interactions', q:'IV beta-blocker + IV verapamil given together: most serious risk?',
+      opts:['Tachycardia and hypertension','Complete heart block and asystole','Hypokalaemia','Severe bronchospasm'], ans:1,
+      exp:'Both depress AV nodal conduction: combined IV use can cause complete heart block, severe bradycardia, or asystole. This combination should generally be avoided; if both are needed, separate by time and use with extreme caution.' },
+
+    { cat:'interactions', q:'Gentamicin + furosemide: synergistic toxicity involves which organs?',
+      opts:['Liver and bone marrow','Kidney (nephrotoxicity) and inner ear (ototoxicity)','Peripheral nerves and kidneys','Thyroid and kidneys'], ans:1,
+      exp:'Both are nephrotoxic and ototoxic. Furosemide reduces renal gentamicin clearance → accumulation. Pre-dose (trough) levels and renal function must be checked before every gentamicin dose in once-daily regimens.' },
+
+    { cat:'interactions', q:'Lithium + thiazide diuretics: what happens to lithium levels?',
+      opts:['Lithium levels fall','Lithium levels rise — risk of toxicity (reduced renal excretion)','No significant change','Lithium efficacy reduced but no toxicity'], ans:1,
+      exp:'Thiazides cause sodium depletion → renal reabsorption of sodium AND lithium increases in the proximal tubule → lithium retention → toxicity. Monitor lithium levels closely if thiazides are started or stopped.' },
+
+    { cat:'interactions', q:'Phenytoin + warfarin: long-term interaction?',
+      opts:['INR rises (phenytoin inhibits warfarin metabolism)','INR falls (phenytoin induces CYP2C9)','No significant effect','Unpredictable only if phenytoin is toxic'], ans:1,
+      exp:'Phenytoin is a CYP enzyme inducer (chronic use) → increases warfarin metabolism → reduced anticoagulation. Acute phenytoin can transiently inhibit CYP, raising INR. Monitor INR carefully when initiating, adjusting, or stopping phenytoin.' },
+
+    { cat:'interactions', q:'MAOIs + pethidine/meperidine: which life-threatening syndrome can result?',
+      opts:['Hypertensive crisis only','Serotonin syndrome / excitatory crisis (hyperpyrexia, convulsions, cardiovascular collapse)','Respiratory depression','Anticholinergic toxidrome'], ans:1,
+      exp:'This is one of the most dangerous drug interactions. Pethidine inhibits serotonin reuptake AND is an opioid — combined with MAOIs this can cause fatal serotonin syndrome. Avoid all opioids with MAOIs; if needed, use morphine cautiously.' },
+
+    { cat:'interactions', q:'Sucralfate + fluoroquinolones (e.g. ciprofloxacin): effect?',
+      opts:['Increases fluoroquinolone levels','Sucralfate chelates the fluoroquinolone reducing oral absorption by up to 90%','No clinically relevant interaction','Increases renal excretion of fluoroquinolone'], ans:1,
+      exp:'Sucralfate (aluminium-based) forms insoluble chelates with fluoroquinolones, dramatically reducing their absorption. Space dosing by at least 2–4 hours. Same issue applies with antacids, iron, zinc, and calcium.' },
+
+    { cat:'interactions', q:'Ciclosporin + simvastatin: primary concern?',
+      opts:['Reduced ciclosporin efficacy','Myopathy and rhabdomyolysis (ciclosporin inhibits OATP1B1 and CYP3A4)','Nephrotoxicity synergy','Hypertension'], ans:1,
+      exp:'Ciclosporin inhibits CYP3A4 and hepatic uptake transporters → dramatically elevated statin levels → risk of rhabdomyolysis. Most statin–ciclosporin combinations are contraindicated or require very low maximum doses.' },
+
+    { cat:'interactions', q:'Potassium supplements + ACE inhibitors: why is this combination dangerous?',
+      opts:['Hypokalaemia','Hyperkalaemia — ACEi reduce aldosterone, impairing potassium excretion','Hyponatraemia','Metabolic acidosis only'], ans:1,
+      exp:'ACEi reduce aldosterone, so less potassium is excreted in the collecting duct. Adding exogenous potassium (supplements or potassium-sparing diuretics) risks dangerous hyperkalaemia, especially in CKD.' },
+
+    /* ── SIDE EFFECTS (15 questions) ── */
+    { cat:'sideeffects', q:'The most common reason patients stop ACE inhibitors is:',
+      opts:['Angioedema','Dry persistent cough (10–15% of patients)','Hyperkalaemia','Hypotension'], ans:1,
+      exp:'ACEi cough is caused by accumulation of bradykinin and substance P in the bronchial mucosa. It is not dose-dependent. Solution: switch to an ARB (e.g. losartan, candesartan) which does not cause this effect.' },
+
+    { cat:'sideeffects', q:'Amiodarone causes thyroid dysfunction. Which effects are possible?',
+      opts:['Hypothyroidism only','Hyperthyroidism only','Both hypothyroidism AND hyperthyroidism','No thyroid effect — only lung concern'], ans:2,
+      exp:'Amiodarone contains large amounts of iodine (37% by weight) and also inhibits deiodinase. Type 1 amiodarone hyperthyroidism: iodine-excess driven. Type 2: destructive thyroiditis. Hypothyroidism also common. Check TFTs every 6 months.' },
+
+    { cat:'sideeffects', q:'Clozapine: most dangerous haematological adverse effect requiring mandatory monitoring?',
+      opts:['Thrombocytopenia','Aplastic anaemia','Agranulocytosis (neutropenia)','Haemolytic anaemia'], ans:2,
+      exp:'Clozapine causes agranulocytosis in ~1% of patients — potentially fatal. Mandatory FBC monitoring: weekly for first year, fortnightly for second year, monthly thereafter. Clozapine must be stopped if neutrophils <1.5 × 10⁹/L.' },
+
+    { cat:'sideeffects', q:'Statins: most common reason for discontinuation in clinical practice?',
+      opts:['Hepatotoxicity','Myalgia and muscle aches (myopathy)','Rhabdomyolysis','Peripheral neuropathy'], ans:1,
+      exp:'Myalgia occurs in 5–10% of statin users and is the commonest reason to stop. True rhabdomyolysis (CK >10× normal + myoglobinuria) is rare but serious. CK should be checked if muscle symptoms develop.' },
+
+    { cat:'sideeffects', q:'Signs of lithium toxicity include all EXCEPT:',
+      opts:['Coarse tremor and ataxia','Dysarthria and confusion','Vomiting and diarrhoea','Dry mouth and urinary retention'], ans:3,
+      exp:'Dry mouth and urinary retention are anticholinergic effects — NOT features of lithium toxicity. Lithium toxicity presents with coarse tremor (vs fine therapeutic tremor), ataxia, confusion, seizures, vomiting, and renal failure.' },
+
+    { cat:'sideeffects', q:'GTN (glyceryl trinitrate) patches: characteristic side effects?',
+      opts:['Bradycardia and constipation','Headache and postural hypotension','Rash and pruritus only','Weight gain'], ans:1,
+      exp:'GTN causes vasodilation — throbbing headache from cerebral vasodilation and postural hypotension are very common. Warn patients, especially when starting. Tolerance develops with continuous use — advise 8-hour patch-free interval daily.' },
+
+    { cat:'sideeffects', q:'Amitriptyline (tricyclic antidepressant): characteristic anticholinergic side effects?',
+      opts:['Diarrhoea, miosis, salivation','Urinary retention, dry mouth, constipation, blurred vision, tachycardia','Bradycardia, bronchospasm','Lacrimation and excessive sweating'], ans:1,
+      exp:'TCAs block muscarinic receptors (anticholinergic). Remember: "blind as a bat, dry as a bone, red as a beet, hot as a hare, mad as a hatter" — blurred vision, dry mouth, urinary retention, flushing, confusion/sedation.' },
+
+    { cat:'sideeffects', q:'High-dose corticosteroids — which metabolic side effect do they cause?',
+      opts:['Hypoglycaemia','Hyperglycaemia (steroid-induced diabetes)','Hyperkalaemia','Hypercalcaemia'], ans:1,
+      exp:'Corticosteroids cause insulin resistance and increase hepatic gluconeogenesis → steroid-induced hyperglycaemia/diabetes. Monitor blood glucose in all patients on corticosteroids ≥7 days or at high doses. Hypoglycaemia does NOT occur.' },
+
+    { cat:'sideeffects', q:'Sodium valproate: most clinically important teratogenic effect?',
+      opts:['Limb reduction defects','Neural tube defects (spina bifida), cardiac defects, and neurodevelopmental disorders','Hearing loss and visual impairment','Cleft palate only'], ans:1,
+      exp:'Valproate carries ~10% risk of major congenital malformations (NTDs, cardiac, urogenital) and 30–40% risk of neurodevelopmental harm (autism, lower IQ). This is why the Pregnancy Prevention Programme is mandatory for all females of childbearing potential.' },
+
+    { cat:'sideeffects', q:'Trimethoprim causes a rise in serum creatinine without affecting GFR. Why?',
+      opts:['Nephrotoxicity at standard doses','It blocks tubular secretion of creatinine (not true renal impairment)','It reduces muscle creatinine production','It stimulates creatinine reabsorption'], ans:1,
+      exp:'Trimethoprim inhibits tubular secretion of creatinine (same transporter as creatinine). eGFR calculated from creatinine will appear to fall, but actual GFR is unchanged. Do not misinterpret as AKI — instead check urea, which should be normal.' },
+
+    { cat:'sideeffects', q:'Prolonged bisphosphonate use (>5 years) is associated with which rare but serious complication?',
+      opts:['Peptic ulceration','Atypical subtrochanteric femoral fracture','Liver failure','Agranulocytosis'], ans:1,
+      exp:'Atypical femoral fractures are associated with bisphosphonate-induced over-suppression of bone remodelling. Patients should be counselled to report thigh/groin pain — prodromal symptom before complete fracture.' },
+
+    { cat:'sideeffects', q:'Methotrexate: two main organ toxicities requiring baseline blood testing?',
+      opts:['Renal and cardiac','Bone marrow (FBC) and liver (LFTs)','Thyroid and kidney','Cardiac and pulmonary'], ans:1,
+      exp:'Methotrexate causes dose-dependent hepatotoxicity and bone marrow suppression. Baseline FBC, LFTs, U&E are required. Monitor 2-weekly until stable, then 3-monthly. Folic acid 5 mg once weekly helps reduce mucositis/side effects.' },
+
+    { cat:'sideeffects', q:'Metformin: most common GI side effect when first starting?',
+      opts:['Constipation','Nausea, diarrhoea, and abdominal cramps','Upper GI bleeding','Bloating only'], ans:1,
+      exp:'GI side effects (nausea, diarrhoea, abdominal discomfort) affect ~30% of patients when starting metformin. Taking with food and slowly titrating the dose reduces tolerability issues. Modified-release formulation also helps.' },
+
+    { cat:'sideeffects', q:'Amiodarone: which ocular finding is common (>90% of long-term users) but usually asymptomatic?',
+      opts:['Posterior subcapsular cataracts','Corneal microdeposits (vortex keratopathy)','Optic neuritis only','Glaucoma'], ans:1,
+      exp:'Corneal microdeposits occur in almost all long-term amiodarone users but rarely affect vision. Halos around lights are occasionally reported. Rarely, amiodarone causes optic neuropathy — causes significant vision loss; stop drug if this occurs.' },
+
+    { cat:'sideeffects', q:'Fluoroquinolones (e.g. ciprofloxacin): serious musculoskeletal adverse effect?',
+      opts:['Myositis','Tendon rupture — particularly Achilles tendon','Rhabdomyolysis','Osteonecrosis of jaw'], ans:1,
+      exp:'Quinolones are associated with tendinopathy and tendon rupture, especially of the Achilles tendon. Risk is increased in older patients, those on corticosteroids, and athletes. Stop the drug immediately if tendinitis symptoms occur.' },
+
+    /* ── MECHANISM (15 questions) ── */
+    { cat:'mechanism', q:'Mechanism of action of warfarin?',
+      opts:['Direct thrombin (Factor IIa) inhibitor','Factor Xa inhibitor directly','Inhibits vitamin K epoxide reductase → reduces synthesis of factors II, VII, IX, X','Activates antithrombin III'], ans:2,
+      exp:'Warfarin inhibits VKOR (vitamin K epoxide reductase) → depletes reduced vitamin K → cannot carboxylate clotting factors II, VII, IX, X, and proteins C and S. Onset takes 48–72h as existing factors must be cleared.' },
+
+    { cat:'mechanism', q:'How do ACE inhibitors lower blood pressure?',
+      opts:['Block AT1 receptors directly','Inhibit ACE → reduce angiotensin I→II conversion → less vasoconstriction and aldosterone → lower BP','Directly vasodilate arteries','Block calcium channels'], ans:1,
+      exp:'ACEi block conversion of Ang I → Ang II → reduced vasoconstriction + reduced aldosterone → lower BP and sodium retention. Also accumulate bradykinin → responsible for cough side effect.' },
+
+    { cat:'mechanism', q:'Mechanism of furosemide?',
+      opts:['Carbonic anhydrase inhibitor in proximal tubule','Blocks Na-Cl cotransporter in DCT','Blocks Na-K-2Cl cotransporter in ascending limb of loop of Henle','Aldosterone antagonist in collecting duct'], ans:2,
+      exp:'Furosemide inhibits the Na-K-2Cl (NKCC2) cotransporter in the thick ascending limb → prevents Na, K, Cl reabsorption → large volume of isotonic urine. Most potent diuretic class.' },
+
+    { cat:'mechanism', q:'How does adenosine terminate SVT?',
+      opts:['Blocks beta-1 adrenoceptors','Activates A1 adenosine receptors on AV node → transient complete AV nodal block','Prolongs QT interval and breaks re-entry circuit','Blocks sodium channels (membrane-stabilising)'], ans:1,
+      exp:'Adenosine agonises A1 receptors on the AV node → hyperpolarisation → transient AV block (3–15 seconds) → interrupts re-entry circuit. Half-life 10 seconds — effects are brief. Warn patient of chest tightness during administration.' },
+
+    { cat:'mechanism', q:'Mechanism of action of PPIs (e.g. omeprazole)?',
+      opts:['Blocks H2 receptors on parietal cells','Irreversibly inhibits H+/K+-ATPase (proton pump) → prevents acid secretion','Neutralises gastric acid chemically','Prostaglandin analogue stimulating mucus production'], ans:1,
+      exp:'PPIs are prodrugs activated in the acidic canaliculi of parietal cells → covalently bind H+/K+-ATPase → irreversible inhibition. Maximum effect at 3–5 days of regular use (need active pumps). All PPIs are similar in efficacy.' },
+
+    { cat:'mechanism', q:'Mechanism of heparin (unfractionated)?',
+      opts:['Inhibits thrombin directly','Activates antithrombin III, which then inhibits thrombin (IIa) and Factor Xa','Inhibits vitamin K-dependent factors','Inhibits platelet GP IIb/IIIa receptors'], ans:1,
+      exp:'Heparin binds antithrombin III (ATIII) → conformational change → ATIII inhibits thrombin and Factor Xa far more rapidly. UFH inhibits both thrombin and Xa equally; LMWH preferentially inhibits Xa (less thrombin inhibition).' },
+
+    { cat:'mechanism', q:'How do bisphosphonates work in osteoporosis?',
+      opts:['Stimulate osteoblast activity → new bone formation','Inhibit osteoclast function by disrupting farnesyl pyrophosphate synthase → reduced bone resorption','Act as calcium modulators in bone matrix','Stimulate calcitonin release'], ans:1,
+      exp:'Bisphosphonates are pyrophosphate analogues that bind to bone mineral → taken up by osteoclasts → inhibit farnesyl pyrophosphate synthase (key enzyme in osteoclast function) → osteoclast apoptosis → reduced bone breakdown.' },
+
+    { cat:'mechanism', q:'Mechanism of SGLT-2 inhibitors (e.g. dapagliflozin)?',
+      opts:['Increase insulin secretion from beta cells','Reduce hepatic glucose output','Inhibit sodium-glucose cotransporter-2 in renal proximal tubule → glucose and sodium excreted in urine','Mimic GLP-1 → slow gastric emptying'], ans:2,
+      exp:'SGLT-2 inhibitors block glucose reabsorption in the proximal tubule → glycosuria → lower blood glucose. Additional benefits: natriuresis → reduced preload and BP. Cardioprotective and renoprotective effects independent of glucose lowering.' },
+
+    { cat:'mechanism', q:'Mechanism of spironolactone?',
+      opts:['Loop diuretic via NKCC2 inhibition','Competitive aldosterone antagonist in the collecting duct → potassium-sparing diuresis','Thiazide diuretic','Carbonic anhydrase inhibitor'], ans:1,
+      exp:'Spironolactone competitively blocks aldosterone receptors (mineralocorticoid receptors) in the collecting duct → less sodium reabsorption + potassium retention → weak diuresis. Used in HF, oedema, hyperaldosteronism, acne, hirsutism.' },
+
+    { cat:'mechanism', q:'How do SSRIs reduce depression?',
+      opts:['Block the serotonin reuptake transporter (SERT) → more serotonin in synaptic cleft','Inhibit monoamine oxidase → prevent serotonin breakdown','Act as post-synaptic 5-HT1A agonists','Block dopamine reuptake'], ans:0,
+      exp:'SSRIs specifically inhibit SERT (serotonin transporter) on the presynaptic neuron → increased serotonin bioavailability in the synapse. They are serotonin-selective unlike TCAs which also block noradrenaline, histamine, and muscarinic receptors.' },
+
+    { cat:'mechanism', q:'ACE inhibitor-related cough: underlying mechanism?',
+      opts:['Direct tracheal irritation from drug excretion','Accumulation of bradykinin and substance P in the respiratory tract','ACEi activate mast cells in airway','Reduced prostaglandin I2 causing bronchoconstriction'], ans:1,
+      exp:'ACEi also inhibit breakdown of bradykinin and substance P (ACE = kininase II). Accumulation in the bronchial mucosa stimulates cough receptors. This is not dose-dependent — even tiny doses cause cough in susceptible individuals. Switch to ARB.' },
+
+    { cat:'mechanism', q:'Mechanism of allopurinol in gout prevention?',
+      opts:['Uricosuric agent — increases renal urate excretion','Inhibits xanthine oxidase → reduced synthesis of uric acid from xanthine and hypoxanthine','COX inhibitor reducing inflammation','IL-1 receptor antagonist'], ans:1,
+      exp:'Allopurinol and its active metabolite oxipurinol inhibit xanthine oxidase → xanthine cannot be converted to uric acid → reduced urate production. Plasma urate levels typically fall to target (<360 µmol/L) within weeks of starting.' },
+
+    { cat:'mechanism', q:'Mechanism of ondansetron as an antiemetic?',
+      opts:['Histamine H1 receptor antagonist','Dopamine D2 receptor antagonist','5-HT3 serotonin receptor antagonist (in gut and CTZ)','Muscarinic receptor antagonist'], ans:2,
+      exp:'Ondansetron blocks 5-HT3 receptors in the gut (where serotonin is released post-chemotherapy) and in the chemoreceptor trigger zone (CTZ). Highly effective for chemotherapy- and radiotherapy-induced nausea. Also used post-operatively.' },
+
+    { cat:'mechanism', q:'How does atropine increase heart rate in bradycardia?',
+      opts:['Alpha-1 agonist → increases cardiac output','Antagonises muscarinic (M2) acetylcholine receptors → removes vagal inhibition → increases SA node firing rate','Beta-1 agonist — direct cardiac stimulant','Blocks adenosine receptors on AV node'], ans:1,
+      exp:'Atropine is a competitive muscarinic antagonist. By blocking vagal M2 receptors at the SA node and AV node, it removes parasympathetic (vagal) brake on heart rate → chronotropic and dromotropic effect.' },
+
+    { cat:'mechanism', q:'Mechanism of metformin in T2DM?',
+      opts:['Stimulates insulin secretion from beta cells','Activates AMPK → reduces hepatic gluconeogenesis + improves peripheral insulin sensitivity','Inhibits SGLT-2 in the kidney','Mimics GLP-1 hormone effects'], ans:1,
+      exp:'Metformin activates AMP-activated protein kinase (AMPK) → inhibits hepatic gluconeogenesis (main mechanism) + improves muscle glucose uptake. Does NOT cause hypoglycaemia alone. Weight-neutral. Safe with normal renal function.' },
+
+    /* ── MONITORING (12 questions) ── */
+    { cat:'monitoring', q:'Lithium monitoring: which two organ functions must be checked regularly?',
+      opts:['Liver and bone marrow','Thyroid function and renal function (eGFR/creatinine)','Cardiac (ECG) and liver','Calcium and phosphate'], ans:1,
+      exp:'Lithium is renally excreted — any change in renal function affects serum levels. It also causes both hypothyroidism and nephrogenic diabetes insipidus. Check TFTs and renal function every 6 months (more frequently if unstable).' },
+
+    { cat:'monitoring', q:'Methotrexate monitoring: which three blood tests are required at minimum?',
+      opts:['LFTs only','U&E only','FBC, LFTs, and U&E (renal function)','FBC and CRP'], ans:2,
+      exp:'Methotrexate causes bone marrow suppression (FBC), hepatotoxicity (LFTs), and is renally excreted (U&E). All three must be monitored. Also check pulmonary function/CXR at baseline if respiratory concerns (can cause pneumonitis).' },
+
+    { cat:'monitoring', q:'Amiodarone: which THREE organs/systems require ongoing monitoring?',
+      opts:['Kidney, liver, bone marrow','Thyroid (TFTs), liver (LFTs), lungs (CXR + lung function) — and eyes','Cardiac, renal, GI','Bone, kidney, cardiac'], ans:1,
+      exp:'Amiodarone monitoring: TFTs every 6 months (thyroid dysfunction), LFTs every 6 months (hepatotoxicity), CXR and lung function if respiratory symptoms (pulmonary fibrosis), annual slit-lamp exam (corneal microdeposits). Baseline ECG and ECHO before starting.' },
+
+    { cat:'monitoring', q:'Clozapine mandatory FBC monitoring schedule (post-first year)?',
+      opts:['Weekly throughout use','Weekly year 1, fortnightly year 2, monthly thereafter','Monthly from day one','Fortnightly throughout'], ans:1,
+      exp:'Clozapine agranulocytosis risk requires: weekly FBC monitoring for 18 weeks (first 18 doses), fortnightly until 1 year, then monthly. Must be registered with a clozapine monitoring service. Dispensed only with compliant monitoring results.' },
+
+    { cat:'monitoring', q:'Gentamicin (once-daily "Hartford" regimen): what must be measured before each dose?',
+      opts:['Peak level 1h post-dose','Pre-dose (trough) level AND serum creatinine','Full blood count','Urine output only'], ans:1,
+      exp:'Pre-dose (trough) gentamicin level and renal function must be checked before each dose to avoid accumulation-related nephrotoxicity and ototoxicity. Target pre-dose level: <1 mg/L. Also check a 6–14h post-dose level for dose nomogram.' },
+
+    { cat:'monitoring', q:'Target INR for a patient with AF on warfarin (no prosthetic valve)?',
+      opts:['1.5–2.0','2.0–3.0','2.5–3.5','3.0–4.5'], ans:1,
+      exp:'AF anticoagulation target INR: 2.0–3.0. For mechanical prosthetic heart valves (mitral): 2.5–3.5. Recurrent VTE or antiphospholipid syndrome: may need 2.5–3.5. Check INR weekly when starting, extending intervals as stable.' },
+
+    { cat:'monitoring', q:'After starting or increasing an ACE inhibitor dose, when should U&E be rechecked?',
+      opts:['After 6 months','At the next annual review','Within 1–2 weeks of each dose change','Same day only'], ans:2,
+      exp:'NICE advises checking U&E (eGFR and K⁺) within 1–2 weeks of starting or increasing ACEi/ARB. An eGFR fall of up to 25% and K⁺ rise of up to 5.5 are acceptable. Greater changes require dose reduction or specialist review.' },
+
+    { cat:'monitoring', q:'Warfarin: which drug monitoring parameter is used to guide dosing?',
+      opts:['APTT (activated partial thromboplastin time)','INR (international normalised ratio)','Anti-Xa level','PT (prothrombin time) ratio'], ans:1,
+      exp:'INR is derived from the prothrombin time and is standardised across laboratories (unlike raw PT). It is the gold-standard measure for monitoring warfarin therapy. DOACs do NOT require routine monitoring via INR.' },
+
+    { cat:'monitoring', q:'Valproate monitoring essential for females of childbearing potential includes:',
+      opts:['INR monthly','Pregnancy test, effective contraception confirmation, annual review for ongoing need','LFTs and FBC only','Renal function every 6 months'], ans:1,
+      exp:'Under the Pregnancy Prevention Programme (PPP): annual specialist review, documented risk acknowledgement, reliable contraception (2 methods or 1 highly reliable method recommended), pregnancy test if indicated. Valproate must not be used in women who could become pregnant without these safeguards.' },
+
+    { cat:'monitoring', q:'Amiodarone: which ophthalmic review is required after long-term use?',
+      opts:['Annual fundoscopy for retinopathy','Annual slit-lamp examination for corneal microdeposits and optic neuropathy','OCT imaging for macular degeneration','Visual field perimetry for glaucoma'], ans:1,
+      exp:'Annual slit-lamp eye exam is recommended. Corneal microdeposits are near-universal and rarely clinically significant. Amiodarone optic neuropathy is rare but causes vision loss — stop drug if this is suspected.' },
+
+    { cat:'monitoring', q:'Digoxin therapeutic serum level (measured ≥6h after dose)?',
+      opts:['0.1–0.5 mcg/L','0.5–0.9 mcg/L (aim for lower end in elderly)','1.5–2.5 mcg/L','2.0–3.0 mcg/L'], ans:1,
+      exp:'Digoxin therapeutic range: 0.5–2.0 ng/mL; aim for 0.5–0.9 ng/mL in heart failure (lower levels associated with same efficacy but less toxicity). Levels must be measured ≥6h after the dose (trough situation).' },
+
+    { cat:'monitoring', q:'Methotrexate: how often should FBC, LFTs and U&E be checked once stable on maintenance therapy?',
+      opts:['Weekly indefinitely','Every 2 weeks for 3 months, then every 3 months','Annually only','Every 6 months'], ans:1,
+      exp:'Methotrexate monitoring frequency: every 2 weeks for first 3 months (highest risk period), then every 3 months when stable. More frequently if dose changed or if blood results abnormal. Prescriber must record monitoring before issuing prescription.' },
 ];
 
 /* ── Singleton export ─────────────────────────────────────────────── */

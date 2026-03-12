@@ -9774,6 +9774,49 @@
         }
         [data-theme="dark"] .prx-score-banner { background: rgba(124,58,237,0.1); border-color: rgba(124,58,237,0.3); color: #c4b5fd; }
 
+        /* ── Drug Quiz styles ─────────────────────────────────────── */
+        .prx-quiz-setup { display:flex; flex-direction:column; gap:14px; }
+        .prx-quiz-setup-row { display:flex; gap:12px; flex-wrap:wrap; align-items:flex-end; }
+        .prx-quiz-setup-field { display:flex; flex-direction:column; gap:5px; flex:1; min-width:160px; }
+        .prx-quiz-setup-field label { font-size:12px; font-weight:700; color:var(--v2-text-tertiary); text-transform:uppercase; letter-spacing:.04em; }
+        .prx-quiz-setup-field select { font-size:13px; padding:9px 12px; border:1.5px solid var(--v2-border); border-radius:10px; background:var(--v2-bg-main); color:var(--v2-text-primary); cursor:pointer; }
+        .prx-quiz-preview { font-size:12px; color:var(--v2-text-tertiary); margin-top:2px; }
+        .prx-quiz-start-btn { background:linear-gradient(135deg,var(--v2-primary),var(--v2-primary-dark)); color:#fff; border:none; border-radius:12px; padding:12px 28px; font-size:14px; font-weight:700; cursor:pointer; transition:opacity .2s; }
+        .prx-quiz-start-btn:hover { opacity:.88; }
+        /* Progress bar */
+        .prx-quiz-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:6px; font-size:13px; font-weight:600; color:var(--v2-text-secondary); }
+        .prx-quiz-bar-track { background:var(--v2-bg-elevated); border-radius:8px; height:7px; margin-bottom:14px; overflow:hidden; }
+        .prx-quiz-bar-fill { height:100%; background:linear-gradient(90deg,var(--v2-primary),#7c3aed); border-radius:8px; transition:width .4s ease; }
+        /* Category badge */
+        .prx-quiz-cat-badge { display:inline-block; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; background:var(--v2-bg-elevated); color:var(--v2-text-tertiary); margin-bottom:12px; }
+        /* Question text */
+        #prxQText { font-size:15px; font-weight:600; color:var(--v2-text-primary); line-height:1.6; margin-bottom:16px; }
+        /* Options */
+        .prx-quiz-opts { display:flex; flex-direction:column; gap:9px; margin-bottom:14px; }
+        .prx-quiz-opt { display:flex; align-items:center; gap:10px; width:100%; text-align:left; background:var(--v2-bg-card); border:1.5px solid var(--v2-border); border-radius:11px; padding:11px 14px; font-size:13.5px; color:var(--v2-text-primary); cursor:pointer; transition:border-color .15s, background .15s; }
+        .prx-quiz-opt:hover:not(:disabled) { border-color:var(--v2-primary); background:rgba(99,102,241,0.06); }
+        .prx-quiz-opt:disabled { cursor:default; }
+        .prx-quiz-letter { font-weight:800; font-size:12px; min-width:22px; height:22px; border-radius:50%; background:var(--v2-bg-elevated); color:var(--v2-text-secondary); display:flex; align-items:center; justify-content:center; }
+        .prx-quiz-opt-correct  { background:rgba(5,150,105,0.12) !important; border-color:#059669 !important; color:#059669 !important; }
+        .prx-quiz-opt-correct .prx-quiz-letter { background:#059669; color:#fff; }
+        .prx-quiz-opt-wrong { background:rgba(239,68,68,0.1) !important; border-color:#ef4444 !important; color:#ef4444 !important; }
+        .prx-quiz-opt-wrong .prx-quiz-letter { background:#ef4444; color:#fff; }
+        /* Feedback */
+        .prx-quiz-feedback { padding:12px 14px; border-radius:11px; font-size:13px; line-height:1.6; margin-bottom:12px; }
+        .prx-quiz-feedback.correct { background:rgba(5,150,105,0.1); border:1.5px solid rgba(5,150,105,0.4); color:#065f46; }
+        .prx-quiz-feedback.wrong   { background:rgba(239,68,68,0.08); border:1.5px solid rgba(239,68,68,0.3); color:#7f1d1d; }
+        /* Next button */
+        #prxQNextBtn { display:none; background:var(--v2-primary); color:#fff; border:none; border-radius:10px; padding:10px 22px; font-size:13.5px; font-weight:700; cursor:pointer; transition:opacity .2s; }
+        #prxQNextBtn:hover { opacity:.87; }
+        /* Dark mode */
+        [data-theme="dark"] .prx-quiz-setup-field select { background:var(--v2-bg-card); border-color:var(--v2-border); color:var(--v2-text-primary); }
+        [data-theme="dark"] .prx-quiz-opt { background:var(--v2-bg-card); border-color:var(--v2-border); color:var(--v2-text-primary); }
+        [data-theme="dark"] .prx-quiz-opt:hover:not(:disabled) { border-color:var(--v2-primary-light,#818cf8); background:rgba(99,102,241,0.1); }
+        [data-theme="dark"] .prx-quiz-letter { background:var(--v2-bg-main); color:var(--v2-text-tertiary); }
+        [data-theme="dark"] .prx-quiz-feedback.correct { background:rgba(5,150,105,0.15); border-color:rgba(5,150,105,0.5); color:#6ee7b7; }
+        [data-theme="dark"] .prx-quiz-feedback.wrong   { background:rgba(239,68,68,0.12); border-color:rgba(239,68,68,0.4); color:#fca5a5; }
+        [data-theme="dark"] .prx-quiz-cat-badge { background:var(--v2-bg-elevated); color:var(--v2-text-tertiary); }
+
     </style>
         <style>
             /* Anatomy layout and dark-mode-aware styling */
@@ -15685,6 +15728,7 @@
                     <button class="prx-tab-btn"        data-prx="errors"       role="tab">⚠️ Prescribing Error Cases</button>
                     <button class="prx-tab-btn"        data-prx="cd"           role="tab">🔒 Controlled Drugs</button>
                     <button class="prx-tab-btn"        data-prx="abx"          role="tab">🦠 Antibiotic Stewardship</button>
+                    <button class="prx-tab-btn"        data-prx="quiz"         role="tab">📝 Drug Quiz</button>
                 </nav>
 
                 <!-- ══════════════════════════════════════════
@@ -16045,6 +16089,72 @@
 
                     <div class="abx-condition-grid" id="prxAbxGrid"></div>
                 </div>
+
+                <!-- ══════════════════════════════════════════
+                     TAB 7 – DRUG QUIZ
+                     ══════════════════════════════════════════ -->
+                <div class="prx-tab-content" id="prx-quiz">
+                    <div class="prx-section-hdr">
+                        <div>
+                            <h2>📝 Drug Quiz</h2>
+                            <p>Test your pharmacology knowledge. Choose a category and number of questions, then work through randomised MCQs with instant explanations.</p>
+                        </div>
+                    </div>
+
+                    <!-- SETTINGS SCREEN -->
+                    <div id="prxQuizSetup" class="prx-quiz-setup">
+                        <div class="prx-quiz-setup-row">
+                            <div class="prx-quiz-setup-field">
+                                <label for="prxQuizCat">Category</label>
+                                <select id="prxQuizCat">
+                                    <option value="random">🎲 Random (all categories)</option>
+                                    <option value="dosing">💊 Dosing</option>
+                                    <option value="contraindications">🚫 Contraindications</option>
+                                    <option value="interactions">⚡ Drug Interactions</option>
+                                    <option value="sideeffects">⚠️ Side Effects</option>
+                                    <option value="mechanism">🔬 Mechanism</option>
+                                    <option value="monitoring">👁️ Monitoring</option>
+                                </select>
+                            </div>
+                            <div class="prx-quiz-setup-field">
+                                <label for="prxQuizCount">Number of questions</label>
+                                <select id="prxQuizCount">
+                                    <option value="5">5 questions</option>
+                                    <option value="10" selected>10 questions</option>
+                                    <option value="20">20 questions</option>
+                                    <option value="999">All available</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div style="display:flex;align-items:center;gap:14px;">
+                            <button class="prx-quiz-start-btn" onclick="window.prxStartQuiz()">▶ Start Quiz</button>
+                            <span id="prxQuizPreview" class="prx-quiz-preview">Loading…</span>
+                        </div>
+                    </div>
+
+                    <!-- QUIZ PLAY SCREEN (hidden initially) -->
+                    <div id="prxQuizPlay" style="display:none;">
+                        <div class="prx-quiz-header">
+                            <span id="prxQProgress">Question 1 of 10</span>
+                            <span id="prxQScoreLive">Score: 0/0</span>
+                        </div>
+                        <div class="prx-quiz-bar-track">
+                            <div class="prx-quiz-bar-fill" id="prxQProgressBar" style="width:0%;"></div>
+                        </div>
+                        <span id="prxQCatBadge" class="prx-quiz-cat-badge">💊 Dosing</span>
+                        <div id="prxQText"></div>
+                        <div class="prx-quiz-opts" id="prxQOptions"></div>
+                        <div id="prxQFeedback" class="prx-quiz-feedback" style="display:none;"></div>
+                        <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;">
+                            <button id="prxQNextBtn" onclick="window.prxNextQuizQ()">Next →</button>
+                            <button class="prx-btn secondary" style="font-size:12px;padding:7px 14px;" onclick="window.prxResetQuiz()">⚙️ Change settings</button>
+                        </div>
+                    </div>
+
+                    <!-- QUIZ SUMMARY SCREEN (hidden initially) -->
+                    <div id="prxQuizSummary" style="display:none;"></div>
+
+                </div><!-- end prx-quiz -->
 
             </div><!-- end prescribing-safety-panel -->
 
