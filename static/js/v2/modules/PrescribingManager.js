@@ -19,7 +19,10 @@
  *  6. Antibiotic Stewardship   – 23 empirical regimens + IV-to-oral switch
  *  7. Drug Quiz                – 105 hardcoded Qs + dynamic generation from 60 drug JSONs;
  *                                per-category score breakdown on completion
+ *  8. Pregnancy & Lactation    – drug safety guide (delegated to PregnancyDrugsManager)
  */
+
+import { pregnancyDrugsManager as _pregMgr } from './PregnancyDrugsManager.js';
 
 class PrescribingManager {
 
@@ -45,6 +48,7 @@ class PrescribingManager {
         this._buildQuickCards();
         this._buildAbxGrid();
         this._initDrugQuiz();
+        this._initPregnancySection();
         this._exposeWindowHandlers();
         this._initialized = true;
     }
@@ -755,6 +759,18 @@ class PrescribingManager {
        WINDOW HANDLER BRIDGE
        Exposes methods that HTML onclick attributes call.
        ═══════════════════════════════════════════════════════════════ */
+
+    /* ═══════════════════════════════════════════════════════════════
+       8. PREGNANCY & LACTATION (delegated to PregnancyDrugsManager)
+       ═══════════════════════════════════════════════════════════════ */
+
+    _initPregnancySection() {
+        const container = document.getElementById('prx-pregnancy');
+        if (!container) return;
+        // Ensure the pregnancy card styles are present, then render into this tab pane
+        _pregMgr.ensureStyles();
+        _pregMgr.render(container);
+    }
 
     _exposeWindowHandlers() {
         window.prescribingManager = this;

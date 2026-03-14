@@ -21,7 +21,7 @@ import { OfflineManager } from './modules/OfflineManager.js';
 
 // Reference Modules (require external database files)
 import { DrugReferenceManager } from './modules/DrugReferenceManager.js';
-import { PregnancyDrugsManager } from './modules/PregnancyDrugsManager.js';
+import { pregnancyDrugsManager } from './modules/PregnancyDrugsManager.js';
 import { MSKInvestigationsManager } from './modules/MSKInvestigationsManager.js';
 import { LabValuesManager } from './modules/LabValuesManager.js';
 import { GuidelinesManager } from './modules/GuidelinesManager.js';
@@ -57,7 +57,7 @@ class MLAQuizApp {
     constructor() {
         this.initialized = false;
         this.drugManager = new DrugReferenceManager();
-        this.pregnancyDrugsManager = new PregnancyDrugsManager();
+        this.pregnancyDrugsManager = pregnancyDrugsManager;
         this.mskInvestigationsManager = new MSKInvestigationsManager();
         this.labManager = new LabValuesManager();
         this.guidelinesManager = new GuidelinesManager();
@@ -169,7 +169,8 @@ class MLAQuizApp {
         ];
 
         // Setup pregnancy drugs event listener (will initialize on tab click)
-        this.pregnancyDrugsManager.setupEventListeners();
+        // Note: pregnancy rendering is now handled by PrescribingManager's #prx-pregnancy tab.
+        // The pregnancyDrugsManager singleton is kept for GlobalSearch compatibility.
 
         await Promise.all([calculatorInitialization, ...referenceInitializers]);
 
