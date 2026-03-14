@@ -29,11 +29,15 @@ class PrescribingManager {
     constructor() {
         this._caseAnswers      = {};
         this._initialized      = false;
-        this._quiz             = { questions: [], current: 0, score: 0, answered: false, active: false, results: [] };
+        this._quiz             = { questions: [], current: 0, score: 0, answered: false, active: false, results: [], streak: 0 };
         this._drugDataCache    = null;   // fetched drug JSON array
         this._dynamicQCache    = null;   // generate MCQ objects
         this._dynamicQCount    = 0;
         this._quizListenersSet = false;
+        this._scenarioCat      = 'all';
+        this._abxRouteFilter   = 'all';
+        this._caseFilter       = 'all';
+        this._cdQ              = null;  // CD quiz state
     }
 
     /* ═══════════════════════════════════════════════════════════════
@@ -297,7 +301,15 @@ class PrescribingManager {
         const box = document.getElementById('prxCasesContainer');
         if (!box) return;
 
-        box.innerHTML = CASES.map((c, idx) => `
+        const filter  = this._caseFilter || 'all';
+        const visible = filter === 'all' ? CASES : CASES.filter(c => this._getCaseCategory(c) === filter);
+        if (!visible.length) {
+            box.innerHTML = '<p style="color:var(--v2-text-tertiary);font-size:13px;padding:16px 0;">No cases match this filter.</p>';
+            this._updateCaseScore();
+            return;
+        }
+
+        box.innerHTML = visible.map((c, idx) => `
             <div class="prx-case-card" id="prxCase_${c.id}">
                 <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px;">
                     <strong style="font-size:14px;color:var(--v2-text-primary);">Case ${idx + 1}: ${c.title}</strong>
@@ -357,19 +369,7 @@ class PrescribingManager {
        ═══════════════════════════════════════════════════════════════ */
 
     _buildAbxGrid() {
-        const el = document.getElementById('prxAbxGrid');
-        if (!el) return;
-        el.innerHTML = ABX_DATA.map(d => `
-            <div class="abx-card">
-                <h4>${d.condition} <span class="abx-iv-oral ${d.route}">${d.route === 'oral' ? 'ORAL' : d.route === 'iv' ? 'IV' : 'IV→ORAL'}</span></h4>
-                <div class="abx-row"><strong>Severity:</strong> ${d.severity}</div>
-                <div class="abx-row"><strong>1st line:</strong> ${d.firstLine}</div>
-                <div class="abx-row"><strong>If penicillin allergy:</strong> ${d.ifAllergy}</div>
-                <div class="abx-row"><strong>Severe/failing:</strong> ${d.severe}</div>
-                <div class="abx-row"><strong>Review:</strong> ${d.review}</div>
-                ${d.notes ? `<div class="abx-switch-criteria">💡 ${d.notes}</div>` : ''}
-            </div>
-        `).join('');
+        this._renderAbxCards();
     }
 
     /* ═══════════════════════════════════════════════════════════════
@@ -397,8 +397,9 @@ class PrescribingManager {
     }
 
     async startQuiz() {
-        const cat   = document.getElementById('prxQuizCat').value;
-        const count = parseInt(document.getElementById('prxQuizCount').value) || 999;
+        const cat    = document.getElementById('prxQuizCat').value;
+        const count  = parseInt(document.getElementById('prxQuizCount').value) || 999;
+        const source = document.getElementById('prxQuizSource')?.value || 'all';
 
         // Use cached dynamic questions; if not ready yet, fetch on demand
         let dynamicQs = this._dynamicQCache;
@@ -414,8 +415,9 @@ class PrescribingManager {
             if (startBtn2) { startBtn2.disabled = false; startBtn2.textContent = '▶ Start Quiz'; }
         }
 
-        // Combine hardcoded + dynamically generated questions, filter by category
-        const allQ = [...DRUG_QUIZ_Q, ...dynamicQs];
+        // Combine questions, filter by source and category
+        const dynamicToUse = source === 'static' ? [] : dynamicQs;
+        const allQ = [...DRUG_QUIZ_Q, ...dynamicToUse];
         let pool   = cat === 'random' ? [...allQ] : allQ.filter(q => q.cat === cat);
 
         // Fisher–Yates shuffle
@@ -424,7 +426,7 @@ class PrescribingManager {
             [pool[i], pool[j]] = [pool[j], pool[i]];
         }
         pool = pool.slice(0, Math.min(pool.length, count));
-        this._quiz = { questions: pool, current: 0, score: 0, answered: false, active: true, results: [] };
+        this._quiz = { questions: pool, current: 0, score: 0, answered: false, active: true, results: [], streak: 0 };
         document.getElementById('prxQuizSetup').style.display   = 'none';
         document.getElementById('prxQuizPlay').style.display    = 'block';
         document.getElementById('prxQuizSummary').style.display = 'none';
@@ -469,9 +471,20 @@ class PrescribingManager {
         const qObj   = this._quiz.questions[this._quiz.current];
         const correct = qObj.ans;
         const isRight = optIdx === correct;
-        if (isRight) this._quiz.score++;
+        if (isRight) {
+            this._quiz.score++;
+            this._quiz.streak = (this._quiz.streak || 0) + 1;
+        } else {
+            this._quiz.streak = 0;
+        }
         // Track per-question result for category breakdown
         this._quiz.results.push({ cat: qObj.cat, correct: isRight });
+        // Update streak badge
+        const streakEl = document.getElementById('prxQStreak');
+        if (streakEl) {
+            streakEl.textContent = `🔥 ${this._quiz.streak}`;
+            streakEl.className = `prx-streak-badge${this._quiz.streak >= 3 ? ' hot' : ' zero'}`;
+        }
 
         // Style options
         qObj.opts.forEach((_, i) => {
@@ -772,6 +785,243 @@ class PrescribingManager {
         _pregMgr.render(container);
     }
 
+    /* ═══════════════════════════════════════════════════════════════
+       ENHANCEMENTS – Scenario category filter
+       ═══════════════════════════════════════════════════════════════ */
+
+    setScenarioCat(cat) {
+        this._scenarioCat = cat;
+        document.querySelectorAll('#prxScenarioCats .prx-filter-chip').forEach(btn => {
+            const m = btn.getAttribute('onclick')?.match(/prxSetScenarioCat\('([^']+)'\)/);
+            btn.classList.toggle('active', !!(m && m[1] === cat));
+        });
+        const sel = document.getElementById('prxScenario');
+        if (!sel) return;
+        Array.from(sel.options).forEach(opt => {
+            if (!opt.value) { opt.hidden = false; return; }
+            const optCat = SCENARIO_CATS[opt.value] || 'other';
+            opt.hidden = cat !== 'all' && optCat !== cat;
+        });
+        sel.value = '';
+        const box = document.getElementById('prxScenarioBox');
+        if (box) box.style.display = 'none';
+        document.getElementById('prxFeedback').innerHTML =
+            '<p style="color:var(--v2-text-tertiary);font-size:13px;">Select a scenario, fill in your prescription, and press <em>Check</em>.</p>';
+    }
+
+    revealAnswer() {
+        const sel = document.getElementById('prxScenario');
+        const fb  = document.getElementById('prxFeedback');
+        if (!fb) return;
+        if (!sel || !sel.value) {
+            fb.innerHTML = '<div class="prx-result-item info">📖 Select a scenario first, then click Reveal Model Answer.</div>';
+            return;
+        }
+        const sc = SIM_SCENARIOS[sel.value];
+        if (!sc) return;
+        const hints = sc.checks.map(c => `<li style="margin-bottom:4px;">${c.fail}</li>`).join('');
+        fb.innerHTML = `
+            <div class="prx-result-item info">
+                <strong>📖 Model Answer — what examiners want to see:</strong>
+                <ul style="margin:8px 0 0;padding-left:20px;line-height:1.8;">${hints}</ul>
+            </div>
+            <p style="font-size:12px;color:var(--v2-text-tertiary);margin-top:8px;">Now fill in the form and press <em>Check Prescription</em> to see how you did.</p>`;
+    }
+
+    randomScenario() {
+        const sel = document.getElementById('prxScenario');
+        if (!sel) return;
+        const visible = Array.from(sel.options).filter(o => o.value && !o.hidden);
+        if (!visible.length) return;
+        const pick = visible[Math.floor(Math.random() * visible.length)];
+        sel.value = pick.value;
+        this.loadScenario();
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       ENHANCEMENTS – Interaction checker helpers
+       ═══════════════════════════════════════════════════════════════ */
+
+    quickInteractionSearch(a, b) {
+        const inA = document.getElementById('prxIntDrugA');
+        const inB = document.getElementById('prxIntDrugB');
+        const inC = document.getElementById('prxIntDrugC');
+        if (!inA || !inB) return;
+        inA.value = a;
+        inB.value = b;
+        if (inC) inC.value = '';
+        this.checkInteractions();
+    }
+
+    clearInteractions() {
+        ['prxIntDrugA','prxIntDrugB','prxIntDrugC'].forEach(id => {
+            const el = document.getElementById(id);
+            if (el) el.value = '';
+        });
+        const res = document.getElementById('prxIntResults');
+        if (res) res.innerHTML = '';
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       ENHANCEMENTS – Renal dosing eGFR preset
+       ═══════════════════════════════════════════════════════════════ */
+
+    setEGFR(val) {
+        const inp = document.getElementById('prxEGFR');
+        if (!inp) return;
+        inp.value = val;
+        this.showDoseAdjust();
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       ENHANCEMENTS – Prescribing error cases filter
+       ═══════════════════════════════════════════════════════════════ */
+
+    _getCaseCategory(cas) {
+        const text = (cas.title + ' ' + cas.vignette).toLowerCase();
+        if (/egfr|renal|hepatic|withhold.*creatinine|dose.*reduc|contrast|lmwh|enoxaparin/i.test(text)) return 'dose';
+        if (/interact|nsaid.*warfarin|azathioprine.*allopurinol|lithium.*nsaid|digoxin.*amiodarone|combination/i.test(text)) return 'interaction';
+        if (/contraindic|avoid|teratogen|valproate|sildenafil.*nitrat|beta.*block.*decomp|not.*prescrib/i.test(text)) return 'contraindication';
+        if (/monitor|trough|inr|blood test|u&e|lft|fbc|level.*gentamicin/i.test(text)) return 'monitoring';
+        return 'safety';
+    }
+
+    filterCases(cat) {
+        this._caseFilter = cat;
+        document.querySelectorAll('#prxCaseFilterBar .prx-filter-chip').forEach(btn => {
+            const m = btn.getAttribute('onclick')?.match(/prxFilterCases\('([^']+)'\)/);
+            btn.classList.toggle('active', !!(m && m[1] === cat));
+        });
+        this._renderCases();
+    }
+
+    revealAllCases() {
+        document.querySelectorAll('[id^="prxExp_"]').forEach(el => { el.style.display = 'block'; });
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       ENHANCEMENTS – Antibiotic stewardship search/filter
+       ═══════════════════════════════════════════════════════════════ */
+
+    filterAbx() {
+        this._renderAbxCards();
+    }
+
+    filterAbxRoute(route) {
+        this._abxRouteFilter = route;
+        document.querySelectorAll('[data-abx-route]').forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.abxRoute === route);
+        });
+        this._renderAbxCards();
+    }
+
+    _renderAbxCards() {
+        const grid   = document.getElementById('prxAbxGrid');
+        if (!grid) return;
+        const search = (document.getElementById('prxAbxSearch')?.value || '').toLowerCase().trim();
+        const route  = this._abxRouteFilter || 'all';
+        const matched = ABX_DATA.filter(d => {
+            const matchRoute  = route === 'all' || d.route === route;
+            const matchSearch = !search || d.condition.toLowerCase().includes(search);
+            return matchRoute && matchSearch;
+        });
+        if (!matched.length) {
+            grid.innerHTML = '<p style="color:var(--v2-text-tertiary);font-size:13px;grid-column:1/-1;padding:16px 0;">No conditions match.</p>';
+            return;
+        }
+        grid.innerHTML = matched.map(d => `
+            <div class="abx-card">
+                <h4>${d.condition} <span class="abx-iv-oral ${d.route}">${d.route === 'oral' ? 'ORAL' : d.route === 'iv' ? 'IV' : 'IV→ORAL'}</span></h4>
+                <div class="abx-row"><strong>Severity:</strong> ${d.severity}</div>
+                <div class="abx-row"><strong>1st line:</strong> ${d.firstLine}</div>
+                <div class="abx-row"><strong>If penicillin allergy:</strong> ${d.ifAllergy}</div>
+                <div class="abx-row"><strong>Severe/failing:</strong> ${d.severe}</div>
+                <div class="abx-row"><strong>Review:</strong> ${d.review}</div>
+                ${d.notes ? `<div class="abx-switch-criteria">💡 ${d.notes}</div>` : ''}
+            </div>
+        `).join('');
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       ENHANCEMENTS – Controlled drug classification quiz
+       ═══════════════════════════════════════════════════════════════ */
+
+    startCdQuiz() {
+        const pool = [...CD_QUIZ];
+        for (let i = pool.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [pool[i], pool[j]] = [pool[j], pool[i]];
+        }
+        this._cdQ = { questions: pool.slice(0, 10), current: 0, score: 0, answered: false };
+        this._renderCdQuestion();
+    }
+
+    _renderCdQuestion() {
+        const s = this._cdQ;
+        const q = s.questions[s.current];
+        const box = document.getElementById('prxCdQContent');
+        if (!box) return;
+        box.innerHTML = `
+            <div style="font-size:12px;font-weight:700;color:var(--v2-text-tertiary);margin-bottom:10px;">
+                Question ${s.current + 1} / ${s.questions.length} &nbsp;·&nbsp; Score: ${s.score}/${s.current}
+            </div>
+            <div style="font-size:14px;font-weight:600;color:var(--v2-text-primary);line-height:1.6;margin-bottom:14px;">${q.q}</div>
+            <div style="display:flex;flex-direction:column;gap:8px;">
+                ${q.opts.map((o, i) => `
+                    <button class="prx-case-opt" id="cdOpt_${i}" onclick="window.prxAnswerCdQuiz(${i})">${String.fromCharCode(65 + i)}. ${o}</button>
+                `).join('')}
+            </div>
+            <div id="cdFeedback" style="display:none;margin-top:12px;"></div>
+        `;
+        s.answered = false;
+    }
+
+    answerCdQuiz(i) {
+        const s = this._cdQ;
+        if (!s || s.answered) return;
+        s.answered = true;
+        const q = s.questions[s.current];
+        const isRight = i === q.ans;
+        if (isRight) s.score++;
+        q.opts.forEach((_, oi) => {
+            const btn = document.getElementById(`cdOpt_${oi}`);
+            if (!btn) return;
+            btn.disabled = true;
+            if (oi === q.ans) btn.classList.add('correct');
+            else if (oi === i && !isRight) btn.classList.add('incorrect');
+        });
+        const fb = document.getElementById('cdFeedback');
+        if (fb) {
+            fb.style.display = 'block';
+            fb.innerHTML = `
+                <div class="prx-result-item ${isRight ? 'ok' : 'error'}" style="margin-bottom:10px;">
+                    <strong>${isRight ? '✅ Correct!' : '❌ Incorrect'}</strong> ${q.exp}
+                </div>
+                <button class="prx-sim-btn" style="max-width:180px;" onclick="window.prxNextCdQ()">
+                    ${s.current < s.questions.length - 1 ? 'Next →' : '🏁 See Results'}
+                </button>`;
+        }
+    }
+
+    nextCdQ() {
+        const s = this._cdQ;
+        if (!s) return;
+        s.current++;
+        if (s.current >= s.questions.length) {
+            const box = document.getElementById('prxCdQContent');
+            const pct = Math.round((s.score / s.questions.length) * 100);
+            const msg = pct >= 80 ? '🎉 Excellent mastery!' : pct >= 60 ? '👍 Good effort!' : '📖 Review the table above and try again.';
+            box.innerHTML = `
+                <div class="prx-result-item ok" style="margin-bottom:14px;">
+                    <strong>Quiz complete! ${msg}</strong><br>
+                    Final score: ${s.score} / ${s.questions.length} (${pct}%)
+                </div>
+                <button class="prx-quiz-start-btn" onclick="window.prxStartCdQuiz()">🔄 Play Again</button>`;
+            return;
+        }
+        this._renderCdQuestion();
+    }
+
     _exposeWindowHandlers() {
         window.prescribingManager = this;
 
@@ -787,6 +1037,22 @@ class PrescribingManager {
         window.prxAnswerQuiz        = (i)  => this.answerQuiz(i);
         window.prxNextQuizQ         = ()   => this.nextQuizQ();
         window.prxResetQuiz         = ()   => this.resetQuiz();
+        window.prxUpdateQuizPreview = ()   => this._updateQuizPreview();
+
+        // Enhancement handlers
+        window.prxSetScenarioCat    = (cat) => this.setScenarioCat(cat);
+        window.prxRevealAnswer      = ()    => this.revealAnswer();
+        window.prxRandomScenario    = ()    => this.randomScenario();
+        window.prxQuickInteraction  = (a,b) => this.quickInteractionSearch(a,b);
+        window.prxClearInteractions = ()    => this.clearInteractions();
+        window.prxSetEGFR           = (v)   => this.setEGFR(v);
+        window.prxFilterCases       = (cat) => this.filterCases(cat);
+        window.prxRevealAllCases    = ()    => this.revealAllCases();
+        window.prxFilterAbx         = ()    => this.filterAbx();
+        window.prxFilterAbxRoute    = (r)   => this.filterAbxRoute(r);
+        window.prxStartCdQuiz       = ()    => this.startCdQuiz();
+        window.prxAnswerCdQuiz      = (i)   => this.answerCdQuiz(i);
+        window.prxNextCdQ           = ()    => this.nextCdQ();
     }
 }
 
@@ -794,6 +1060,42 @@ class PrescribingManager {
    DATA TABLES
    Kept as module-level constants so they are easy to find and edit.
    ═══════════════════════════════════════════════════════════════════ */
+
+/* ── Scenario category mapping ──────────────────────────────────── */
+const SCENARIO_CATS = {
+    acs:                        'cardiology',
+    heartfailure:               'cardiology',
+    afib:                       'cardiology',
+    pe:                         'cardiology',
+    svt:                        'cardiology',
+    af_anticoagulation:         'cardiology',
+    heart_failure_initiation:   'cardiology',
+    pneumonia:                  'infectious',
+    uti:                        'infectious',
+    sepsis_fluids:              'emergency',
+    anaphylaxis:                'emergency',
+    gi_bleed:                   'emergency',
+    paracetamol_od:             'emergency',
+    hyperkalaemia:              'emergency',
+    opioid_toxicity:            'emergency',
+    hypertensive_emergency:     'emergency',
+    asthma_acute:               'emergency',
+    copd_exacerbation:          'respiratory',
+    dka:                        'endocrine',
+    hypoglycaemia:              'endocrine',
+    addisonian_crisis:          'endocrine',
+    thyroid_storm:              'endocrine',
+    osteoporosis_bisphosphonate:'endocrine',
+    status_epilepticus:         'neurology',
+    stroke_thrombolysis:        'neurology',
+    delirium_tremens:           'neurology',
+    migraine_acute:             'neurology',
+    rapid_tranquillisation:     'neurology',
+    acute_severe_headache:      'neurology',
+    eclampsia:                  'obstetrics',
+    pain:                       'other',
+    acute_gout:                 'other',
+};
 
 /* ── Prescription Simulator scenarios ──────────────────────────── */
 const SIM_SCENARIOS = {
@@ -1310,6 +1612,52 @@ const QUICK_PAIRS = [
     { pair:'Antipsychotic + Anticholinergic',    badge:'warning', note:'High anticholinergic burden — delirium risk' },
     { pair:'ACEi + K⁺ supplement',              badge:'warning', note:'Hyperkalaemia — monitor K⁺' },
     { pair:'Carbamazepine + Warfarin',           badge:'warning', note:'Enzyme induction — ↓ INR / clot risk' },
+];
+
+/* ── Controlled Drug classification quiz ────────────────────────── */
+const CD_QUIZ = [
+    { q: 'Which schedule is morphine?',
+      opts: ['Schedule 1','Schedule 2','Schedule 3','Schedule 5'], ans: 1,
+      exp: 'Morphine is Schedule 2 — requires a full CD prescription with all mandatory fields including total quantity in BOTH words AND figures.' },
+    { q: 'Which schedule is tramadol?',
+      opts: ['Schedule 2','Schedule 3','Schedule 4 Part I','Schedule 5'], ans: 1,
+      exp: 'Tramadol is Schedule 3 since November 2014 due to increasing concerns about misuse and dependence.' },
+    { q: 'Gabapentin and pregabalin are classified as:',
+      opts: ['Schedule 1','Schedule 2','Schedule 3','Schedule 4 Part I'], ans: 2,
+      exp: 'Both were reclassified to Schedule 3 in April 2019 due to misuse concerns and links to overdose deaths.' },
+    { q: 'For Schedule 2 prescriptions, the total quantity must be written:',
+      opts: ['In words only','In figures only','In words AND figures','Either is acceptable'], ans: 2,
+      exp: 'This is the most commonly tested prescribing error. The total quantity must appear in BOTH words AND figures (e.g. "thirty tablets (30)").' },
+    { q: 'How long is a Schedule 2 CD prescription valid for?',
+      opts: ['14 days','28 days','3 months','6 months'], ans: 1,
+      exp: 'Schedule 2 and 3 CD prescriptions are valid for 28 days from the date on the prescription. Schedule 4 and 5 are valid for 6 months.' },
+    { q: 'Which benzodiazepine is Schedule 3 rather than Schedule 4?',
+      opts: ['Diazepam','Lorazepam','Temazepam','Midazolam'], ans: 2,
+      exp: 'Temazepam is Schedule 3. Unlike other Sch 3 drugs, it does NOT require handwriting requirements — a standard prescription suffices.' },
+    { q: 'LSD is classified as:',
+      opts: ['Schedule 1','Schedule 2','Schedule 3','Schedule 5'], ans: 0,
+      exp: 'LSD is Schedule 1 — no recognised therapeutic use; requires a Home Office licence even for research.' },
+    { q: 'CD register entries for Schedule 2 drugs must be retained for:',
+      opts: ['1 year','2 years','5 years','10 years'], ans: 1,
+      exp: 'The CD register must be retained for 2 years from the date of the last entry.' },
+    { q: 'Low-strength codeine preparations (e.g. co-codamol 8/500) belong to:',
+      opts: ['Schedule 2','Schedule 3','Schedule 4 Part I','Schedule 5'], ans: 3,
+      exp: 'Low-dose codeine preparations are Schedule 5 and can be dispensed OTC in some circumstances.' },
+    { q: 'Which form is used for methadone instalment prescriptions?',
+      opts: ['FP10','FP10MDA','FP10SS','HS1'], ans: 1,
+      exp: 'FP10MDA is the instalment prescription form for methadone maintenance, allowing dispensing in daily portions.' },
+    { q: 'Benzodiazepines other than temazepam (e.g. diazepam, lorazepam) are:',
+      opts: ['Schedule 2','Schedule 3','Schedule 4 Part I','Schedule 4 Part II'], ans: 2,
+      exp: 'Most benzodiazepines are Schedule 4 Part I. Temazepam is the exception at Schedule 3.' },
+    { q: 'Anabolic steroids (e.g. nandrolone, stanozolol) are:',
+      opts: ['Schedule 2','Schedule 3','Schedule 4 Part I','Schedule 4 Part II'], ans: 3,
+      exp: 'Anabolic steroids are Schedule 4 Part II — standard prescription, no CD handwriting requirements, no set supply limit.' },
+    { q: 'Who can witness the destruction of Schedule 2 CDs in a pharmacy?',
+      opts: ['Any registered nurse','Any authorised person (e.g. pharmacist inspector, police constable)','A GP only','Any two pharmacy staff members'], ans: 1,
+      exp: 'Destruction of Schedule 2 CDs must be witnessed by an authorised person (e.g. inspector, police constable) and recorded in the CD register.' },
+    { q: 'Medicinal cannabis products (e.g. Sativex) are currently classified as:',
+      opts: ['Schedule 1','Schedule 2','Schedule 4 Part I','Not controlled'], ans: 1,
+      exp: 'Medicinal cannabis products were reclassified to Schedule 2 since November 2018, enabling specialist prescription on a named-patient basis.' },
 ];
 
 /* ── Renal / Hepatic Dose Table ─────────────────────────────────── */

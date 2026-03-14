@@ -9817,6 +9817,46 @@
         [data-theme="dark"] .prx-quiz-feedback.wrong   { background:rgba(239,68,68,0.12); border-color:rgba(239,68,68,0.4); color:#fca5a5; }
         [data-theme="dark"] .prx-quiz-cat-badge { background:var(--v2-bg-elevated); color:var(--v2-text-tertiary); }
 
+        /* ---- Filter / category chips ---- */
+        .prx-filter-chip {
+            display: inline-flex;
+            align-items: center;
+            padding: 5px 12px;
+            border-radius: 20px;
+            border: 1.5px solid var(--v2-border);
+            background: var(--v2-bg-card);
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--v2-text-secondary);
+            cursor: pointer;
+            white-space: nowrap;
+            transition: all 0.18s;
+            line-height: 1;
+        }
+        .prx-filter-chip:hover { border-color: var(--v2-primary); color: var(--v2-primary); }
+        .prx-filter-chip.active {
+            background: linear-gradient(135deg, var(--v2-primary) 0%, var(--v2-primary-dark) 100%);
+            color: #fff;
+            border-color: var(--v2-primary);
+        }
+        [data-theme="dark"] .prx-filter-chip { background: var(--v2-bg-card); border-color: var(--v2-border); color: var(--v2-text-secondary); }
+        [data-theme="dark"] .prx-filter-chip:hover { border-color: var(--v2-primary); color: #a5b4fc; }
+        [data-theme="dark"] .prx-filter-chip.active { background: var(--v2-primary); color: #fff; border-color: var(--v2-primary); }
+
+        /* ---- Streak badge in quiz play ---- */
+        .prx-streak-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 3px;
+            padding: 2px 9px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            transition: background 0.3s, color 0.3s;
+        }
+        .prx-streak-badge.zero { background: var(--v2-bg-elevated); color: var(--v2-text-tertiary); }
+        .prx-streak-badge.hot  { background: linear-gradient(135deg, #f97316, #dc2626); color: #fff; }
+
     </style>
         <style>
             /* Anatomy layout and dark-mode-aware styling */
@@ -15743,6 +15783,18 @@
                         </div>
                     </div>
 
+                    <!-- Scenario category filter -->
+                    <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px;" id="prxScenarioCats">
+                        <button class="prx-filter-chip active" onclick="window.prxSetScenarioCat('all')">All</button>
+                        <button class="prx-filter-chip" onclick="window.prxSetScenarioCat('emergency')">🚨 Emergency</button>
+                        <button class="prx-filter-chip" onclick="window.prxSetScenarioCat('cardiology')">❤️ Cardiology</button>
+                        <button class="prx-filter-chip" onclick="window.prxSetScenarioCat('respiratory')">🫁 Respiratory</button>
+                        <button class="prx-filter-chip" onclick="window.prxSetScenarioCat('infectious')">🦠 Infectious</button>
+                        <button class="prx-filter-chip" onclick="window.prxSetScenarioCat('endocrine')">⚗️ Endocrine</button>
+                        <button class="prx-filter-chip" onclick="window.prxSetScenarioCat('neurology')">🧠 Neurology/Psych</button>
+                        <button class="prx-filter-chip" onclick="window.prxSetScenarioCat('obstetrics')">🤰 Obstetrics</button>
+                    </div>
+
                     <!-- Scenario selector -->
                     <div class="prx-field" style="max-width:420px;margin-bottom:16px;">
                         <label for="prxScenario">Clinical Scenario</label>
@@ -15835,6 +15887,8 @@
                             </div>
                             <button class="prx-sim-btn" onclick="window.prxCheckPrescription()">✅ Check Prescription</button>
                             <button class="prx-sim-btn" style="margin-top:8px;background:linear-gradient(135deg,#6b7280,#4b5563);" onclick="window.prxClear()">🔄 Clear</button>
+                            <button class="prx-sim-btn" style="margin-top:8px;background:linear-gradient(135deg,#7c3aed,#6d28d9);" onclick="window.prxRevealAnswer()">📖 Reveal Model Answer</button>
+                            <button class="prx-sim-btn" style="margin-top:8px;background:linear-gradient(135deg,#059669,#047857);" onclick="window.prxRandomScenario()">🎲 Random Scenario</button>
                         </div>
 
                         <div class="prx-result-box">
@@ -15873,10 +15927,29 @@
                             <input id="prxIntDrugC" list="prxIntListC" placeholder="optional 3rd drug" autocomplete="off">
                             <datalist id="prxIntListC"></datalist>
                         </div>
-                        <button class="prx-sim-btn" onclick="window.prxCheckInteractions()">🔍 Check Interactions</button>
+                        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+                            <button class="prx-sim-btn" style="flex:1;" onclick="window.prxCheckInteractions()">🔍 Check Interactions</button>
+                            <button class="prx-sim-btn" style="background:linear-gradient(135deg,#6b7280,#4b5563);flex:0 0 auto;width:auto;padding:11px 16px;" onclick="window.prxClearInteractions()">🗑️ Clear</button>
+                        </div>
                     </div>
 
-                    <div id="prxIntResults"></div>
+                    <div id="prxIntResults" style="margin-bottom:12px;"></div>
+
+                    <!-- Quick-search chips -->
+                    <div style="margin-bottom:18px;">
+                        <p style="font-size:11px;font-weight:700;color:var(--v2-text-tertiary);text-transform:uppercase;letter-spacing:.06em;margin:0 0 8px;">⚡ Quick searches</p>
+                        <div style="display:flex;gap:6px;flex-wrap:wrap;">
+                            <button class="prx-filter-chip" onclick="window.prxQuickInteraction('warfarin','aspirin')">warfarin + aspirin</button>
+                            <button class="prx-filter-chip" onclick="window.prxQuickInteraction('warfarin','amiodarone')">warfarin + amiodarone</button>
+                            <button class="prx-filter-chip" onclick="window.prxQuickInteraction('warfarin','fluconazole')">warfarin + fluconazole</button>
+                            <button class="prx-filter-chip" onclick="window.prxQuickInteraction('methotrexate','nsaid')">methotrexate + NSAID</button>
+                            <button class="prx-filter-chip" onclick="window.prxQuickInteraction('lithium','nsaid')">lithium + NSAID</button>
+                            <button class="prx-filter-chip" onclick="window.prxQuickInteraction('ssri','tramadol')">SSRI + tramadol</button>
+                            <button class="prx-filter-chip" onclick="window.prxQuickInteraction('digoxin','amiodarone')">digoxin + amiodarone</button>
+                            <button class="prx-filter-chip" onclick="window.prxQuickInteraction('azathioprine','allopurinol')">azathioprine + allopurinol</button>
+                            <button class="prx-filter-chip" onclick="window.prxQuickInteraction('theophylline','ciprofloxacin')">theophylline + ciprofloxacin</button>
+                        </div>
+                    </div>
 
                     <!-- Quick-reference interaction pairs -->
                     <h4 style="margin:18px 0 10px;font-size:14px;color:var(--v2-text-primary);">⚡ High-Yield Interaction Pairs to Know</h4>
@@ -15891,6 +15964,19 @@
                         <div>
                             <h2>🩺 Renal &amp; Hepatic Dose Adjustment</h2>
                             <p>Input patient parameters to see dose adjustment guidance for key drugs.</p>
+                        </div>
+                    </div>
+
+                    <!-- CKD stage quick-select -->
+                    <div style="margin-bottom:18px;">
+                        <p style="font-size:11px;font-weight:700;color:var(--v2-text-tertiary);text-transform:uppercase;letter-spacing:.06em;margin:0 0 8px;">CKD Stage Presets</p>
+                        <div style="display:flex;gap:6px;flex-wrap:wrap;">
+                            <button class="prx-filter-chip" onclick="window.prxSetEGFR(95)">G1 ≥90</button>
+                            <button class="prx-filter-chip" onclick="window.prxSetEGFR(75)">G2 60–89</button>
+                            <button class="prx-filter-chip" onclick="window.prxSetEGFR(52)">G3a 45–59</button>
+                            <button class="prx-filter-chip" onclick="window.prxSetEGFR(37)">G3b 30–44</button>
+                            <button class="prx-filter-chip" onclick="window.prxSetEGFR(22)">G4 15–29</button>
+                            <button class="prx-filter-chip" onclick="window.prxSetEGFR(10)">G5 &lt;15</button>
                         </div>
                     </div>
 
@@ -15930,12 +16016,25 @@
                             <p>Spot the mistake — high-yield for MLA prescribing safety questions.</p>
                         </div>
                     </div>
+                    <!-- Case category filter -->
+                    <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px;" id="prxCaseFilterBar">
+                        <button class="prx-filter-chip active" onclick="window.prxFilterCases('all')">All Cases</button>
+                        <button class="prx-filter-chip" onclick="window.prxFilterCases('dose')">📏 Dose/Renal</button>
+                        <button class="prx-filter-chip" onclick="window.prxFilterCases('interaction')">⚡ Interactions</button>
+                        <button class="prx-filter-chip" onclick="window.prxFilterCases('contraindication')">🚫 Contraindications</button>
+                        <button class="prx-filter-chip" onclick="window.prxFilterCases('monitoring')">👁️ Monitoring</button>
+                        <button class="prx-filter-chip" onclick="window.prxFilterCases('safety')">⚠️ Drug Safety</button>
+                    </div>
+
                     <div class="prx-score-banner">
                         <span>📊 Score</span>
                         <span id="prxCaseScore">0 / 0 correct</span>
                     </div>
                     <div id="prxCasesContainer"></div>
-                    <button class="prx-sim-btn" style="max-width:220px;margin-top:8px;" onclick="window.prxResetCases()">🔄 Reset Cases</button>
+                    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px;">
+                        <button class="prx-sim-btn" style="max-width:220px;" onclick="window.prxResetCases()">🔄 Reset Cases</button>
+                        <button class="prx-sim-btn" style="max-width:240px;background:linear-gradient(135deg,#7c3aed,#6d28d9);" onclick="window.prxRevealAllCases()">📖 Show All Explanations</button>
+                    </div>
                 </div>
 
                 <!-- ══════════════════════════════════════════
@@ -16050,6 +16149,15 @@
                             </ul>
                         </div>
                     </div>
+
+                    <!-- CD Quick Quiz -->
+                    <h4 style="font-size:14px;color:var(--v2-text-primary);margin:24px 0 12px;">🧪 Quick Quiz: CD Classification</h4>
+                    <div id="prxCdQuiz" style="background:var(--v2-bg-card);border:1.5px solid var(--v2-border);border-radius:14px;padding:18px;max-width:640px;">
+                        <div id="prxCdQContent">
+                            <p style="font-size:13px;color:var(--v2-text-secondary);margin:0 0 12px;">Test your knowledge of UK controlled drug classification rules. 10 randomised questions.</p>
+                            <button class="prx-quiz-start-btn" onclick="window.prxStartCdQuiz()">▶ Start CD Quiz</button>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- ══════════════════════════════════════════
@@ -16086,6 +16194,17 @@
                             <li>De-escalate to narrower spectrum when sensitivities known</li>
                             <li>Discuss prolonged courses (&gt;14 days) with microbiology</li>
                         </ul>
+                    </div>
+
+                    <!-- Search + route filter -->
+                    <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:14px;">
+                        <input id="prxAbxSearch" style="flex:1;min-width:180px;padding:9px 12px;border:1.5px solid var(--v2-border);border-radius:10px;font-size:13px;background:var(--v2-bg-main);color:var(--v2-text-primary);" placeholder="🔍 Search conditions…" oninput="window.prxFilterAbx()" autocomplete="off">
+                        <div style="display:flex;gap:6px;">
+                            <button class="prx-filter-chip active" data-abx-route="all" onclick="window.prxFilterAbxRoute('all')">All</button>
+                            <button class="prx-filter-chip" data-abx-route="oral" onclick="window.prxFilterAbxRoute('oral')">Oral</button>
+                            <button class="prx-filter-chip" data-abx-route="iv" onclick="window.prxFilterAbxRoute('iv')">IV</button>
+                            <button class="prx-filter-chip" data-abx-route="both" onclick="window.prxFilterAbxRoute('both')">IV→Oral</button>
+                        </div>
                     </div>
 
                     <div class="abx-condition-grid" id="prxAbxGrid"></div>
@@ -16126,6 +16245,13 @@
                                     <option value="999">All available</option>
                                 </select>
                             </div>
+                            <div class="prx-quiz-setup-field">
+                                <label for="prxQuizSource">Question source</label>
+                                <select id="prxQuizSource" onchange="window.prxUpdateQuizPreview()">
+                                    <option value="all">📚 All (core + database)</option>
+                                    <option value="static">💊 Core only</option>
+                                </select>
+                            </div>
                         </div>
                         <div style="display:flex;align-items:center;gap:14px;">
                             <button class="prx-quiz-start-btn" onclick="window.prxStartQuiz()">▶ Start Quiz</button>
@@ -16137,7 +16263,10 @@
                     <div id="prxQuizPlay" style="display:none;">
                         <div class="prx-quiz-header">
                             <span id="prxQProgress">Question 1 of 10</span>
-                            <span id="prxQScoreLive">Score: 0/0</span>
+                            <div style="display:flex;gap:8px;align-items:center;">
+                                <span id="prxQStreak" class="prx-streak-badge zero">🔥 0</span>
+                                <span id="prxQScoreLive">Score: 0/0</span>
+                            </div>
                         </div>
                         <div class="prx-quiz-bar-track">
                             <div class="prx-quiz-bar-fill" id="prxQProgressBar" style="width:0%;"></div>
