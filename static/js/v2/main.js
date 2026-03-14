@@ -1292,6 +1292,11 @@ class MLAQuizApp {
         const voiceSupported = !!SpeechRecognition;
         
         let html = `
+            <div style="margin-bottom: 16px; padding: 12px 16px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; display: flex; align-items: center; gap: 12px;">
+                <span style="font-size: 1.3em;">📄</span>
+                <span style="color: var(--text-secondary); font-size: 0.9em; flex: 1;">Drug Reference Guide</span>
+                <a href="/static/drugs/DrugRef.pdf" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();" style="padding: 8px 14px; background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%); color: white; border-radius: 8px; font-weight: 600; font-size: 0.9em; text-decoration: none; white-space: nowrap;">Open PDF ↗</a>
+            </div>
             <div class="search-container" style="display: flex; gap: 10px; margin-bottom: 20px;">
                 <input type="text" id="drug-search-v2" placeholder="🔍 Search medications..." class="tool-search" style="flex: 1;">
                 <button id="drug-search-btn-v2" class="btn-primary">Search</button>
