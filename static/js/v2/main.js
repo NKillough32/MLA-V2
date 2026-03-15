@@ -5663,13 +5663,14 @@ class MLAQuizApp {
             if (!submitted) {
                 html += `
                     <div class="psa-calc-panel">
-                        <label class="psa-panel-label">Your answer${unit}:</label>
+                        <label class="psa-panel-label"><span class="psa-calc-icon">🔢</span> Your answer${unit}:</label>
                         <div class="psa-calc-input-row">
-                            <input id="psaCalcInput" type="number" step="any" placeholder="Enter numerical answer"
+                            <input id="psaCalcInput" type="number" step="any" placeholder="Enter answer…"
                                 class="psa-calc-input"
                                 onkeydown="if(event.key==='Enter')window._psaSubmitCalc()">
                             ${question.unit ? `<span class="psa-unit-label">${question.unit}</span>` : ''}
                         </div>
+                        <p class="psa-calc-hint">Type a number, then press <kbd>↵ Enter</kbd> or click <em>Check Answer</em></p>
                     </div>`;
             } else {
                 // Submitted — show result
@@ -5698,20 +5699,20 @@ class MLAQuizApp {
             const fields = question.prescription_fields || [];
             if (!submitted) {
                 html += `<div class="psa-rx-panel">
-                    <p class="psa-panel-label psa-rx-title">Complete the prescription chart:</p>
-                    <table class="psa-rx-table">`;
+                    <p class="psa-panel-label psa-rx-title"><span class="psa-rx-icon">📝</span> Complete the prescription chart:</p>
+                    <div class="psa-rx-fields">`;
                 fields.forEach(f => {
                     const fieldLabel = f.field.charAt(0) + f.field.slice(1).toLowerCase();
-                    html += `<tr>
-                        <td class="psa-rx-label">${fieldLabel}:</td>
-                        <td style="position:relative;"><input id="psaRx_${f.field}" type="text"
+                    html += `<div class="psa-rx-field" style="position:relative;">
+                        <label class="psa-rx-label" for="psaRx_${f.field}">${fieldLabel}</label>
+                        <input id="psaRx_${f.field}" type="text"
                             placeholder="Enter ${fieldLabel.toLowerCase()}…"
                             autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
                             class="psa-rx-input"
-                            data-psa-field="${f.field}"></td>
-                    </tr>`;
+                            data-psa-field="${f.field}">
+                    </div>`;
                 });
-                html += `</table></div>`;
+                html += `</div></div>`;
             } else {
                 // Submitted — show field-by-field feedback
                 const storedAnswer = answer || {};

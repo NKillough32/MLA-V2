@@ -1185,24 +1185,58 @@ body {
 }
 
 .psa-calc-input {
-    padding: 13px 18px;
+    padding: 14px 18px;
     border: 2px solid #7dd3fc;
     border-right: none;
     border-radius: 10px 0 0 10px;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 22px;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.04em;
+    text-align: center;
     flex: 1;
     min-width: 0;
     background: #fff;
     color: #0c4a6e;
-    transition: border-color .15s;
+    transition: border-color .15s, box-shadow .15s;
+}
+
+.psa-calc-input::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: normal;
+    color: #94a3b8;
+    font-style: italic;
 }
 
 .psa-calc-input:focus {
     outline: none;
     border-color: #0ea5e9;
-    box-shadow: 0 0 0 3px rgba(14,165,233,.18);
+    box-shadow: 0 0 0 3px rgba(14,165,233,.22);
     z-index: 1;
+}
+
+.psa-calc-icon {
+    font-size: 1.1em;
+    line-height: 1;
+}
+
+.psa-calc-hint {
+    margin: 10px 0 0;
+    font-size: 12px;
+    color: #64748b;
+    letter-spacing: 0.01em;
+}
+
+.psa-calc-hint kbd {
+    display: inline-block;
+    padding: 1px 5px;
+    border: 1px solid #94a3b8;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 11px;
+    background: #f1f5f9;
+    color: #475569;
 }
 
 .psa-unit-label {
@@ -1247,25 +1281,36 @@ body {
     margin-bottom: 16px !important;
 }
 
-.psa-rx-table {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 0 7px;
+.psa-rx-icon {
+    font-size: 1.1em;
+    line-height: 1;
+}
+
+/* Stacked field-card layout */
+.psa-rx-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.psa-rx-field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
 
 .psa-rx-label {
-    padding: 0 16px 0 0;
+    display: block;
     font-weight: 700;
-    width: 110px;
-    font-size: 0.92rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
     color: #166534;
-    vertical-align: middle;
-    white-space: nowrap;
 }
 
 .psa-rx-input {
     width: 100%;
-    padding: 11px 14px;
+    padding: 12px 15px;
     border: 2px solid #bbf7d0;
     border-radius: 9px;
     font-size: 15px;
@@ -1275,10 +1320,35 @@ body {
     transition: border-color .15s, box-shadow .15s;
 }
 
+.psa-rx-input::placeholder {
+    color: #94a3b8;
+    font-style: italic;
+    font-size: 13.5px;
+}
+
 .psa-rx-input:focus {
     outline: none;
     border-color: #22c55e;
     box-shadow: 0 0 0 3px rgba(34,197,94,.18);
+    background: #f0fdf4;
+}
+
+/* Feedback table (post-submission) */
+.psa-rx-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 6px;
+}
+
+.psa-rx-table .psa-rx-label {
+    padding: 0 16px 0 0;
+    text-transform: none;
+    letter-spacing: normal;
+    font-size: 0.92rem;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 110px;
+    display: table-cell;
 }
 
 /* ── Prescription feedback ── */
@@ -1320,8 +1390,22 @@ body {
     border-color: #38bdf8 !important;
 }
 
+[data-theme="dark"] .psa-calc-input::placeholder {
+    color: #4e6a84 !important;
+}
+
 [data-theme="dark"] .psa-calc-input:focus {
     box-shadow: 0 0 0 3px rgba(56,189,248,.25) !important;
+}
+
+[data-theme="dark"] .psa-calc-hint {
+    color: #4e6a84 !important;
+}
+
+[data-theme="dark"] .psa-calc-hint kbd {
+    background: #1e293b !important;
+    border-color: #334155 !important;
+    color: #7dd3fc !important;
 }
 
 [data-theme="dark"] .psa-unit-label {
@@ -1347,16 +1431,17 @@ body {
 [data-theme="dark"] .psa-rx-input {
     background: var(--bg-tertiary) !important;
     color: var(--text-primary) !important;
-    border-color: #166534 !important;
+    border-color: #1a4731 !important;
 }
 
 [data-theme="dark"] .psa-rx-input:focus {
     border-color: #4ade80 !important;
     box-shadow: 0 0 0 3px rgba(74,222,128,.25) !important;
+    background: #071a10 !important;
 }
 
 [data-theme="dark"] .psa-rx-input::placeholder {
-    color: var(--text-tertiary) !important;
+    color: #3d5a47 !important;
 }
 
 [data-theme="dark"] .psa-rx-ok  { color: #4ade80 !important; }
