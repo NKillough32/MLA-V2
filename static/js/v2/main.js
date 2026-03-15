@@ -5660,13 +5660,13 @@ class MLAQuizApp {
             const unit = question.unit ? ` (${question.unit})` : '';
             if (!submitted) {
                 html += `
-                    <div class="psa-calc-panel" style="background:#f0f9ff;border-left:4px solid #0ea5e9;padding:12px;border-radius:6px;margin-bottom:8px;">
-                        <label style="font-weight:600;color:#0369a1;">Your answer${unit}:</label>
-                        <div style="display:flex;gap:8px;margin-top:8px;align-items:center;">
+                    <div class="psa-calc-panel">
+                        <label class="psa-panel-label">Your answer${unit}:</label>
+                        <div class="psa-calc-input-row">
                             <input id="psaCalcInput" type="number" step="any" placeholder="Enter numerical answer"
-                                style="padding:8px 12px;border:2px solid #0ea5e9;border-radius:6px;font-size:15px;width:180px;"
+                                class="psa-calc-input"
                                 onkeydown="if(event.key==='Enter')window._psaSubmitCalc()">
-                            ${question.unit ? `<span style="color:#374151;font-weight:500;">${question.unit}</span>` : ''}
+                            ${question.unit ? `<span class="psa-unit-label">${question.unit}</span>` : ''}
                         </div>
                     </div>`;
             } else {
@@ -5677,16 +5677,16 @@ class MLAQuizApp {
                 const isCorrect   = !isNaN(userVal) && Math.abs(userVal - targetValue) <= tolerance;
                 html += `
                     <div class="feedback-container ${isCorrect ? 'correct' : 'incorrect'}">
-                        ${isCorrect ? '✅ Correct!' : `❌ Incorrect.`}
+                        ${isCorrect ? '✅ Correct!' : '❌ Incorrect.'}
                         Your answer: <strong>${isNaN(userVal) ? '—' : userVal}${question.unit ? ' ' + question.unit : ''}</strong>
                         &nbsp;|&nbsp; Correct answer: <strong>${targetValue}${question.unit ? ' ' + question.unit : ''}</strong>
-                        ${tolerance > 0 ? `<span style="font-size:12px;opacity:.85;"> (±${tolerance} accepted)</span>` : ''}
+                        ${tolerance > 0 ? `<span class="psa-tolerance-note"> (±${tolerance} accepted)</span>` : ''}
                     </div>`;
                 if (question.working) {
                     html += `
-                        <div class="explanation-container" style="background:#f0f9ff;border-left:4px solid #0ea5e9;">
+                        <div class="explanation-container psa-working-panel">
                             <div class="explanation-title">🔢 Working</div>
-                            <div class="explanation-content" style="white-space:pre-line;">${this.formatText(question.working)}</div>
+                            <div class="explanation-content psa-working-content">${this.formatText(question.working)}</div>
                         </div>`;
                 }
             }
@@ -5695,14 +5695,18 @@ class MLAQuizApp {
         } else if (qType === 'prescription') {
             const fields = question.prescription_fields || [];
             if (!submitted) {
-                html += `<div class="psa-rx-panel" style="background:#f0fdf4;border-left:4px solid #22c55e;padding:12px;border-radius:6px;margin-bottom:8px;">
-                    <p style="font-weight:600;color:#15803d;margin:0 0 10px;">Complete the prescription chart:</p>
-                    <table style="width:100%;border-collapse:collapse;">`;
+                html += `<div class="psa-rx-panel">
+                    <p class="psa-panel-label psa-rx-title">Complete the prescription chart:</p>
+                    <table class="psa-rx-table">`;
                 fields.forEach(f => {
+                    const fieldLabel = f.field.charAt(0) + f.field.slice(1).toLowerCase();
                     html += `<tr>
-                        <td style="padding:6px 10px 6px 0;font-weight:600;color:#374151;width:120px;">${f.field.charAt(0)+f.field.slice(1).toLowerCase()}:</td>
-                        <td><input id="psaRx_${f.field}" type="text" placeholder="${f.answer}"
-                            style="width:100%;padding:7px 10px;border:2px solid #22c55e;border-radius:6px;font-size:14px;"></td>
+                        <td class="psa-rx-label">${fieldLabel}:</td>
+                        <td style="position:relative;"><input id="psaRx_${f.field}" type="text"
+                            placeholder="Enter ${fieldLabel.toLowerCase()}…"
+                            autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
+                            class="psa-rx-input"
+                            data-psa-field="${f.field}"></td>
                     </tr>`;
                 });
                 html += `</table></div>`;
@@ -5717,17 +5721,18 @@ class MLAQuizApp {
                 html += `<div class="feedback-container ${allCorrect ? 'correct' : 'incorrect'}">
                     ${allCorrect ? '✅ All fields correct!' : '❌ One or more fields incorrect.'}
                 </div>
-                <table style="width:100%;border-collapse:collapse;margin-top:8px;">`;
+                <table class="psa-rx-table psa-rx-feedback">`;
                 fields.forEach(f => {
                     const userVal    = ((storedAnswer)[f.field] || '').trim().toLowerCase();
                     const fieldOk    = (f.accept && f.accept.length ? f.accept : [f.answer])
                                           .some(a => a.trim().toLowerCase() === userVal);
                     const userDisplay = (storedAnswer)[f.field] || '(blank)';
-                    html += `<tr style="border-bottom:1px solid #e5e7eb;">
-                        <td style="padding:6px 10px 6px 0;font-weight:600;width:120px;">${f.field.charAt(0)+f.field.slice(1).toLowerCase()}:</td>
-                        <td style="padding:6px 0;color:${fieldOk ? '#059669' : '#dc2626'};">
+                    const fieldLabel  = f.field.charAt(0) + f.field.slice(1).toLowerCase();
+                    html += `<tr class="psa-rx-feedback-row">
+                        <td class="psa-rx-label">${fieldLabel}:</td>
+                        <td class="psa-rx-result ${fieldOk ? 'psa-rx-ok' : 'psa-rx-err'}">
                             ${fieldOk ? '✓' : '✗'} ${this.formatText(userDisplay)}</td>
-                        ${!fieldOk ? `<td style="padding:6px 0 6px 10px;color:#374151;font-size:13px;">Expected: ${f.answer}</td>` : ''}
+                        ${!fieldOk ? `<td class="psa-rx-expected">Expected: ${f.answer}</td>` : '<td></td>'}
                     </tr>`;
                 });
                 html += '</table>';
@@ -5890,8 +5895,152 @@ class MLAQuizApp {
                     if (!fieldData[f.field]) anyEmpty = true;
                 });
                 if (anyEmpty) { uiManager.showToast('Please complete all prescription fields', 'warning'); return; }
+                // Close any open PSA autocomplete dropdowns before submitting
+                document.querySelectorAll('.psa-ac-dropdown').forEach(d => d.remove());
                 quizManager.submitAnswer(fieldData);
             };
+
+            // ── Build per-field suggestion lists ─────────────────────────
+            const PSA_ROUTES = [
+                'Oral','Intravenous (IV)','Intramuscular (IM)','Subcutaneous (SC)',
+                'Sublingual','Inhaled','Nebulised','Topical','Transdermal','Rectal',
+                'Intranasal','Intrathecal','Intraosseous (IO)','Ophthalmic','Otic',
+                'Buccal','Vaginal','IV bolus','IV infusion','IV push'
+            ];
+            const PSA_FREQUENCIES = [
+                'Once daily (OD)','Twice daily (BD)','Three times daily (TDS)',
+                'Four times daily (QDS)','Every 4 hours','Every 6 hours',
+                'Every 8 hours','Every 12 hours','Every 24 hours',
+                'Once (STAT)','When required (PRN)','Nightly (nocte)',
+                'Morning (mane)','Weekly','Fortnightly','Monthly',
+                'Once weekly','Once monthly'
+            ];
+            const PSA_INDICATIONS = [
+                'Pain','Nausea and vomiting','Hypertension','Infection',
+                'Analgesia','Anticoagulation','VTE prophylaxis','Seizures',
+                'Asthma','Heart failure','Atrial fibrillation','Diabetes',
+                'Anxiety','Depression','GORD','UTI','Pneumonia','Sepsis',
+                'Anaphylaxis','Antiplatelet therapy','Antiemetic','Laxative'
+            ];
+
+            // Async: lazy-load drug names from the drug index for DRUG field
+            const getDrugSuggestions = async () => {
+                if (window._psaDrugNames) return window._psaDrugNames;
+                try {
+                    const r = await fetch('static/drugs/index.json');
+                    const data = await r.json();
+                    window._psaDrugNames = (data.drugs || []).map(d => d.name);
+                } catch (e) {
+                    window._psaDrugNames = [];
+                }
+                return window._psaDrugNames;
+            };
+
+            // Custom autocomplete — substring match, keyboard nav
+            const setupPsaAC = (inputEl, baseSuggestions) => {
+                let dropdown = null;
+                let activeIdx = -1;
+
+                const filter = (q) => {
+                    const term = q.toLowerCase().trim();
+                    const results = term.length === 0
+                        ? baseSuggestions.slice(0, 12)
+                        : baseSuggestions.filter(s => s.toLowerCase().includes(term)).slice(0, 14);
+                    return results;
+                };
+
+                const highlight = (text, q) => {
+                    if (!q.trim()) return text;
+                    const idx = text.toLowerCase().indexOf(q.toLowerCase().trim());
+                    if (idx === -1) return text;
+                    return text.slice(0, idx) +
+                        `<mark class="psa-ac-hl">${text.slice(idx, idx + q.trim().length)}</mark>` +
+                        text.slice(idx + q.trim().length);
+                };
+
+                const closeDD = () => {
+                    if (dropdown) { dropdown.remove(); dropdown = null; }
+                    activeIdx = -1;
+                };
+
+                const openDD = (items) => {
+                    closeDD();
+                    if (!items.length) return;
+                    dropdown = document.createElement('div');
+                    dropdown.className = 'psa-ac-dropdown';
+                    const q = inputEl.value;
+                    items.forEach((item, i) => {
+                        const opt = document.createElement('div');
+                        opt.className = 'psa-ac-item';
+                        opt.innerHTML = highlight(item, q);
+                        opt.addEventListener('mousedown', e => {
+                            e.preventDefault();
+                            inputEl.value = item;
+                            closeDD();
+                        });
+                        dropdown.appendChild(opt);
+                    });
+                    // Position below input
+                    const rect = inputEl.getBoundingClientRect();
+                    const scrollY = window.scrollY || document.documentElement.scrollTop;
+                    const scrollX = window.scrollX || document.documentElement.scrollLeft;
+                    dropdown.style.top  = `${rect.bottom + scrollY}px`;
+                    dropdown.style.left = `${rect.left  + scrollX}px`;
+                    dropdown.style.width = `${rect.width}px`;
+                    document.body.appendChild(dropdown);
+                    activeIdx = -1;
+                };
+
+                const setActive = (idx) => {
+                    if (!dropdown) return;
+                    const items2 = dropdown.querySelectorAll('.psa-ac-item');
+                    activeIdx = Math.max(-1, Math.min(idx, items2.length - 1));
+                    items2.forEach((el, i) => el.classList.toggle('psa-ac-active', i === activeIdx));
+                };
+
+                inputEl.addEventListener('input', () => openDD(filter(inputEl.value)));
+                inputEl.addEventListener('focus', () => openDD(filter(inputEl.value)));
+                inputEl.addEventListener('blur', () => setTimeout(closeDD, 150));
+                inputEl.addEventListener('keydown', e => {
+                    if (!dropdown) return;
+                    if (e.key === 'ArrowDown')  { e.preventDefault(); setActive(activeIdx + 1); }
+                    else if (e.key === 'ArrowUp')   { e.preventDefault(); setActive(activeIdx - 1); }
+                    else if (e.key === 'Enter' && activeIdx >= 0) {
+                        e.preventDefault();
+                        const activeEl = dropdown.querySelectorAll('.psa-ac-item')[activeIdx];
+                        if (activeEl) inputEl.value = activeEl.textContent;
+                        closeDD();
+                    } else if (e.key === 'Escape') { closeDD(); }
+                });
+            };
+
+            // Wire up each field
+            const prxFields = question.prescription_fields || [];
+            prxFields.forEach(f => {
+                const el = document.getElementById(`psaRx_${f.field}`);
+                if (!el) return;
+                const accepted = f.accept && f.accept.length ? f.accept : [f.answer];
+
+                if (f.field === 'DRUG') {
+                    // Merge question synonyms first, then full drug library
+                    getDrugSuggestions().then(drugNames => {
+                        const merged = [
+                            ...accepted,
+                            ...drugNames.filter(d => !accepted.some(a => a.toLowerCase() === d.toLowerCase()))
+                        ];
+                        setupPsaAC(el, merged);
+                    });
+                } else if (f.field === 'ROUTE') {
+                    setupPsaAC(el, [...accepted, ...PSA_ROUTES.filter(r => !accepted.some(a => a.toLowerCase() === r.toLowerCase()))]);
+                } else if (f.field === 'FREQUENCY') {
+                    setupPsaAC(el, [...accepted, ...PSA_FREQUENCIES.filter(r => !accepted.some(a => a.toLowerCase() === r.toLowerCase()))]);
+                } else if (f.field === 'INDICATION') {
+                    setupPsaAC(el, [...accepted, ...PSA_INDICATIONS.filter(r => !accepted.some(a => a.toLowerCase() === r.toLowerCase()))]);
+                } else {
+                    // DOSE and any other fields: accepted synonyms only
+                    setupPsaAC(el, accepted);
+                }
+            });
 
             const rxPanel = questionContainer.querySelector('.psa-rx-panel');
             if (rxPanel) {

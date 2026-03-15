@@ -1153,3 +1153,241 @@ body {
 }
 
 /* This completes the first portion - I'll continue with more sections */
+
+/* ════════════════════════════════════════════════════════════════════════
+   PSA (Prescribing Safety Assessment) Quiz Panels
+   ════════════════════════════════════════════════════════════════════════ */
+
+/* ── Calculation panel ── */
+.psa-calc-panel {
+    background: #f0f9ff;
+    border-left: 4px solid #0ea5e9;
+    padding: 14px 16px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.psa-panel-label {
+    font-weight: 600;
+    color: #0369a1;
+    margin: 0 0 10px;
+    display: block;
+}
+
+.psa-calc-input-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 6px;
+}
+
+.psa-calc-input {
+    padding: 8px 12px;
+    border: 2px solid #0ea5e9;
+    border-radius: 6px;
+    font-size: 15px;
+    width: 180px;
+    background: #fff;
+    color: #111827;
+}
+
+.psa-unit-label {
+    font-weight: 500;
+    color: #374151;
+}
+
+.psa-tolerance-note {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.psa-working-content {
+    white-space: pre-line;
+}
+
+/* ── Prescription panel ── */
+.psa-rx-panel {
+    background: #f0fdf4;
+    border-left: 4px solid #22c55e;
+    padding: 14px 16px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.psa-rx-title {
+    color: #15803d;
+}
+
+.psa-rx-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.psa-rx-label {
+    padding: 7px 12px 7px 0;
+    font-weight: 600;
+    width: 120px;
+    color: var(--text-primary);
+    vertical-align: middle;
+}
+
+.psa-rx-input {
+    width: 100%;
+    padding: 8px 11px;
+    border: 2px solid #22c55e;
+    border-radius: 6px;
+    font-size: 14px;
+    background: #fff;
+    color: #111827;
+    box-sizing: border-box;
+}
+
+.psa-rx-input:focus {
+    outline: none;
+    border-color: #16a34a;
+    box-shadow: 0 0 0 3px rgba(34,197,94,.2);
+}
+
+/* ── Prescription feedback ── */
+.psa-rx-feedback-row {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.psa-rx-result {
+    padding: 6px 4px;
+    font-weight: 500;
+}
+
+.psa-rx-ok  { color: #059669; }
+.psa-rx-err { color: #dc2626; }
+
+.psa-rx-expected {
+    padding: 6px 0 6px 12px;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+/* ════════════════════════════════════════════════════════════════════════
+   PSA Panels — Dark Mode
+   ════════════════════════════════════════════════════════════════════════ */
+
+[data-theme="dark"] .psa-calc-panel {
+    background: #0c2233 !important;
+    border-left-color: #38bdf8 !important;
+}
+
+[data-theme="dark"] .psa-panel-label {
+    color: #7dd3fc !important;
+}
+
+[data-theme="dark"] .psa-calc-input {
+    background: var(--bg-tertiary) !important;
+    color: var(--text-primary) !important;
+    border-color: #38bdf8 !important;
+}
+
+[data-theme="dark"] .psa-unit-label {
+    color: var(--text-secondary) !important;
+}
+
+[data-theme="dark"] .psa-rx-panel {
+    background: #052e16 !important;
+    border-left-color: #4ade80 !important;
+}
+
+[data-theme="dark"] .psa-rx-title {
+    color: #86efac !important;
+}
+
+[data-theme="dark"] .psa-rx-label {
+    color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .psa-rx-input {
+    background: var(--bg-tertiary) !important;
+    color: var(--text-primary) !important;
+    border-color: #4ade80 !important;
+}
+
+[data-theme="dark"] .psa-rx-input:focus {
+    border-color: #86efac !important;
+    box-shadow: 0 0 0 3px rgba(74,222,128,.25) !important;
+}
+
+[data-theme="dark"] .psa-rx-input::placeholder {
+    color: var(--text-tertiary) !important;
+}
+
+[data-theme="dark"] .psa-rx-ok  { color: #4ade80 !important; }
+[data-theme="dark"] .psa-rx-err { color: #f87171 !important; }
+
+[data-theme="dark"] .psa-rx-expected {
+    color: var(--text-secondary) !important;
+}
+
+/* Datalist dropdown inherits browser styling; force dark bg where supported */
+[data-theme="dark"] input::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+/* ════════════════════════════════════════════════════════════════════════
+   PSA Custom Autocomplete Dropdown
+   ════════════════════════════════════════════════════════════════════════ */
+
+.psa-ac-dropdown {
+    position: absolute;
+    z-index: 9999;
+    background: #ffffff;
+    border: 1.5px solid #22c55e;
+    border-radius: 6px;
+    box-shadow: 0 4px 16px rgba(0,0,0,.15);
+    max-height: 240px;
+    overflow-y: auto;
+    font-size: 14px;
+}
+
+.psa-ac-item {
+    padding: 8px 12px;
+    cursor: pointer;
+    color: #111827;
+    border-bottom: 1px solid #f0fdf4;
+    transition: background .1s;
+}
+
+.psa-ac-item:last-child {
+    border-bottom: none;
+}
+
+.psa-ac-item:hover,
+.psa-ac-active {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.psa-ac-hl {
+    background: transparent;
+    font-weight: 700;
+    color: #16a34a;
+}
+
+/* Dark mode dropdown */
+[data-theme="dark"] .psa-ac-dropdown {
+    background: #1c2b1c;
+    border-color: #4ade80;
+    box-shadow: 0 4px 20px rgba(0,0,0,.5);
+}
+
+[data-theme="dark"] .psa-ac-item {
+    color: var(--text-primary);
+    border-bottom-color: #2d3b2d;
+}
+
+[data-theme="dark"] .psa-ac-item:hover,
+[data-theme="dark"] .psa-ac-active {
+    background: #14532d;
+    color: #86efac;
+}
+
+[data-theme="dark"] .psa-ac-hl {
+    color: #4ade80;
+}
