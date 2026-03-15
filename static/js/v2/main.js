@@ -5799,7 +5799,7 @@ class MLAQuizApp {
                     ${this.formatText(question.scenario)}
                 </div>`;
             }
-            html += `<div style="display:flex;flex-direction:column;gap:14px;">`;
+            html += `<div class="psa-review-panel" style="display:flex;flex-direction:column;gap:14px;">`;
             html += renderPart(partA, 'a', 'Part A', marks_a, storedAnswer, submitted);
             html += renderPart(partB, 'b', 'Part B', marks_b, storedAnswer, submitted);
             if (submitted) {
