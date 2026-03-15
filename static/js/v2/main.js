@@ -5703,14 +5703,12 @@ class MLAQuizApp {
                     <div class="psa-rx-fields">`;
                 fields.forEach(f => {
                     const fieldLabel = f.field.charAt(0) + f.field.slice(1).toLowerCase();
-                    html += `<div class="psa-rx-field" style="position:relative;">
-                        <label class="psa-rx-label" for="psaRx_${f.field}">${fieldLabel}</label>
-                        <input id="psaRx_${f.field}" type="text"
+                    html += `<label class="psa-rx-label" for="psaRx_${f.field}">${fieldLabel}:</label>
+                        <div style="position:relative;"><input id="psaRx_${f.field}" type="text"
                             placeholder="Enter ${fieldLabel.toLowerCase()}…"
                             autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
                             class="psa-rx-input"
-                            data-psa-field="${f.field}">
-                    </div>`;
+                            data-psa-field="${f.field}"></div>`;
                 });
                 html += `</div></div>`;
             } else {
