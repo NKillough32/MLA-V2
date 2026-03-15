@@ -1,0 +1,475 @@
+{
+  "version": "1.0.0",
+  "generated": "2025-12-28",
+  "totalCalculators": 78,
+  "calculators": [
+    {
+      "id": "bmi",
+      "name": "BMI Calculator",
+      "category": "GENERAL",
+      "file": "bmi.json"
+    },
+    {
+      "id": "gcs",
+      "name": "Glasgow Coma Scale",
+      "category": "NEUROLOGY",
+      "file": "gcs.json"
+    },
+    {
+      "id": "madders",
+      "name": "MADDERS Score",
+      "category": "ASSESSMENT",
+      "file": "madders.json"
+    },
+    {
+      "id": "grace",
+      "name": "GRACE Score",
+      "category": "CARDIOLOGY",
+      "file": "grace.json"
+    },
+    {
+      "id": "chads2vasc",
+      "name": "CHADS2-VASc Score",
+      "category": "CARDIOLOGY",
+      "file": "chads2vasc.json"
+    },
+    {
+      "id": "hasbled",
+      "name": "HAS-BLED Score",
+      "category": "CARDIOLOGY",
+      "file": "hasbled.json"
+    },
+    {
+      "id": "heart",
+      "name": "HEART Score",
+      "category": "CARDIOLOGY",
+      "file": "heart.json"
+    },
+    {
+      "id": "caprini",
+      "name": "Caprini VTE Risk Score",
+      "category": "CARDIOLOGY",
+      "file": "caprini.json"
+    },
+    {
+      "id": "qrisk3",
+      "name": "QRISK3",
+      "category": "RISK",
+      "file": "qrisk3.json"
+    },
+    {
+      "id": "qrisk",
+      "name": "QRISK Calculator",
+      "category": "RISK",
+      "file": "qrisk.json"
+    },
+    {
+      "id": "qrisk3-official",
+      "name": "QRISK3 Calculator (Official)",
+      "category": "RISK",
+      "file": "qrisk3-official.json"
+    },
+    {
+      "id": "curb65",
+      "name": "CURB-65",
+      "category": "RESPIRATORY",
+      "file": "curb65.json"
+    },
+    {
+      "id": "crb65",
+      "name": "CRB-65",
+      "category": "RESPIRATORY",
+      "file": "crb65.json"
+    },
+    {
+      "id": "pefr",
+      "name": "Peak Flow Calculator",
+      "category": "RESPIRATORY",
+      "file": "pefr.json"
+    },
+    {
+      "id": "nihss",
+      "name": "NIHSS",
+      "category": "NEUROLOGY",
+      "file": "nihss.json"
+    },
+    {
+      "id": "rankin",
+      "name": "Modified Rankin Scale",
+      "category": "NEUROLOGY",
+      "file": "rankin.json"
+    },
+    {
+      "id": "abcd2",
+      "name": "ABCD2 Score",
+      "category": "NEUROLOGY",
+      "file": "abcd2.json"
+    },
+    {
+      "id": "apache",
+      "name": "APACHE II",
+      "category": "CRITICAL_CARE",
+      "file": "apache.json"
+    },
+    {
+      "id": "sofa",
+      "name": "SOFA Score",
+      "category": "CRITICAL_CARE",
+      "file": "sofa.json"
+    },
+    {
+      "id": "mews",
+      "name": "MEWS",
+      "category": "CRITICAL_CARE",
+      "file": "mews.json"
+    },
+    {
+      "id": "news2",
+      "name": "NEWS2",
+      "category": "CRITICAL_CARE",
+      "file": "news2.json"
+    },
+    {
+      "id": "egfr",
+      "name": "eGFR Calculator",
+      "category": "NEPHROLOGY",
+      "file": "egfr.json"
+    },
+    {
+      "id": "fena",
+      "name": "FENa (Fractional Excretion of Sodium)",
+      "category": "NEPHROLOGY",
+      "file": "fena.json"
+    },
+    {
+      "id": "free-water-deficit",
+      "name": "Free Water Deficit",
+      "category": "NEPHROLOGY",
+      "file": "free-water-deficit.json"
+    },
+    {
+      "id": "urea-creatinine",
+      "name": "Urea/Creatinine Ratio",
+      "category": "NEPHROLOGY",
+      "file": "urea-creatinine.json"
+    },
+    {
+      "id": "meld",
+      "name": "MELD Score",
+      "category": "HEPATOLOGY",
+      "file": "meld.json"
+    },
+    {
+      "id": "child-pugh",
+      "name": "Child-Pugh Score",
+      "category": "HEPATOLOGY",
+      "file": "child-pugh.json"
+    },
+    {
+      "id": "maddrey-df",
+      "name": "Maddrey",
+      "category": "HEPATOLOGY",
+      "file": "maddrey-df.json"
+    },
+    {
+      "id": "fib4",
+      "name": "FIB-4 Index",
+      "category": "HEPATOLOGY",
+      "file": "fib4.json"
+    },
+    {
+      "id": "apri",
+      "name": "APRI Score",
+      "category": "HEPATOLOGY",
+      "file": "apri.json"
+    },
+    {
+      "id": "lille-model",
+      "name": "Lille Model Score",
+      "category": "HEPATOLOGY",
+      "file": "lille-model.json"
+    },
+    {
+      "id": "anion-gap",
+      "name": "Anion Gap",
+      "category": "LABORATORY",
+      "file": "anion-gap.json"
+    },
+    {
+      "id": "corrected-calcium",
+      "name": "Corrected Calcium",
+      "category": "LABORATORY",
+      "file": "corrected-calcium.json"
+    },
+    {
+      "id": "ldl-calc",
+      "name": "LDL Calculator",
+      "category": "LABORATORY",
+      "file": "ldl-calc.json"
+    },
+    {
+      "id": "corrected-sodium",
+      "name": "Corrected Sodium",
+      "category": "LABORATORY",
+      "file": "corrected-sodium.json"
+    },
+    {
+      "id": "osmolal-gap",
+      "name": "Osmolal Gap",
+      "category": "LABORATORY",
+      "file": "osmolal-gap.json"
+    },
+    {
+      "id": "map",
+      "name": "Mean Arterial Pressure",
+      "category": "CARDIOLOGY",
+      "file": "map.json"
+    },
+    {
+      "id": "aa-gradient",
+      "name": "A-a Gradient",
+      "category": "RESPIRATORY",
+      "file": "aa-gradient.json"
+    },
+    {
+      "id": "perc",
+      "name": "PERC Rule",
+      "category": "RESPIRATORY",
+      "file": "perc.json"
+    },
+    {
+      "id": "timi",
+      "name": "TIMI Risk Score",
+      "category": "CARDIOLOGY",
+      "file": "timi.json"
+    },
+    {
+      "id": "rcri",
+      "name": "Revised Cardiac Risk Index",
+      "category": "CARDIOLOGY",
+      "file": "rcri.json"
+    },
+    {
+      "id": "qtc",
+      "name": "QTc Calculator",
+      "category": "CARDIOLOGY",
+      "file": "qtc.json"
+    },
+    {
+      "id": "wells-dvt",
+      "name": "Wells DVT Score",
+      "category": "VASCULAR",
+      "file": "wells-dvt.json"
+    },
+    {
+      "id": "wells",
+      "name": "Wells Score Calculator",
+      "category": "RESPIRATORY",
+      "file": "wells.json"
+    },
+    {
+      "id": "wells-pe",
+      "name": "Wells PE Score",
+      "category": "RESPIRATORY",
+      "file": "wells-pe.json"
+    },
+    {
+      "id": "rockall",
+      "name": "Rockall Score",
+      "category": "GASTROENTEROLOGY",
+      "file": "rockall.json"
+    },
+    {
+      "id": "glasgow-blatchford",
+      "name": "Glasgow-Blatchford Score",
+      "category": "GASTROENTEROLOGY",
+      "file": "glasgow-blatchford.json"
+    },
+    {
+      "id": "centor",
+      "name": "Centor Score",
+      "category": "INFECTIOUS_DISEASE",
+      "file": "centor.json"
+    },
+    {
+      "id": "alvarado",
+      "name": "Alvarado Score",
+      "category": "SURGERY",
+      "file": "alvarado.json"
+    },
+    {
+      "id": "phq9",
+      "name": "PHQ-9",
+      "category": "PSYCHIATRY",
+      "file": "phq9.json"
+    },
+    {
+      "id": "gad7",
+      "name": "GAD-7",
+      "category": "PSYCHIATRY",
+      "file": "gad7.json"
+    },
+    {
+      "id": "ciwa",
+      "name": "CIWA-Ar",
+      "category": "PSYCHIATRY",
+      "file": "ciwa.json"
+    },
+    {
+      "id": "stopbang",
+      "name": "STOP-BANG",
+      "category": "RESPIRATORY",
+      "file": "stopbang.json"
+    },
+    {
+      "id": "mse",
+      "name": "Mental State Exam",
+      "category": "PSYCHIATRY",
+      "file": "mse.json"
+    },
+    {
+      "id": "mmse",
+      "name": "Mini-Mental State Exam",
+      "category": "NEUROLOGY",
+      "file": "mmse.json"
+    },
+    {
+      "id": "must",
+      "name": "MUST Score",
+      "category": "NUTRITION",
+      "file": "must.json"
+    },
+    {
+      "id": "waterlow",
+      "name": "Waterlow Score",
+      "category": "SURGERY",
+      "file": "waterlow.json"
+    },
+    {
+      "id": "frailty",
+      "name": "Frailty Index",
+      "category": "GERIATRICS",
+      "file": "frailty.json"
+    },
+    {
+      "id": "barthel",
+      "name": "Barthel Index",
+      "category": "GERIATRICS",
+      "file": "barthel.json"
+    },
+    {
+      "id": "ottawa-ankle",
+      "name": "Ottawa Ankle Rules",
+      "category": "ORTHOPAEDICS",
+      "file": "ottawa-ankle.json"
+    },
+    {
+      "id": "apgar",
+      "name": "APGAR Score",
+      "category": "PAEDIATRICS",
+      "file": "apgar.json"
+    },
+    {
+      "id": "maintenance-fluids",
+      "name": "Maintenance Fluids (Holliday-Segar)",
+      "category": "PAEDIATRICS",
+      "file": "maintenance-fluids.json"
+    },
+    {
+      "id": "bishop",
+      "name": "Bishop Score",
+      "category": "OBSTETRICS",
+      "file": "bishop.json"
+    },
+    {
+      "id": "palliative",
+      "name": "Palliative Care Assessment",
+      "category": "PALLIATIVE",
+      "file": "palliative.json"
+    },
+    {
+      "id": "insulin-sliding",
+      "name": "Insulin Sliding Scale",
+      "category": "ENDOCRINOLOGY",
+      "file": "insulin-sliding.json"
+    },
+    {
+      "id": "vasopressor",
+      "name": "Vasopressor Calculator",
+      "category": "CRITICAL_CARE",
+      "file": "vasopressor.json"
+    },
+    {
+      "id": "infusion-rate",
+      "name": "Infusion Rate Calculator",
+      "category": "PHARMACOLOGY",
+      "file": "infusion-rate.json"
+    },
+    {
+      "id": "cockcroft-gault",
+      "name": "Cockcroft-Gault Calculator",
+      "category": "NEPHROLOGY",
+      "file": "cockcroft-gault.json"
+    },
+    {
+      "id": "bsa",
+      "name": "Body Surface Area Calculator",
+      "category": "GENERAL",
+      "file": "bsa.json"
+    },
+    {
+      "id": "fluid-balance",
+      "name": "Fluid Balance Calculator",
+      "category": "GENERAL",
+      "file": "fluid-balance.json"
+    },
+    {
+      "id": "rass",
+      "name": "RASS Scale",
+      "category": "ASSESSMENT",
+      "file": "rass.json"
+    },
+    {
+      "id": "frax-fracture",
+      "name": "Fracture Risk Calculator",
+      "category": "RISK",
+      "file": "frax-fracture.json"
+    },
+    {
+      "id": "paediatric-dosing",
+      "name": "Paediatric Dosing",
+      "category": "PAEDIATRICS",
+      "file": "paediatric-dosing.json"
+    },
+    {
+      "id": "drug-volume",
+      "name": "Drug Volume Calculator",
+      "category": "PHARMACOLOGY",
+      "file": "drug-volume.json"
+    },
+    {
+      "id": "unit-converter",
+      "name": "Clinical Unit Converter",
+      "category": "UTILITIES",
+      "file": "unit-converter.json"
+    },
+    {
+      "id": "asthma",
+      "name": "Asthma Severity",
+      "category": "RESPIRATORY",
+      "file": "asthma.json"
+    },
+    {
+      "id": "winters",
+      "name": "Winters Formula",
+      "category": "LABORATORY",
+      "file": "winters.json"
+    },
+    {
+      "id": "crusade",
+      "name": "CRUSADE Bleeding Risk",
+      "category": "RISK",
+      "file": "crusade.json"
+    }
+  ]
+}

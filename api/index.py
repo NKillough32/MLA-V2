@@ -863,6 +863,242 @@ class PWAQuizLoader:
             'explanations': explanations
         }
 
+    # ──────────────────────────────────────────────────────────────────────────
+    # PSA-format parser  (### Q{n} | TYPE | Section | Specialty)
+    # ──────────────────────────────────────────────────────────────────────────
+
+    @staticmethod
+    def _is_psa_format(content: str) -> bool:
+        return bool(re.search(r'^###\s+Q\d+\s*\|', content, re.MULTILINE))
+
+    @staticmethod
+    def _psa_get_explanation(body: str):
+        """Return (explanation_text, body_without_explanation)."""
+        m = re.search(r'\n(>[\s\S]+)$', body)
+        if m:
+            exp = re.sub(r'^>\s*', '', m.group(1), flags=re.MULTILINE).strip()
+            return exp, body[:m.start()]
+        return '', body
+
+    @staticmethod
+    def _psa_bold_split(text: str):
+        """Split text into (scenario, prompt) at the last **bold** line."""
+        m = list(re.finditer(r'\*\*([^*]+)\*\*', text))
+        if m:
+            last = m[-1]
+            prompt = last.group(1).strip()
+            scenario = text[:last.start()].strip()
+            return scenario, prompt
+        return '', text.strip()
+
+    @staticmethod
+    def _parse_psa_mcq(num, body, psa_section, specialty):
+        explanation, body_no_exp = PWAQuizLoader._psa_get_explanation(body)
+        options, correct_index, question_lines = [], None, []
+        in_options = False
+        for line in body_no_exp.split('\n'):
+            om = re.match(r'^([A-E])\.\s+(.+)', line)
+            if om:
+                in_options = True
+                has_check = '\u2713' in om.group(2)
+                opt_text = om.group(2).replace('\u2713', '').strip()
+                if has_check:
+                    correct_index = len(options)
+                options.append(opt_text)
+            elif not in_options:
+                question_lines.append(line)
+        if not options or correct_index is None:
+            return None
+        scenario, prompt = PWAQuizLoader._psa_bold_split('\n'.join(question_lines).strip())
+        return {
+            'id': num,
+            'question_type': 'mcq',
+            'psa_section': psa_section,
+            'specialty': specialty,
+            'scenario': scenario or None,
+            'prompt': prompt,
+            'options': options,
+            'correct_answer': correct_index,
+            'correctAnswer': correct_index,
+            'explanation': explanation,
+        }
+
+    @staticmethod
+    def _parse_psa_calculation(num, body, psa_section, specialty):
+        def get(key):
+            m = re.search(rf'^{key}\s*:\s*(.+)$', body, re.IGNORECASE | re.MULTILINE)
+            return m.group(1).strip() if m else None
+
+        answer_raw = get('ANSWER')
+        if not answer_raw:
+            return None
+        try:
+            correct_value = float(answer_raw)
+        except ValueError:
+            return None
+
+        tol_raw = get('TOLERANCE')
+        unit_raw = get('UNIT')
+        wm = re.search(r'^WORKING\s*:\s*\n([\s\S]+?)(?=\n[A-Z]+\s*:|\n>|\n\n\n|$)', body, re.IGNORECASE | re.MULTILINE)
+        working = wm.group(1).strip() if wm else ''
+        explanation, _ = PWAQuizLoader._psa_get_explanation(body)
+
+        q_text = re.sub(r'^(UNIT|ANSWER|TOLERANCE)\s*:.*$', '', body, flags=re.IGNORECASE | re.MULTILINE)
+        q_text = re.sub(r'^WORKING\s*:[\s\S]*?(?=\n[A-Z]+\s*:|\n>|\n\n\n|$)', '', q_text, flags=re.IGNORECASE | re.MULTILINE)
+        q_text = re.sub(r'\n>[\s\S]+$', '', q_text).strip()
+        scenario, prompt = PWAQuizLoader._psa_bold_split(q_text)
+        return {
+            'id': num,
+            'question_type': 'calculation',
+            'psa_section': psa_section,
+            'specialty': specialty,
+            'scenario': scenario or None,
+            'prompt': prompt,
+            'answer_value': correct_value,
+            'tolerance': float(tol_raw) if tol_raw else 0,
+            'unit': unit_raw or '',
+            'working': working,
+            'explanation': explanation,
+            'correct_answer': '_calculation',
+        }
+
+    @staticmethod
+    def _parse_psa_prescription(num, body, psa_section, specialty):
+        field_names = ['DRUG', 'DOSE', 'ROUTE', 'FREQUENCY', 'INDICATION']
+        fields = []
+        for fn in field_names:
+            m = re.search(rf'^{fn}\s*:\s*(.+)$', body, re.IGNORECASE | re.MULTILINE)
+            if not m:
+                continue
+            accepted = [s.strip() for s in m.group(1).split('|') if s.strip()]
+            fields.append({'field': fn, 'answer': accepted[0] if accepted else '', 'accept': accepted})
+        if not fields:
+            return None
+        explanation, _ = PWAQuizLoader._psa_get_explanation(body)
+        pattern = '|'.join(field_names)
+        q_text = re.sub(rf'^({pattern})\s*:.*$', '', body, flags=re.IGNORECASE | re.MULTILINE)
+        q_text = re.sub(r'\n>[\s\S]+$', '', q_text).strip()
+        scenario, prompt = PWAQuizLoader._psa_bold_split(q_text)
+        return {
+            'id': num,
+            'question_type': 'prescription',
+            'psa_section': psa_section,
+            'specialty': specialty,
+            'scenario': scenario or None,
+            'prompt': prompt,
+            'prescription_fields': fields,
+            'explanation': explanation,
+            'correct_answer': '_prescription',
+        }
+
+    @staticmethod
+    def _parse_psa_review(num, body, psa_section, specialty):
+        def get_dir(key):
+            m = re.search(rf'^{key}\s*:\s*(\d+)', body, re.IGNORECASE | re.MULTILINE)
+            return int(m.group(1)) if m else 2
+        marks_a = get_dir('MARKS_A')
+        marks_b = get_dir('MARKS_B')
+        explanation, body_no_exp = PWAQuizLoader._psa_get_explanation(body)
+
+        phase = 'scenario'
+        scenario_lines, stem_a, stem_b = [], '', ''
+        opts_a, opts_b = [], []
+        correct_a, correct_b = None, None
+
+        for raw_line in body_no_exp.split('\n'):
+            line = raw_line.rstrip()
+            trimmed = line.strip()
+            if re.match(r'^MARKS_[AB]\s*:', trimmed, re.IGNORECASE):
+                continue
+            ma = re.match(r'^\*\*Part A:\s*(.+?)\*\*\s*$', trimmed)
+            if ma:
+                phase = 'part_a'
+                stem_a = ma.group(1).strip()
+                continue
+            mb = re.match(r'^\*\*Part B:\s*(.+?)\*\*\s*$', trimmed)
+            if mb:
+                phase = 'part_b'
+                stem_b = mb.group(1).strip()
+                continue
+            if phase == 'scenario':
+                scenario_lines.append(line)
+            elif phase == 'part_a':
+                om = re.match(r'^([A-E])\.\s+(.+)', trimmed)
+                if om:
+                    has_check = '\u2713' in om.group(2)
+                    if has_check:
+                        correct_a = len(opts_a)
+                    opts_a.append(om.group(2).replace('\u2713', '').strip())
+            elif phase == 'part_b':
+                om = re.match(r'^([A-E])\.\s+(.+)', trimmed)
+                if om:
+                    has_check = '\u2713' in om.group(2)
+                    if has_check:
+                        correct_b = len(opts_b)
+                    opts_b.append(om.group(2).replace('\u2713', '').strip())
+
+        if not opts_a or not opts_b:
+            return None
+        scenario = re.sub(r'^MARKS_[AB]\s*:\s*\d+\s*\n?', '', '\n'.join(scenario_lines), flags=re.IGNORECASE | re.MULTILINE).strip()
+        return {
+            'id': num,
+            'question_type': 'review',
+            'psa_section': psa_section,
+            'specialty': specialty,
+            'scenario': scenario,
+            'marks_a': marks_a,
+            'marks_b': marks_b,
+            'part_a': {'stem': stem_a, 'options': opts_a, 'correct': correct_a},
+            'part_b': {'stem': stem_b, 'options': opts_b, 'correct': correct_b},
+            'explanation': explanation,
+            'correct_answer': '_review',
+        }
+
+    @staticmethod
+    def _parse_psa_content(content: str, filename: str = 'uploaded_quiz') -> list:
+        """Parse PSA-format markdown into a list of question dicts."""
+        meta = {}
+        fm = re.match(r'^---\s*\n([\s\S]*?)\n---\s*\n', content)
+        if fm:
+            content = content[len(fm.group(0)):]
+            for line in fm.group(1).split('\n'):
+                m = re.match(r'^(\w+)\s*:\s*(.+)$', line)
+                if m:
+                    meta[m.group(1).strip()] = m.group(2).strip()
+
+        questions = []
+        blocks = re.split(r'\n(?=###\s+Q\d+)', content)
+        for block in blocks:
+            trimmed = block.strip()
+            if not trimmed:
+                continue
+            hm = re.match(
+                r'^###\s+Q(\d+)\s*\|\s*(\w+)\s*\|\s*([^|\n]+?)(?:\|\s*([^\n]+))?\s*\n',
+                trimmed, re.IGNORECASE
+            )
+            if not hm:
+                continue
+            q_num = int(hm.group(1))
+            q_type = hm.group(2).strip().lower()
+            psa_section = hm.group(3).strip()
+            specialty = (hm.group(4) or meta.get('specialty', 'Pharmacology')).strip()
+            body = trimmed[trimmed.index('\n') + 1:].strip()
+
+            q = None
+            if q_type == 'mcq':
+                q = PWAQuizLoader._parse_psa_mcq(q_num, body, psa_section, specialty)
+            elif q_type == 'calculation':
+                q = PWAQuizLoader._parse_psa_calculation(q_num, body, psa_section, specialty)
+            elif q_type == 'prescription':
+                q = PWAQuizLoader._parse_psa_prescription(q_num, body, psa_section, specialty)
+            elif q_type == 'review':
+                q = PWAQuizLoader._parse_psa_review(q_num, body, psa_section, specialty)
+            if q:
+                questions.append(q)
+
+        logger.info(f"PSA parse complete for {filename}: {len(questions)} questions")
+        return questions
+
     @staticmethod
     def parse_markdown_content(content, filename="uploaded_quiz"):
         """Parse markdown content directly without file system."""
@@ -871,7 +1107,13 @@ class PWAQuizLoader:
             
             # Clean up the content first
             content = content.strip()
-            
+
+            # Detect PSA format (### Q{n} | TYPE | ...) and use dedicated parser
+            if PWAQuizLoader._is_psa_format(content):
+                logger.info(f"PSA format detected in {filename} — routing to PSA parser")
+                questions = PWAQuizLoader._parse_psa_content(content, filename)
+                return questions
+
             # Log some debugging info about the content structure
             lines_with_hash = [line.strip() for line in content.split('\n') if line.strip().startswith('###')]
             logger.debug(f"Found {len(lines_with_hash)} lines starting with '###': {lines_with_hash[:5]}")

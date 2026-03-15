@@ -458,7 +458,10 @@ class PSAQuizGenerator:
         self.specialty_hint = specialty_hint
         self.title = title or f"PSA Practice Assessment — {datetime.now().strftime('%B %Y')}"
         ts = datetime.now().strftime("%Y%m%d_%H%M%S")
-        self.output_path = Path(output_path) if output_path else Path(f"../static/assets/psa-{ts}.md")
+        # Resolve output path relative to the workspace root (one level up from scripts/)
+        _script_dir = Path(__file__).parent
+        _default_out = _script_dir.parent / "static" / "assets" / f"psa-{ts}.md"
+        self.output_path = Path(output_path) if output_path else _default_out
         self.output_path.parent.mkdir(parents=True, exist_ok=True)
         self.used_topics: list[str] = []
 
