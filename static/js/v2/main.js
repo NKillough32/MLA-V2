@@ -6100,25 +6100,38 @@ class MLAQuizApp {
                     closeDD();
                     if (!items.length) return;
                     dropdown = document.createElement('div');
-                    dropdown.className = 'psa-ac-dropdown';
+                    // Inline all styles — immune to CSS cache
+                    dropdown.style.cssText = [
+                        'position:fixed',
+                        'z-index:99999',
+                        'background:#ffffff',
+                        'border:1.5px solid #22c55e',
+                        'border-radius:6px',
+                        'box-shadow:0 4px 16px rgba(0,0,0,.18)',
+                        'max-height:240px',
+                        'overflow-y:auto',
+                        'font-size:14px',
+                        'font-family:inherit',
+                    ].join(';');
                     const q = inputEl.value;
                     items.forEach((item, i) => {
                         const opt = document.createElement('div');
-                        opt.className = 'psa-ac-item';
+                        opt.style.cssText = 'padding:8px 12px;cursor:pointer;color:#111827;border-bottom:1px solid #f0fdf4;';
                         opt.innerHTML = highlight(item, q);
+                        opt.addEventListener('mouseover', () => { opt.style.background = '#dcfce7'; opt.style.color = '#15803d'; });
+                        opt.addEventListener('mouseout',  () => { opt.style.background = ''; opt.style.color = '#111827'; });
                         opt.addEventListener('mousedown', e => {
                             e.preventDefault();
                             inputEl.value = item;
                             closeDD();
+                            inputEl.dispatchEvent(new Event('input'));
                         });
                         dropdown.appendChild(opt);
                     });
-                    // Position below input
+                    // Position: fixed uses viewport coords directly — no scroll offset needed
                     const rect = inputEl.getBoundingClientRect();
-                    const scrollY = window.scrollY || document.documentElement.scrollTop;
-                    const scrollX = window.scrollX || document.documentElement.scrollLeft;
-                    dropdown.style.top  = `${rect.bottom + scrollY}px`;
-                    dropdown.style.left = `${rect.left  + scrollX}px`;
+                    dropdown.style.top   = `${rect.bottom + 2}px`;
+                    dropdown.style.left  = `${rect.left}px`;
                     dropdown.style.width = `${rect.width}px`;
                     document.body.appendChild(dropdown);
                     activeIdx = -1;
@@ -6126,9 +6139,12 @@ class MLAQuizApp {
 
                 const setActive = (idx) => {
                     if (!dropdown) return;
-                    const items2 = dropdown.querySelectorAll('.psa-ac-item');
+                    const items2 = dropdown.querySelectorAll('div');
                     activeIdx = Math.max(-1, Math.min(idx, items2.length - 1));
-                    items2.forEach((el, i) => el.classList.toggle('psa-ac-active', i === activeIdx));
+                    items2.forEach((el, i) => {
+                        el.style.background = i === activeIdx ? '#dcfce7' : '';
+                        el.style.color      = i === activeIdx ? '#15803d' : '#111827';
+                    });
                 };
 
                 inputEl.addEventListener('input', () => openDD(filter(inputEl.value)));
@@ -6140,7 +6156,7 @@ class MLAQuizApp {
                     else if (e.key === 'ArrowUp')   { e.preventDefault(); setActive(activeIdx - 1); }
                     else if (e.key === 'Enter' && activeIdx >= 0) {
                         e.preventDefault();
-                        const activeEl = dropdown.querySelectorAll('.psa-ac-item')[activeIdx];
+                        const activeEl = dropdown.querySelectorAll('div')[activeIdx];
                         if (activeEl) inputEl.value = activeEl.textContent;
                         closeDD();
                     } else if (e.key === 'Escape') { closeDD(); }
