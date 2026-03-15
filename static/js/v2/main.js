@@ -5653,8 +5653,88 @@ class MLAQuizApp {
             html += `<div class="prompt" data-highlight-section="prompt" style="background: #fefce8; border-left: 4px solid #eab308; padding: 12px; border-radius: 6px; margin-bottom: 8px; font-weight: 500;"><h4 style="margin: 0 0 8px 0; color: #a16207;">Question:</h4><div>${this.formatText(questionText)}</div></div>`;
         }
 
-        // Add options
-        if (question.options && question.options.length > 0) {
+        // ── PSA CALCULATION ───────────────────────────────────────────────────────
+        const qType = question.question_type || 'mcq';
+
+        if (qType === 'calculation') {
+            const unit = question.unit ? ` (${question.unit})` : '';
+            if (!submitted) {
+                html += `
+                    <div class="psa-calc-panel" style="background:#f0f9ff;border-left:4px solid #0ea5e9;padding:12px;border-radius:6px;margin-bottom:8px;">
+                        <label style="font-weight:600;color:#0369a1;">Your answer${unit}:</label>
+                        <div style="display:flex;gap:8px;margin-top:8px;align-items:center;">
+                            <input id="psaCalcInput" type="number" step="any" placeholder="Enter numerical answer"
+                                style="padding:8px 12px;border:2px solid #0ea5e9;border-radius:6px;font-size:15px;width:180px;"
+                                onkeydown="if(event.key==='Enter')window._psaSubmitCalc()">
+                            ${question.unit ? `<span style="color:#374151;font-weight:500;">${question.unit}</span>` : ''}
+                        </div>
+                    </div>`;
+            } else {
+                // Submitted — show result
+                const userVal     = parseFloat(answer);
+                const targetValue = parseFloat(question.answer_value);
+                const tolerance   = parseFloat(question.tolerance ?? 0);
+                const isCorrect   = !isNaN(userVal) && Math.abs(userVal - targetValue) <= tolerance;
+                html += `
+                    <div class="feedback-container ${isCorrect ? 'correct' : 'incorrect'}">
+                        ${isCorrect ? '✅ Correct!' : `❌ Incorrect.`}
+                        Your answer: <strong>${isNaN(userVal) ? '—' : userVal}${question.unit ? ' ' + question.unit : ''}</strong>
+                        &nbsp;|&nbsp; Correct answer: <strong>${targetValue}${question.unit ? ' ' + question.unit : ''}</strong>
+                        ${tolerance > 0 ? `<span style="font-size:12px;opacity:.85;"> (±${tolerance} accepted)</span>` : ''}
+                    </div>`;
+                if (question.working) {
+                    html += `
+                        <div class="explanation-container" style="background:#f0f9ff;border-left:4px solid #0ea5e9;">
+                            <div class="explanation-title">🔢 Working</div>
+                            <div class="explanation-content" style="white-space:pre-line;">${this.formatText(question.working)}</div>
+                        </div>`;
+                }
+            }
+
+        // ── PSA PRESCRIPTION ─────────────────────────────────────────────────────
+        } else if (qType === 'prescription') {
+            const fields = question.prescription_fields || [];
+            if (!submitted) {
+                html += `<div class="psa-rx-panel" style="background:#f0fdf4;border-left:4px solid #22c55e;padding:12px;border-radius:6px;margin-bottom:8px;">
+                    <p style="font-weight:600;color:#15803d;margin:0 0 10px;">Complete the prescription chart:</p>
+                    <table style="width:100%;border-collapse:collapse;">`;
+                fields.forEach(f => {
+                    html += `<tr>
+                        <td style="padding:6px 10px 6px 0;font-weight:600;color:#374151;width:120px;">${f.field.charAt(0)+f.field.slice(1).toLowerCase()}:</td>
+                        <td><input id="psaRx_${f.field}" type="text" placeholder="${f.answer}"
+                            style="width:100%;padding:7px 10px;border:2px solid #22c55e;border-radius:6px;font-size:14px;"></td>
+                    </tr>`;
+                });
+                html += `</table></div>`;
+            } else {
+                // Submitted — show field-by-field feedback
+                const storedAnswer = answer || {};
+                const allCorrect = fields.every(f => {
+                    const userVal = ((storedAnswer)[f.field] || '').trim().toLowerCase();
+                    return (f.accept && f.accept.length ? f.accept : [f.answer])
+                        .some(a => a.trim().toLowerCase() === userVal);
+                });
+                html += `<div class="feedback-container ${allCorrect ? 'correct' : 'incorrect'}">
+                    ${allCorrect ? '✅ All fields correct!' : '❌ One or more fields incorrect.'}
+                </div>
+                <table style="width:100%;border-collapse:collapse;margin-top:8px;">`;
+                fields.forEach(f => {
+                    const userVal    = ((storedAnswer)[f.field] || '').trim().toLowerCase();
+                    const fieldOk    = (f.accept && f.accept.length ? f.accept : [f.answer])
+                                          .some(a => a.trim().toLowerCase() === userVal);
+                    const userDisplay = (storedAnswer)[f.field] || '(blank)';
+                    html += `<tr style="border-bottom:1px solid #e5e7eb;">
+                        <td style="padding:6px 10px 6px 0;font-weight:600;width:120px;">${f.field.charAt(0)+f.field.slice(1).toLowerCase()}:</td>
+                        <td style="padding:6px 0;color:${fieldOk ? '#059669' : '#dc2626'};">
+                            ${fieldOk ? '✓' : '✗'} ${this.formatText(userDisplay)}</td>
+                        ${!fieldOk ? `<td style="padding:6px 0 6px 10px;color:#374151;font-size:13px;">Expected: ${f.answer}</td>` : ''}
+                    </tr>`;
+                });
+                html += '</table>';
+            }
+
+        // ── STANDARD MCQ ─────────────────────────────────────────────────────────
+        } else if (question.options && question.options.length > 0) {
             html += '<div class="new-options">';
             question.options.forEach((option, idx) => {
                 const isSelected = answer === idx;
@@ -5679,11 +5759,12 @@ class MLAQuizApp {
                 `;
             });
             html += '</div>';
-        }
+        } // end MCQ options
 
-        // Add feedback if submitted
-        if (submitted) {
-            const correctAnswerIdx = question.correct_answer || question.correctAnswer;
+        // ── FEEDBACK (MCQ only — PSA types render their own feedback above) ──────
+        if (submitted && qType === 'mcq') {
+            const correctAnswerIdx = question.correct_answer !== undefined
+                ? question.correct_answer : question.correctAnswer;
             const isCorrect = answer === correctAnswerIdx;
             const correctLetter = String.fromCharCode(65 + correctAnswerIdx);
             
@@ -5719,6 +5800,18 @@ class MLAQuizApp {
                     </div>
                 `;
             }
+        } else if (submitted && (qType === 'calculation' || qType === 'prescription')) {
+            // PSA types rendered feedback inline above; just add explanation here
+            let explanationText = '';
+            if (question.explanation) explanationText = this.formatText(question.explanation);
+            if (explanationText) {
+                try { explanationText = explanationText.replace(/<\/?(strong|b)(\s[^>]*)?>/gi, ''); } catch(e) {}
+                html += `
+                    <div class="explanation-container">
+                        <div class="explanation-title">📚 Explanation</div>
+                        <div class="explanation-content" data-highlight-section="explanation">${explanationText}</div>
+                    </div>`;
+            }
         } else if (answerRecorded && !submitted) {
             // In "end of quiz" mode - show answer recorded confirmation
             html += `
@@ -5752,6 +5845,68 @@ class MLAQuizApp {
         questionContainer.innerHTML = html;
 
         this.restoreHighlightsForQuestion(index);
+
+        // ── PSA answer input handling ─────────────────────────────────────────────
+        // Show/hide the global submit button for PSA non-MCQ questions
+        const globalSubmitBtn = document.getElementById('submitBtn');
+
+        if (qType === 'calculation' && !submitted) {
+            // Hide global submit; PSA panel has its own Check Answer button
+            if (globalSubmitBtn) globalSubmitBtn.style.display = 'none';
+
+            // Register global helper so inline onclick can reach quizManager
+            window._psaSubmitCalc = () => {
+                const inp = document.getElementById('psaCalcInput');
+                if (!inp) return;
+                const val = inp.value.trim();
+                if (val === '') { uiManager.showToast('Please enter a numerical answer', 'warning'); return; }
+                quizManager.submitAnswer(parseFloat(val));
+            };
+
+            // Inject Check Answer button after the input panel
+            const calcPanel = questionContainer.querySelector('.psa-calc-panel');
+            if (calcPanel) {
+                const btn = document.createElement('button');
+                btn.textContent = 'Check Answer';
+                btn.className = 'submit-btn';
+                btn.style.cssText = 'margin-top:10px;padding:9px 20px;background:#0ea5e9;color:#fff;border:none;border-radius:6px;font-size:14px;cursor:pointer;font-weight:600;';
+                btn.onclick = () => window._psaSubmitCalc();
+                calcPanel.appendChild(btn);
+                // Focus input
+                const inp = document.getElementById('psaCalcInput');
+                if (inp) inp.focus();
+            }
+
+        } else if (qType === 'prescription' && !submitted) {
+            if (globalSubmitBtn) globalSubmitBtn.style.display = 'none';
+
+            window._psaSubmitRx = () => {
+                const fields = question.prescription_fields || [];
+                const fieldData = {};
+                let anyEmpty = false;
+                fields.forEach(f => {
+                    const el = document.getElementById(`psaRx_${f.field}`);
+                    fieldData[f.field] = el ? el.value.trim() : '';
+                    if (!fieldData[f.field]) anyEmpty = true;
+                });
+                if (anyEmpty) { uiManager.showToast('Please complete all prescription fields', 'warning'); return; }
+                quizManager.submitAnswer(fieldData);
+            };
+
+            const rxPanel = questionContainer.querySelector('.psa-rx-panel');
+            if (rxPanel) {
+                const btn = document.createElement('button');
+                btn.textContent = 'Submit Prescription';
+                btn.className = 'submit-btn';
+                btn.style.cssText = 'margin-top:10px;padding:9px 20px;background:#22c55e;color:#fff;border:none;border-radius:6px;font-size:14px;cursor:pointer;font-weight:600;';
+                btn.onclick = () => window._psaSubmitRx();
+                rxPanel.appendChild(btn);
+            }
+
+        } else if (submitted && (qType === 'calculation' || qType === 'prescription')) {
+            // After submission, re-show global submit (now it acts as Next)
+            if (globalSubmitBtn) globalSubmitBtn.style.display = 'inline-block';
+        }
 
         // Bind option click events
         const options = questionContainer.querySelectorAll('.option, .new-option');

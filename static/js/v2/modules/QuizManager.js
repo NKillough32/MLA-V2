@@ -476,10 +476,31 @@ export class QuizManager {
                 this.sessionStats.totalTime / this.sessionStats.questionsAnswered;
         }
 
-        // Check if correct
-        const correctAnswerIdx = question.correct_answer !== undefined ? question.correct_answer : question.correctAnswer;
-        const isCorrect = selectedAnswer === correctAnswerIdx;
-        
+        // Check if correct (PSA-aware)
+        const qType = question.question_type || 'mcq';
+        let isCorrect = false;
+        let correctAnswerIdx;
+
+        if (qType === 'calculation') {
+            const userVal   = parseFloat(selectedAnswer);
+            const correct   = parseFloat(question.answer_value);
+            const tolerance = parseFloat(question.tolerance ?? 0);
+            isCorrect = !isNaN(userVal) && Math.abs(userVal - correct) <= tolerance;
+            correctAnswerIdx = '_calculation';
+        } else if (qType === 'prescription') {
+            const pFields = question.prescription_fields || [];
+            isCorrect = pFields.length > 0 && pFields.every(f => {
+                const userVal = ((selectedAnswer || {})[f.field] || '').trim().toLowerCase();
+                return (f.accept && f.accept.length ? f.accept : [f.answer])
+                    .some(a => a.trim().toLowerCase() === userVal);
+            });
+            correctAnswerIdx = '_prescription';
+        } else {
+            correctAnswerIdx = question.correct_answer !== undefined
+                ? question.correct_answer : question.correctAnswer;
+            isCorrect = selectedAnswer === correctAnswerIdx;
+        }
+
         // Vibration feedback
         if (isCorrect) {
             analytics.vibrateSuccess();
@@ -1119,9 +1140,26 @@ export class QuizManager {
         this.questions.forEach((question, index) => {
             if (this.submittedAnswers[index]) {
                 answered++;
-                const correctAnswerIdx = question.correct_answer !== undefined ? question.correct_answer : question.correctAnswer;
-                if (this.answers[index] === correctAnswerIdx) {
-                    correct++;
+                const qType = question.question_type || 'mcq';
+                const stored = this.answers[index];
+
+                if (qType === 'calculation') {
+                    const userVal     = parseFloat(stored);
+                    const targetValue = parseFloat(question.answer_value);
+                    const tolerance   = parseFloat(question.tolerance ?? 0);
+                    if (!isNaN(userVal) && Math.abs(userVal - targetValue) <= tolerance) correct++;
+                } else if (qType === 'prescription') {
+                    const pFields = question.prescription_fields || [];
+                    const allOk = pFields.length > 0 && pFields.every(f => {
+                        const userVal = ((stored || {})[f.field] || '').trim().toLowerCase();
+                        return (f.accept && f.accept.length ? f.accept : [f.answer])
+                            .some(a => a.trim().toLowerCase() === userVal);
+                    });
+                    if (allOk) correct++;
+                } else {
+                    const correctAnswerIdx = question.correct_answer !== undefined
+                        ? question.correct_answer : question.correctAnswer;
+                    if (stored === correctAnswerIdx) correct++;
                 }
             }
         });
@@ -1462,6 +1500,10 @@ export class QuizManager {
      * Updates the correct_answer index to match the new shuffled position
      */
     shuffleOptions(question) {
+        // PSA non-MCQ types carry no options array — skip shuffling
+        if (question.question_type && question.question_type !== 'mcq') {
+            return question;
+        }
         if (!question.options || question.options.length <= 1) {
             return question;
         }
@@ -2015,6 +2057,11 @@ export class QuizManager {
     }
 
     parseMarkdownQuiz(content) {
+        // PSA format detection: ### Q1 | TYPE | ... headers
+        if (/^###\s+Q\d+\s*\|/m.test(content)) {
+            return this.parsePsaMarkdown(content);
+        }
+
         const questions = [];
         const questionBlocks = content.split(/\n(?=\d+\.\s)/);
         
@@ -2061,6 +2108,210 @@ export class QuizManager {
         }
         
         return questions;
+    }
+
+    /* ─── PSA (Prescribing Safety Assessment) format parser ─────────────
+     * Parses a markdown file that uses ### Q{n} | TYPE | SECTION | Specialty
+     * headers.  Supports three question types:
+     *   MCQ          – standard A-E multiple choice (✓ marks correct option)
+     *   CALCULATION  – numeric answer with tolerance (UNIT / ANSWER / TOLERANCE)
+     *   PRESCRIPTION – multi-field drug chart entry (DRUG / DOSE / ROUTE /
+     *                  FREQUENCY / INDICATION — pipe-separated accepted values)
+     */
+    parsePsaMarkdown(content) {
+        // Strip optional YAML frontmatter (--- ... ---)
+        let meta = {};
+        const fmMatch = content.match(/^---\s*\n([\s\S]*?)\n---\s*\n/);
+        if (fmMatch) {
+            content = content.slice(fmMatch[0].length);
+            fmMatch[1].split('\n').forEach(line => {
+                const m = line.match(/^(\w+)\s*:\s*(.+)$/);
+                if (m) meta[m[1].trim()] = m[2].trim();
+            });
+        }
+
+        const questions = [];
+        // Split on ### Q{n} headers (keep the header in the block)
+        const blocks = content.split(/\n(?=###\s+Q\d+)/);
+
+        for (const block of blocks) {
+            const trimmed = block.trim();
+            if (!trimmed) continue;
+
+            // ### Q1 | MCQ | Adverse Drug Reactions | Cardiology
+            const headerMatch = trimmed.match(
+                /^###\s+Q\d+\s*\|\s*(\w+)\s*\|\s*([^|\n]+?)(?:\|\s*([^\n]+))?\s*\n/i
+            );
+            if (!headerMatch) continue;
+
+            const qType      = headerMatch[1].trim().toLowerCase(); // mcq | calculation | prescription
+            const psaSection = headerMatch[2].trim();
+            const specialty  = headerMatch[3]?.trim() || meta.specialty || 'Pharmacology';
+
+            const bodyStart = trimmed.indexOf('\n') + 1;
+            const qBody     = trimmed.slice(bodyStart).trim();
+
+            let q = null;
+            if      (qType === 'mcq')          q = this._parsePsaMcq(qBody, psaSection, specialty);
+            else if (qType === 'calculation')  q = this._parsePsaCalculation(qBody, psaSection, specialty);
+            else if (qType === 'prescription') q = this._parsePsaPrescription(qBody, psaSection, specialty);
+
+            if (q) questions.push(q);
+        }
+
+        return questions;
+    }
+
+    /** Parse a PSA MCQ block — options marked A. ... with ✓ on correct option */
+    _parsePsaMcq(body, psaSection, specialty) {
+        // Extract blockquote explanation (> lines at end)
+        const expMatch = body.match(/\n(>\s+[\s\S]+)$/);
+        const explanation = expMatch
+            ? expMatch[1].replace(/^>\s*/gm, '').trim()
+            : '';
+        const bodyNoExp = expMatch ? body.slice(0, expMatch.index) : body;
+
+        // Collect options
+        const lines = bodyNoExp.split('\n');
+        const options = [];
+        let correctIndex = null;
+        const questionLines = [];
+        let inOptions = false;
+
+        for (const line of lines) {
+            const optMatch = line.match(/^([A-E])\.\s+(.+)/);
+            if (optMatch) {
+                inOptions = true;
+                const hasCheck = optMatch[2].includes('✓');
+                const optText  = optMatch[2].replace(/\s*✓\s*/g, '').trim();
+                if (hasCheck) correctIndex = options.length;
+                options.push(optText);
+            } else if (!inOptions) {
+                questionLines.push(line);
+            }
+        }
+
+        if (!options.length || correctIndex === null) return null;
+
+        // Split scenario from direct question (bold lines = question)
+        const allText = questionLines.join('\n').trim();
+        const boldMatch = allText.match(/\*\*([^*]+)\*\*/);
+        let prompt   = boldMatch ? boldMatch[1].trim() : '';
+        let scenario = boldMatch
+            ? allText.slice(0, allText.lastIndexOf(`**${boldMatch[1]}**`)).trim()
+            : allText;
+        if (!prompt) { prompt = allText; scenario = ''; }
+
+        return {
+            question_type: 'mcq',
+            psa_section:   psaSection,
+            specialty,
+            scenario:      scenario || undefined,
+            prompt,
+            options,
+            correct_answer: correctIndex,
+            correctAnswer:  correctIndex,
+            explanation,
+        };
+    }
+
+    /** Parse a PSA CALCULATION block — numeric answer within tolerance */
+    _parsePsaCalculation(body, psaSection, specialty) {
+        const get = (key) => {
+            const m = body.match(new RegExp(`^${key}\\s*:\\s*(.+)$`, 'im'));
+            return m ? m[1].trim() : null;
+        };
+
+        const unitRaw     = get('UNIT');
+        const answerRaw   = get('ANSWER');
+        const tolRaw      = get('TOLERANCE');
+        // WORKING: everything after the WORKING: line until the next directive or blockquote
+        const workingMatch = body.match(/^WORKING\s*:\s*\n([\s\S]+?)(?=\n[A-Z]+\s*:|(?:\n>)|\n\n\n|$)/im);
+        const working     = workingMatch ? workingMatch[1].trim() : '';
+
+        if (!answerRaw) return null;
+        const correctValue = parseFloat(answerRaw);
+        if (isNaN(correctValue)) return null;
+
+        // Explanation
+        const expMatch = body.match(/\n(>\s+[\s\S]+)$/);
+        const explanation = expMatch ? expMatch[1].replace(/^>\s*/gm, '').trim() : '';
+
+        // Strip directives from question text
+        let qText = body
+            .replace(/^UNIT\s*:.*$/im, '')
+            .replace(/^ANSWER\s*:.*$/im, '')
+            .replace(/^TOLERANCE\s*:.*$/im, '')
+            .replace(/^WORKING\s*:[\s\S]*?(?=\n[A-Z]+\s*:|(?:\n>)|\n\n\n|$)/im, '')
+            .replace(/\n(>\s+[\s\S]+)$/, '')
+            .trim();
+
+        const boldMatch = qText.match(/\*\*([^*]+)\*\*/);
+        let prompt   = boldMatch ? boldMatch[1].trim() : '';
+        let scenario = boldMatch
+            ? qText.slice(0, qText.lastIndexOf(`**${boldMatch[1]}**`)).trim()
+            : qText;
+        if (!prompt) { prompt = qText; scenario = ''; }
+
+        return {
+            question_type:  'calculation',
+            psa_section:    psaSection,
+            specialty,
+            scenario:       scenario || undefined,
+            prompt,
+            answer_value:   correctValue,
+            tolerance:      tolRaw ? parseFloat(tolRaw) : 0,
+            unit:           unitRaw || '',
+            working,
+            explanation,
+            options:        undefined,
+            correct_answer: '_calculation',
+        };
+    }
+
+    /** Parse a PSA PRESCRIPTION block — multi-field drug chart entry */
+    _parsePsaPrescription(body, psaSection, specialty) {
+        const FIELD_NAMES = ['DRUG', 'DOSE', 'ROUTE', 'FREQUENCY', 'INDICATION'];
+        const fields = [];
+
+        for (const fn of FIELD_NAMES) {
+            const m = body.match(new RegExp(`^${fn}\\s*:\\s*(.+)$`, 'im'));
+            if (!m) continue;
+            // Pipe-separated accepted synonyms
+            const accepted = m[1].split('|').map(s => s.trim()).filter(Boolean);
+            fields.push({ field: fn, answer: accepted[0], accept: accepted });
+        }
+
+        if (!fields.length) return null;
+
+        // Explanation
+        const expMatch = body.match(/\n(>\s+[\s\S]+)$/);
+        const explanation = expMatch ? expMatch[1].replace(/^>\s*/gm, '').trim() : '';
+
+        // Strip directives
+        let qText = body
+            .replace(new RegExp(`^(${FIELD_NAMES.join('|')})\\s*:.*$`, 'igm'), '')
+            .replace(/\n(>\s+[\s\S]+)$/, '')
+            .trim();
+
+        const boldMatch = qText.match(/\*\*([^*]+)\*\*/);
+        let prompt   = boldMatch ? boldMatch[1].trim() : '';
+        let scenario = boldMatch
+            ? qText.slice(0, qText.lastIndexOf(`**${boldMatch[1]}**`)).trim()
+            : qText;
+        if (!prompt) { prompt = qText; scenario = ''; }
+
+        return {
+            question_type:       'prescription',
+            psa_section:         psaSection,
+            specialty,
+            scenario:            scenario || undefined,
+            prompt,
+            prescription_fields: fields,
+            explanation,
+            options:             undefined,
+            correct_answer:      '_prescription',
+        };
     }
 
     async processZipFile(file) {
