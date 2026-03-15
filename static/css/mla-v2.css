@@ -1161,39 +1161,63 @@ body {
 /* ── Calculation panel ── */
 .psa-calc-panel {
     background: #f0f9ff;
-    border-left: 4px solid #0ea5e9;
-    padding: 14px 16px;
-    border-radius: 6px;
-    margin-bottom: 10px;
+    border: 2px solid #0ea5e9;
+    padding: 22px 24px 20px;
+    border-radius: 14px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 8px rgba(14,165,233,.10);
 }
 
 .psa-panel-label {
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 1rem;
     color: #0369a1;
-    margin: 0 0 10px;
+    margin: 0 0 14px;
     display: block;
+    letter-spacing: 0.01em;
 }
 
 .psa-calc-input-row {
     display: flex;
-    gap: 10px;
-    align-items: center;
-    margin-top: 6px;
+    gap: 0;
+    align-items: stretch;
+    margin-top: 4px;
 }
 
 .psa-calc-input {
-    padding: 8px 12px;
-    border: 2px solid #0ea5e9;
-    border-radius: 6px;
-    font-size: 15px;
-    width: 180px;
+    padding: 13px 18px;
+    border: 2px solid #7dd3fc;
+    border-right: none;
+    border-radius: 10px 0 0 10px;
+    font-size: 20px;
+    font-weight: 600;
+    flex: 1;
+    min-width: 0;
     background: #fff;
-    color: #111827;
+    color: #0c4a6e;
+    transition: border-color .15s;
+}
+
+.psa-calc-input:focus {
+    outline: none;
+    border-color: #0ea5e9;
+    box-shadow: 0 0 0 3px rgba(14,165,233,.18);
+    z-index: 1;
 }
 
 .psa-unit-label {
-    font-weight: 500;
-    color: #374151;
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+    background: #e0f2fe;
+    border: 2px solid #7dd3fc;
+    border-left: none;
+    border-radius: 0 10px 10px 0;
+    font-weight: 700;
+    font-size: 15px;
+    color: #0369a1;
+    white-space: nowrap;
+    user-select: none;
 }
 
 .psa-tolerance-note {
@@ -1208,44 +1232,53 @@ body {
 /* ── Prescription panel ── */
 .psa-rx-panel {
     background: #f0fdf4;
-    border-left: 4px solid #22c55e;
-    padding: 14px 16px;
-    border-radius: 6px;
-    margin-bottom: 10px;
+    border: 2px solid #86efac;
+    padding: 22px 24px 20px;
+    border-radius: 14px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 8px rgba(34,197,94,.10);
 }
 
 .psa-rx-title {
     color: #15803d;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    margin-bottom: 16px !important;
 }
 
 .psa-rx-table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 0 7px;
 }
 
 .psa-rx-label {
-    padding: 7px 12px 7px 0;
-    font-weight: 600;
-    width: 120px;
-    color: var(--text-primary);
+    padding: 0 16px 0 0;
+    font-weight: 700;
+    width: 110px;
+    font-size: 0.92rem;
+    color: #166534;
     vertical-align: middle;
+    white-space: nowrap;
 }
 
 .psa-rx-input {
     width: 100%;
-    padding: 8px 11px;
-    border: 2px solid #22c55e;
-    border-radius: 6px;
-    font-size: 14px;
+    padding: 11px 14px;
+    border: 2px solid #bbf7d0;
+    border-radius: 9px;
+    font-size: 15px;
     background: #fff;
     color: #111827;
     box-sizing: border-box;
+    transition: border-color .15s, box-shadow .15s;
 }
 
 .psa-rx-input:focus {
     outline: none;
-    border-color: #16a34a;
-    box-shadow: 0 0 0 3px rgba(34,197,94,.2);
+    border-color: #22c55e;
+    box-shadow: 0 0 0 3px rgba(34,197,94,.18);
 }
 
 /* ── Prescription feedback ── */
@@ -1272,8 +1305,9 @@ body {
    ════════════════════════════════════════════════════════════════════════ */
 
 [data-theme="dark"] .psa-calc-panel {
-    background: #0c2233 !important;
-    border-left-color: #38bdf8 !important;
+    background: #0c1f2e !important;
+    border-color: #38bdf8 !important;
+    box-shadow: 0 2px 8px rgba(56,189,248,.12) !important;
 }
 
 [data-theme="dark"] .psa-panel-label {
@@ -1286,13 +1320,20 @@ body {
     border-color: #38bdf8 !important;
 }
 
+[data-theme="dark"] .psa-calc-input:focus {
+    box-shadow: 0 0 0 3px rgba(56,189,248,.25) !important;
+}
+
 [data-theme="dark"] .psa-unit-label {
-    color: var(--text-secondary) !important;
+    background: #0c2d42 !important;
+    border-color: #38bdf8 !important;
+    color: #7dd3fc !important;
 }
 
 [data-theme="dark"] .psa-rx-panel {
-    background: #052e16 !important;
-    border-left-color: #4ade80 !important;
+    background: #071a0f !important;
+    border-color: #4ade80 !important;
+    box-shadow: 0 2px 8px rgba(74,222,128,.12) !important;
 }
 
 [data-theme="dark"] .psa-rx-title {
@@ -1300,17 +1341,17 @@ body {
 }
 
 [data-theme="dark"] .psa-rx-label {
-    color: var(--text-primary) !important;
+    color: #86efac !important;
 }
 
 [data-theme="dark"] .psa-rx-input {
     background: var(--bg-tertiary) !important;
     color: var(--text-primary) !important;
-    border-color: #4ade80 !important;
+    border-color: #166534 !important;
 }
 
 [data-theme="dark"] .psa-rx-input:focus {
-    border-color: #86efac !important;
+    border-color: #4ade80 !important;
     box-shadow: 0 0 0 3px rgba(74,222,128,.25) !important;
 }
 
@@ -1328,6 +1369,16 @@ body {
 /* Datalist dropdown inherits browser styling; force dark bg where supported */
 [data-theme="dark"] input::-webkit-calendar-picker-indicator {
     filter: invert(1);
+}
+
+/* Hide browser number-spinners on PSA calculation input */
+.psa-calc-input::-webkit-outer-spin-button,
+.psa-calc-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.psa-calc-input[type=number] {
+    -moz-appearance: textfield;
 }
 
 /* ════════════════════════════════════════════════════════════════════════

@@ -697,11 +697,12 @@ class MLAQuizApp {
         // Quiz completion → Show results in UI
         eventBus.on(EVENTS.QUIZ_COMPLETED, (data) => {
             const score = data.score;
-            const total = data.totalQuestions;
+            const total = data.isPsaMode ? data.marksAvailable : data.totalQuestions;
+            const scoreLabel = data.isPsaMode ? 'marks' : 'correct';
             const percentage = data.percentage ?? Math.round((score / total) * 100);
 
             uiManager.showToast(
-                `Quiz completed! Score: ${score}/${total} (${percentage}%)`,
+                `Quiz completed! Score: ${score}/${total} ${scoreLabel} (${percentage}%)`,
                 'success'
             );
             
@@ -5951,7 +5952,7 @@ class MLAQuizApp {
                 const btn = document.createElement('button');
                 btn.textContent = 'Check Answer';
                 btn.className = 'submit-btn';
-                btn.style.cssText = 'margin-top:10px;padding:9px 20px;background:#0ea5e9;color:#fff;border:none;border-radius:6px;font-size:14px;cursor:pointer;font-weight:600;';
+                btn.style.cssText = 'display:block;width:100%;margin-top:18px;padding:13px 24px;background:linear-gradient(135deg,#0ea5e9,#0284c7);color:#fff;border:none;border-radius:10px;font-size:16px;cursor:pointer;font-weight:700;letter-spacing:0.02em;box-shadow:0 2px 8px rgba(14,165,233,.30);transition:opacity .15s;';
                 btn.onclick = () => window._psaSubmitCalc();
                 calcPanel.appendChild(btn);
                 // Focus input
@@ -6192,7 +6193,7 @@ class MLAQuizApp {
                 const btn = document.createElement('button');
                 btn.textContent = 'Submit Prescription';
                 btn.className = 'submit-btn';
-                btn.style.cssText = 'margin-top:10px;padding:9px 20px;background:#22c55e;color:#fff;border:none;border-radius:6px;font-size:14px;cursor:pointer;font-weight:600;';
+                btn.style.cssText = 'display:block;width:100%;margin-top:18px;padding:13px 24px;background:linear-gradient(135deg,#22c55e,#16a34a);color:#fff;border:none;border-radius:10px;font-size:16px;cursor:pointer;font-weight:700;letter-spacing:0.02em;box-shadow:0 2px 8px rgba(34,197,94,.30);transition:opacity .15s;';
                 btn.onclick = () => window._psaSubmitRx();
                 rxPanel.appendChild(btn);
             }
@@ -6682,7 +6683,7 @@ class MLAQuizApp {
                 <h2>Quiz Complete!</h2>
                 <div class="score-display">
                     <div class="score-big">${percentage}%</div>
-                    <div class="score-detail">${data.score} / ${data.totalQuestions} correct</div>
+                    <div class="score-detail">${data.isPsaMode ? data.marksEarned + ' / ' + data.marksAvailable + ' marks' : data.score + ' / ' + data.totalQuestions + ' correct'}</div>
                 </div>
             </div>
         `;
@@ -6719,7 +6720,9 @@ class MLAQuizApp {
         }
         
         if (scoreDetails) {
-            scoreDetails.textContent = `${score.correct} out of ${score.total} questions correct`;
+            scoreDetails.textContent = score.isPsaMode
+                ? `${score.marksEarned} / ${score.marksAvailable} marks`
+                : `${score.correct} out of ${score.total} questions correct`;
         }
         
         // Update score card color based on performance

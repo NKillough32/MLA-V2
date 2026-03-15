@@ -1147,8 +1147,14 @@ export class QuizManager {
      * Calculate score
      */
     calculateScore() {
-        let correct = 0;
+        let correct = 0;        // number of questions answered correctly
+        let marksEarned = 0;    // PSA-weighted marks earned
+        let marksAvailable = 0; // PSA-weighted marks available
         let answered = 0;
+        let isPsaMode = false;  // true when non-MCQ PSA question types are present
+
+        // PSA mark weights per question type (Prescribing Safety Assessment scheme)
+        const PSA_MARKS = { prescription: 10, calculation: 2, review: 4, mcq: 2 };
 
         this.questions.forEach((question, index) => {
             if (this.submittedAnswers[index]) {
@@ -1156,45 +1162,64 @@ export class QuizManager {
                 const qType = question.question_type || 'mcq';
                 const stored = this.answers[index];
 
+                if (qType !== 'mcq') isPsaMode = true;
+
                 if (qType === 'calculation') {
+                    const qMarks = PSA_MARKS.calculation;
+                    marksAvailable += qMarks;
                     const userVal     = parseFloat(stored);
                     const targetValue = parseFloat(question.answer_value);
                     const tolerance   = parseFloat(question.tolerance ?? 0);
-                    if (!isNaN(userVal) && Math.abs(userVal - targetValue) <= tolerance) correct++;
+                    if (!isNaN(userVal) && Math.abs(userVal - targetValue) <= tolerance) {
+                        correct++;
+                        marksEarned += qMarks;
+                    }
                 } else if (qType === 'prescription') {
+                    const qMarks = PSA_MARKS.prescription;
+                    marksAvailable += qMarks;
                     const pFields = question.prescription_fields || [];
                     const allOk = pFields.length > 0 && pFields.every(f => {
                         const userVal = ((stored || {})[f.field] || '').trim().toLowerCase();
                         return (f.accept && f.accept.length ? f.accept : [f.answer])
                             .some(a => a.trim().toLowerCase() === userVal);
                     });
-                    if (allOk) correct++;
+                    if (allOk) {
+                        correct++;
+                        marksEarned += qMarks;
+                    }
                 } else if (qType === 'review') {
+                    const marks_a = question.marks_a ?? 2;
+                    const marks_b = question.marks_b ?? 2;
+                    marksAvailable += marks_a + marks_b;
                     const ua = stored || {};
                     const aOk = typeof ua.a === 'number' && ua.a === question.part_a?.correct;
                     const bOk = typeof ua.b === 'number' && ua.b === question.part_b?.correct;
-                    // Award fractional point per part so score reflects partial credit
-                    const marks_a = question.marks_a ?? 2;
-                    const marks_b = question.marks_b ?? 2;
-                    const total   = marks_a + marks_b;
-                    const earned  = (aOk ? marks_a : 0) + (bOk ? marks_b : 0);
-                    correct += earned / total; // e.g. 0.5 for 2/4
+                    marksEarned += (aOk ? marks_a : 0) + (bOk ? marks_b : 0);
+                    if (aOk && bOk) correct++;
                 } else {
+                    const qMarks = PSA_MARKS.mcq;
+                    marksAvailable += qMarks;
                     const correctAnswerIdx = question.correct_answer !== undefined
                         ? question.correct_answer : question.correctAnswer;
-                    if (stored === correctAnswerIdx) correct++;
+                    if (stored === correctAnswerIdx) {
+                        correct++;
+                        marksEarned += qMarks;
+                    }
                 }
             }
         });
 
-        const percentage = answered > 0 ? (correct / answered) * 100 : 0;
-        
+        const percentage = marksAvailable > 0 ? (marksEarned / marksAvailable) * 100 : 0;
+
         return {
             correct,
+            marksEarned,
+            marksAvailable,
             answered,
             total: this.questions.length,
             percentage: Math.round(percentage * 10) / 10,
-            unanswered: this.questions.length - answered
+            unanswered: this.questions.length - answered,
+            isPsaMode
         };
     }
 
@@ -1212,8 +1237,11 @@ export class QuizManager {
 
         const results = {
             name: this.quizName,
-            score: score.correct,
+            score: score.isPsaMode ? score.marksEarned : score.correct,
             correct: score.correct,
+            marksEarned: score.marksEarned,
+            marksAvailable: score.marksAvailable,
+            isPsaMode: score.isPsaMode,
             answered: score.answered,
             total: score.total,
             totalQuestions: score.total,
@@ -1251,7 +1279,10 @@ export class QuizManager {
 
         eventBus.emit(EVENTS.QUIZ_COMPLETED, results);
         
-        console.log(`🎉 Quiz completed: ${score.correct}/${score.answered} (${score.percentage}%)`);
+        console.log(score.isPsaMode
+            ? `🎉 Quiz completed: ${score.marksEarned}/${score.marksAvailable} marks (${score.percentage}%)`
+            : `🎉 Quiz completed: ${score.correct}/${score.answered} (${score.percentage}%)`
+        );
         
         return results;
     }
@@ -1594,7 +1625,7 @@ export class QuizManager {
     exportResults(format = 'download') {
         const score = this.calculateScore();
         const totalQuestions = this.questions.length;
-        const percentage = Math.round((score.correct / totalQuestions) * 100);
+        const percentage = Math.round(score.percentage);
         
         const results = {
             quizName: this.quizName,
@@ -1768,8 +1799,10 @@ export class QuizManager {
                 quiz: this.quizName,
                 totalQuestions: this.questions.length,
                 answeredQuestions: Object.keys(this.submittedAnswers).length,
-                correctAnswers: score.correct,
-                percentage: Math.round((score.correct / score.total) * 100),
+                correctAnswers: score.isPsaMode ? score.marksEarned : score.correct,
+                marksAvailable: score.marksAvailable,
+                isPsaMode: score.isPsaMode,
+                percentage: Math.round(score.percentage),
                 totalTime: this.getTotalTime(),
                 averageTime: Math.round(this.getTotalTime() / Object.keys(this.submittedAnswers).length),
                 flaggedQuestions: this.flaggedQuestions.size
@@ -1779,9 +1812,12 @@ export class QuizManager {
             console.log('📈 Study Report:', report);
             
             // Show a simple alert with the report (you can enhance this with a modal)
+            const scoreOutOf = report.isPsaMode
+                ? `${report.correctAnswers}/${report.marksAvailable} marks`
+                : `${report.correctAnswers}/${report.totalQuestions}`;
             const reportText = `📊 Study Report for ${report.quiz}\n\n` +
                 `Questions: ${report.answeredQuestions}/${report.totalQuestions}\n` +
-                `Score: ${report.correctAnswers}/${report.totalQuestions} (${report.percentage}%)\n` +
+                `Score: ${scoreOutOf} (${report.percentage}%)\n` +
                 `Time: ${report.totalTime}s total, ${report.averageTime}s avg\n` +
                 `Flagged: ${report.flaggedQuestions} questions`;
             
