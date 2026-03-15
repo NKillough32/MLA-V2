@@ -5738,6 +5738,77 @@ class MLAQuizApp {
                 html += '</table>';
             }
 
+        // ── PSA REVIEW (REV) ─────────────────────────────────────────────────────
+        } else if (qType === 'review') {
+            const partA   = question.part_a || {};
+            const partB   = question.part_b || {};
+            const marks_a = question.marks_a ?? 2;
+            const marks_b = question.marks_b ?? 2;
+
+            const renderPart = (part, partKey, label, marks, storedAnswer, show_submitted) => {
+                let out = `<div class="psa-review-part">
+                    <div class="psa-review-part-header">
+                        <span class="psa-review-part-label">${label}</span>
+                        <span class="psa-marks-badge">${marks} mark${marks !== 1 ? 's' : ''}</span>
+                    </div>
+                    <div class="psa-review-stem">${this.formatText(part.stem || '')}</div>
+                    <div class="psa-review-options">`;
+
+                (part.options || []).forEach((opt, idx) => {
+                    const letter    = String.fromCharCode(65 + idx);
+                    const isCorrect = idx === part.correct;
+                    const isSelected = show_submitted && (storedAnswer?.[partKey] === idx);
+                    let cls = 'psa-review-option';
+                    if (show_submitted && isCorrect)  cls += ' psa-rev-correct';
+                    if (show_submitted && isSelected && !isCorrect) cls += ' psa-rev-wrong';
+                    if (!show_submitted) {
+                        out += `<label class="${cls}">
+                            <input type="radio" name="psa-review-${partKey}" value="${idx}">
+                            <span class="psa-rev-letter">${letter}.</span>
+                            <span class="psa-rev-text">${this.formatText(opt)}</span>
+                        </label>`;
+                    } else {
+                        const icon = isCorrect ? '✓' : (isSelected ? '✗' : '');
+                        out += `<div class="${cls}">
+                            <span class="psa-rev-letter">${letter}.</span>
+                            <span class="psa-rev-text">${this.formatText(opt)}</span>
+                            ${icon ? `<span class="psa-rev-icon">${icon}</span>` : ''}
+                        </div>`;
+                    }
+                });
+
+                out += '</div>';
+                if (show_submitted) {
+                    const userIdx  = storedAnswer?.[partKey];
+                    const partOk   = typeof userIdx === 'number' && userIdx === part.correct;
+                    const correctLetter = String.fromCharCode(65 + (part.correct ?? 0));
+                    out += `<div class="psa-rev-result ${partOk ? 'psa-rev-res-ok' : 'psa-rev-res-err'}">
+                        ${partOk
+                            ? `✅ Correct — ${marks}/${marks} marks`
+                            : `❌ Incorrect — 0/${marks} marks. Correct answer: <strong>${correctLetter}</strong>`}
+                    </div>`;
+                }
+                out += '</div>';
+                return out;
+            };
+
+            const storedAnswer = submitted ? (answer || {}) : {};
+            if (question.scenario) {
+                html += `<div class="psa-review-scenario">${this.formatText(question.scenario)}</div>`;
+            }
+            html += `<div class="psa-review-panel">`;
+            html += renderPart(partA, 'a', 'Part A', marks_a, storedAnswer, submitted);
+            html += renderPart(partB, 'b', 'Part B', marks_b, storedAnswer, submitted);
+            if (submitted) {
+                const aOk = (storedAnswer.a === partA.correct);
+                const bOk = (storedAnswer.b === partB.correct);
+                const earned = (aOk ? marks_a : 0) + (bOk ? marks_b : 0);
+                html += `<div class="psa-review-total ${earned === marks_a + marks_b ? 'psa-rev-res-ok' : earned > 0 ? 'psa-rev-res-partial' : 'psa-rev-res-err'}">
+                    Total: ${earned} / ${marks_a + marks_b} marks
+                </div>`;
+            }
+            html += '</div>';
+
         // ── STANDARD MCQ ─────────────────────────────────────────────────────────
         } else if (question.options && question.options.length > 0) {
             html += '<div class="new-options">';
@@ -5805,7 +5876,7 @@ class MLAQuizApp {
                     </div>
                 `;
             }
-        } else if (submitted && (qType === 'calculation' || qType === 'prescription')) {
+        } else if (submitted && (qType === 'calculation' || qType === 'prescription' || qType === 'review')) {
             // PSA types rendered feedback inline above; just add explanation here
             let explanationText = '';
             if (question.explanation) explanationText = this.formatText(question.explanation);
@@ -6108,9 +6179,33 @@ class MLAQuizApp {
                 rxPanel.appendChild(btn);
             }
 
-        } else if (submitted && (qType === 'calculation' || qType === 'prescription')) {
+        } else if (submitted && (qType === 'calculation' || qType === 'prescription' || qType === 'review')) {
             // After submission, re-show global submit (now it acts as Next)
             if (globalSubmitBtn) globalSubmitBtn.style.display = 'inline-block';
+
+        } else if (!submitted && qType === 'review') {
+            // Hide global submit; wire up "Submit Review" button
+            if (globalSubmitBtn) globalSubmitBtn.style.display = 'none';
+
+            window._psaSubmitReview = () => {
+                const selA = questionContainer.querySelector('input[name="psa-review-a"]:checked');
+                const selB = questionContainer.querySelector('input[name="psa-review-b"]:checked');
+                if (selA === null || selB === null) {
+                    uiManager.showToast('Please select an answer for both Part A and Part B', 'warning');
+                    return;
+                }
+                quizManager.submitAnswer({ a: parseInt(selA.value, 10), b: parseInt(selB.value, 10) });
+            };
+
+            const reviewPanel = questionContainer.querySelector('.psa-review-panel');
+            if (reviewPanel) {
+                const btn = document.createElement('button');
+                btn.textContent = 'Submit Review';
+                btn.className = 'submit-btn';
+                btn.style.cssText = 'margin-top:14px;padding:9px 20px;background:#6366f1;color:#fff;border:none;border-radius:6px;font-size:14px;cursor:pointer;font-weight:600;';
+                btn.onclick = () => window._psaSubmitReview();
+                reviewPanel.appendChild(btn);
+            }
         }
 
         // Bind option click events

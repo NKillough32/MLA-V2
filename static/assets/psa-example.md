@@ -162,3 +162,71 @@ D. Switch to lamotrigine immediately without specialist review
 E. Stop anticonvulsant therapy entirely during the first trimester
 
 > Sodium valproate carries a risk of major congenital malformations of approximately 10% and neurodevelopmental delay in up to 30–40% of children exposed in utero. The MHRA Valproate Pregnancy Prevention Programme (PPP) requires: pregnancy prevention programme for all women of childbearing potential; annual specialist review and signed acknowledgement of risks; two forms of effective contraception. Specialist review BEFORE conception is mandatory. Never switch anticonvulsants without specialist guidance — abrupt changes can trigger status epilepticus.
+
+---
+
+### Q11 | REVIEW | Prescription Review | General Medicine
+
+MARKS_A: 2
+MARKS_B: 2
+
+A 67-year-old man with atrial fibrillation is admitted for an elective joint replacement. His regular medications are reviewed on the ward. He takes warfarin 5 mg OD (target INR 2–3) and has a new prescription written by the anaesthetic team for co-trimoxazole 960 mg BD as surgical prophylaxis. His most recent INR, taken 5 days ago, was 2.5. He has no known drug allergies.
+
+**Current prescription:**
+| Drug | Dose | Route | Frequency | Indication |
+|------|------|-------|-----------|------------|
+| Warfarin | 5 mg | Oral | Once daily | Atrial fibrillation |
+| Co-trimoxazole | 960 mg | Oral | Twice daily | Surgical prophylaxis |
+
+**Part A: Which of the following most accurately describes the drug interaction concern with this prescription?**
+
+A. Co-trimoxazole induces CYP2C9, reducing warfarin levels and increasing the risk of thromboembolism
+B. Co-trimoxazole inhibits CYP2C9 and reduces renal elimination of warfarin, significantly raising INR and bleeding risk ✓
+C. Co-trimoxazole and warfarin compete for albumin binding, leading to warfarin toxicity via displacement alone
+D. The interaction is minor and requires no monitoring beyond routine INR checks at 3 months
+E. Warfarin is absolutely contraindicated in patients receiving any antibiotic
+
+**Part B: What is the most appropriate action to take?**
+
+A. Continue both drugs and recheck INR in 4 weeks at the patient's next clinic visit
+B. Stop warfarin immediately and do not restart until the antibiotic course has finished
+C. Stop co-trimoxazole, prescribe a safer alternative antibiotic, and arrange an urgent INR check within 3–5 days ✓
+D. Halve the warfarin dose and continue co-trimoxazole with daily INR monitoring
+E. Switch warfarin to a DOAC (e.g. apixaban) and continue co-trimoxazole as prescribed
+
+> Co-trimoxazole inhibits CYP2C9 (major metabolic pathway for warfarin) and reduces renal excretion of the active S-warfarin enantiomer. This combination predictably and significantly raises INR — often to supratherapeutic levels — and greatly increases bleeding risk. **Action:** stop co-trimoxazole; prescribe a safe alternative (e.g. cefalexin or co-amoxiclav for surgical prophylaxis, depending on local policy); check INR within 3–5 days. If INR >5 at recheck: withold warfarin and consider oral vitamin K 1–3 mg. Switching to a DOAC is not appropriate in an acute perioperative setting without specialist input.
+
+---
+
+### Q12 | REVIEW | Prescription Review | Renal Medicine
+
+MARKS_A: 2
+MARKS_B: 2
+
+A 78-year-old woman with type 2 diabetes, CKD stage 3b (eGFR 34 mL/min/1.73m²), and hypertension presents with an acute exacerbation of COPD and is started on oral prednisolone 40 mg OD. Her regular medications are shown below. She is not acutely unwell and does not require IV fluids.
+
+**Current regular medications:**
+| Drug | Dose | Route | Frequency | Indication |
+|------|------|-------|-----------|------------|
+| Metformin | 1000 mg | Oral | Twice daily | Type 2 diabetes |
+| Ramipril | 5 mg | Oral | Once daily | Hypertension / CKD |
+| Atorvastatin | 40 mg | Oral | Once daily at night | Cardiovascular risk |
+| Prednisolone | 40 mg | Oral | Once daily | COPD exacerbation |
+
+**Part A: Which of her medications requires the most urgent review in the context of her new prescription for prednisolone?**
+
+A. Atorvastatin — prednisolone reduces its bioavailability significantly
+B. Ramipril — prednisolone causes hyperkalaemia when co-prescribed with ACE inhibitors
+C. Metformin — prednisolone causes hyperglycaemia; blood glucose monitoring and possible metformin dose adjustment or insulin initiation are required ✓
+D. Prednisolone itself — oral steroids are absolutely contraindicated in CKD stage 3b
+E. No medication review is required as all drugs are safe to co-prescribe with prednisolone
+
+**Part B: Regarding her metformin, which of the following statements is correct?**
+
+A. Metformin must be stopped immediately in all patients with CKD regardless of eGFR
+B. Metformin is safe to continue at 1000 mg BD in CKD stage 3b without dose adjustment or any additional monitoring
+C. Metformin dose should be reduced (maximum 500 mg BD) in CKD stage 3b; prednisolone-induced hyperglycaemia may necessitate insulin and temporary metformin suspension ✓
+D. Metformin should be replaced with a sulfonylurea (e.g. gliclazide) in all patients with eGFR 30–44
+E. Metformin is safe at full dose in CKD 3b; only the ramipril needs to be reviewed
+
+> Prednisolone causes dose-dependent hyperglycaemia, often raising blood glucose post-prandially. In a patient already on metformin for type 2 diabetes with CKD 3b, this requires close monitoring of blood glucose and may necessitate additional antidiabetic therapy (often short-acting insulin). **Metformin in CKD 3b (eGFR 30–44):** NICE guidance recommends dose reduction to maximum 500 mg BD (or 1 g daily) with caution; it should be temporarily suspended if eGFR falls below 30 (e.g. during AKI). Lactic acidosis risk increases if metformin accumulates in renal failure, particularly if the patient becomes dehydrated or acutely unwell. Ramipril is appropriate in CKD for renoprotection; monitor K⁺ and eGFR. Atorvastatin does not interact significantly with prednisolone at standard doses.

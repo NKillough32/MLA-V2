@@ -495,6 +495,13 @@ export class QuizManager {
                     .some(a => a.trim().toLowerCase() === userVal);
             });
             correctAnswerIdx = '_prescription';
+        } else if (qType === 'review') {
+            // selectedAnswer = { a: indexOrNull, b: indexOrNull }
+            const ua = selectedAnswer || {};
+            const aOk = typeof ua.a === 'number' && ua.a === question.part_a?.correct;
+            const bOk = typeof ua.b === 'number' && ua.b === question.part_b?.correct;
+            isCorrect = aOk || bOk; // partial credit counts as attempted correct
+            correctAnswerIdx = '_review';
         } else {
             correctAnswerIdx = question.correct_answer !== undefined
                 ? question.correct_answer : question.correctAnswer;
@@ -1156,6 +1163,16 @@ export class QuizManager {
                             .some(a => a.trim().toLowerCase() === userVal);
                     });
                     if (allOk) correct++;
+                } else if (qType === 'review') {
+                    const ua = stored || {};
+                    const aOk = typeof ua.a === 'number' && ua.a === question.part_a?.correct;
+                    const bOk = typeof ua.b === 'number' && ua.b === question.part_b?.correct;
+                    // Award fractional point per part so score reflects partial credit
+                    const marks_a = question.marks_a ?? 2;
+                    const marks_b = question.marks_b ?? 2;
+                    const total   = marks_a + marks_b;
+                    const earned  = (aOk ? marks_a : 0) + (bOk ? marks_b : 0);
+                    correct += earned / total; // e.g. 0.5 for 2/4
                 } else {
                     const correctAnswerIdx = question.correct_answer !== undefined
                         ? question.correct_answer : question.correctAnswer;
@@ -2155,6 +2172,7 @@ export class QuizManager {
             if      (qType === 'mcq')          q = this._parsePsaMcq(qBody, psaSection, specialty);
             else if (qType === 'calculation')  q = this._parsePsaCalculation(qBody, psaSection, specialty);
             else if (qType === 'prescription') q = this._parsePsaPrescription(qBody, psaSection, specialty);
+            else if (qType === 'review')       q = this._parsePsaReview(qBody, psaSection, specialty);
 
             if (q) questions.push(q);
         }
@@ -2266,6 +2284,85 @@ export class QuizManager {
             explanation,
             options:        undefined,
             correct_answer: '_calculation',
+        };
+    }
+
+    /** Parse a PSA PRESCRIPTION block — multi-field drug chart entry */
+    /** Parse a PSA REVIEW block — two linked MCQ sub-questions (Part A + Part B) */
+    _parsePsaReview(body, psaSection, specialty) {
+        // Extract MARKS_A / MARKS_B directives
+        const getDir = (key) => {
+            const m = body.match(new RegExp(`^${key}\\s*:\\s*(\\d+)`, 'im'));
+            return m ? parseInt(m[1], 10) : 2;
+        };
+        const marks_a = getDir('MARKS_A');
+        const marks_b = getDir('MARKS_B');
+
+        // Blockquote explanation
+        const expMatch = body.match(/\n(>[\s\S]+)$/);
+        const explanation = expMatch ? expMatch[1].replace(/^>\s*/gm, '').trim() : '';
+        const bodyNoExp = expMatch ? body.slice(0, expMatch.index) : body;
+
+        // Split into lines and identify Part A / Part B boundaries
+        const lines = bodyNoExp.split('\n');
+        let phase = 'scenario';
+        const scenarioLines = [];
+        let stem_a = '', stem_b = '';
+        const opts_a = [], opts_b = [];
+        let correct_a = null, correct_b = null;
+
+        for (const rawLine of lines) {
+            const line = rawLine.trimEnd();
+            const trimmed = line.trim();
+
+            // Directives — skip
+            if (/^MARKS_[AB]\s*:/i.test(trimmed)) continue;
+
+            // Part A heading: **Part A: Question text?**
+            const partAMatch = trimmed.match(/^\*\*Part A:\s*(.+?)\*\*\s*$/);
+            if (partAMatch) { phase = 'part_a'; stem_a = partAMatch[1].trim(); continue; }
+
+            // Part B heading
+            const partBMatch = trimmed.match(/^\*\*Part B:\s*(.+?)\*\*\s*$/);
+            if (partBMatch) { phase = 'part_b'; stem_b = partBMatch[1].trim(); continue; }
+
+            if (phase === 'scenario') {
+                scenarioLines.push(line);
+            } else if (phase === 'part_a') {
+                const m = trimmed.match(/^([A-E])\.\s+(.+)/);
+                if (m) {
+                    const hasCheck = m[2].includes('✓');
+                    if (hasCheck) correct_a = opts_a.length;
+                    opts_a.push(m[2].replace(/\s*✓\s*/g, '').trim());
+                }
+            } else if (phase === 'part_b') {
+                const m = trimmed.match(/^([A-E])\.\s+(.+)/);
+                if (m) {
+                    const hasCheck = m[2].includes('✓');
+                    if (hasCheck) correct_b = opts_b.length;
+                    opts_b.push(m[2].replace(/\s*✓\s*/g, '').trim());
+                }
+            }
+        }
+
+        if (!opts_a.length || !opts_b.length) return null;
+
+        // Scenario: strip leading MARKS directives from display text
+        let scenario = scenarioLines.join('\n')
+            .replace(/^MARKS_[AB]\s*:\s*\d+\s*\n?/gim, '').trim();
+
+        return {
+            question_type: 'review',
+            psa_section:   psaSection,
+            specialty,
+            scenario,
+            marks_a,
+            marks_b,
+            part_a: { stem: stem_a, options: opts_a, correct: correct_a },
+            part_b: { stem: stem_b, options: opts_b, correct: correct_b },
+            explanation,
+            options:        undefined,
+            correct_answer: '_review',
         };
     }
 
