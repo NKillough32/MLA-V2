@@ -100,6 +100,9 @@ export class QuizManager {
             averageTimePerQuestion: 0
         };
 
+        // Per-question correctness results (PSA-aware)
+        this.correctResults = {};
+
         // Review mode flag
         this.isReviewMode = false;
 
@@ -507,6 +510,9 @@ export class QuizManager {
                 ? question.correct_answer : question.correctAnswer;
             isCorrect = selectedAnswer === correctAnswerIdx;
         }
+
+        // Store correctness result for this question
+        this.correctResults[questionIndex] = isCorrect;
 
         // Vibration feedback
         if (isCorrect) {
@@ -1290,16 +1296,11 @@ export class QuizManager {
         const percentage = this.questions.length > 0 ? 
             (answered / this.questions.length) * 100 : 0;
 
-        // Calculate correct answers
+        // Calculate correct answers using stored per-question results (PSA-aware)
         let correct = 0;
         for (const [index, submitted] of Object.entries(this.submittedAnswers)) {
-            if (submitted) {
-                const question = this.questions[parseInt(index)];
-                const userAnswer = this.answers[index];
-                const correctAnswer = question.correct_answer || question.correctAnswer;
-                if (userAnswer === correctAnswer) {
-                    correct++;
-                }
+            if (submitted && this.correctResults[index] === true) {
+                correct++;
             }
         }
 

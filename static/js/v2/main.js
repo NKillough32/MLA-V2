@@ -6171,23 +6171,19 @@ class MLAQuizApp {
                 const accepted = f.accept && f.accept.length ? f.accept : [f.answer];
 
                 if (f.field === 'DRUG') {
-                    // Merge question synonyms first, then full drug library
+                    // Full drug library only — don't expose the correct answer at the top
                     getDrugSuggestions().then(drugNames => {
-                        const merged = [
-                            ...accepted,
-                            ...drugNames.filter(d => !accepted.some(a => a.toLowerCase() === d.toLowerCase()))
-                        ];
-                        setupPsaAC(el, merged);
+                        setupPsaAC(el, drugNames);
                     });
                 } else if (f.field === 'ROUTE') {
-                    setupPsaAC(el, [...accepted, ...PSA_ROUTES.filter(r => !accepted.some(a => a.toLowerCase() === r.toLowerCase()))]);
+                    setupPsaAC(el, PSA_ROUTES);
                 } else if (f.field === 'FREQUENCY') {
-                    setupPsaAC(el, [...accepted, ...PSA_FREQUENCIES.filter(r => !accepted.some(a => a.toLowerCase() === r.toLowerCase()))]);
+                    setupPsaAC(el, PSA_FREQUENCIES);
                 } else if (f.field === 'INDICATION') {
-                    setupPsaAC(el, [...accepted, ...PSA_INDICATIONS.filter(r => !accepted.some(a => a.toLowerCase() === r.toLowerCase()))]);
+                    setupPsaAC(el, PSA_INDICATIONS);
                 } else {
-                    // DOSE and any other fields: accepted synonyms only
-                    setupPsaAC(el, accepted);
+                    // DOSE and any other free-text fields: no autocomplete hints
+                    setupPsaAC(el, []);
                 }
             });
 
@@ -6570,10 +6566,9 @@ class MLAQuizApp {
 
             for (let i = 0; i < total; i++) {
                 const isSubmitted = !!quizManager.submittedAnswers[i];
-                const yourAnswer = quizManager.answers[i];
-                const q = quizManager.questions[i];
-                const correctIdx = q ? (q.correct_answer !== undefined ? q.correct_answer : q.correctAnswer) : undefined;
                 const isFlagged = quizManager.isFlagged?.(i) || false;
+                // Use stored correctness result (PSA-aware) instead of re-evaluating
+                const wasCorrect = quizManager.correctResults?.[i] === true;
 
                 let classes = 'pq-cell';
                 let title = `Question ${i + 1}`;
@@ -6583,8 +6578,8 @@ class MLAQuizApp {
                 }
                 if (isSubmitted) {
                     // Only show correct/incorrect if feedback mode allows it
-                    if (shouldRevealAnswers && yourAnswer !== undefined && correctIdx !== undefined) {
-                        if (yourAnswer === correctIdx) {
+                    if (shouldRevealAnswers) {
+                        if (wasCorrect) {
                             classes += ' pq-correct';
                             title += ' • Correct';
                         } else {
