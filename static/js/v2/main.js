@@ -5631,8 +5631,11 @@ class MLAQuizApp {
         // Build question content (no header since we update the existing one)
         let html = '';
 
+        const qType = question.question_type || 'mcq';
+
         // Add scenario if present and different from prompt (V1-style blue background)
-        if (question.scenario && question.scenario !== question.prompt && question.scenario !== question.text) {
+        // Skip for 'review' type — it renders its own styled scenario box below
+        if (question.scenario && question.scenario !== question.prompt && question.scenario !== question.text && qType !== 'review') {
             html += `<div class="q-text" data-highlight-section="scenario" style="background: #f0f9ff; border-left: 4px solid #0ea5e9; padding: 12px; border-radius: 6px; margin-bottom: 8px;"><h4 style="margin: 0 0 8px 0; color: #0369a1;">Scenario:</h4><div>${this.formatText(question.scenario)}</div></div>`;
         }
 
@@ -5654,8 +5657,6 @@ class MLAQuizApp {
         }
 
         // ── PSA CALCULATION ───────────────────────────────────────────────────────
-        const qType = question.question_type || 'mcq';
-
         if (qType === 'calculation') {
             const unit = question.unit ? ` (${question.unit})` : '';
             if (!submitted) {
@@ -6992,7 +6993,7 @@ class MLAQuizApp {
         // Convert markdown tables to HTML (must run before newline→paragraph step)
         if (formattedText.includes('|')) {
             formattedText = formattedText.replace(
-                /((?:[ \t]*\|[^\n]+\n){2,})/g,
+                /((?:[ \t]*\|[^\n]+(?:\n|$)){2,})/g,
                 (tableBlock) => {
                     const lines = tableBlock.trim().split('\n')
                         .map(l => l.trim()).filter(Boolean);
