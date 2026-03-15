@@ -17,9 +17,10 @@
  *  4. Prescribing Error Cases  – 30 MCQ cases with score tracking
  *  5. Controlled Drug Rules    – static reference (HTML, no JS needed)
  *  6. Antibiotic Stewardship   – 23 empirical regimens + IV-to-oral switch
- *  7. Drug Quiz                – 105 hardcoded Qs + dynamic generation from 60 drug JSONs;
+ *  7. Paediatric Prescribing   – weight-based dosing quick guide + red-flag checks
+ *  8. Drug Quiz                – 105 hardcoded Qs + dynamic generation from 60 drug JSONs;
  *                                per-category score breakdown on completion
- *  8. Pregnancy & Lactation    – drug safety guide (delegated to PregnancyDrugsManager)
+ *  9. Pregnancy & Lactation    – drug safety guide (delegated to PregnancyDrugsManager)
  */
 
 import { pregnancyDrugsManager as _pregMgr } from './PregnancyDrugsManager.js';
@@ -51,6 +52,7 @@ class PrescribingManager {
         this._renderCases();
         this._buildQuickCards();
         this._buildAbxGrid();
+        this._renderPaedsPrescribing();
         this._initDrugQuiz();
         this._initPregnancySection();
         this._exposeWindowHandlers();
@@ -373,7 +375,84 @@ class PrescribingManager {
     }
 
     /* ═══════════════════════════════════════════════════════════════
-       7. DRUG QUIZ
+       7. PAEDIATRIC PRESCRIBING
+       ═══════════════════════════════════════════════════════════════ */
+
+    _renderPaedsPrescribing() {
+      const out = document.getElementById('prxPaedsResult');
+      if (!out) return;
+
+      const cards = document.getElementById('prxPaedsQuickCards');
+      if (cards) {
+        cards.innerHTML = PAEDS_HIGH_YIELD.map(item => `
+          <div class="prx-card">
+            <h4>${item.title}</h4>
+            <p>${item.body}</p>
+          </div>
+        `).join('');
+      }
+
+      out.innerHTML = '<p style="color:var(--v2-text-tertiary);font-size:13px;">Enter age/weight, pick a scenario, then press <em>Calculate Paediatric Dose</em>.</p>';
+    }
+
+    showPaedsGuidance() {
+      const out = document.getElementById('prxPaedsResult');
+      if (!out) return;
+
+      const scenarioKey = document.getElementById('prxPaedsScenario')?.value || '';
+      const ageMonths = parseFloat(document.getElementById('prxPaedsAgeMonths')?.value || '');
+      const weightKg = parseFloat(document.getElementById('prxPaedsWeight')?.value || '');
+      const useAgeFallback = !!document.getElementById('prxPaedsUseAgeFallback')?.checked;
+
+      if (!scenarioKey || !PAEDS_PRESCRIBING[scenarioKey]) {
+        out.innerHTML = '<div class="prx-result-item warn">⚠️ Please select a paediatric prescribing scenario.</div>';
+        return;
+      }
+
+      const def = PAEDS_PRESCRIBING[scenarioKey];
+      const hasWeight = !isNaN(weightKg) && weightKg > 0;
+      const hasAge = !isNaN(ageMonths) && ageMonths >= 0;
+
+      if (!hasWeight && !(useAgeFallback && hasAge && typeof def.computeFromAge === 'function')) {
+        out.innerHTML = '<div class="prx-result-item warn">⚠️ Please enter a valid weight in kg, or enable age-band fallback for eligible emergency scenarios.</div>';
+        return;
+      }
+
+      const usingEstimatedDose = !hasWeight && useAgeFallback && hasAge && typeof def.computeFromAge === 'function';
+      const computed = usingEstimatedDose
+        ? def.computeFromAge(ageMonths)
+        : def.compute(weightKg, ageMonths);
+      const ageText = isNaN(ageMonths) ? 'Age not entered' : `${Math.round(ageMonths)} months`;
+      const safetyNotes = (def.safety || []).map(n => `<li>${n}</li>`).join('');
+      const patientText = hasWeight
+        ? `<strong>${weightKg.toFixed(1)} kg</strong> · <strong>${ageText}</strong>`
+        : `<strong>${ageText}</strong> · <strong>weight unavailable</strong>`;
+
+      out.innerHTML = `
+        ${usingEstimatedDose ? `
+          <div class="prx-result-item warn">
+            <strong>⚠️ Age-band estimated dose</strong><br>
+            Weight is unavailable, so this is an emergency age-band default only. Replace with a weight-based dose as soon as a measured weight is available.
+          </div>` : ''}
+        <div class="prx-result-item info">
+          <strong>👶 ${def.label}</strong><br>
+          Patient: ${patientText}<br>
+          <span style="display:block;margin-top:6px;"><strong>Recommended dose:</strong> ${computed.dose}</span>
+          ${computed.maxText ? `<span style="display:block;"><strong>Maximum:</strong> ${computed.maxText}</span>` : ''}
+          <span style="display:block;"><strong>Route/Frequency:</strong> ${def.routeFreq}</span>
+          ${computed.extra ? `<span style="display:block;"><strong>Clinical note:</strong> ${computed.extra}</span>` : ''}
+        </div>
+        <div class="prx-result-item warn">
+          <strong>🛡️ Safety checks before prescribing</strong>
+          <ul style="margin:8px 0 0;padding-left:20px;line-height:1.7;">${safetyNotes}</ul>
+        </div>
+        <div class="prx-result-item ok">
+          Cross-check against local paediatric guideline/BNFc and use actual body weight unless specialist guidance states otherwise.
+        </div>`;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       8. DRUG QUIZ
        ═══════════════════════════════════════════════════════════════ */
 
     _initDrugQuiz() {
@@ -603,8 +682,8 @@ class PrescribingManager {
         this._initDrugQuiz();
     }
 
-    /* ═══════════════════════════════════════════════════════════════
-       8. DYNAMIC QUESTION GENERATION FROM DRUG JSON FILES
+     /* ═══════════════════════════════════════════════════════════════
+       9. DYNAMIC QUESTION GENERATION FROM DRUG JSON FILES
        ═══════════════════════════════════════════════════════════════ */
 
     _updateQuizPreview() {
@@ -773,8 +852,8 @@ class PrescribingManager {
        Exposes methods that HTML onclick attributes call.
        ═══════════════════════════════════════════════════════════════ */
 
-    /* ═══════════════════════════════════════════════════════════════
-       8. PREGNANCY & LACTATION (delegated to PregnancyDrugsManager)
+     /* ═══════════════════════════════════════════════════════════════
+       10. PREGNANCY & LACTATION (delegated to PregnancyDrugsManager)
        ═══════════════════════════════════════════════════════════════ */
 
     _initPregnancySection() {
@@ -1050,6 +1129,7 @@ class PrescribingManager {
         window.prxRevealAllCases    = ()    => this.revealAllCases();
         window.prxFilterAbx         = ()    => this.filterAbx();
         window.prxFilterAbxRoute    = (r)   => this.filterAbxRoute(r);
+        window.prxShowPaedsGuidance = ()    => this.showPaedsGuidance();
         window.prxStartCdQuiz       = ()    => this.startCdQuiz();
         window.prxAnswerCdQuiz      = (i)   => this.answerCdQuiz(i);
         window.prxNextCdQ           = ()    => this.nextCdQ();
@@ -2227,6 +2307,165 @@ const ABX_DATA = [
       route:'oral', review:'Notify PHE (notifiable disease). DOTT (directly observed therapy) for complex cases. LFTs, U&E, vision before and during treatment. Contact tracing mandatory. Check HIV status in all TB patients.',
       notes:'Key interactions: rifampicin is a MAJOR enzyme inducer — reduces efficacy of warfarin, DOACs, OCP, phenytoin, many others. Pyrazinamide causes hyperuricaemia (can precipitate gout). Ethambutol → optic neuritis (check monthly visual acuity). Add pyridoxine 10 mg OD (prevention of isoniazid-induced peripheral neuropathy).' },
 ];
+
+/* ── Paediatric prescribing quick guide ─────────────────────────── */
+const PAEDS_HIGH_YIELD = [
+  {
+    title: 'Weight-Based Dosing',
+    body: 'Most paediatric doses are mg/kg. Always document the patient weight and your calculated dose in mg and mL if liquid.'
+  },
+  {
+    title: 'Use Age + Weight Together',
+    body: 'Age checks prevent unsafe drugs in very young children, while weight checks prevent over- or under-dosing.'
+  },
+  {
+    title: 'Escalate Red Flags Early',
+    body: 'If shock, meningism, airway compromise, or persistent seizures are present, prescribe emergency therapy and escalate immediately.'
+  }
+];
+
+const PAEDS_PRESCRIBING = {
+  paracetamol: {
+    label: 'Paracetamol (oral) for pain/fever',
+    routeFreq: 'Oral, every 4-6 hours PRN',
+    compute: (kg) => {
+      const mg = Math.round(15 * kg);
+      const maxPerDose = 1000;
+      const maxPerDayByWeight = Math.round(60 * kg);
+      return {
+        dose: `${Math.min(mg, maxPerDose)} mg per dose`,
+        maxText: `${Math.min(maxPerDayByWeight, 4000)} mg per 24 h (max 4 doses/24 h)`,
+        extra: 'Avoid duplicate paracetamol-containing products.'
+      };
+    },
+    safety: [
+      'Confirm total daily dose from all formulations, including OTC cold/flu preparations.',
+      'Use oral syringes for liquid preparations; avoid household spoons.',
+      'Dose interval should not be less than 4 hours.'
+    ]
+  },
+  ibuprofen: {
+    label: 'Ibuprofen (oral) for pain/fever',
+    routeFreq: 'Oral, every 6-8 hours PRN',
+    compute: (kg, ageMonths) => {
+      const mg = Math.round(10 * kg);
+      const dose = Math.min(mg, 400);
+      const underSixMonths = !isNaN(ageMonths) && ageMonths < 6;
+      return {
+        dose: `${dose} mg per dose`,
+        maxText: `${Math.round(30 * kg)} mg per 24 h (max 3 doses/day)`,
+        extra: underSixMonths
+          ? 'Avoid routine ibuprofen under 6 months unless specialist advice has been given.'
+          : 'Use with food when possible; avoid in dehydration or AKI risk.'
+      };
+    },
+    safety: [
+      'Avoid if dehydrated, AKI risk, GI bleed risk, or known NSAID-exacerbated asthma.',
+      'Do not co-prescribe with another NSAID.',
+      'If prolonged use is needed, set a clear review date.'
+    ]
+  },
+  amoxicillin: {
+    label: 'Amoxicillin for uncomplicated lower respiratory infection',
+    routeFreq: 'Oral, three times daily',
+    compute: (kg) => {
+      const mg = Math.round(30 * kg);
+      return {
+        dose: `${Math.min(mg, 1000)} mg per dose`,
+        maxText: 'Usual maximum 1 g per dose',
+        extra: 'Typical course is 5 days; tailor to source and local guidance.'
+      };
+    },
+    safety: [
+      'Check allergy history carefully: true immediate allergy versus side effect history.',
+      'Document indication, start date, and stop/review date.',
+      'Review response at 48-72 hours and de-escalate if needed.'
+    ]
+  },
+  anaphylaxis: {
+    label: 'Anaphylaxis IM adrenaline (1:1000)',
+    routeFreq: 'Intramuscular into anterolateral thigh; repeat every 5 minutes if needed',
+    compute: (kg) => {
+      const mg = Number((0.01 * kg).toFixed(2));
+      const capped = Math.min(mg, 0.5);
+      const ml = Number(capped.toFixed(2));
+      return {
+        dose: `${capped} mg (${ml} mL of 1 mg/mL [1:1000])`,
+        maxText: 'Maximum single dose 0.5 mg',
+        extra: 'Give early and do not delay while waiting for IV access.'
+      };
+    },
+    computeFromAge: (ageMonths) => {
+      const years = ageMonths / 12;
+      let mg = 0.5;
+      if (years < 6) mg = 0.15;
+      else if (years < 12) mg = 0.3;
+      return {
+        dose: `${mg} mg (${mg} mL of 1 mg/mL [1:1000])`,
+        maxText: 'Age-band emergency estimate only',
+        extra: 'Common emergency age bands: <6 years = 150 mcg, 6-11 years = 300 mcg, >=12 years = 500 mcg.'
+      };
+    },
+    safety: [
+      'Call for senior help/resuscitation team and monitor airway, breathing, and circulation continuously.',
+      'Place child flat or in position of comfort if respiratory distress; give high-flow oxygen.',
+      'After acute treatment, prescribe adrenaline auto-injectors where indicated and provide an emergency action plan.'
+    ]
+  },
+  fluids_bolus: {
+    label: 'Fluid bolus in septic shock/decompensation',
+    routeFreq: 'IV isotonic crystalloid over 10-15 minutes',
+    compute: (kg) => {
+      const ml = Math.round(20 * kg);
+      return {
+        dose: `${ml} mL bolus`,
+        maxText: 'Reassess after each bolus before repeating',
+        extra: 'Use 10 mL/kg boluses if cardiac dysfunction is suspected.'
+      };
+    },
+    safety: [
+      'Reassess perfusion, HR, BP, capillary refill, and work of breathing after each bolus.',
+      'Look for fluid overload: crepitations, hepatomegaly, or worsening oxygen requirement.',
+      'Escalate early to paediatric senior or critical care if shock persists.'
+    ]
+  },
+  status_epilepticus: {
+    label: 'Buccal midazolam for prolonged seizure',
+    routeFreq: 'Buccal once, then escalate per seizure protocol if ongoing',
+    compute: (kg, ageMonths) => {
+      const years = isNaN(ageMonths) ? null : ageMonths / 12;
+      let ageBandDose = '10 mg';
+      if (years !== null) {
+        if (years < 1) ageBandDose = '2.5 mg';
+        else if (years < 5) ageBandDose = '5 mg';
+        else if (years < 10) ageBandDose = '7.5 mg';
+        else ageBandDose = '10 mg';
+      }
+      return {
+        dose: `${ageBandDose} buccal`,
+        maxText: 'Single initial dose before urgent reassessment',
+        extra: 'If age is unknown, use local emergency age-band protocol and escalate immediately.'
+      };
+    },
+    computeFromAge: (ageMonths) => {
+      const years = ageMonths / 12;
+      let ageBandDose = '10 mg';
+      if (years < 1) ageBandDose = '2.5 mg';
+      else if (years < 5) ageBandDose = '5 mg';
+      else if (years < 10) ageBandDose = '7.5 mg';
+      return {
+        dose: `${ageBandDose} buccal`,
+        maxText: 'Age-band emergency estimate only',
+        extra: 'If seizures continue, escalate immediately to second-line protocol and senior support.'
+      };
+    },
+    safety: [
+      'Time the seizure accurately and treat prolonged convulsive seizure promptly.',
+      'Check glucose early and correct hypoglycaemia.',
+      'If seizure persists, follow emergency pathway for second-line anti-epileptic therapy.'
+    ]
+  }
+};
 
 /* ── Drug Quiz Question Bank ────────────────────────────────────── */
 /* cat: 'dosing' | 'contraindications' | 'interactions' | 'sideeffects' | 'mechanism' | 'monitoring' */
