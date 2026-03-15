@@ -6989,6 +6989,37 @@ class MLAQuizApp {
             '<a href="http://$1" target="_blank" rel="noopener noreferrer" class="explanation-link">$1</a>'
         );
         
+        // Convert markdown tables to HTML (must run before newline→paragraph step)
+        if (formattedText.includes('|')) {
+            formattedText = formattedText.replace(
+                /((?:[ \t]*\|[^\n]+\n){2,})/g,
+                (tableBlock) => {
+                    const lines = tableBlock.trim().split('\n')
+                        .map(l => l.trim()).filter(Boolean);
+                    if (lines.length < 2) return tableBlock;
+
+                    const isSep = l => /^\|[\s\-:|]+\|/.test(l);
+                    const parseCells = l => l.replace(/^\||\|$/g, '').split('|').map(c => c.trim());
+
+                    // Find separator row to identify header
+                    let sepIdx = lines.findIndex(isSep);
+                    if (sepIdx < 1) return tableBlock; // no valid header
+
+                    let html = '<table class="md-table"><thead><tr>';
+                    parseCells(lines[0]).forEach(cell => { html += `<th>${cell}</th>`; });
+                    html += '</tr></thead><tbody>';
+                    lines.slice(sepIdx + 1).forEach(line => {
+                        if (!line || isSep(line)) return;
+                        html += '<tr>';
+                        parseCells(line).forEach(cell => { html += `<td>${cell}</td>`; });
+                        html += '</tr>';
+                    });
+                    html += '</tbody></table>';
+                    return html;
+                }
+            );
+        }
+
         // Convert line breaks to paragraphs
         if (formattedText.includes('\n\n')) {
             formattedText = formattedText

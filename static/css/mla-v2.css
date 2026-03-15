@@ -1404,7 +1404,26 @@ body {
     color: var(--text-primary);
 }
 
-.psa-review-scenario table {
+/* Generic markdown table rendered by formatText() */
+table.md-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 0.9rem;
+}
+table.md-table th,
+table.md-table td {
+    border: 1px solid var(--border-color, #e2e8f0);
+    padding: 6px 10px;
+    text-align: left;
+}
+table.md-table th {
+    background: var(--bg-tertiary, #f1f5f9);
+    font-weight: 600;
+}
+
+.psa-review-scenario table,
+.psa-review-scenario table.md-table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
@@ -1625,5 +1644,14 @@ label.psa-review-option input[type="radio"] {
 
 [data-theme="dark"] .psa-review-scenario th,
 [data-theme="dark"] .psa-review-scenario td {
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] table.md-table th {
+    background: var(--bg-tertiary);
+}
+
+[data-theme="dark"] table.md-table th,
+[data-theme="dark"] table.md-table td {
     border-color: var(--border-color);
 }
