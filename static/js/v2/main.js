@@ -5747,33 +5747,32 @@ class MLAQuizApp {
             const marks_b = question.marks_b ?? 2;
 
             const renderPart = (part, partKey, label, marks, storedAnswer, show_submitted) => {
-                let out = `<div class="psa-review-part">
-                    <div class="psa-review-part-header">
-                        <span class="psa-review-part-label">${label}</span>
-                        <span class="psa-marks-badge">${marks} mark${marks !== 1 ? 's' : ''}</span>
+                let out = `<div style="background:var(--card-bg,#fff);border:1.5px solid #6366f1;border-radius:10px;padding:16px 18px;margin-bottom:0;">
+                    <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid #e0e7ff;">
+                        <span style="font-weight:700;font-size:0.95rem;color:#6366f1;letter-spacing:0.02em;">${label}</span>
+                        <span style="background:#eef2ff;color:#4338ca;border-radius:20px;padding:2px 10px;font-size:0.78rem;font-weight:600;">${marks} mark${marks !== 1 ? 's' : ''}</span>
                     </div>
-                    <div class="psa-review-stem">${this.formatText(part.stem || '')}</div>
-                    <div class="psa-review-options">`;
+                    <div style="font-weight:600;font-size:0.93rem;color:var(--text-primary,#1e293b);margin-bottom:12px;line-height:1.5;">${this.formatText(part.stem || '')}</div>
+                    <div style="display:flex;flex-direction:column;gap:8px;">`;
 
                 (part.options || []).forEach((opt, idx) => {
                     const letter    = String.fromCharCode(65 + idx);
                     const isCorrect = idx === part.correct;
                     const isSelected = show_submitted && (storedAnswer?.[partKey] === idx);
-                    let cls = 'psa-review-option';
-                    if (show_submitted && isCorrect)  cls += ' psa-rev-correct';
-                    if (show_submitted && isSelected && !isCorrect) cls += ' psa-rev-wrong';
                     if (!show_submitted) {
-                        out += `<label class="${cls}">
-                            <input type="radio" name="psa-review-${partKey}" value="${idx}">
-                            <span class="psa-rev-letter">${letter}.</span>
-                            <span class="psa-rev-text">${this.formatText(opt)}</span>
+                        out += `<label style="display:flex;align-items:flex-start;gap:10px;padding:9px 12px;border-radius:7px;border:1.5px solid var(--border-color,#e2e8f0);cursor:pointer;font-size:0.9rem;color:var(--text-primary,#1e293b);">
+                            <input type="radio" name="psa-review-${partKey}" value="${idx}" style="margin-top:3px;accent-color:#6366f1;flex-shrink:0;">
+                            <span style="font-weight:700;min-width:1.4em;flex-shrink:0;">${letter}.</span>
+                            <span style="flex:1;">${this.formatText(opt)}</span>
                         </label>`;
                     } else {
-                        const icon = isCorrect ? '✓' : (isSelected ? '✗' : '');
-                        out += `<div class="${cls}">
-                            <span class="psa-rev-letter">${letter}.</span>
-                            <span class="psa-rev-text">${this.formatText(opt)}</span>
-                            ${icon ? `<span class="psa-rev-icon">${icon}</span>` : ''}
+                        let bg = 'transparent', border = 'var(--border-color,#e2e8f0)', color = 'var(--text-primary,#1e293b)', icon = '';
+                        if (isCorrect)  { bg = '#dcfce7'; border = '#22c55e'; color = '#15803d'; icon = '✓'; }
+                        if (isSelected && !isCorrect) { bg = '#fee2e2'; border = '#ef4444'; color = '#b91c1c'; icon = '✗'; }
+                        out += `<div style="display:flex;align-items:flex-start;gap:10px;padding:9px 12px;border-radius:7px;border:1.5px solid ${border};background:${bg};color:${color};font-size:0.9rem;">
+                            <span style="font-weight:700;min-width:1.4em;flex-shrink:0;">${letter}.</span>
+                            <span style="flex:1;">${this.formatText(opt)}</span>
+                            ${icon ? `<span style="font-weight:700;flex-shrink:0;">${icon}</span>` : ''}
                         </div>`;
                     }
                 });
@@ -5783,7 +5782,7 @@ class MLAQuizApp {
                     const userIdx  = storedAnswer?.[partKey];
                     const partOk   = typeof userIdx === 'number' && userIdx === part.correct;
                     const correctLetter = String.fromCharCode(65 + (part.correct ?? 0));
-                    out += `<div class="psa-rev-result ${partOk ? 'psa-rev-res-ok' : 'psa-rev-res-err'}">
+                    out += `<div style="margin-top:12px;padding:8px 12px;border-radius:6px;font-size:0.88rem;font-weight:600;${partOk ? 'background:#dcfce7;color:#15803d;' : 'background:#fee2e2;color:#b91c1c;'}">
                         ${partOk
                             ? `✅ Correct — ${marks}/${marks} marks`
                             : `❌ Incorrect — 0/${marks} marks. Correct answer: <strong>${correctLetter}</strong>`}
@@ -5795,17 +5794,23 @@ class MLAQuizApp {
 
             const storedAnswer = submitted ? (answer || {}) : {};
             if (question.scenario) {
-                html += `<div class="psa-review-scenario">${this.formatText(question.scenario)}</div>`;
+                html += `<div style="background:var(--bg-secondary,#f8fafc);border-left:4px solid #6366f1;border-radius:6px;padding:14px 18px;margin-bottom:16px;font-size:0.95rem;line-height:1.65;color:var(--text-primary,#1e293b);">
+                    <div style="font-weight:700;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.06em;color:#6366f1;margin-bottom:8px;">Clinical Scenario</div>
+                    ${this.formatText(question.scenario)}
+                </div>`;
             }
-            html += `<div class="psa-review-panel">`;
+            html += `<div style="display:flex;flex-direction:column;gap:14px;">`;
             html += renderPart(partA, 'a', 'Part A', marks_a, storedAnswer, submitted);
             html += renderPart(partB, 'b', 'Part B', marks_b, storedAnswer, submitted);
             if (submitted) {
                 const aOk = (storedAnswer.a === partA.correct);
                 const bOk = (storedAnswer.b === partB.correct);
                 const earned = (aOk ? marks_a : 0) + (bOk ? marks_b : 0);
-                html += `<div class="psa-review-total ${earned === marks_a + marks_b ? 'psa-rev-res-ok' : earned > 0 ? 'psa-rev-res-partial' : 'psa-rev-res-err'}">
-                    Total: ${earned} / ${marks_a + marks_b} marks
+                const total  = marks_a + marks_b;
+                const totalBg = earned === total ? '#dcfce7' : earned > 0 ? '#fef9c3' : '#fee2e2';
+                const totalColor = earned === total ? '#15803d' : earned > 0 ? '#854d0e' : '#b91c1c';
+                html += `<div style="padding:10px 16px;border-radius:8px;font-weight:700;font-size:0.95rem;background:${totalBg};color:${totalColor};text-align:center;">
+                    Total: ${earned} / ${total} marks
                 </div>`;
             }
             html += '</div>';

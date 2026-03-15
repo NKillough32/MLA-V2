@@ -3,9 +3,9 @@
  * Provides offline functionality and caching for the PWA
  */
 
-const CACHE_NAME = 'mla-quiz-v1';
-const STATIC_CACHE = 'mla-quiz-static-v1';
-const RUNTIME_CACHE = 'mla-quiz-runtime-v1';
+const CACHE_NAME = 'mla-quiz-v2';
+const STATIC_CACHE = 'mla-quiz-static-v2';
+const RUNTIME_CACHE = 'mla-quiz-runtime-v2';
 const ASSET_MANIFEST_URL = '/api/asset-manifest';
 
 // Files to cache immediately
