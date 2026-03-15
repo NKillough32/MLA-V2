@@ -5902,25 +5902,81 @@ class MLAQuizApp {
 
             // ── Build per-field suggestion lists ─────────────────────────
             const PSA_ROUTES = [
-                'Oral','Intravenous (IV)','Intramuscular (IM)','Subcutaneous (SC)',
-                'Sublingual','Inhaled','Nebulised','Topical','Transdermal','Rectal',
-                'Intranasal','Intrathecal','Intraosseous (IO)','Ophthalmic','Otic',
-                'Buccal','Vaginal','IV bolus','IV infusion','IV push'
+                // Short abbreviations (searchable by typing the short form)
+                'PO','IV','IM','SC','SL','PR','IN','TD','TOP','NEB','INH','IO','IT',
+                // Full forms with abbreviations
+                'Oral (PO)','Intravenous (IV)','Intramuscular (IM)','Subcutaneous (SC)',
+                'Sublingual (SL)','Rectal (PR)','Intranasal (IN)','Transdermal (TD)',
+                'Topical (TOP)','Nebulised (NEB)','Inhaled (INH)','Intraosseous (IO)',
+                'Intrathecal (IT)','Ophthalmic','Otic','Buccal','Vaginal',
+                // IV sub-types
+                'IV bolus','IV infusion','IV bolus over 5 minutes','IV over 30 minutes',
+                'IV over 1 hour','IV over 4 hours','IV slow bolus','IV push',
+                // Miscellaneous
+                'NGT (nasogastric tube)','PEG (percutaneous gastrostomy)',
+                'Epidural','Intra-articular','Intravesical','By mouth',
+                'Enteral','Parenteral'
             ];
             const PSA_FREQUENCIES = [
+                // Short abbreviations
+                'OD','BD','TDS','QDS','STAT','PRN','nocte','mane',
+                // Full forms with abbreviations
                 'Once daily (OD)','Twice daily (BD)','Three times daily (TDS)',
-                'Four times daily (QDS)','Every 4 hours','Every 6 hours',
-                'Every 8 hours','Every 12 hours','Every 24 hours',
-                'Once (STAT)','When required (PRN)','Nightly (nocte)',
-                'Morning (mane)','Weekly','Fortnightly','Monthly',
-                'Once weekly','Once monthly'
+                'Four times daily (QDS)','Once (STAT)','When required (PRN)',
+                'Nightly (nocte)','Morning (mane)',
+                // Interval-based
+                'Every 2 hours','Every 4 hours','Every 6 hours','Every 8 hours',
+                'Every 12 hours','Every 24 hours','Every 48 hours','Every 72 hours',
+                'Every 4 hours (q4h)','Every 6 hours (q6h)','Every 8 hours (q8h)',
+                'Every 12 hours (q12h)','Every 24 hours (q24h)',
+                // Less frequent
+                'Alternate days','Twice weekly','Three times weekly',
+                'Once weekly','Twice monthly','Once monthly','Monthly','Fortnightly',
+                // Combination
+                'BD with meals','TDS with meals','QDS with meals',
+                'OD at night','OD in morning','OD with food'
             ];
             const PSA_INDICATIONS = [
-                'Pain','Nausea and vomiting','Hypertension','Infection',
-                'Analgesia','Anticoagulation','VTE prophylaxis','Seizures',
-                'Asthma','Heart failure','Atrial fibrillation','Diabetes',
-                'Anxiety','Depression','GORD','UTI','Pneumonia','Sepsis',
-                'Anaphylaxis','Antiplatelet therapy','Antiemetic','Laxative'
+                // Pain / Analgesia
+                'Pain','Acute pain','Chronic pain','Breakthrough pain','Postoperative pain',
+                'Neuropathic pain','Analgesia','Mild-moderate pain','Moderate-severe pain',
+                'Bone pain','Cancer pain','Back pain','Headache','Migraine',
+                // Cardiovascular
+                'Hypertension','Heart failure','Acute heart failure','Atrial fibrillation',
+                'Angina','Acute MI','ACS','Rate control','Rhythm control','Hypotension',
+                'Anticoagulation','VTE prophylaxis','DVT treatment','PE treatment',
+                'Antiplatelet therapy','Stroke prevention','Secondary prevention',
+                'AF anticoagulation','Cardiac arrest',
+                // Respiratory
+                'Asthma','Asthma exacerbation','COPD','COPD exacerbation',
+                'Bronchospasm','Wheeze','Pneumonia','Respiratory infection',
+                'Pulmonary oedema','Respiratory distress',
+                // Gastrointestinal
+                'Nausea and vomiting','Nausea','Vomiting','Antiemetic',
+                'GORD','Peptic ulcer disease','Constipation','Diarrhoea',
+                'Laxative','Bowel preparation','Gastrointestinal bleeding',
+                // Infection
+                'Infection','UTI','Urinary tract infection','Sepsis','Septic shock',
+                'Meningitis','Cellulitis','Chest infection','LRTI','URTI',
+                'Surgical prophylaxis','Antibiotic prophylaxis','C. difficile',
+                'Osteomyelitis','Endocarditis',
+                // Neurology / Psychiatry
+                'Seizures','Epilepsy','Status epilepticus','Anxiety','Depression',
+                'Psychosis','Insomnia','Bipolar disorder','Neuropathy',
+                'Sedation','Procedural sedation','Agitation','Delirium',
+                // Endocrine / Metabolic
+                'Diabetes','Type 2 diabetes','Hyperglycaemia','Hypoglycaemia',
+                'Hyperthyroidism','Hypothyroidism','Addisonian crisis',
+                'Hyperkalaemia','Hypokalaemia','Hyponatraemia','Hypercalcaemia',
+                // Inflammatory / Allergic
+                'Inflammation','Rheumatoid arthritis','Gout','Acute gout',
+                'Anaphylaxis','Allergic reaction','Steroid cover','Immunosuppression',
+                // Haematology
+                'Anaemia','Iron deficiency anaemia','VTE','DVT','PE','Thrombocytopenia',
+                // Palliative / Supportive
+                'Palliative care','Symptom control','Fluid resuscitation',
+                'Electrolyte replacement','Prophylaxis','Maintenance',
+                'Muscle spasm','Spasticity','Pruritus','Fever'
             ];
 
             // Async: lazy-load drug names from the drug index for DRUG field
@@ -5944,8 +6000,8 @@ class MLAQuizApp {
                 const filter = (q) => {
                     const term = q.toLowerCase().trim();
                     const results = term.length === 0
-                        ? baseSuggestions.slice(0, 12)
-                        : baseSuggestions.filter(s => s.toLowerCase().includes(term)).slice(0, 14);
+                        ? baseSuggestions.slice(0, 15)
+                        : baseSuggestions.filter(s => s.toLowerCase().includes(term)).slice(0, 20);
                     return results;
                 };
 
