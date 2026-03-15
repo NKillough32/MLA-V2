@@ -16242,12 +16242,15 @@
                                     <option value="anaphylaxis">Anaphylaxis IM adrenaline</option>
                                     <option value="fluids_bolus">Septic shock fluid bolus</option>
                                     <option value="status_epilepticus">Prolonged seizure (buccal midazolam)</option>
+                                    <option value="croup">Croup (dexamethasone)</option>
+                                    <option value="febrile_neutropenia">Febrile neutropenia (oncology)</option>
+                                    <option value="meningitis_empirical">Bacterial meningitis (empirical)</option>
                                 </select>
                             </div>
                         </div>
                         <label style="display:flex;align-items:center;gap:8px;margin-top:6px;font-size:12px;color:var(--v2-text-secondary);">
                             <input id="prxPaedsUseAgeFallback" type="checkbox">
-                            Use age-band emergency default if weight is unavailable (anaphylaxis and prolonged seizure only)
+                            Use age-band emergency default if weight is unavailable (anaphylaxis, prolonged seizure, and meningitis only)
                         </label>
                         <button class="prx-sim-btn" style="margin-top:8px;max-width:280px;" onclick="window.prxShowPaedsGuidance()">🧮 Calculate Paediatric Dose</button>
                     </div>
