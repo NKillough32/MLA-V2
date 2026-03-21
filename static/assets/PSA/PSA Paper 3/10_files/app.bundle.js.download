@@ -1,0 +1,1214 @@
+$('document').ready(function () {
+
+    //Decimal only for cal responses
+    $(".decimalInput").on("keypress keyup blur", function (event) {
+        var LanguageId = $('#languageId').val();
+        if (LanguageId == 2) {
+            $(this).val($(this).val().replace(/[^0-9\.,]/g, ''));
+            if ((event.which != 46 || $(this).val().indexOf('.') != -1) && (event.which < 48 || event.which > 57) && event.which != 8 && (event.which != 44 || $(this).val().indexOf(',') != -1)) {
+                event.preventDefault();
+            }
+        } else {
+            if ((event.which != 46 || $(this).val().indexOf('.') != -1) && (event.which < 48 || event.which > 57) && event.which != 8) {
+                event.preventDefault();
+            }
+        }
+    });
+});
+function GenerateItemsHTML(assessmentItemTypes, isSummary, isPreview) {
+   
+    var itemTypeDiv = '<div class="question-type-##index##">\
+                <p class="question-popup-title">##ItemType##</p>\
+                <div class="questions-list" id="div##ItemType##Items" style="background-color: ##BackColor##;color:##Color##">\
+                    ##ItemsHtml##\
+                </div></div>';
+
+    var divclassName = (isPreview == "True") ? "preview-item " : "leftpanel-item ";
+
+    var itemBoxHtml = '<div class="pull-left display-inline question-list not-visited "' + divclassName + '"">\
+                   <a href="javascript:(void)" class="questionNo" data-value="question1" quest-id="#itemId#">';
+
+    if (isPreview === "True") {
+        itemBoxHtml += "<span class='question-no bg-not-answered'>"
+    }
+    else {
+        itemBoxHtml += "<span class='question-no bg-not-answered' title='Not Answered'>"
+    }
+
+    itemBoxHtml += "#itemOrder# </span></a></div>";
+
+    var index = 1;
+    var totalItemsCount = 0;
+    var totalAnsweredItems = 0;
+    var totalMarkedForReviewItems = 0;
+
+    //This is assessment items grouped by their types.
+    //Build item box htmls for dashboard
+    for (var key in assessmentItemTypes) {
+
+        //get items related to type (i.e. from group)
+        var assessmentItems = assessmentItemTypes[key];
+        
+        var itemBoxHtmlWithClassNames = '';
+
+        var itemTypeTotalCount = assessmentItems.length;
+
+        var answeredItemTypeCount = 0, itemTypeMarkedForReviewCount = 0, totalNotAnsweredItems = 0;
+
+        var backgroundColor = textColor = '';
+
+        $.each(assessmentItems, function (idx, assessmentItem) {
+
+            if (idx == 0) {
+                backgroundColor = assessmentItem.BackgroundColor;
+                textColor = assessmentItem.TextColor;
+            }
+            
+            itemBoxHtmlWithClassNames += itemBoxHtml.replace("#itemOrder#", assessmentItem.Order).replace("#itemId#", assessmentItem.ItemId);
+
+            if (assessmentItem.IsAnswered)
+                answeredItemTypeCount++;
+
+            if (assessmentItem.MarkedForReview)
+                itemTypeMarkedForReviewCount++;
+        });
+
+        //This is for Quesion page items dashboard
+       // if (!isSummary) {
+            var itemTypeDivHtml = itemTypeDiv.replace("##index##", index).replace("##ItemType##", key).replace("##ItemType##", key).replace("##ItemsHtml##", itemBoxHtmlWithClassNames);            
+            $(".assessmentItemsDiv").append(itemTypeDivHtml);
+        //} else {
+            //This is for Summary page items dashboard
+            var row = $('<tr></tr>');
+
+            var span = $("<span />").addClass("qsn-type section-size").css({
+                "background-color": backgroundColor,
+                "color": textColor
+            }).html(key);
+
+            var itemTypeTd = $('<td></td>').addClass("hidden-xs td-padding").append(span);
+            var itemBoxesTd = $('<td></td>').addClass("text-center hidden-xs td-padding").append(itemBoxHtmlWithClassNames);
+            var answeredItemsTd = $('<td></td>').addClass("text-center hidden-xs td-padding table-answered").append(answeredItemTypeCount);
+            var notAnsweredItemsTd = $('<td></td>').addClass("text-center hidden-xs td-padding table-notanswered").append(itemTypeTotalCount - answeredItemTypeCount);
+            var markReviewedItemsTd = $('<td></td>').addClass("text-center hidden-xs td-padding table-markreview").append(itemTypeMarkedForReviewCount);
+            row.append(itemTypeTd).append(itemBoxesTd).append(answeredItemsTd).append(notAnsweredItemsTd).append(markReviewedItemsTd);
+
+            $(".tbody-summary").append(row);
+     //   }
+
+        totalItemsCount += itemTypeTotalCount;
+        totalAnsweredItems += answeredItemTypeCount;
+        totalMarkedForReviewItems += itemTypeMarkedForReviewCount;
+        index++;
+    }
+
+    totalNotAnsweredItems = totalItemsCount - totalAnsweredItems;
+
+   // if (isSummary) {
+
+        var finalrow = $('<tr></tr>');
+        var totalItemTd = $('<td></td>').addClass("hidden-xs td-padding text-center total-sections").html("<strong>Total</strong>");
+
+        var span = $("<span />").addClass("total-questions-num").html(totalItemsCount);
+        var strong = $("<strong />").append("<span>NO. of Questions  =  </span>").append(span);
+        var totalNoOfItemsTd = $('<td></td>').addClass("text-left hidden-xs td-padding").append(strong);
+
+        var answeredSpan = $("<span />").addClass("question-no answer-count").attr("title", "Answered").text(totalAnsweredItems);
+        var answeredAnchor = $("<a/>").addClass("questionNo").append(answeredSpan);
+        var answeredDiv = $("<div/>").addClass("display-inline question-list answered").append(answeredAnchor);
+        var totalAnsweredTd = $('<td></td>').addClass("text-center hidden-xs td-padding table-answered").append(answeredDiv);
+
+        var notAnsweredSpan = $("<span />").addClass("question-no notanswer-count").attr("title", "Not Answered").text(totalNotAnsweredItems);
+        var notAnsweredAnchor = $("<a/>").addClass("questionNo").append(notAnsweredSpan);
+        var notAnsweredDiv = $("<div/>").addClass("display-inline question-list not-answered").append(notAnsweredAnchor);
+        var totalNotAnsweredTd = $('<td></td>').addClass("text-center hidden-xs td-padding table-notanswered").append(notAnsweredDiv);
+
+        var markReviewedSpan = $("<span />").addClass("question-no markreview-count").attr("title", "Mark for Review").text(totalMarkedForReviewItems);
+        var markReviewedAnchor = $("<a/>").addClass("questionNo").append(markReviewedSpan);
+        var markReviewedDiv = $("<div/>").addClass("display-inline question-list mark-review").append("<div class='mark-triangle'></div>").append(markReviewedAnchor);
+        var totalmarkReviewedTd = $('<td></td>').addClass("text-center hidden-xs td-padding table-markreview").append(markReviewedDiv);
+
+        finalrow.append(totalItemTd).append(totalNoOfItemsTd).append(totalAnsweredTd).append(totalNotAnsweredTd).append(totalmarkReviewedTd);
+
+        $(".tbody-summary").append(finalrow);
+    //} else {
+        $(".ds-answer-count").html("<b>" + totalAnsweredItems + "/" + totalItemsCount + "</b>")
+        $(".ds-notanswer-count").html("<b>" + totalNotAnsweredItems + "/" + totalItemsCount + "</b>")
+        $(".ds-markreview-count").html("<b>" + totalMarkedForReviewItems + "/" + totalItemsCount + "</b>")
+  //  }
+}
+
+function SetItemCssClasses(assessmentItemTypes, isSummary, isPreview) {
+
+    for (var key in assessmentItemTypes) {
+
+        var assessmentItems = assessmentItemTypes[key];
+
+        $.each(assessmentItems, function (index, assessmentItem) {
+
+            var itemsfound = $("a[quest-id='" + assessmentItem.ItemId + "']");
+            var itemHoverTitle = "Not Answered";
+            var lhsCssClass = "";
+
+            $.each(itemsfound, function (index, item) {
+
+                $(item).removeClass();
+                $(item).parent().removeClass();
+                $(item).children().first().removeClass();
+
+                var divclassName = "pull-left display-inline question-list ";
+                var anchorclassName = "questionNo ";
+                var questionclassName = "question-no ";
+
+                if (isPreview == "True") {
+                    divclassName += "preview-item ";
+                }
+                else {
+                    if (isSummary) {
+                        divclassName += "summary-item ";
+                    } else {
+                        divclassName += "leftpanel-item ";
+                    }
+                }
+
+                if (assessmentItem.IsAnswered) {
+                    divclassName += "answered ";
+                    itemHoverTitle = "Answered";
+                    lhsCssClass = "bg-answered";
+                }
+                else {
+                    divclassName += "not-answered ";
+                    itemHoverTitle = "Not Answered";
+                    lhsCssClass = "bg-not-answered";
+                }
+
+                if (assessmentItem.MarkedForReview) {
+                    divclassName += "mark-review";
+                    itemHoverTitle = "Marked for Review";
+                }
+
+                $(item).addClass(anchorclassName);
+                $(item).parent().addClass(divclassName);
+                $(item).children().first().addClass(questionclassName);
+                $(item).children('span.question-no').attr('title', itemHoverTitle).addClass(lhsCssClass);
+
+                if (assessmentItem.MarkedForReview) {
+                    $(item).parent().prepend("<div class='mark-triangle'></div>");
+                }
+            });
+        });
+    }
+}
+
+function SetActiveItem(currentItemId, isSummary, isPreview) {
+
+    var itemsfound = $("a.questionNo");
+
+    $.each(itemsfound, function (index, item) {
+        if ($(item).attr("quest-id") == currentItemId) {
+            $(item).addClass("currentActive");
+            $(item).parent().addClass("current-question");
+            $(item).children().first().addClass("currentActive-Qsn");
+            $(item).children('span.question-no').attr('title', 'Current Question');
+        }
+    });
+}
+
+
+var durationCount = 0;
+var storagename = '';
+
+var questionStartDate;
+var questionEndDate;
+
+var activityArray = [];
+
+var monitorUserActivity = $("#MonitorUserActivity").val();
+var isPractice = $("#IsPractice").val();
+
+var jsonCapturedDataObject = {
+    EventId: 0,
+    AssessmentId: 0,
+    UserId: 0
+};
+
+function CaptureNextPreviousButtonClick(questionId, buttonType) {
+    if (isPractice == "False" && monitorUserActivity == "True") {
+        var eventId = jsonCapturedDataObject.EventId;
+        var assessmentId = jsonCapturedDataObject.AssessmentId;
+        var userId = jsonCapturedDataObject.UserId;
+
+        var clickDateTime = new Date().toUTCString(); //new Date($.now());
+        var clickDateTimeUTC = $("#UTCDateTime").val();
+
+        var clickMessage = `ClickDateTime :- ${clickDateTime} [${clickDateTimeUTC} UTC ]`;
+
+        var durationMessage = `Duration :- ${durationCount} [StartDate:${questionStartDate}--EndDate:${clickDateTime}]`;
+
+        var userActivity = `Question: ${questionId} | User [${userId}-${eventId}-${assessmentId}] | Activity: ButtonClick[${buttonType}] | ${clickMessage} | ${durationMessage}`;
+
+        activityArray.push(userActivity);
+
+        UpdateLocalStorage(storagename);
+    }
+}
+
+function CaptureAbbreviationsButtonClick(questionId) {
+    if (isPractice == "False" && monitorUserActivity == "True") {
+        var eventId = jsonCapturedDataObject.EventId;
+        var assessmentId = jsonCapturedDataObject.AssessmentId;
+        var userId = jsonCapturedDataObject.UserId;
+
+        var clickDateTime = new Date().toUTCString(); //new Date($.now());
+        var clickDateTimeUTC = $("#UTCDateTime").val();
+
+        var clickMessage = `ClickDateTime :- ${clickDateTime} [ ${clickDateTimeUTC} UTC ]`;
+
+        var userActivity = `Question: ${questionId} | User [${userId}-${eventId}-${assessmentId}] | Activity: ButtonClick[Abbreviation] | ${clickMessage}`;
+
+        activityArray.push(userActivity);
+
+        UpdateLocalStorage(storagename);
+    }
+}
+
+function CaptureBnfButtonClick(questionId, bnfType) {
+    if (isPractice == "False" && monitorUserActivity == "True") {
+        var eventId = jsonCapturedDataObject.EventId;
+        var assessmentId = jsonCapturedDataObject.AssessmentId;
+        var userId = jsonCapturedDataObject.UserId;
+
+        var clickDateTime = new Date().toUTCString(); //new Date($.now());
+        var clickDateTimeUTC = $("#UTCDateTime").val();
+
+        var clickMessage = `ClickDateTime :- ${clickDateTime} [ ${clickDateTimeUTC} UTC ]`;
+
+        var userActivity = `Question: ${questionId} | User [${userId}-${eventId}-${assessmentId}] | Activity: ButtonClick[BNF-${bnfType}] | ${clickMessage}`;
+
+        activityArray.push(userActivity);
+
+        UpdateLocalStorage(storagename);
+    }
+}
+
+function CaptureDashboardButtonClick(questionId) {
+    if (isPractice == "False" && monitorUserActivity == "True") {
+        var eventId = jsonCapturedDataObject.EventId;
+        var assessmentId = jsonCapturedDataObject.AssessmentId;
+        var userId = jsonCapturedDataObject.UserId;
+
+        var clickDateTime = new Date().toUTCString(); //new Date($.now());
+        var clickDateTimeUTC = $("#UTCDateTime").val();
+
+        var clickMessage = `ClickDateTime :- ${clickDateTime} [ ${clickDateTimeUTC} UTC ]`;
+
+        var userActivity = `Question: ${questionId} | User [${userId}-${eventId}-${assessmentId}] | Activity: ButtonClick[DashboardMenu] | ${clickMessage}`;
+
+        activityArray.push(userActivity);
+
+        UpdateLocalStorage(storagename);
+    }
+}
+
+function CaptureQuestionListButtonClick(questionId, clickedItemId) {
+    if (isPractice == "False" && monitorUserActivity == "True") {
+        var eventId = jsonCapturedDataObject.EventId;
+        var assessmentId = jsonCapturedDataObject.AssessmentId;
+        var userId = jsonCapturedDataObject.UserId;
+
+        var clickDateTime = new Date().toUTCString(); //new Date($.now());
+        var clickDateTimeUTC = $("#UTCDateTime").val();
+
+        var clickMessage = `ClickDateTime :- ${clickDateTime} [ ${clickDateTimeUTC} UTC ]`;
+
+        var durationMessage = `Duration :- ${durationCount} [StartDate:${questionStartDate}--EndDate:${clickDateTime}]`;
+
+        var clickedItemMessage = `Clicked Item : ${clickedItemId}`;
+
+        var userActivity = `Question: ${questionId} | User [${userId}-${eventId}-${assessmentId}] | Activity: ButtonClick[DashboardButton] | ${clickMessage} | ${durationMessage} | ${clickedItemMessage}`;
+
+        activityArray.push(userActivity);
+
+        UpdateLocalStorage(storagename);
+    }
+}
+
+function CaptureEXITButtonClick(questionId) {
+    if (isPractice == "False" && monitorUserActivity == "True") {
+        var eventId = jsonCapturedDataObject.EventId;
+        var assessmentId = jsonCapturedDataObject.AssessmentId;
+        var userId = jsonCapturedDataObject.UserId;
+
+        var clickDateTime = new Date().toUTCString(); //new Date($.now());
+        var clickDateTimeUTC = $("#UTCDateTime").val();
+
+        var clickMessage = `ClickDateTime :- ${clickDateTime} [ ${clickDateTimeUTC} UTC ]`;
+
+        var durationMessage = `Duration :- ${durationCount} [StartDate:${questionStartDate}--EndDate:${clickDateTime}]`;
+
+        var userActivity = `Question: ${questionId} | User [${userId}-${eventId}-${assessmentId}] | Activity: ButtonClick[ExitButton] | ${clickMessage} | ${durationMessage}`;
+
+        activityArray.push(userActivity);
+
+        UpdateLocalStorage(storagename);
+    }
+}
+
+function CaptureSummaryItemClick(clickedItemId) {
+    if (isPractice == "False" && monitorUserActivity == "True") {
+        var eventId = jsonCapturedDataObject.EventId;
+        var assessmentId = jsonCapturedDataObject.AssessmentId;
+        var userId = jsonCapturedDataObject.UserId;
+
+        var clickDateTime = new Date().toUTCString(); //new Date($.now());
+        var clickDateTimeUTC = $("#UTCDateTime").val();
+
+        var clickMessage = `ClickDateTime :- ${clickDateTime} [ ${clickDateTimeUTC} UTC ]`;
+
+        var clickedItemMessage = `Clicked Item : ${clickedItemId}`;
+
+        var userActivity = `SummaryItem | User [${userId}-${eventId}-${assessmentId}] | Activity: ButtonClick[SummaryItem] | ${clickMessage} | ${clickedItemMessage}`;
+
+        activityArray.push(userActivity);
+
+        UpdateLocalStorage(storagename);
+    }
+}
+
+function CaptureCalculatorButtonClick(questionId) {
+    if (isPractice == "False" && monitorUserActivity == "True") {
+        var eventId = jsonCapturedDataObject.EventId;
+        var assessmentId = jsonCapturedDataObject.AssessmentId;
+        var userId = jsonCapturedDataObject.UserId;
+
+        var clickDateTime = new Date().toUTCString(); //new Date($.now());
+        var clickDateTimeUTC = $("#UTCDateTime").val();
+
+        var clickMessage = `ClickDateTime :- ${clickDateTime} [ ${clickDateTimeUTC} UTC ]`;
+
+        var userActivity = `Question: ${questionId} | User [${userId}-${eventId}-${assessmentId}] | Activity: ButtonClick[Calculator] | ${clickMessage}`;
+
+        activityArray.push(userActivity);
+
+        UpdateLocalStorage(storagename);
+    }
+}
+
+function CaptureMarkedForReviewButtonClick(questionId, marked) {
+    if (isPractice == "False" && monitorUserActivity == "True") {
+        var eventId = jsonCapturedDataObject.EventId;
+        var assessmentId = jsonCapturedDataObject.AssessmentId;
+        var userId = jsonCapturedDataObject.UserId;
+
+        var clickDateTime = new Date().toUTCString(); //new Date($.now());
+        var clickDateTimeUTC = $("#UTCDateTime").val();
+
+        var clickMessage = `ClickDateTime :- ${clickDateTime} [ ${clickDateTimeUTC} UTC ]`;
+
+        var userActivity = `Question: ${questionId} | User [${userId}-${eventId}-${assessmentId}] | Activity: ButtonClick[MarkForReview--${marked}] | ${clickMessage}`;
+
+        activityArray.push(userActivity);
+
+        UpdateLocalStorage(storagename);
+    }
+}
+
+function CaptureFontChangeButtonClick(questionId, fontincreased) {
+    if (isPractice == "False" && monitorUserActivity == "True") {
+        var eventId = jsonCapturedDataObject.EventId;
+        var assessmentId = jsonCapturedDataObject.AssessmentId;
+        var userId = jsonCapturedDataObject.UserId;
+
+        var clickDateTime = new Date().toUTCString(); //new Date($.now());
+        var clickDateTimeUTC = $("#UTCDateTime").val();
+
+        var clickMessage = `ClickDateTime :- ${clickDateTime} [ ${clickDateTimeUTC} UTC ]`;
+
+        var userActivity = `Question: ${questionId} | User [${userId}-${eventId}-${assessmentId}] | Activity: ButtonClick[Font--${fontincreased}] | ${clickMessage}`;
+
+        activityArray.push(userActivity);
+
+        UpdateLocalStorage(storagename);
+    }
+}
+
+function CaptureDropdownSearch(searchType, searchText) {
+    if (isPractice == "False" && monitorUserActivity == "True") {
+        var questionId = $("#ItemId").val();
+        var eventId = jsonCapturedDataObject.EventId;
+        var assessmentId = jsonCapturedDataObject.AssessmentId;
+        var userId = jsonCapturedDataObject.UserId;
+
+        var clickDateTime = new Date().toUTCString(); //new Date($.now());
+        var clickDateTimeUTC = $("#UTCDateTime").val();
+
+        var clickMessage = `ClickDateTime :- ${clickDateTime} [ ${clickDateTimeUTC} UTC ]`;
+
+        var searchTextMessage = `SearchText :- ${searchText}`;
+
+        var userActivity = `Question: ${questionId} | User [${userId}-${eventId}-${assessmentId}] | Activity: DropDownSearch[${searchType}] | ${clickMessage} | ${searchTextMessage}`;
+
+        activityArray.push(userActivity);
+
+        UpdateLocalStorage(storagename);
+    }
+}
+
+function CaptureDropdownSelectedText(searchType, selectedText) {
+    if (isPractice == "False" && monitorUserActivity == "True") {
+        var questionId = $("#ItemId").val();
+        var eventId = jsonCapturedDataObject.EventId;
+        var assessmentId = jsonCapturedDataObject.AssessmentId;
+        var userId = jsonCapturedDataObject.UserId;
+
+        var clickDateTime = new Date().toUTCString(); //new Date($.now());
+        var clickDateTimeUTC = $("#UTCDateTime").val();
+
+        var clickMessage = `ClickDateTime :- ${clickDateTime} [ ${clickDateTimeUTC} UTC ]`;
+
+        var selectedTextMessage = `SelectedText :- ${selectedText}`;
+
+        var userActivity = `Question: ${questionId} | User [${userId}-${eventId}-${assessmentId}] | Activity: DropDownSearchSelect[${searchType}]  | ${clickMessage} | ${selectedTextMessage}`;
+
+        activityArray.push(userActivity);
+
+        UpdateLocalStorage(storagename);
+    }
+}
+
+//function CaptureStartOfAssessment() {
+
+//    var eventId = jsonCapturedDataObject.EventId;
+//    var assessmentId = jsonCapturedDataObject.AssessmentId;
+//    var userId = jsonCapturedDataObject.UserId;
+
+//    var clickDateTime = new Date().toUTCString(); //new Date($.now());
+
+//    var clickMessage = `User [${userId}-${eventId}-${assessmentId}] :- Started event on ${clickDateTime}`;
+
+//    var userActivity = `Event | Activity: EventStart | ${clickMessage}`;
+
+//    activityArray.push(userActivity);
+
+//    UpdateLocalStorage(storagename);
+//}
+
+function CaptureFinishTest() {
+    if (isPractice == "False" && monitorUserActivity == "True") {
+        var eventId = jsonCapturedDataObject.EventId;
+        var assessmentId = jsonCapturedDataObject.AssessmentId;
+        var userId = jsonCapturedDataObject.UserId;
+
+        var clickDateTime = new Date().toUTCString(); //new Date($.now());
+        var clickDateTimeUTC = $("#UTCDateTime").val();
+
+        var clickMessage = `ClickDateTime :- ${clickDateTime} [ ${clickDateTimeUTC} UTC ]`;
+
+        var userActivity = `FinishTest | User [${userId}-${eventId}-${assessmentId}] | Activity: ButtonClick[FinishTest] | ${clickMessage}`;
+
+        activityArray.push(userActivity);
+
+        UpdateLocalStorage(storagename);
+    }
+}
+
+function CaptureAnswers(answer) {
+    if (isPractice == "False" && monitorUserActivity == "True") {
+        var questionId = $("#ItemId").val();
+        var eventId = jsonCapturedDataObject.EventId;
+        var assessmentId = jsonCapturedDataObject.AssessmentId;
+        var userId = jsonCapturedDataObject.UserId;
+
+        var clickDateTime = new Date().toUTCString(); //new Date($.now());
+        var clickDateTimeUTC = $("#UTCDateTime").val();
+
+        var clickMessage = `ClickDateTime :- ${clickDateTime} [ ${clickDateTimeUTC} UTC ]`;
+
+        answer = answer != null && answer != '' ? answer : "Not Answered";
+
+        var savedAnswerMessage = `Selected Answer:- ${answer}`;
+
+        var userActivity = `Question: ${questionId} | User [${userId}-${eventId}-${assessmentId}] | Activity: CapturedAnswer | ${clickMessage} | ${savedAnswerMessage}`;
+
+        activityArray.push(userActivity);
+
+        UpdateLocalStorage(storagename);
+    }
+}
+
+function UpdateJsonCaptureData(eventId, assessmentId, userId) {
+    jsonCapturedDataObject.EventId = eventId;
+    jsonCapturedDataObject.AssessmentId = assessmentId;
+    jsonCapturedDataObject.UserId = userId;
+}
+
+function GetJsonCaptureDataObject(eventId, assessmentId, candidateId) {
+    if (isPractice == "False" && monitorUserActivity == "True") {
+        setTimeout(() => {
+            durationCount++;
+        }, 1000);
+
+        UpdateJsonCaptureData(eventId, assessmentId, candidateId);
+
+        storagename = "UA_" + eventId + "_" + assessmentId + "_" + candidateId;
+
+        questionStartDate = new Date().toUTCString();//new Date($.now());
+
+        if (localStorage.getItem(storagename) !== null) {
+            var captureObjectString = localStorage.getItem(storagename);
+            activityArray = JSON.parse(captureObjectString);
+        }
+        else {
+            UpdateLocalStorage(storagename);
+        }
+    }
+}
+
+function UpdateLocalStorage(storagename) {
+    localStorage.setItem(storagename, JSON.stringify(activityArray));
+}
+
+function GetUserActivityJSON() {
+    if (isPractice == "False" && monitorUserActivity == "True") {
+        return JSON.stringify(activityArray);
+    }
+}
+
+function ClearActivityJSON() {
+    if (isPractice == "False" && monitorUserActivity == "True") {
+        activityArray = [];
+        localStorage.setItem(storagename, JSON.stringify(activityArray));
+    }
+}
+var idleTime = 0;
+$(document).ready(function () {
+    var eventId = $('#EventId').val();
+    var assessmentId = $('#AssessmentId').val();
+    var candidateId = $('#CandidateId').val();
+    var monitorUserActivity = $("#MonitorUserActivity").val();
+    var isPractice = $("#IsPractice").val();
+
+    GetJsonCaptureDataObject(eventId, assessmentId, candidateId);
+
+    var previousItemId = $("#PreviousItemId").val();
+    var nextItemId = $("#NextItemId").val();
+
+    if (previousItemId == 0) {
+        $('#btnPrevSubmit').hide();//.prop('disabled', true);
+    }
+    else {
+        $('#btnPrevSubmit').show();
+    }
+
+    if (nextItemId == 0) {
+        $('#btnNextSubmit').hide();//.prop('disabled', true);
+        $('#btnEnd').show();
+        $('#btnEndFeedback').show();
+    }
+    else {
+        $('#btnNextSubmit').show();
+        $('#btnEnd').hide();
+        $('#btnEndFeedback').show();
+    }
+
+    $(document).ajaxError(function (e, jqxhr, settings, exception) {
+        var message = "";
+        if (jqxhr.readyState == 0 && jqxhr.status == 0) {
+            if (idleTime > 14) { // 20 minutes
+                message = "You seem to be idle for too long,reloading page...";
+                alert(message)
+                window.location.reload();
+            } else {
+                return;
+            }
+        } else if (jqxhr.status != 404) {
+            message = "There is some error in processing the request;Please refresh the page and try again or contact system admin";
+            alert(message);
+        }
+    });
+
+    if (localStorage.getItem("monochromeScheme") != null && localStorage.getItem("monochromeScheme") == 'Active') {
+        $('#monchromeButton').prop('checked', true)
+        setMonochromeScheme();
+    }
+
+    $('.testDivStart').on('click', '#btnEnd', function () {
+
+        var itemId = $("#ItemId").val();
+
+        CaptureEXITButtonClick(itemId);
+
+        FormSubmit(0, true);
+        // $('.end-test').trigger('click');
+    });
+
+    $('.testDivStart').on('click', '#btnEndFeedback', function () {
+        var isItemPreview = $('#IsItemPreview').val();
+        if (isItemPreview == 'True') {
+            window.close();
+        }
+        else {
+            $('.exit-feedback').trigger('click');
+        }
+    });
+
+    $('.timer').startTimer({
+        onComplete: function () {
+            console.log('Complete');
+        }
+    });
+
+    $(".calculator-panel").draggable({
+        containment: "body"
+    });
+
+    $(".timer-panel").draggable({
+        containment: "body"
+    });
+
+    $(".feedback-panel").draggable({
+        handle: ".feedback-panel-heading",
+        containment: "body"
+    });
+
+    $(".feedback-close-icon").on("click", function () {
+        toggleFeedback();
+    });
+
+    $('.testDivStart').on('click', '.btnFeedback', function () {
+        toggleFeedback();
+    });
+
+    $('.testDivStart').on('click', '#btnPrevSubmit', function () {
+
+        var prevItemId = $("#PreviousItemId").val();
+
+        if (!$(this).attr("disabled")) {
+            $('#btnNextSubmit').attr('disabled', 'disabled');
+            $('#btnPrevSubmit').attr('disabled', 'disabled');
+        }
+
+        var questionId = $("#ItemId").val();
+        CaptureNextPreviousButtonClick(questionId, 'previous');
+
+        FormSubmit(prevItemId, false);
+    });
+
+    $('.testDivStart').on('click', '#btnItemPreviewNext', function () {
+        var ItemId = $("#ItemId").val();
+        var nextSubQuestionId = 0;
+
+        setTimeout(function () {
+            FormSubmit(ItemId, nextSubQuestionId, false);
+        }, 1000);
+        //FormSubmit(ItemId, false);
+    });
+
+    $('.testDivStart').on('click', '#btnNextSubmit', function () {
+
+        var nextItemId = $("#NextItemId").val();
+
+        if (!$(this).attr("disabled")) {
+            $('#btnPrevSubmit').attr('disabled', 'disabled');
+            $('#btnNextSubmit').attr('disabled', 'disabled');
+        }
+
+        var questionId = $("#ItemId").val();
+        CaptureNextPreviousButtonClick(questionId, 'next');
+
+        FormSubmit(nextItemId, false);
+    });
+
+    $('.testDivStart').on('click', '.end-test', function () {
+
+        $("#IsExit").val(true);
+
+        var itemId = $("#ItemId").val();
+
+        CaptureEXITButtonClick(itemId);
+
+        if ($("#EventType").val() == 2 && $("div.question-popup").children().find(".question-list.leftpanel-item.not-answered,.question-list.leftpanel-item.not-visited").length > 0) {
+
+            if ($("div.question-popup").children().find(".question-list.leftpanel-item.not-answered,.question-list.leftpanel-item.not-visited").length == 1) {
+                var valid = true;
+                var not_answered_itemid = $("div.question-popup").children().find(".question-list.leftpanel-item.not-answered a.questionNo").attr('quest-id');
+
+                if ($("#ItemId").val() == not_answered_itemid) {
+                    if ($(".optionCheckbox, .optionCheckboxB, .optionCheckboxA").length > 0) {
+                        if ($('.answerDiv').find('input:checkbox').filter(':checked').length > 0) {
+                            valid = true;
+                        } else {
+                            valid = false;
+                        }
+                    } else {
+                        $('.answerDiv').find('input,select').each(function (index) {
+                            if ($(this).val() == "") {
+                                valid = false;
+                            } else {
+                                valid = true;
+                            }
+                        });
+                    }
+
+                    if (valid == false) {
+                        $("#ModalExitAssessmentPopup").show();
+                    } else {
+                        FormSubmit(0, true);
+                    }
+                } else {
+                    $("#ModalExitAssessmentPopup").show();
+                }
+            } else {
+                $("#ModalExitAssessmentPopup").show();
+            }
+
+        }
+        else {
+            FormSubmit(0, true);
+        }
+    });
+
+    $("#btnExitAssessment").click(function () {
+        $("#ModalExitAssessmentPopup").modal('hide');
+        FormSubmit(0, true);
+    });
+
+    $(".btnNoAssessment").click(function () {
+        $("#ModalExitAssessmentPopup").modal('hide');
+    });
+
+    $('#btnFinalNoAssessment').click(function () {
+        $("#ModalExitAssessmentPopup").hide();
+        $("#submitExam").modal('hide');
+    });
+
+    $('.cancel-summary').click(function () {
+        $("#ModalExitAssessmentPopup").modal('hide');
+    });
+
+    $("#btnFinalAssessment").click(function () {
+        $("#ModalFinalAssessmentPopup").modal('hide');
+        $("#ModalExitAssessmentPopup").modal('hide');
+        //If is practice assessment or is formative event
+        if ('@Model.IsPractice' === 'True' || '@Model.EvaluationTypeId' === '2') {
+            $('input.submit-summary').trigger('click');
+        }
+        else if ('@Model.IsPreview' === 'True') {
+            window.close();
+        }
+        else {
+            $('#submitExam').show();
+        }
+    });
+
+    $('.testDivStart').on('click', '.complete-later', function () {
+        $("#IsCompleteLater").val(true);
+        FormSubmit(0, true);
+    });
+
+    $('.testDivStart').on('click', '.end-test-answers', function () {
+
+        var url = $("#redirectUrl").val() + '#candidate'; //Generate URL string using razor
+
+        window.location.href = url;
+    });
+
+    $('.testDivStart').on('click', '.submit-preview-summary', function () {
+
+        window.close();
+
+    });
+
+    $('.testDivStart').on('click', '.submit-summary', function () {
+
+        CaptureFinishTest();
+        $("#UserActivityJSON").val(GetUserActivityJSON());
+        ClearActivityJSON();
+
+        var form = $('#formAssessmentTest');
+        form.submit();
+    });
+
+    $('.testDivStart').on('click', '.exit-feedback', function () {
+
+        var url = $("#redirectUrl").val() + '#candidate'; //Generate URL string using razor
+
+        window.location.href = url;
+    });
+
+    $('.testDivStart').on('click', 'div.summary-item', function () {
+        var eventId = $('#EventId').val();
+        var assessmentId = $('#AssessmentId').val();
+        var isPractice = $('#IsPractice').val();
+        var itemId = $(this).children("a.questionNo").attr("quest-id");
+
+        CaptureSummaryItemClick(itemId);
+
+        var url = $("#itemLoadUrl").val(); //Generate URL string using razor
+        url = url.replace('_eventId', eventId);
+        url = url.replace('_assessmentId', assessmentId);
+        url = url.replace('_itemId', itemId);
+        url = url.replace('_isPractice', isPractice);
+
+        window.location.href = url;
+    });
+
+    $('.testDivStart').on('click', 'div.preview-item', function () {
+        var candidateId = $('#CandidateId').val();
+        var assessmentId = $('#AssessmentId').val();
+        var isPractice = $('#IsPractice').val();
+        var itemId = $(this).children("a.questionNo").attr("quest-id");
+
+        var url = $("#itemPreviewUrl").val(); //Generate URL string using razor
+        url = url.replace('_candidateId', candidateId);
+        url = url.replace('_assessmentId', assessmentId);
+        url = url.replace('_itemId', itemId);
+        url = url.replace('_isPractice', isPractice);
+
+        window.location.href = url;
+    });
+
+    $('.testDivStart').on('click', 'div.leftpanel-item', function () {
+
+        if (!$(this).attr("disabled")) {
+
+
+
+            $('#btnPrevSubmit').attr('disabled', 'disabled');
+            $('#btnNextSubmit').attr('disabled', 'disabled');
+            $('.leftpanel-item').attr('disabled', 'disabled');
+            $('.leftpanel-item').children().attr('disabled', 'disabled');
+            $('.leftpanel-item').children().children().attr('disabled', 'disabled');
+
+            var itemId = $(this).children("a.questionNo").attr("quest-id");
+
+            var questionId = $("#ItemId").val();
+            CaptureQuestionListButtonClick(questionId, itemId);
+
+            FormSubmit(itemId, false);
+        }
+    });
+
+    $('.testDivStart').on("click", ".abbreviations", function () {
+
+        var questionId = $("#ItemId").val();
+        CaptureAbbreviationsButtonClick(questionId);
+    });
+
+    $('.testDivStart').on("click", ".hrefLink", function () {
+
+        var questionId = $("#ItemId").val();
+        var bnfType = $(this).text();
+        CaptureBnfButtonClick(questionId, bnfType);
+    });
+
+    $('.testDivStart').on("click", ".questionLists", function () {
+
+        var questionId = $("#ItemId").val();
+        CaptureDashboardButtonClick(questionId);
+    });
+
+    $('.testDivStart').on("click", ".calculator-icon", function () {
+
+        var questionId = $("#ItemId").val();
+        CaptureCalculatorButtonClick(questionId);
+    });
+
+    $('.testDivStart').on("click", ".mark-for-review", function () {
+
+        var checked = $(this).is(":checked");
+        var questionId = $("#ItemId").val();
+        CaptureMarkedForReviewButtonClick(questionId, checked);
+    });
+
+    $('.testDivStart').on("click", ".font-incr", function () {
+
+        var questionId = $("#ItemId").val();
+        CaptureFontChangeButtonClick(questionId, true);
+    });
+
+    $('.testDivStart').on("click", ".font-decr", function () {
+
+        var questionId = $("#ItemId").val();
+        CaptureFontChangeButtonClick(questionId, false);
+    });
+
+    //font increase and decrease
+    $('.font-increase').click(function () {
+        curFontSize = parseInt($('.question-div').css('font-size')) + 1;
+        if (curFontSize <= 20) {
+            $("#FontSize").val(curFontSize);
+            $(".question-div").animate({
+                "font-size": curFontSize
+            });
+        }
+    });
+
+    $('.font-decrease').click(function () {
+        curFontSize = parseInt($('.question-div').css('font-size')) - 1;
+        if (curFontSize >= 13) {
+            // $('.question-div').css('font-size', curFontSize);
+            $("#FontSize").val(curFontSize);
+            $(".question-div").animate({ "font-size": curFontSize });
+        }
+    });
+
+    $('.testDivStart').on("click", ".calculator-icon", function () {
+        toggleCalculator();
+    });
+
+    $(".close-icon").on("click", function () {
+        toggleCalculator();
+    });
+
+    $(document).on("click", ".questionLists", function () {
+        PopulateAssessmentItems();
+    });
+
+    $(document).keydown(function (e) {
+        if (e.altKey) {
+            alert("alt key disabled");
+            return false;
+        }
+        if (e.keyCode == 13 || e.charCode == 13) {
+            e.preventDefault();
+            return false;
+        }
+    });
+
+    $("body").on("contextmenu", function (e) {
+        alert("right click is not allowed");
+        return false;
+    });
+
+    var idleInterval = setInterval(timerIncrement, 60000);
+
+    AddQuestionTypeClass();
+
+    //MaintainLeftPanelState();
+
+    DisableBnfOnPreviw();
+
+    $('#monchromeButton').change(function () {
+        if ($('#monchromeButton').is(':checked')) {
+            localStorage.setItem("monochromeScheme", "Active");
+            setMonochromeScheme();
+        }
+        else {
+            localStorage.removeItem("monochromeScheme");
+            removeMonochromeScheme();
+        }
+    });
+
+});
+
+function toggleCalculator() {
+    if ($(".calculator-panel").is(":visible")) {
+        $(".calculator-panel").addClass("display-none");
+    }
+    else {
+        $(".calculator-panel").removeClass("display-none");
+    }
+
+}
+
+function setMonochromeScheme() {
+    $('.casePresentaion, .questionPanel, .answerDiv, .prescribReq, .feedback-result,.feedback-optimal-answer-wrong, .feedback-optimal-answer, .scoreDiv, .faeq-info-bar').addClass('monochromeWhiteBkg');
+    $('.feedback-result span,.feedback-result p').addClass('monochromeWhiteBkg');
+    $('.feedback-optimal-answer-wrong span,.feedback-optimal-answer-wrong p').addClass('monochromeWhiteBkg');
+    $('.feedback-optimal-answer span,.feedback-optimal-answer p').addClass('monochromeWhiteBkg');
+    $('.feedback-panel-heading').addClass('monochromeBlackBkg');
+    $('.scoreDiv span, #collapseDrugGroup .panel-body, #collapseMedicine .panel-body').css("color", "#333  !important");
+    $('.scoreDiv i.fa-circle ').addClass('monochromeBlackColor');
+    $('.scoreDiv i.fa-info').addClass('monochromeWhiteColor');
+
+}
+function removeMonochromeScheme() {
+    $('.casePresentaion, .questionPanel, .answerDiv, .prescribReq, .feedback-result,.feedback-optimal-answer-wrong, .feedback-optimal-answer, .scoreDiv, .faeq-info-bar').removeClass('monochromeWhiteBkg');
+    $('.feedback-result span,.feedback-result p').removeClass('monochromeWhiteBkg');
+    $('.feedback-optimal-answer-wrong span,.feedback-optimal-answer-wrong p').removeClass('monochromeWhiteBkg');
+    $('.feedback-optimal-answer span,.feedback-optimal-answer p').removeClass('monochromeWhiteBkg');
+    $('.feedback-panel-heading').removeClass('monochromeBlackBkg');
+    $('.scoreDiv span, #collapseDrugGroup .panel-body, #collapseMedicine .panel-body').css("color", "#fff  !important");
+    $('.scoreDiv i.fa-circle ').removeClass('monochromeBlackColor');
+    $('.scoreDiv i.fa-info').removeClass('monochromeWhiteColor');
+}
+
+function timerIncrement() {
+    idleTime = idleTime + 1;
+}
+
+function DisableBnfOnPreviw() {
+    if (typeof $("#IsPreview").val() != "undefined") {
+        var isPreview = $("#IsPreview").val().toLowerCase();
+        if (isPreview == "true") {
+            var bnfIcon = $("[title=Information]");
+            bnfIcon.css({ "pointer-events": "none", "cursor": "default" });
+            bnfIcon.attr("title", "This link will be enabled once assessment is associated with any event");
+        }
+    }
+}
+
+function toggleFeedback() {
+    if ($(".feedback-panel").is(":visible")) {
+        $(".feedback-panel").addClass("display-none");
+    }
+    else {
+        $(".feedback-panel").removeClass("display-none");
+    }
+}
+
+function AddQuestionTypeClass() {
+    var backgroundColor = $("#hdnBackgroundColor").val();
+    var textColor = $("#hdnTextColor").val();
+
+    $(".spnItemType").css({
+        "background-color": backgroundColor,
+        "color": textColor
+    });
+}
+
+function setMoqResponse(itemType) {
+    var monitorUserActivity = $("#MonitorUserActivity").val();
+    var isPractice = $("#IsPractice").val();
+
+    if (isPractice == "False" && monitorUserActivity == "True") {
+        if (itemType == 'cal') {
+            var optionAnswer = $(".answerDiv").find(".decimalInput").val();
+            var optionAnswerUnit = $(".answerDiv").find(".fw-bold").text();
+            var calAnswer = `${optionAnswer} ${optionAnswerUnit}`;
+            CaptureAnswers(calAnswer);
+
+        } else {
+
+            var checkCheckBox = null;
+            var moqAnswer = '';
+
+            $(".inputTextRow").each(function () {
+                var checkBox = $(this).children().find("input.optionCheckbox");
+
+                var isChecked = $(checkBox).is(":checked");
+
+                if (isChecked) {
+                    checkCheckBox = checkBox;
+                    return;
+                }
+            });
+
+            if (checkCheckBox != null && typeof (checkCheckBox) != 'undefined') {
+                var optionId = $(checkCheckBox).attr("data-checkbox-optionid");
+                moqAnswer = `Selected ${optionId} option`;
+            }
+            else {
+                moqAnswer = 'Not Answered'
+            }
+
+            CaptureAnswers(moqAnswer);
+        }
+
+        $("#UserActivityJSON").val(GetUserActivityJSON());
+
+        ClearActivityJSON();
+    }
+
+    var form = $('#formAssessmentTest');
+    form.submit();
+}
+
+function FormSubmit(itemId, isEnd) {
+    $("#ChangeItemId").val(itemId);
+    $("#IsEnd").val(isEnd);
+
+    if ($("#ItemType").val().toLowerCase() == "pws-1" || $("#ItemType").val().toLowerCase() == "pws-2"
+        || $("#ItemType").val().toLowerCase() == "pws-3" || $("#ItemType").val().toLowerCase() == "pws-4") {
+        setResponseData();
+    }
+    else if ($("#ItemType").val().toLowerCase() == "rev") {
+        setRevResponseData();
+    }
+    else {
+        if ($("#IsSummary").val() == "True") {
+            var url = $("#redirectUrl").val(); //Generate URL string using razor
+            window.location.href = url;
+        } else {
+            setMoqResponse($("#ItemType").val().toLowerCase());
+        }
+    }
+}
+
+function PopulateAssessmentItems(isSummary) {
+
+    var dashboardLoaded = $(".assessmentItemsDiv").find(".questions-list").length != 0;
+
+    if (!dashboardLoaded) {
+
+        var isSummary = $("#IsSummary").val();
+        var isPreview = $("#IsPreview").val();
+        var assessmentId = $("#AssessmentId").val();
+        var eventId = $("#EventId").val();
+
+        $.ajax({
+            method: "GET",
+            contentType: "application/json",
+            url: $("#assessmentItemsLoadUrl").val(),
+            data: { assessmentId: assessmentId, eventId: eventId },
+            success: function (itemTypeGroups) {
+                GenerateItemsHTML(itemTypeGroups, isSummary, isPreview);
+                SetItemCssClasses(itemTypeGroups, isSummary, isPreview);
+                if (!isSummary) {
+                    var currentItemId = $("#ItemId").val();
+                    SetActiveItem(currentItemId, isSummary, isPreview);
+                }
+                if (!isSummary) {
+                    $("#questionLists").modal('show');
+                }
+                //PopulateAssessmentItemStatus(itemTypeGroups, isSummary, isPreview);
+            }
+        });
+    } else {
+        $("#questionLists").modal('show');
+    }
+}
+
+function setMarkFoeReviewValues(control) {
+    var isChecked = $(control).is(":checked");
+    $('[name="IsMarkForReview"]').val(isChecked);
+
+}
+
+function updateClock(data) {
+    var seconds = parseInt(data);
+    var currentTime = new Date();
+    var currentHours = currentTime.getHours();
+    var currentMinutes = currentTime.getMinutes();
+    var currentSeconds = currentTime.getSeconds();
+
+    // Pad the minutes and seconds with leading zeros, if required
+    currentMinutes = (currentMinutes < 10 ? "0" : "") + currentMinutes;
+    currentSeconds = (currentSeconds < 10 ? "0" : "") + currentSeconds;
+    currentHours = (currentHours == 0) ? 12 : currentHours;
+
+    // Compose the string for display
+    var currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds + " ";// + timeOfDay;
+
+    var elapsedTime = data.toString().toHHMMSS();
+
+    $(".current-time").html(currentTimeString);
+    $("#MyTimer").html(elapsedTime);
+
+    seconds++;
+
+    setTimeout(function () { updateClock(seconds) }, 1000);
+}
+
+String.prototype.toHHMMSS = function () {
+    var sec_num = parseInt(this, 10); // don't forget the second param
+    var hours = Math.floor(sec_num / 3600);
+    var minutes = Math.floor((sec_num - (hours * 3600)) / 60);
+    var seconds = sec_num - (hours * 3600) - (minutes * 60);
+
+    if (hours < 10) { hours = "0" + hours; }
+    if (minutes < 10) { minutes = "0" + minutes; }
+    if (seconds < 10) { seconds = "0" + seconds; }
+    return hours + ':' + minutes + ':' + seconds;
+}

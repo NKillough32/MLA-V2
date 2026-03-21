@@ -1,0 +1,15 @@
+{
+  "id": "madders",
+  "name": "MADDERS Score",
+  "category": "ASSESSMENT",
+  "description": "Mental health assessment tool",
+  "keywords": [
+    "madders",
+    "mental",
+    "health",
+    "assessment",
+    "score"
+  ],
+  "template": "\n            <div class=\"calculator-form\">\n                <h4>MADDERS Score</h4>\n                <p><small>Delirium assessment tool</small></p>\n                \n                <div class=\"calc-checkbox-group\">\n                    <label><input type=\"checkbox\" id=\"madders-memory\"> Memory impairment</label>\n                    <label><input type=\"checkbox\" id=\"madders-attention\"> Attention deficit</label>\n                    <label><input type=\"checkbox\" id=\"madders-disorientation\"> Disorientation</label>\n                    <label><input type=\"checkbox\" id=\"madders-delusions\"> Delusions/hallucinations</label>\n                    <label><input type=\"checkbox\" id=\"madders-emotional\"> Emotional lability</label>\n                    <label><input type=\"checkbox\" id=\"madders-reversal\"> Sleep-wake reversal</label>\n                    <label><input type=\"checkbox\" id=\"madders-symptoms\"> Symptom fluctuation</label>\n                </div>\n                \n                <button onclick=\"window.quizApp.calculateMADDERS()\">Calculate Score</button>\n                <div id=\"madders-result\" class=\"calc-result\"></div>\n            </div>\n        ",
+  "calculatorFunction": "let score = 0;\n        \n        if (document.getElementById('madders-memory').checked) score += 1;\n        if (document.getElementById('madders-attention').checked) score += 1;\n        if (document.getElementById('madders-disorientation').checked) score += 1;\n        if (document.getElementById('madders-delusions').checked) score += 1;\n        if (document.getElementById('madders-emotional').checked) score += 1;\n        if (document.getElementById('madders-reversal').checked) score += 1;\n        if (document.getElementById('madders-symptoms').checked) score += 1;\n\n        let interpretation = '';\n        let color = '';\n\n        if (score === 0) {\n            interpretation = 'No delirium';\n            color = '#4CAF50';\n        } else if (score <= 2) {\n            interpretation = 'Possible subsyndromal delirium';\n            color = '#FF9800';\n        } else if (score <= 4) {\n            interpretation = 'Probable delirium';\n            color = '#F44336';\n        } else {\n            interpretation = 'Definite delirium';\n            color = '#D32F2F';\n        }\n\n        document.getElementById('madders-result').innerHTML = `\n            <div style=\"color: ${color}\">\n                <strong>MADDERS Score: ${score}/7</strong><br>\n                <strong>${interpretation}</strong>\n            </div>\n        `;"
+}

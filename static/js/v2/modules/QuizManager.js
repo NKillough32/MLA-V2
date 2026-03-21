@@ -498,6 +498,9 @@ export class QuizManager {
                     .some(a => a.trim().toLowerCase() === userVal);
             });
             correctAnswerIdx = '_prescription';
+        } else if (qType === 'prescribing') {
+            isCorrect = true; // Self-assessed: user compares with revealed optimal answers
+            correctAnswerIdx = '_prescribing';
         } else if (qType === 'review') {
             // selectedAnswer = { a: indexOrNull, b: indexOrNull }
             const ua = selectedAnswer || {};
@@ -1154,7 +1157,7 @@ export class QuizManager {
         let isPsaMode = false;  // true when non-MCQ PSA question types are present
 
         // PSA mark weights per question type (Prescribing Safety Assessment scheme)
-        const PSA_MARKS = { prescription: 10, calculation: 2, review: 4, mcq: 2 };
+        const PSA_MARKS = { prescription: 10, prescribing: 10, calculation: 2, review: 4, mcq: 2 };
 
         this.questions.forEach((question, index) => {
             if (this.submittedAnswers[index]) {
@@ -1187,6 +1190,12 @@ export class QuizManager {
                         correct++;
                         marksEarned += qMarks;
                     }
+                } else if (qType === 'prescribing') {
+                    // Self-assessed: marks available = drug_marks + dose_marks; counted correct when submitted
+                    const qMarks = (question.drug_marks ?? 5) + (question.dose_marks ?? 5);
+                    marksAvailable += qMarks;
+                    correct++;
+                    marksEarned += qMarks;
                 } else if (qType === 'review') {
                     const marks_a = question.marks_a ?? 2;
                     const marks_b = question.marks_b ?? 2;
@@ -2209,6 +2218,7 @@ export class QuizManager {
             if      (qType === 'mcq')          q = this._parsePsaMcq(qBody, psaSection, specialty);
             else if (qType === 'calculation')  q = this._parsePsaCalculation(qBody, psaSection, specialty);
             else if (qType === 'prescription') q = this._parsePsaPrescription(qBody, psaSection, specialty);
+            else if (qType === 'prescribing')  q = this._parsePsaPrescribing(qBody, psaSection, specialty);
             else if (qType === 'review')       q = this._parsePsaReview(qBody, psaSection, specialty);
 
             if (q) questions.push(q);
@@ -2337,7 +2347,7 @@ export class QuizManager {
 
         // Blockquote explanation
         const expMatch = body.match(/\n(>[\s\S]+)$/);
-        const explanation = expMatch ? expMatch[1].replace(/^>\s*/gm, '').trim() : '';
+        let explanation = expMatch ? expMatch[1].replace(/^>\s*/gm, '').trim() : '';
         const bodyNoExp = expMatch ? body.slice(0, expMatch.index) : body;
 
         // Split into lines and identify Part A / Part B boundaries
@@ -2354,26 +2364,27 @@ export class QuizManager {
 
             // Directives — skip
             if (/^MARKS_[AB]\s*:/i.test(trimmed)) continue;
+            if (/^CORRECT_[AB]\s*:/i.test(trimmed)) continue;
 
-            // Part A heading: **Part A: Question text?**
-            const partAMatch = trimmed.match(/^\*\*Part A:\s*(.+?)\*\*\s*$/);
+            // Part A heading: **Part A:** text  OR  **Part A: text**
+            const partAMatch = trimmed.match(/^\*\*Part A:\*\*\s*(.+)$/) || trimmed.match(/^\*\*Part A:\s*(.+?)\*\*\s*$/);
             if (partAMatch) { phase = 'part_a'; stem_a = partAMatch[1].trim(); continue; }
 
             // Part B heading
-            const partBMatch = trimmed.match(/^\*\*Part B:\s*(.+?)\*\*\s*$/);
+            const partBMatch = trimmed.match(/^\*\*Part B:\*\*\s*(.+)$/) || trimmed.match(/^\*\*Part B:\s*(.+?)\*\*\s*$/);
             if (partBMatch) { phase = 'part_b'; stem_b = partBMatch[1].trim(); continue; }
 
             if (phase === 'scenario') {
                 scenarioLines.push(line);
             } else if (phase === 'part_a') {
-                const m = trimmed.match(/^([A-E])\.\s+(.+)/);
+                const m = trimmed.match(/^([A-Z])\.\s+(.+)/);
                 if (m) {
                     const hasCheck = m[2].includes('✓');
                     if (hasCheck) correct_a = opts_a.length;
                     opts_a.push(m[2].replace(/\s*✓\s*/g, '').trim());
                 }
             } else if (phase === 'part_b') {
-                const m = trimmed.match(/^([A-E])\.\s+(.+)/);
+                const m = trimmed.match(/^([A-Z])\.\s+(.+)/);
                 if (m) {
                     const hasCheck = m[2].includes('✓');
                     if (hasCheck) correct_b = opts_b.length;
@@ -2382,7 +2393,43 @@ export class QuizManager {
             }
         }
 
+        // Table-based format fallback (| Medicine | Dose | Route | Freq | A | B |)
+        if (!opts_a.length || !opts_b.length) {
+            const tableRows = [];
+            for (const rawLine of bodyNoExp.split('\n')) {
+                const t = rawLine.trim();
+                if (!t.startsWith('|')) continue;
+                if (/^\|\s*-/.test(t)) continue;           // separator row
+                if (/^\|\s*medicine/i.test(t)) continue;   // header row
+                const cols = t.split('|').map(c => c.trim()).slice(1, -1);
+                if (cols.length < 5) continue;
+                const optText = [cols[0], cols[1], cols[2], cols[3]].filter(Boolean).join(' | ');
+                const tickA   = cols[4] ? cols[4].includes('✓') : false;
+                const tickB   = cols.length > 5 && cols[5] ? cols[5].includes('✓') : false;
+                tableRows.push({ optText, tickA, tickB });
+            }
+            if (tableRows.length > 0) {
+                tableRows.forEach((row, idx) => {
+                    opts_a.push(row.optText);
+                    opts_b.push(row.optText);
+                    if (row.tickA && correct_a === null) correct_a = idx;
+                    if (row.tickB && correct_b === null) correct_b = idx;
+                });
+            }
+        }
+
         if (!opts_a.length || !opts_b.length) return null;
+
+        // CORRECT_A / CORRECT_B directive lines — append to explanation
+        const correctAM = bodyNoExp.match(/^CORRECT_A:\s*(.+)$/im);
+        const correctBM = bodyNoExp.match(/^CORRECT_B:\s*(.+)$/im);
+        if (correctAM || correctBM) {
+            const hints = [];
+            if (correctAM) hints.push(`Part A correct: ${correctAM[1].trim()}`);
+            if (correctBM) hints.push(`Part B correct: ${correctBM[1].trim()}`);
+            const hint = hints.join('\n');
+            explanation = explanation ? explanation + '\n\n' + hint : hint;
+        }
 
         // Scenario: strip leading MARKS directives from display text
         let scenario = scenarioLines.join('\n')
@@ -2400,6 +2447,68 @@ export class QuizManager {
             explanation,
             options:        undefined,
             correct_answer: '_review',
+        };
+    }
+
+    /** Parse an official PSA PRESCRIBING block — multi-option drug/dose with tiered scoring */
+    _parsePsaPrescribing(body, psaSection, specialty) {
+        const drugMarksM = body.match(/^DRUG_MARKS\s*:\s*(\d+)/im);
+        const doseMarksM = body.match(/^DOSE_MARKS\s*:\s*(\d+)/im);
+        const drug_marks = drugMarksM ? parseInt(drugMarksM[1]) : 5;
+        const dose_marks = doseMarksM ? parseInt(doseMarksM[1]) : 5;
+
+        // Strip directives
+        let cleaned = body.replace(/^(?:DRUG_MARKS|DOSE_MARKS)\s*:.*\n?/gim, '').trim();
+
+        // Split at **Drug choice** to separate case text from feedback
+        const drugChoiceIdx = cleaned.search(/\n\*\*Drug choice\*\*/i);
+        const caseText  = drugChoiceIdx > -1 ? cleaned.slice(0, drugChoiceIdx).trim() : cleaned;
+        const afterCase = drugChoiceIdx > -1 ? cleaned.slice(drugChoiceIdx) : '';
+
+        // Drug choice feedback (blockquote lines under **Drug choice**)
+        const drugFbM = afterCase.match(/\*\*Drug choice\*\*\s*\n((?:>.*\n?)+)/i);
+        const drug_feedback = drugFbM ? drugFbM[1].replace(/^>\s*/gm, '').trim() : '';
+
+        // Dose/route/frequency feedback
+        const doseFbM = afterCase.match(/\*\*Dose \/ route[^*]*\*\*\s*\n((?:>.*\n?)+)/i);
+        const dose_feedback = doseFbM ? doseFbM[1].replace(/^>\s*/gm, '').trim() : '';
+
+        // Optimal drug options: DRUG_OPTION / DOSE lines
+        const drug_options = [];
+        const optM = afterCase.match(/\*\*Optimal answers\*\*\s*\n([\s\S]+)/i);
+        if (optM) {
+            let currentDrug = null;
+            for (const rawLine of optM[1].split('\n')) {
+                const line = rawLine.trim();
+                if (line.startsWith('DRUG_OPTION:')) {
+                    currentDrug = { drug: line.slice('DRUG_OPTION:'.length).trim(), dose_options: [] };
+                    drug_options.push(currentDrug);
+                } else if (line.startsWith('DOSE:') && currentDrug) {
+                    currentDrug.dose_options.push(line.slice('DOSE:'.length).trim());
+                }
+            }
+        }
+
+        if (!drug_options.length) return null;
+
+        // Split case text into scenario (case) and prompt (prescribing request)
+        const prIdx   = caseText.search(/\n\*\*Prescribing request\*\*/i);
+        const scenario = prIdx > -1 ? caseText.slice(0, prIdx).trim() : caseText;
+        const prompt   = prIdx > -1 ? caseText.slice(prIdx).trim() : '';
+
+        return {
+            question_type:  'prescribing',
+            psa_section:    psaSection,
+            specialty,
+            scenario:       scenario || undefined,
+            prompt:         prompt || scenario,
+            drug_marks,
+            dose_marks,
+            drug_feedback,
+            dose_feedback,
+            drug_options,
+            correct_answer: '_prescribing',
+            options:        undefined,
         };
     }
 

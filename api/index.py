@@ -963,6 +963,60 @@ class PWAQuizLoader:
         }
 
     @staticmethod
+    def _parse_psa_prescribing(num, body, psa_section, specialty):
+        dm   = re.search(r'^DRUG_MARKS\s*:\s*(\d+)', body, re.IGNORECASE | re.MULTILINE)
+        dosem = re.search(r'^DOSE_MARKS\s*:\s*(\d+)', body, re.IGNORECASE | re.MULTILINE)
+        drug_marks = int(dm.group(1)) if dm else 5
+        dose_marks = int(dosem.group(1)) if dosem else 5
+
+        cleaned = re.sub(r'^(?:DRUG_MARKS|DOSE_MARKS)\s*:.*\n?', '', body,
+                         flags=re.IGNORECASE | re.MULTILINE).strip()
+
+        dc_idx = re.search(r'\n\*\*Drug choice\*\*', cleaned, re.IGNORECASE)
+        case_text  = cleaned[:dc_idx.start()].strip() if dc_idx else cleaned
+        after_case = cleaned[dc_idx.start():] if dc_idx else ''
+
+        drug_fb = re.search(r'\*\*Drug choice\*\*\s*\n((?:>.*\n?)+)', after_case, re.IGNORECASE)
+        drug_feedback = re.sub(r'^>\s*', '', drug_fb.group(1), flags=re.MULTILINE).strip() if drug_fb else ''
+
+        dose_fb = re.search(r'\*\*Dose \/ route[^*]*\*\*\s*\n((?:>.*\n?)+)', after_case, re.IGNORECASE)
+        dose_feedback = re.sub(r'^>\s*', '', dose_fb.group(1), flags=re.MULTILINE).strip() if dose_fb else ''
+
+        drug_options = []
+        opt_section = re.search(r'\*\*Optimal answers\*\*\s*\n([\s\S]+)', after_case, re.IGNORECASE)
+        if opt_section:
+            current_drug = None
+            for raw_line in opt_section.group(1).split('\n'):
+                line = raw_line.strip()
+                if line.startswith('DRUG_OPTION:'):
+                    current_drug = {'drug': line[len('DRUG_OPTION:'):].strip(), 'dose_options': []}
+                    drug_options.append(current_drug)
+                elif line.startswith('DOSE:') and current_drug is not None:
+                    current_drug['dose_options'].append(line[len('DOSE:'):].strip())
+
+        if not drug_options:
+            return None
+
+        pr_idx = re.search(r'\n\*\*Prescribing request\*\*', case_text, re.IGNORECASE)
+        scenario = case_text[:pr_idx.start()].strip() if pr_idx else case_text
+        prompt   = case_text[pr_idx.start():].strip() if pr_idx else ''
+
+        return {
+            'id': num,
+            'question_type': 'prescribing',
+            'psa_section': psa_section,
+            'specialty': specialty,
+            'scenario': scenario or None,
+            'prompt': prompt or scenario,
+            'drug_marks': drug_marks,
+            'dose_marks': dose_marks,
+            'drug_feedback': drug_feedback,
+            'dose_feedback': dose_feedback,
+            'drug_options': drug_options,
+            'correct_answer': '_prescribing',
+        }
+
+    @staticmethod
     def _parse_psa_prescription(num, body, psa_section, specialty):
         field_names = ['DRUG', 'DOSE', 'ROUTE', 'FREQUENCY', 'INDICATION']
         fields = []
@@ -1010,12 +1064,17 @@ class PWAQuizLoader:
             trimmed = line.strip()
             if re.match(r'^MARKS_[AB]\s*:', trimmed, re.IGNORECASE):
                 continue
-            ma = re.match(r'^\*\*Part A:\s*(.+?)\*\*\s*$', trimmed)
+            if re.match(r'^CORRECT_[AB]\s*:', trimmed, re.IGNORECASE):
+                continue
+            # Part A heading: **Part A:** text  OR  **Part A: text**
+            ma = re.match(r'^\*\*Part A:\*\*\s*(.+)$', trimmed) or \
+                 re.match(r'^\*\*Part A:\s*(.+?)\*\*\s*$', trimmed)
             if ma:
                 phase = 'part_a'
                 stem_a = ma.group(1).strip()
                 continue
-            mb = re.match(r'^\*\*Part B:\s*(.+?)\*\*\s*$', trimmed)
+            mb = re.match(r'^\*\*Part B:\*\*\s*(.+)$', trimmed) or \
+                 re.match(r'^\*\*Part B:\s*(.+?)\*\*\s*$', trimmed)
             if mb:
                 phase = 'part_b'
                 stem_b = mb.group(1).strip()
@@ -1023,22 +1082,60 @@ class PWAQuizLoader:
             if phase == 'scenario':
                 scenario_lines.append(line)
             elif phase == 'part_a':
-                om = re.match(r'^([A-E])\.\s+(.+)', trimmed)
+                om = re.match(r'^([A-Z])\.\s+(.+)', trimmed)
                 if om:
                     has_check = '\u2713' in om.group(2)
                     if has_check:
                         correct_a = len(opts_a)
                     opts_a.append(om.group(2).replace('\u2713', '').strip())
             elif phase == 'part_b':
-                om = re.match(r'^([A-E])\.\s+(.+)', trimmed)
+                om = re.match(r'^([A-Z])\.\s+(.+)', trimmed)
                 if om:
                     has_check = '\u2713' in om.group(2)
                     if has_check:
                         correct_b = len(opts_b)
                     opts_b.append(om.group(2).replace('\u2713', '').strip())
 
+        # Table-based format fallback (| Medicine | Dose | Route | Freq | A | B |)
+        if not opts_a or not opts_b:
+            table_rows = []
+            for raw_line in body_no_exp.split('\n'):
+                t = raw_line.strip()
+                if not t.startswith('|'):
+                    continue
+                if re.match(r'^\|\s*-', t):
+                    continue   # separator row
+                if re.match(r'^\|\s*medicine', t, re.IGNORECASE):
+                    continue   # header row
+                cols = [c.strip() for c in t.split('|')][1:-1]
+                if len(cols) < 5:
+                    continue
+                opt_text = ' | '.join(c for c in cols[:4] if c)
+                tick_a = '\u2713' in cols[4] if cols[4] else False
+                tick_b = '\u2713' in cols[5] if len(cols) > 5 and cols[5] else False
+                table_rows.append({'opt': opt_text, 'tick_a': tick_a, 'tick_b': tick_b})
+            if table_rows:
+                for idx, row in enumerate(table_rows):
+                    opts_a.append(row['opt'])
+                    opts_b.append(row['opt'])
+                    if row['tick_a'] and correct_a is None:
+                        correct_a = idx
+                    if row['tick_b'] and correct_b is None:
+                        correct_b = idx
+
         if not opts_a or not opts_b:
             return None
+
+        # CORRECT_A / CORRECT_B lines — append to explanation
+        ca_m = re.search(r'^CORRECT_A:\s*(.+)$', body_no_exp, re.IGNORECASE | re.MULTILINE)
+        cb_m = re.search(r'^CORRECT_B:\s*(.+)$', body_no_exp, re.IGNORECASE | re.MULTILINE)
+        if ca_m or cb_m:
+            hints = []
+            if ca_m: hints.append(f"Part A correct: {ca_m.group(1).strip()}")
+            if cb_m: hints.append(f"Part B correct: {cb_m.group(1).strip()}")
+            hint = '\n'.join(hints)
+            explanation = (explanation + '\n\n' + hint).strip() if explanation else hint
+
         scenario = re.sub(r'^MARKS_[AB]\s*:\s*\d+\s*\n?', '', '\n'.join(scenario_lines), flags=re.IGNORECASE | re.MULTILINE).strip()
         return {
             'id': num,
@@ -1091,6 +1188,8 @@ class PWAQuizLoader:
                 q = PWAQuizLoader._parse_psa_calculation(q_num, body, psa_section, specialty)
             elif q_type == 'prescription':
                 q = PWAQuizLoader._parse_psa_prescription(q_num, body, psa_section, specialty)
+            elif q_type == 'prescribing':
+                q = PWAQuizLoader._parse_psa_prescribing(q_num, body, psa_section, specialty)
             elif q_type == 'review':
                 q = PWAQuizLoader._parse_psa_review(q_num, body, psa_section, specialty)
             if q:

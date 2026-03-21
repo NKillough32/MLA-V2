@@ -1,0 +1,15 @@
+{
+  "id": "bsa",
+  "name": "Body Surface Area Calculator",
+  "category": "GENERAL",
+  "description": "BSA calculation using multiple formulas",
+  "keywords": [
+    "bsa",
+    "surface",
+    "area",
+    "dubois",
+    "mosteller"
+  ],
+  "template": "\n        <div class=\"calculator-form\">\n            <h4>Body Surface Area Calculator</h4>\n            <p><small>Calculate BSA using Dubois, Mosteller, and Haycock formulas</small></p>\n            \n            <div class=\"calc-input-group\">\n                <label>Weight (kg):</label>\n                <input type=\"number\" id=\"bsa-weight\" placeholder=\"70\" min=\"1\" max=\"300\" step=\"0.1\">\n            </div>\n            <div class=\"calc-input-group\">\n                <label>Height (cm):</label>\n                <input type=\"number\" id=\"bsa-height\" placeholder=\"170\" min=\"50\" max=\"250\" step=\"0.1\">\n            </div>\n            \n            <button onclick=\"window.quizApp.calculateBSA()\">Calculate BSA</button>\n            <div id=\"bsa-result\" class=\"calc-result\"></div>\n            \n            <div class=\"calc-reference\">\n                <small><strong>Formulas:</strong><br>\n                • Dubois: 0.007184 × W^0.425 × H^0.725<br>\n                • Mosteller: √(W × H / 3600)<br>\n                • Haycock: 0.024265 × W^0.5378 × H^0.3964</small>\n            </div>\n        </div>\n    ",
+  "calculatorFunction": "const weight = parseFloat(document.getElementById('bsa-weight').value);\n    const height = parseFloat(document.getElementById('bsa-height').value);\n    \n    if (!weight || !height) {\n        document.getElementById('bsa-result').innerHTML = \n            '<div class=\"alert alert-warning\">Please enter weight and height</div>';\n        return;\n    }\n    \n    // Dubois formula: 0.007184 × W^0.425 × H^0.725\n    const dubois = 0.007184 * Math.pow(weight, 0.425) * Math.pow(height, 0.725);\n    \n    // Mosteller formula: √(W × H / 3600)\n    const mosteller = Math.sqrt((weight * height) / 3600);\n    \n    // Haycock formula: 0.024265 × W^0.5378 × H^0.3964\n    const haycock = 0.024265 * Math.pow(weight, 0.5378) * Math.pow(height, 0.3964);\n    \n    const average = (dubois + mosteller + haycock) / 3;\n    \n    document.getElementById('bsa-result').innerHTML = `\n        <div class=\"result-section\">\n            <h5>Body Surface Area Results</h5>\n            <div class=\"result-grid\">\n                <div><strong>Dubois Formula:</strong> ${dubois.toFixed(2)} m²</div>\n                <div><strong>Mosteller Formula:</strong> ${mosteller.toFixed(2)} m²</div>\n                <div><strong>Haycock Formula:</strong> ${haycock.toFixed(2)} m²</div>\n                <div><strong>Average BSA:</strong> ${average.toFixed(2)} m²</div>\n            </div>\n            <div class=\"alert alert-info\">\n                💡 Mosteller formula is most commonly used for drug dosing\n            </div>\n        </div>\n    `;"
+}

@@ -5815,6 +5815,72 @@ class MLAQuizApp {
             }
             html += '</div>';
 
+        // ── PSA PRESCRIBING ───────────────────────────────────────────────────────
+        } else if (qType === 'prescribing') {
+            const drugOpts  = question.drug_options || [];
+            const drugMarks = question.drug_marks ?? 5;
+            const doseMarks = question.dose_marks ?? 5;
+            if (!submitted) {
+                html += `<div class="psa-prescribing-panel psa-rx-panel">
+                    <p class="psa-panel-label psa-rx-title"><span class="psa-rx-icon">&#x1F4CB;</span> Write your prescription, then tap <em>Check Answer</em> to see the accepted answers.</p>
+                    <div class="psa-rx-fields">
+                        <label class="psa-rx-label" for="psaPrescribingDrug">Drug:</label>
+                        <div style="position:relative;"><input id="psaPrescribingDrug" type="text" placeholder="Drug name and formulation&hellip;" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="psa-rx-input" data-psa-field="drug"></div>
+                        <label class="psa-rx-label" for="psaPrescribingDose">Dose / amount:</label>
+                        <div style="position:relative;"><input id="psaPrescribingDose" type="text" placeholder="e.g. 40 mg" autocomplete="off" class="psa-rx-input" data-psa-field="dose"></div>
+                        <label class="psa-rx-label" for="psaPrescribingRoute">Route:</label>
+                        <div style="position:relative;"><input id="psaPrescribingRoute" type="text" placeholder="e.g. intravenous" autocomplete="off" class="psa-rx-input" data-psa-field="route"></div>
+                        <label class="psa-rx-label" for="psaPrescribingFreq">Frequency:</label>
+                        <div style="position:relative;"><input id="psaPrescribingFreq" type="text" placeholder="e.g. once only, daily" autocomplete="off" class="psa-rx-input" data-psa-field="frequency"></div>
+                    </div>
+                </div>`;
+            } else {
+                const ans = answer || {};
+                const userDrug  = ans.drug      || '';
+                const userDose  = ans.dose      || '';
+                const userRoute = ans.route     || '';
+                const userFreq  = ans.frequency || '';
+                if (userDrug || userDose) {
+                    html += `<div style="background:#fefce8;border:1.5px solid #eab308;border-radius:8px;padding:12px 16px;margin-bottom:12px;font-size:0.9rem;">
+                        <div style="font-weight:700;color:#854d0e;margin-bottom:6px;">&#x1F4CB; Your prescription:</div>
+                        <table style="width:100%;border-collapse:collapse;font-size:0.88rem;">
+                            ${userDrug  ? `<tr><td style="font-weight:600;padding:2px 8px 2px 0;color:#78350f;width:80px;">Drug:</td><td>${this.formatText(userDrug)}</td></tr>` : ''}
+                            ${userDose  ? `<tr><td style="font-weight:600;padding:2px 8px 2px 0;color:#78350f;">Dose:</td><td>${this.formatText(userDose)}</td></tr>` : ''}
+                            ${userRoute ? `<tr><td style="font-weight:600;padding:2px 8px 2px 0;color:#78350f;">Route:</td><td>${this.formatText(userRoute)}</td></tr>` : ''}
+                            ${userFreq  ? `<tr><td style="font-weight:600;padding:2px 8px 2px 0;color:#78350f;">Frequency:</td><td>${this.formatText(userFreq)}</td></tr>` : ''}
+                        </table>
+                    </div>`;
+                }
+                if (drugOpts.length) {
+                    let optHtml = `<div style="font-weight:700;font-size:0.88rem;color:#15803d;margin-bottom:10px;">&#x2705; Accepted prescriptions &mdash; ${drugMarks} marks (drug) + ${doseMarks} marks (dose) = ${drugMarks + doseMarks} total</div>`;
+                    drugOpts.forEach(opt => {
+                        optHtml += `<div style="margin-bottom:10px;padding:10px 12px;background:var(--bg-secondary,#f8fafc);border-radius:8px;border:1.5px solid #bbf7d0;">
+                            <div style="font-weight:700;font-size:0.9rem;color:#166534;margin-bottom:6px;">&#x1F48A; ${this.formatText(opt.drug)}</div>
+                            <div style="display:flex;flex-direction:column;gap:3px;">`;
+                        (opt.dose_options || []).forEach(dose => {
+                            optHtml += `<div style="font-size:0.85rem;color:#374151;padding-left:8px;">&bull; ${this.formatText(dose)}</div>`;
+                        });
+                        optHtml += '</div></div>';
+                    });
+                    html += `<div class="explanation-container" style="border-color:#22c55e;">
+                        <div class="explanation-title" style="color:#15803d;">&#x2705; Optimal Answers</div>
+                        <div class="explanation-content">${optHtml}</div>
+                    </div>`;
+                }
+                if (question.drug_feedback) {
+                    html += `<div class="explanation-container">
+                        <div class="explanation-title">&#x1F48A; Drug choice feedback (up to ${drugMarks} marks)</div>
+                        <div class="explanation-content">${this.formatText(question.drug_feedback)}</div>
+                    </div>`;
+                }
+                if (question.dose_feedback) {
+                    html += `<div class="explanation-container">
+                        <div class="explanation-title">&#x1F489; Dose / route / frequency (up to ${doseMarks} marks)</div>
+                        <div class="explanation-content">${this.formatText(question.dose_feedback)}</div>
+                    </div>`;
+                }
+            }
+
         // ── STANDARD MCQ ─────────────────────────────────────────────────────────
         } else if (question.options && question.options.length > 0) {
             html += '<div class="new-options">';
@@ -5882,7 +5948,7 @@ class MLAQuizApp {
                     </div>
                 `;
             }
-        } else if (submitted && (qType === 'calculation' || qType === 'prescription' || qType === 'review')) {
+        } else if (submitted && (qType === 'calculation' || qType === 'prescription' || qType === 'prescribing' || qType === 'review')) {
             // PSA types rendered feedback inline above; just add explanation here
             let explanationText = '';
             if (question.explanation) explanationText = this.formatText(question.explanation);
@@ -6197,7 +6263,33 @@ class MLAQuizApp {
                 rxPanel.appendChild(btn);
             }
 
-        } else if (submitted && (qType === 'calculation' || qType === 'prescription' || qType === 'review')) {
+        } else if (qType === 'prescribing' && !submitted) {
+            if (globalSubmitBtn) globalSubmitBtn.style.display = 'none';
+
+            window._psaSubmitPrescribing = () => {
+                const drugEl  = document.getElementById('psaPrescribingDrug');
+                const doseEl  = document.getElementById('psaPrescribingDose');
+                const routeEl = document.getElementById('psaPrescribingRoute');
+                const freqEl  = document.getElementById('psaPrescribingFreq');
+                quizManager.submitAnswer({
+                    drug:      drugEl  ? drugEl.value.trim()  : '',
+                    dose:      doseEl  ? doseEl.value.trim()  : '',
+                    route:     routeEl ? routeEl.value.trim() : '',
+                    frequency: freqEl  ? freqEl.value.trim()  : '',
+                });
+            };
+
+            const prescribingPanel = questionContainer.querySelector('.psa-prescribing-panel');
+            if (prescribingPanel) {
+                const btn = document.createElement('button');
+                btn.textContent = 'Check Answer';
+                btn.className = 'submit-btn';
+                btn.style.cssText = 'display:block;width:100%;margin-top:18px;padding:13px 24px;background:linear-gradient(135deg,#009f4d,#007a3a);color:#fff;border:none;border-radius:10px;font-size:16px;cursor:pointer;font-weight:700;letter-spacing:0.02em;box-shadow:0 2px 8px rgba(0,159,77,.30);transition:opacity .15s;';
+                btn.onclick = () => window._psaSubmitPrescribing();
+                prescribingPanel.appendChild(btn);
+            }
+
+        } else if (submitted && (qType === 'calculation' || qType === 'prescription' || qType === 'prescribing' || qType === 'review')) {
             // After submission, re-show global submit (now it acts as Next)
             if (globalSubmitBtn) globalSubmitBtn.style.display = 'inline-block';
 

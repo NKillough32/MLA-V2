@@ -1,0 +1,15 @@
+{
+  "id": "crb65",
+  "name": "CRB-65",
+  "category": "RESPIRATORY",
+  "description": "Community pneumonia severity assessment (without urea)",
+  "keywords": [
+    "crb",
+    "pneumonia",
+    "severity",
+    "respiratory",
+    "community"
+  ],
+  "template": "\n            <div class=\"calculator-form\">\n                <h4>CRB-65 Score</h4>\n                <p><small>Community-acquired pneumonia severity assessment</small></p>\n                \n                <div class=\"calc-checkbox-group\">\n                    <label><input type=\"checkbox\" id=\"crb-confusion\"> Confusion (AMT ≤8)</label>\n                    <label><input type=\"checkbox\" id=\"crb-rr\"> Respiratory rate ≥30/min</label>\n                    <label><input type=\"checkbox\" id=\"crb-bp\"> Systolic BP <90 or Diastolic BP ≤60</label>\n                    <label><input type=\"checkbox\" id=\"crb-age\"> Age ≥65 years</label>\n                </div>\n                \n                <button onclick=\"window.quizApp.calculateCRB65()\">Calculate Score</button>\n                <div id=\"crb65-result\" class=\"calc-result\"></div>\n            </div>\n        ",
+  "calculatorFunction": "let score = 0;\n        \n        if (document.getElementById('crb-confusion').checked) score += 1;\n        if (document.getElementById('crb-rr').checked) score += 1;\n        if (document.getElementById('crb-bp').checked) score += 1;\n        if (document.getElementById('crb-age').checked) score += 1;\n\n        let mortality = '';\n        let management = '';\n        let color = '';\n\n        if (score === 0) {\n            mortality = '<1% 30-day mortality';\n            management = 'Home treatment suitable (NICE CG191)';\n            color = '#4CAF50';\n        } else if (score === 1) {\n            mortality = '2.7% 30-day mortality';\n            management = 'Consider home treatment or short stay admission';\n            color = '#FFC107';\n        } else if (score === 2) {\n            mortality = '6.8% 30-day mortality';\n            management = 'Hospital admission recommended';\n            color = '#FF9800';\n        } else if (score >= 3) {\n            mortality = '≥14% 30-day mortality';\n            management = 'Urgent hospital admission (consider ICU assessment)';\n            color = '#F44336';\n        }\n\n        document.getElementById('crb65-result').innerHTML = `\n            <div style=\"color: ${color}\">\n                <strong>CRB-65 Score: ${score}/4</strong><br>\n                <strong>${mortality}</strong><br>\n                <strong>Management: ${management}</strong>\n            </div>\n        `;"
+}
