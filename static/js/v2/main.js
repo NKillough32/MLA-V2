@@ -6416,6 +6416,10 @@ class MLAQuizApp {
             }
         }
 
+        const touchDedupWindowMs = 700;
+        let lastTouchOptionSelection = null;
+        let lastTouchRuleOut = null;
+
         // Bind option click events
         const options = questionContainer.querySelectorAll('.option, .new-option');
         console.log(`🔗 Found ${options.length} options to bind for question ${data.index + 1}`);
@@ -6424,8 +6428,7 @@ class MLAQuizApp {
             const optionIdx = parseInt(option.dataset.option);
             console.log(`📌 Binding option ${optionIdx}, element index ${optionIndex}, dataset:`, option.dataset);
             
-            // Left click - select option
-            option.addEventListener('click', () => {
+            const selectOption = () => {
                 console.log(`👆 Option ${optionIdx} clicked (question ${data.index + 1})`);
                 // Check if answer is already submitted
                 const isSubmitted = quizManager.isAnswerSubmitted();
@@ -6436,6 +6439,21 @@ class MLAQuizApp {
                 } else {
                     console.log(`   ❌ Already submitted, ignoring`);
                 }
+            };
+
+            // Left click - select option
+            option.addEventListener('click', () => {
+                const now = Date.now();
+                if (
+                    lastTouchOptionSelection &&
+                    lastTouchOptionSelection.optionIdx === optionIdx &&
+                    now - lastTouchOptionSelection.timestamp < touchDedupWindowMs
+                ) {
+                    console.log(`   ⏭️ Ignoring synthetic click for option ${optionIdx} after touch interaction`);
+                    return;
+                }
+
+                selectOption();
             });
 
             // Right click - rule out option
@@ -6452,7 +6470,11 @@ class MLAQuizApp {
                     return;
                 }
                 if (!quizManager.isAnswerSubmitted()) {
-                    quizManager.selectAnswer(optionIdx);
+                    lastTouchOptionSelection = {
+                        optionIdx,
+                        timestamp: Date.now()
+                    };
+                    selectOption();
                 }
             }, { passive: true });
         });
@@ -6469,8 +6491,26 @@ class MLAQuizApp {
                 }
             };
 
-            button.addEventListener('click', toggleRuleOut);
-            button.addEventListener('touchend', toggleRuleOut, { passive: false });
+            button.addEventListener('click', (e) => {
+                const now = Date.now();
+                if (
+                    lastTouchRuleOut &&
+                    lastTouchRuleOut.buttonIdx === buttonIdx &&
+                    now - lastTouchRuleOut.timestamp < touchDedupWindowMs
+                ) {
+                    console.log(`   ⏭️ Ignoring synthetic click for rule-out button ${buttonIdx} after touch interaction`);
+                    return;
+                }
+
+                toggleRuleOut(e);
+            });
+            button.addEventListener('touchend', (e) => {
+                lastTouchRuleOut = {
+                    buttonIdx,
+                    timestamp: Date.now()
+                };
+                toggleRuleOut(e);
+            }, { passive: false });
         });
 
         this.updateQuizButtons(data);
