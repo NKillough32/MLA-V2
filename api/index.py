@@ -880,16 +880,32 @@ class PWAQuizLoader:
             return exp, body[:m.start()]
         return '', body
 
+    _SECTION_HEADINGS = frozenset({
+        'question', 'calculation', 'case presentation',
+        'on examination', 'investigations', 'question a', 'question b',
+    })
+
     @staticmethod
     def _psa_bold_split(text: str):
-        """Split text into (scenario, prompt) at the last **bold** line."""
+        """Split text into (scenario, prompt) at the last meaningful **bold** line.
+        Section headings (Question, Calculation, Investigations, …) are skipped —
+        the plain text that follows them is used as the prompt instead."""
         m = list(re.finditer(r'\*\*([^*]+)\*\*', text))
-        if m:
-            last = m[-1]
-            prompt = last.group(1).strip()
-            scenario = text[:last.start()].strip()
-            return scenario, prompt
-        return '', text.strip()
+        if not m:
+            return '', text.strip()
+        last = m[-1]
+        content = last.group(1).strip().lower().rstrip(':')
+        if content in PWAQuizLoader._SECTION_HEADINGS:
+            # Heading bold — take the first non-empty plain-text line after it
+            text_after = text[last.end():].strip()
+            after_lines = [l.strip() for l in text_after.split('\n') if l.strip()]
+            if after_lines:
+                stem = re.sub(r'\*(.+?)\*', r'\1', after_lines[0])
+                return text[:last.start()].strip(), stem
+            # No text after this heading — fall back to full text
+            return '', text.strip()
+        # Normal bold — treat as prompt
+        return text[:last.start()].strip(), last.group(1).strip()
 
     @staticmethod
     def _parse_psa_mcq(num, body, psa_section, specialty):

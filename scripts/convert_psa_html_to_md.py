@@ -63,7 +63,7 @@ def html_to_md(tag) -> str:
     html = re.sub(r'<br\s*/?>', '\n', html, flags=re.IGNORECASE)
     html = re.sub(r'</p>', '\n', html, flags=re.IGNORECASE)
     html = re.sub(r'<p[^>]*>', '', html, flags=re.IGNORECASE)
-    html = re.sub(r'<strong>(.*?)</strong>', r'**\1**', html, flags=re.IGNORECASE | re.DOTALL)
+    html = re.sub(r'<strong>(.*?)</strong>', lambda m: f'**{m.group(1).strip()}**', html, flags=re.IGNORECASE | re.DOTALL)
     html = re.sub(r'<em>(.*?)</em>', r'*\1*', html, flags=re.IGNORECASE | re.DOTALL)
     html = re.sub(r'<sup>(.*?)</sup>', r'^\1', html, flags=re.IGNORECASE | re.DOTALL)
     html = re.sub(r'<sub>(.*?)</sub>', r'_\1', html, flags=re.IGNORECASE | re.DOTALL)
@@ -728,8 +728,13 @@ def render_mcq(data) -> list:
     overall_fb = data.get('overall_feedback', '')
 
     if qt:
-        lines.append(f"**Question**")
-        lines.append(qt)
+        qt_lines = [l for l in qt.strip().split('\n') if l.strip()]
+        if qt_lines:
+            # Bold the question stem (strip inline italic markers so parser regex works)
+            stem = re.sub(r'\*(.+?)\*', r'\1', qt_lines[0])
+            lines.append(f'**{stem}**')
+            for extra in qt_lines[1:]:
+                lines.append(extra.strip())
         lines.append('')
 
     for i, opt in enumerate(options):
@@ -756,8 +761,12 @@ def render_calculation(data) -> list:
     working = data.get('working', '')
 
     if qt:
-        lines.append(f"**Question**")
-        lines.append(qt)
+        qt_lines = [l for l in qt.strip().split('\n') if l.strip()]
+        if qt_lines:
+            stem = re.sub(r'\*(.+?)\*', r'\1', qt_lines[0])
+            lines.append(f'**{stem}**')
+            for extra in qt_lines[1:]:
+                lines.append(extra.strip())
         lines.append('')
 
     if answer:

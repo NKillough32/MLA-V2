@@ -2258,13 +2258,20 @@ export class QuizManager {
 
         if (!options.length || correctIndex === null) return null;
 
-        // Split scenario from direct question (bold lines = question)
+        // Split scenario from direct question — use the LAST meaningful bold element as the prompt
         const allText = questionLines.join('\n').trim();
-        const boldMatch = allText.match(/\*\*([^*]+)\*\*/);
+        const PSA_HEADINGS = new Set(['question', 'calculation', 'case presentation', 'on examination', 'investigations', 'question a', 'question b']);
+        const boldMatches = [...allText.matchAll(/\*\*([^*]+)\*\*/g)];
+        const boldMatch   = boldMatches.length ? boldMatches[boldMatches.length - 1] : null;
         let prompt   = boldMatch ? boldMatch[1].trim() : '';
-        let scenario = boldMatch
-            ? allText.slice(0, allText.lastIndexOf(`**${boldMatch[1]}**`)).trim()
-            : allText;
+        let scenario = boldMatch ? allText.slice(0, boldMatch.index).trim() : allText;
+        // If last bold is a section heading, use the plain text after it as the real prompt
+        if (boldMatch && PSA_HEADINGS.has(prompt.toLowerCase().replace(/:$/, ''))) {
+            const afterHeading = allText.slice(boldMatch.index + boldMatch[0].length).trim();
+            const firstLine = (afterHeading.split('\n')[0] || '').trim().replace(/\*(.+?)\*/g, '$1');
+            if (firstLine) { prompt = firstLine; }
+            else { prompt = allText; scenario = ''; }
+        }
         if (!prompt) { prompt = allText; scenario = ''; }
 
         return {
@@ -2311,11 +2318,17 @@ export class QuizManager {
             .replace(/\n(>\s+[\s\S]+)$/, '')
             .trim();
 
-        const boldMatch = qText.match(/\*\*([^*]+)\*\*/);
-        let prompt   = boldMatch ? boldMatch[1].trim() : '';
-        let scenario = boldMatch
-            ? qText.slice(0, qText.lastIndexOf(`**${boldMatch[1]}**`)).trim()
-            : qText;
+        const CALC_HEADINGS = new Set(['question', 'calculation', 'case presentation', 'on examination', 'investigations']);
+        const calcBoldMatches = [...qText.matchAll(/\*\*([^*]+)\*\*/g)];
+        const calcBoldMatch   = calcBoldMatches.length ? calcBoldMatches[calcBoldMatches.length - 1] : null;
+        let prompt   = calcBoldMatch ? calcBoldMatch[1].trim() : '';
+        let scenario = calcBoldMatch ? qText.slice(0, calcBoldMatch.index).trim() : qText;
+        if (calcBoldMatch && CALC_HEADINGS.has(prompt.toLowerCase().replace(/:$/, ''))) {
+            const afterHeading = qText.slice(calcBoldMatch.index + calcBoldMatch[0].length).trim();
+            const firstLine = (afterHeading.split('\n')[0] || '').trim().replace(/\*(.+?)\*/g, '$1');
+            if (firstLine) { prompt = firstLine; }
+            else { prompt = qText; scenario = ''; }
+        }
         if (!prompt) { prompt = qText; scenario = ''; }
 
         return {
