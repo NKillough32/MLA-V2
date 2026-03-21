@@ -781,10 +781,22 @@ def main():
     folder = sys.argv[1] if len(sys.argv) > 1 else 'static/assets/PSA/PSA Paper 1'
     output = sys.argv[2] if len(sys.argv) > 2 else 'static/assets/PSA/psa-paper1-official.md'
 
+    # Infer paper title from folder name
+    folder_name = os.path.basename(folder.rstrip('/\\'))
+    paper_title = f"PSA {folder_name} (Official)" if folder_name.lower().startswith('psa') else f"PSA {folder_name} (Official)"
+
     # Determine question number from filename
     def get_q_num(fname):
-        m = re.search(r'Assessment(\d+)\.html$', fname)
-        return int(m.group(1)) if m else 1 if fname.endswith('Assessment.html') else 999
+        # Handles: "1.html", "PSA Assessment.html", "PSA Assessment2.html", "Assessment.html", "Assessment2.html"
+        m = re.search(r'Assessment(\d+)\.html$', fname, re.IGNORECASE)
+        if m:
+            return int(m.group(1))
+        if re.search(r'Assessment\.html$', fname, re.IGNORECASE):
+            return 1
+        m2 = re.match(r'^(\d+)\.html$', fname)
+        if m2:
+            return int(m2.group(1))
+        return 999
 
     html_files = sorted(
         [f for f in os.listdir(folder) if f.endswith('.html')],
@@ -794,8 +806,8 @@ def main():
     print(f"Processing {len(html_files)} HTML files from: {folder}")
 
     # YAML frontmatter
-    header = """---
-title: PSA Paper 1 (Official)
+    header = f"""---
+title: {paper_title}
 source: prescribingsafetyassessment.ac.uk
 total_marks: 100
 questions: 30
