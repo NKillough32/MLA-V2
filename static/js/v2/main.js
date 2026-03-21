@@ -5755,6 +5755,49 @@ class MLAQuizApp {
             const marks_a = question.marks_a ?? 2;
             const marks_b = question.marks_b ?? 2;
             const storedAnswer = submitted ? (answer || {}) : {};
+            const getReviewPartSelectionCount = (part = {}) => {
+                if (typeof quizManager?.getReviewPartSelectionCount === 'function') {
+                    return quizManager.getReviewPartSelectionCount(part);
+                }
+
+                const explicit = Number.parseInt(part.selection_count ?? part.selectionCount, 10);
+                if (Number.isInteger(explicit) && explicit > 0) {
+                    return explicit;
+                }
+
+                const correct = Array.isArray(part.correct)
+                    ? part.correct.filter(idx => Number.isInteger(idx))
+                    : (Number.isInteger(part.correct) ? [part.correct] : []);
+                return correct.length > 1 ? correct.length : 1;
+            };
+            const normalizeReviewPartAnswer = (part = {}, selectedPartAnswer) => {
+                const selectionCount = getReviewPartSelectionCount(part);
+                if (selectionCount <= 1) {
+                    return Number.isInteger(selectedPartAnswer) ? selectedPartAnswer : undefined;
+                }
+
+                if (!Array.isArray(selectedPartAnswer)) return [];
+                return [...new Set(selectedPartAnswer.filter(idx => Number.isInteger(idx)))].sort((a, b) => a - b);
+            };
+            const getReviewPartCorrectIndices = (part = {}) => Array.isArray(part.correct)
+                ? part.correct.filter(idx => Number.isInteger(idx)).sort((a, b) => a - b)
+                : (Number.isInteger(part.correct) ? [part.correct] : []);
+            const isReviewPartAnswerCorrect = (part = {}, selectedPartAnswer) => {
+                if (typeof quizManager?.isReviewPartAnswerCorrect === 'function') {
+                    return quizManager.isReviewPartAnswerCorrect(part, selectedPartAnswer);
+                }
+
+                const correctIndices = getReviewPartCorrectIndices(part);
+                if (!correctIndices.length) return false;
+
+                const normalizedAnswer = normalizeReviewPartAnswer(part, selectedPartAnswer);
+                if (Array.isArray(normalizedAnswer)) {
+                    if (normalizedAnswer.length !== correctIndices.length) return false;
+                    return normalizedAnswer.every((idx, pos) => idx === correctIndices[pos]);
+                }
+
+                return normalizedAnswer === correctIndices[0];
+            };
             const sharedOptions = Array.isArray(partA.options)
                 && Array.isArray(partB.options)
                 && partA.options.length > 0
@@ -5762,17 +5805,25 @@ class MLAQuizApp {
                 && partA.options.every((opt, idx) => opt === partB.options[idx]);
 
             const renderPartSummary = (partKey, label, marks, part, storedPartAnswer) => {
-                const userIdx = storedPartAnswer?.[partKey];
-                const partOk = typeof userIdx === 'number' && userIdx === part.correct;
-                const correctLetter = String.fromCharCode(65 + (part.correct ?? 0));
+                const userAnswer = storedPartAnswer?.[partKey];
+                const partOk = isReviewPartAnswerCorrect(part, userAnswer);
+                const correctLetters = getReviewPartCorrectIndices(part).map(idx => String.fromCharCode(65 + idx));
+                const correctLabel = correctLetters.join(', ');
                 return `<div style="margin-top:12px;padding:8px 12px;border-radius:6px;font-size:0.88rem;font-weight:600;${partOk ? 'background:#dcfce7;color:#15803d;' : 'background:#fee2e2;color:#b91c1c;'}">
                     ${partOk
                         ? `✅ ${label}: ${marks}/${marks} marks`
-                        : `❌ ${label}: 0/${marks} marks. Correct answer: <strong>${correctLetter}</strong>`}
+                        : `❌ ${label}: 0/${marks} marks. Correct answer${correctLetters.length > 1 ? 's' : ''}: <strong>${correctLabel}</strong>`}
                 </div>`;
             };
 
             const renderPart = (part, partKey, label, marks, storedAnswer, show_submitted) => {
+                const selectionCount = getReviewPartSelectionCount(part);
+                const correctIndices = getReviewPartCorrectIndices(part);
+                const normalizedStoredAnswer = normalizeReviewPartAnswer(part, storedAnswer?.[partKey]);
+                const selectedIndices = Array.isArray(normalizedStoredAnswer)
+                    ? normalizedStoredAnswer
+                    : (Number.isInteger(normalizedStoredAnswer) ? [normalizedStoredAnswer] : []);
+                const inputType = selectionCount > 1 ? 'checkbox' : 'radio';
                 let out = `<div style="background:var(--card-bg,#fff);border:1.5px solid #6366f1;border-radius:10px;padding:16px 18px;margin-bottom:0;">
                     <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid #e0e7ff;">
                         <span style="font-weight:700;font-size:0.95rem;color:#6366f1;letter-spacing:0.02em;">${label}</span>
@@ -5783,11 +5834,11 @@ class MLAQuizApp {
 
                 (part.options || []).forEach((opt, idx) => {
                     const letter    = String.fromCharCode(65 + idx);
-                    const isCorrect = idx === part.correct;
-                    const isSelected = show_submitted && (storedAnswer?.[partKey] === idx);
+                    const isCorrect = correctIndices.includes(idx);
+                    const isSelected = selectedIndices.includes(idx);
                     if (!show_submitted) {
                         out += `<label style="display:flex;align-items:flex-start;gap:10px;padding:9px 12px;border-radius:7px;border:1.5px solid var(--border-color,#e2e8f0);cursor:pointer;font-size:0.9rem;color:var(--text-primary,#1e293b);">
-                            <input type="radio" name="psa-review-${partKey}" value="${idx}" style="margin-top:3px;accent-color:#6366f1;flex-shrink:0;">
+                            <input type="${inputType}" name="psa-review-${partKey}${inputType === 'checkbox' ? '[]' : ''}" value="${idx}" ${isSelected ? 'checked' : ''} style="margin-top:3px;accent-color:#6366f1;flex-shrink:0;">
                             <span style="font-weight:700;min-width:1.4em;flex-shrink:0;">${letter}.</span>
                             <span style="flex:1;">${this.formatText(opt)}</span>
                         </label>`;
@@ -5805,13 +5856,14 @@ class MLAQuizApp {
 
                 out += '</div>';
                 if (show_submitted) {
-                    const userIdx  = storedAnswer?.[partKey];
-                    const partOk   = typeof userIdx === 'number' && userIdx === part.correct;
-                    const correctLetter = String.fromCharCode(65 + (part.correct ?? 0));
+                    const userAnswer = storedAnswer?.[partKey];
+                    const partOk   = isReviewPartAnswerCorrect(part, userAnswer);
+                    const correctLetters = correctIndices.map(idx => String.fromCharCode(65 + idx));
+                    const correctLabel = correctLetters.join(', ');
                     out += `<div style="margin-top:12px;padding:8px 12px;border-radius:6px;font-size:0.88rem;font-weight:600;${partOk ? 'background:#dcfce7;color:#15803d;' : 'background:#fee2e2;color:#b91c1c;'}">
                         ${partOk
                             ? `✅ Correct — ${marks}/${marks} marks`
-                            : `❌ Incorrect — 0/${marks} marks. Correct answer: <strong>${correctLetter}</strong>`}
+                            : `❌ Incorrect — 0/${marks} marks. Correct answer${correctLetters.length > 1 ? 's' : ''}: <strong>${correctLabel}</strong>`}
                     </div>`;
                 }
                 out += '</div>';
@@ -5847,10 +5899,16 @@ class MLAQuizApp {
 
                 (partA.options || []).forEach((opt, idx) => {
                     const letter = String.fromCharCode(65 + idx);
-                    const aSelected = storedAnswer?.a === idx;
-                    const bSelected = storedAnswer?.b === idx;
-                    const aCorrect = idx === partA.correct;
-                    const bCorrect = idx === partB.correct;
+                    const aSelectionCount = getReviewPartSelectionCount(partA);
+                    const bSelectionCount = getReviewPartSelectionCount(partB);
+                    const aInputType = aSelectionCount > 1 ? 'checkbox' : 'radio';
+                    const bInputType = bSelectionCount > 1 ? 'checkbox' : 'radio';
+                    const normalizedPartAAnswer = normalizeReviewPartAnswer(partA, storedAnswer?.a);
+                    const normalizedPartBAnswer = normalizeReviewPartAnswer(partB, storedAnswer?.b);
+                    const aSelected = Array.isArray(normalizedPartAAnswer) ? normalizedPartAAnswer.includes(idx) : normalizedPartAAnswer === idx;
+                    const bSelected = Array.isArray(normalizedPartBAnswer) ? normalizedPartBAnswer.includes(idx) : normalizedPartBAnswer === idx;
+                    const aCorrect = getReviewPartCorrectIndices(partA).includes(idx);
+                    const bCorrect = getReviewPartCorrectIndices(partB).includes(idx);
                     const aCellStyle = submitted
                         ? `${aCorrect ? 'background:#dcfce7;border-color:#22c55e;color:#15803d;' : aSelected ? 'background:#fee2e2;border-color:#ef4444;color:#b91c1c;' : 'background:transparent;border-color:var(--border-color,#e2e8f0);color:var(--text-primary,#1e293b);'}`
                         : 'background:transparent;border-color:var(--border-color,#e2e8f0);color:var(--text-primary,#1e293b);';
@@ -5866,12 +5924,12 @@ class MLAQuizApp {
                         <div style="display:flex;align-items:center;justify-content:center;min-height:40px;border:1.5px solid;border-radius:8px;${aCellStyle}">
                             ${submitted
                                 ? `${aCorrect ? '✓' : aSelected ? '✗' : ''}`
-                                : `<input type="radio" name="psa-review-a" value="${idx}" ${storedAnswer?.a === idx ? 'checked' : ''} aria-label="Select option ${letter} for Part A" style="accent-color:#6366f1;">`}
+                                : `<input type="${aInputType}" name="psa-review-a${aInputType === 'checkbox' ? '[]' : ''}" value="${idx}" ${aSelected ? 'checked' : ''} aria-label="Select option ${letter} for Part A" style="accent-color:#6366f1;">`}
                         </div>
                         <div style="display:flex;align-items:center;justify-content:center;min-height:40px;border:1.5px solid;border-radius:8px;${bCellStyle}">
                             ${submitted
                                 ? `${bCorrect ? '✓' : bSelected ? '✗' : ''}`
-                                : `<input type="radio" name="psa-review-b" value="${idx}" ${storedAnswer?.b === idx ? 'checked' : ''} aria-label="Select option ${letter} for Part B" style="accent-color:#6366f1;">`}
+                                : `<input type="${bInputType}" name="psa-review-b${bInputType === 'checkbox' ? '[]' : ''}" value="${idx}" ${bSelected ? 'checked' : ''} aria-label="Select option ${letter} for Part B" style="accent-color:#6366f1;">`}
                         </div>
                     </div>`;
                 });
@@ -5881,8 +5939,14 @@ class MLAQuizApp {
                     html += renderPartSummary('a', 'Part A', marks_a, partA, storedAnswer);
                     html += renderPartSummary('b', 'Part B', marks_b, partB, storedAnswer);
                 } else {
+                    const partAHint = getReviewPartSelectionCount(partA) > 1
+                        ? `Choose <strong>${getReviewPartSelectionCount(partA)}</strong> answers for <strong>Part A</strong>`
+                        : `Choose one answer for <strong>Part A</strong>`;
+                    const partBHint = getReviewPartSelectionCount(partB) > 1
+                        ? `choose <strong>${getReviewPartSelectionCount(partB)}</strong> answers for <strong>Part B</strong>`
+                        : `choose one answer for <strong>Part B</strong>`;
                     html += `<div style="margin-top:12px;font-size:0.85rem;color:var(--text-secondary,#475569);">
-                        Choose one answer for <strong>Part A</strong> and one answer for <strong>Part B</strong>.
+                        ${partAHint} and ${partBHint}.
                     </div>`;
                 }
                 html += `</div>`;
@@ -5891,8 +5955,8 @@ class MLAQuizApp {
                 html += renderPart(partB, 'b', 'Part B', marks_b, storedAnswer, submitted);
             }
             if (submitted) {
-                const aOk = (storedAnswer.a === partA.correct);
-                const bOk = (storedAnswer.b === partB.correct);
+                const aOk = isReviewPartAnswerCorrect(partA, storedAnswer.a);
+                const bOk = isReviewPartAnswerCorrect(partB, storedAnswer.b);
                 const earned = (aOk ? marks_a : 0) + (bOk ? marks_b : 0);
                 const total  = marks_a + marks_b;
                 const totalBg = earned === total ? '#dcfce7' : earned > 0 ? '#fef9c3' : '#fee2e2';
@@ -6396,13 +6460,30 @@ class MLAQuizApp {
             if (globalSubmitBtn) globalSubmitBtn.style.display = 'none';
 
             window._psaSubmitReview = () => {
-                const selA = questionContainer.querySelector('input[name="psa-review-a"]:checked');
-                const selB = questionContainer.querySelector('input[name="psa-review-b"]:checked');
-                if (selA === null || selB === null) {
-                    uiManager.showToast('Please select an answer for both Part A and Part B', 'warning');
+                const partASelectionCount = typeof quizManager?.getReviewPartSelectionCount === 'function'
+                    ? quizManager.getReviewPartSelectionCount(question.part_a || {})
+                    : Number.parseInt(question.part_a?.selection_count ?? question.part_a?.selectionCount, 10) || 1;
+                const partBSelectionCount = typeof quizManager?.getReviewPartSelectionCount === 'function'
+                    ? quizManager.getReviewPartSelectionCount(question.part_b || {})
+                    : Number.parseInt(question.part_b?.selection_count ?? question.part_b?.selectionCount, 10) || 1;
+                const selA = Array.from(questionContainer.querySelectorAll('input[name="psa-review-a"], input[name="psa-review-a[]"]:checked'))
+                    .filter(input => input.checked)
+                    .map(input => parseInt(input.value, 10))
+                    .filter(value => Number.isInteger(value));
+                const selB = Array.from(questionContainer.querySelectorAll('input[name="psa-review-b"], input[name="psa-review-b[]"]:checked'))
+                    .filter(input => input.checked)
+                    .map(input => parseInt(input.value, 10))
+                    .filter(value => Number.isInteger(value));
+                if (selA.length !== partASelectionCount || selB.length !== partBSelectionCount) {
+                    const partALabel = partASelectionCount === 1 ? 'one answer' : `${partASelectionCount} answers`;
+                    const partBLabel = partBSelectionCount === 1 ? 'one answer' : `${partBSelectionCount} answers`;
+                    uiManager.showToast(`Please select ${partALabel} for Part A and ${partBLabel} for Part B`, 'warning');
                     return;
                 }
-                quizManager.submitAnswer({ a: parseInt(selA.value, 10), b: parseInt(selB.value, 10) });
+                quizManager.submitAnswer({
+                    a: partASelectionCount > 1 ? selA.sort((a, b) => a - b) : selA[0],
+                    b: partBSelectionCount > 1 ? selB.sort((a, b) => a - b) : selB[0]
+                });
             };
 
             const reviewPanel = questionContainer.querySelector('.psa-review-panel');
