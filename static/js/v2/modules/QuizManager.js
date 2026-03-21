@@ -509,9 +509,8 @@ export class QuizManager {
             isCorrect = aOk || bOk; // partial credit counts as attempted correct
             correctAnswerIdx = '_review';
         } else {
-            correctAnswerIdx = question.correct_answer !== undefined
-                ? question.correct_answer : question.correctAnswer;
-            isCorrect = selectedAnswer === correctAnswerIdx;
+            correctAnswerIdx = this.getStoredCorrectAnswer(question);
+            isCorrect = this.isSelectionAnswerCorrect(question, selectedAnswer);
         }
 
         // Store correctness result for this question
@@ -990,11 +989,31 @@ export class QuizManager {
      */
     selectAnswer(optionIndex) {
         const questionIndex = this.currentQuestionIndex;
-        this.answers[questionIndex] = optionIndex;
+        const question = this.questions[questionIndex];
+        const selectionCount = this.getQuestionSelectionCount(question);
+        const currentAnswer = this.answers[questionIndex];
+
+        if (selectionCount <= 1) {
+            this.answers[questionIndex] = optionIndex;
+        } else {
+            const currentSelections = Array.isArray(currentAnswer) ? [...currentAnswer] : [];
+            const existingIndex = currentSelections.indexOf(optionIndex);
+
+            if (existingIndex >= 0) {
+                currentSelections.splice(existingIndex, 1);
+            } else if (currentSelections.length < selectionCount) {
+                currentSelections.push(optionIndex);
+            } else {
+                UIHelpers.showToast(`This question requires ${selectionCount} answers. Deselect one option before choosing another.`, 'warning');
+                return;
+            }
+
+            this.answers[questionIndex] = currentSelections;
+        }
         
         eventBus.emit('quiz:answerSelected', {
             questionIndex,
-            answer: optionIndex
+            answer: this.answers[questionIndex]
         });
         
         // Re-render to show selection
@@ -1007,6 +1026,87 @@ export class QuizManager {
      */
     getCurrentAnswer() {
         return this.answers[this.currentQuestionIndex];
+    }
+
+    getStoredCorrectAnswer(question = {}) {
+        if (Array.isArray(question.correct_answer)) return [...question.correct_answer];
+        if (Array.isArray(question.correctAnswer)) return [...question.correctAnswer];
+        if (Array.isArray(question.correct_answers)) return [...question.correct_answers];
+        if (Array.isArray(question.correctAnswers)) return [...question.correctAnswers];
+        if (question.correct_answer !== undefined) return question.correct_answer;
+        return question.correctAnswer;
+    }
+
+    getCorrectAnswerIndices(question = {}) {
+        const raw = this.getStoredCorrectAnswer(question);
+        if (Array.isArray(raw)) {
+            return raw.filter(idx => Number.isInteger(idx));
+        }
+        return Number.isInteger(raw) ? [raw] : [];
+    }
+
+    getQuestionSelectionCount(question = {}) {
+        const explicit = Number.parseInt(question.selection_count ?? question.selectionCount, 10);
+        if (Number.isInteger(explicit) && explicit > 0) {
+            return explicit;
+        }
+
+        const correctIndices = this.getCorrectAnswerIndices(question);
+        if (correctIndices.length > 1) {
+            return correctIndices.length;
+        }
+
+        const sourceText = [
+            question.prompt,
+            question.question,
+            question.text,
+            question.title,
+            question.stem
+        ].filter(Boolean).join(' ');
+
+        if (!sourceText) return 1;
+
+        const wordToNumber = {
+            one: 1,
+            two: 2,
+            three: 3,
+            four: 4,
+            five: 5,
+            six: 6
+        };
+
+        const match = sourceText.match(/\b(?:select|choose|pick|identify|mark)\s+(?:the\s+)?(one|two|three|four|five|six|\d+)\b/i)
+            || sourceText.match(/\b(?:which|what)\s+(one|two|three|four|five|six|\d+)\b/i);
+
+        if (!match) return 1;
+
+        const token = match[1].toLowerCase();
+        return wordToNumber[token] || Number.parseInt(token, 10) || 1;
+    }
+
+    normalizeSelectionAnswer(question = {}, selectedAnswer) {
+        const selectionCount = this.getQuestionSelectionCount(question);
+        if (selectionCount <= 1) {
+            return Number.isInteger(selectedAnswer) ? selectedAnswer : undefined;
+        }
+
+        if (!Array.isArray(selectedAnswer)) return [];
+        return selectedAnswer
+            .filter(idx => Number.isInteger(idx))
+            .sort((a, b) => a - b);
+    }
+
+    isSelectionAnswerCorrect(question = {}, selectedAnswer) {
+        const correctIndices = this.getCorrectAnswerIndices(question).sort((a, b) => a - b);
+        if (!correctIndices.length) return false;
+
+        const normalizedAnswer = this.normalizeSelectionAnswer(question, selectedAnswer);
+        if (Array.isArray(normalizedAnswer)) {
+            if (normalizedAnswer.length !== correctIndices.length) return false;
+            return normalizedAnswer.every((idx, pos) => idx === correctIndices[pos]);
+        }
+
+        return normalizedAnswer === correctIndices[0];
     }
 
     /**
@@ -1208,9 +1308,7 @@ export class QuizManager {
                 } else {
                     const qMarks = PSA_MARKS.mcq;
                     marksAvailable += qMarks;
-                    const correctAnswerIdx = question.correct_answer !== undefined
-                        ? question.correct_answer : question.correctAnswer;
-                    if (stored === correctAnswerIdx) {
+                    if (this.isSelectionAnswerCorrect(question, stored)) {
                         correct++;
                         marksEarned += qMarks;
                     }
@@ -1566,13 +1664,12 @@ export class QuizManager {
             return question;
         }
 
-        // Get correct answer index - support both naming conventions
-        const originalCorrectAnswer = question.correct_answer !== undefined ? question.correct_answer : question.correctAnswer;
-        
-        // Validate correct_answer index is within bounds
-        if (originalCorrectAnswer === null || originalCorrectAnswer === undefined || 
-            originalCorrectAnswer < 0 || originalCorrectAnswer >= question.options.length) {
-            console.warn('⚠️ Invalid correct_answer index:', originalCorrectAnswer, 'for question with', question.options.length, 'options');
+        // Get correct answer index(es) - support both naming conventions
+        const originalCorrectAnswers = this.getCorrectAnswerIndices(question);
+
+        // Validate correct_answer indices are within bounds
+        if (!originalCorrectAnswers.length || originalCorrectAnswers.some(idx => idx < 0 || idx >= question.options.length)) {
+            console.warn('⚠️ Invalid correct_answer index:', originalCorrectAnswers, 'for question with', question.options.length, 'options');
             question.correct_answer = 0; // Default to first option as fallback
             return question;
         }
@@ -1590,14 +1687,26 @@ export class QuizManager {
         const shuffledQuestion = { ...question };
         shuffledQuestion.options = optionPairs.map(pair => pair.option);
         
-        // Update the correct answer index to match the new position
-        const correctOptionPair = optionPairs.find(pair => pair.originalIndex === originalCorrectAnswer);
-        if (correctOptionPair) {
-            const newCorrectIndex = optionPairs.indexOf(correctOptionPair);
-            shuffledQuestion.correct_answer = newCorrectIndex;
-            // Also update correctAnswer (camelCase) to ensure consistency
-            shuffledQuestion.correctAnswer = newCorrectIndex;
-            console.log(`🔀 Shuffled question: original answer index ${originalCorrectAnswer} → new index ${newCorrectIndex}`);
+        // Update the correct answer index(es) to match the new position
+        const newCorrectIndices = originalCorrectAnswers
+            .map((originalIndex) => {
+                const pair = optionPairs.find(optionPair => optionPair.originalIndex === originalIndex);
+                return pair ? optionPairs.indexOf(pair) : -1;
+            })
+            .filter(idx => idx >= 0)
+            .sort((a, b) => a - b);
+
+        if (newCorrectIndices.length === originalCorrectAnswers.length) {
+            if (newCorrectIndices.length === 1) {
+                shuffledQuestion.correct_answer = newCorrectIndices[0];
+                shuffledQuestion.correctAnswer = newCorrectIndices[0];
+            } else {
+                shuffledQuestion.correct_answer = [...newCorrectIndices];
+                shuffledQuestion.correctAnswer = [...newCorrectIndices];
+                shuffledQuestion.correct_answers = [...newCorrectIndices];
+                shuffledQuestion.correctAnswers = [...newCorrectIndices];
+            }
+            console.log(`🔀 Shuffled question: original answer index ${originalCorrectAnswers.join(', ')} → new index ${newCorrectIndices.join(', ')}`);
         } else {
             console.error('❌ Failed to find correct option pair for question:', question.title);
             shuffledQuestion.correct_answer = 0; // Default to first option
@@ -1646,13 +1755,12 @@ export class QuizManager {
             questionTimes: this.questionTimes,
             flaggedCount: this.flaggedQuestions.size,
             answers: this.questions.map((q, i) => {
-                const correctAnswerIdx = q.correct_answer !== undefined ? q.correct_answer : q.correctAnswer;
                 return {
                     questionNumber: i + 1,
                     question: q.question?.substring(0, 100) + '...', // Truncated for export
                     yourAnswer: this.answers[i],
-                    correctAnswer: correctAnswerIdx,
-                    isCorrect: this.answers[i] === correctAnswerIdx,
+                    correctAnswer: this.getStoredCorrectAnswer(q),
+                    isCorrect: this.isSelectionAnswerCorrect(q, this.answers[i]),
                     timeSpent: this.questionTimes[i] || 0,
                     flagged: this.flaggedQuestions.has(i),
                     ruledOutOptions: this.ruledOutAnswers[i]?.length || 0
@@ -2227,7 +2335,7 @@ export class QuizManager {
         return questions;
     }
 
-    /** Parse a PSA MCQ block — options marked A. ... with ✓ on correct option */
+    /** Parse a PSA MCQ block — options marked A. ... with ✓ on correct option(s) */
     _parsePsaMcq(body, psaSection, specialty) {
         // Extract blockquote explanation (> lines at end)
         const expMatch = body.match(/\n(>\s+[\s\S]+)$/);
@@ -2239,7 +2347,7 @@ export class QuizManager {
         // Collect options
         const lines = bodyNoExp.split('\n');
         const options = [];
-        let correctIndex = null;
+        const correctIndices = [];
         const questionLines = [];
         let inOptions = false;
 
@@ -2249,14 +2357,14 @@ export class QuizManager {
                 inOptions = true;
                 const hasCheck = optMatch[2].includes('✓');
                 const optText  = optMatch[2].replace(/\s*✓\s*/g, '').trim();
-                if (hasCheck) correctIndex = options.length;
+                if (hasCheck) correctIndices.push(options.length);
                 options.push(optText);
             } else if (!inOptions) {
                 questionLines.push(line);
             }
         }
 
-        if (!options.length || correctIndex === null) return null;
+        if (!options.length || !correctIndices.length) return null;
 
         // Split scenario from direct question — use the LAST meaningful bold element as the prompt
         const allText = questionLines.join('\n').trim();
@@ -2274,6 +2382,8 @@ export class QuizManager {
         }
         if (!prompt) { prompt = allText; scenario = ''; }
 
+        const selectionCount = correctIndices.length;
+
         return {
             question_type: 'mcq',
             psa_section:   psaSection,
@@ -2281,8 +2391,11 @@ export class QuizManager {
             scenario:      scenario || undefined,
             prompt,
             options,
-            correct_answer: correctIndex,
-            correctAnswer:  correctIndex,
+            correct_answer: selectionCount > 1 ? [...correctIndices] : correctIndices[0],
+            correctAnswer:  selectionCount > 1 ? [...correctIndices] : correctIndices[0],
+            correct_answers: selectionCount > 1 ? [...correctIndices] : undefined,
+            correctAnswers: selectionCount > 1 ? [...correctIndices] : undefined,
+            selection_count: selectionCount,
             explanation,
         };
     }
@@ -3038,8 +3151,7 @@ export class QuizManager {
         Object.keys(this.submittedAnswers).forEach(questionIndex => {
             const question = this.questions[questionIndex];
             const selected = this.answers[questionIndex];
-            const correctIdx = question ? (question.correct_answer !== undefined ? question.correct_answer : question.correctAnswer) : undefined;
-            if (question && selected !== undefined && selected === correctIdx) {
+            if (question && selected !== undefined && this.isSelectionAnswerCorrect(question, selected)) {
                 correctAnswers++;
             }
         });
@@ -3078,9 +3190,9 @@ export class QuizManager {
             const index = parseInt(questionIndex);
             const question = this.questions[index];
             const selectedAnswer = this.answers[questionIndex];
-            const correctIdx = question ? (question.correct_answer !== undefined ? question.correct_answer : question.correctAnswer) : undefined;
+            const correctIdx = question ? this.getStoredCorrectAnswer(question) : undefined;
 
-            if (question && selectedAnswer !== undefined && selectedAnswer !== correctIdx) {
+            if (question && selectedAnswer !== undefined && !this.isSelectionAnswerCorrect(question, selectedAnswer)) {
                 incorrectQuestions.push({
                     index: index,
                     question: question,
@@ -3103,7 +3215,7 @@ export class QuizManager {
             const index = parseInt(questionIndex);
             const question = this.questions[index];
             const selectedAnswer = this.answers[questionIndex];
-            const correctIdx = question ? (question.correct_answer !== undefined ? question.correct_answer : question.correctAnswer) : undefined;
+            const correctIdx = question ? this.getStoredCorrectAnswer(question) : undefined;
 
             if (question) {
                 answered.push({
@@ -3162,10 +3274,19 @@ export class QuizManager {
 
             <div class="answered-questions">
                 <h3>📝 Question Review</h3>
-                ${data.answeredQuestionsList.length > 0 ? data.answeredQuestionsList.map(q => `
+                ${data.answeredQuestionsList.length > 0 ? data.answeredQuestionsList.map(q => {
+                    const yourAnswerIndices = Array.isArray(q.yourAnswer) ? q.yourAnswer : (Number.isInteger(q.yourAnswer) ? [q.yourAnswer] : []);
+                    const correctAnswerIndices = Array.isArray(q.correctAnswer) ? q.correctAnswer : (Number.isInteger(q.correctAnswer) ? [q.correctAnswer] : []);
+                    const isCorrect = this.isSelectionAnswerCorrect(q.question, q.yourAnswer);
+                    const answerLabel = (indices) => {
+                        if (!indices.length || !Array.isArray(q.question.options)) return 'N/A';
+                        return indices.map(idx => q.question.options[idx]).filter(Boolean).map(option => this.cleanTextForPDF(option)).join('; ') || 'N/A';
+                    };
+
+                    return `
                     <div class="incorrect-question">
-                        <div class="question-header" style="color: ${q.yourAnswer === q.correctAnswer ? '#059669' : '#dc2626'};">
-                            <strong>Question ${q.index + 1}:</strong> ${q.yourAnswer === q.correctAnswer ? '✅ Correct' : '❌ Incorrect'}
+                        <div class="question-header" style="color: ${isCorrect ? '#059669' : '#dc2626'};">
+                            <strong>Question ${q.index + 1}:</strong> ${isCorrect ? '✅ Correct' : '❌ Incorrect'}
                         </div>
                         ${q.question.scenario ? `
                             <div class="question-scenario">
@@ -3190,14 +3311,14 @@ export class QuizManager {
                                 <strong>Options:</strong>
                                 <ol type="A">
                                     ${q.question.options.map((option, idx) => `
-                                        <li class="${idx === q.yourAnswer ? 'your-answer' : ''} ${idx === q.correctAnswer ? 'correct-answer' : ''}">${this.cleanTextForPDF(option)}</li>
+                                        <li class="${yourAnswerIndices.includes(idx) ? 'your-answer' : ''} ${correctAnswerIndices.includes(idx) ? 'correct-answer' : ''}">${this.cleanTextForPDF(option)}</li>
                                     `).join('')}
                                 </ol>
                             </div>
                         ` : ''}
                         <div class="answer-analysis">
-                            <p><strong>Your Answer:</strong> ${q.yourAnswer != null ? this.cleanTextForPDF(q.question.options[q.yourAnswer] || 'N/A') : 'N/A'}</p>
-                            <p><strong>Correct Answer:</strong> ${q.correctAnswer != null ? this.cleanTextForPDF(q.question.options[q.correctAnswer] || 'N/A') : 'N/A'}</p>
+                            <p><strong>Your Answer:</strong> ${answerLabel(yourAnswerIndices)}</p>
+                            <p><strong>Correct Answer:</strong> ${answerLabel(correctAnswerIndices)}</p>
                         </div>
                         ${includeExplanations && ((q.question.explanations && q.question.explanations.length) || q.question.explanation) ? `
                             <div class="explanation-section">
@@ -3206,7 +3327,8 @@ export class QuizManager {
                             </div>
                         ` : ''}
                     </div>
-                `).join('') : '<p>No answered questions available.</p>'}
+                `;
+                }).join('') : '<p>No answered questions available.</p>'}
                 ${isPartialReport ? '<p><em>Note: Only showing answered questions. Continue the quiz for complete analysis.</em></p>' : ''}
             </div>
         `;

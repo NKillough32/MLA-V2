@@ -910,7 +910,7 @@ class PWAQuizLoader:
     @staticmethod
     def _parse_psa_mcq(num, body, psa_section, specialty):
         explanation, body_no_exp = PWAQuizLoader._psa_get_explanation(body)
-        options, correct_index, question_lines = [], None, []
+        options, correct_indices, question_lines = [], [], []
         in_options = False
         for line in body_no_exp.split('\n'):
             om = re.match(r'^([A-E])\.\s+(.+)', line)
@@ -919,13 +919,14 @@ class PWAQuizLoader:
                 has_check = '\u2713' in om.group(2)
                 opt_text = om.group(2).replace('\u2713', '').strip()
                 if has_check:
-                    correct_index = len(options)
+                    correct_indices.append(len(options))
                 options.append(opt_text)
             elif not in_options:
                 question_lines.append(line)
-        if not options or correct_index is None:
+        if not options or not correct_indices:
             return None
         scenario, prompt = PWAQuizLoader._psa_bold_split('\n'.join(question_lines).strip())
+        selection_count = len(correct_indices)
         return {
             'id': num,
             'question_type': 'mcq',
@@ -934,8 +935,11 @@ class PWAQuizLoader:
             'scenario': scenario or None,
             'prompt': prompt,
             'options': options,
-            'correct_answer': correct_index,
-            'correctAnswer': correct_index,
+            'correct_answer': correct_indices if selection_count > 1 else correct_indices[0],
+            'correctAnswer': correct_indices if selection_count > 1 else correct_indices[0],
+            'correct_answers': correct_indices if selection_count > 1 else None,
+            'correctAnswers': correct_indices if selection_count > 1 else None,
+            'selection_count': selection_count,
             'explanation': explanation,
         }
 

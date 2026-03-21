@@ -5633,6 +5633,9 @@ class MLAQuizApp {
         let html = '';
 
         const qType = question.question_type || 'mcq';
+        const selectionCount = qType === 'mcq' && typeof quizManager?.getQuestionSelectionCount === 'function'
+            ? Math.max(1, quizManager.getQuestionSelectionCount(question))
+            : 1;
 
         // Add scenario if present and different from prompt (V1-style blue background)
         // Skip for 'review' type — it renders its own styled scenario box below
@@ -5655,6 +5658,12 @@ class MLAQuizApp {
         const questionText = question.prompt || (question.scenario ? '' : question.text) || '';
         if (questionText) {
             html += `<div class="prompt" data-highlight-section="prompt" style="background: #fefce8; border-left: 4px solid #eab308; padding: 12px; border-radius: 6px; margin-bottom: 8px; font-weight: 500;"><h4 style="margin: 0 0 8px 0; color: #a16207;">Question:</h4><div>${this.formatText(questionText)}</div></div>`;
+        }
+
+        if (qType === 'mcq' && selectionCount > 1 && !submitted) {
+            html += `<div style="margin-bottom:12px;padding:10px 12px;border-radius:8px;background:rgba(99,102,241,0.08);border:1px solid rgba(99,102,241,0.24);color:var(--text-primary,#1e293b);font-size:0.9rem;font-weight:600;">
+                Select ${selectionCount} answers.
+            </div>`;
         }
 
         // ── PSA CALCULATION ───────────────────────────────────────────────────────
@@ -5745,6 +5754,23 @@ class MLAQuizApp {
             const partB   = question.part_b || {};
             const marks_a = question.marks_a ?? 2;
             const marks_b = question.marks_b ?? 2;
+            const storedAnswer = submitted ? (answer || {}) : {};
+            const sharedOptions = Array.isArray(partA.options)
+                && Array.isArray(partB.options)
+                && partA.options.length > 0
+                && partA.options.length === partB.options.length
+                && partA.options.every((opt, idx) => opt === partB.options[idx]);
+
+            const renderPartSummary = (partKey, label, marks, part, storedPartAnswer) => {
+                const userIdx = storedPartAnswer?.[partKey];
+                const partOk = typeof userIdx === 'number' && userIdx === part.correct;
+                const correctLetter = String.fromCharCode(65 + (part.correct ?? 0));
+                return `<div style="margin-top:12px;padding:8px 12px;border-radius:6px;font-size:0.88rem;font-weight:600;${partOk ? 'background:#dcfce7;color:#15803d;' : 'background:#fee2e2;color:#b91c1c;'}">
+                    ${partOk
+                        ? `✅ ${label}: ${marks}/${marks} marks`
+                        : `❌ ${label}: 0/${marks} marks. Correct answer: <strong>${correctLetter}</strong>`}
+                </div>`;
+            };
 
             const renderPart = (part, partKey, label, marks, storedAnswer, show_submitted) => {
                 let out = `<div style="background:var(--card-bg,#fff);border:1.5px solid #6366f1;border-radius:10px;padding:16px 18px;margin-bottom:0;">
@@ -5792,7 +5818,6 @@ class MLAQuizApp {
                 return out;
             };
 
-            const storedAnswer = submitted ? (answer || {}) : {};
             if (question.scenario) {
                 html += `<div style="background:var(--bg-secondary,#f8fafc);border-left:4px solid #6366f1;border-radius:6px;padding:14px 18px;margin-bottom:16px;font-size:0.95rem;line-height:1.65;color:var(--text-primary,#1e293b);">
                     <div style="font-weight:700;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.06em;color:#6366f1;margin-bottom:8px;">Clinical Scenario</div>
@@ -5800,8 +5825,71 @@ class MLAQuizApp {
                 </div>`;
             }
             html += `<div class="psa-review-panel" style="display:flex;flex-direction:column;gap:14px;">`;
-            html += renderPart(partA, 'a', 'Part A', marks_a, storedAnswer, submitted);
-            html += renderPart(partB, 'b', 'Part B', marks_b, storedAnswer, submitted);
+            if (sharedOptions) {
+                html += `<div style="background:var(--card-bg,#fff);border:1.5px solid #6366f1;border-radius:10px;padding:16px 18px;margin-bottom:0;">
+                    <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:14px;padding-bottom:12px;border-bottom:1px solid #e0e7ff;">
+                        <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;">
+                            <span style="font-weight:700;font-size:0.95rem;color:#6366f1;letter-spacing:0.02em;">Part A</span>
+                            <span style="background:#eef2ff;color:#4338ca;border-radius:20px;padding:2px 10px;font-size:0.78rem;font-weight:600;">${marks_a} mark${marks_a !== 1 ? 's' : ''}</span>
+                        </div>
+                        <div style="font-weight:600;font-size:0.93rem;color:var(--text-primary,#1e293b);line-height:1.5;">${this.formatText(partA.stem || '')}</div>
+                        <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:4px;">
+                            <span style="font-weight:700;font-size:0.95rem;color:#6366f1;letter-spacing:0.02em;">Part B</span>
+                            <span style="background:#eef2ff;color:#4338ca;border-radius:20px;padding:2px 10px;font-size:0.78rem;font-weight:600;">${marks_b} mark${marks_b !== 1 ? 's' : ''}</span>
+                        </div>
+                        <div style="font-weight:600;font-size:0.93rem;color:var(--text-primary,#1e293b);line-height:1.5;">${this.formatText(partB.stem || '')}</div>
+                    </div>
+                    <div style="display:flex;justify-content:flex-end;gap:12px;padding:0 8px 6px;font-size:0.78rem;font-weight:700;color:#4f46e5;">
+                        <span style="min-width:42px;text-align:center;">A</span>
+                        <span style="min-width:42px;text-align:center;">B</span>
+                    </div>
+                    <div style="display:flex;flex-direction:column;gap:8px;">`;
+
+                (partA.options || []).forEach((opt, idx) => {
+                    const letter = String.fromCharCode(65 + idx);
+                    const aSelected = storedAnswer?.a === idx;
+                    const bSelected = storedAnswer?.b === idx;
+                    const aCorrect = idx === partA.correct;
+                    const bCorrect = idx === partB.correct;
+                    const aCellStyle = submitted
+                        ? `${aCorrect ? 'background:#dcfce7;border-color:#22c55e;color:#15803d;' : aSelected ? 'background:#fee2e2;border-color:#ef4444;color:#b91c1c;' : 'background:transparent;border-color:var(--border-color,#e2e8f0);color:var(--text-primary,#1e293b);'}`
+                        : 'background:transparent;border-color:var(--border-color,#e2e8f0);color:var(--text-primary,#1e293b);';
+                    const bCellStyle = submitted
+                        ? `${bCorrect ? 'background:#dcfce7;border-color:#22c55e;color:#15803d;' : bSelected ? 'background:#fee2e2;border-color:#ef4444;color:#b91c1c;' : 'background:transparent;border-color:var(--border-color,#e2e8f0);color:var(--text-primary,#1e293b);'}`
+                        : 'background:transparent;border-color:var(--border-color,#e2e8f0);color:var(--text-primary,#1e293b);';
+
+                    html += `<div style="display:grid;grid-template-columns:minmax(0,1fr) 42px 42px;gap:10px;align-items:center;padding:10px 12px;border-radius:8px;border:1.5px solid var(--border-color,#e2e8f0);">
+                        <div style="display:flex;align-items:flex-start;gap:10px;min-width:0;">
+                            <span style="font-weight:700;min-width:1.4em;flex-shrink:0;">${letter}.</span>
+                            <span style="flex:1;min-width:0;">${this.formatText(opt)}</span>
+                        </div>
+                        <div style="display:flex;align-items:center;justify-content:center;min-height:40px;border:1.5px solid;border-radius:8px;${aCellStyle}">
+                            ${submitted
+                                ? `${aCorrect ? '✓' : aSelected ? '✗' : ''}`
+                                : `<input type="radio" name="psa-review-a" value="${idx}" ${storedAnswer?.a === idx ? 'checked' : ''} aria-label="Select option ${letter} for Part A" style="accent-color:#6366f1;">`}
+                        </div>
+                        <div style="display:flex;align-items:center;justify-content:center;min-height:40px;border:1.5px solid;border-radius:8px;${bCellStyle}">
+                            ${submitted
+                                ? `${bCorrect ? '✓' : bSelected ? '✗' : ''}`
+                                : `<input type="radio" name="psa-review-b" value="${idx}" ${storedAnswer?.b === idx ? 'checked' : ''} aria-label="Select option ${letter} for Part B" style="accent-color:#6366f1;">`}
+                        </div>
+                    </div>`;
+                });
+
+                html += `</div>`;
+                if (submitted) {
+                    html += renderPartSummary('a', 'Part A', marks_a, partA, storedAnswer);
+                    html += renderPartSummary('b', 'Part B', marks_b, partB, storedAnswer);
+                } else {
+                    html += `<div style="margin-top:12px;font-size:0.85rem;color:var(--text-secondary,#475569);">
+                        Choose one answer for <strong>Part A</strong> and one answer for <strong>Part B</strong>.
+                    </div>`;
+                }
+                html += `</div>`;
+            } else {
+                html += renderPart(partA, 'a', 'Part A', marks_a, storedAnswer, submitted);
+                html += renderPart(partB, 'b', 'Part B', marks_b, storedAnswer, submitted);
+            }
             if (submitted) {
                 const aOk = (storedAnswer.a === partA.correct);
                 const bOk = (storedAnswer.b === partB.correct);
@@ -5884,9 +5972,15 @@ class MLAQuizApp {
         // ── STANDARD MCQ ─────────────────────────────────────────────────────────
         } else if (question.options && question.options.length > 0) {
             html += '<div class="new-options">';
+            const selectedAnswers = Array.isArray(answer)
+                ? answer
+                : (typeof answer === 'number' ? [answer] : []);
+            const correctAnswerIndices = typeof quizManager?.getCorrectAnswerIndices === 'function'
+                ? quizManager.getCorrectAnswerIndices(question)
+                : [question.correct_answer !== undefined ? question.correct_answer : question.correctAnswer].filter(idx => typeof idx === 'number');
             question.options.forEach((option, idx) => {
-                const isSelected = answer === idx;
-                const isCorrect = (question.correct_answer || question.correctAnswer) === idx;
+                const isSelected = selectedAnswers.includes(idx);
+                const isCorrect = correctAnswerIndices.includes(idx);
                 const isRuledOut = ruledOut && ruledOut.includes(idx);
                 
                 let optionClass = 'new-option option';
@@ -5911,14 +6005,18 @@ class MLAQuizApp {
 
         // ── FEEDBACK (MCQ only — PSA types render their own feedback above) ──────
         if (submitted && qType === 'mcq') {
-            const correctAnswerIdx = question.correct_answer !== undefined
-                ? question.correct_answer : question.correctAnswer;
-            const isCorrect = answer === correctAnswerIdx;
-            const correctLetter = String.fromCharCode(65 + correctAnswerIdx);
+            const correctAnswerIndices = typeof quizManager?.getCorrectAnswerIndices === 'function'
+                ? quizManager.getCorrectAnswerIndices(question)
+                : [question.correct_answer !== undefined ? question.correct_answer : question.correctAnswer].filter(idx => typeof idx === 'number');
+            const isCorrect = typeof quizManager?.isSelectionAnswerCorrect === 'function'
+                ? quizManager.isSelectionAnswerCorrect(question, answer)
+                : answer === correctAnswerIndices[0];
+            const correctLetters = correctAnswerIndices.map(idx => String.fromCharCode(65 + idx));
+            const correctLabel = correctLetters.length > 1 ? correctLetters.join(', ') : correctLetters[0];
             
             html += `
                 <div class="feedback-container ${isCorrect ? 'correct' : 'incorrect'}">
-                    ${isCorrect ? '✅ Correct!' : `❌ Incorrect. The correct answer is ${correctLetter}.`}
+                    ${isCorrect ? '✅ Correct!' : `❌ Incorrect. The correct answer${correctLetters.length > 1 ? 's are' : ' is'} ${correctLabel}.`}
                 </div>
             `;
 
@@ -6755,6 +6853,19 @@ class MLAQuizApp {
         if (currentAnswer === undefined) {
             uiManager.showToast('Please select an answer', 'warning');
             return;
+        }
+
+        const question = quizManager.questions?.[quizManager.currentQuestionIndex];
+        const selectionCount = typeof quizManager?.getQuestionSelectionCount === 'function'
+            ? Math.max(1, quizManager.getQuestionSelectionCount(question))
+            : 1;
+
+        if (selectionCount > 1) {
+            const selectedCount = Array.isArray(currentAnswer) ? currentAnswer.length : 0;
+            if (selectedCount !== selectionCount) {
+                uiManager.showToast(`Please select ${selectionCount} answers before submitting`, 'warning');
+                return;
+            }
         }
 
         quizManager.submitAnswer(currentAnswer);
