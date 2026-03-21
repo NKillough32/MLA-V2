@@ -504,8 +504,8 @@ export class QuizManager {
         } else if (qType === 'review') {
             // selectedAnswer = { a: indexOrNull, b: indexOrNull }
             const ua = selectedAnswer || {};
-            const aOk = typeof ua.a === 'number' && ua.a === question.part_a?.correct;
-            const bOk = typeof ua.b === 'number' && ua.b === question.part_b?.correct;
+            const aOk = this.isReviewPartAnswerCorrect(question.part_a || {}, ua.a);
+            const bOk = this.isReviewPartAnswerCorrect(question.part_b || {}, ua.b);
             isCorrect = aOk || bOk; // partial credit counts as attempted correct
             correctAnswerIdx = '_review';
         } else {
@@ -1084,6 +1084,72 @@ export class QuizManager {
         return wordToNumber[token] || Number.parseInt(token, 10) || 1;
     }
 
+    getReviewPartSelectionCount(part = {}) {
+        const explicit = Number.parseInt(part.selection_count ?? part.selectionCount, 10);
+        if (Number.isInteger(explicit) && explicit > 0) {
+            return explicit;
+        }
+
+        const correct = Array.isArray(part.correct)
+            ? part.correct.filter(idx => Number.isInteger(idx))
+            : (Number.isInteger(part.correct) ? [part.correct] : []);
+        if (correct.length > 1) {
+            return correct.length;
+        }
+
+        const sourceText = [
+            part.prompt,
+            part.question,
+            part.text,
+            part.title,
+            part.stem
+        ].filter(Boolean).join(' ');
+
+        if (!sourceText) return 1;
+
+        const wordToNumber = {
+            one: 1,
+            two: 2,
+            three: 3,
+            four: 4,
+            five: 5,
+            six: 6
+        };
+
+        const match = sourceText.match(/\b(?:select|choose|pick|identify|mark)\s+(?:the\s+)?(one|two|three|four|five|six|\d+)\b/i)
+            || sourceText.match(/\b(?:which|what)\s+(one|two|three|four|five|six|\d+)\b/i);
+
+        if (!match) return 1;
+
+        const token = match[1].toLowerCase();
+        return wordToNumber[token] || Number.parseInt(token, 10) || 1;
+    }
+
+    normalizeReviewPartAnswer(part = {}, selectedAnswer) {
+        const selectionCount = this.getReviewPartSelectionCount(part);
+        if (selectionCount <= 1) {
+            return Number.isInteger(selectedAnswer) ? selectedAnswer : undefined;
+        }
+
+        if (!Array.isArray(selectedAnswer)) return [];
+        return [...new Set(selectedAnswer.filter(idx => Number.isInteger(idx)))].sort((a, b) => a - b);
+    }
+
+    isReviewPartAnswerCorrect(part = {}, selectedAnswer) {
+        const correct = Array.isArray(part.correct)
+            ? part.correct.filter(idx => Number.isInteger(idx)).sort((a, b) => a - b)
+            : (Number.isInteger(part.correct) ? [part.correct] : []);
+        if (!correct.length) return false;
+
+        const normalizedAnswer = this.normalizeReviewPartAnswer(part, selectedAnswer);
+        if (Array.isArray(normalizedAnswer)) {
+            if (normalizedAnswer.length !== correct.length) return false;
+            return normalizedAnswer.every((idx, pos) => idx === correct[pos]);
+        }
+
+        return normalizedAnswer === correct[0];
+    }
+
     normalizeSelectionAnswer(question = {}, selectedAnswer) {
         const selectionCount = this.getQuestionSelectionCount(question);
         if (selectionCount <= 1) {
@@ -1301,8 +1367,8 @@ export class QuizManager {
                     const marks_b = question.marks_b ?? 2;
                     marksAvailable += marks_a + marks_b;
                     const ua = stored || {};
-                    const aOk = typeof ua.a === 'number' && ua.a === question.part_a?.correct;
-                    const bOk = typeof ua.b === 'number' && ua.b === question.part_b?.correct;
+                    const aOk = this.isReviewPartAnswerCorrect(question.part_a || {}, ua.a);
+                    const bOk = this.isReviewPartAnswerCorrect(question.part_b || {}, ua.b);
                     marksEarned += (aOk ? marks_a : 0) + (bOk ? marks_b : 0);
                     if (aOk && bOk) correct++;
                 } else {
@@ -2463,6 +2529,31 @@ export class QuizManager {
     /** Parse a PSA PRESCRIPTION block — multi-field drug chart entry */
     /** Parse a PSA REVIEW block — two linked MCQ sub-questions (Part A + Part B) */
     _parsePsaReview(body, psaSection, specialty) {
+        const inferSelectionCount = (stem, correctIndices = []) => {
+            if (Array.isArray(correctIndices) && correctIndices.length > 1) {
+                return correctIndices.length;
+            }
+
+            if (!stem) return 1;
+
+            const wordToNumber = {
+                one: 1,
+                two: 2,
+                three: 3,
+                four: 4,
+                five: 5,
+                six: 6
+            };
+
+            const match = stem.match(/\b(?:select|choose|pick|identify|mark)\s+(?:the\s+)?(one|two|three|four|five|six|\d+)\b/i)
+                || stem.match(/\b(?:which|what)\s+(one|two|three|four|five|six|\d+)\b/i);
+
+            if (!match) return 1;
+
+            const token = match[1].toLowerCase();
+            return wordToNumber[token] || Number.parseInt(token, 10) || 1;
+        };
+
         // Extract MARKS_A / MARKS_B directives
         const getDir = (key) => {
             const m = body.match(new RegExp(`^${key}\\s*:\\s*(\\d+)`, 'im'));
@@ -2482,7 +2573,7 @@ export class QuizManager {
         const scenarioLines = [];
         let stem_a = '', stem_b = '';
         const opts_a = [], opts_b = [];
-        let correct_a = null, correct_b = null;
+        const correct_a = [], correct_b = [];
 
         for (const rawLine of lines) {
             const line = rawLine.trimEnd();
@@ -2506,14 +2597,14 @@ export class QuizManager {
                 const m = trimmed.match(/^([A-Z])\.\s+(.+)/);
                 if (m) {
                     const hasCheck = m[2].includes('✓');
-                    if (hasCheck) correct_a = opts_a.length;
+                    if (hasCheck) correct_a.push(opts_a.length);
                     opts_a.push(m[2].replace(/\s*✓\s*/g, '').trim());
                 }
             } else if (phase === 'part_b') {
                 const m = trimmed.match(/^([A-Z])\.\s+(.+)/);
                 if (m) {
                     const hasCheck = m[2].includes('✓');
-                    if (hasCheck) correct_b = opts_b.length;
+                    if (hasCheck) correct_b.push(opts_b.length);
                     opts_b.push(m[2].replace(/\s*✓\s*/g, '').trim());
                 }
             }
@@ -2538,8 +2629,8 @@ export class QuizManager {
                 tableRows.forEach((row, idx) => {
                     opts_a.push(row.optText);
                     opts_b.push(row.optText);
-                    if (row.tickA && correct_a === null) correct_a = idx;
-                    if (row.tickB && correct_b === null) correct_b = idx;
+                    if (row.tickA) correct_a.push(idx);
+                    if (row.tickB) correct_b.push(idx);
                 });
             }
         }
@@ -2568,8 +2659,18 @@ export class QuizManager {
             scenario,
             marks_a,
             marks_b,
-            part_a: { stem: stem_a, options: opts_a, correct: correct_a },
-            part_b: { stem: stem_b, options: opts_b, correct: correct_b },
+            part_a: {
+                stem: stem_a,
+                options: opts_a,
+                correct: correct_a.length <= 1 ? (correct_a[0] ?? null) : [...correct_a],
+                selection_count: inferSelectionCount(stem_a, correct_a)
+            },
+            part_b: {
+                stem: stem_b,
+                options: opts_b,
+                correct: correct_b.length <= 1 ? (correct_b[0] ?? null) : [...correct_b],
+                selection_count: inferSelectionCount(stem_b, correct_b)
+            },
             explanation,
             options:        undefined,
             correct_answer: '_review',
