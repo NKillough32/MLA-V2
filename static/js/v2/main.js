@@ -6449,6 +6449,11 @@ class MLAQuizApp {
                 btn.style.cssText = 'display:block;width:100%;margin-top:18px;padding:13px 24px;background:linear-gradient(135deg,#009f4d,#007a3a);color:#fff;border:none;border-radius:10px;font-size:16px;cursor:pointer;font-weight:700;letter-spacing:0.02em;box-shadow:0 2px 8px rgba(0,159,77,.30);transition:opacity .15s;';
                 btn.onclick = () => window._psaSubmitPrescribing();
                 prescribingPanel.appendChild(btn);
+
+                // Bind autocomplete to the PSA prescribing inputs
+                if (window.prescribingManager) {
+                    window.prescribingManager.bindPsaInputs();
+                }
             }
 
         } else if (submitted && (qType === 'calculation' || qType === 'prescription' || qType === 'prescribing' || qType === 'review')) {

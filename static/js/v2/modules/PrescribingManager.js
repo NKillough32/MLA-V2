@@ -1245,6 +1245,34 @@ class PrescribingManager {
         this._renderCdQuestion();
     }
 
+    /** Bind autocomplete dropdowns to the PSA quiz prescribing form fields.
+     *  Called from main.js each time a prescribing question is rendered. */
+    bindPsaInputs() {
+        this._bindAutolist('psaPrescribingDrug', () => this._autocompleteList, false);
+        this._bindAutolist('psaPrescribingRoute', () => [
+            'oral (PO)', 'PO', 'orally', 'intravenous (IV)', 'IV bolus', 'IV infusion',
+            'intramuscular (IM)', 'IM', 'subcutaneous (SC)', 'SC', 'inhaled', 'INH',
+            'nebulised (NEB)', 'NEB', 'sublingual (SL)', 'SL', 'buccal', 'oromucosal',
+            'rectal (PR)', 'PR', 'topical (TOP)', 'TOP', 'transdermal', 'nasal',
+            'vaginal (PV)', 'PV', 'intradermal', 'intravitreal',
+            'to both eyes', 'to left eye', 'to right eye',
+            'to both ears', 'to left ear', 'to right ear'
+        ], true);
+        this._bindAutolist('psaPrescribingFreq', () => [
+            'once only', 'daily', 'nightly', 'twice daily (12-hrly)', 'twice daily (as directed)',
+            'three times daily (8-hrly)', 'three times daily (as directed)',
+            'four times daily (6-hrly)', 'four times daily (as directed)',
+            'five times daily', 'six times daily (4-hrly)',
+            'every hour', 'every 2 hours (2-hrly)', 'every 3 hours (3-hrly)', 'every 30 minutes',
+            '12-hrly', '8-hrly', '6-hrly', '4-hrly', '3-hrly', '2-hrly',
+            'as required (PRN)', 'every other day', 'every 3 days', 'every 4 days',
+            'twice weekly', 'three times weekly', 'five times weekly', 'weekly',
+            'every 2 weeks', 'every 4 weeks/monthly', 'every 6 weeks',
+            'every 8 weeks (2-monthly)', 'every 12 weeks (3-monthly)',
+            'modified-release (m/r)', 'once (stat)', 'continuous IV infusion'
+        ], true);
+    }
+
     _exposeWindowHandlers() {
         window.prescribingManager = this;
 
