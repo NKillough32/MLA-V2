@@ -1415,9 +1415,9 @@ body {
 }
 
 [data-theme="dark"] .psa-rx-panel {
-    background: #071a0f !important;
+    background: #0d2116 !important;
     border-color: #4ade80 !important;
-    box-shadow: 0 2px 8px rgba(74,222,128,.12) !important;
+    box-shadow: 0 2px 12px rgba(74,222,128,.15) !important;
 }
 
 [data-theme="dark"] .psa-rx-title {
@@ -1429,19 +1429,21 @@ body {
 }
 
 [data-theme="dark"] .psa-rx-input {
-    background: var(--bg-tertiary) !important;
-    color: var(--text-primary) !important;
-    border-color: #4ade80 !important;
+    background: #132210 !important;
+    color: #d1fae5 !important;
+    border: 2px solid #4ade80 !important;
+    border-radius: 14px !important;
 }
 
 [data-theme="dark"] .psa-rx-input:focus {
     border-color: #86efac !important;
-    box-shadow: 0 0 0 3px rgba(74,222,128,.25) !important;
-    background: #071a10 !important;
+    box-shadow: 0 0 0 3px rgba(74,222,128,.30) !important;
+    background: #0f1f0d !important;
 }
 
 [data-theme="dark"] .psa-rx-input::placeholder {
-    color: #3d6b4a !important;
+    color: #4d7a59 !important;
+    font-style: italic;
 }
 
 [data-theme="dark"] .psa-rx-ok  { color: #4ade80 !important; }

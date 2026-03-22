@@ -147,6 +147,18 @@ class PrescribingManager {
                 .prx-autocomplete-dropdown li.active {
                     background: var(--v2-bg-hover, #f3f4f6);
                 }
+                [data-theme="dark"] .prx-autocomplete-dropdown {
+                    background: #1e293b;
+                    border-color: #334155;
+                    box-shadow: 0 4px 20px rgba(0,0,0,.45);
+                }
+                [data-theme="dark"] .prx-autocomplete-dropdown li {
+                    color: #f1f5f9;
+                }
+                [data-theme="dark"] .prx-autocomplete-dropdown li:hover,
+                [data-theme="dark"] .prx-autocomplete-dropdown li.active {
+                    background: #334155;
+                }
             `;
             document.head.appendChild(style);
         }
