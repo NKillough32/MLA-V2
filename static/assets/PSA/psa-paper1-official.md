@@ -334,8 +334,7 @@ U 5.1 mmol/L (2.5–7.0), Cr 72 µmol/L (60–110) (on admission).
 random plasma glucose 12.0 mmol/L (3.0–6.0) (today).
 CXR shows consolidation in left lung base.
 
-**Part A:** **Question A
-**Select the THREE prescriptions that are *most likely* to be contributing to his confusion.
+**Part A:** *Select the THREE prescriptions that are *most likely* to be contributing to his confusion.
 (*mark them with a tick in column A*)
 
 **Part B:** Select the ONE prescription that is *most likely* to be contributing to his hyperglycaemia.

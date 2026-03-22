@@ -15189,6 +15189,220 @@
                 margin-bottom: 10px !important;
             }
         </style>
+
+        <!-- ═══════════════════════════════════════════════════════════
+             PSA PANEL STYLES — Calculation, Prescription, Prescribing
+             ═══════════════════════════════════════════════════════════ -->
+        <style>
+        /* ── Calculation panel ── */
+        .psa-calc-panel {
+            background: #f0f9ff;
+            border: 2px solid #0ea5e9;
+            padding: 22px 24px 20px;
+            border-radius: 14px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 8px rgba(14,165,233,.10);
+        }
+        .psa-panel-label {
+            font-weight: 700;
+            font-size: 1rem;
+            color: #0369a1;
+            margin: 0 0 14px;
+            display: block;
+            letter-spacing: 0.01em;
+        }
+        .psa-calc-input-row {
+            display: flex;
+            gap: 0;
+            align-items: stretch;
+            margin-top: 4px;
+        }
+        .psa-calc-input {
+            padding: 14px 18px;
+            border: 2px solid #7dd3fc;
+            border-right: none;
+            border-radius: 12px 0 0 12px;
+            font-size: 22px;
+            font-weight: 700;
+            font-variant-numeric: tabular-nums;
+            letter-spacing: 0.04em;
+            text-align: center;
+            flex: 1;
+            min-width: 0;
+            background: #fff;
+            color: #0c4a6e;
+            transition: border-color .15s, box-shadow .15s;
+            box-sizing: border-box;
+        }
+        .psa-calc-input::placeholder {
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: normal;
+            color: #94a3b8;
+            font-style: italic;
+        }
+        .psa-calc-input:focus {
+            outline: none;
+            border-color: #0ea5e9;
+            box-shadow: 0 0 0 3px rgba(14,165,233,.22);
+            z-index: 1;
+        }
+        .psa-calc-input::-webkit-outer-spin-button,
+        .psa-calc-input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+        .psa-calc-input[type=number] { -moz-appearance: textfield; }
+        .psa-calc-icon { font-size: 1.1em; line-height: 1; }
+        .psa-calc-hint {
+            margin: 10px 0 0;
+            font-size: 12px;
+            color: #64748b;
+            letter-spacing: 0.01em;
+        }
+        .psa-calc-hint kbd {
+            display: inline-block;
+            padding: 1px 5px;
+            border: 1px solid #94a3b8;
+            border-radius: 4px;
+            font-size: 11px;
+            background: #f1f5f9;
+            color: #475569;
+        }
+        .psa-unit-label {
+            display: flex;
+            align-items: center;
+            padding: 0 18px;
+            background: #e0f2fe;
+            border: 2px solid #7dd3fc;
+            border-left: none;
+            border-radius: 0 12px 12px 0;
+            font-weight: 700;
+            font-size: 15px;
+            color: #0369a1;
+            white-space: nowrap;
+            user-select: none;
+        }
+        .psa-tolerance-note { font-size: 12px; opacity: 0.8; }
+        .psa-working-content { white-space: pre-line; }
+
+        /* ── Prescribing / Prescription panel ── */
+        .psa-rx-panel {
+            background: #f0fdf4;
+            border: 2px solid #86efac;
+            padding: 22px 24px 20px;
+            border-radius: 14px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 8px rgba(34,197,94,.10);
+        }
+        .psa-rx-title {
+            color: #15803d;
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: 0.01em;
+            margin-bottom: 16px !important;
+        }
+        .psa-rx-icon { font-size: 1.1em; line-height: 1; }
+        .psa-rx-fields {
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            gap: 10px 16px;
+            align-items: center;
+        }
+        .psa-rx-field { display: contents; }
+        .psa-rx-label {
+            font-weight: 700;
+            font-size: 0.92rem;
+            color: #166534;
+            white-space: nowrap;
+            text-align: right;
+            padding-right: 4px;
+        }
+        .psa-rx-input {
+            width: 100%;
+            padding: 13px 16px;
+            border: 2px solid #86efac;
+            border-radius: 12px;
+            font-size: 15px;
+            font-weight: 500;
+            background: #fff;
+            color: #111827;
+            box-sizing: border-box;
+            transition: border-color .15s, box-shadow .15s;
+        }
+        .psa-rx-input::placeholder {
+            color: #94a3b8;
+            font-style: italic;
+            font-size: 13px;
+        }
+        .psa-rx-input:focus {
+            outline: none;
+            border-color: #22c55e;
+            box-shadow: 0 0 0 3px rgba(34,197,94,.18);
+            background: #f0fdf4;
+        }
+        .psa-rx-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0 6px;
+        }
+        .psa-rx-table .psa-rx-label {
+            padding: 0 16px 0 0;
+            text-transform: none;
+            letter-spacing: normal;
+            font-size: 0.92rem;
+            vertical-align: middle;
+            white-space: nowrap;
+            width: 110px;
+            display: table-cell;
+            text-align: left;
+        }
+        .psa-rx-feedback-row { border-bottom: 1px solid var(--border-color); }
+        .psa-rx-result { padding: 6px 4px; font-weight: 500; }
+        .psa-rx-ok  { color: #059669; }
+        .psa-rx-err { color: #dc2626; }
+        .psa-rx-expected { padding: 6px 0 6px 12px; font-size: 13px; color: var(--text-secondary); }
+
+        /* ── Dark mode — Calculation ── */
+        [data-theme="dark"] .psa-calc-panel {
+            background: #0c1f2e !important;
+            border-color: #38bdf8 !important;
+            box-shadow: 0 2px 8px rgba(56,189,248,.12) !important;
+        }
+        [data-theme="dark"] .psa-panel-label { color: #7dd3fc !important; }
+        [data-theme="dark"] .psa-calc-input {
+            background: #0c2235 !important;
+            color: #e0f2fe !important;
+            border-color: #38bdf8 !important;
+            border-radius: 12px 0 0 12px !important;
+        }
+        [data-theme="dark"] .psa-calc-input::placeholder { color: #4e6a84 !important; }
+        [data-theme="dark"] .psa-calc-input:focus { box-shadow: 0 0 0 3px rgba(56,189,248,.25) !important; border-color: #38bdf8 !important; }
+        [data-theme="dark"] .psa-calc-hint { color: #4e6a84 !important; }
+        [data-theme="dark"] .psa-calc-hint kbd { background: #1e293b !important; border-color: #334155 !important; color: #7dd3fc !important; }
+        [data-theme="dark"] .psa-unit-label { background: #0c2d42 !important; border-color: #38bdf8 !important; color: #7dd3fc !important; border-radius: 0 12px 12px 0 !important; }
+
+        /* ── Dark mode — Prescribing ── */
+        [data-theme="dark"] .psa-rx-panel {
+            background: #0d2116 !important;
+            border-color: #4ade80 !important;
+            box-shadow: 0 2px 12px rgba(74,222,128,.15) !important;
+        }
+        [data-theme="dark"] .psa-rx-title { color: #86efac !important; }
+        [data-theme="dark"] .psa-rx-label { color: #86efac !important; }
+        [data-theme="dark"] .psa-rx-input {
+            background: #132210 !important;
+            color: #d1fae5 !important;
+            border: 2px solid #4ade80 !important;
+            border-radius: 12px !important;
+        }
+        [data-theme="dark"] .psa-rx-input:focus {
+            border-color: #86efac !important;
+            box-shadow: 0 0 0 3px rgba(74,222,128,.30) !important;
+            background: #0f1f0d !important;
+        }
+        [data-theme="dark"] .psa-rx-input::placeholder { color: #4d7a59 !important; font-style: italic; }
+        [data-theme="dark"] .psa-rx-ok  { color: #4ade80 !important; }
+        [data-theme="dark"] .psa-rx-err { color: #f87171 !important; }
+        [data-theme="dark"] .psa-rx-expected { color: var(--text-secondary) !important; }
+        </style>
 </head>
 <body>
     <!-- Navigation Bar -->
