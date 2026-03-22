@@ -1309,10 +1309,10 @@ body {
 
 .psa-rx-input {
     width: 100%;
-    padding: 15px 16px;
+    padding: 14px 18px;
     border: 2px solid #bbf7d0;
-    border-radius: 9px;
-    font-size: 17px;
+    border-radius: 14px;
+    font-size: 16px;
     font-weight: 500;
     background: #fff;
     color: #111827;
