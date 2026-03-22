@@ -103,31 +103,49 @@ class PrescribingManager {
             ...ABX_DATA.flatMap(item => (item.regimens || []).flatMap(reg => reg.drugs || []))
         ];
 
-        const uniqueSorted = [...new Set(
+        this._autocompleteList = [...new Set(
             knownDrugs
                 .flatMap(d => String(d || '').split('/'))
                 .map(d => d.trim())
                 .filter(Boolean)
         )].sort((a, b) => a.localeCompare(b));
 
-        this._bindDrugDatalist('prxDrug', 'prxDrugList', uniqueSorted);
-        this._bindDrugDatalist('prxIntDrugA', 'prxIntListA', uniqueSorted);
-        this._bindDrugDatalist('prxIntDrugB', 'prxIntListB', uniqueSorted);
-        this._bindDrugDatalist('prxIntDrugC', 'prxIntListC', uniqueSorted);
+        this._bindDrugDatalist('prxDrug', 'prxDrugList');
+        this._bindDrugDatalist('prxIntDrugA', 'prxIntListA');
+        this._bindDrugDatalist('prxIntDrugB', 'prxIntListB');
+        this._bindDrugDatalist('prxIntDrugC', 'prxIntListC');
+
+        // Asynchronously load full BNF drug list and merge in
+        fetch('/static/assets/PSA/bnf-drug-names.json')
+            .then(r => r.ok ? r.json() : null)
+            .then(bnfNames => {
+                if (!Array.isArray(bnfNames) || !bnfNames.length) return;
+                const merged = [...new Set([...this._autocompleteList, ...bnfNames])]
+                    .sort((a, b) => a.localeCompare(b));
+                this._autocompleteList = merged;
+                // Re-render any datalists that already have a value typed
+                ['prxDrug', 'prxIntDrugA', 'prxIntDrugB', 'prxIntDrugC'].forEach(id => {
+                    const el = document.getElementById(id);
+                    if (el && el.value) el.dispatchEvent(new Event('input'));
+                });
+            })
+            .catch(() => { /* BNF list unavailable – seed list still active */ });
     }
 
-    _bindDrugDatalist(inputId, listId, drugs) {
+    _bindDrugDatalist(inputId, listId) {
         const input = document.getElementById(inputId);
         const list = document.getElementById(listId);
-        if (!input || !list || !Array.isArray(drugs) || !drugs.length) return;
+        if (!input || !list) return;
 
         const render = (query = '') => {
+            const drugs = this._autocompleteList || [];
             const term = query.trim().toLowerCase();
-            const matches = drugs
-                .filter(drug => !term || drug.toLowerCase().includes(term))
-                .slice(0, 12);
-
-            list.innerHTML = matches.map(drug => `<option value="${drug}"></option>`).join('');
+            const matches = term
+                ? drugs.filter(d => d.toLowerCase().startsWith(term))
+                      .concat(drugs.filter(d => !d.toLowerCase().startsWith(term) && d.toLowerCase().includes(term)))
+                      .slice(0, 12)
+                : drugs.slice(0, 12);
+            list.innerHTML = matches.map(d => `<option value="${d}"></option>`).join('');
         };
 
         input.addEventListener('focus', () => render(input.value));
