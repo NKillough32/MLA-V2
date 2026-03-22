@@ -1070,6 +1070,31 @@ class PWAQuizLoader:
         def get_dir(key):
             m = re.search(rf'^{key}\s*:\s*(\d+)', body, re.IGNORECASE | re.MULTILINE)
             return int(m.group(1)) if m else 2
+
+        def infer_selection_count(stem: str, correct_indices: List[int]) -> int:
+            if len(correct_indices) > 1:
+                return len(correct_indices)
+            source = stem or ''
+            word_to_number = {
+                'one': 1,
+                'two': 2,
+                'three': 3,
+                'four': 4,
+                'five': 5,
+                'six': 6,
+            }
+            match = re.search(r'\b(?:select|choose|pick|identify|mark)\s+(?:the\s+)?(one|two|three|four|five|six|\d+)\b', source, re.IGNORECASE) \
+                or re.search(r'\b(?:which|what)\s+(one|two|three|four|five|six|\d+)\b', source, re.IGNORECASE)
+            if not match:
+                return 1
+            token = match.group(1).lower()
+            return word_to_number.get(token, int(token) if token.isdigit() else 1)
+
+        def normalize_correct_indices(indices: List[int]):
+            if not indices:
+                return None
+            return indices[0] if len(indices) == 1 else indices
+
         marks_a = get_dir('MARKS_A')
         marks_b = get_dir('MARKS_B')
         explanation, body_no_exp = PWAQuizLoader._psa_get_explanation(body)
@@ -1077,7 +1102,7 @@ class PWAQuizLoader:
         phase = 'scenario'
         scenario_lines, stem_a, stem_b = [], '', ''
         opts_a, opts_b = [], []
-        correct_a, correct_b = None, None
+        correct_a, correct_b = [], []
 
         for raw_line in body_no_exp.split('\n'):
             line = raw_line.rstrip()
@@ -1106,14 +1131,14 @@ class PWAQuizLoader:
                 if om:
                     has_check = '\u2713' in om.group(2)
                     if has_check:
-                        correct_a = len(opts_a)
+                        correct_a.append(len(opts_a))
                     opts_a.append(om.group(2).replace('\u2713', '').strip())
             elif phase == 'part_b':
                 om = re.match(r'^([A-Z])\.\s+(.+)', trimmed)
                 if om:
                     has_check = '\u2713' in om.group(2)
                     if has_check:
-                        correct_b = len(opts_b)
+                        correct_b.append(len(opts_b))
                     opts_b.append(om.group(2).replace('\u2713', '').strip())
 
         # Table-based format fallback (| Medicine | Dose | Route | Freq | A | B |)
@@ -1138,10 +1163,10 @@ class PWAQuizLoader:
                 for idx, row in enumerate(table_rows):
                     opts_a.append(row['opt'])
                     opts_b.append(row['opt'])
-                    if row['tick_a'] and correct_a is None:
-                        correct_a = idx
-                    if row['tick_b'] and correct_b is None:
-                        correct_b = idx
+                    if row['tick_a']:
+                        correct_a.append(idx)
+                    if row['tick_b']:
+                        correct_b.append(idx)
 
         if not opts_a or not opts_b:
             return None
@@ -1165,8 +1190,18 @@ class PWAQuizLoader:
             'scenario': scenario,
             'marks_a': marks_a,
             'marks_b': marks_b,
-            'part_a': {'stem': stem_a, 'options': opts_a, 'correct': correct_a},
-            'part_b': {'stem': stem_b, 'options': opts_b, 'correct': correct_b},
+            'part_a': {
+                'stem': stem_a,
+                'options': opts_a,
+                'correct': normalize_correct_indices(correct_a),
+                'selection_count': infer_selection_count(stem_a, correct_a),
+            },
+            'part_b': {
+                'stem': stem_b,
+                'options': opts_b,
+                'correct': normalize_correct_indices(correct_b),
+                'selection_count': infer_selection_count(stem_b, correct_b),
+            },
             'explanation': explanation,
             'correct_answer': '_review',
         }
@@ -1592,15 +1627,30 @@ def submit_quiz():
         total_questions = len(questions)
         results = []
         
+        def normalize_selection_answer(question, selected_answer):
+            correct = question.get('correct_answer')
+            if isinstance(correct, list):
+                if not isinstance(selected_answer, list):
+                    return []
+                return sorted(idx for idx in selected_answer if isinstance(idx, int))
+            return selected_answer if isinstance(selected_answer, int) else None
+
+        def is_selection_answer_correct(question, selected_answer):
+            correct = question.get('correct_answer')
+            normalized_answer = normalize_selection_answer(question, selected_answer)
+            if isinstance(correct, list):
+                return normalized_answer == sorted(idx for idx in correct if isinstance(idx, int))
+            return normalized_answer == correct
+
         for i, question in enumerate(questions):
             question_id = str(question['id'])
             user_answer = answers.get(question_id)
             correct_answer = question.get('correct_answer')
-            
-            is_correct = user_answer is not None and user_answer == correct_answer
+
+            is_correct = user_answer is not None and is_selection_answer_correct(question, user_answer)
             if is_correct:
                 correct_count += 1
-            
+
             results.append({
                 'question_id': question['id'],
                 'user_answer': user_answer,
