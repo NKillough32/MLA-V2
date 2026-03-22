@@ -54,6 +54,15 @@ DRUG_OPTION: furosemide 10 mg/mL injection
   DOSE: 2.1 mL intravenous once only
   DOSE: 4.4 mL intravenous once only
   DOSE: 4.1 mL intravenous once only
+  DOSE: 20 mg intravenous once only
+  DOSE: 21 mg intravenous once only
+  DOSE: 25 mg intravenous once only
+  DOSE: 30 mg intravenous once only
+  DOSE: 31 mg intravenous once only
+  DOSE: 40 mg intravenous once only
+  DOSE: 41 mg intravenous once only
+  DOSE: 44 mg intravenous once only
+  DOSE: 50 mg intravenous once only
   DOSE: 20 mg intravenous daily
   DOSE: 30 mg intravenous daily
   DOSE: 40 mg intravenous daily
