@@ -7124,44 +7124,49 @@
             display: flex;
             align-items: center;
             gap: 8px;
-            flex-wrap: wrap;
-            margin: 0 0 12px;
-            padding: 6px 10px;
-            background: #f8fafc;
-            border: 1px solid #e5e7eb;
-            border-radius: 10px;
+            margin: 0 0 10px;
+            padding: 0;
+            background: none;
+            border: none;
         }
 
         .highlight-actions {
             display: flex;
-            gap: 6px;
-            flex-wrap: wrap;
+            gap: 10px;
             align-items: center;
         }
 
         .highlight-btn {
-            background: linear-gradient(135deg, #e0f2fe, #dbeafe);
-            color: #0ea5e9;
-            border: 1px solid #bfdbfe;
-            border-radius: 6px;
-            padding: 6px 12px;
-            font-weight: 600;
-            font-size: 0.9rem;
+            background: none;
+            color: #94a3b8;
+            border: none;
+            border-radius: 4px;
+            padding: 2px 0;
+            font-weight: 500;
+            font-size: 0.78rem;
             cursor: pointer;
-            transition: transform var(--v2-transition-fast), box-shadow var(--v2-transition-fast), background var(--v2-transition-fast);
-            box-shadow: var(--v2-shadow-sm);
+            transition: color 0.15s;
+            box-shadow: none;
+            text-decoration: underline;
+            text-decoration-color: transparent;
+            text-underline-offset: 2px;
         }
 
         .highlight-btn:hover {
-            transform: translateY(-1px);
-            box-shadow: var(--v2-shadow-md);
-            background: linear-gradient(135deg, #dbeafe, #e0f2fe);
+            color: #0ea5e9;
+            transform: none;
+            box-shadow: none;
+            text-decoration-color: #0ea5e9;
         }
 
         .highlight-btn.secondary {
-            background: #fff;
-            color: #475569;
-            border-color: #e2e8f0;
+            background: none;
+            color: #94a3b8;
+            border: none;
+        }
+        .highlight-btn.secondary:hover {
+            color: #64748b;
+            text-decoration-color: #64748b;
         }
 
         .text-highlight {
@@ -15573,8 +15578,8 @@
                   <div class="card-body">
                       <div class="highlight-toolbar" aria-live="polite">
                           <div class="highlight-actions">
-                              <button id="highlightBtn" class="highlight-btn" type="button">🖍️ Highlight selection</button>
-                              <button id="clearHighlightsBtn" class="highlight-btn secondary" type="button">Clear highlights</button>
+                              <button id="highlightBtn" class="highlight-btn" type="button">Highlight</button>
+                              <button id="clearHighlightsBtn" class="highlight-btn secondary" type="button">Clear</button>
                           </div>
                       </div>
 
