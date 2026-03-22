@@ -12188,6 +12188,7 @@
                 line-height: 1.4;
                 display: -webkit-box;
                 -webkit-line-clamp: 2;
+                line-clamp: 2;
                 -webkit-box-orient: vertical;
                 overflow: hidden;
             }
@@ -12613,6 +12614,7 @@
 
             .cc-safety-box {
                 padding: 14px 16px;
+            }
 
             /* Drug Panel Tabs */
             .drug-panel-tabs {
@@ -15846,8 +15848,7 @@
 
                             <div class="prx-field">
                                 <label for="prxDrug">Drug Name</label>
-                                <input id="prxDrug" list="prxDrugList" placeholder="e.g. aspirin, furosemide…" autocomplete="off">
-                                <datalist id="prxDrugList"></datalist>
+                                <input id="prxDrug" placeholder="e.g. aspirin, furosemide…">
                             </div>
                             <div class="prx-field">
                                 <label for="prxDose">Dose</label>
@@ -15855,86 +15856,11 @@
                             </div>
                             <div class="prx-field">
                                 <label for="prxRoute">Route</label>
-                                <input id="prxRoute" list="prxRouteList" placeholder="e.g. oral, IV, subcutaneous…" autocomplete="off">
-                                <datalist id="prxRouteList">
-                                    <option value="oral (PO)"></option>
-                                    <option value="PO"></option>
-                                    <option value="orally"></option>
-                                    <option value="intravenous (IV)"></option>
-                                    <option value="IV bolus"></option>
-                                    <option value="IV infusion"></option>
-                                    <option value="intramuscular (IM)"></option>
-                                    <option value="IM"></option>
-                                    <option value="subcutaneous (SC)"></option>
-                                    <option value="SC"></option>
-                                    <option value="inhaled"></option>
-                                    <option value="INH"></option>
-                                    <option value="nebulised (NEB)"></option>
-                                    <option value="NEB"></option>
-                                    <option value="sublingual (SL)"></option>
-                                    <option value="SL"></option>
-                                    <option value="buccal"></option>
-                                    <option value="oromucosal"></option>
-                                    <option value="rectal (PR)"></option>
-                                    <option value="PR"></option>
-                                    <option value="topical (TOP)"></option>
-                                    <option value="TOP"></option>
-                                    <option value="transdermal"></option>
-                                    <option value="nasal"></option>
-                                    <option value="vaginal (PV)"></option>
-                                    <option value="PV"></option>
-                                    <option value="intradermal"></option>
-                                    <option value="intravitreal"></option>
-                                    <option value="to both eyes"></option>
-                                    <option value="to left eye"></option>
-                                    <option value="to right eye"></option>
-                                    <option value="to both ears"></option>
-                                    <option value="to left ear"></option>
-                                    <option value="to right ear"></option>
-                                </datalist>
+                                <input id="prxRoute" placeholder="e.g. oral, IV, subcutaneous…">
                             </div>
                             <div class="prx-field">
                                 <label for="prxFreq">Frequency</label>
-                                <input id="prxFreq" list="prxFreqList" placeholder="e.g. twice daily, daily…" autocomplete="off">
-                                <datalist id="prxFreqList">
-                                    <option value="once only"></option>
-                                    <option value="daily"></option>
-                                    <option value="nightly"></option>
-                                    <option value="twice daily (12-hrly)"></option>
-                                    <option value="twice daily (as directed)"></option>
-                                    <option value="three times daily (8-hrly)"></option>
-                                    <option value="three times daily (as directed)"></option>
-                                    <option value="four times daily (6-hrly)"></option>
-                                    <option value="four times daily (as directed)"></option>
-                                    <option value="five times daily"></option>
-                                    <option value="six times daily (4-hrly)"></option>
-                                    <option value="every hour"></option>
-                                    <option value="every 2 hours (2-hrly)"></option>
-                                    <option value="every 3 hours (3-hrly)"></option>
-                                    <option value="every 30 minutes"></option>
-                                    <option value="12-hrly"></option>
-                                    <option value="8-hrly"></option>
-                                    <option value="6-hrly"></option>
-                                    <option value="4-hrly"></option>
-                                    <option value="3-hrly"></option>
-                                    <option value="2-hrly"></option>
-                                    <option value="as required (PRN)"></option>
-                                    <option value="every other day"></option>
-                                    <option value="every 3 days"></option>
-                                    <option value="every 4 days"></option>
-                                    <option value="twice weekly"></option>
-                                    <option value="three times weekly"></option>
-                                    <option value="five times weekly"></option>
-                                    <option value="weekly"></option>
-                                    <option value="every 2 weeks"></option>
-                                    <option value="every 4 weeks/monthly"></option>
-                                    <option value="every 6 weeks"></option>
-                                    <option value="every 8 weeks (2-monthly)"></option>
-                                    <option value="every 12 weeks (3-monthly)"></option>
-                                    <option value="modified-release (m/r)"></option>
-                                    <option value="once (stat)"></option>
-                                    <option value="continuous IV infusion"></option>
-                                </datalist>
+                                <input id="prxFreq" placeholder="e.g. twice daily, daily…">
                             </div>
                             <div class="prx-field">
                                 <label for="prxIndication">Indication (optional)</label>
@@ -15969,18 +15895,15 @@
                     <div style="background:var(--v2-bg-card);border:1.5px solid var(--v2-border);border-radius:16px;padding:18px;max-width:640px;margin-bottom:18px;">
                         <div class="prx-field">
                             <label>Drug A</label>
-                            <input id="prxIntDrugA" list="prxIntListA" placeholder="e.g. warfarin" autocomplete="off">
-                            <datalist id="prxIntListA"></datalist>
+                            <input id="prxIntDrugA" placeholder="e.g. warfarin">
                         </div>
                         <div class="prx-field">
                             <label>Drug B</label>
-                            <input id="prxIntDrugB" list="prxIntListB" placeholder="e.g. aspirin" autocomplete="off">
-                            <datalist id="prxIntListB"></datalist>
+                            <input id="prxIntDrugB" placeholder="e.g. aspirin">
                         </div>
                         <div class="prx-field">
                             <label>Drug C (optional)</label>
-                            <input id="prxIntDrugC" list="prxIntListC" placeholder="optional 3rd drug" autocomplete="off">
-                            <datalist id="prxIntListC"></datalist>
+                            <input id="prxIntDrugC" placeholder="optional 3rd drug">
                         </div>
                         <div style="display:flex;gap:8px;flex-wrap:wrap;">
                             <button class="prx-sim-btn" style="flex:1;" onclick="window.prxCheckInteractions()">🔍 Check Interactions</button>

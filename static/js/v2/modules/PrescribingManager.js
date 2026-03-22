@@ -110,10 +110,78 @@ class PrescribingManager {
                 .filter(Boolean)
         )].sort((a, b) => a.localeCompare(b));
 
-        this._bindDrugDatalist('prxDrug', 'prxDrugList');
-        this._bindDrugDatalist('prxIntDrugA', 'prxIntListA');
-        this._bindDrugDatalist('prxIntDrugB', 'prxIntListB');
-        this._bindDrugDatalist('prxIntDrugC', 'prxIntListC');
+        // Inject custom dropdown styles once
+        if (!document.getElementById('prx-autocomplete-styles')) {
+            const style = document.createElement('style');
+            style.id = 'prx-autocomplete-styles';
+            style.textContent = `
+                .prx-autocomplete-dropdown {
+                    display: none;
+                    position: absolute;
+                    z-index: 9999;
+                    top: 100%;
+                    left: 0;
+                    right: 0;
+                    background: var(--v2-bg-card, #fff);
+                    border: 1.5px solid var(--v2-border, #e5e7eb);
+                    border-radius: 10px;
+                    margin: 2px 0 0;
+                    padding: 4px 0;
+                    max-height: 220px;
+                    overflow-y: auto;
+                    box-shadow: 0 4px 16px rgba(0,0,0,.18);
+                    list-style: none;
+                    -webkit-overflow-scrolling: touch;
+                }
+                .prx-autocomplete-dropdown li {
+                    padding: 10px 14px;
+                    cursor: pointer;
+                    font-size: 14px;
+                    color: var(--v2-text-primary, #111);
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    user-select: none;
+                }
+                .prx-autocomplete-dropdown li:hover,
+                .prx-autocomplete-dropdown li.active {
+                    background: var(--v2-bg-hover, #f3f4f6);
+                }
+            `;
+            document.head.appendChild(style);
+        }
+
+        // Drug name inputs — dynamic list, only show when typing
+        this._bindAutolist('prxDrug',     () => this._autocompleteList, false);
+        this._bindAutolist('prxIntDrugA', () => this._autocompleteList, false);
+        this._bindAutolist('prxIntDrugB', () => this._autocompleteList, false);
+        this._bindAutolist('prxIntDrugC', () => this._autocompleteList, false);
+
+        // Route input — static list, show all on focus
+        this._bindAutolist('prxRoute', () => [
+            'oral (PO)', 'PO', 'orally', 'intravenous (IV)', 'IV bolus', 'IV infusion',
+            'intramuscular (IM)', 'IM', 'subcutaneous (SC)', 'SC', 'inhaled', 'INH',
+            'nebulised (NEB)', 'NEB', 'sublingual (SL)', 'SL', 'buccal', 'oromucosal',
+            'rectal (PR)', 'PR', 'topical (TOP)', 'TOP', 'transdermal', 'nasal',
+            'vaginal (PV)', 'PV', 'intradermal', 'intravitreal',
+            'to both eyes', 'to left eye', 'to right eye',
+            'to both ears', 'to left ear', 'to right ear'
+        ], true);
+
+        // Frequency input — static list, show all on focus
+        this._bindAutolist('prxFreq', () => [
+            'once only', 'daily', 'nightly', 'twice daily (12-hrly)', 'twice daily (as directed)',
+            'three times daily (8-hrly)', 'three times daily (as directed)',
+            'four times daily (6-hrly)', 'four times daily (as directed)',
+            'five times daily', 'six times daily (4-hrly)',
+            'every hour', 'every 2 hours (2-hrly)', 'every 3 hours (3-hrly)', 'every 30 minutes',
+            '12-hrly', '8-hrly', '6-hrly', '4-hrly', '3-hrly', '2-hrly',
+            'as required (PRN)', 'every other day', 'every 3 days', 'every 4 days',
+            'twice weekly', 'three times weekly', 'five times weekly', 'weekly',
+            'every 2 weeks', 'every 4 weeks/monthly', 'every 6 weeks',
+            'every 8 weeks (2-monthly)', 'every 12 weeks (3-monthly)',
+            'modified-release (m/r)', 'once (stat)', 'continuous IV infusion'
+        ], true);
 
         // Asynchronously load full BNF drug list and merge in
         fetch('/static/assets/PSA/bnf-drug-names.json')
@@ -123,7 +191,7 @@ class PrescribingManager {
                 const merged = [...new Set([...this._autocompleteList, ...bnfNames])]
                     .sort((a, b) => a.localeCompare(b));
                 this._autocompleteList = merged;
-                // Re-render any datalists that already have a value typed
+                // Re-trigger any inputs with existing values
                 ['prxDrug', 'prxIntDrugA', 'prxIntDrugB', 'prxIntDrugC'].forEach(id => {
                     const el = document.getElementById(id);
                     if (el && el.value) el.dispatchEvent(new Event('input'));
@@ -132,25 +200,83 @@ class PrescribingManager {
             .catch(() => { /* BNF list unavailable – seed list still active */ });
     }
 
-    _bindDrugDatalist(inputId, listId) {
+    _bindAutolist(inputId, getOptions, showOnFocus = false) {
         const input = document.getElementById(inputId);
-        const list = document.getElementById(listId);
-        if (!input || !list) return;
+        if (!input) return;
+
+        const parent = input.parentNode;
+        parent.style.position = 'relative';
+
+        const dropdown = document.createElement('ul');
+        dropdown.className = 'prx-autocomplete-dropdown';
+        dropdown.setAttribute('role', 'listbox');
+        parent.appendChild(dropdown);
+
+        let activeIndex = -1;
 
         const render = (query = '') => {
-            const drugs = this._autocompleteList || [];
+            const options = getOptions();
             const term = query.trim().toLowerCase();
-            const matches = term
-                ? drugs.filter(d => d.toLowerCase().startsWith(term))
-                      .concat(drugs.filter(d => !d.toLowerCase().startsWith(term) && d.toLowerCase().includes(term)))
-                      .slice(0, 12)
-                : drugs.slice(0, 12);
-            list.innerHTML = matches.map(d => `<option value="${d}"></option>`).join('');
+            let matches;
+            if (!term) {
+                if (!showOnFocus) { hide(); return; }
+                matches = options; // show all static options on focus
+            } else {
+                matches = options.filter(d => d.toLowerCase().startsWith(term))
+                    .concat(options.filter(d => !d.toLowerCase().startsWith(term) && d.toLowerCase().includes(term)))
+                    .slice(0, 12);
+            }
+            if (!matches.length) { hide(); return; }
+            activeIndex = -1;
+            dropdown.innerHTML = matches.map(d =>
+                `<li role="option" data-val="${d.replace(/"/g, '&quot;').replace(/</g, '&lt;')}">${d}</li>`
+            ).join('');
+            dropdown.style.display = 'block';
         };
 
-        input.addEventListener('focus', () => render(input.value));
+        const hide = () => { dropdown.style.display = 'none'; activeIndex = -1; };
+
+        const select = (val) => {
+            input.value = val;
+            hide();
+            input.dispatchEvent(new Event('change', { bubbles: true }));
+        };
+
+        // Mouse click on desktop
+        dropdown.addEventListener('mousedown', e => {
+            const li = e.target.closest('li[data-val]');
+            if (li) { e.preventDefault(); select(li.dataset.val); }
+        });
+
+        // Touch tap on mobile/Android
+        dropdown.addEventListener('touchend', e => {
+            const li = e.target.closest('li[data-val]');
+            if (li) { e.preventDefault(); select(li.dataset.val); }
+        });
+
         input.addEventListener('input', () => render(input.value));
-        render('');
+        input.addEventListener('focus', () => render(input.value));
+
+        input.addEventListener('keydown', e => {
+            const items = [...dropdown.querySelectorAll('li')];
+            if (!items.length || dropdown.style.display === 'none') return;
+            if (e.key === 'ArrowDown') {
+                e.preventDefault();
+                activeIndex = Math.min(activeIndex + 1, items.length - 1);
+                items.forEach((li, i) => li.classList.toggle('active', i === activeIndex));
+            } else if (e.key === 'ArrowUp') {
+                e.preventDefault();
+                activeIndex = Math.max(activeIndex - 1, 0);
+                items.forEach((li, i) => li.classList.toggle('active', i === activeIndex));
+            } else if (e.key === 'Enter' && activeIndex >= 0) {
+                e.preventDefault();
+                select(items[activeIndex].dataset.val);
+            } else if (e.key === 'Escape') {
+                hide();
+            }
+        });
+
+        input.addEventListener('blur', () => setTimeout(hide, 200));
     }
 
     /* ═══════════════════════════════════════════════════════════════
