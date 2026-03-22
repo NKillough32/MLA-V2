@@ -5992,15 +5992,30 @@ class MLAQuizApp {
                 const userDose  = ans.dose      || '';
                 const userRoute = ans.route     || '';
                 const userFreq  = ans.frequency || '';
+
+                // Grade the answer
+                const grade = typeof quizManager?._gradePrescribing === 'function'
+                    ? quizManager._gradePrescribing(question, ans)
+                    : { drugOk: false, doseOk: false };
+                const drugOk = grade.drugOk;
+                const doseOk = grade.doseOk;
+                const earnedMarks = (drugOk ? drugMarks : 0) + (doseOk ? doseMarks : 0);
+                const totalMarks  = drugMarks + doseMarks;
+                const scoreBg    = earnedMarks === totalMarks ? '#dcfce7' : earnedMarks > 0 ? '#fef9c3' : '#fee2e2';
+                const scoreColor = earnedMarks === totalMarks ? '#15803d' : earnedMarks > 0 ? '#854d0e' : '#b91c1c';
+
                 if (userDrug || userDose) {
-                    html += `<div style="background:#fefce8;border:1.5px solid #eab308;border-radius:8px;padding:12px 16px;margin-bottom:12px;font-size:0.9rem;">
-                        <div style="font-weight:700;color:#854d0e;margin-bottom:6px;">&#x1F4CB; Your prescription:</div>
+                    html += `<div style="background:#fefce8;border:1.5px solid #eab308;border-radius:10px;padding:12px 16px;margin-bottom:12px;font-size:0.9rem;">
+                        <div style="font-weight:700;color:#854d0e;margin-bottom:8px;">&#x1F4CB; Your prescription:</div>
                         <table style="width:100%;border-collapse:collapse;font-size:0.88rem;">
-                            ${userDrug  ? `<tr><td style="font-weight:600;padding:2px 8px 2px 0;color:#78350f;width:80px;">Drug:</td><td>${this.formatText(userDrug)}</td></tr>` : ''}
-                            ${userDose  ? `<tr><td style="font-weight:600;padding:2px 8px 2px 0;color:#78350f;">Dose:</td><td>${this.formatText(userDose)}</td></tr>` : ''}
-                            ${userRoute ? `<tr><td style="font-weight:600;padding:2px 8px 2px 0;color:#78350f;">Route:</td><td>${this.formatText(userRoute)}</td></tr>` : ''}
-                            ${userFreq  ? `<tr><td style="font-weight:600;padding:2px 8px 2px 0;color:#78350f;">Frequency:</td><td>${this.formatText(userFreq)}</td></tr>` : ''}
+                            ${userDrug  ? `<tr><td style="font-weight:600;padding:3px 8px 3px 0;color:#78350f;width:80px;vertical-align:top;">Drug:</td><td style="padding-right:6px;">${this.formatText(userDrug)}</td><td style="text-align:right;white-space:nowrap;font-size:1rem;">${drugOk ? '&#x2705;' : '&#x274C;'} <span style="font-size:0.78rem;font-weight:700;">${drugOk ? drugMarks : 0}/${drugMarks}</span></td></tr>` : ''}
+                            ${userDose  ? `<tr><td style="font-weight:600;padding:3px 8px 3px 0;color:#78350f;vertical-align:top;">Dose:</td><td style="padding-right:6px;">${this.formatText(userDose)}</td><td style="text-align:right;white-space:nowrap;font-size:1rem;" rowspan="3">${doseOk ? '&#x2705;' : '&#x274C;'} <span style="font-size:0.78rem;font-weight:700;">${doseOk ? doseMarks : 0}/${doseMarks}</span></td></tr>` : ''}
+                            ${userRoute ? `<tr><td style="font-weight:600;padding:3px 8px 3px 0;color:#78350f;">Route:</td><td>${this.formatText(userRoute)}</td></tr>` : ''}
+                            ${userFreq  ? `<tr><td style="font-weight:600;padding:3px 8px 3px 0;color:#78350f;">Frequency:</td><td>${this.formatText(userFreq)}</td></tr>` : ''}
                         </table>
+                        <div style="margin-top:10px;padding:8px 12px;border-radius:8px;font-weight:700;font-size:0.92rem;background:${scoreBg};color:${scoreColor};text-align:center;">
+                            Score: ${earnedMarks} / ${totalMarks} marks
+                        </div>
                     </div>`;
                 }
                 if (drugOpts.length) {

@@ -499,8 +499,11 @@ export class QuizManager {
             });
             correctAnswerIdx = '_prescription';
         } else if (qType === 'prescribing') {
-            isCorrect = true; // Self-assessed: user compares with revealed optimal answers
+            const grade = this._gradePrescribing(question, selectedAnswer);
+            isCorrect = grade.drugOk || grade.doseOk;
             correctAnswerIdx = '_prescribing';
+            // Store detailed result so calculateScore and the renderer can use it
+            this.correctResults[questionIndex] = { drugOk: grade.drugOk, doseOk: grade.doseOk };
         } else if (qType === 'review') {
             // selectedAnswer = { a: indexOrNull, b: indexOrNull }
             const ua = selectedAnswer || {};
@@ -514,7 +517,10 @@ export class QuizManager {
         }
 
         // Store correctness result for this question
-        this.correctResults[questionIndex] = isCorrect;
+        // (prescribing stores a {drugOk, doseOk} object — don't overwrite it)
+        if (qType !== 'prescribing') {
+            this.correctResults[questionIndex] = isCorrect;
+        }
 
         // Vibration feedback
         if (isCorrect) {
@@ -533,6 +539,66 @@ export class QuizManager {
         this.queueAutoSave();
 
         return { isCorrect, correctAnswer: correctAnswerIdx };
+    }
+
+    /**
+     * Grade a prescribing question by comparing the user's drug/dose/route/frequency
+     * against the question's drug_options.
+     * Returns { drugOk: bool, doseOk: bool }
+     */
+    _gradePrescribing(question, answer) {
+        const drugOpts = question.drug_options || [];
+        if (!drugOpts.length) return { drugOk: false, doseOk: false };
+
+        const ans       = answer || {};
+        const userDrug  = (ans.drug      || '').trim();
+        const userDose  = (ans.dose      || '').trim();
+        const userRoute = (ans.route     || '').trim();
+        const userFreq  = (ans.frequency || '').trim();
+
+        // Extract base active ingredient name (strip dose/form suffixes)
+        const normDrug = s => {
+            let t = (s || '').toLowerCase();
+            // Remove anything after the first dose number (e.g. "40mg", "20 mg/ml")
+            t = t.replace(/\s+\d[\d./]*\s*(mg|mcg|microgram|g\b|ml\b|units?|iu\b|mmol).*$/i, '');
+            // Remove common form words if they appear early
+            t = t.replace(/\b(tablet|capsule|solution|injection|suspension|oral|cream|gel|ointment|spray|drops|patch|powder|inhaler|infusion|vial|ampoule|implant|lozenge|suppository|syrup|elixir|foam|shampoo|paste|buccal|sublingual|modified|prolonged|gastro|effervescent|dispersible|orodispersible|film|pre-filled|inhalation|aerosol|nebuliser|extended|release)\b.*$/i, '');
+            return t.replace(/[^a-z0-9\s]/g, ' ').replace(/\s+/g, ' ').trim().split(/\s+/).slice(0, 2).join(' ');
+        };
+
+        // Normalise a dose/route/freq string for comparison
+        const normAmt = s => (s || '').toLowerCase()
+            .replace(/\([^)]*\)/g, '')          // remove "(IV)", "(PO)" etc.
+            .replace(/\s+/g, ' ')
+            .trim();
+
+        const userDrugNorm = normDrug(userDrug);
+
+        // Drug is correct if the user's base name matches any accepted drug's base name
+        const drugOk = !!userDrugNorm && drugOpts.some(opt => {
+            const optNorm = normDrug(opt.drug || '');
+            return !!optNorm && (
+                optNorm === userDrugNorm ||
+                optNorm.startsWith(userDrugNorm + ' ') ||
+                userDrugNorm.startsWith(optNorm + ' ') ||
+                optNorm.startsWith(userDrugNorm) ||
+                userDrugNorm.startsWith(optNorm)
+            );
+        });
+
+        // Dose is correct if the combined dose+route+freq matches any dose_option
+        // in the accepted drug options (check all options so partial credit is possible)
+        const userCombined = normAmt([userDose, userRoute, userFreq].filter(Boolean).join(' '));
+        const doseOk = !!userCombined && drugOpts.some(opt =>
+            (opt.dose_options || []).some(doseStr => {
+                const dNorm = normAmt(doseStr);
+                return dNorm === userCombined ||
+                       dNorm.includes(userCombined) ||
+                       userCombined.includes(dNorm);
+            })
+        );
+
+        return { drugOk, doseOk };
     }
 
     /**
@@ -1357,11 +1423,13 @@ export class QuizManager {
                         marksEarned += qMarks;
                     }
                 } else if (qType === 'prescribing') {
-                    // Self-assessed: marks available = drug_marks + dose_marks; counted correct when submitted
-                    const qMarks = (question.drug_marks ?? 5) + (question.dose_marks ?? 5);
-                    marksAvailable += qMarks;
-                    correct++;
-                    marksEarned += qMarks;
+                    const drugMarks = question.drug_marks ?? 5;
+                    const doseMarks = question.dose_marks ?? 5;
+                    marksAvailable += drugMarks + doseMarks;
+                    const grade = this._gradePrescribing(question, stored);
+                    const earned = (grade.drugOk ? drugMarks : 0) + (grade.doseOk ? doseMarks : 0);
+                    marksEarned += earned;
+                    if (grade.drugOk || grade.doseOk) correct++;
                 } else if (qType === 'review') {
                     const marks_a = question.marks_a ?? 2;
                     const marks_b = question.marks_b ?? 2;
