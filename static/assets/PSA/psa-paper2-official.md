@@ -59,11 +59,10 @@ DRUG_MARKS: 5
 DOSE_MARKS: 5
 
 **Case presentation**
-**Case presentation
-**A 72-year-old woman is on the oncology ward for investigation of back pain. She has developed a painful rash to the right side of her face. **PMH.** Breast cancer. **DH.** Tamoxifen 20 mg PO daily, paracetamol 1 g PO 6-hrly, dihydrocodeine 60 mg PO 6-hrly.
+A 72-year-old woman is on the oncology ward for investigation of back pain. She has developed a painful rash to the right side of her face. **PMH.** Breast cancer. **DH.** Tamoxifen 20 mg PO daily, paracetamol 1 g PO 6-hrly, dihydrocodeine 60 mg PO 6-hrly.
 
-**On examination
-**Temperature 37.3°C, HR 66/min and rhythm regular, BP 134/82 mmHg. There is a clearly demarcated vesicular rash in the mandibular region of the right side of her face.
+**On examination**
+Temperature 37.3°C, HR 66/min and rhythm regular, BP 134/82 mmHg. There is a clearly demarcated vesicular rash in the mandibular region of the right side of her face.
 
 **Prescribing request**
 Write a prescription for ONE drug that is *most appropriate* to treat the cause of the rash.
@@ -124,8 +123,8 @@ DOSE_MARKS: 5
 **Case presentation**
 A 56-year-old man presents to the emergency department with vomiting for 3 days. **PMH.** Previous gastritis, but currently otherwise well.
 
-**On examination
-**Temperature 37.2°C, HR 115/min and rhythm regular, BP 100/50 mmHg, JVP not raised, RR 21/min, O_2 sat 97% breathing air. HS normal, chest sounds clear.
+**On examination**
+Temperature 37.2°C, HR 115/min and rhythm regular, BP 100/50 mmHg, JVP not raised, RR 21/min, O_2 sat 97% breathing air. HS normal, chest sounds clear.
 
 **Investigations**
 Na^+ 137 mmol/L (137–144), K^+ 4.8 mmol/L (3.5–5.3), Cl^- 98 mmol/L (95–107), HCO_3^- 28 mmol/L (20–28), U 14.0 mmol/L (2.5–7.0), Cr 130 µmol/L (60–110).
@@ -223,8 +222,7 @@ DRUG_MARKS: 5
 DOSE_MARKS: 5
 
 **Case presentation**
-**Case presentation
-**A 45-year-old woman is referred to the primary care diabetes clinic because of poor blood glucose control. She has no significant symptoms of hyperglycaemia.** PMH. **Hypertension, hypercholesterolaemia. **DH.** Ramipril 5 mg PO daily, amlodipine 5 mg PO daily.** FH. **Father and elder sister have type 2 diabetes. **SH. **Non-smoker.
+A 45-year-old woman is referred to the primary care diabetes clinic because of poor blood glucose control. She has no significant symptoms of hyperglycaemia.** PMH.** Hypertension, hypercholesterolaemia. **DH.** Ramipril 5 mg PO daily, amlodipine 5 mg PO daily.** FH. **Father and elder sister have type 2 diabetes. **SH. **Non-smoker.
 
 **On examination
 **BP 126/70 mmHg, BMI 30 kg/m^2 (18-25).
@@ -234,8 +232,7 @@ DOSE_MARKS: 5
 HbA_1c 75 mmol/mol (20–42).
 
 **Prescribing request**
-**Prescribing request
-**Write a prescription for ONE drug that is *most appropriate* to improve her blood glucose control.
+*Write a prescription for ONE drug that is *most appropriate* to improve her blood glucose control.
 (*use the 'general practice' prescription form provided*)
 
 **Drug choice**
@@ -273,11 +270,11 @@ MARKS_B: 2
 **Case presentation**
 A 77-year-old woman presents to the emergency department with increased breathlessness and difficulty walking around her bungalow. **PMH.** Heart failure, CKD (stage 3), psoriasis, dyspepsia, depression. **DH.** Her current regular medicines are listed (right).
 
-**On examination
-**HR 101/min and rhythm regular, BP 128/88 mmHg. She has cardiomegaly and there are fine crackles audible at both lung bases, suggesting pulmonary oedema. Weight 59 kg.
+**On examination**
+HR 101/min and rhythm regular, BP 128/88 mmHg. She has cardiomegaly and there are fine crackles audible at both lung bases, suggesting pulmonary oedema. Weight 59 kg.
 
-**Investigations
-**Na^+ 134 mmol/L (137–144), K^+ 6.1 mmol/L (3.5–5.3), eGFR 43 mL/min/1.73 m^2 (>60).
+**Investigations**
+Na^+ 134 mmol/L (137–144), K^+ 6.1 mmol/L (3.5–5.3), eGFR 43 mL/min/1.73 m^2 (>60).
 
 **Part A:** Select the TWO prescriptions that are *most likely *to be a cause of her hyperkalaemia.
 (*mark them with a tick in column A*)
@@ -337,7 +334,7 @@ MARKS_A: 2
 MARKS_B: 2
 
 **Case presentation**
-A 78-year-old woman presents to her GP for a medication review. **PMH.** Osteoporosis, type 2 diabetes, polymyalgia rheumatica, mild COPD, intermittent dyspepsia, loose stools for 2 weeks. **DH. **Her current regular medicines are listed (right). **SH.** Ex-smoker, does not drink alcohol.
+A 78-year-old woman presents to her GP for a medication review. **PMH.** Osteoporosis, type 2 diabetes, polymyalgia rheumatica, mild COPD, intermittent dyspepsia, loose stools for 2 weeks. **DH.** Her current regular medicines are listed (right). **SH.** Ex-smoker, does not drink alcohol.
 
 **Part A:** Select the TWO prescriptions that are *most likely* to be contributing to her dyspepsia.
 (*mark them with a tick in column A*)
@@ -369,11 +366,11 @@ MARKS_B: 2
 **Case presentation**
 An 80-year-old woman presents to her GP with bilateral ankle swelling and fatigue. **PMH.** Paroxysmal AF, hypertension, dry skin, recent urinary tract infection, bilateral hip and knee pain, walks with a frame, intermittent insomnia. **DH.** Her current regular medicines are listed (right).
 
-**On examination
-**HR 48/min and rhythm regular, BP 135/68 mmHg, respiratory examination normal, bilateral pitting ankle oedema.
+**On examination**
+HR 48/min and rhythm regular, BP 135/68 mmHg, respiratory examination normal, bilateral pitting ankle oedema.
 
-**Investigations
-**INR 2.4 (target 2.5).
+**Investigations**
+INR 2.4 (target 2.5).
 
 Na^+ 134 mmol/L (137–144), K^+ 3.6 mmol/L (3.5–4.9), U 6.8 mmol/L (2.5–7.0), Cr 105 μmol/L (60–110), alb 38 g/L (37–49).
 
@@ -439,11 +436,11 @@ MARKS: 2
 **Case presentation**
 An 82-year-old woman presents to the acute admissions ward with a 2-day history of diarrhoea. She has had three episodes of offensive watery diarrhoea in the past 2 h. She is eating and drinking. **PMH.** Hypertension, osteoporosis, recent urinary tract infection treated with antibiotics. **DH.** Amlodipine 5 mg PO daily, calcium carbonate 750 mg/colecalciferol 200 units (Adcal-D_3^®) one tablet PO 12-hrly, alendronic acid 70 mg PO weekly.
 
-**On examination
-**Temperature 37.6°C, HR 72/min and rhythm regular, BP 136/85 mmHg. Abdomen is soft and non tender with normal bowel sounds.
+**On examination**
+Temperature 37.6°C, HR 72/min and rhythm regular, BP 136/85 mmHg. Abdomen is soft and non tender with normal bowel sounds.
 
-**Investigations
-**WCC 8.2 x 10^9/L (4.0–11.0).
+**Investigations**
+WCC 8.2 x 10^9/L (4.0–11.0).
 Na^+ 136 mmol/L (137–144), K^+ 3.4 mmol/L (3.5–5.3), U 8.6 mmol/L (2.5–7.0), Cr 92 µmol/L (60–110).
 CRP 73 mg/L (<10).
 
@@ -512,13 +509,12 @@ The JBDS guideline recommends using a fixed-rate IV insulin infusion alongside f
 MARKS: 2
 
 **Case presentation**
-**Case presentation
-**A 5-year-old boy is brought to the emergency department by his parents with a fever, sore throat and runny nose.
+A 5-year-old boy is brought to the emergency department by his parents with a fever, sore throat and runny nose.
 
-**On examination
-**Temperature 38.5°C, HR 140/min and rhythm regular, RR 20/min, O_2 sat 98% breathing air. Red throat, strawberry tongue, enlarged tonsils with no exudate, swollen neck lymph nodes. Blanching macular red rash over his trunk, back, upper and lower limbs. Chest sounds clear. Weight 18 kg.
+**On examination**
+Temperature 38.5°C, HR 140/min and rhythm regular, RR 20/min, O_2 sat 98% breathing air. Red throat, strawberry tongue, enlarged tonsils with no exudate, swollen neck lymph nodes. Blanching macular red rash over his trunk, back, upper and lower limbs. Chest sounds clear. Weight 18 kg.
 
-He is given paracetamol 240 mg PO, which allows him to successfully manage an oral fluid challenge. One hour later, he looks well and his temperature is 37.4°C, HR 100/min and rhythm regular, RR 20/min, O_2 sat 99% breathing air.
+He is given paracetamol 240 mg PO, which allows him to successfully manage an oral fluid challenge. One hour later, he looks well and his temperature is 37.4°C, HR 100/min and rhythm regular, RR 20/min,O_2 sat 99% breathing air.
 
 **Question**
 Select the *most appropriate* management option at this stage.
@@ -632,16 +628,15 @@ E. she should report immediately any inexplicable bruising or bleeding
 MARKS: 2
 
 **Case presentation**
-**Case presentation
-**An 11-year-old girl is brought to the emergency department with symptoms of a severe, systemic fungal infection. Weight 36 kg.
+An 11-year-old girl is brought to the emergency department with symptoms of a severe, systemic fungal infection. Weight 36 kg.
 
 She requires treatment with amphotericin 5 mg/kg by IV infusion daily. Liposomal amphotericin B is available in 50 mg vials and is reconstituted with water to produce a 4 mg/mL solution.
 
 Directions for use are to prepare an IV infusion by diluting the requisite volume of reconstituted amphotericin B in glucose 5% to produce a suspension containing 1 mg/mL amphotericin.
 
 **Question**
-**Calculation
-**What volume (mL) of reconstituted amphotericin B solution is required to prepare each daily infusion?
+**Calculation**
+What volume (mL) of reconstituted amphotericin B solution is required to prepare each daily infusion?
 (*write your answer in the box provided*)
 
 ANSWER: 180
@@ -700,14 +695,13 @@ WORKING:
 MARKS: 2
 
 **Case presentation**
-**Case presentation
-**A 56-year-old man attends his GP to report that he is having difficulty taking his medication. He is currently undergoing investigations for dysphagia. **PMH. **Chronic kidney disease. **DH.** Alfacalcidol capsules 500 nanograms PO daily. Following discussion he agrees to switch to using alfacalcidol 2 micrograms/mL oral drops.
+A 56-year-old man attends his GP to report that he is having difficulty taking his medication. He is currently undergoing investigations for dysphagia. **PMH. **Chronic kidney disease. **DH.** Alfacalcidol capsules 500 nanograms PO daily. Following discussion he agrees to switch to using alfacalcidol 2 micrograms/mL oral drops.
 
 Each oral drop contains 0.1 micrograms alfacalcidol.
 
 **Question**
-**Calculation
-**What dose (in drops) of alfacalcidol oral drops is equivalent to his current prescription?
+**Calculation**
+What dose (in drops) of alfacalcidol oral drops is equivalent to his current prescription?
 (*write your answer in the box provided*)
 
 ANSWER: 5
@@ -736,8 +730,8 @@ MARKS: 2
 **Case presentation**
 A 58-year-old man is admitted via the emergency department with suspected food poisoning. He has severe diarrhoea and dehydration with hypokalaemia. Weight 68 kg.
 
-**Investigations
-**eGFR 78 mL/min/1.73 m^2 (>60) on admission.
+**Investigations**
+eGFR 78 mL/min/1.73 m^2 (>60) on admission.
 
 An IV fluid regimen has been prescribed (see below). The bags will be administered sequentially without interruption. Repeat electrolyte estimation is planned during the routine phlebotomy round in 5 hours' time.
 
@@ -889,8 +883,7 @@ E. short-acting insulin via SC insulin pump
 MARKS: 2
 
 **Case presentation**
-**Case presentation
-**A 45-year-old man presents to the emergency department with tremors, muscle rigidity and a slowing of his movements. **PMH.** Schizophrenia. **DH.** Haloperidol 1 mg PO 8-hrly started 2 days ago.
+A 45-year-old man presents to the emergency department with tremors, muscle rigidity and a slowing of his movements. **PMH.** Schizophrenia. **DH.** Haloperidol 1 mg PO 8-hrly started 2 days ago.
 
 The haloperidol has been withheld.
 
@@ -946,12 +939,10 @@ E. troponin
 MARKS: 2
 
 **Case presentation**
-**Case presentation
-**A 38-year-old woman is seen in the gastroenterology outpatient department for consideration of starting azathioprine 125 mg PO daily as a steroid sparing agent. **PMH.** Corticosteroid-dependent ulcerative colitis. **DH.** Prednisolone 20 mg PO daily, alendronic acid 70 mg PO weekly. Weight 60 kg.
+A 38-year-old woman is seen in the gastroenterology outpatient department for consideration of starting azathioprine 125 mg PO daily as a steroid sparing agent. **PMH.** Corticosteroid-dependent ulcerative colitis. **DH.** Prednisolone 20 mg PO daily, alendronic acid 70 mg PO weekly. Weight 60 kg.
 
 **Question**
-**Question
-**Select the *most appropriate* monitoring option required before initiating azathioprine.
+*Select the *most appropriate* monitoring option required before initiating azathioprine.
 (*mark it with a tick*)
 
 A. liver function tests
@@ -974,14 +965,12 @@ E. visual acuity screen
 MARKS: 2
 
 **Case presentation**
-**Case presentation
-**An 80-year-old man is admitted to the medical ward following an exacerbation of his congestive cardiac failure. **PMH.** Congestive cardiac failure secondary to ischaemic heart disease. **DH.** Aspirin 75 mg PO daily, ramipril 10 mg PO daily, bisoprolol fumarate 5 mg PO daily, simvastatin 40 mg PO nightly.
+An 80-year-old man is admitted to the medical ward following an exacerbation of his congestive cardiac failure. **PMH.** Congestive cardiac failure secondary to ischaemic heart disease. **DH.** Aspirin 75 mg PO daily, ramipril 10 mg PO daily, bisoprolol fumarate 5 mg PO daily, simvastatin 40 mg PO nightly.
 
 He is being treated with furosemide 80 mg IV daily.
 
 **Question**
-**Question
-**Select the *most appropriate* monitoring option to assess the beneficial effects of this treatment.
+*Select the *most appropriate* monitoring option to assess the beneficial effects of this treatment.
 (*mark it with a tick*)
 
 A. eGFR
@@ -1034,11 +1023,11 @@ A 74-year-old woman on the surgical ward had a below-knee amputation 2 days ago.
 
 On day 2 her pain is well-controlled, but she develops oliguria despite fluid resuscitation and becomes increasingly drowsy.
 
-**On examination
-**HR 81/min and rhythm regular, BP 118/75 mmHg, RR 12/min, O_2 sat 96% breathing air.
+**On examination**
+HR 81/min and rhythm regular, BP 118/75 mmHg, RR 12/min, O_2 sat 96% breathing air.
 
-**Investigations
-**Na^+ 135 mmol/L (137–144), K^+ 5.6 mmol/L (3.5–5.3), Cr 232 µmol/L (60–110) (baseline 104 µmol/L).
+**Investigations**
+Na^+ 135 mmol/L (137–144), K^+ 5.6 mmol/L (3.5–5.3), Cr 232 µmol/L (60–110) (baseline 104 µmol/L).
 
 **Question**
 Select the *most appropriate* decision option with regard to her morphine prescription based on these data.
@@ -1065,11 +1054,10 @@ Morphine is less appropriate in this context because, although it is also hepati
 MARKS: 2
 
 **Case presentation**
-**Case presentation
-**A 53-year-old-man presents to the emergency department after vomiting blood repeatedly and starting to feel lightheaded on standing. **PMH.** AF, previous cerebral infarction. **DH.** Warfarin sodium 3 mg PO daily for 2 months. He has missed several anticoagulant clinic appointments.
+A 53-year-old-man presents to the emergency department after vomiting blood repeatedly and starting to feel lightheaded on standing. **PMH.** AF, previous cerebral infarction. **DH.** Warfarin sodium 3 mg PO daily for 2 months. He has missed several anticoagulant clinic appointments.
 
-**On examination
-**HR 120/min and rhythm irregular, BP 82/40 mmHg. He is pale and clammy. Weight 80 kg.
+**On examination**
+HR 120/min and rhythm irregular, BP 82/40 mmHg. He is pale and clammy. Weight 80 kg.
 
 **Investigations**
 Hb 74 g/L (130–175), INR >10.0 (target 2.5).
@@ -1078,8 +1066,7 @@ U 14.4 mmol/L (2.5–7.0), Cr 76 µmol/L (60–110).
 His warfarin sodium is withheld. Phytomenadione 5 mg IV is administered.
 
 **Question**
-**Question
-**Select the *most appropriate* decision option with regard to the next stage of his anticoagulant management based on these data.
+*Select the *most appropriate* decision option with regard to the next stage of his anticoagulant management based on these data.
 (*mark it with a tick*)
 
 A. aspirin 75 mg PO daily
@@ -1104,8 +1091,8 @@ MARKS: 2
 **Case presentation**
 A 56-year-old woman presents to the cardiology outpatient clinic for planned 6-monthly review of AF. **PMH.** AF. **DH.** Amiodarone hydrochloride 200 mg PO daily, apixaban 5 mg PO 12-hrly.
 
-**Investigations
-**TSH 0.1 mU/L (0.4–5.0), serum free T4 48.0 pmol/L (10.0–22.0), serum T3 5.84 nmol/L (1.07–3.18).
+**Investigations**
+TSH 0.1 mU/L (0.4–5.0), serum free T4 48.0 pmol/L (10.0–22.0), serum T3 5.84 nmol/L (1.07–3.18).
 
 **Question**
 Select the *most appropriate* decision option with regard to her amiodarone hydrochloride based on these data.

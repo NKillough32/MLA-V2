@@ -287,8 +287,8 @@ MARKS_B: 2
 **Case presentation**
 A 49-year-old woman on the gynaecology ward is recovering from an elective total abdominal hysterectomy. **PMH.** Uterine fibroids, gallstones, gout, ischaemic heart disease (previous NSTEMI 9 years ago), type 1 diabetes. **DH.** In addition to insulin aspart (NovoRapid^®) SC which she dose-adjusts with meals, her current regular medicines are listed (right).
 
-**Investigations
-**Cr 148 µmol/L (60–110) (baseline 72 µmol/L).
+**Investigations**
+Cr 148 µmol/L (60–110) (baseline 72 µmol/L).
 
 Post-operatively she has acute kidney injury and has not passed urine for 12 hours.
 
@@ -322,8 +322,7 @@ MARKS_A: 2
 MARKS_B: 2
 
 **Case presentation**
-**Case presentation
-**A 76-year-old man on the medical ward for treatment of shortness of breath has become confused. **PMH.** COPD, myocardial infarction, anxiety, seasonal rhinitis. **DH.** His current regular medicines are listed (right). **SH.** Smokes 20 cigarettes/day.
+A 76-year-old man on the medical ward for treatment of shortness of breath has become confused. **PMH.** COPD, myocardial infarction, anxiety, seasonal rhinitis. **DH.** His current regular medicines are listed (right). **SH.** Smokes 20 cigarettes/day.
 
 **On examination**
 Temperature 37.5 °C, HR 78/min and rhythm regular, BP 165/87 mmHg, RR 19/min, O_2 sat 92% breathing air. HS normal. Chest sounds wheezy.
@@ -369,8 +368,8 @@ An 81-year-old woman presents to her GP with fatigue and headache. **PMH.** Hy
 **On examination
 **BP 115/58 mmHg.
 
-**Investigations
-**Na^+ 121 mmol/L (137–144), K^+ 4.2 mmol/L (3.5–5.3), U 8.9 mmol/L (2.5–7.0), Cr 121 mmol/L (60–110), eGFR 41 mL/min/1.73 m^2 (>60).
+**Investigations**
+Na^+ 121 mmol/L (137–144), K^+ 4.2 mmol/L (3.5–5.3), U 8.9 mmol/L (2.5–7.0), Cr 121 mmol/L (60–110), eGFR 41 mL/min/1.73 m^2 (>60).
 TSH 6.5 mU/L (0.4–5.0), serum free T4 9.0 pmol/L (10.0–22.0)
 
 **Part A:** Select the TWO prescriptions that are *most likely* to be a cause of her hyponatraemia.
@@ -402,8 +401,7 @@ CORRECT_B: levothyroxine sodium 75 micrograms oral (PO) daily
 MARKS: 2
 
 **Case presentation**
-**Case presentation
-**A 72-year-old woman presents to her GP with a history of a few days of shivering and myalgia combined with mild burning pain and numbness of the skin on the the left side of her chest. This culminated in the development of a rash in the affected area one day previously. **PMH.** Total left hip replacement, inflammatory bowel disease. **D****H.** Azathioprine 100 mg PO daily.
+A 72-year-old woman presents to her GP with a history of a few days of shivering and myalgia combined with mild burning pain and numbness of the skin on the the left side of her chest. This culminated in the development of a rash in the affected area one day previously. **PMH.** Total left hip replacement, inflammatory bowel disease. **DH.** Azathioprine 100 mg PO daily.
 
 **On examination**
 Temperature 37.3°C. There is an erythematous vesicular rash consistent with involvement of the T7 dermatome on the left.
@@ -439,8 +437,8 @@ A 79-year-old man on the medical ward is being treated for urinary frequency an
 **On examination**
 Temperature 38.1°C, HR 78/min and rhythm regular, BP 140/63 mmHg, RR 12/min, O_2 sat 97% breathing air. He has become increasingly confused in the past hour.
 
-**Investigations
-**Na^+ 137 mmol/L (137–144), K^+ 3.8 mmol/L (3.5–5.3), U 8.1 mmol/L (2.5–7.0), Cr 95 µmol/L (60–110), eGFR 41 mL/min/1.73 m^2 (>60).
+**Investigations**
+Na^+ 137 mmol/L (137–144), K^+ 3.8 mmol/L (3.5–5.3), U 8.1 mmol/L (2.5–7.0), Cr 95 µmol/L (60–110), eGFR 41 mL/min/1.73 m^2 (>60).
 Urinalysis shows E. coli >10^5, sensitive to trimethoprim, nitrofurantoin and amoxicillin.
 
 **Question**
@@ -596,14 +594,13 @@ The risk of increased harmful behaviours after starting the medication is import
 MARKS: 2
 
 **Case presentation**
-**Case presentation
-**An 85-year-old man is being discharged from the medical assessment unit after being seen with left-sided chest pain and shortness of breath. ** PMH.** Ischaemic heart disease, congestive heart failure, coronary artery bypass graft. **DH.** Atorvastatin 80 mg PO nightly, clopidogrel 75 mg PO daily, furosemide 40 mg PO daily, carvedilol 6.25 mg PO 12-hrly.
+An 85-year-old man is being discharged from the medical assessment unit after being seen with left-sided chest pain and shortness of breath. ** PMH.** Ischaemic heart disease, congestive heart failure, coronary artery bypass graft. **DH.** Atorvastatin 80 mg PO nightly, clopidogrel 75 mg PO daily, furosemide 40 mg PO daily, carvedilol 6.25 mg PO 12-hrly.
 
-**On examination
-**Temperature 34.7°C, HR 88/min and rhythm regular, BP 143/88 mmHg, RR 16/min, O_2 sat 97% breathing air.
+**On examination**
+Temperature 34.7°C, HR 88/min and rhythm regular, BP 143/88 mmHg, RR 16/min, O_2 sat 97% breathing air.
 
-**Investigations
-**Na^+ 139 mmol/L (137–144), K^+ 4.3 mmol/L (3.5–5.3), U 9.0 mmol/L (2.5–7.0), Cr 123 μmol/L (60–110).
+**Investigations**
+Na^+ 139 mmol/L (137–144), K^+ 4.3 mmol/L (3.5–5.3), U 9.0 mmol/L (2.5–7.0), Cr 123 μmol/L (60–110).
 ECG shows right bundle branch block.
 On discharge he is advised to take eplerenone 25 mg PO daily on alternate days.
 
@@ -696,16 +693,15 @@ WORKING:
 MARKS: 2
 
 **Case presentation**
-**Case presentation
-**A 77-year-old woman returns to the orthopaedic ward 2 days after discharge following a total knee replacement. She is found to have a wound infection and is to be treated with vancomycin 1 g IV 8-hrly. Weight 68 kg.
+A 77-year-old woman returns to the orthopaedic ward 2 days after discharge following a total knee replacement. She is found to have a wound infection and is to be treated with vancomycin 1 g IV 8-hrly. Weight 68 kg.
 
 Vancomycin is available in vials containing 500 mg for reconstitution.
 
 Prior to administration, vancomycin needs to be diluted with sodium chloride 0.9% to a concentration not exceeding 5 mg/mL.
 
 **Question**
-**Calculation
-** What is the minimum volume (mL) to which each dose of vancomycin should be diluted?
+**Calculation** 
+What is the minimum volume (mL) to which each dose of vancomycin should be diluted?
 (*write your answer in the box provided*)
 
 ANSWER: 200
@@ -733,8 +729,8 @@ He requires treatment with desmopressin 300 nanograms/kg IV over 20 mins, in a s
 Desmopressin is supplied in 1 mL ampoules containing 4 micrograms/mL desmopressin solution for injection.
 
 **Question**
-**Calculation
-** What volume (mL) of desmopressin solution for injection should be added to sodium chloride 0.9% to make this infusion?
+**Calculation** 
+What volume (mL) of desmopressin solution for injection should be added to sodium chloride 0.9% to make this infusion?
 (*write your answer in the box provided*)
 
 ANSWER: 2.4
@@ -789,10 +785,10 @@ E. weight gain
 MARKS: 2
 
 **Case presentation**
-A 67-year-old man is admitted to the medical ward with jaundice. **PMH. **Type 2 diabetes, hypertension, diabetic foot ulcer. **DH.** His current regular prescriptions are listed (right).
+A 67-year-old man is admitted to the medical ward with jaundice. **PMH.** Type 2 diabetes, hypertension, diabetic foot ulcer. **DH.** His current regular prescriptions are listed (right).
 
-**On examin****ation
-**Yellowing of skin and sclera.
+**On examination**
+Yellowing of skin and sclera.
 
 **Investigations**
 bili 83 micromol/L (1–22), ALT 65 U/L (5–35), alk phos 173 U/L (45–105).
@@ -823,8 +819,8 @@ MARKS: 2
 **Case presentation**
 A 67-year-old woman presents to her GP because she is experiencing excessive tiredness and reports having loose black stools. **PMH.** Hypertension, AF, type 2 diabetes, depression. **DH.** Her current regular medicines, in addition to dabigatran etexilate 150 mg PO 12-hrly, are listed (right).
 
-**Investigations
-**Hb 88 g/L (115–165).
+**Investigations**
+Hb 88 g/L (115–165).
 
 **Question**
 Select the prescription that is *most likely* to interact with dabigatran etexilate to cause gastrointestinal bleeding.
@@ -851,11 +847,10 @@ E. metformin hydrochloride 500 mg PO twice daily with meals
 MARKS: 2
 
 **Case presentation**
-**Case presentation
-**A 44-year-old-man attends a follow up appointment at the diabetes clinic for review of his antihypertensive medication. **PMH.** Type 1 diabetes. **DH.** Insulin aspart (NovoRapid^®) 1 unit per 10 g carbohydrate SC three times daily with meals, insulin degludec (Tresiba^®) 18 units SC nightly, lisinopril 5 mg PO daily (started 1 week ago).
+A 44-year-old-man attends a follow up appointment at the diabetes clinic for review of his antihypertensive medication. **PMH.** Type 1 diabetes. **DH.** Insulin aspart (NovoRapid^®) 1 unit per 10 g carbohydrate SC three times daily with meals, insulin degludec (Tresiba^®) 18 units SC nightly, lisinopril 5 mg PO daily (started 1 week ago).
 
-**On examination
-**BP 140/85 mmHg (home BP readings prior to lisinopril treatment averaged 146/88 mmHg).
+**On examination**
+BP 140/85 mmHg (home BP readings prior to lisinopril treatment averaged 146/88 mmHg).
 
 **Investigations**
 Cr 112 µmol/L (60–110) (was 98 µmol/L prior to lisinopril treatment).
@@ -884,20 +879,18 @@ E. stop lisinopril, start losartan potassium 25 mg PO daily and repeat urea and 
 MARKS: 2
 
 **Case presentation**
-**Case presentation
-**A 77-year-old man is referred to the cardiology clinic with a 4-week history of palpitations and shortness of breath. **PMH.** Angina. **DH.** Aspirin 75 mg PO daily, isosorbide mononitrate m/r 20 mg PO daily.
+A 77-year-old man is referred to the cardiology clinic with a 4-week history of palpitations and shortness of breath. **PMH.** Angina. **DH.** Aspirin 75 mg PO daily, isosorbide mononitrate m/r 20 mg PO daily.
 
 **On examination**
 HR 112/min and rhythm irregular, BP 126/78 mmHg.
 
-**Investigations
-**ECG confirms AF (ventricular rate 112/min).
+**Investigations**
+ECG confirms AF (ventricular rate 112/min).
 
 He is advised to take metoprolol tartrate 50 mg PO 12-hrly.
 
 **Question**
-**Question
-**Select the *most appropriate* monitoring option to assess the beneficial effects of metoprolol after 3 days of treatment.
+*Select the *most appropriate* monitoring option to assess the beneficial effects of metoprolol after 3 days of treatment.
 (*mark it with a tick*)
 
 A. blood pressure
@@ -951,8 +944,8 @@ MARKS: 2
 **Case presentation**
 A 23-year-old woman presents to her GP requesting the combined oral contraceptive pill. **SH.** Smoker.
 
-**On examination
-**Temperature 36.8°C, BP 124/78 mmHg, BMI 28.9 kg/m^2 (18-25).
+**On examination**
+Temperature 36.8°C, BP 124/78 mmHg, BMI 28.9 kg/m^2 (18-25).
 
 Ethinylestradiol 30 micrograms/gestodene 75 micrograms (Katya 30/75^®) one tablet PO daily for 21 days is commenced.
 
@@ -1014,8 +1007,8 @@ MARKS: 2
 **Case presentation**
 A 29-year-old woman was admitted to the medical admissions unit with an infective exacerbation of asthma 3 days ago. **PMH****.** Type 1 diabetes, asthma. **DH****.** Insulin aspart (NovoRapid^®) 1 unit per 10 g carbohydrate SC with breakfast and lunch, 1.5 units per 10 g carbohydrate SC with evening meal, insulin degludec (100 units/mL) (Tresiba^®) 24 units SC with breakfast, beclometasone dipropionate (Clenil Modulite^®) 200 micrograms INH 12-hrly, salbutamol 200 micrograms INH as required, amoxicillin 1 g IV 8-hrly, prednisolone 40 mg PO daily for 7 days.
 
-**Investigations
-**Subcutaneous interstitial glucose sensor data for the last 3 days is available (see image).
+**Investigations**
+Subcutaneous interstitial glucose sensor data for the last 3 days is available (see image).
 
 **Question**
 Select the *most appropriate* decision option with regard to her insulin prescription based on these data.
@@ -1041,14 +1034,13 @@ E. reduce insulin aspart (NovoRapid®) to 1 unit per 10 g carbohydrate with even
 MARKS: 2
 
 **Case presentation**
-**Case presentation
-**A 50-year-old man presents to his GP for review of his blood results. He commenced treatment for hypercholesterolaemia 3 months ago as his QRISK score was 15%. **PMH.** Hypertension, hypercholesterolaemia. **DH.** Atorvastatin 20 mg PO daily, ramipril 2.5 mg PO daily. **SH.** Smokes 20 cigarettes daily.
+A 50-year-old man presents to his GP for review of his blood results. He commenced treatment for hypercholesterolaemia 3 months ago as his QRISK score was 15%. **PMH.** Hypertension, hypercholesterolaemia. **DH.** Atorvastatin 20 mg PO daily, ramipril 2.5 mg PO daily. **SH.** Smokes 20 cigarettes daily.
 
 **On examination**
 BP 130/80 mmHg.
 
-**Investigations
-**3 months ago, prior to treatment:
+**Investigations**
+3 months ago, prior to treatment:
 serum cholesterol 6.8 mmol/L (<5.2), serum LDL cholesterol 4.1 mmol/L (<3.36), serum HDL cholesterol 1.5 mmol/L (>1.55).
 
 3 days ago:
@@ -1080,8 +1072,8 @@ MARKS: 2
 **Case presentation**
 A 68-year-old woman presents to the emergency department with shortness of breath 10 days post-chemotherapy. She has a confirmed pneumonia and neutropenic sepsis. She is treated with piperacillin/tazobactam 4.5 g IV 8-hrly and gentamicin 7 mg/kg IV. Her first dose of gentamicin was administered at 17.00 h today. Weight 60 kg.
 
-**Investigations
-**serum gentamicin at 21.00 h 8.0 micrograms/mL (see image).
+**Investigations**
+serum gentamicin at 21.00 h 8.0 micrograms/mL (see image).
 
 **Question**
 Select the *most appropriate* decision option based on these data.

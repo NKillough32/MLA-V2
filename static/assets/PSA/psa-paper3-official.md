@@ -428,11 +428,11 @@ DOSE_MARKS: 5
 **Case presentation**
 An 80-year-old woman presents to her GP with fatigue. **PMH.** Coeliac disease, irritable bowel syndrome. **DH. **Omeprazole 20 mg PO daily, peppermint oil one capsule PO daily. **SH.** Lives alone, walks with a stick.
 
-**On examination
-**Conjunctival pallor. Abdomen mildly distended, bowel sounds present.
+**On examination**
+Conjunctival pallor. Abdomen mildly distended, bowel sounds present.
 
-**Investigations
-**Hb 90 g/L (115–165), MCV 100 fL (80–96), serum vitamin B_12 300 ng/L (160–760), serum folate 1.0 μg/L (2.0–11.0), serum ferritin 123 micrograms/L (15–300).
+**Investigations**
+Hb 90 g/L (115–165), MCV 100 fL (80–96), serum vitamin B_12 300 ng/L (160–760), serum folate 1.0 μg/L (2.0–11.0), serum ferritin 123 micrograms/L (15–300).
 
 **Prescribing request**
 Write a prescription for ONE drug that is *most appropriate* to treat her anaemia.
@@ -462,8 +462,8 @@ DOSE_MARKS: 5
 **Case presentation**
 A 55-year-old woman presents to her GP for a review of her current hormone replacement therapy (HRT). **PMH.** Menopausal flushes, last menstrual period 2 years ago. **DH.** Estradiol 50 micrograms/24 h transdermal patch and estradiol 50 micrograms/norethisterone acetate 170 micrograms/24 h transdermal patch combi (Evorel Sequi^®) one patch transdermally twice weekly for 1 year.
 
-**On examination
-**Weight 68 kg (no recent change), BP 130/80 mmHg.
+**On examination**
+Weight 68 kg (no recent change), BP 130/80 mmHg.
 
 She asks for alternative HRT treatment that avoids monthly withdrawal bleeds. She would prefer to continue to use a transdermal patch.
 
@@ -498,8 +498,8 @@ MARKS_B: 2
 **Case presentation**
 An 88-year-old man is admitted to hospital with acute urinary retention. He has been mainly bed bound for several days because of a chest infection and generalised muscle aches. **PMH.** Myocardial infarction, angina, trigeminal neuralgia, overactive bladder. **DH.** In addition to clarithromycin 500 mg PO 12-hrly for 5 days, his current regular medicines are listed (right).
 
-**Investigations
-**serum creatine kinase 856 U/L (24–195)
+**Investigations**
+serum creatine kinase 856 U/L (24–195)
 
 **Part A:** Select the TWO prescriptions that are *most likely* to be a cause of his acute urinary retention.
 (*mark them with a tick in column A*)
@@ -535,8 +535,8 @@ A 59-year-old man is seen by his GP for review of blood results. **PMH.** Cardia
 **On examination**
 Mild tremor of hands.
 
-**Investigations
-**K^+ 5.5 mmol/L (3.5–5.3).
+**Investigations**
+K^+ 5.5 mmol/L (3.5–5.3).
 
 **Part A:** Select the THREE prescriptions that are *most likely* to be a cause of his hyperkalaemia when given in combination.
 (*mark them with a tick in column A*)
@@ -600,8 +600,8 @@ MARKS_B: 2
 **Case presentation**
 A 42-year-old man presents to his GP with excessive thirst. He has also noted lightheadness on standing over the past few months. **PMH.** Type 2 diabetes, hypertension, ischaemic heart disease, erectile dysfunction, B12 deficiency. **DH.** His current regular medicines are listed (right).
 
-**On examination
-**BP sitting 146/82 mmHg, BP standing 122/72 mmHg. Heart sounds normal. Chest examination normal. Cranial nerves intact.
+**On examination**
+BP sitting 146/82 mmHg, BP standing 122/72 mmHg. Heart sounds normal. Chest examination normal. Cranial nerves intact.
 
 **Investigations**
 random capillary glucose 11.0 mmol/L, urinary ketones negative.
@@ -637,8 +637,8 @@ MARKS_B: 2
 **Case presentation**
 A 76-year-old woman presents to her GP with epistaxis. There has been no other bleeding. She is currently on treatment for a urinary tract infection. **PMH.** AF, hypertension, generalised dry skin, osteoarthritis, intermittent insomnia. **DH.** In addition to warfarin sodium 3 mg PO daily at 18.00 h, her current regular medicines are listed (right).
 
-**Investigations
-**INR (3 weeks ago) 3.8 (target 2.5).
+**Investigations**
+INR (3 weeks ago) 3.8 (target 2.5).
 INR (now) 7.0 (target 2.5).
 Na^+ 134 mmol/L (137–144), K^+ 5.6 mmol/L (3.5–5.3), U 7.0 mmol/L (2.5–7.0), Cr 111 μmol/L (60–110).
 
@@ -673,11 +673,11 @@ MARKS_B: 2
 **Case presentation**
 An 86-year-old man is brought to the emergency department by ambulance after a fall caused by tripping on a loose carpet. He hit the front of his head on the floor. **PMH.** Hypertension, transient ischaemic attack 11 years ago, hypercholesterolaemia, neuropathic pain. **DH.** His current regular medicines are listed (right).
 
-**On examination
-**Appears confused and drowsy. Temperature 36.8°C, HR 85/min and rhythm regular, lying BP 125/78 mmHg, sitting BP 127/80 mmHg, RR 14/min. Extensive bruising to face.
+**On examination**
+Appears confused and drowsy. Temperature 36.8°C, HR 85/min and rhythm regular, lying BP 125/78 mmHg, sitting BP 127/80 mmHg, RR 14/min. Extensive bruising to face.
 
-**Investigations
-**QTc 502 ms (<440).
+**Investigations**
+QTc 502 ms (<440).
 
 Results of CT scan head are awaited.
 
@@ -709,17 +709,16 @@ MARKS_A: 2
 MARKS_B: 2
 
 **Case presentation**
-**Case presentation
-**A 74-year-old woman presents to her GP for a medication review. **PMH.** Depression, GORD, hay fever, hypercholesterolaemia, hypertension, hypothyroidism, type 2 diabetes, urinary frequency and incontinence. **DH. **Her current regular medicines are listed (right).
+A 74-year-old woman presents to her GP for a medication review. **PMH.** Depression, GORD, hay fever, hypercholesterolaemia, hypertension, hypothyroidism, type 2 diabetes, urinary frequency and incontinence. **DH. **Her current regular medicines are listed (right).
 
 She is currently asymptomatic and continues to take her medicines as directed.
 
-**Part A:** **Question A
-**Select the THREE prescriptions that are *most likely* to be associated with an increased risk of cognitive impairment.
+**Part A:** **Question A**
+Select the THREE prescriptions that are *most likely* to be associated with an increased risk of cognitive impairment.
 (*mark them with a tick in column A*)
 
-**Part B:** **Question B
-**Select the ONE prescription that is *most appropriate* to be deprescribed as it is not indicated.
+**Part B:** **Question B**
+Select the ONE prescription that is *most appropriate* to be deprescribed as it is not indicated.
 (*mark it with a tick in column B*)
 
 | Medicine | Dose | Route | Frequency | A | B |
@@ -783,8 +782,8 @@ An 81-year-old woman is admitted to the emergency department with acute confu
 **On examination**
 Temperature 37.0°C, HR 88/min and rhythm regular, BP 130/78 mmHg, RR 16/min.
 
-**Investigations
-**eGFR 29 mL/min/1.73 m^2 (>60).
+**Investigations**
+eGFR 29 mL/min/1.73 m^2 (>60).
 
 The patient refuses to swallow tablets.
 
@@ -814,11 +813,10 @@ Safer options are available for empirical therapy. The dose is incorrect for ren
 MARKS: 2
 
 **Case presentation**
-**Case presentation
-**A 25-year-old woman attends the obstetrics clinic for routine review at 28 weeks into her pregnancy. She reports that she feels well and is happy how her pregnancy is progressing.
+A 25-year-old woman attends the obstetrics clinic for routine review at 28 weeks into her pregnancy. She reports that she feels well and is happy how her pregnancy is progressing.
 
-**Investigations
-**Fasting plasma glucose 6.5 mmol/L (3.0–6.0).
+**Investigations**
+Fasting plasma glucose 6.5 mmol/L (3.0–6.0).
 
 Routine scanning shows no fetal abnormalities.
 
@@ -884,8 +882,8 @@ A 75-year-old man presents to the emergency department with increasing breathl
 **On examination**
 Temperature 37.0°C, HR 150/min and rhythm irregular, BP 135/74 mmHg, RR 15/min, O_2 sat 96% breathing air. HS normal, chest sounds clear with no evidence of heart failure.
 
-**Investigations
-**Na^+ 140 mmol/L (137–144), K^+ 4.0 (3.5–5.3), U 10.0 mmol/L (2.5–7.0), Cr 150 µmol/L (60–110), eGFR 42 mL/min/1.73 m^2 (>60).
+**Investigations**
+Na^+ 140 mmol/L (137–144), K^+ 4.0 (3.5–5.3), U 10.0 mmol/L (2.5–7.0), Cr 150 µmol/L (60–110), eGFR 42 mL/min/1.73 m^2 (>60).
 CXR normal.
 ECG shows atrial flutter with a ventricular rate of 150/min.
 
@@ -917,8 +915,8 @@ MARKS: 2
 **Case presentation**
 A 92-year-old woman presents to her GP with gradual onset of right knee pain over a number of years. Paracetamol has not helped to control her pain. **PMH.** Hypertension, ischaemic heart disease, AF, recurrent duodenal ulcer, psoriasis. **DH.** Amlodipine 5 mg PO daily, apixaban 2.5 mg PO 12-hrly, indapamide 2.5 mg PO daily, paracetamol 500 mg PO 6-hrly as required, omeprazole 20 mg PO daily.
 
-**On examination
-**Right knee shows no swelling or effusion present. Joint crepitus present. Tender over medial meniscus. Reduced range of movements with flexion at 80 degrees and extension at 10 degrees. No ligament laxity noted. Weight 48 kg.
+**On examination**
+Right knee shows no swelling or effusion present. Joint crepitus present. Tender over medial meniscus. Reduced range of movements with flexion at 80 degrees and extension at 10 degrees. No ligament laxity noted. Weight 48 kg.
 
 **Question**
 Select the *most appropriate* management option at this stage.
@@ -947,11 +945,11 @@ MARKS: 2
 **Case presentation**
 A 60-year-old woman presents to the emergency department with nausea, abdominal pain and constipation. **PMH.** Breast cancer treated with surgery and chemotherapy.
 
-**On examination
-**Temperature 36.0°C, HR 100/min and rhythm regular, BP 100/80 mmHg, JVP not visible. Abdomen is soft with mild generalised tenderness.
+**On examination**
+Temperature 36.0°C, HR 100/min and rhythm regular, BP 100/80 mmHg, JVP not visible. Abdomen is soft with mild generalised tenderness.
 
-**Investigations
-**Na^+ 140 mmol/L (137–144), K^+ 4.5 mmol/L (3.5–5.3), U 10.0 mmol/L (2.5–7.0), Cr 100 µmol/L (60–110), Ca^2+ (corrected) 3.06 mmol/L (2.20–2.60), PO_4^3- 1.0 mmol/L (0.8–1.4 mmol/L), random capillary glucose 3.9 mmol/L.
+**Investigations**
+Na^+ 140 mmol/L (137–144), K^+ 4.5 mmol/L (3.5–5.3), U 10.0 mmol/L (2.5–7.0), Cr 100 µmol/L (60–110), Ca^2+ (corrected) 3.06 mmol/L (2.20–2.60), PO_4^3- 1.0 mmol/L (0.8–1.4 mmol/L), random capillary glucose 3.9 mmol/L.
 
 **Question**
 Select the *most appropriate* management option at this stage.
@@ -984,8 +982,8 @@ A 54-year-old woman is brought to the emergency department having being found 
 **On examination**
 Temperature 37.0ºC, HR 110/min and rhythm regular, BP 85/55 mmHg, RR 12/min, O_2 sat 99% on O_2 15 L/min via a non-rebreathing mask. Glasgow coma score 11/15 with 7 mm diameter pupils.
 
-**Investigations
-**random 'finger prick' capillary glucose 7.0 mmol/L.
+**Investigations**
+random 'finger prick' capillary glucose 7.0 mmol/L.
 ECG shows sinus tachycardia with broadened QRS complexes (150 msec).
 
 **Question**
@@ -1018,8 +1016,8 @@ A 77-year-old woman, who is a nursing home resident, is reviewed for chronic ven
 **On examination**
 Temperature 36.6°C, HR 52/min and rhythm regular, BP 108/70 mmHg, RR 16/min, O_2 sat 95% breathing air. Erythematous skin surrounding a venous leg ulcer above the lateral aspect of her right ankle. Weight 70 kg.
 
-**Investigations
-**eGFR 60 mL/min/1.73 m^2 (>60).
+**Investigations**
+eGFR 60 mL/min/1.73 m^2 (>60).
 
 Skin swab results are now available:
 
@@ -1184,11 +1182,11 @@ MARKS: 2
 **Case presentation**
 A 50-year-old woman presents to the ambulatory department with a painful left calf. She returned from a holiday in Mexico 3 weeks ago and the calf pain started 2 weeks later.
 
-**On examination
-**Temperature 36.0°C, HR 70/min and rhythm regular, BP 120/76 mmHg, RR 14/min.
+**On examination**
+Temperature 36.0°C, HR 70/min and rhythm regular, BP 120/76 mmHg, RR 14/min.
 
-**Investigations
-**creatinine clearance 60 mL/min (>90).
+**Investigations**
+creatinine clearance 60 mL/min (>90).
 Wells' score 3.
 Doppler US shows DVT.**
 **
@@ -1219,8 +1217,7 @@ E. the dose should be reduced to 15 mg PO daily after 21 days
 MARKS: 2
 
 **Case presentation**
-**Case presentation
-**A 24-year-old woman presents to her GP with a productive cough. **DH.** Ethinylestradiol 33.9 micrograms/norelgestromin 203 micrograms/24 h (Evra^® patch) one patch transdermally weekly for 3 weeks of cycle, amoxicillin 500 mg PO 8-hrly (started the previous day at a walk-in centre).
+A 24-year-old woman presents to her GP with a productive cough. **DH.** Ethinylestradiol 33.9 micrograms/norelgestromin 203 micrograms/24 h (Evra^® patch) one patch transdermally weekly for 3 weeks of cycle, amoxicillin 500 mg PO 8-hrly (started the previous day at a walk-in centre).
 
 **Question**
 Select the *most important* information option that should be provided for the patient regarding her contraception.
@@ -1253,8 +1250,8 @@ He requires treatment with propranolol hydrochloride 500 micrograms/kg PO 8-hrly
 Propranolol hydrochloride is available as a 1 mg/mL oral solution.
 
 **Question**
-**Calculation
-** What volume (mL) of propranolol oral solution is required each day? Give your answer to the nearest one decimal place.
+**Calculation**
+ What volume (mL) of propranolol oral solution is required each day? Give your answer to the nearest one decimal place.
 (*write your answer in the box provided*)
 
 ANSWER: 1.9
@@ -1290,8 +1287,8 @@ A 55-year-old woman in the emergency department is being treated for cardiogen
 She is being treated with dobutamine hydrochloride 200 mg in 50 mL glucose 5% by IV infusion. The syringe driver is set to run at a rate of 6 mL/h.
 
 **Question**
-**Calculation
-**What dose (micrograms/kg/min) of dobutamine hydrochloride is the patient receiving?
+**Calculation**
+What dose (micrograms/kg/min) of dobutamine hydrochloride is the patient receiving?
 (*write your answer in the box provided*)
 
 ANSWER: 5
@@ -1334,8 +1331,8 @@ The medicine is available as gentamicin sulfate 40 mg/mL solution for injecti
 Each dose is rounded to the nearest 40 mg.
 
 **Question**
-**Calculation
-** What volume (mL)* *of gentamicin does the patient require for her initial dose?
+**Calculation**
+ What volume (mL)* *of gentamicin does the patient require for her initial dose?
 (*write your answer in the box provided*)
 
 ANSWER: 9
@@ -1366,16 +1363,15 @@ WORKING:
 MARKS: 2
 
 **Case presentation**
-**Case presentation
-**A 70-year-old woman is on the vascular surgery ward awaiting surgery for an ischaemic limb. **PMH.** Type 2 diabetes, CKD stage 5. Weight 70 kg.
+A 70-year-old woman is on the vascular surgery ward awaiting surgery for an ischaemic limb. **PMH.** Type 2 diabetes, CKD stage 5. Weight 70 kg.
 
 She requires heparin 18 units/kg/h to be administered via IV infusion using a syringe driver.
 
 Heparin is available as a 1000 units/mL solution in vials.
 
 **Question**
-**Calculation
-** What rate of infusion (mL/h) of heparin solution is required to deliver the correct dosage? Give your answer to the nearest one decimal place.
+**Calculation**
+ What rate of infusion (mL/h) of heparin solution is required to deliver the correct dosage? Give your answer to the nearest one decimal place.
 (*write your answer in the box provided*)
 
 ANSWER: 1.3
@@ -1411,8 +1407,8 @@ She requires treatment with phenobarbital sodium 20 mg/kg by slow IV infusion.
 Phenobarbital sodium is available as a 30 mg/mL solution. The infusion must be given no faster than 1 mg/kg/minute.
 
 **Question**
-**Calculation
-**What is the minimum duration (minutes) over which the phenobarbital sodium infusion should be given?
+**Calculation**
+What is the minimum duration (minutes) over which the phenobarbital sodium infusion should be given?
 (*write your answer in the box provided*)
 
 ANSWER: 20
@@ -1463,8 +1459,8 @@ To reduce the risk of hepatorenal syndrome, he requires treatment with albumin 1
 The medicine is available as human albumin solution 20% infusion bags.
 
 **Question**
-**Calculation
-**What volume (mL) of human albumin solution 20% is required in the first 24 hours?
+**Calculation**
+What volume (mL) of human albumin solution 20% is required in the first 24 hours?
 (*write your answer in the box provided*)
 
 ANSWER: 600
@@ -1542,8 +1538,8 @@ He will require a 3-day supply of morphine for background SC infusion and three 
 Morphine sulfate is available as 10 mg ampoules. Partially used ampoules must be discarded.
 
 **Question**
-**Calculation
-** How many morphine sulfate ampoules should be added to the discharge prescription?
+**Calculation**
+ How many morphine sulfate ampoules should be added to the discharge prescription?
 (*write your answer in the box provided*)
 
 ANSWER: 24
@@ -1610,8 +1606,8 @@ A 48-year-old woman visits her GP for a routine review of her diabetes control.
 **On examination**
 BMI 32 kg/m^2 (18–25).
 
-**Investigations
-**eGFR >60 mL/min/1.73 m^2 (>60), HbA_1C 59 mmol/mol (20–42).
+**Investigations**
+eGFR >60 mL/min/1.73 m^2 (>60), HbA_1C 59 mmol/mol (20–42).
 
 She is advised to start canagliflozin 100 mg PO daily.
 
@@ -1641,8 +1637,8 @@ MARKS: 2
 **Case presentation**
 A 78-year-old woman presents to her GP with confusion and nausea. **PMH.** Hypertension, osteoporosis, depression. **DH.** Her current regular prescriptions are listed (right).
 
-**Investigations
-**Na^+ 125 mmol/L (137–144), K^+ 4.2 mmol/L (3.5–5.3), U 6.4 mmol/L (2.5–7.0), Cr 91 µmol/L (60–110).
+**Investigations**
+Na^+ 125 mmol/L (137–144), K^+ 4.2 mmol/L (3.5–5.3), U 6.4 mmol/L (2.5–7.0), Cr 91 µmol/L (60–110).
 
 **Question**
 Select the prescription that is *most likely* to be contributing to her presenting complaint.
@@ -1670,11 +1666,10 @@ SSRIs inhibit noradrenaline reuptake, leading to stimulation of antidiuretic hor
 MARKS: 2
 
 **Case presentation**
-**Case presentation
-**A 63-year-old man on the medical ward is found to have developed abnormal liver biochemistry. He was admitted 7 days ago with a seizure that was complicated by a fractured clavicle and aspiration pneumonia. **PMH.** Epilepsy. **DH.** His current regular medicines are listed (right). Weight 80 kg.
+A 63-year-old man on the medical ward is found to have developed abnormal liver biochemistry. He was admitted 7 days ago with a seizure that was complicated by a fractured clavicle and aspiration pneumonia. **PMH.** Epilepsy. **DH.** His current regular medicines are listed (right). Weight 80 kg.
 
-**Investigations
-**INR 0.9 (<1.4).
+**Investigations**
+INR 0.9 (<1.4).
 
 bili 39 μmol/L (1–22), ALT 26 U/L (5–35), AST 38 U/L (1-31), alk phos 249 U/L (45–105), GGT 145 U/L (<50).
 
@@ -1704,8 +1699,8 @@ MARKS: 2
 **Case presentation**
 A 53-year-old woman presents to the emergency department with dysuria and fever. **PMH. **Eosinophilic granulomatosis with polyangiitis, hypertension, hypercholesterolaemia, recent UTI. **DH.** In addition to alendronic acid 70 mg PO weekly, folic acid 5 mg PO weekly, trimethoprim 200 mg PO 12-hrly (started 1 week ago), her current regular prescriptions are listed (right).
 
-**Investigations
-**Hb 77 g/L (115–165), WCC 2.8 × 10^9/L (4.0–11.0), neutrophils 1.0 × 10^9/L (1.5–7.0), platelets 72 × 10^9/L (150–400).
+**Investigations**
+Hb 77 g/L (115–165), WCC 2.8 × 10^9/L (4.0–11.0), neutrophils 1.0 × 10^9/L (1.5–7.0), platelets 72 × 10^9/L (150–400).
 
 **Question**
 Select the prescription that is *most likely* to have interacted with trimethoprim to cause these abnormal results.
@@ -1768,8 +1763,8 @@ MARKS: 2
 **Case presentation**
 A 62-year-old man attends his GP for a medication review. **PMH.** Hypertension, hyperlipidaemia. **DH. **Amlodipine 10 mg** **PO daily, atorvastatin 20 mg PO daily (started 3 months ago after being found to have a raised cardiovascular disease risk score). **SH. **Drinks 30 units of alcohol/week, smokes 20 cigarettes/day.
 
-**Investigations
-**ALT 30 U/L (5–35) (3 months ago).
+**Investigations**
+ALT 30 U/L (5–35) (3 months ago).
 ALT 52 U/L (5–35) (3 days ago).
 
 All other LFTs within normal range.
@@ -1798,14 +1793,13 @@ E. stop atorvastatin
 MARKS: 2
 
 **Case presentation**
-**Case presentation
-**A 79-year-old man returns to his GP for results of blood tests taken the previous day. **PMH.** Myocardial infarction 5 years ago, chronic congestive heart failure with severe left ventricular systolic dysfunction, NYHA class II symptoms. **DH.** Ramipril 5 mg PO daily, bisoprolol fumarate 10 mg PO daily, atorvastatin 40 mg PO daily, bumetanide 500 micrograms PO daily. In addition, eplerenone 50 mg PO daily was started 1 month ago.
+A 79-year-old man returns to his GP for results of blood tests taken the previous day. **PMH.** Myocardial infarction 5 years ago, chronic congestive heart failure with severe left ventricular systolic dysfunction, NYHA class II symptoms. **DH.** Ramipril 5 mg PO daily, bisoprolol fumarate 10 mg PO daily, atorvastatin 40 mg PO daily, bumetanide 500 micrograms PO daily. In addition, eplerenone 50 mg PO daily was started 1 month ago.
 
 **On examination**
 HR 70/min and rhythm regular, BP 118/80 mmHg, RR 16/min, O_2 sat 95% breathing air. HS normal. Chest sounds clear. Pitting oedema both ankles.
 
-**Investigations
-**Na^+ 137 mmol/L (137–144), K^+ 5.9 mmol/L (3.5–5.3), U 11.0 mmol/L (2.5–7.0), Cr 135 µmol/L (60–110), eGFR 47 mL/min/1.73 m^2 (>60).
+**Investigations**
+Na^+ 137 mmol/L (137–144), K^+ 5.9 mmol/L (3.5–5.3), U 11.0 mmol/L (2.5–7.0), Cr 135 µmol/L (60–110), eGFR 47 mL/min/1.73 m^2 (>60).
 
 **Question**
 Select the *most appropriate* option for the management of his hyperkalaemia.
@@ -1926,8 +1920,8 @@ MARKS: 2
 **Case presentation**
 An 82-year-old man presents to his GP with persistent urinary frequency, weak stream and hesitancy of micturition with some terminal dribbling. **PMH.** Hypertension. **DH. **Lisinopril 5 mg PO daily, amlodipine 5 mg PO daily, tamsulosin 400 micrograms PO daily. **SH.** Ex-smoker, lives alone.
 
-**On examination
-**Enlarged prostate (approximately 50 mL) on digital rectal examination with preserved sulcus.
+**On examination**
+Enlarged prostate (approximately 50 mL) on digital rectal examination with preserved sulcus.
 
 He is advised to take finasteride 5 mg PO daily.
 
@@ -1957,8 +1951,8 @@ MARKS: 2
 **Case presentation**
 An 82-year-old man presents to his GP with persistent urinary frequency, weak stream and hesitancy of micturition with some terminal dribbling. **PMH.** Hypertension. **DH. **Lisinopril 5 mg PO daily, amlodipine 5 mg PO daily, tamsulosin 400 micrograms PO daily. **SH.** Ex-smoker, lives alone.
 
-**On examination
-**Enlarged prostate (approximately 50 mL) on digital rectal examination with preserved sulcus.
+**On examination**
+Enlarged prostate (approximately 50 mL) on digital rectal examination with preserved sulcus.
 
 He is advised to take finasteride 5 mg PO daily.
 
@@ -1988,8 +1982,8 @@ MARKS: 2
 **Case presentation**
 A 34-year-old woman presents to the emergency department with a swollen and painful left calf. Primigravida, 23 weeks pregnant. Early pregnancy weight 67 kg. **SH.** Returned to the UK yesterday after a 1-week holiday in Dubai.
 
-**Investigations
-**eGFR >60 mL/min/1.73 m^2 (>60).
+**Investigations**
+eGFR >60 mL/min/1.73 m^2 (>60).
 
 She is found to have a DVT and treatment with enoxaparin sodium 60 mg SC 12-hrly is being commenced.
 
@@ -2047,8 +2041,8 @@ MARKS: 2
 **Case presentation**
 A 68-year-old woman attends the diabetes clinic for annual review. She has increasing thirst and frequency of urination. **PMH.** Type 2 diabetes for 19 years. **DH.** Metformin hydrochloride 1 g PO twice daily with meals, sitagliptin 100 mg PO daily, canagliflozin 100 mg PO daily (before breakfast).
 
-**Investigations
-**HbA_1c 72 mmol/mol (20–42).
+**Investigations**
+HbA_1c 72 mmol/mol (20–42).
 
 She agrees to start treatment with insulin glargine (Lantus^®) 10 units SC daily in the evening.
 
@@ -2076,11 +2070,10 @@ E. 2 h postprandial capillary blood glucose
 MARKS: 2
 
 **Case presentation**
-**Case presentation
-**A 72-year-old woman presents to her GP with symptoms of proximal myalgia. **DH.** Paracetamol 500 mg PO 8-hrly as required. **SH.** Lives alone in a bungalow, does not smoke or drink alcohol.
+A 72-year-old woman presents to her GP with symptoms of proximal myalgia. **DH.** Paracetamol 500 mg PO 8-hrly as required. **SH.** Lives alone in a bungalow, does not smoke or drink alcohol.
 
-**On examination
-**HR 72/min and rhythm regular, BP normal. Proximal muscle aching. Weight 50 kg.
+**On examination**
+HR 72/min and rhythm regular, BP normal. Proximal muscle aching. Weight 50 kg.
 
 Polymyalgia rheumatica is diagnosed. Baseline bloods are requested.
 
@@ -2110,21 +2103,20 @@ E. symptom severity ✓
 MARKS: 2
 
 **Case presentation**
-**Case presentation
-**A 72-year-old man is admitted to the orthopaedic ward following a total hip replacement. **PMH. **CKD secondary to longstanding hypertension. Weight 80 kg.
+A 72-year-old man is admitted to the orthopaedic ward following a total hip replacement. **PMH. **CKD secondary to longstanding hypertension. Weight 80 kg.
 
-**On examination
-**BMI 24 kg/m^2 (18–25).
+**On examination**
+BMI 24 kg/m^2 (18–25).
 
-**Investigations
-**Hb 105 g/L (130–175), platelets 198 × 10^9/L (150–400), INR 1.0 (<1.4).
+**Investigations**
+Hb 105 g/L (130–175), platelets 198 × 10^9/L (150–400), INR 1.0 (<1.4).
 CrCl 34 mL/min (>90).
 
 He requires venous thromboembolism prophylaxis. Local guidelines recommend fondaparinux sodium.
 
 **Question**
-**Question
-**Select the *most appropriate *decision option based on these data.
+**Question**
+Select the *most appropriate *decision option based on these data.
 (*mark it with a tick*)
 
 A. fondaparinux sodium 1.5 mg SC daily ✓
@@ -2156,8 +2148,8 @@ A 30-year-old man is in the emergency department resuscitation room after being
 **On examination**
 Glasgow coma score 4/15 (E1, V1, M2), pupils 2 mm diameter, RR 7/min, O_2 sat_ 95% breathing O_2 15 L/min via a reservoir mask.
 
-**Investigations
-**Arterial blood gases, breathing O_2 15 L/min.
+**Investigations**
+Arterial blood gases, breathing O_2 15 L/min.
 PO_2 9.0 kPa (11.3–12.6), PCO_2 7.0 kPa (4.7–6.0), pH 7.20 (7.35–7.45), H^+ 63 nmol/L (35–45), bicarbonate 22 mmol/L (21–29), base excess –5 mmol/L (±2), lactate 4.1 mmol/L (0.5–1.6).
 
 **Question**
@@ -2187,8 +2179,8 @@ MARKS: 2
 **Case presentation**
 A 69-year-old woman presents to her GP for a routine INR check. **PMH. **Hypertension, mechanical heart valve, recent community-acquired pneumonia. **DH.** Warfarin sodium dosed according to INR, bisoprolol fumarate 5 mg PO daily, clarithromycin 500 mg PO 12-hrly for 5 days, course completed 2 days ago, no known drug allergies. **SH.** Lives at home. Ex-smoker (stopped 12 months ago). Weight 60 kg.
 
-**On examination
-**Temperature 37.1°C, HR 73/min and rhythm irregular, BP 120/90 mmHg. No bleeding or bruising.
+**On examination**
+Temperature 37.1°C, HR 73/min and rhythm irregular, BP 120/90 mmHg. No bleeding or bruising.
 
 **Investigations**
 Target INR 3.5.
@@ -2225,8 +2217,8 @@ MARKS: 2
 **Case presentation**
 A 68-year-old man on the surgical ward is being treated for pyelonephritis. **PMH.** Longstanding back pain. **DH.** Codeine phosphate 60 mg PO 8-hrly, paracetamol 1 g PO 6-hrly, gentamicin 5 mg/kg IV daily for 3 days.
 
-**Investigations
-**Na^+ 140 mmol/L (137–144), K^+ 5.5 mmol/L (3.5–5.3), U 20 mmol/L (2.5–7.0), Cr 170 μmol/L (60–110), eGFR 35 mL/min/1.73 m^2 (>60).
+**Investigations**
+Na^+ 140 mmol/L (137–144), K^+ 5.5 mmol/L (3.5–5.3), U 20 mmol/L (2.5–7.0), Cr 170 μmol/L (60–110), eGFR 35 mL/min/1.73 m^2 (>60).
 
 serum gentamicin (8 h post-dose) 3.0 mg/L (see image).
 
@@ -2256,11 +2248,11 @@ MARKS: 2
 **Case presentation**
 A 44-year-old man on the medical ward is being treated for community-acquired pneumonia. **PMH.** Motor neurone disease. **DH.** Riluzole 50 mg PO daily, enoxaparin sodium 40 mg SC daily, co-amoxiclav 1.2 g IV 8-hrly, clarithromycin 500 mg IV 12-hrly, paracetamol 1 g PO 6-hrly.
 
-**On examination
-**Alert. Temperature 38.6°C, HR 102/min and rhythm regular, BP 131/71 mmHg, RR 24/min. O_2 sats have been monitored over the past 8 hours (see image).
+**On examination**
+Alert. Temperature 38.6°C, HR 102/min and rhythm regular, BP 131/71 mmHg, RR 24/min. O_2 sats have been monitored over the past 8 hours (see image).
 
-**Investigations
-**Arterial blood gases, breathing 24% oxygen:
+**Investigations**
+Arterial blood gases, breathing 24% oxygen:
 PO_2 8.2 kPa (11.3–12.6), PCO_2 5.5 kPa (4.7–6.0), pH 7.35 (7.35–7.45), bicarbonate 25 mmol/L (21–29).
 
 **Question**
@@ -2289,8 +2281,8 @@ MARKS: 2
 **Case presentation**
 A 19-year-old man presents to his GP for a review of his diabetes control. **PMH.** Type 1 diabetes (6 months). **DH.** Insulin degludec (Tresiba^®) 10 units SC twice daily (morning and evening), insulin aspart (NovoRapid FlexPen^®) 1 unit per 10 g carbohydrate SC with meals.
 
-**Investigations
-**Over the past week, average waking, pre-prandial and bedtime capillary blood glucose concentrations are:
+**Investigations**
+Over the past week, average waking, pre-prandial and bedtime capillary blood glucose concentrations are:
 
 08.00 h: 12.1–14.5 mmol/L
 
