@@ -959,12 +959,12 @@ class PWAQuizLoader:
 
         tol_raw = get('TOLERANCE')
         unit_raw = get('UNIT')
-        wm = re.search(r'^WORKING\s*:\s*\n([\s\S]+?)(?=\n[A-Z]+\s*:|\n>|\n\n\n|$)', body, re.IGNORECASE | re.MULTILINE)
+        wm = re.search(r'^WORKING\s*:\s*\n([\s\S]+?)(?=\n[A-Z]+\s*:|\n>|\n\n\n|\Z)', body, re.IGNORECASE | re.MULTILINE)
         working = wm.group(1).strip() if wm else ''
         explanation, _ = PWAQuizLoader._psa_get_explanation(body)
 
         q_text = re.sub(r'^(UNIT|ANSWER|TOLERANCE)\s*:.*$', '', body, flags=re.IGNORECASE | re.MULTILINE)
-        q_text = re.sub(r'^WORKING\s*:[\s\S]*?(?=\n[A-Z]+\s*:|\n>|\n\n\n|$)', '', q_text, flags=re.IGNORECASE | re.MULTILINE)
+        q_text = re.sub(r'^WORKING\s*:[\s\S]*?(?=\n[A-Z]+\s*:|\n>|\n\n\n|\Z)', '', q_text, flags=re.IGNORECASE | re.MULTILINE)
         q_text = re.sub(r'\n>[\s\S]+$', '', q_text).strip()
         scenario, prompt = PWAQuizLoader._psa_bold_split(q_text)
         return {
