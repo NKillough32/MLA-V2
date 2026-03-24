@@ -5680,6 +5680,7 @@ class MLAQuizApp {
                             ${question.unit ? `<span class="psa-unit-label">${question.unit}</span>` : ''}
                         </div>
                         <p class="psa-calc-hint">Type a number, then press <kbd>↵ Enter</kbd> or click <em>Check Answer</em></p>
+                        <p class="psa-calc-hint"><a href="https://www.google.com/search?q=calculator" target="_blank" rel="noopener noreferrer" class="psa-calc-link">🧮 Open calculator</a></p>
                     </div>`;
             } else {
                 // Submitted — show result
