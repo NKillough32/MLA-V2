@@ -5680,7 +5680,31 @@ class MLAQuizApp {
                             ${question.unit ? `<span class="psa-unit-label">${question.unit}</span>` : ''}
                         </div>
                         <p class="psa-calc-hint">Type a number, then press <kbd>↵ Enter</kbd> or click <em>Check Answer</em></p>
-                        <p class="psa-calc-hint"><a href="https://www.google.com/search?q=calculator" target="_blank" rel="noopener noreferrer" class="psa-calc-link">🧮 Open calculator</a></p>
+                        <button class="psa-calc-toggle" onclick="window._toggleMiniCalc()" type="button">🧮 Calculator</button>
+                        <div class="psa-mini-calc" id="psaMiniCalc">
+                            <div class="mc-display" id="mcDisplay">0</div>
+                            <div class="mc-buttons">
+                                <button class="mc-btn mc-fn" onclick="window._mc('clear')" type="button">C</button>
+                                <button class="mc-btn mc-fn" onclick="window._mc('back')" type="button">⌫</button>
+                                <button class="mc-btn mc-fn" onclick="window._mc('pct')" type="button">%</button>
+                                <button class="mc-btn mc-op" onclick="window._mc('op','/')" type="button">÷</button>
+                                <button class="mc-btn" onclick="window._mc('num','7')" type="button">7</button>
+                                <button class="mc-btn" onclick="window._mc('num','8')" type="button">8</button>
+                                <button class="mc-btn" onclick="window._mc('num','9')" type="button">9</button>
+                                <button class="mc-btn mc-op" onclick="window._mc('op','*')" type="button">×</button>
+                                <button class="mc-btn" onclick="window._mc('num','4')" type="button">4</button>
+                                <button class="mc-btn" onclick="window._mc('num','5')" type="button">5</button>
+                                <button class="mc-btn" onclick="window._mc('num','6')" type="button">6</button>
+                                <button class="mc-btn mc-op" onclick="window._mc('op','-')" type="button">−</button>
+                                <button class="mc-btn" onclick="window._mc('num','1')" type="button">1</button>
+                                <button class="mc-btn" onclick="window._mc('num','2')" type="button">2</button>
+                                <button class="mc-btn" onclick="window._mc('num','3')" type="button">3</button>
+                                <button class="mc-btn mc-op" onclick="window._mc('op','+')" type="button">+</button>
+                                <button class="mc-btn mc-zero" onclick="window._mc('num','0')" type="button">0</button>
+                                <button class="mc-btn" onclick="window._mc('dot')" type="button">.</button>
+                                <button class="mc-btn mc-eq" onclick="window._mc('eq')" type="button">=</button>
+                            </div>
+                        </div>
                     </div>`;
             } else {
                 // Submitted — show result
@@ -6187,6 +6211,66 @@ class MLAQuizApp {
                 const val = inp.value.trim();
                 if (val === '') { uiManager.showToast('Please enter a numerical answer', 'warning'); return; }
                 quizManager.submitAnswer(parseFloat(val));
+            };
+
+            // Mini calculator logic
+            window._mcState = { display: '0', prev: null, op: null, justEvaled: false };
+            window._toggleMiniCalc = () => {
+                const el = document.getElementById('psaMiniCalc');
+                if (!el) return;
+                const isOpen = el.classList.toggle('open');
+                const btn = document.querySelector('.psa-calc-toggle');
+                if (btn) btn.textContent = isOpen ? '🧮 Hide calculator' : '🧮 Calculator';
+                if (isOpen) {
+                    window._mcState = { display: '0', prev: null, op: null, justEvaled: false };
+                    const d = document.getElementById('mcDisplay');
+                    if (d) d.textContent = '0';
+                }
+            };
+            window._mc = (type, val) => {
+                const s = window._mcState;
+                const d = document.getElementById('mcDisplay');
+                if (!d) return;
+                if (type === 'clear') {
+                    s.display = '0'; s.prev = null; s.op = null; s.justEvaled = false;
+                } else if (type === 'back') {
+                    s.display = s.display.length > 1 ? s.display.slice(0, -1) : '0';
+                    s.justEvaled = false;
+                } else if (type === 'num') {
+                    if (s.display === '0' || s.justEvaled) { s.display = val; s.justEvaled = false; }
+                    else if (s.display.length < 12) s.display += val;
+                } else if (type === 'dot') {
+                    if (s.justEvaled) { s.display = '0.'; s.justEvaled = false; }
+                    else if (!s.display.includes('.')) s.display += '.';
+                } else if (type === 'pct') {
+                    s.display = String(parseFloat(s.display) / 100);
+                    s.justEvaled = true;
+                } else if (type === 'op') {
+                    if (s.op && !s.justEvaled) {
+                        const r = window._mcEval(parseFloat(s.prev), parseFloat(s.display), s.op);
+                        s.display = window._mcFmt(r);
+                    }
+                    s.prev = s.display; s.op = val; s.justEvaled = true;
+                } else if (type === 'eq') {
+                    if (s.op && s.prev !== null) {
+                        const r = window._mcEval(parseFloat(s.prev), parseFloat(s.display), s.op);
+                        s.display = window._mcFmt(r);
+                        s.prev = null; s.op = null; s.justEvaled = true;
+                    }
+                }
+                d.textContent = s.display;
+            };
+            window._mcEval = (a, b, op) => {
+                if (op === '+') return a + b;
+                if (op === '-') return a - b;
+                if (op === '*') return a * b;
+                if (op === '/') return b === 0 ? NaN : a / b;
+                return b;
+            };
+            window._mcFmt = (n) => {
+                if (!isFinite(n)) return 'Error';
+                const s = parseFloat(n.toPrecision(10)).toString();
+                return s.length > 12 ? parseFloat(n.toFixed(6)).toString() : s;
             };
 
             // Inject Check Answer button after the input panel

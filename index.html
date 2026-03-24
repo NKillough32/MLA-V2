@@ -15271,15 +15271,65 @@
             background: #f1f5f9;
             color: #475569;
         }
-        .psa-calc-link {
+        .psa-calc-toggle {
+            background: none;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
             color: #0284c7;
-            text-decoration: none;
+            cursor: pointer;
+            font-size: 12px;
             font-weight: 500;
+            margin-top: 8px;
+            padding: 4px 10px;
+            transition: background 0.15s;
         }
-        .psa-calc-link:hover {
-            text-decoration: underline;
-            color: #0369a1;
+        .psa-calc-toggle:hover { background: #f0f9ff; }
+        .psa-mini-calc {
+            display: none;
+            margin-top: 10px;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 10px;
+            width: 210px;
         }
+        .psa-mini-calc.open { display: block; }
+        .mc-display {
+            background: #1e293b;
+            color: #f8fafc;
+            border-radius: 6px;
+            text-align: right;
+            padding: 8px 12px;
+            font-size: 20px;
+            font-family: monospace;
+            margin-bottom: 8px;
+            min-height: 38px;
+            overflow: hidden;
+            word-break: break-all;
+        }
+        .mc-buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 5px;
+        }
+        .mc-btn {
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 15px;
+            padding: 9px 0;
+            transition: background 0.1s;
+        }
+        .mc-btn:hover { background: #f1f5f9; }
+        .mc-btn:active { background: #e2e8f0; }
+        .mc-btn.mc-op { background: #e0f2fe; color: #0369a1; font-weight: 600; }
+        .mc-btn.mc-op:hover { background: #bae6fd; }
+        .mc-btn.mc-fn { background: #f1f5f9; color: #475569; }
+        .mc-btn.mc-fn:hover { background: #e2e8f0; }
+        .mc-btn.mc-eq { background: #0284c7; color: #fff; font-weight: 700; }
+        .mc-btn.mc-eq:hover { background: #0369a1; }
+        .mc-btn.mc-zero { grid-column: span 2; }
         .psa-unit-label {
             display: flex;
             align-items: center;
@@ -15391,8 +15441,17 @@
         [data-theme="dark"] .psa-calc-input:focus { box-shadow: 0 0 0 3px rgba(56,189,248,.25) !important; border-color: #38bdf8 !important; }
         [data-theme="dark"] .psa-calc-hint { color: #4e6a84 !important; }
         [data-theme="dark"] .psa-calc-hint kbd { background: #1e293b !important; border-color: #334155 !important; color: #7dd3fc !important; }
-        [data-theme="dark"] .psa-calc-link { color: #38bdf8 !important; }
-        [data-theme="dark"] .psa-calc-link:hover { color: #7dd3fc !important; }
+        [data-theme="dark"] .psa-calc-toggle { border-color: #334155 !important; color: #38bdf8 !important; }
+        [data-theme="dark"] .psa-calc-toggle:hover { background: #0c2d42 !important; }
+        [data-theme="dark"] .psa-mini-calc { background: #0f172a !important; border-color: #334155 !important; }
+        [data-theme="dark"] .mc-display { background: #0c2d42 !important; color: #e2e8f0 !important; }
+        [data-theme="dark"] .mc-btn { background: #1e293b !important; border-color: #334155 !important; color: #e2e8f0 !important; }
+        [data-theme="dark"] .mc-btn:hover { background: #334155 !important; }
+        [data-theme="dark"] .mc-btn.mc-op { background: #0c2d42 !important; color: #38bdf8 !important; }
+        [data-theme="dark"] .mc-btn.mc-op:hover { background: #1e3a5f !important; }
+        [data-theme="dark"] .mc-btn.mc-fn { background: #1e293b !important; color: #94a3b8 !important; }
+        [data-theme="dark"] .mc-btn.mc-eq { background: #0284c7 !important; color: #fff !important; }
+        [data-theme="dark"] .mc-btn.mc-eq:hover { background: #0369a1 !important; }
         [data-theme="dark"] .psa-unit-label { background: #0c2d42 !important; border-color: #38bdf8 !important; color: #7dd3fc !important; border-radius: 0 12px 12px 0 !important; }
 
         /* ── Dark mode — Prescribing ── */
