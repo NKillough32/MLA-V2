@@ -6398,9 +6398,10 @@ class MLAQuizApp {
             };
 
             // Custom autocomplete — substring match, keyboard nav
-            const setupPsaAC = (inputEl, baseSuggestions) => {
+            const setupPsaAC = (inputEl, baseSuggestions, autoCompleteTargets = []) => {
                 let dropdown = null;
                 let activeIdx = -1;
+                let isApplyingAutoFill = false;
 
                 const filter = (q) => {
                     const term = q.toLowerCase().trim();
@@ -6475,7 +6476,38 @@ class MLAQuizApp {
                     });
                 };
 
-                inputEl.addEventListener('input', () => openDD(filter(inputEl.value)));
+                const tryAutoFillFromTargets = () => {
+                    if (!Array.isArray(autoCompleteTargets) || autoCompleteTargets.length === 0) return;
+                    const typed = inputEl.value || '';
+                    if (typed.length <= 5) return;
+
+                    const loweredTyped = typed.toLowerCase();
+                    const matches = autoCompleteTargets.filter(target =>
+                        typeof target === 'string' &&
+                        target.length > typed.length &&
+                        target.toLowerCase().startsWith(loweredTyped)
+                    );
+                    if (matches.length !== 1) return;
+
+                    const fullMatch = matches[0];
+                    if (fullMatch === inputEl.value) return;
+
+                    isApplyingAutoFill = true;
+                    inputEl.value = fullMatch;
+                    try {
+                        inputEl.setSelectionRange(typed.length, fullMatch.length);
+                    } catch (e) {
+                        // Ignore selection failures (non-text inputs, browser quirks)
+                    }
+                    isApplyingAutoFill = false;
+                };
+
+                inputEl.addEventListener('input', () => {
+                    if (!isApplyingAutoFill) {
+                        tryAutoFillFromTargets();
+                    }
+                    openDD(filter(inputEl.value));
+                });
                 inputEl.addEventListener('focus', () => openDD(filter(inputEl.value)));
                 inputEl.addEventListener('blur', () => setTimeout(closeDD, 150));
                 inputEl.addEventListener('keydown', e => {
@@ -6501,7 +6533,7 @@ class MLAQuizApp {
                 if (f.field === 'DRUG') {
                     // Full drug library only — don't expose the correct answer at the top
                     getDrugSuggestions().then(drugNames => {
-                        setupPsaAC(el, drugNames);
+                        setupPsaAC(el, drugNames, accepted);
                     });
                 } else if (f.field === 'ROUTE') {
                     setupPsaAC(el, PSA_ROUTES);
