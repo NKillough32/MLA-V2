@@ -2544,9 +2544,14 @@ export class QuizManager {
         const unitRaw     = get('UNIT');
         const answerRaw   = get('ANSWER');
         const tolRaw      = get('TOLERANCE');
-        // WORKING: everything after the WORKING: line until the next directive or blockquote
-        const workingMatch = body.match(/^WORKING\s*:\s*\n([\s\S]+?)(?=\n[A-Z]+\s*:|(?:\n>)|\n\n\n|$)/im);
-        const working     = workingMatch ? workingMatch[1].trim() : '';
+        // WORKING: everything after the WORKING: line until the blockquote or end-of-string.
+        // NOTE: JS regex `$` with the `m` flag matches end-of-LINE, which would stop the
+        // non-greedy match at the end of the "WORKING:" line itself and leave all the step
+        // lines in qText. To avoid this, we extract WORKING content greedily to end-of-string
+        // and then strip the trailing explanation blockquote from the captured group.
+        const workingMatch = body.match(/^WORKING\s*:\s*\n([\s\S]*)/im);
+        const rawWorking   = workingMatch ? workingMatch[1] : '';
+        const working      = rawWorking.replace(/\n>[\s\S]+/, '').trim();
 
         if (!answerRaw) return null;
         const correctValue = parseFloat(answerRaw);
@@ -2556,12 +2561,14 @@ export class QuizManager {
         const expMatch = body.match(/\n(>\s+[\s\S]+)$/);
         const explanation = expMatch ? expMatch[1].replace(/^>\s*/gm, '').trim() : '';
 
-        // Strip directives from question text
+        // Strip directives from question text.
+        // Use a greedy [\s\S]* for the WORKING removal so the `m`-flag `$` issue
+        // (which only matches end-of-line) cannot prematurely terminate the match.
         let qText = body
             .replace(/^UNIT\s*:.*$/im, '')
             .replace(/^ANSWER\s*:.*$/im, '')
             .replace(/^TOLERANCE\s*:.*$/im, '')
-            .replace(/^WORKING\s*:[\s\S]*?(?=\n[A-Z]+\s*:|(?:\n>)|\n\n\n|$)/im, '')
+            .replace(/^WORKING\s*:[\s\S]*/im, '')   // greedy — removes WORKING: and everything after
             .replace(/\n(>\s+[\s\S]+)$/, '')
             .trim();
 
