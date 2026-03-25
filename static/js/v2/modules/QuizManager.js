@@ -571,6 +571,25 @@ export class QuizManager {
             .replace(/\([^)]*\)/g, '')          // remove "(IV)", "(PO)" etc.
             .replace(/\s+/g, ' ')
             .trim();
+        const toTokens = s => normAmt(s).split(/\s+/).filter(Boolean);
+
+        const routeAliases = {
+            iv: ['iv', 'intravenous'],
+            po: ['po', 'oral', 'by mouth'],
+            im: ['im', 'intramuscular'],
+            sc: ['sc', 'subcutaneous', 'subcut'],
+            pr: ['pr', 'rectal'],
+            sl: ['sl', 'sublingual'],
+            neb: ['neb', 'nebulised', 'nebulized'],
+            inh: ['inh', 'inhaled', 'inhalation']
+        };
+        const detectRoute = (text) => {
+            const n = normAmt(text);
+            for (const [routeKey, aliases] of Object.entries(routeAliases)) {
+                if (aliases.some(a => n.includes(a))) return routeKey;
+            }
+            return '';
+        };
 
         const userDrugNorm = normDrug(userDrug);
 
@@ -586,15 +605,31 @@ export class QuizManager {
             );
         });
 
-        // Dose is correct if the combined dose+route+freq matches any dose_option
-        // in the accepted drug options (check all options so partial credit is possible)
+        // Dose is correct if the combined dose+route+freq matches an accepted dose option.
+        // Also allow a structured fallback where dose amount + route are correct, even if
+        // timing/frequency wording differs ("once only" vs "over 10 minutes").
         const userCombined = normAmt([userDose, userRoute, userFreq].filter(Boolean).join(' '));
+        const userRouteNorm = detectRoute([userRoute, userDose, userFreq].join(' '));
+        const userDoseTokens = toTokens(userDose).filter(t => /\d/.test(t));
+
         const doseOk = !!userCombined && drugOpts.some(opt =>
-            (opt.dose_options || []).some(doseStr => {
+            (opt.dose_options || []).some((doseStr) => {
                 const dNorm = normAmt(doseStr);
-                return dNorm === userCombined ||
+                if (dNorm === userCombined ||
                        dNorm.includes(userCombined) ||
-                       userCombined.includes(dNorm);
+                       userCombined.includes(dNorm)) {
+                    return true;
+                }
+
+                // Fallback: exact dose quantity/unit token(s) and route match.
+                // This prevents unfair 0 marks when the user enters correct IV dose
+                // but different timing text.
+                const dRoute = detectRoute(dNorm);
+                const dTokens = toTokens(dNorm);
+                const doseTokensMatch = userDoseTokens.length > 0 && userDoseTokens.every(t => dTokens.includes(t));
+                const routeMatches = !!userRouteNorm && !!dRoute && userRouteNorm === dRoute;
+
+                return doseTokensMatch && routeMatches;
             })
         );
 
