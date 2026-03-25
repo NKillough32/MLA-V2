@@ -5998,19 +5998,19 @@ class MLAQuizApp {
             const drugMarks = question.drug_marks ?? 5;
             const doseMarks = question.dose_marks ?? 5;
             if (!submitted) {
-                const _drugListHtml = drugOpts.map(o => `<option value="${o.drug.replace(/"/g, '&quot;')}">`).join('');
-                const _allDoses = [...new Set(drugOpts.flatMap(o => o.dose_options || []).map(d => d.replace(/\s*\[\d+\/\d+\]/g, '').trim()))];
-                const _doseListHtml = _allDoses.map(d => `<option value="${d.replace(/"/g, '&quot;')}">`).join('');
-                const _drugOptsAttr = JSON.stringify(drugOpts).replace(/"/g, '&quot;');
-                html += `<div class="psa-prescribing-panel psa-rx-panel" data-drug-options="${_drugOptsAttr}">
-                    <datalist id="psaDrugList">${_drugListHtml}</datalist>
-                    <datalist id="psaDoseList">${_doseListHtml}</datalist>
+
+
+
+
+                html += `<div class="psa-prescribing-panel psa-rx-panel">
+                    <datalist id="psaDrugList"></datalist>
+
                     <p class="psa-panel-label psa-rx-title"><span class="psa-rx-icon">&#x1F4CB;</span> Write your prescription, then tap <em>Check Answer</em> to see the accepted answers.</p>
                     <div class="psa-rx-fields">
                         <label class="psa-rx-label" for="psaPrescribingDrug">Drug:</label>
                         <div style="position:relative;"><input id="psaPrescribingDrug" type="text" placeholder="Drug name and formulation&hellip;" list="psaDrugList" autocorrect="off" autocapitalize="off" spellcheck="false" class="psa-rx-input" data-psa-field="drug"></div>
                         <label class="psa-rx-label" for="psaPrescribingDose">Dose / amount:</label>
-                        <div style="position:relative;"><input id="psaPrescribingDose" type="text" placeholder="e.g. 40 mg" list="psaDoseList" class="psa-rx-input" data-psa-field="dose"></div>
+                        <div style="position:relative;"><input id="psaPrescribingDose" type="text" placeholder="e.g. 40 mg" autocomplete="off" class="psa-rx-input" data-psa-field="dose"></div>
                         <label class="psa-rx-label" for="psaPrescribingRoute">Route:</label>
                         <div style="position:relative;"><input id="psaPrescribingRoute" type="text" placeholder="e.g. intravenous" autocomplete="off" class="psa-rx-input" data-psa-field="route"></div>
                         <label class="psa-rx-label" for="psaPrescribingFreq">Frequency:</label>
@@ -6593,22 +6593,37 @@ class MLAQuizApp {
                     window.prescribingManager.bindPsaInputs();
                 }
 
-                // Drug→dose filtering: narrow dose datalist when a known drug is matched
-                const drugInp  = document.getElementById('psaPrescribingDrug');
-                const doseList = document.getElementById('psaDoseList');
-                const rxOpts   = JSON.parse((prescribingPanel.dataset.drugOptions || '').replace(/&quot;/g, '"') || '[]');
-                if (drugInp && doseList && rxOpts.length) {
-                    drugInp.addEventListener('input', () => {
-                        const val = drugInp.value.trim().toLowerCase();
-                        const match = val.length >= 3
-                            ? rxOpts.find(o => o.drug.toLowerCase().includes(val) || val.includes(o.drug.toLowerCase().split(' ')[0]))
-                            : null;
-                        const doses = match
-                            ? (match.dose_options || [])
-                            : [...new Set(rxOpts.flatMap(o => o.dose_options || []))];
-                        doseList.innerHTML = doses.map(d => `<option value="${d.replace(/\s*\[\d+\/\d+\]/g, '').replace(/"/g, '&quot;')}">`).join('');
-                    });
+                // Populate drug datalist from full drug DB — broad list so answers aren't revealed
+                const _psaDrugListEl = document.getElementById('psaDrugList');
+                if (_psaDrugListEl) {
+                    if (window._psaDrugNamesHtml) {
+                        _psaDrugListEl.innerHTML = window._psaDrugNamesHtml;
+                    } else {
+                        fetch('static/drugs/index.json')
+                            .then(r => r.json())
+                            .then(data => {
+                                const h = (data.drugs || []).map(d => `<option value="${d.name.replace(/"/g, '&quot;')}">`).join('');
+                                window._psaDrugNamesHtml = h;
+                                _psaDrugListEl.innerHTML = h;
+                            })
+                            .catch(() => {});
+                    }
                 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             }
 
         } else if (submitted && (qType === 'calculation' || qType === 'prescription' || qType === 'prescribing' || qType === 'review')) {
