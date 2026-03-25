@@ -5999,7 +5999,7 @@ class MLAQuizApp {
             const doseMarks = question.dose_marks ?? 5;
             if (!submitted) {
                 const _drugListHtml = drugOpts.map(o => `<option value="${o.drug.replace(/"/g, '&quot;')}">`).join('');
-                const _allDoses = [...new Set(drugOpts.flatMap(o => o.dose_options || []))];
+                const _allDoses = [...new Set(drugOpts.flatMap(o => o.dose_options || []).map(d => d.replace(/\s*\[\d+\/\d+\]/g, '').trim()))];
                 const _doseListHtml = _allDoses.map(d => `<option value="${d.replace(/"/g, '&quot;')}">`).join('');
                 const _drugOptsAttr = JSON.stringify(drugOpts).replace(/"/g, '&quot;');
                 html += `<div class="psa-prescribing-panel psa-rx-panel" data-drug-options="${_drugOptsAttr}">
@@ -6606,7 +6606,7 @@ class MLAQuizApp {
                         const doses = match
                             ? (match.dose_options || [])
                             : [...new Set(rxOpts.flatMap(o => o.dose_options || []))];
-                        doseList.innerHTML = doses.map(d => `<option value="${d.replace(/"/g, '&quot;')}">`).join('');
+                        doseList.innerHTML = doses.map(d => `<option value="${d.replace(/\s*\[\d+\/\d+\]/g, '').replace(/"/g, '&quot;')}">`).join('');
                     });
                 }
             }
