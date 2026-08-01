@@ -279,6 +279,7 @@ class MLAQuizApp {
             { id: 'triads-panel', log: '🔺 Preloading clinical triads content...', loader: panel => this.loadTriadsContent(panel) },
             { id: 'examination-panel', log: '👨‍⚕️ Preloading examination content...', loader: panel => this.loadExaminationContent(panel) },
             { id: 'emergency-protocols-panel', log: '🚨 Preloading emergency protocols content...', loader: panel => this.loadEmergencyProtocolsContent(panel) },
+            { id: 'ae-assessment-panel', log: '🫁 Preloading A-E assessment content...', loader: panel => this.loadAEAssessmentContent(panel) },
             { id: 'interpretation-panel', log: '📊 Preloading interpretation tools content...', loader: panel => this.loadInterpretationToolsContent(panel) },
             { id: 'med-stats-ethics-panel', log: '📈 Preloading medical statistics content...', loader: panel => this.loadMedStatsEthicsContent(panel) },
             { id: 'clinical-pearls-panel', log: '💡 Preloading clinical pearls content...', loader: panel => this.loadClinicalPearlsContent(panel) },
@@ -1138,6 +1139,7 @@ class MLAQuizApp {
             'triads': 'triads-panel',
             'examination': 'examination-panel',
             'emergency-protocols': 'emergency-protocols-panel',
+            'ae-assessment': 'ae-assessment-panel',
             'interpretation': 'interpretation-panel',
             'anatomy': 'anatomy-panel',
             'developmental': 'developmental-panel',
@@ -1217,6 +1219,9 @@ class MLAQuizApp {
                 break;
             case 'emergency-protocols':
                 this.loadEmergencyProtocolsContent(panel);
+                break;
+            case 'ae-assessment':
+                this.loadAEAssessmentContent(panel);
                 break;
             case 'interpretation':
                 this.loadInterpretationToolsContent(panel);
@@ -4857,6 +4862,850 @@ class MLAQuizApp {
         if (protocolPanel) protocolPanel.scrollTop = 0;
         container.scrollTop = 0;
         window.scrollTo(0, 0);
+    }
+
+    /**
+     * Load interactive A-E assessment content
+     */
+    loadAEAssessmentContent(panel) {
+        if (!panel) {
+            console.error('loadAEAssessmentContent: panel is null');
+            return;
+        }
+
+        const container = panel.querySelector('#ae-assessment-container') || panel;
+        if (!container) {
+            console.error('loadAEAssessmentContent: container not found');
+            return;
+        }
+
+        const sections = [
+            {
+                id: 'a',
+                title: 'A - Airway',
+                prompts: [
+                    'Is the airway patent? Any stridor, gurgling, snoring, or obstruction?',
+                    'Airway manoeuvres performed (jaw thrust, suction, adjunct, intubation planning).'
+                ],
+                flags: [
+                    { label: 'Threatened airway or stridor', priority: 'critical' },
+                    { label: 'Unable to speak full sentences', priority: 'high' },
+                    { label: 'SpO2 < 90% despite oxygen', priority: 'critical' }
+                ]
+            },
+            {
+                id: 'b',
+                title: 'B - Breathing',
+                prompts: [
+                    'RR, SpO2 target, oxygen delivery device, chest findings, ABG/VBG if done.',
+                    'Interventions (bronchodilators, NIV, escalation to ventilatory support).'
+                ],
+                flags: [
+                    { label: 'RR < 8 or > 30', priority: 'high' },
+                    { label: 'Silent chest/exhaustion', priority: 'critical' },
+                    { label: 'Rising CO2 or severe hypoxia despite therapy', priority: 'critical' }
+                ]
+            },
+            {
+                id: 'c',
+                title: 'C - Circulation',
+                prompts: [
+                    'HR, BP, capillary refill, fluid status, urine output, ECG, bloods.',
+                    'Interventions (IV access, fluids, bloods, vasopressors, hemorrhage control).'
+                ],
+                flags: [
+                    { label: 'SBP < 90 mmHg or MAP < 65', priority: 'critical' },
+                    { label: 'HR < 40 or > 130', priority: 'high' },
+                    { label: 'Poor perfusion/lactate > 4', priority: 'critical' }
+                ]
+            },
+            {
+                id: 'd',
+                title: 'D - Disability',
+                prompts: [
+                    'AVPU/GCS, pupils, glucose, focal neurology, seizure activity.',
+                    'Interventions (glucose correction, anticonvulsants, neuroimaging escalation).'
+                ],
+                flags: [
+                    { label: 'Drop in GCS >= 2 points', priority: 'critical' },
+                    { label: 'Seizure or post-ictal compromise', priority: 'high' },
+                    { label: 'Unresponsive or persistent hypoglycaemia', priority: 'critical' }
+                ]
+            },
+            {
+                id: 'e',
+                title: 'E - Exposure/Everything Else',
+                prompts: [
+                    'Temperature, rash, wounds, lines, edema, bleeding, septic source review.',
+                    'Interventions (sepsis six, anaphylaxis treatment, warming/cooling, source control).'
+                ],
+                flags: [
+                    { label: 'Active major hemorrhage', priority: 'critical' },
+                    { label: 'Purpuric rash/anaphylaxis concerns', priority: 'critical' },
+                    { label: 'Temp < 35C or > 39C with instability', priority: 'high' }
+                ]
+            }
+        ];
+
+        const observationDefinitions = [
+            {
+                key: 'rr',
+                label: 'Respiratory Rate',
+                unit: '/min',
+                section: 'b',
+                check: (v) => {
+                    if (v < 8 || v > 30) return { severity: 'critical', note: `RR ${v}/min` };
+                    if (v < 12 || v > 20) return { severity: 'high', note: `RR ${v}/min` };
+                    return { severity: 'normal', note: `RR ${v}/min` };
+                }
+            },
+            {
+                key: 'spo2',
+                label: 'SpO2',
+                unit: '%',
+                section: 'b',
+                check: (v) => {
+                    if (v < 90) return { severity: 'critical', note: `SpO2 ${v}%` };
+                    if (v < 94) return { severity: 'high', note: `SpO2 ${v}%` };
+                    return { severity: 'normal', note: `SpO2 ${v}%` };
+                }
+            },
+            {
+                key: 'hr',
+                label: 'Heart Rate',
+                unit: '/min',
+                section: 'c',
+                check: (v) => {
+                    if (v < 40 || v > 130) return { severity: 'critical', note: `HR ${v}/min` };
+                    if (v < 50 || v > 110) return { severity: 'high', note: `HR ${v}/min` };
+                    return { severity: 'normal', note: `HR ${v}/min` };
+                }
+            },
+            {
+                key: 'sbp',
+                label: 'Systolic BP',
+                unit: 'mmHg',
+                section: 'c',
+                check: (v) => {
+                    if (v < 90) return { severity: 'critical', note: `SBP ${v} mmHg` };
+                    if (v < 100 || v > 180) return { severity: 'high', note: `SBP ${v} mmHg` };
+                    return { severity: 'normal', note: `SBP ${v} mmHg` };
+                }
+            },
+            {
+                key: 'temp',
+                label: 'Temperature',
+                unit: 'C',
+                section: 'e',
+                check: (v) => {
+                    if (v < 35 || v > 39) return { severity: 'critical', note: `Temp ${v}C` };
+                    if (v < 36 || v > 38) return { severity: 'high', note: `Temp ${v}C` };
+                    return { severity: 'normal', note: `Temp ${v}C` };
+                }
+            },
+            {
+                key: 'gcs',
+                label: 'GCS',
+                unit: '/15',
+                section: 'd',
+                check: (v) => {
+                    if (v <= 8) return { severity: 'critical', note: `GCS ${v}/15` };
+                    if (v < 13) return { severity: 'high', note: `GCS ${v}/15` };
+                    return { severity: 'normal', note: `GCS ${v}/15` };
+                }
+            },
+            {
+                key: 'glucose',
+                label: 'Capillary Glucose',
+                unit: 'mmol/L',
+                section: 'd',
+                check: (v) => {
+                    if (v < 3 || v > 20) return { severity: 'critical', note: `Glucose ${v} mmol/L` };
+                    if (v < 4 || v > 14) return { severity: 'high', note: `Glucose ${v} mmol/L` };
+                    return { severity: 'normal', note: `Glucose ${v} mmol/L` };
+                }
+            },
+            {
+                key: 'urine',
+                label: 'Urine Output',
+                unit: 'mL/hr',
+                section: 'c',
+                check: (v) => {
+                    if (v < 20) return { severity: 'critical', note: `Urine output ${v} mL/hr` };
+                    if (v < 30) return { severity: 'high', note: `Urine output ${v} mL/hr` };
+                    return { severity: 'normal', note: `Urine output ${v} mL/hr` };
+                }
+            }
+        ];
+
+        if (!container.dataset.aeRendered) {
+            const sectionsHtml = sections.map(section => `
+                <section class="ae-card" style="background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb); border-radius: 14px; padding: 16px; margin-bottom: 14px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 10px;">
+                        <h4 style="margin: 0; color: var(--text-primary, #0f172a);">${section.title}</h4>
+                        <label style="font-size: 0.9rem; color: var(--text-secondary, #475569);">
+                            Status
+                            <select data-ae-status="${section.id}" style="margin-left: 8px; padding: 6px 8px; border: 1px solid var(--border, #d1d5db); border-radius: 8px; background: var(--bg-primary, #fff); color: var(--text-primary, #111827);">
+                                <option value="stable">Stable</option>
+                                <option value="concern">Concerning</option>
+                                <option value="critical">Critical</option>
+                            </select>
+                        </label>
+                    </div>
+                    <ul style="margin: 0 0 10px 18px; color: var(--text-secondary, #475569);">
+                        ${section.prompts.map(prompt => `<li>${prompt}</li>`).join('')}
+                    </ul>
+                    <label style="display: block; font-weight: 600; margin-bottom: 6px; color: var(--text-primary, #0f172a);">Findings</label>
+                    <textarea data-ae-findings="${section.id}" rows="3" placeholder="Key findings for ${section.title}..." style="width: 100%; margin-bottom: 10px; border: 1px solid var(--border, #d1d5db); border-radius: 10px; padding: 10px; background: var(--bg-primary, #fff); color: var(--text-primary, #111827);"></textarea>
+                    <label style="display: block; font-weight: 600; margin-bottom: 6px; color: var(--text-primary, #0f172a);">Actions Taken / Planned</label>
+                    <textarea data-ae-actions="${section.id}" rows="2" placeholder="Immediate actions, review plan, and response..." style="width: 100%; margin-bottom: 10px; border: 1px solid var(--border, #d1d5db); border-radius: 10px; padding: 10px; background: var(--bg-primary, #fff); color: var(--text-primary, #111827);"></textarea>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 8px;">
+                        ${section.flags.map((flag, idx) => `
+                            <label style="display: flex; gap: 8px; align-items: flex-start; border: 1px solid var(--border, #e5e7eb); border-radius: 10px; padding: 8px; background: ${flag.priority === 'critical' ? 'rgba(239, 68, 68, 0.08)' : 'rgba(245, 158, 11, 0.08)'};">
+                                <input type="checkbox" data-ae-flag="${section.id}:${idx}" data-flag-text="${flag.label}" data-flag-priority="${flag.priority}" style="margin-top: 3px;" />
+                                <span style="font-size: 0.92rem; color: var(--text-primary, #1f2937);">${flag.label}</span>
+                            </label>
+                        `).join('')}
+                    </div>
+                </section>
+            `).join('');
+
+            container.innerHTML = `
+                <div style="max-width: 1100px; margin: 0 auto; padding: 4px 0 18px;">
+                    <div style="background: linear-gradient(135deg, #0f766e 0%, #0ea5a4 55%, #14b8a6 100%); border-radius: 16px; padding: 18px; color: #f8fafc; margin-bottom: 16px;">
+                        <h3 style="margin: 0 0 8px 0;">🫁 Interactive A-E Assessment</h3>
+                        <p style="margin: 0; opacity: 0.95;">Structured bedside guide for rapid A-E review, escalation recognition (including peri-arrest/arrest), and high-quality documentation output.</p>
+                    </div>
+
+                    <section class="ae-card" style="background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb); border-radius: 14px; padding: 16px; margin-bottom: 14px;">
+                        <h4 style="margin-top: 0;">Patient & Encounter Context</h4>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px;">
+                            <input id="ae-patient" type="text" placeholder="Patient identifier / NHS no." style="border: 1px solid var(--border, #d1d5db); border-radius: 10px; padding: 10px;" />
+                            <input id="ae-location" type="text" placeholder="Location (ward/ED/ICU)" style="border: 1px solid var(--border, #d1d5db); border-radius: 10px; padding: 10px;" />
+                            <input id="ae-time" type="text" placeholder="Date/time" style="border: 1px solid var(--border, #d1d5db); border-radius: 10px; padding: 10px;" />
+                            <input id="ae-clinician" type="text" placeholder="Assessor name/grade" style="border: 1px solid var(--border, #d1d5db); border-radius: 10px; padding: 10px;" />
+                        </div>
+                    </section>
+
+                    <section class="ae-card" style="background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb); border-radius: 14px; padding: 16px; margin-bottom: 14px;">
+                        <h4 style="margin-top: 0;">Resuscitation Setup (Local Numbers)</h4>
+                        <p style="margin-top: 0; color: var(--text-secondary, #475569);">Northern Ireland hospitals commonly use <strong>2222</strong> for in-hospital cardiac arrest calls, but local policy can vary. Confirm your site process at shift start; if uncertain, call switchboard immediately.</p>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px;">
+                            <input id="ae-arrest-number" type="text" placeholder="Arrest call number (default 2222)" style="border: 1px solid var(--border, #d1d5db); border-radius: 10px; padding: 10px;" />
+                            <input id="ae-outreach-number" type="text" placeholder="Critical care outreach number" style="border: 1px solid var(--border, #d1d5db); border-radius: 10px; padding: 10px;" />
+                            <input id="ae-switchboard-number" type="text" placeholder="Switchboard number (often 0)" style="border: 1px solid var(--border, #d1d5db); border-radius: 10px; padding: 10px;" />
+                            <input id="ae-resus-location" type="text" placeholder="Nearest crash trolley / defib location" style="border: 1px solid var(--border, #d1d5db); border-radius: 10px; padding: 10px;" />
+                        </div>
+                        <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px;">
+                            <button type="button" id="ae-log-arrest" class="nav-btn-small" style="display: inline-flex;">Log Arrest Call</button>
+                            <button type="button" id="ae-log-outreach" class="nav-btn-small" style="display: inline-flex;">Log Outreach Call</button>
+                        </div>
+                    </section>
+
+                    <section class="ae-card" style="background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb); border-radius: 14px; padding: 16px; margin-bottom: 14px;">
+                        <h4 style="margin-top: 0;">Observed Physiology (Auto Highlighting)</h4>
+                        <p style="margin-top: 0; color: var(--text-secondary, #475569);">Enter observations to automatically flag high-risk and critical abnormalities.</p>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px;">
+                            ${observationDefinitions.map((obs) => `
+                                <label style="display: flex; flex-direction: column; gap: 6px; font-size: 0.9rem; color: var(--text-secondary, #475569);">
+                                    ${obs.label}
+                                    <input type="number" step="any" data-ae-obs="${obs.key}" style="border: 1px solid var(--border, #d1d5db); border-radius: 10px; padding: 10px; color: var(--text-primary, #111827); background: var(--bg-primary, #fff);" placeholder="${obs.unit}" />
+                                </label>
+                            `).join('')}
+                        </div>
+                        <div id="ae-observation-alerts" style="margin-top: 12px; display: flex; flex-wrap: wrap; gap: 8px;"></div>
+                    </section>
+
+                    ${sectionsHtml}
+
+                    <section class="ae-card" style="background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb); border-radius: 14px; padding: 16px; margin-bottom: 14px;">
+                        <h4 style="margin-top: 0;">Peri-Arrest / Arrest Escalation Check</h4>
+                        <p style="margin-top: 0; color: var(--text-secondary, #475569);">Tick any trigger present now. Arrest triggers should prompt immediate ALS response.</p>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 8px;">
+                            <label style="display: flex; gap: 8px; align-items: flex-start; border: 1px solid #fca5a5; border-radius: 10px; padding: 8px; background: rgba(239, 68, 68, 0.08);">
+                                <input type="checkbox" data-ae-special="peri-arrest" data-flag-text="Peri-arrest physiology" data-flag-priority="critical" style="margin-top: 3px;" />
+                                <span>Peri-arrest physiology (rapid deterioration despite intervention)</span>
+                            </label>
+                            <label style="display: flex; gap: 8px; align-items: flex-start; border: 1px solid #fca5a5; border-radius: 10px; padding: 8px; background: rgba(239, 68, 68, 0.08);">
+                                <input type="checkbox" data-ae-special="agonal" data-flag-text="Agonal breathing or apnoea" data-flag-priority="critical" style="margin-top: 3px;" />
+                                <span>Agonal breathing or apnoea</span>
+                            </label>
+                            <label style="display: flex; gap: 8px; align-items: flex-start; border: 1px solid #f87171; border-radius: 10px; padding: 8px; background: rgba(220, 38, 38, 0.12);">
+                                <input type="checkbox" data-ae-special="no-pulse" data-flag-text="No pulse + unresponsive" data-flag-priority="arrest" style="margin-top: 3px;" />
+                                <span>No central pulse and unresponsive (treat as cardiac arrest)</span>
+                            </label>
+                            <label style="display: flex; gap: 8px; align-items: flex-start; border: 1px solid #f87171; border-radius: 10px; padding: 8px; background: rgba(220, 38, 38, 0.12);">
+                                <input type="checkbox" data-ae-special="als-started" data-flag-text="ALS commenced" data-flag-priority="arrest" style="margin-top: 3px;" />
+                                <span>ALS/2222 call activated</span>
+                            </label>
+                        </div>
+                    </section>
+
+                    <section id="ae-escalation-banner" style="border: 1px solid #fcd34d; border-radius: 14px; padding: 14px; background: #fffbeb; margin-bottom: 14px;">
+                        <h4 style="margin: 0 0 6px 0;">Escalation Decision Support</h4>
+                        <div id="ae-escalation-text" style="font-weight: 700; color: #92400e;">No immediate critical trigger selected yet.</div>
+                        <div id="ae-escalation-detail" style="margin-top: 6px; color: #78350f;"></div>
+                    </section>
+
+                    <section class="ae-card" style="background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb); border-radius: 14px; padding: 16px; margin-bottom: 14px;">
+                        <h4 style="margin-top: 0;">Resus Quick Guide (For New Doctors)</h4>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 10px;">
+                            <div style="border: 1px solid var(--border, #e5e7eb); border-radius: 10px; padding: 10px;">
+                                <strong>Peri-arrest immediate actions</strong>
+                                <ul style="margin: 8px 0 0 18px;">
+                                    <li>Call for senior help early and define team roles.</li>
+                                    <li>High-flow oxygen if indicated, attach monitoring, obtain IV/IO access.</li>
+                                    <li>Treat reversible causes while repeating focused A-E.</li>
+                                </ul>
+                            </div>
+                            <div style="border: 1px solid var(--border, #e5e7eb); border-radius: 10px; padding: 10px;">
+                                <strong>If cardiac arrest suspected</strong>
+                                <ul style="margin: 8px 0 0 18px;">
+                                    <li>Confirm unresponsive + absent/abnormal breathing + no central pulse.</li>
+                                    <li>Start CPR immediately and activate arrest team without delay.</li>
+                                    <li>Defibrillate shockable rhythms promptly and follow ALS rhythm cycles.</li>
+                                </ul>
+                            </div>
+                            <div style="border: 1px solid var(--border, #e5e7eb); border-radius: 10px; padding: 10px;">
+                                <strong>Reversible causes (4 Hs / 4 Ts)</strong>
+                                <ul style="margin: 8px 0 0 18px;">
+                                    <li>Hs: hypoxia, hypovolaemia, hypo/hyperkalaemia-metabolic, hypothermia.</li>
+                                    <li>Ts: tension pneumothorax, tamponade, toxins, thrombosis (coronary/pulmonary).</li>
+                                </ul>
+                            </div>
+                            <div style="border: 1px solid var(--border, #e5e7eb); border-radius: 10px; padding: 10px;">
+                                <strong>Post-ROSC priorities</strong>
+                                <ul style="margin: 8px 0 0 18px;">
+                                    <li>Secure airway/ventilation and optimize oxygenation/CO2.</li>
+                                    <li>Support perfusion, investigate cause, and escalate to ICU/critical care.</li>
+                                    <li>Document timings, rhythm changes, drugs, shocks, and response.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <textarea id="ae-resus-notes" rows="3" placeholder="Resus-specific notes (rhythms, shocks, drugs, ROSC details, reversible causes addressed)..." style="width: 100%; margin-top: 10px; border: 1px solid var(--border, #d1d5db); border-radius: 10px; padding: 10px; background: var(--bg-primary, #fff); color: var(--text-primary, #111827);"></textarea>
+                    </section>
+
+                    <section class="ae-card" style="background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb); border-radius: 14px; padding: 16px; margin-bottom: 14px;">
+                        <h4 style="margin-top: 0;">Immediate Treatment Priorities</h4>
+                        <div id="ae-treatment-priority" style="color: var(--text-primary, #1f2937);"></div>
+                    </section>
+
+                    <section class="ae-card" style="background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb); border-radius: 14px; padding: 16px; margin-bottom: 14px;">
+                        <h4 style="margin-top: 0;">Escalation Log</h4>
+                        <p style="margin-top: 0; color: var(--text-secondary, #475569);">Record exactly who was contacted, when, and what was advised.</p>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 8px; margin-bottom: 8px;">
+                            <input id="ae-log-contact" type="text" placeholder="Contacted person/team" style="border: 1px solid var(--border, #d1d5db); border-radius: 10px; padding: 10px;" />
+                            <input id="ae-log-role" type="text" placeholder="Role (e.g. med reg, ICU)" style="border: 1px solid var(--border, #d1d5db); border-radius: 10px; padding: 10px;" />
+                            <input id="ae-log-outcome" type="text" placeholder="Advice/outcome" style="border: 1px solid var(--border, #d1d5db); border-radius: 10px; padding: 10px;" />
+                        </div>
+                        <button type="button" id="ae-log-add" class="nav-btn-small" style="display: inline-flex; margin-bottom: 10px;">Add Escalation Entry</button>
+                        <div id="ae-escalation-log-list" style="display: grid; gap: 8px;"></div>
+                    </section>
+
+                    <section class="ae-card" style="background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb); border-radius: 14px; padding: 16px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 8px;">
+                            <h4 style="margin: 0;">Documentation Summary Builder</h4>
+                            <span id="ae-progress" style="font-size: 0.9rem; color: var(--text-secondary, #475569);">Sections completed: 0 / 5</span>
+                        </div>
+                        <textarea id="ae-summary-output" rows="14" readonly style="width: 100%; border: 1px solid var(--border, #d1d5db); border-radius: 10px; padding: 10px; background: var(--bg-primary, #fff); color: var(--text-primary, #111827);" placeholder="Generate summary to produce handover-ready documentation..."></textarea>
+                        <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px;">
+                            <button type="button" id="ae-generate-summary" class="nav-btn-small" style="display: inline-flex;">Generate Summary</button>
+                            <button type="button" id="ae-copy-summary" class="nav-btn-small" style="display: inline-flex;">Copy Summary</button>
+                            <button type="button" id="ae-clear-form" class="nav-btn-small" style="display: inline-flex;">Reset Assessment</button>
+                        </div>
+                    </section>
+                </div>
+            `;
+
+            container.dataset.aeRendered = 'true';
+        }
+
+        const now = new Date();
+        const timeInput = container.querySelector('#ae-time');
+        if (timeInput && !timeInput.value) {
+            timeInput.value = now.toLocaleString();
+        }
+
+        const arrestInput = container.querySelector('#ae-arrest-number');
+        if (arrestInput && !arrestInput.value) {
+            arrestInput.value = '2222';
+        }
+
+        const switchboardInput = container.querySelector('#ae-switchboard-number');
+        if (switchboardInput && !switchboardInput.value) {
+            switchboardInput.value = '0';
+        }
+
+        const getEscalationLog = () => {
+            try {
+                const parsed = JSON.parse(container.dataset.aeEscalationLog || '[]');
+                return Array.isArray(parsed) ? parsed : [];
+            } catch (error) {
+                return [];
+            }
+        };
+
+        const setEscalationLog = (entries) => {
+            container.dataset.aeEscalationLog = JSON.stringify(entries || []);
+        };
+
+        const renderEscalationLog = () => {
+            const list = container.querySelector('#ae-escalation-log-list');
+            if (!list) return;
+
+            const entries = getEscalationLog();
+            if (!entries.length) {
+                list.innerHTML = '<div style="padding: 10px; border: 1px dashed var(--border, #d1d5db); border-radius: 10px; color: var(--text-secondary, #64748b);">No escalation entries logged yet.</div>';
+                return;
+            }
+
+            list.innerHTML = entries.map((entry) => `
+                <div style="border: 1px solid var(--border, #e5e7eb); border-radius: 10px; padding: 10px; background: var(--bg-primary, #fff);">
+                    <div style="font-weight: 700; color: var(--text-primary, #1f2937);">${entry.time} - ${entry.contact || 'Contact not recorded'}</div>
+                    <div style="color: var(--text-secondary, #475569);">Role: ${entry.role || 'Not recorded'}</div>
+                    <div style="color: var(--text-secondary, #475569);">Outcome: ${entry.outcome || 'Not recorded'}</div>
+                </div>
+            `).join('');
+        };
+
+        const addEscalationEntry = ({ contact, role, outcome }) => {
+            const entries = getEscalationLog();
+            entries.push({
+                time: new Date().toLocaleTimeString(),
+                contact: (contact || '').trim(),
+                role: (role || '').trim(),
+                outcome: (outcome || '').trim()
+            });
+            setEscalationLog(entries);
+            renderEscalationLog();
+        };
+
+        const collectObservationAlerts = () => {
+            const alerts = [];
+            observationDefinitions.forEach((obs) => {
+                const input = container.querySelector(`[data-ae-obs="${obs.key}"]`);
+                if (!input) return;
+
+                if (input.value === '') {
+                    input.style.borderColor = 'var(--border, #d1d5db)';
+                    input.style.background = 'var(--bg-primary, #fff)';
+                    return;
+                }
+
+                const value = Number(input.value);
+                if (Number.isNaN(value)) return;
+
+                const result = obs.check(value);
+                if (result.severity === 'critical') {
+                    input.style.borderColor = '#ef4444';
+                    input.style.background = 'rgba(254, 226, 226, 0.55)';
+                    alerts.push({ ...result, key: obs.key });
+                } else if (result.severity === 'high') {
+                    input.style.borderColor = '#f59e0b';
+                    input.style.background = 'rgba(254, 243, 199, 0.6)';
+                    alerts.push({ ...result, key: obs.key });
+                } else {
+                    input.style.borderColor = '#22c55e';
+                    input.style.background = 'rgba(220, 252, 231, 0.45)';
+                }
+            });
+
+            return alerts;
+        };
+
+        const renderObservationAlerts = (alerts) => {
+            const alertTarget = container.querySelector('#ae-observation-alerts');
+            if (!alertTarget) return;
+
+            if (!alerts.length) {
+                alertTarget.innerHTML = '<span style="padding: 6px 10px; border-radius: 999px; border: 1px solid #86efac; background: #f0fdf4; color: #166534; font-size: 0.85rem;">No abnormal observations entered</span>';
+                return;
+            }
+
+            alertTarget.innerHTML = alerts.map((alert) => {
+                const style = alert.severity === 'critical'
+                    ? 'border: 1px solid #f87171; background: #fef2f2; color: #991b1b;'
+                    : 'border: 1px solid #fbbf24; background: #fffbeb; color: #92400e;';
+                return `<span style="padding: 6px 10px; border-radius: 999px; font-size: 0.85rem; ${style}">${alert.note}</span>`;
+            }).join('');
+        };
+
+        const renderTreatmentPriorities = (level, checkedFlags, observationAlerts) => {
+            const treatmentTarget = container.querySelector('#ae-treatment-priority');
+            if (!treatmentTarget) return;
+
+            const priorities = [];
+            const hasObs = (key) => observationAlerts.some(alert => alert.key === key);
+            const hasFlag = (term) => checkedFlags.some(flag => (flag.getAttribute('data-flag-text') || '').toLowerCase().includes(term));
+
+            if (level === 'arrest') {
+                priorities.push('Activate ALS pathway now, start high-quality CPR, and assign clear team roles.');
+            }
+
+            if (hasObs('spo2') || hasObs('rr') || hasFlag('airway') || hasFlag('agonal')) {
+                priorities.push('Airway/Breathing: optimize airway positioning, provide oxygen/ventilatory support as indicated, and prepare advanced airway if failing.');
+            }
+
+            if (hasObs('sbp') || hasObs('hr') || hasObs('urine') || hasFlag('perfusion') || hasFlag('hemorrhage')) {
+                priorities.push('Circulation: secure IV/IO access, send urgent bloods, give targeted fluid resuscitation, and escalate for vasopressors or hemorrhage control if needed.');
+            }
+
+            if (hasObs('gcs') || hasObs('glucose') || hasFlag('seizure') || hasFlag('unresponsive')) {
+                priorities.push('Disability: correct reversible causes quickly (especially glucose), protect airway if reduced consciousness, and request urgent senior/neuro review.');
+            }
+
+            if (hasObs('temp') || hasFlag('anaphylaxis') || hasFlag('rash')) {
+                priorities.push('Exposure/Sepsis/Allergy: assess source, start sepsis/anaphylaxis treatment bundles when indicated, and document timed response checks.');
+            }
+
+            priorities.push('Repeat focused A-E after each intervention and document objective response plus escalation contacts.');
+
+            treatmentTarget.innerHTML = `
+                <ul style="margin: 0 0 0 18px; display: grid; gap: 6px;">
+                    ${Array.from(new Set(priorities)).map(item => `<li>${item}</li>`).join('')}
+                </ul>
+            `;
+        };
+
+        const summarizeEscalation = () => {
+            const checkedFlags = Array.from(container.querySelectorAll('input[data-flag-text]:checked'));
+            const criticalFlags = checkedFlags.filter(el => el.getAttribute('data-flag-priority') === 'critical');
+            const arrestFlags = checkedFlags.filter(el => el.getAttribute('data-flag-priority') === 'arrest');
+            const observationAlerts = collectObservationAlerts();
+            const criticalObs = observationAlerts.filter(alert => alert.severity === 'critical');
+            const highObs = observationAlerts.filter(alert => alert.severity === 'high');
+            const concernCount = sections.reduce((count, section) => {
+                const statusEl = container.querySelector(`[data-ae-status="${section.id}"]`);
+                return count + ((statusEl && statusEl.value === 'concern') ? 1 : 0);
+            }, 0);
+            const criticalStatusCount = sections.reduce((count, section) => {
+                const statusEl = container.querySelector(`[data-ae-status="${section.id}"]`);
+                return count + ((statusEl && statusEl.value === 'critical') ? 1 : 0);
+            }, 0);
+
+            const banner = container.querySelector('#ae-escalation-banner');
+            const escalationText = container.querySelector('#ae-escalation-text');
+            const escalationDetail = container.querySelector('#ae-escalation-detail');
+            if (!banner || !escalationText || !escalationDetail) {
+                return { level: 'none', notes: [] };
+            }
+
+            let level = 'routine';
+            let message = 'Continue structured A-E reassessment and routine senior update.';
+            const arrestNumber = (container.querySelector('#ae-arrest-number')?.value || '2222').trim() || '2222';
+            const outreachNumber = (container.querySelector('#ae-outreach-number')?.value || '').trim();
+
+            if (arrestFlags.length > 0) {
+                level = 'arrest';
+                message = `CARDIAC ARREST TRIGGER: Start/continue ALS and call ${arrestNumber} immediately.`;
+                banner.style.background = '#fee2e2';
+                banner.style.borderColor = '#ef4444';
+                escalationText.style.color = '#991b1b';
+                escalationDetail.style.color = '#7f1d1d';
+            } else if (criticalFlags.length > 0 || criticalStatusCount > 0 || criticalObs.length > 0) {
+                level = 'immediate';
+                message = outreachNumber
+                    ? `IMMEDIATE ESCALATION: Contact senior decision-maker and critical care outreach (${outreachNumber}) now.`
+                    : 'IMMEDIATE ESCALATION: Contact senior decision-maker/critical care outreach now.';
+                banner.style.background = '#fef3c7';
+                banner.style.borderColor = '#f59e0b';
+                escalationText.style.color = '#92400e';
+                escalationDetail.style.color = '#78350f';
+            } else if (concernCount >= 2 || highObs.length >= 2) {
+                level = 'urgent';
+                message = 'URGENT REVIEW: Multiple concerning A-E domains. Escalate to registrar promptly.';
+                banner.style.background = '#fffbeb';
+                banner.style.borderColor = '#fbbf24';
+                escalationText.style.color = '#92400e';
+                escalationDetail.style.color = '#78350f';
+            } else {
+                banner.style.background = '#ecfeff';
+                banner.style.borderColor = '#22d3ee';
+                escalationText.style.color = '#0f766e';
+                escalationDetail.style.color = '#155e75';
+            }
+
+            escalationText.textContent = message;
+            const noteLines = [
+                ...checkedFlags.map(el => el.getAttribute('data-flag-text')).filter(Boolean),
+                ...observationAlerts.map(alert => `Observed: ${alert.note}`)
+            ];
+            escalationDetail.textContent = noteLines.length
+                ? `Active triggers: ${noteLines.join('; ')}`
+                : 'No selected escalation triggers.';
+
+            renderObservationAlerts(observationAlerts);
+            renderTreatmentPriorities(level, checkedFlags, observationAlerts);
+
+            return { level, notes: noteLines };
+        };
+
+        const updateProgress = () => {
+            let completed = 0;
+            sections.forEach(section => {
+                const findings = container.querySelector(`[data-ae-findings="${section.id}"]`)?.value?.trim() || '';
+                const actions = container.querySelector(`[data-ae-actions="${section.id}"]`)?.value?.trim() || '';
+                if (findings || actions) {
+                    completed += 1;
+                }
+            });
+            const progress = container.querySelector('#ae-progress');
+            if (progress) {
+                progress.textContent = `Sections completed: ${completed} / ${sections.length}`;
+            }
+        };
+
+        const buildSummary = () => {
+            const patient = container.querySelector('#ae-patient')?.value?.trim() || 'Not documented';
+            const location = container.querySelector('#ae-location')?.value?.trim() || 'Not documented';
+            const dateTime = container.querySelector('#ae-time')?.value?.trim() || new Date().toLocaleString();
+            const clinician = container.querySelector('#ae-clinician')?.value?.trim() || 'Not documented';
+            const arrestNumber = container.querySelector('#ae-arrest-number')?.value?.trim() || '2222';
+            const outreachNumber = container.querySelector('#ae-outreach-number')?.value?.trim() || 'Not documented';
+            const switchboardNumber = container.querySelector('#ae-switchboard-number')?.value?.trim() || 'Not documented';
+            const resusLocation = container.querySelector('#ae-resus-location')?.value?.trim() || 'Not documented';
+            const resusNotes = container.querySelector('#ae-resus-notes')?.value?.trim() || 'No resuscitation-specific notes documented.';
+            const escalation = summarizeEscalation();
+            const observationAlerts = collectObservationAlerts();
+            const escalationEntries = getEscalationLog();
+
+            const urgencyMap = {
+                arrest: 'Arrest response required now',
+                immediate: 'Immediate senior/critical care escalation required',
+                urgent: 'Urgent registrar review required',
+                routine: 'Ongoing monitoring with routine senior update',
+                none: 'No clear urgency set'
+            };
+
+            const sectionNarrative = sections.map(section => {
+                const status = container.querySelector(`[data-ae-status="${section.id}"]`)?.value || 'stable';
+                const findings = container.querySelector(`[data-ae-findings="${section.id}"]`)?.value?.trim() || 'No findings documented.';
+                const actions = container.querySelector(`[data-ae-actions="${section.id}"]`)?.value?.trim() || 'No actions documented.';
+                return [
+                    `${section.title} (${status.toUpperCase()}):`,
+                    `- Findings: ${findings}`,
+                    `- Actions: ${actions}`
+                ].join('\n');
+            }).join('\n\n');
+
+            const escalationLine = escalation.notes.length
+                ? escalation.notes.join('; ')
+                : 'No explicit trigger documented.';
+
+            const observationsLine = observationDefinitions.map(obs => {
+                const value = container.querySelector(`[data-ae-obs="${obs.key}"]`)?.value?.trim() || '-';
+                return `${obs.label}: ${value}${value !== '-' ? ` ${obs.unit}` : ''}`;
+            }).join('; ');
+
+            const abnormalitiesLine = observationAlerts.length
+                ? observationAlerts.map(alert => alert.note).join('; ')
+                : 'No physiological abnormalities captured in observation fields.';
+
+            const escalationLogText = escalationEntries.length
+                ? escalationEntries.map((entry, idx) => `${idx + 1}. ${entry.time} | ${entry.contact || 'Unknown contact'} | ${entry.role || 'Role not documented'} | ${entry.outcome || 'No outcome documented'}`).join('\n')
+                : 'No escalation log entries recorded.';
+
+            const summary = [
+                'A-E ASSESSMENT SUMMARY',
+                `Date/Time: ${dateTime}`,
+                `Patient: ${patient}`,
+                `Location: ${location}`,
+                `Assessor: ${clinician}`,
+                '',
+                `Arrest Call Number (local): ${arrestNumber}`,
+                `Critical Care Outreach Number: ${outreachNumber}`,
+                `Switchboard Number: ${switchboardNumber}`,
+                `Crash Trolley/Defib Location: ${resusLocation}`,
+                '',
+                `Observed Physiology: ${observationsLine}`,
+                `Abnormal Observations: ${abnormalitiesLine}`,
+                '',
+                `Escalation Priority: ${urgencyMap[escalation.level] || urgencyMap.none}`,
+                `Escalation Triggers: ${escalationLine}`,
+                '',
+                sectionNarrative,
+                '',
+                'Resuscitation Notes:',
+                resusNotes,
+                '',
+                'Escalation Log:',
+                escalationLogText,
+                '',
+                'Plan:',
+                '- Continue iterative A-E reassessment after each intervention.',
+                '- Document response to treatment and timing of escalation contacts.',
+                '- Confirm named senior responsible clinician and review timeframe.'
+            ].join('\n');
+
+            const output = container.querySelector('#ae-summary-output');
+            if (output) {
+                output.value = summary;
+            }
+        };
+
+        if (!container.dataset.aeBound) {
+            container.addEventListener('change', (event) => {
+                if (event.target && (
+                    event.target.matches('[data-ae-status]')
+                    || event.target.matches('[data-flag-text]')
+                    || event.target.matches('[data-ae-obs]')
+                )) {
+                    summarizeEscalation();
+                    updateProgress();
+                }
+            });
+
+            container.addEventListener('input', (event) => {
+                if (event.target && (
+                    event.target.matches('[data-ae-findings]')
+                    || event.target.matches('[data-ae-actions]')
+                    || event.target.matches('#ae-patient')
+                    || event.target.matches('#ae-location')
+                    || event.target.matches('#ae-time')
+                    || event.target.matches('#ae-clinician')
+                    || event.target.matches('#ae-arrest-number')
+                    || event.target.matches('#ae-outreach-number')
+                    || event.target.matches('#ae-switchboard-number')
+                    || event.target.matches('#ae-resus-location')
+                    || event.target.matches('#ae-resus-notes')
+                    || event.target.matches('[data-ae-obs]')
+                )) {
+                    updateProgress();
+                    summarizeEscalation();
+                }
+            });
+
+            const generateBtn = container.querySelector('#ae-generate-summary');
+            if (generateBtn) {
+                generateBtn.addEventListener('click', () => {
+                    buildSummary();
+                });
+            }
+
+            const copyBtn = container.querySelector('#ae-copy-summary');
+            if (copyBtn) {
+                copyBtn.addEventListener('click', async () => {
+                    const output = container.querySelector('#ae-summary-output');
+                    if (!output || !output.value.trim()) {
+                        buildSummary();
+                    }
+
+                    const text = output?.value || '';
+                    if (!text.trim()) return;
+
+                    try {
+                        if (navigator.clipboard && navigator.clipboard.writeText) {
+                            await navigator.clipboard.writeText(text);
+                        } else {
+                            output.select();
+                            document.execCommand('copy');
+                        }
+                        copyBtn.textContent = 'Copied';
+                        setTimeout(() => {
+                            copyBtn.textContent = 'Copy Summary';
+                        }, 1500);
+                    } catch (error) {
+                        console.warn('Copy summary failed:', error);
+                    }
+                });
+            }
+
+            const clearBtn = container.querySelector('#ae-clear-form');
+            if (clearBtn) {
+                clearBtn.addEventListener('click', () => {
+                    const inputs = container.querySelectorAll('input[type="text"], input[type="number"], textarea');
+                    inputs.forEach(input => {
+                        input.value = '';
+                    });
+
+                    const statuses = container.querySelectorAll('[data-ae-status]');
+                    statuses.forEach(select => {
+                        select.value = 'stable';
+                    });
+
+                    const checks = container.querySelectorAll('input[type="checkbox"]');
+                    checks.forEach(check => {
+                        check.checked = false;
+                    });
+
+                    const output = container.querySelector('#ae-summary-output');
+                    if (output) output.value = '';
+
+                    const refillTime = container.querySelector('#ae-time');
+                    if (refillTime) {
+                        refillTime.value = new Date().toLocaleString();
+                    }
+
+                    const refillArrest = container.querySelector('#ae-arrest-number');
+                    if (refillArrest) {
+                        refillArrest.value = '2222';
+                    }
+
+                    const refillSwitchboard = container.querySelector('#ae-switchboard-number');
+                    if (refillSwitchboard) {
+                        refillSwitchboard.value = '0';
+                    }
+
+                    setEscalationLog([]);
+                    renderEscalationLog();
+
+                    summarizeEscalation();
+                    updateProgress();
+                });
+            }
+
+            const addLogBtn = container.querySelector('#ae-log-add');
+            if (addLogBtn) {
+                addLogBtn.addEventListener('click', () => {
+                    const contactEl = container.querySelector('#ae-log-contact');
+                    const roleEl = container.querySelector('#ae-log-role');
+                    const outcomeEl = container.querySelector('#ae-log-outcome');
+
+                    const contact = contactEl?.value || '';
+                    const role = roleEl?.value || '';
+                    const outcome = outcomeEl?.value || '';
+                    if (!contact.trim() && !role.trim() && !outcome.trim()) {
+                        return;
+                    }
+
+                    addEscalationEntry({ contact, role, outcome });
+                    if (contactEl) contactEl.value = '';
+                    if (roleEl) roleEl.value = '';
+                    if (outcomeEl) outcomeEl.value = '';
+                });
+            }
+
+            const arrestLogBtn = container.querySelector('#ae-log-arrest');
+            if (arrestLogBtn) {
+                arrestLogBtn.addEventListener('click', () => {
+                    const arrestNumber = container.querySelector('#ae-arrest-number')?.value?.trim() || '2222';
+                    addEscalationEntry({
+                        contact: `Cardiac arrest team (${arrestNumber})`,
+                        role: 'Arrest call',
+                        outcome: 'Emergency response activated'
+                    });
+                });
+            }
+
+            const outreachLogBtn = container.querySelector('#ae-log-outreach');
+            if (outreachLogBtn) {
+                outreachLogBtn.addEventListener('click', () => {
+                    const outreachNumber = container.querySelector('#ae-outreach-number')?.value?.trim() || 'number not entered';
+                    addEscalationEntry({
+                        contact: `Critical care outreach (${outreachNumber})`,
+                        role: 'Peri-arrest escalation',
+                        outcome: 'Urgent senior support requested'
+                    });
+                });
+            }
+
+            container.dataset.aeBound = 'true';
+        }
+
+        summarizeEscalation();
+        renderObservationAlerts(collectObservationAlerts());
+        renderEscalationLog();
+        updateProgress();
     }
 
     /**
