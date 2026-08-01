@@ -5038,6 +5038,57 @@ class MLAQuizApp {
             }
         ];
 
+        const safetyChecks = [
+            { id: 'dnacpr', label: 'DNACPR/ReSPECT status checked' },
+            { id: 'ceiling', label: 'Escalation/treatment ceiling clarified' },
+            { id: 'allergy', label: 'Allergy status confirmed' },
+            { id: 'family', label: 'Family/next of kin communication considered' }
+        ];
+
+        const investigationChecks = [
+            { id: 'ecg', label: 'ECG performed/reviewed' },
+            { id: 'abg', label: 'ABG/VBG completed' },
+            { id: 'bloods', label: 'Urgent bloods sent (including lactate)' },
+            { id: 'cultures', label: 'Blood cultures before antibiotics if sepsis suspected' },
+            { id: 'imaging', label: 'Urgent imaging requested if indicated' },
+            { id: 'fluid-balance', label: 'Urine output/fluid balance monitoring started' }
+        ];
+
+        if (!document.getElementById('ae-assessment-inline-styles')) {
+            const styleTag = document.createElement('style');
+            styleTag.id = 'ae-assessment-inline-styles';
+            styleTag.textContent = `
+                #ae-escalation-banner.ae-escalation-banner {
+                    border-radius: 14px;
+                    padding: 14px;
+                    margin-bottom: 14px;
+                    border: 1px solid var(--border, #cbd5e1);
+                    background: var(--bg-secondary, #f8fafc);
+                }
+
+                #ae-escalation-banner.ae-level-routine {
+                    border-color: var(--border, #cbd5e1);
+                    background: var(--bg-secondary, #f8fafc);
+                }
+
+                #ae-escalation-banner.ae-level-urgent {
+                    border-color: #ca8a04;
+                    background: rgba(251, 191, 36, 0.14);
+                }
+
+                #ae-escalation-banner.ae-level-immediate {
+                    border-color: #d97706;
+                    background: rgba(245, 158, 11, 0.18);
+                }
+
+                #ae-escalation-banner.ae-level-arrest {
+                    border-color: #dc2626;
+                    background: rgba(220, 38, 38, 0.14);
+                }
+            `;
+            document.head.appendChild(styleTag);
+        }
+
         if (!container.dataset.aeRendered) {
             const sectionsHtml = sections.map(section => `
                 <section class="ae-card" style="background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb); border-radius: 14px; padding: 16px; margin-bottom: 14px;">
@@ -5077,6 +5128,18 @@ class MLAQuizApp {
                         <p style="margin: 0; opacity: 0.95;">Structured bedside guide for rapid A-E review, escalation recognition (including peri-arrest/arrest), and high-quality documentation output.</p>
                     </div>
 
+                    <section class="ae-card" style="background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb); border-radius: 14px; padding: 12px 16px; margin-bottom: 14px;">
+                        <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: space-between;">
+                            <div style="font-weight: 600; color: var(--text-primary, #0f172a);">Quick Actions</div>
+                            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                                <button type="button" id="ae-fill-normal" class="nav-btn-small" style="display: inline-flex;">Populate Normal A-E</button>
+                                <button type="button" id="ae-save-draft" class="nav-btn-small" style="display: inline-flex;">Save Draft</button>
+                                <button type="button" id="ae-load-draft" class="nav-btn-small" style="display: inline-flex;">Load Draft</button>
+                            </div>
+                        </div>
+                        <div id="ae-draft-status" style="margin-top: 8px; font-size: 0.86rem; color: var(--text-secondary, #64748b);">Draft not yet saved.</div>
+                    </section>
+
                     <section class="ae-card" style="background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb); border-radius: 14px; padding: 16px; margin-bottom: 14px;">
                         <h4 style="margin-top: 0;">Patient & Encounter Context</h4>
                         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px;">
@@ -5089,9 +5152,9 @@ class MLAQuizApp {
 
                     <section class="ae-card" style="background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb); border-radius: 14px; padding: 16px; margin-bottom: 14px;">
                         <h4 style="margin-top: 0;">Resuscitation Setup (Local Numbers)</h4>
-                        <p style="margin-top: 0; color: var(--text-secondary, #475569);">Northern Ireland hospitals commonly use <strong>2222</strong> for in-hospital cardiac arrest calls, but local policy can vary. Confirm your site process at shift start; if uncertain, call switchboard immediately.</p>
+                        <p style="margin-top: 0; color: var(--text-secondary, #475569);">This tool defaults to <strong>6666</strong> for in-hospital cardiac arrest calls. Confirm local policy at shift start; if uncertain, call switchboard immediately.</p>
                         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px;">
-                            <input id="ae-arrest-number" type="text" placeholder="Arrest call number (default 2222)" style="border: 1px solid var(--border, #d1d5db); border-radius: 10px; padding: 10px;" />
+                            <input id="ae-arrest-number" type="text" placeholder="Arrest call number (default 6666)" style="border: 1px solid var(--border, #d1d5db); border-radius: 10px; padding: 10px;" />
                             <input id="ae-outreach-number" type="text" placeholder="Critical care outreach number" style="border: 1px solid var(--border, #d1d5db); border-radius: 10px; padding: 10px;" />
                             <input id="ae-switchboard-number" type="text" placeholder="Switchboard number (often 0)" style="border: 1px solid var(--border, #d1d5db); border-radius: 10px; padding: 10px;" />
                             <input id="ae-resus-location" type="text" placeholder="Nearest crash trolley / defib location" style="border: 1px solid var(--border, #d1d5db); border-radius: 10px; padding: 10px;" />
@@ -5116,6 +5179,36 @@ class MLAQuizApp {
                         <div id="ae-observation-alerts" style="margin-top: 12px; display: flex; flex-wrap: wrap; gap: 8px;"></div>
                     </section>
 
+                    <section class="ae-card" style="background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb); border-radius: 14px; padding: 16px; margin-bottom: 14px;">
+                        <h4 style="margin-top: 0;">Safety Checks, Working Impression, and Review Plan</h4>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 8px; margin-bottom: 10px;">
+                            ${safetyChecks.map((check) => `
+                                <label style="display: flex; gap: 8px; align-items: center; border: 1px solid var(--border, #e5e7eb); border-radius: 10px; padding: 8px;">
+                                    <input type="checkbox" data-ae-safety="${check.id}" />
+                                    <span style="font-size: 0.92rem; color: var(--text-primary, #1f2937);">${check.label}</span>
+                                </label>
+                            `).join('')}
+                        </div>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px;">
+                            <input id="ae-working-dx" type="text" placeholder="Working diagnosis" style="border: 1px solid var(--border, #d1d5db); border-radius: 10px; padding: 10px;" />
+                            <input id="ae-likely-cause" type="text" placeholder="Most likely cause of deterioration" style="border: 1px solid var(--border, #d1d5db); border-radius: 10px; padding: 10px;" />
+                            <input id="ae-next-review-time" type="text" placeholder="Next review time / by whom" style="border: 1px solid var(--border, #d1d5db); border-radius: 10px; padding: 10px;" />
+                            <input id="ae-responsible-senior" type="text" placeholder="Responsible senior clinician" style="border: 1px solid var(--border, #d1d5db); border-radius: 10px; padding: 10px;" />
+                        </div>
+                    </section>
+
+                    <section class="ae-card" style="background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb); border-radius: 14px; padding: 16px; margin-bottom: 14px;">
+                        <h4 style="margin-top: 0;">Immediate Investigation and Bundle Completion</h4>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 8px;">
+                            ${investigationChecks.map((check) => `
+                                <label style="display: flex; gap: 8px; align-items: center; border: 1px solid var(--border, #e5e7eb); border-radius: 10px; padding: 8px;">
+                                    <input type="checkbox" data-ae-investigation="${check.id}" />
+                                    <span style="font-size: 0.92rem; color: var(--text-primary, #1f2937);">${check.label}</span>
+                                </label>
+                            `).join('')}
+                        </div>
+                    </section>
+
                     ${sectionsHtml}
 
                     <section class="ae-card" style="background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb); border-radius: 14px; padding: 16px; margin-bottom: 14px;">
@@ -5136,15 +5229,15 @@ class MLAQuizApp {
                             </label>
                             <label style="display: flex; gap: 8px; align-items: flex-start; border: 1px solid #f87171; border-radius: 10px; padding: 8px; background: rgba(220, 38, 38, 0.12);">
                                 <input type="checkbox" data-ae-special="als-started" data-flag-text="ALS commenced" data-flag-priority="arrest" style="margin-top: 3px;" />
-                                <span>ALS/2222 call activated</span>
+                                <span>ALS/arrest call activated</span>
                             </label>
                         </div>
                     </section>
 
-                    <section id="ae-escalation-banner" style="border: 1px solid #fcd34d; border-radius: 14px; padding: 14px; background: #fffbeb; margin-bottom: 14px;">
+                    <section id="ae-escalation-banner" class="ae-escalation-banner ae-level-routine">
                         <h4 style="margin: 0 0 6px 0;">Escalation Decision Support</h4>
-                        <div id="ae-escalation-text" style="font-weight: 700; color: #92400e;">No immediate critical trigger selected yet.</div>
-                        <div id="ae-escalation-detail" style="margin-top: 6px; color: #78350f;"></div>
+                        <div id="ae-escalation-text" style="font-weight: 700; color: var(--text-primary, #0f172a);">No immediate critical trigger selected yet.</div>
+                        <div id="ae-escalation-detail" style="margin-top: 6px; color: var(--text-secondary, #334155);"></div>
                     </section>
 
                     <section class="ae-card" style="background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb); border-radius: 14px; padding: 16px; margin-bottom: 14px;">
@@ -5228,7 +5321,7 @@ class MLAQuizApp {
 
         const arrestInput = container.querySelector('#ae-arrest-number');
         if (arrestInput && !arrestInput.value) {
-            arrestInput.value = '2222';
+            arrestInput.value = '6666';
         }
 
         const switchboardInput = container.querySelector('#ae-switchboard-number');
@@ -5278,6 +5371,144 @@ class MLAQuizApp {
             });
             setEscalationLog(entries);
             renderEscalationLog();
+        };
+
+        const collectSafetyState = () => {
+            const safetySelected = safetyChecks
+                .filter(check => container.querySelector(`[data-ae-safety="${check.id}"]`)?.checked)
+                .map(check => check.label);
+
+            return {
+                safetySelected,
+                workingDx: container.querySelector('#ae-working-dx')?.value?.trim() || 'Not documented',
+                likelyCause: container.querySelector('#ae-likely-cause')?.value?.trim() || 'Not documented',
+                nextReview: container.querySelector('#ae-next-review-time')?.value?.trim() || 'Not documented',
+                responsibleSenior: container.querySelector('#ae-responsible-senior')?.value?.trim() || 'Not documented'
+            };
+        };
+
+        const collectInvestigationState = () => {
+            return investigationChecks
+                .filter(check => container.querySelector(`[data-ae-investigation="${check.id}"]`)?.checked)
+                .map(check => check.label);
+        };
+
+        const getDraftKey = () => 'mla-v2-ae-assessment-draft';
+
+        const setDraftStatus = (text) => {
+            const status = container.querySelector('#ae-draft-status');
+            if (status) {
+                status.textContent = text;
+            }
+        };
+
+        const saveDraft = () => {
+            try {
+                const fields = container.querySelectorAll('input, select, textarea');
+                const payload = {
+                    savedAt: new Date().toISOString(),
+                    values: {}
+                };
+
+                fields.forEach((field) => {
+                    if (!field.id && !field.name && !field.getAttribute('data-ae-status') && !field.getAttribute('data-ae-findings') && !field.getAttribute('data-ae-actions') && !field.getAttribute('data-ae-obs') && !field.getAttribute('data-ae-flag-text') && !field.getAttribute('data-ae-safety') && !field.getAttribute('data-ae-investigation')) {
+                        return;
+                    }
+
+                    const key = field.id
+                        || field.getAttribute('data-ae-status')
+                        || field.getAttribute('data-ae-findings')
+                        || field.getAttribute('data-ae-actions')
+                        || field.getAttribute('data-ae-obs')
+                        || field.getAttribute('data-ae-flag')
+                        || field.getAttribute('data-ae-special')
+                        || field.getAttribute('data-ae-safety')
+                        || field.getAttribute('data-ae-investigation');
+
+                    if (!key) return;
+                    payload.values[key] = field.type === 'checkbox' ? !!field.checked : field.value;
+                });
+
+                payload.escalationLog = getEscalationLog();
+                localStorage.setItem(getDraftKey(), JSON.stringify(payload));
+                setDraftStatus(`Draft saved at ${new Date(payload.savedAt).toLocaleTimeString()}.`);
+            } catch (error) {
+                console.warn('Failed to save A-E draft:', error);
+            }
+        };
+
+        const loadDraft = () => {
+            try {
+                const raw = localStorage.getItem(getDraftKey());
+                if (!raw) return false;
+                const payload = JSON.parse(raw);
+                const values = payload?.values || {};
+
+                const fields = container.querySelectorAll('input, select, textarea');
+                fields.forEach((field) => {
+                    const key = field.id
+                        || field.getAttribute('data-ae-status')
+                        || field.getAttribute('data-ae-findings')
+                        || field.getAttribute('data-ae-actions')
+                        || field.getAttribute('data-ae-obs')
+                        || field.getAttribute('data-ae-flag')
+                        || field.getAttribute('data-ae-special')
+                        || field.getAttribute('data-ae-safety')
+                        || field.getAttribute('data-ae-investigation');
+                    if (!key || !(key in values)) return;
+
+                    if (field.type === 'checkbox') {
+                        field.checked = !!values[key];
+                    } else {
+                        field.value = values[key];
+                    }
+                });
+
+                if (Array.isArray(payload.escalationLog)) {
+                    setEscalationLog(payload.escalationLog);
+                    renderEscalationLog();
+                }
+
+                if (payload.savedAt) {
+                    setDraftStatus(`Draft loaded (${new Date(payload.savedAt).toLocaleString()}).`);
+                }
+
+                summarizeEscalation();
+                updateProgress();
+                return true;
+            } catch (error) {
+                console.warn('Failed to load A-E draft:', error);
+                return false;
+            }
+        };
+
+        const clearDraft = () => {
+            try {
+                localStorage.removeItem(getDraftKey());
+                setDraftStatus('Draft cleared.');
+            } catch (error) {
+                console.warn('Failed to clear A-E draft:', error);
+            }
+        };
+
+        const populateNormalTemplate = () => {
+            sections.forEach(section => {
+                const statusEl = container.querySelector(`[data-ae-status="${section.id}"]`);
+                const findingsEl = container.querySelector(`[data-ae-findings="${section.id}"]`);
+                const actionsEl = container.querySelector(`[data-ae-actions="${section.id}"]`);
+
+                if (statusEl) statusEl.value = 'stable';
+                if (findingsEl && !findingsEl.value.trim()) {
+                    findingsEl.value = `No immediate abnormality detected in ${section.title}.`;
+                }
+                if (actionsEl && !actionsEl.value.trim()) {
+                    actionsEl.value = 'Continue monitoring and repeat focused reassessment.';
+                }
+            });
+
+            summarizeEscalation();
+            updateProgress();
+            saveDraft();
         };
 
         const collectObservationAlerts = () => {
@@ -5392,14 +5623,14 @@ class MLAQuizApp {
 
             let level = 'routine';
             let message = 'Continue structured A-E reassessment and routine senior update.';
-            const arrestNumber = (container.querySelector('#ae-arrest-number')?.value || '2222').trim() || '2222';
+            const arrestNumber = (container.querySelector('#ae-arrest-number')?.value || '6666').trim() || '6666';
             const outreachNumber = (container.querySelector('#ae-outreach-number')?.value || '').trim();
 
             if (arrestFlags.length > 0) {
                 level = 'arrest';
                 message = `CARDIAC ARREST TRIGGER: Start/continue ALS and call ${arrestNumber} immediately.`;
-                banner.style.background = '#fee2e2';
-                banner.style.borderColor = '#ef4444';
+                banner.classList.remove('ae-level-routine', 'ae-level-urgent', 'ae-level-immediate');
+                banner.classList.add('ae-level-arrest');
                 escalationText.style.color = '#991b1b';
                 escalationDetail.style.color = '#7f1d1d';
             } else if (criticalFlags.length > 0 || criticalStatusCount > 0 || criticalObs.length > 0) {
@@ -5407,22 +5638,22 @@ class MLAQuizApp {
                 message = outreachNumber
                     ? `IMMEDIATE ESCALATION: Contact senior decision-maker and critical care outreach (${outreachNumber}) now.`
                     : 'IMMEDIATE ESCALATION: Contact senior decision-maker/critical care outreach now.';
-                banner.style.background = '#fef3c7';
-                banner.style.borderColor = '#f59e0b';
-                escalationText.style.color = '#92400e';
-                escalationDetail.style.color = '#78350f';
+                banner.classList.remove('ae-level-routine', 'ae-level-urgent', 'ae-level-arrest');
+                banner.classList.add('ae-level-immediate');
+                escalationText.style.color = '#78350f';
+                escalationDetail.style.color = '#713f12';
             } else if (concernCount >= 2 || highObs.length >= 2) {
                 level = 'urgent';
                 message = 'URGENT REVIEW: Multiple concerning A-E domains. Escalate to registrar promptly.';
-                banner.style.background = '#fffbeb';
-                banner.style.borderColor = '#fbbf24';
-                escalationText.style.color = '#92400e';
-                escalationDetail.style.color = '#78350f';
+                banner.classList.remove('ae-level-routine', 'ae-level-immediate', 'ae-level-arrest');
+                banner.classList.add('ae-level-urgent');
+                escalationText.style.color = '#78350f';
+                escalationDetail.style.color = '#713f12';
             } else {
-                banner.style.background = '#ecfeff';
-                banner.style.borderColor = '#22d3ee';
-                escalationText.style.color = '#0f766e';
-                escalationDetail.style.color = '#155e75';
+                banner.classList.remove('ae-level-urgent', 'ae-level-immediate', 'ae-level-arrest');
+                banner.classList.add('ae-level-routine');
+                escalationText.style.color = 'var(--text-primary, #0f172a)';
+                escalationDetail.style.color = 'var(--text-secondary, #334155)';
             }
 
             escalationText.textContent = message;
@@ -5460,7 +5691,7 @@ class MLAQuizApp {
             const location = container.querySelector('#ae-location')?.value?.trim() || 'Not documented';
             const dateTime = container.querySelector('#ae-time')?.value?.trim() || new Date().toLocaleString();
             const clinician = container.querySelector('#ae-clinician')?.value?.trim() || 'Not documented';
-            const arrestNumber = container.querySelector('#ae-arrest-number')?.value?.trim() || '2222';
+            const arrestNumber = container.querySelector('#ae-arrest-number')?.value?.trim() || '6666';
             const outreachNumber = container.querySelector('#ae-outreach-number')?.value?.trim() || 'Not documented';
             const switchboardNumber = container.querySelector('#ae-switchboard-number')?.value?.trim() || 'Not documented';
             const resusLocation = container.querySelector('#ae-resus-location')?.value?.trim() || 'Not documented';
@@ -5468,6 +5699,8 @@ class MLAQuizApp {
             const escalation = summarizeEscalation();
             const observationAlerts = collectObservationAlerts();
             const escalationEntries = getEscalationLog();
+            const safetyState = collectSafetyState();
+            const selectedInvestigations = collectInvestigationState();
 
             const urgencyMap = {
                 arrest: 'Arrest response required now',
@@ -5505,6 +5738,14 @@ class MLAQuizApp {
                 ? escalationEntries.map((entry, idx) => `${idx + 1}. ${entry.time} | ${entry.contact || 'Unknown contact'} | ${entry.role || 'Role not documented'} | ${entry.outcome || 'No outcome documented'}`).join('\n')
                 : 'No escalation log entries recorded.';
 
+            const safetyChecksLine = safetyState.safetySelected.length
+                ? safetyState.safetySelected.join('; ')
+                : 'No safety checks ticked.';
+
+            const investigationLine = selectedInvestigations.length
+                ? selectedInvestigations.join('; ')
+                : 'No investigations/bundle items ticked.';
+
             const summary = [
                 'A-E ASSESSMENT SUMMARY',
                 `Date/Time: ${dateTime}`,
@@ -5519,6 +5760,13 @@ class MLAQuizApp {
                 '',
                 `Observed Physiology: ${observationsLine}`,
                 `Abnormal Observations: ${abnormalitiesLine}`,
+                '',
+                `Safety Checks Completed: ${safetyChecksLine}`,
+                `Working Diagnosis: ${safetyState.workingDx}`,
+                `Likely Cause of Deterioration: ${safetyState.likelyCause}`,
+                `Responsible Senior: ${safetyState.responsibleSenior}`,
+                `Next Review Plan: ${safetyState.nextReview}`,
+                `Investigation/Bundle Completion: ${investigationLine}`,
                 '',
                 `Escalation Priority: ${urgencyMap[escalation.level] || urgencyMap.none}`,
                 `Escalation Triggers: ${escalationLine}`,
@@ -5549,9 +5797,12 @@ class MLAQuizApp {
                     event.target.matches('[data-ae-status]')
                     || event.target.matches('[data-flag-text]')
                     || event.target.matches('[data-ae-obs]')
+                    || event.target.matches('[data-ae-safety]')
+                    || event.target.matches('[data-ae-investigation]')
                 )) {
                     summarizeEscalation();
                     updateProgress();
+                    saveDraft();
                 }
             });
 
@@ -5568,12 +5819,44 @@ class MLAQuizApp {
                     || event.target.matches('#ae-switchboard-number')
                     || event.target.matches('#ae-resus-location')
                     || event.target.matches('#ae-resus-notes')
+                    || event.target.matches('#ae-working-dx')
+                    || event.target.matches('#ae-likely-cause')
+                    || event.target.matches('#ae-next-review-time')
+                    || event.target.matches('#ae-responsible-senior')
+                    || event.target.matches('#ae-log-contact')
+                    || event.target.matches('#ae-log-role')
+                    || event.target.matches('#ae-log-outcome')
                     || event.target.matches('[data-ae-obs]')
                 )) {
                     updateProgress();
                     summarizeEscalation();
+                    saveDraft();
                 }
             });
+
+            const fillNormalBtn = container.querySelector('#ae-fill-normal');
+            if (fillNormalBtn) {
+                fillNormalBtn.addEventListener('click', () => {
+                    populateNormalTemplate();
+                });
+            }
+
+            const saveDraftBtn = container.querySelector('#ae-save-draft');
+            if (saveDraftBtn) {
+                saveDraftBtn.addEventListener('click', () => {
+                    saveDraft();
+                });
+            }
+
+            const loadDraftBtn = container.querySelector('#ae-load-draft');
+            if (loadDraftBtn) {
+                loadDraftBtn.addEventListener('click', () => {
+                    const loaded = loadDraft();
+                    if (!loaded) {
+                        setDraftStatus('No saved draft found.');
+                    }
+                });
+            }
 
             const generateBtn = container.querySelector('#ae-generate-summary');
             if (generateBtn) {
@@ -5638,7 +5921,7 @@ class MLAQuizApp {
 
                     const refillArrest = container.querySelector('#ae-arrest-number');
                     if (refillArrest) {
-                        refillArrest.value = '2222';
+                        refillArrest.value = '6666';
                     }
 
                     const refillSwitchboard = container.querySelector('#ae-switchboard-number');
@@ -5648,6 +5931,7 @@ class MLAQuizApp {
 
                     setEscalationLog([]);
                     renderEscalationLog();
+                    clearDraft();
 
                     summarizeEscalation();
                     updateProgress();
@@ -5672,18 +5956,20 @@ class MLAQuizApp {
                     if (contactEl) contactEl.value = '';
                     if (roleEl) roleEl.value = '';
                     if (outcomeEl) outcomeEl.value = '';
+                    saveDraft();
                 });
             }
 
             const arrestLogBtn = container.querySelector('#ae-log-arrest');
             if (arrestLogBtn) {
                 arrestLogBtn.addEventListener('click', () => {
-                    const arrestNumber = container.querySelector('#ae-arrest-number')?.value?.trim() || '2222';
+                    const arrestNumber = container.querySelector('#ae-arrest-number')?.value?.trim() || '6666';
                     addEscalationEntry({
                         contact: `Cardiac arrest team (${arrestNumber})`,
                         role: 'Arrest call',
                         outcome: 'Emergency response activated'
                     });
+                    saveDraft();
                 });
             }
 
@@ -5696,6 +5982,7 @@ class MLAQuizApp {
                         role: 'Peri-arrest escalation',
                         outcome: 'Urgent senior support requested'
                     });
+                    saveDraft();
                 });
             }
 
@@ -5706,6 +5993,10 @@ class MLAQuizApp {
         renderObservationAlerts(collectObservationAlerts());
         renderEscalationLog();
         updateProgress();
+        const loadedDraft = loadDraft();
+        if (!loadedDraft) {
+            setDraftStatus('Draft not yet saved.');
+        }
     }
 
     /**
