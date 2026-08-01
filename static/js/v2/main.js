@@ -5295,6 +5295,12 @@ class MLAQuizApp {
                         <div id="ae-escalation-log-list" style="display: grid; gap: 8px;"></div>
                     </section>
 
+                    <section class="ae-card" style="background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb); border-radius: 14px; padding: 16px; margin-bottom: 14px;">
+                        <h4 style="margin-top: 0;">Completeness Assistant</h4>
+                        <div id="ae-completeness-score" style="font-weight: 700; color: var(--text-primary, #1f2937); margin-bottom: 8px;">Assessment completeness: 0%</div>
+                        <div id="ae-missing-items" style="display: grid; gap: 6px; color: var(--text-secondary, #475569);"></div>
+                    </section>
+
                     <section class="ae-card" style="background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb); border-radius: 14px; padding: 16px;">
                         <div style="display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 8px;">
                             <h4 style="margin: 0;">Documentation Summary Builder</h4>
@@ -5302,7 +5308,8 @@ class MLAQuizApp {
                         </div>
                         <textarea id="ae-summary-output" rows="14" readonly style="width: 100%; border: 1px solid var(--border, #d1d5db); border-radius: 10px; padding: 10px; background: var(--bg-primary, #fff); color: var(--text-primary, #111827);" placeholder="Generate summary to produce handover-ready documentation..."></textarea>
                         <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px;">
-                            <button type="button" id="ae-generate-summary" class="nav-btn-small" style="display: inline-flex;">Generate Summary</button>
+                            <button type="button" id="ae-generate-summary" class="nav-btn-small" style="display: inline-flex;">Generate Full Summary</button>
+                            <button type="button" id="ae-generate-sbar" class="nav-btn-small" style="display: inline-flex;">Generate SBAR Handover</button>
                             <button type="button" id="ae-copy-summary" class="nav-btn-small" style="display: inline-flex;">Copy Summary</button>
                             <button type="button" id="ae-clear-form" class="nav-btn-small" style="display: inline-flex;">Reset Assessment</button>
                         </div>
@@ -5680,13 +5687,74 @@ class MLAQuizApp {
                     completed += 1;
                 }
             });
+
             const progress = container.querySelector('#ae-progress');
             if (progress) {
                 progress.textContent = `Sections completed: ${completed} / ${sections.length}`;
             }
+
+            const requiredChecks = [
+                {
+                    ok: !!container.querySelector('#ae-patient')?.value?.trim(),
+                    label: 'Add patient identifier'
+                },
+                {
+                    ok: !!container.querySelector('#ae-location')?.value?.trim(),
+                    label: 'Add location'
+                },
+                {
+                    ok: !!container.querySelector('#ae-clinician')?.value?.trim(),
+                    label: 'Add assessor details'
+                },
+                {
+                    ok: !!container.querySelector('#ae-working-dx')?.value?.trim(),
+                    label: 'Document working diagnosis'
+                },
+                {
+                    ok: !!container.querySelector('#ae-next-review-time')?.value?.trim(),
+                    label: 'Set next review plan/time'
+                },
+                {
+                    ok: !!container.querySelector('#ae-responsible-senior')?.value?.trim(),
+                    label: 'Name responsible senior'
+                },
+                {
+                    ok: collectSafetyState().safetySelected.length > 0,
+                    label: 'Complete at least one safety check'
+                },
+                {
+                    ok: collectInvestigationState().length > 0,
+                    label: 'Tick investigation bundle items'
+                },
+                {
+                    ok: completed >= sections.length,
+                    label: 'Complete findings/actions for all A-E domains'
+                }
+            ];
+
+            const satisfied = requiredChecks.filter(item => item.ok).length;
+            const percent = Math.round((satisfied / requiredChecks.length) * 100);
+
+            const scoreEl = container.querySelector('#ae-completeness-score');
+            if (scoreEl) {
+                scoreEl.textContent = `Assessment completeness: ${percent}%`;
+                scoreEl.style.color = percent >= 85 ? '#166534' : percent >= 60 ? '#92400e' : '#991b1b';
+            }
+
+            const missingEl = container.querySelector('#ae-missing-items');
+            if (missingEl) {
+                const missing = requiredChecks.filter(item => !item.ok).map(item => item.label);
+                if (!missing.length) {
+                    missingEl.innerHTML = '<div style="padding: 8px 10px; border: 1px solid #86efac; border-radius: 10px; background: #f0fdf4; color: #166534;">Core documentation fields are complete.</div>';
+                } else {
+                    missingEl.innerHTML = missing
+                        .map(item => `<div style="padding: 8px 10px; border: 1px dashed #fbbf24; border-radius: 10px; background: #fffbeb; color: #92400e;">${item}</div>`)
+                        .join('');
+                }
+            }
         };
 
-        const buildSummary = () => {
+        const buildSummary = (mode = 'full') => {
             const patient = container.querySelector('#ae-patient')?.value?.trim() || 'Not documented';
             const location = container.querySelector('#ae-location')?.value?.trim() || 'Not documented';
             const dateTime = container.querySelector('#ae-time')?.value?.trim() || new Date().toLocaleString();
@@ -5745,6 +5813,22 @@ class MLAQuizApp {
             const investigationLine = selectedInvestigations.length
                 ? selectedInvestigations.join('; ')
                 : 'No investigations/bundle items ticked.';
+
+            if (mode === 'sbar') {
+                const sbar = [
+                    'SBAR HANDOVER',
+                    `S (Situation): ${patient} at ${location}. Current escalation level: ${urgencyMap[escalation.level] || urgencyMap.none}.`,
+                    `B (Background): Deterioration reviewed by ${clinician} at ${dateTime}. Arrest number ${arrestNumber}; outreach ${outreachNumber}.`,
+                    `A (Assessment): Working diagnosis ${safetyState.workingDx}. Key abnormalities: ${abnormalitiesLine}. Escalation triggers: ${escalationLine}.`,
+                    `R (Recommendation): ${safetyState.nextReview}. Responsible senior: ${safetyState.responsibleSenior}. Immediate priorities: continue iterative A-E, complete pending bundle items, and re-escalate if worsening.`
+                ].join('\n');
+
+                const output = container.querySelector('#ae-summary-output');
+                if (output) {
+                    output.value = sbar;
+                }
+                return;
+            }
 
             const summary = [
                 'A-E ASSESSMENT SUMMARY',
@@ -5861,7 +5945,14 @@ class MLAQuizApp {
             const generateBtn = container.querySelector('#ae-generate-summary');
             if (generateBtn) {
                 generateBtn.addEventListener('click', () => {
-                    buildSummary();
+                    buildSummary('full');
+                });
+            }
+
+            const generateSbarBtn = container.querySelector('#ae-generate-sbar');
+            if (generateSbarBtn) {
+                generateSbarBtn.addEventListener('click', () => {
+                    buildSummary('sbar');
                 });
             }
 
@@ -5870,7 +5961,7 @@ class MLAQuizApp {
                 copyBtn.addEventListener('click', async () => {
                     const output = container.querySelector('#ae-summary-output');
                     if (!output || !output.value.trim()) {
-                        buildSummary();
+                        buildSummary('full');
                     }
 
                     const text = output?.value || '';
