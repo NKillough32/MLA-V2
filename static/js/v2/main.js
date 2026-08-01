@@ -5054,6 +5054,87 @@ class MLAQuizApp {
             { id: 'fluid-balance', label: 'Urine output/fluid balance monitoring started' }
         ];
 
+        const sectionPhraseBank = {
+            a: {
+                findings: [
+                    'Airway patent with no audible obstruction',
+                    'Airway partially obstructed with gurgling/secretions',
+                    'Unable to maintain airway without adjunct support'
+                ],
+                actions: [
+                    'Repositioned airway and performed suction',
+                    'Inserted airway adjunct and prepared for advanced airway',
+                    'Escalated urgently to anaesthetics/critical care for airway support'
+                ]
+            },
+            b: {
+                findings: [
+                    'Increased work of breathing with accessory muscle use',
+                    'Reduced bilateral air entry with hypoxia',
+                    'Breathing pattern stable on current oxygen therapy'
+                ],
+                actions: [
+                    'Started titrated oxygen therapy and continuous SpO2 monitoring',
+                    'Nebulised bronchodilator therapy given',
+                    'ABG obtained and respiratory support escalation requested'
+                ]
+            },
+            c: {
+                findings: [
+                    'Hypotensive with signs of poor peripheral perfusion',
+                    'Tachycardic with possible septic/circulatory compromise',
+                    'Circulatory parameters currently stable'
+                ],
+                actions: [
+                    'Secured IV access and sent urgent blood panel',
+                    'Initiated fluid challenge with reassessment plan',
+                    'Escalated for vasopressor/critical care review'
+                ]
+            },
+            d: {
+                findings: [
+                    'Reduced consciousness level with concern for deterioration',
+                    'Acute confusion/delirium noted on assessment',
+                    'Neurological examination grossly unchanged from baseline'
+                ],
+                actions: [
+                    'Checked capillary glucose and corrected abnormalities',
+                    'Urgent neuro/senior review requested',
+                    'Seizure management protocol initiated where indicated'
+                ]
+            },
+            e: {
+                findings: [
+                    'Febrile with likely infective source identified',
+                    'No active external bleeding identified',
+                    'Rash/wound findings raise concern for systemic illness'
+                ],
+                actions: [
+                    'Full exposure completed and sepsis screen performed',
+                    'Empiric treatment bundle commenced as indicated',
+                    'Temperature and fluid balance monitoring plan in place'
+                ]
+            }
+        };
+
+        const renderPhraseButtons = (sectionId, fieldType) => {
+            const phrases = sectionPhraseBank?.[sectionId]?.[fieldType] || [];
+            if (!phrases.length) {
+                return '';
+            }
+
+            return phrases.map((phrase) => `
+                <button
+                    type="button"
+                    class="ae-phrase-btn"
+                    data-ae-add-phrase="${fieldType}"
+                    data-ae-section="${sectionId}"
+                    data-ae-phrase="${encodeURIComponent(phrase)}"
+                    style="border: 1px solid var(--border, #cbd5e1); background: var(--bg-secondary, #f8fafc); color: var(--text-secondary, #334155); border-radius: 999px; padding: 4px 10px; font-size: 0.82rem; cursor: pointer;"
+                >${phrase}</button>
+            `).join('');
+        };
+
         if (!document.getElementById('ae-assessment-inline-styles')) {
             const styleTag = document.createElement('style');
             styleTag.id = 'ae-assessment-inline-styles';
@@ -5108,8 +5189,14 @@ class MLAQuizApp {
                     </ul>
                     <label style="display: block; font-weight: 600; margin-bottom: 6px; color: var(--text-primary, #0f172a);">Findings</label>
                     <textarea data-ae-findings="${section.id}" rows="3" placeholder="Key findings for ${section.title}..." style="width: 100%; margin-bottom: 10px; border: 1px solid var(--border, #d1d5db); border-radius: 10px; padding: 10px; background: var(--bg-primary, #fff); color: var(--text-primary, #111827);"></textarea>
+                    <div style="display: flex; gap: 6px; flex-wrap: wrap; margin: -2px 0 10px;">
+                        ${renderPhraseButtons(section.id, 'findings')}
+                    </div>
                     <label style="display: block; font-weight: 600; margin-bottom: 6px; color: var(--text-primary, #0f172a);">Actions Taken / Planned</label>
                     <textarea data-ae-actions="${section.id}" rows="2" placeholder="Immediate actions, review plan, and response..." style="width: 100%; margin-bottom: 10px; border: 1px solid var(--border, #d1d5db); border-radius: 10px; padding: 10px; background: var(--bg-primary, #fff); color: var(--text-primary, #111827);"></textarea>
+                    <div style="display: flex; gap: 6px; flex-wrap: wrap; margin: -2px 0 10px;">
+                        ${renderPhraseButtons(section.id, 'actions')}
+                    </div>
                     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 8px;">
                         ${section.flags.map((flag, idx) => `
                             <label style="display: flex; gap: 8px; align-items: flex-start; border: 1px solid var(--border, #e5e7eb); border-radius: 10px; padding: 8px; background: ${flag.priority === 'critical' ? 'rgba(239, 68, 68, 0.08)' : 'rgba(245, 158, 11, 0.08)'};">
@@ -5137,7 +5224,18 @@ class MLAQuizApp {
                                 <button type="button" id="ae-load-draft" class="nav-btn-small" style="display: inline-flex;">Load Draft</button>
                             </div>
                         </div>
+                        <div style="display: grid; grid-template-columns: minmax(220px, 1fr) auto auto; gap: 8px; margin-top: 8px; align-items: center;">
+                            <input id="ae-draft-title" type="text" placeholder="Draft title (for repository)" style="border: 1px solid var(--border, #d1d5db); border-radius: 10px; padding: 9px 10px;" />
+                            <button type="button" id="ae-save-new-draft" class="nav-btn-small" style="display: inline-flex;">Save New Entry</button>
+                            <button type="button" id="ae-update-current-draft" class="nav-btn-small" style="display: inline-flex;">Update Selected</button>
+                        </div>
                         <div id="ae-draft-status" style="margin-top: 8px; font-size: 0.86rem; color: var(--text-secondary, #64748b);">Draft not yet saved.</div>
+                    </section>
+
+                    <section class="ae-card" style="background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb); border-radius: 14px; padding: 16px; margin-bottom: 14px;">
+                        <h4 style="margin-top: 0;">Assessment Repository</h4>
+                        <p style="margin-top: 0; color: var(--text-secondary, #475569);">Saved assessments are kept locally on this device. You can recover and continue any previous draft.</p>
+                        <div id="ae-draft-repository-list" style="display: grid; gap: 8px;"></div>
                     </section>
 
                     <section class="ae-card" style="background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb); border-radius: 14px; padding: 16px; margin-bottom: 14px;">
@@ -5400,7 +5498,9 @@ class MLAQuizApp {
                 .map(check => check.label);
         };
 
-        const getDraftKey = () => 'mla-v2-ae-assessment-draft';
+        const getLegacyDraftKey = () => 'mla-v2-ae-assessment-draft';
+        const getDraftRepositoryKey = () => 'mla-v2-ae-assessment-repository';
+        const getActiveDraftIdKey = () => 'mla-v2-ae-active-draft-id';
 
         const setDraftStatus = (text) => {
             const status = container.querySelector('#ae-draft-status');
@@ -5409,93 +5509,276 @@ class MLAQuizApp {
             }
         };
 
-        const saveDraft = () => {
+        const getActiveDraftId = () => {
+            const fromContainer = container.dataset.aeActiveDraftId || '';
+            if (fromContainer) return fromContainer;
+            return localStorage.getItem(getActiveDraftIdKey()) || '';
+        };
+
+        const setActiveDraftId = (id) => {
+            container.dataset.aeActiveDraftId = id || '';
+            if (id) {
+                localStorage.setItem(getActiveDraftIdKey(), id);
+            } else {
+                localStorage.removeItem(getActiveDraftIdKey());
+            }
+        };
+
+        const getDraftRepository = () => {
             try {
-                const fields = container.querySelectorAll('input, select, textarea');
-                const payload = {
-                    savedAt: new Date().toISOString(),
-                    values: {}
+                const parsed = JSON.parse(localStorage.getItem(getDraftRepositoryKey()) || '[]');
+                return Array.isArray(parsed) ? parsed : [];
+            } catch (error) {
+                return [];
+            }
+        };
+
+        const setDraftRepository = (entries) => {
+            const safeEntries = Array.isArray(entries) ? entries.slice(0, 200) : [];
+            localStorage.setItem(getDraftRepositoryKey(), JSON.stringify(safeEntries));
+        };
+
+        const buildDefaultDraftTitle = () => {
+            const patient = container.querySelector('#ae-patient')?.value?.trim();
+            const location = container.querySelector('#ae-location')?.value?.trim();
+            const base = [patient || 'Unnamed patient', location || 'Location not set'].join(' - ');
+            return `${base} (${new Date().toLocaleString()})`;
+        };
+
+        const collectDraftPayload = () => {
+            const fields = container.querySelectorAll('input, select, textarea');
+            const payload = {
+                values: {},
+                escalationLog: getEscalationLog()
+            };
+
+            fields.forEach((field) => {
+                if (!field.id && !field.name && !field.getAttribute('data-ae-status') && !field.getAttribute('data-ae-findings') && !field.getAttribute('data-ae-actions') && !field.getAttribute('data-ae-obs') && !field.getAttribute('data-ae-flag-text') && !field.getAttribute('data-ae-safety') && !field.getAttribute('data-ae-investigation')) {
+                    return;
+                }
+
+                const key = field.id
+                    || field.getAttribute('data-ae-status')
+                    || field.getAttribute('data-ae-findings')
+                    || field.getAttribute('data-ae-actions')
+                    || field.getAttribute('data-ae-obs')
+                    || field.getAttribute('data-ae-flag')
+                    || field.getAttribute('data-ae-special')
+                    || field.getAttribute('data-ae-safety')
+                    || field.getAttribute('data-ae-investigation');
+
+                if (!key) return;
+                payload.values[key] = field.type === 'checkbox' ? !!field.checked : field.value;
+            });
+
+            return payload;
+        };
+
+        const applyDraftPayload = (payload) => {
+            const values = payload?.values || {};
+            const fields = container.querySelectorAll('input, select, textarea');
+            fields.forEach((field) => {
+                const key = field.id
+                    || field.getAttribute('data-ae-status')
+                    || field.getAttribute('data-ae-findings')
+                    || field.getAttribute('data-ae-actions')
+                    || field.getAttribute('data-ae-obs')
+                    || field.getAttribute('data-ae-flag')
+                    || field.getAttribute('data-ae-special')
+                    || field.getAttribute('data-ae-safety')
+                    || field.getAttribute('data-ae-investigation');
+
+                if (!key || !(key in values)) return;
+                if (field.type === 'checkbox') {
+                    field.checked = !!values[key];
+                } else {
+                    field.value = values[key];
+                }
+            });
+
+            if (Array.isArray(payload?.escalationLog)) {
+                setEscalationLog(payload.escalationLog);
+            } else {
+                setEscalationLog([]);
+            }
+
+            renderEscalationLog();
+            summarizeEscalation();
+            updateProgress();
+        };
+
+        const renderDraftRepository = () => {
+            const list = container.querySelector('#ae-draft-repository-list');
+            if (!list) return;
+
+            const repo = getDraftRepository();
+            if (!repo.length) {
+                list.innerHTML = '<div style="padding: 10px; border: 1px dashed var(--border, #d1d5db); border-radius: 10px; color: var(--text-secondary, #64748b);">No saved assessments yet.</div>';
+                return;
+            }
+
+            const activeId = getActiveDraftId();
+            list.innerHTML = repo.map((entry) => {
+                const isActive = activeId && activeId === entry.id;
+                return `
+                    <div style="border: 1px solid ${isActive ? '#0ea5a4' : 'var(--border, #e5e7eb)'}; border-radius: 10px; padding: 10px; background: ${isActive ? 'rgba(13, 148, 136, 0.08)' : 'var(--bg-primary, #fff)'};">
+                        <div style="display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; align-items: center;">
+                            <div>
+                                <div style="font-weight: 700; color: var(--text-primary, #1f2937);">${entry.title || 'Untitled assessment'}</div>
+                                <div style="font-size: 0.82rem; color: var(--text-secondary, #64748b);">Updated ${new Date(entry.updatedAt || entry.createdAt || Date.now()).toLocaleString()}</div>
+                            </div>
+                            <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+                                <button type="button" class="nav-btn-small" data-ae-repo-action="load" data-ae-draft-id="${entry.id}" style="display: inline-flex;">Load</button>
+                                <button type="button" class="nav-btn-small" data-ae-repo-action="delete" data-ae-draft-id="${entry.id}" style="display: inline-flex;">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        };
+
+        const saveDraftToRepository = ({ mode = 'auto' } = {}) => {
+            try {
+                const repo = getDraftRepository();
+                const payload = collectDraftPayload();
+                const titleInput = container.querySelector('#ae-draft-title');
+                const nowIso = new Date().toISOString();
+                const requestedTitle = titleInput?.value?.trim() || '';
+
+                let activeId = getActiveDraftId();
+                const existingIndex = repo.findIndex(item => item.id === activeId);
+                const shouldCreateNew = mode === 'new' || !activeId || existingIndex === -1;
+
+                if (shouldCreateNew) {
+                    const newEntry = {
+                        id: `ae-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
+                        title: requestedTitle || buildDefaultDraftTitle(),
+                        createdAt: nowIso,
+                        updatedAt: nowIso,
+                        payload
+                    };
+                    repo.unshift(newEntry);
+                    activeId = newEntry.id;
+                    if (titleInput && !titleInput.value.trim()) {
+                        titleInput.value = newEntry.title;
+                    }
+                } else {
+                    const entry = repo[existingIndex];
+                    repo[existingIndex] = {
+                        ...entry,
+                        title: requestedTitle || entry.title || buildDefaultDraftTitle(),
+                        updatedAt: nowIso,
+                        payload
+                    };
+                    const [updatedEntry] = repo.splice(existingIndex, 1);
+                    repo.unshift(updatedEntry);
+                    activeId = updatedEntry.id;
+                }
+
+                setDraftRepository(repo);
+                setActiveDraftId(activeId);
+                renderDraftRepository();
+                setDraftStatus(`Repository saved at ${new Date(nowIso).toLocaleTimeString()}.`);
+
+                // Maintain legacy single-draft record for backward compatibility.
+                localStorage.setItem(getLegacyDraftKey(), JSON.stringify({
+                    savedAt: nowIso,
+                    values: payload.values,
+                    escalationLog: payload.escalationLog
+                }));
+            } catch (error) {
+                console.warn('Failed to save repository draft:', error);
+            }
+        };
+
+        const loadDraftFromRepository = (id) => {
+            const repo = getDraftRepository();
+            const entry = repo.find(item => item.id === id);
+            if (!entry) {
+                return false;
+            }
+
+            applyDraftPayload(entry.payload || {});
+            setActiveDraftId(entry.id);
+            const titleInput = container.querySelector('#ae-draft-title');
+            if (titleInput) {
+                titleInput.value = entry.title || '';
+            }
+            setDraftStatus(`Loaded repository entry: ${entry.title || 'Untitled assessment'}.`);
+            renderDraftRepository();
+            return true;
+        };
+
+        const deleteDraftFromRepository = (id) => {
+            const repo = getDraftRepository();
+            const filtered = repo.filter(item => item.id !== id);
+            setDraftRepository(filtered);
+
+            if (getActiveDraftId() === id) {
+                setActiveDraftId('');
+                const titleInput = container.querySelector('#ae-draft-title');
+                if (titleInput) {
+                    titleInput.value = '';
+                }
+            }
+
+            renderDraftRepository();
+            setDraftStatus('Repository entry deleted.');
+        };
+
+        const migrateLegacyDraftToRepository = () => {
+            const repo = getDraftRepository();
+            if (repo.length > 0) return;
+
+            try {
+                const raw = localStorage.getItem(getLegacyDraftKey());
+                if (!raw) return;
+                const legacy = JSON.parse(raw);
+                if (!legacy || typeof legacy !== 'object') return;
+
+                const migrated = {
+                    id: `ae-${Date.now()}-legacy`,
+                    title: 'Recovered legacy A-E draft',
+                    createdAt: legacy.savedAt || new Date().toISOString(),
+                    updatedAt: legacy.savedAt || new Date().toISOString(),
+                    payload: {
+                        values: legacy.values || {},
+                        escalationLog: legacy.escalationLog || []
+                    }
                 };
 
-                fields.forEach((field) => {
-                    if (!field.id && !field.name && !field.getAttribute('data-ae-status') && !field.getAttribute('data-ae-findings') && !field.getAttribute('data-ae-actions') && !field.getAttribute('data-ae-obs') && !field.getAttribute('data-ae-flag-text') && !field.getAttribute('data-ae-safety') && !field.getAttribute('data-ae-investigation')) {
-                        return;
-                    }
-
-                    const key = field.id
-                        || field.getAttribute('data-ae-status')
-                        || field.getAttribute('data-ae-findings')
-                        || field.getAttribute('data-ae-actions')
-                        || field.getAttribute('data-ae-obs')
-                        || field.getAttribute('data-ae-flag')
-                        || field.getAttribute('data-ae-special')
-                        || field.getAttribute('data-ae-safety')
-                        || field.getAttribute('data-ae-investigation');
-
-                    if (!key) return;
-                    payload.values[key] = field.type === 'checkbox' ? !!field.checked : field.value;
-                });
-
-                payload.escalationLog = getEscalationLog();
-                localStorage.setItem(getDraftKey(), JSON.stringify(payload));
-                setDraftStatus(`Draft saved at ${new Date(payload.savedAt).toLocaleTimeString()}.`);
+                setDraftRepository([migrated]);
             } catch (error) {
-                console.warn('Failed to save A-E draft:', error);
+                console.warn('Failed to migrate legacy draft:', error);
             }
+        };
+
+        const saveDraft = () => {
+            saveDraftToRepository({ mode: 'auto' });
         };
 
         const loadDraft = () => {
-            try {
-                const raw = localStorage.getItem(getDraftKey());
-                if (!raw) return false;
-                const payload = JSON.parse(raw);
-                const values = payload?.values || {};
-
-                const fields = container.querySelectorAll('input, select, textarea');
-                fields.forEach((field) => {
-                    const key = field.id
-                        || field.getAttribute('data-ae-status')
-                        || field.getAttribute('data-ae-findings')
-                        || field.getAttribute('data-ae-actions')
-                        || field.getAttribute('data-ae-obs')
-                        || field.getAttribute('data-ae-flag')
-                        || field.getAttribute('data-ae-special')
-                        || field.getAttribute('data-ae-safety')
-                        || field.getAttribute('data-ae-investigation');
-                    if (!key || !(key in values)) return;
-
-                    if (field.type === 'checkbox') {
-                        field.checked = !!values[key];
-                    } else {
-                        field.value = values[key];
-                    }
-                });
-
-                if (Array.isArray(payload.escalationLog)) {
-                    setEscalationLog(payload.escalationLog);
-                    renderEscalationLog();
-                }
-
-                if (payload.savedAt) {
-                    setDraftStatus(`Draft loaded (${new Date(payload.savedAt).toLocaleString()}).`);
-                }
-
-                summarizeEscalation();
-                updateProgress();
-                return true;
-            } catch (error) {
-                console.warn('Failed to load A-E draft:', error);
+            const repo = getDraftRepository();
+            if (!repo.length) {
                 return false;
             }
+
+            const activeId = getActiveDraftId();
+            if (activeId && loadDraftFromRepository(activeId)) {
+                return true;
+            }
+
+            return loadDraftFromRepository(repo[0].id);
         };
 
         const clearDraft = () => {
-            try {
-                localStorage.removeItem(getDraftKey());
-                setDraftStatus('Draft cleared.');
-            } catch (error) {
-                console.warn('Failed to clear A-E draft:', error);
+            setActiveDraftId('');
+            const titleInput = container.querySelector('#ae-draft-title');
+            if (titleInput) {
+                titleInput.value = '';
             }
+            setDraftStatus('Working draft cleared. Repository entries remain available.');
+            renderDraftRepository();
         };
 
         const populateNormalTemplate = () => {
@@ -5876,6 +6159,36 @@ class MLAQuizApp {
         };
 
         if (!container.dataset.aeBound) {
+            container.addEventListener('click', (event) => {
+                const phraseBtn = event.target.closest && event.target.closest('[data-ae-add-phrase]');
+                if (phraseBtn) {
+                    const sectionId = phraseBtn.getAttribute('data-ae-section');
+                    const type = phraseBtn.getAttribute('data-ae-add-phrase');
+                    const phrase = decodeURIComponent(phraseBtn.getAttribute('data-ae-phrase') || '');
+                    const targetSelector = type === 'actions' ? `[data-ae-actions="${sectionId}"]` : `[data-ae-findings="${sectionId}"]`;
+                    const targetArea = container.querySelector(targetSelector);
+                    if (targetArea && phrase) {
+                        const existing = targetArea.value.trim();
+                        targetArea.value = existing ? `${existing}${existing.endsWith('.') ? '' : '.'} ${phrase}` : phrase;
+                        targetArea.dispatchEvent(new Event('input', { bubbles: true }));
+                    }
+                    return;
+                }
+
+                const repoActionBtn = event.target.closest && event.target.closest('[data-ae-repo-action]');
+                if (repoActionBtn) {
+                    const action = repoActionBtn.getAttribute('data-ae-repo-action');
+                    const id = repoActionBtn.getAttribute('data-ae-draft-id');
+                    if (!id) return;
+
+                    if (action === 'load') {
+                        loadDraftFromRepository(id);
+                    } else if (action === 'delete') {
+                        deleteDraftFromRepository(id);
+                    }
+                }
+            });
+
             container.addEventListener('change', (event) => {
                 if (event.target && (
                     event.target.matches('[data-ae-status]')
@@ -5903,6 +6216,7 @@ class MLAQuizApp {
                     || event.target.matches('#ae-switchboard-number')
                     || event.target.matches('#ae-resus-location')
                     || event.target.matches('#ae-resus-notes')
+                    || event.target.matches('#ae-draft-title')
                     || event.target.matches('#ae-working-dx')
                     || event.target.matches('#ae-likely-cause')
                     || event.target.matches('#ae-next-review-time')
@@ -5929,6 +6243,20 @@ class MLAQuizApp {
             if (saveDraftBtn) {
                 saveDraftBtn.addEventListener('click', () => {
                     saveDraft();
+                });
+            }
+
+            const saveNewDraftBtn = container.querySelector('#ae-save-new-draft');
+            if (saveNewDraftBtn) {
+                saveNewDraftBtn.addEventListener('click', () => {
+                    saveDraftToRepository({ mode: 'new' });
+                });
+            }
+
+            const updateCurrentDraftBtn = container.querySelector('#ae-update-current-draft');
+            if (updateCurrentDraftBtn) {
+                updateCurrentDraftBtn.addEventListener('click', () => {
+                    saveDraftToRepository({ mode: 'update' });
                 });
             }
 
@@ -6084,6 +6412,8 @@ class MLAQuizApp {
         renderObservationAlerts(collectObservationAlerts());
         renderEscalationLog();
         updateProgress();
+        migrateLegacyDraftToRepository();
+        renderDraftRepository();
         const loadedDraft = loadDraft();
         if (!loadedDraft) {
             setDraftStatus('Draft not yet saved.');
